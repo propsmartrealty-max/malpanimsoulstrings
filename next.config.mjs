@@ -1,5 +1,17 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
+  images: {
+    remotePatterns: [
+      {
+        protocol: 'https',
+        hostname: 'malpani-cms.firsteconomy.com',
+      },
+      {
+        protocol: 'https',
+        hostname: 'www.malpaniestates.com',
+      }
+    ],
+  },
   async redirects() {
     return [
       { source: '/malpani-m-soulstrings-baner-pashan-link-road-4bhk-luxury', destination: '/4bhk-luxury', permanent: true },

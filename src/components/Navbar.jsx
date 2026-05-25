@@ -1,3 +1,4 @@
+import Image from 'next/image';
 import Link from 'next/link';
 
 export default function Navbar() {
@@ -6,7 +7,7 @@ export default function Navbar() {
       <nav className="navbar">
         <div className="nav-container">
           <Link href="/" className="brand" style={{ display: 'flex', alignItems: 'center', gap: '10px', textDecoration: 'none', color: 'inherit' }}>
-            <img src="https://www.malpaniestates.com/assets/images/apple-touch-icon.png" style={{ height: '40px' }} alt="Malpani M SoulStrings" />
+            <Image src="https://www.malpaniestates.com/assets/images/apple-touch-icon.png" alt="Malpani M SoulStrings" width={40} height={40} style={{ height: '40px', width: 'auto' }} />
             <span className="brand-text">MALPANI<br/><b>M SoulStrings</b></span>
           </Link>
           <div className="nav-actions" style={{ display: 'flex', alignItems: 'center', gap: '1rem' }}>

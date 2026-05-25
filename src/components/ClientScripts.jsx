@@ -96,6 +96,82 @@ export default function ClientScripts() {
     const animatedElements = document.querySelectorAll('.fade-in-up, .slide-in-left, .slide-in-right, .split-text, .scarcity-badge');
     animatedElements.forEach(el => observer.observe(el));
 
+    // Smart Form Submission Logic
+    const smartForm = document.getElementById('smart-contact-form');
+    const formSuccess = document.getElementById('form-success-msg');
+    
+    const onSmartSubmit = async (e) => {
+      e.preventDefault();
+      const btn = smartForm.querySelector('button[type="submit"]');
+      if(btn) btn.textContent = 'Sending securely...';
+      
+      const formData = new FormData(smartForm);
+      const data = Object.fromEntries(formData.entries());
+
+      try {
+        const res = await fetch('/api/contact', {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify(data)
+        });
+        
+        if (res.ok) {
+          if(btn) btn.style.display = 'none';
+          if(formSuccess) formSuccess.style.display = 'block';
+          smartForm.reset();
+        } else {
+          if(btn) btn.textContent = 'Error. Try Again.';
+        }
+      } catch (err) {
+        if(btn) btn.textContent = 'Network Error';
+      }
+    };
+    if (smartForm && formSuccess) {
+      smartForm.addEventListener('submit', onSmartSubmit);
+    }
+
+    // Brochure Form Submission Logic
+    const brochureForm = document.getElementById('brochure-form');
+    const brochureSuccess = document.getElementById('brochure-success-msg');
+    
+    const onBrochureSubmit = async (e) => {
+      e.preventDefault();
+      const btn = brochureForm.querySelector('button[type="submit"]');
+      if(btn) btn.textContent = 'Verifying securely...';
+      
+      const formData = new FormData(brochureForm);
+      const data = Object.fromEntries(formData.entries());
+
+      try {
+        const res = await fetch('/api/contact', {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify(data)
+        });
+        
+        if (res.ok) {
+          if(btn) btn.style.display = 'none';
+          if(brochureSuccess) brochureSuccess.style.display = 'block';
+          
+          setTimeout(() => {
+            const modal = document.getElementById('brochure-modal');
+            if(modal) modal.style.display = 'none';
+            brochureForm.reset();
+            if(btn) {
+              btn.style.display = 'block';
+              btn.textContent = 'Unlock Brochure';
+            }
+            if(brochureSuccess) brochureSuccess.style.display = 'none';
+          }, 2000);
+        }
+      } catch (err) {
+        if(btn) btn.textContent = 'Network Error';
+      }
+    };
+    if (brochureForm && brochureSuccess) {
+      brochureForm.addEventListener('submit', onBrochureSubmit);
+    }
+
     // Cleanup
     return () => {
       document.removeEventListener('mousemove', onMouseMove);
@@ -106,6 +182,8 @@ export default function ClientScripts() {
       });
       themeToggle?.removeEventListener('click', onThemeToggle);
       observer.disconnect();
+      smartForm?.removeEventListener('submit', onSmartSubmit);
+      brochureForm?.removeEventListener('submit', onBrochureSubmit);
     };
   }, []);
 
