@@ -17,6 +17,31 @@ export async function generateStaticParams() {
   }));
 }
 
+export async function generateMetadata({ params }) {
+  const { slug } = await params;
+  const filePath = path.join(process.cwd(), 'src/content/blog', `${slug}.md`);
+  let title = slug.replace(/-/g, ' ').toUpperCase();
+  let description = 'Read the latest real estate insights from Malpani M SoulStrings.';
+
+  if (fs.existsSync(filePath)) {
+    const fileContents = fs.readFileSync(filePath, 'utf8');
+    const { data } = matter(fileContents);
+    if (data.title) title = data.title;
+    if (data.description) description = data.description;
+  }
+
+  return {
+    title: `${title} | Malpani M SoulStrings Blog`,
+    description,
+    openGraph: {
+      title,
+      description,
+      type: 'article',
+      url: `https://www.malpanimsoulstrings.com/blog/${slug}`,
+    }
+  }
+}
+
 export default async function BlogPost({ params }) {
   const { slug } = await params;
   
