@@ -1,9 +1,4 @@
 User-agent: *
 Allow: /
 
-# Sitemap Location
 Sitemap: https://www.malpanimsoulstrings.com/sitemap.xml
-
-# Block useless crawling
-Disallow: /cgi-bin/
-Disallow: /wp-admin/
