@@ -337,6 +337,108 @@
         </div>
     </section>
 
+
+    <!-- Interactive ROI Estimator Section -->
+    <section class="py-5" style="background-color: #111; border-top: 1px solid rgba(255, 255, 255, 0.1);">
+        <div class="container">
+            <div class="row flex-lg-row-reverse align-items-center">
+                <div class="col-lg-5 mb-5 mb-lg-0">
+                    <h2 class="display-5 fw-bold mb-4" style="color: #fff;">Pune ROI & Yield Estimator</h2>
+                    <p class="text-white-50 fs-5 mb-4">Analyze the staggering growth potential of the Baner-Pashan corridor. Calculate your gross rental yield and 5-year capital appreciation instantly.</p>
+                </div>
+                <div class="col-lg-7">
+                    <div class="card bg-dark border-secondary p-4 p-md-5" style="border-radius: 12px; box-shadow: 0 10px 30px rgba(0,0,0,0.5);">
+                        
+                        <div class="mb-4">
+                            <label for="roiPropValue" class="form-label text-white d-flex justify-content-between">
+                                <span>Purchase Price (₹)</span>
+                                <span id="roiPropDisplay" style="color: #fff; font-weight: bold;">₹ 2,50,00,000</span>
+                            </label>
+                            <input type="range" class="form-range" id="roiPropValue" min="15000000" max="50000000" step="500000" value="25000000">
+                        </div>
+
+                        <div class="mb-4">
+                            <label for="monthlyRent" class="form-label text-white d-flex justify-content-between">
+                                <span>Expected Monthly Rent (₹)</span>
+                                <span id="monthlyRentDisplay" style="color: #fff; font-weight: bold;">₹ 70,000</span>
+                            </label>
+                            <input type="range" class="form-range" id="monthlyRent" min="30000" max="250000" step="2000" value="70000">
+                        </div>
+
+                        <div class="mb-4">
+                            <label for="annualAppreciation" class="form-label text-white d-flex justify-content-between">
+                                <span>Annual Appreciation Rate (%)</span>
+                                <span id="appreciationDisplay" style="color: #d4af37; font-weight: bold;">8%</span>
+                            </label>
+                            <input type="range" class="form-range" id="annualAppreciation" min="2" max="15" step="0.5" value="8">
+                        </div>
+
+                        <div class="row mt-5 text-center">
+                            <div class="col-md-6 mb-4 mb-md-0">
+                                <div class="p-4 rounded" style="background: rgba(255, 255, 255, 0.05); border: 1px solid rgba(255, 255, 255, 0.1);">
+                                    <h6 class="text-white-50 text-uppercase tracking-wider">Gross Rental Yield</h6>
+                                    <h2 class="display-5 fw-bold mb-0 text-white" id="yieldResult">3.36%</h2>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="p-4 rounded" style="background: rgba(212, 175, 55, 0.1); border: 1px solid rgba(212, 175, 55, 0.3);">
+                                    <h6 class="text-white-50 text-uppercase tracking-wider">5-Year Value Estimate</h6>
+                                    <h2 class="display-5 fw-bold mb-0" id="valueResult" style="color: #d4af37;">₹ 3,67,33,201</h2>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            const roiPropValue = document.getElementById('roiPropValue');
+            const monthlyRent = document.getElementById('monthlyRent');
+            const annualAppreciation = document.getElementById('annualAppreciation');
+            
+            const roiPropDisplay = document.getElementById('roiPropDisplay');
+            const monthlyRentDisplay = document.getElementById('monthlyRentDisplay');
+            const appreciationDisplay = document.getElementById('appreciationDisplay');
+            
+            const yieldResult = document.getElementById('yieldResult');
+            const valueResult = document.getElementById('valueResult');
+
+            function formatINR(number) {
+                return new Intl.NumberFormat('en-IN', { style: 'currency', currency: 'INR', maximumFractionDigits: 0 }).format(number);
+            }
+
+            function calculateROI() {
+                let price = parseFloat(roiPropValue.value);
+                let rent = parseFloat(monthlyRent.value);
+                let app = parseFloat(annualAppreciation.value);
+
+                // Yield = (Annual Rent / Price) * 100
+                let yieldPercent = ((rent * 12) / price) * 100;
+                
+                // Compound Interest formula for 5 years: A = P(1 + r/n)^(nt)
+                let futureValue = price * Math.pow((1 + (app/100)), 5);
+
+                roiPropDisplay.innerText = formatINR(price);
+                monthlyRentDisplay.innerText = formatINR(rent);
+                appreciationDisplay.innerText = app + '%';
+                
+                yieldResult.innerText = yieldPercent.toFixed(2) + '%';
+                valueResult.innerText = formatINR(futureValue);
+            }
+
+            // Event Listeners
+            roiPropValue.addEventListener('input', calculateROI);
+            monthlyRent.addEventListener('input', calculateROI);
+            annualAppreciation.addEventListener('input', calculateROI);
+            
+            // Initial calc
+            calculateROI();
+        });
+    </script>
+
 <footer class="footer">
       <div class="container">
         <p>&copy; 2026 Malpani Estates. All Rights Reserved.</p>

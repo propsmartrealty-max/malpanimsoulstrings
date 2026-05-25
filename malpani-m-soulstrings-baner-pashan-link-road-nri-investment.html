@@ -261,7 +261,107 @@
             </div>
           </div>
         </section>
-        <footer class="footer">
+        
+    <!-- Interactive EMI Calculator Section -->
+    <section class="py-5" style="background-color: #0a0a0c; border-top: 1px solid rgba(212, 175, 55, 0.1);">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-5 mb-5 mb-lg-0">
+                    <h2 class="display-5 fw-bold mb-4" style="color: #d4af37;">Interactive Mortgage Calculator</h2>
+                    <p class="text-white-50 fs-5 mb-4">Plan your cash flow with precision. Adjust the parameters to estimate your monthly EMI for an investment in Malpani M SoulStrings.</p>
+                    <ul class="list-unstyled text-white-50 fs-6">
+                        <li class="mb-2"><span class="material-symbols-outlined align-middle me-2" style="color: var(--color-primary);">check_circle</span> Real-time computation</li>
+                        <li class="mb-2"><span class="material-symbols-outlined align-middle me-2" style="color: var(--color-primary);">check_circle</span> Adjustable interest rates</li>
+                        <li class="mb-2"><span class="material-symbols-outlined align-middle me-2" style="color: var(--color-primary);">check_circle</span> Instant down payment metrics</li>
+                    </ul>
+                </div>
+                <div class="col-lg-7">
+                    <div class="card bg-dark border-secondary p-4 p-md-5" style="border-radius: 12px; box-shadow: 0 10px 30px rgba(0,0,0,0.5);">
+                        
+                        <div class="mb-4">
+                            <label for="propValue" class="form-label text-white d-flex justify-content-between">
+                                <span>Property Value (₹)</span>
+                                <span id="propValueDisplay" style="color: #d4af37; font-weight: bold;">₹ 2,50,00,000</span>
+                            </label>
+                            <input type="range" class="form-range" id="propValue" min="15000000" max="50000000" step="500000" value="25000000">
+                        </div>
+
+                        <div class="mb-4">
+                            <label for="downPayment" class="form-label text-white d-flex justify-content-between">
+                                <span>Down Payment (₹)</span>
+                                <span id="downPaymentDisplay" style="color: #d4af37; font-weight: bold;">₹ 50,00,000</span>
+                            </label>
+                            <input type="range" class="form-range" id="downPayment" min="1000000" max="40000000" step="500000" value="5000000">
+                        </div>
+
+                        <div class="row mb-4">
+                            <div class="col-6">
+                                <label for="interestRate" class="form-label text-white">Interest Rate (%)</label>
+                                <input type="number" class="form-control bg-dark text-white border-secondary" id="interestRate" value="8.5" step="0.1">
+                            </div>
+                            <div class="col-6">
+                                <label for="loanTenure" class="form-label text-white">Loan Tenure (Years)</label>
+                                <input type="number" class="form-control bg-dark text-white border-secondary" id="loanTenure" value="20" min="1" max="30">
+                            </div>
+                        </div>
+
+                        <div class="mt-5 p-4 rounded text-center" style="background: rgba(212, 175, 55, 0.1); border: 1px solid rgba(212, 175, 55, 0.3);">
+                            <h5 class="text-white-50 mb-2">Estimated Monthly EMI</h5>
+                            <h2 class="display-4 fw-bold mb-0" id="emiResult" style="color: #d4af37;">₹ 1,73,564</h2>
+                            <p class="text-white-50 mt-2 mb-0" style="font-size: 0.9rem;">Loan Amount: <span id="loanAmountDisplay">₹ 2,00,00,000</span></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            const propValueSlider = document.getElementById('propValue');
+            const downPaymentSlider = document.getElementById('downPayment');
+            const interestRateInput = document.getElementById('interestRate');
+            const loanTenureInput = document.getElementById('loanTenure');
+            
+            const propValueDisplay = document.getElementById('propValueDisplay');
+            const downPaymentDisplay = document.getElementById('downPaymentDisplay');
+            const emiResult = document.getElementById('emiResult');
+            const loanAmountDisplay = document.getElementById('loanAmountDisplay');
+
+            function formatINR(number) {
+                return new Intl.NumberFormat('en-IN', { style: 'currency', currency: 'INR', maximumFractionDigits: 0 }).format(number);
+            }
+
+            function calculateEMI() {
+                let P = parseFloat(propValueSlider.value) - parseFloat(downPaymentSlider.value);
+                if (P < 0) P = 0;
+                
+                let r = parseFloat(interestRateInput.value) / 12 / 100;
+                let n = parseFloat(loanTenureInput.value) * 12;
+
+                let emi = 0;
+                if (P > 0 && r > 0 && n > 0) {
+                    emi = P * r * (Math.pow(1 + r, n) / (Math.pow(1 + r, n) - 1));
+                }
+
+                propValueDisplay.innerText = formatINR(propValueSlider.value);
+                downPaymentDisplay.innerText = formatINR(downPaymentSlider.value);
+                loanAmountDisplay.innerText = formatINR(P);
+                emiResult.innerText = formatINR(emi);
+            }
+
+            // Event Listeners
+            propValueSlider.addEventListener('input', calculateEMI);
+            downPaymentSlider.addEventListener('input', calculateEMI);
+            interestRateInput.addEventListener('input', calculateEMI);
+            loanTenureInput.addEventListener('input', calculateEMI);
+            
+            // Initial calc
+            calculateEMI();
+        });
+    </script>
+
+<footer class="footer">
       <div class="container">
         <p>&copy; 2026 Malpani Estates. All Rights Reserved.</p>
         <p style="margin-top: 1rem; color: rgba(255,255,255,0.4); font-size: 0.8rem; line-height: 1.8;">
