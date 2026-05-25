@@ -1,0 +1,9 @@
+User-agent: *
+Allow: /
+
+# Sitemap Location
+Sitemap: https://www.malpanimsoul.com/sitemap.xml
+
+# Block useless crawling
+Disallow: /cgi-bin/
+Disallow: /wp-admin/
