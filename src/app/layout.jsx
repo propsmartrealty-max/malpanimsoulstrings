@@ -3,6 +3,7 @@ import Navbar from '@/components/Navbar'
 import Footer from '@/components/Footer'
 import ClientScripts from '@/components/ClientScripts'
 import ThemeProvider from '@/components/ThemeProvider'
+import PWARegister from '@/components/PWARegister'
 
 export const metadata = {
   metadataBase: new URL('https://www.malpanimsoulstrings.com'),
@@ -37,6 +38,24 @@ export const metadata = {
   alternates: {
     canonical: '/',
   },
+  manifest: '/manifest.json',
+  appleWebApp: {
+    capable: true,
+    title: 'M SoulStrings',
+    statusBarStyle: 'black-translucent',
+  },
+  formatDetection: {
+    telephone: false,
+  },
+}
+
+
+export const viewport = {
+  themeColor: '#0a0a0c',
+  width: 'device-width',
+  initialScale: 1,
+  maximumScale: 1,
+  userScalable: false,
 }
 
 export default function RootLayout({ children }) {
@@ -64,6 +83,7 @@ export default function RootLayout({ children }) {
         <Footer />
         <ClientScripts />
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+        <PWARegister />
       </body>
     </html>
   )

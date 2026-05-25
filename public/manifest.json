@@ -1,0 +1,29 @@
+{
+  "name": "Malpani M SoulStrings",
+  "short_name": "M SoulStrings",
+  "description": "Ultra-premium 3 & 4 BHK Luxury Estates in Baner, Pune.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#0a0a0c",
+  "theme_color": "#0a0a0c",
+  "orientation": "portrait-primary",
+  "icons": [
+    {
+      "src": "/favicon.ico",
+      "sizes": "64x64 32x32 24x24 16x16",
+      "type": "image/x-icon"
+    },
+    {
+      "src": "https://www.malpaniestates.com/assets/images/apple-touch-icon.png",
+      "type": "image/png",
+      "sizes": "192x192",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "https://www.malpaniestates.com/assets/images/apple-touch-icon.png",
+      "type": "image/png",
+      "sizes": "512x512",
+      "purpose": "any maskable"
+    }
+  ]
+}
