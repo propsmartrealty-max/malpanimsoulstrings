@@ -1,6 +1,7 @@
 import SchemaMarkup from '@/components/SchemaMarkup';
 import Image from 'next/image';
 import VRModal from '@/components/VRModal';
+import InteractiveMasterplan from '@/components/InteractiveMasterplan';
 
 export default function Home() {
   return (

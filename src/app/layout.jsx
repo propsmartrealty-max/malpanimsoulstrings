@@ -2,6 +2,7 @@ import './globals.css'
 import Navbar from '@/components/Navbar'
 import Footer from '@/components/Footer'
 import ClientScripts from '@/components/ClientScripts'
+import ThemeProvider from '@/components/ThemeProvider'
 
 export const metadata = {
   metadataBase: new URL('https://www.malpanimsoulstrings.com'),
@@ -44,10 +45,22 @@ export default function RootLayout({ children }) {
       <head>
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" />
         <link rel="stylesheet" href="/style.css" />
+      
+        <script
+          dangerouslySetInnerHTML={{
+            __html: `
+              (function(c,l,a,r,i,t,y){
+                  c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
+                  t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
+                  y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
+              })(window, document, "clarity", "script", "your_clarity_project_id");
+            `,
+          }}
+        />
       </head>
       <body>
         <Navbar />
-        {children}
+        <ThemeProvider>{children}</ThemeProvider>
         <Footer />
         <ClientScripts />
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
