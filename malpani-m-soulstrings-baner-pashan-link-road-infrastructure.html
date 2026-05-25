@@ -259,7 +259,7 @@
           <button id="theme-toggle" aria-label="Toggle Dark Mode" style="background: none; border: none; color: var(--color-text); cursor: pointer; display: flex; align-items: center; justify-content: center; width: 40px; height: 40px; border-radius: 50%; border: 1px solid rgba(212,175,55,0.3); transition: var(--transition-smooth);">
             <span class="material-symbols-outlined" id="theme-icon">light_mode</span>
           </button>
-          <a href="#contact" class="btn btn-primary" id="header-enquire">Enquire Now</a>
+          <a href="#" data-bs-toggle="modal" data-bs-target="#enquireModal" class="btn btn-primary" id="header-enquire">Enquire Now</a>
           <button id="hamburger-toggle" aria-label="Open Mobile Menu" style="background: none; border: none; color: var(--color-text); cursor: pointer; display: flex; align-items: center; margin-left: 1rem;">
             <span class="material-symbols-outlined" style="font-size: 2.5rem;">menu</span>
           </button>
@@ -320,7 +320,7 @@
                 <a href="malpani-m-soulstrings-baner-pashan-link-road-nri-investment.html" class="btn btn-outline" style="border: 1px solid var(--color-accent); padding: 0.5rem 1rem; color: var(--color-text); text-decoration: none;">NRI Investment Metrics</a>
             </div>
             <br><br>
-            <a href="index.html#contact" class="btn btn-primary" style="font-size: 1.2rem; padding: 1rem 3rem;">Enquire for M SoulStrings</a>
+            <a href="#" data-bs-toggle="modal" data-bs-target="#enquireModal" class="btn btn-primary" style="font-size: 1.2rem; padding: 1rem 3rem;">Enquire for M SoulStrings</a>
         </div>
       </div>
     </section>
@@ -362,7 +362,7 @@
         <span class="material-symbols-outlined" style="font-size: 4rem; color: var(--color-primary); margin-bottom: 1rem;">vpn_key</span>
         <h2 style="font-size: 2rem; color: #fff; margin-bottom: 1rem;">Before You Go...</h2>
         <p style="color: rgba(255,255,255,0.8); margin-bottom: 2rem; font-size: 1.1rem;">Would you like an exclusive, private 360° VR link sent directly to your WhatsApp?</p>
-        <a href="#contact" id="exit-accept" class="btn btn-primary pulse-vip" style="display: inline-block; width: 100%;">Yes, Send Me The VIP Link</a>
+        <a href="#" data-bs-toggle="modal" data-bs-target="#enquireModal" id="exit-accept" class="btn btn-primary pulse-vip" style="display: inline-block; width: 100%;">Yes, Send Me The VIP Link</a>
       </div>
     </div>
     
@@ -379,7 +379,57 @@
     <div class="mobile-sticky-cta">
         <div class="cta-container">
             <a href="#floor-plans" class="cta-brochure">Floor Plans</a>
-            <a href="#contact" class="cta-enquire">Enquire Now</a>
+            <a href="#" data-bs-toggle="modal" data-bs-target="#enquireModal" class="cta-enquire">Enquire Now</a>
+        </div>
+    </div>
+
+
+    <!-- Global Enquire Now Modal -->
+    <div class="modal fade" id="enquireModal" tabindex="-1" aria-labelledby="enquireModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content" style="background-color: #111; border: 1px solid rgba(212, 175, 55, 0.3); border-radius: 12px; color: #fff;">
+                <div class="modal-header" style="border-bottom: 1px solid rgba(255,255,255,0.1);">
+                    <h5 class="modal-title" id="enquireModalLabel" style="color: #d4af37;">Enquire Now</h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <!-- Web3Forms Serverless Backend -->
+                    <form action="https://api.web3forms.com/submit" method="POST">
+                        <!-- Replace this with your actual Web3Forms Access Key -->
+                        <input type="hidden" name="access_key" value="YOUR_ACCESS_KEY_HERE">
+                        
+                        <div class="mb-3">
+                            <label for="name" class="form-label text-white-50">Full Name</label>
+                            <input type="text" class="form-control bg-dark text-white border-secondary" name="name" id="name" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="phone" class="form-label text-white-50">Phone Number</label>
+                            <input type="tel" class="form-control bg-dark text-white border-secondary" name="phone" id="phone" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="email" class="form-label text-white-50">Email Address</label>
+                            <input type="email" class="form-control bg-dark text-white border-secondary" name="email" id="email" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="config" class="form-label text-white-50">Interested In</label>
+                            <select class="form-select bg-dark text-white border-secondary" name="config" id="config" required>
+                                <option value="" disabled selected>Select Configuration</option>
+                                <option value="3 BHK">3 BHK Luxury</option>
+                                <option value="4 BHK">4 BHK Luxury</option>
+                                <option value="Commercial">Commercial / Retail</option>
+                            </select>
+                        </div>
+                        
+                        <!-- Custom Web3Forms redirects/spam protection -->
+                        <input type="hidden" name="subject" value="New Lead: Malpani M SoulStrings">
+                        <input type="checkbox" name="botcheck" class="hidden" style="display: none;">
+                        
+                        <div class="d-grid mt-4">
+                            <button type="submit" class="btn btn-primary py-2" style="font-weight: bold; font-size: 1.1rem;">Submit Inquiry</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
         </div>
     </div>
 
