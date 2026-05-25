@@ -5,10 +5,11 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "vite build",
+    "build": "node build-blog.cjs && vite build",
     "preview": "vite preview"
   },
   "devDependencies": {
+    "marked": "^18.0.4",
     "vite": "^8.0.12"
   }
 }
