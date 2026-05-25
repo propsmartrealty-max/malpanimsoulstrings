@@ -2,7 +2,7 @@ User-agent: *
 Allow: /
 
 # Sitemap Location
-Sitemap: https://www.malpanimsoul.com/sitemap.xml
+Sitemap: https://www.malpanimsoulstrings.com/sitemap.xml
 
 # Block useless crawling
 Disallow: /cgi-bin/
