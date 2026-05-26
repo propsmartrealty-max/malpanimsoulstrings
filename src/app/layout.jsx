@@ -84,6 +84,16 @@ export default function RootLayout({ children }) {
         <Footer />
         <ClientScripts />
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+        
+        {/* Global WhatsApp Floating Widget */}
+        <a href="https://api.whatsapp.com/send?phone=917744009295&text=Hello,%20I%20would%20like%20to%20enquire%20about%20Malpani%20M%20SoulStrings" 
+           className="whatsapp-float" 
+           target="_blank" 
+           rel="noopener noreferrer"
+           style={{ zIndex: 9999, display: 'flex', alignItems: 'center', justifyContent: 'center', textDecoration: 'none' }}>
+           <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp" style={{ width: '35px', height: '35px' }} />
+        </a>
+
         <EnquireModal />
         <PWARegister />
       </body>
