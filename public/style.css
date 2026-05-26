@@ -168,17 +168,71 @@ h1, h2, h3, h4, h5, h6 {
   align-items: center;
 }
 
+.brand {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  text-decoration: none;
+  color: inherit;
+}
+
+.brand-logo {
+  height: 40px;
+  width: auto;
+}
+
 .brand-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   font-family: var(--font-heading);
-  font-size: 1.25rem;
   line-height: 1.1;
   color: var(--color-text);
   letter-spacing: 2px;
 }
 
-.brand-text b {
+.brand-title {
+  font-size: 1.25rem;
+}
+
+.brand-subtitle {
   color: var(--color-primary);
   font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.nav-actions {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.theme-btn {
+  background: none;
+  border: 1px solid rgba(212,175,55,0.3);
+  color: var(--color-text);
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  transition: var(--transition-smooth);
+}
+
+.hamburger-btn {
+  background: none;
+  border: none;
+  color: var(--color-text);
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  margin-left: 1rem;
+}
+
+.hamburger-icon {
+  font-size: 2.5rem;
 }
 
 .nav-links {
@@ -1076,6 +1130,65 @@ body.light-theme .overlay-menu {
   
   .section {
     padding: 4rem 0;
+  }
+
+  /* Mobile Navbar Optimizations */
+  .nav-container {
+    padding: 0 0.5rem;
+  }
+
+  .brand {
+    gap: 4px;
+  }
+  
+  .brand-logo {
+    height: 28px;
+    width: auto;
+  }
+
+  .brand-text {
+    letter-spacing: 0;
+    line-height: 1.1;
+  }
+
+  .brand-title {
+    font-size: 0.75rem;
+  }
+
+  .brand-subtitle {
+    font-size: 0.9rem;
+  }
+
+  .nav-actions {
+    gap: 0.25rem;
+  }
+
+  .theme-btn {
+    width: 28px;
+    height: 28px;
+  }
+
+  .theme-btn .material-symbols-outlined {
+    font-size: 1rem;
+  }
+
+  .header-enquire {
+    padding: 0.3rem 0.5rem;
+    font-size: 0.65rem;
+    letter-spacing: 0;
+    white-space: nowrap;
+  }
+
+  .hamburger-btn {
+    margin-left: 0;
+  }
+
+  .hamburger-icon {
+    font-size: 1.75rem;
+  }
+
+  .overlay-link {
+    font-size: 2rem;
   }
 }
 

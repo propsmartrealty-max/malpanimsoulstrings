@@ -6,17 +6,20 @@ export default function Navbar() {
     <>
       <nav className="navbar">
         <div className="nav-container">
-          <Link href="/" className="brand" style={{ display: 'flex', alignItems: 'center', gap: '10px', textDecoration: 'none', color: 'inherit' }}>
-            <Image src="https://www.malpaniestates.com/assets/images/apple-touch-icon.png" alt="Malpani M SoulStrings" width={40} height={40} style={{ height: '40px', width: 'auto' }} />
-            <span className="brand-text">MALPANI<br/><b>M SoulStrings</b></span>
+          <Link href="/" className="brand">
+            <Image src="https://www.malpaniestates.com/assets/images/apple-touch-icon.png" alt="Malpani M SoulStrings" width={40} height={40} className="brand-logo" />
+            <span className="brand-text">
+              <span className="brand-title">MALPANI</span>
+              <b className="brand-subtitle">M SoulStrings</b>
+            </span>
           </Link>
-          <div className="nav-actions" style={{ display: 'flex', alignItems: 'center', gap: '1rem' }}>
-            <button id="theme-toggle" aria-label="Toggle Dark Mode" style={{ background: 'none', border: 'none', color: 'var(--color-text)', cursor: 'pointer', display: 'flex', alignItems: 'center', justifyContent: 'center', width: '40px', height: '40px', borderRadius: '50%', border: '1px solid rgba(212,175,55,0.3)', transition: 'var(--transition-smooth)' }}>
+          <div className="nav-actions">
+            <button id="theme-toggle" className="theme-btn" aria-label="Toggle Dark Mode">
               <span className="material-symbols-outlined" id="theme-icon">light_mode</span>
             </button>
-            <a href="#" data-bs-toggle="modal" data-bs-target="#enquireModal" className="btn btn-primary" id="header-enquire">Enquire Now</a>
-            <button id="hamburger-toggle" aria-label="Open Mobile Menu" style={{ background: 'none', border: 'none', color: 'var(--color-text)', cursor: 'pointer', display: 'flex', alignItems: 'center', marginLeft: '1rem' }}>
-              <span className="material-symbols-outlined" style={{ fontSize: '2.5rem' }}>menu</span>
+            <a href="#" data-bs-toggle="modal" data-bs-target="#enquireModal" className="btn btn-primary header-enquire">Enquire Now</a>
+            <button id="hamburger-toggle" className="hamburger-btn" aria-label="Open Mobile Menu">
+              <span className="material-symbols-outlined hamburger-icon">menu</span>
             </button>
           </div>
         </div>
