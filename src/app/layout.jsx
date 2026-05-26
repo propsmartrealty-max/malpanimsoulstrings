@@ -4,6 +4,7 @@ import Footer from '@/components/Footer'
 import ClientScripts from '@/components/ClientScripts'
 import ThemeProvider from '@/components/ThemeProvider'
 import PWARegister from '@/components/PWARegister'
+import EnquireModal from '@/components/EnquireModal'
 
 export const metadata = {
   metadataBase: new URL('https://www.malpanimsoulstrings.com'),
@@ -83,6 +84,7 @@ export default function RootLayout({ children }) {
         <Footer />
         <ClientScripts />
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+        <EnquireModal />
         <PWARegister />
       </body>
     </html>

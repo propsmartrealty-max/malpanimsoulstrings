@@ -413,19 +413,19 @@ export default function Home() {
         <div className="contact-form-container">
           <form id="smart-contact-form" className="contact-form">
             <div className="form-group floating-label-group">
-              <input type="text" id="name" required className="floating-input" placeholder=" " />
+              <input type="text" id="name" name="name" required className="floating-input" placeholder=" " />
               <label htmlFor="name" className="floating-label">Full Name</label>
             </div>
             <div className="form-group floating-label-group">
-              <input type="email" id="email" required className="floating-input" placeholder=" " />
+              <input type="email" id="email" name="email" required className="floating-input" placeholder=" " />
               <label htmlFor="email" className="floating-label">Email Address</label>
             </div>
             <div className="form-group floating-label-group">
-              <input type="tel" id="phone" pattern="[0-9]{10}" required className="floating-input" placeholder=" " />
+              <input type="tel" id="phone" name="phone" pattern="[0-9]{10}" required className="floating-input" placeholder=" " />
               <label htmlFor="phone" className="floating-label">Phone Number (10 digits)</label>
             </div>
             <button type="submit" className="btn btn-primary btn-block">Submit Enquiry</button>
-            <div id="form-success-msg" >✓ Thank you! Our luxury consultant will contact you shortly.</div>
+            <div id="form-success-msg" style={{ display: 'none', color: '#28a745', marginTop: '1rem' }}>✓ Thank you! Our luxury consultant will contact you shortly.</div>
           </form>
         </div>
       </div>
