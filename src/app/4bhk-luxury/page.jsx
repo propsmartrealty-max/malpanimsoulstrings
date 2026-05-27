@@ -1,3 +1,8 @@
+export const metadata = {
+  title: '4 BHK Luxury Estates in Baner | Premium Residences Pune',
+  description: 'Explore the most expansive 4 BHK luxury Estates in the Baner Pashan Link Road real estate market. Vastu-compliant, smart home automation, and 35+ amenities.',
+};
+
 export default function HubPage() {
   return (
     <main>
