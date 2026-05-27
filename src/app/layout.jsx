@@ -14,7 +14,7 @@ export const metadata = {
     template: '%s | Malpani M SoulStrings'
   },
   description: 'Discover Malpani M SoulStrings, the pinnacle of Pune Real Estate. Ultra-premium 3BHK and 4BHK luxury Estates in Baner-Pashan Link Road. A prime investment for NRIs.',
-  keywords: ['Malpani Baner', 'M SoulStrings', '4 BHK Baner', 'Pune Luxury Real Estate', 'NRI property investment'],
+  keywords: ['Malpani M SoulStrings', 'Malpani m soulstrings baner pashan link road', 'Malpani M soultraings', 'Malpani estates baner', '3 BHK Baner Pashan Link Road', '4 BHK Baner Pashan Link Road', 'Pune Luxury Real Estate', 'Malpani Baner'],
   openGraph: {
     title: 'Malpani M SoulStrings - 3 & 4 BHK Luxury Residences in Baner',
     description: 'Premium residential project offering spacious 3 BHK and 4 BHK Estates with over 35+ state-of-the-art amenities at Baner-Pashan Link Road, Pune.',

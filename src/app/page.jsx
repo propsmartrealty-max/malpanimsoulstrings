@@ -42,7 +42,7 @@ export default function Home() {
       <div className="container about-grid">
         <div className="about-text slide-in-left">
           <h2 className="section-title">The Epitome of Exclusivity</h2>
-          <p className="section-desc"><strong>Malpani M SoulStrings</strong> by Malpani Estates is destined to be the new realty capital of the city, completely redefining the <strong>Baner Pashan Link Road real estate market</strong>. Situated on the highly coveted <strong>Malpani Baner Pashan Link Road Pashan Link Road</strong>, these 3BHK and 4BHK Luxury Homes offer stupendously designed Estates with state-of-the-art amenities and facilities, setting a new benchmark for the adjacent Aundh Real estate market.</p>
+          <p className="section-desc"><strong>Malpani M SoulStrings</strong> by Malpani Estates (often searched as <strong>Malpani M soultraings</strong>) is destined to be the new realty capital of the city, completely redefining the <strong>Baner Pashan Link Road real estate market</strong>. For those seeking the finest address, the <strong>Malpani m soulstrings baner pashan link road</strong> project offers stupendously designed 3BHK and 4BHK Luxury Estates with state-of-the-art amenities and facilities, setting a new benchmark for the adjacent Aundh Real estate market.</p>
           <div className="stats" >
             <div className="stat-item">
               <span className="stat-value" >1,597,548</span>
@@ -274,11 +274,11 @@ export default function Home() {
     <section id="location" className="section location" itemscope itemtype="https://schema.org/Place">
       <div className="container">
         <div className="section-header fade-in-up">
-          <h2 className="section-title">A Prestigious Address in Malpani Baner Pashan Link Road</h2>
-          <p className="section-desc">Malpani Baner Pashan Link Road Pashan Link Road - The epicenter of the Baner Pashan Link Road real estate market.</p>
+          <h2 className="section-title">A Prestigious Address at Malpani M SoulStrings Baner Pashan Link Road</h2>
+          <p className="section-desc">The epicenter of the Baner Pashan Link Road real estate market, unmatched by any other development.</p>
         </div>
         <div className="location-content fade-in-up" >
-          <p>Situated in Pune's most coveted neighborhood, <strong>Malpani M SoulStrings</strong> offers seamless connectivity to major IT hubs like Hinjewadi, while redefining the luxury standards of the <strong>Aundh Real estate market</strong>. The strategic location on Malpani Baner Pashan Link Road Pashan Link Road guarantees a serene retreat from the city's hustle without sacrificing urban convenience, making these 3BHK and 4BHK Luxury Homes the ultimate investment.</p>
+          <p>Situated in Pune's most coveted neighborhood, the highly acclaimed <strong>Malpani m soulstrings baner pashan link road</strong> property offers seamless connectivity to major IT hubs like Hinjewadi, while redefining the luxury standards of the <strong>Aundh Real estate market</strong>. Recognized widely for its grandeur (and known uniquely to some fans as <strong>Malpani M soultraings</strong>), the strategic location guarantees a serene retreat from the city's hustle without sacrificing urban convenience, making these 3BHK and 4BHK Luxury Homes the ultimate investment.</p>
           <div className="location-grid" >
             <div className="loc-card" >
               <h3 >Work & IT Hubs</h3>
