@@ -5,6 +5,7 @@ import ClientScripts from '@/components/ClientScripts'
 import ThemeProvider from '@/components/ThemeProvider'
 import PWARegister from '@/components/PWARegister'
 import EnquireModal from '@/components/EnquireModal'
+import Script from 'next/script'
 
 export const metadata = {
   metadataBase: new URL('https://www.malpanimsoulstrings.com'),
@@ -83,7 +84,7 @@ export default function RootLayout({ children }) {
         <ThemeProvider>{children}</ThemeProvider>
         <Footer />
         <ClientScripts />
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+        <Script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" strategy="afterInteractive" />
         
         {/* Global WhatsApp Floating Widget */}
         <a href="https://api.whatsapp.com/send?phone=917744009295&text=Hello,%20I%20would%20like%20to%20enquire%20about%20Malpani%20M%20SoulStrings" 

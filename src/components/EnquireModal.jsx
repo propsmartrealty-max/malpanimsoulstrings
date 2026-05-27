@@ -44,7 +44,7 @@ export default function EnquireModal() {
   };
 
   return (
-    <div className="modal fade" id="enquireModal" tabIndex="-1" aria-labelledby="enquireModalLabel" aria-hidden="true">
+    <div className="modal fade" id="enquireModal" tabIndex="-1" aria-labelledby="enquireModalLabel" aria-hidden="true" style={{ display: 'none' }}>
       <div className="modal-dialog modal-dialog-centered">
         <div className="modal-content" style={{ background: '#0a0a0c', border: '1px solid rgba(212, 175, 55, 0.3)', borderRadius: '16px', boxShadow: '0 25px 50px -12px rgba(0, 0, 0, 0.8)' }}>
           <div className="modal-header" style={{ borderBottom: '1px solid rgba(212, 175, 55, 0.1)', padding: '2rem 2rem 1rem' }}>

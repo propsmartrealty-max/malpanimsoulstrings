@@ -172,9 +172,30 @@ export default function ClientScripts() {
       brochureForm.addEventListener('submit', onBrochureSubmit);
     }
 
+    // Global Modal Trigger Fix for Next.js
+    const handleModalToggle = (e) => {
+      const toggleBtn = e.target.closest('[data-bs-toggle="modal"]');
+      if (toggleBtn) {
+        e.preventDefault();
+        const targetSelector = toggleBtn.getAttribute('data-bs-target');
+        if (targetSelector) {
+          const modalEl = document.querySelector(targetSelector);
+          if (modalEl && typeof window !== 'undefined' && window.bootstrap) {
+            let modalInstance = window.bootstrap.Modal.getInstance(modalEl);
+            if (!modalInstance) {
+              modalInstance = new window.bootstrap.Modal(modalEl);
+            }
+            modalInstance.show();
+          }
+        }
+      }
+    };
+    document.addEventListener('click', handleModalToggle);
+
     // Cleanup
     return () => {
       document.removeEventListener('mousemove', onMouseMove);
+      document.removeEventListener('click', handleModalToggle);
       window.removeEventListener('scroll', onScroll);
       interactables.forEach(el => {
         el.removeEventListener('mouseenter', onMouseEnter);
