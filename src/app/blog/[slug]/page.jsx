@@ -4,7 +4,7 @@ import { marked } from 'marked';
 
 // Tell Next.js to pre-render all blog posts at build time (SSG)
 export async function generateStaticParams() {
-  const contentDir = path.join(process.cwd(), 'content', 'blog');
+  const contentDir = path.join(process.cwd(), 'src', 'content', 'blog');
   let files = [];
   try {
     files = fs.readdirSync(contentDir).filter(f => f.endsWith('.md'));
@@ -24,10 +24,7 @@ export async function generateMetadata({ params }) {
   let description = 'Read the latest real estate insights from Malpani M SoulStrings.';
 
   if (fs.existsSync(filePath)) {
-    const fileContents = fs.readFileSync(filePath, 'utf8');
-    const { data } = matter(fileContents);
-    if (data.title) title = data.title;
-    if (data.description) description = data.description;
+    // Basic SEO fallback if needed, but slug works best for exact match
   }
 
   return {
@@ -45,7 +42,7 @@ export async function generateMetadata({ params }) {
 export default async function BlogPost({ params }) {
   const { slug } = await params;
   
-  const contentDir = path.join(process.cwd(), 'content', 'blog');
+  const contentDir = path.join(process.cwd(), 'src', 'content', 'blog');
   const filePath = path.join(contentDir, `${slug}.md`);
   
   let htmlContent = '';
