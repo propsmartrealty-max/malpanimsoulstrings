@@ -13,9 +13,11 @@ export default function Home() {
         <div className="hero-overlay"></div>
       </div>
       <div className="hero-content">
-        <h1 className="hero-title split-text">
-          <div className="line"><span className="word">The</span> <span className="word">Masterpiece</span> <span className="word">of</span></div>
-          <div className="line"><span className="word">West</span> <span className="word">Pune</span></div>
+        <h1 className="hero-title split-text" style={{ display: 'flex', flexDirection: 'column', gap: '0.5rem' }}>
+          <div className="line"><span className="word">Malpani</span> <span className="word">M</span> <span className="word">SoulStrings</span></div>
+          <div className="line" style={{ fontSize: 'clamp(1rem, 2vw, 1.5rem)', fontWeight: '400', letterSpacing: '3px', textTransform: 'uppercase', color: 'rgba(255,255,255,0.8)' }}>
+            <span className="word">Luxury 3 & 4 BHK Estates in Baner, Pune</span>
+          </div>
         </h1>
         <p className="hero-subtitle fade-in-up" >The Preferred Choice for Elite Buyers from Aundh, Shivajinagar, Balewadi, and Wakad.</p>
         <a href="#masterpiece" className="btn btn-outline pulse-vip fade-in-up" >Enter The Legacy</a>

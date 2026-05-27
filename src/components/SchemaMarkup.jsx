@@ -45,7 +45,7 @@ export default function SchemaMarkup() {
         "image": "https://www.malpanimsoulstrings.com/favicon.ico",
         "@id": "https://www.malpanimsoulstrings.com/#organization",
         "url": "https://www.malpanimsoulstrings.com/",
-        "telephone": "+91 0000000000",
+        "telephone": "+91 7744009295",
         "address": {
           "@type": "PostalAddress",
           "streetAddress": "Baner Pashan Link Road",
@@ -54,6 +54,33 @@ export default function SchemaMarkup() {
           "postalCode": "411021",
           "addressCountry": "IN"
         }
+      },
+      {
+        "@type": "ApartmentComplex",
+        "name": "Malpani M SoulStrings",
+        "description": "Ultra-premium 3 & 4 BHK Luxury Estates in Baner, Pune.",
+        "url": "https://www.malpanimsoulstrings.com/",
+        "telephone": "+91 7744009295",
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "Baner Pashan Link Road",
+          "addressLocality": "Pune",
+          "addressRegion": "MH",
+          "postalCode": "411021",
+          "addressCountry": "IN"
+        },
+        "amenityFeature": [
+          {
+            "@type": "LocationFeatureSpecification",
+            "name": "Swimming Pool",
+            "value": "True"
+          },
+          {
+            "@type": "LocationFeatureSpecification",
+            "name": "Clubhouse",
+            "value": "True"
+          }
+        ]
       }
     ]
   };
