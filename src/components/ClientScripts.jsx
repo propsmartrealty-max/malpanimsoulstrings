@@ -12,50 +12,6 @@ export default function ClientScripts() {
       setTimeout(() => preloader.remove(), 800);
     }
 
-    // Hamburger Menu Logic
-    const hamburgerBtn = document.getElementById('hamburger-toggle');
-    const closeOverlayBtn = document.getElementById('close-overlay');
-    const overlayMenu = document.getElementById('overlay-menu');
-    const overlayLinks = document.querySelectorAll('.overlay-link');
-
-    const toggleMenu = () => {
-      if (overlayMenu) {
-        overlayMenu.classList.toggle('active');
-        if (overlayMenu.classList.contains('active')) {
-          overlayMenu.style.transform = 'translateY(0)';
-          overlayMenu.style.opacity = '1';
-          overlayMenu.style.visibility = 'visible';
-        } else {
-          overlayMenu.style.transform = 'translateY(-100%)';
-          overlayMenu.style.opacity = '0';
-          setTimeout(() => {
-            if (!overlayMenu.classList.contains('active')) {
-               overlayMenu.style.visibility = 'hidden';
-            }
-          }, 400);
-        }
-      }
-    };
-
-    if (hamburgerBtn) hamburgerBtn.addEventListener('click', toggleMenu);
-    if (closeOverlayBtn) closeOverlayBtn.addEventListener('click', toggleMenu);
-    overlayLinks.forEach(link => link.addEventListener('click', () => {
-      if (overlayMenu && overlayMenu.classList.contains('active')) toggleMenu();
-    }));
-
-    // Theme Toggle Logic
-    const themeToggle = document.getElementById('theme-toggle');
-    const themeIcon = document.getElementById('theme-icon');
-    const onThemeToggle = () => {
-      document.body.classList.toggle('light-theme');
-      if(document.body.classList.contains('light-theme')) {
-        if(themeIcon) themeIcon.textContent = 'dark_mode';
-      } else {
-        if(themeIcon) themeIcon.textContent = 'light_mode';
-      }
-    };
-    themeToggle?.addEventListener('click', onThemeToggle);
-
     // Navbar scroll effect & Parallax
     const navbar = document.querySelector('.navbar');
     const sections = document.querySelectorAll('section');
@@ -209,12 +165,9 @@ export default function ClientScripts() {
     return () => {
       document.removeEventListener('click', handleModalToggle);
       window.removeEventListener('scroll', onScroll);
-      themeToggle?.removeEventListener('click', onThemeToggle);
       observer.disconnect();
       smartForm?.removeEventListener('submit', onSmartSubmit);
       brochureForm?.removeEventListener('submit', onBrochureSubmit);
-      if (hamburgerBtn) hamburgerBtn.removeEventListener('click', toggleMenu);
-      if (closeOverlayBtn) closeOverlayBtn.removeEventListener('click', toggleMenu);
     };
   }, []);
 
