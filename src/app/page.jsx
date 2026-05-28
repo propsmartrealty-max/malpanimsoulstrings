@@ -404,8 +404,8 @@ export default function Home() {
     <section id="contact" className="section contact">
       <div className="container contact-wrapper fade-in-up">
         <div className="contact-info">
-          <h2 className="section-title gradient-text">Register Your Interest</h2>
-          <p>Be among the exclusive few to experience Malpani M SoulStrings.</p>
+          <h2 className="section-title gradient-text">Schedule Site Visit Malpani Soulstrings</h2>
+          <p>Get exclusive <strong>Malpani Soulstrings pricing</strong> and browse the finest <strong>luxury flats for sale Baner</strong>.</p>
           <div className="contact-details" >
             <p ><span className="material-symbols-outlined" >location_on</span> Malpani Baner Pashan Link Road Pashan Link Road, Pune</p>
             <p ><span className="material-symbols-outlined" >call</span> +91 98765 43210</p>
@@ -426,8 +426,8 @@ export default function Home() {
               <input type="tel" id="phone" name="phone" pattern="[0-9]{10}" required className="floating-input" placeholder=" " />
               <label htmlFor="phone" className="floating-label">Phone Number (10 digits)</label>
             </div>
-            <button type="submit" className="btn btn-primary btn-block">Submit Enquiry</button>
-            <div id="form-success-msg" style={{ display: 'none', color: '#28a745', marginTop: '1rem' }}>✓ Thank you! Our luxury consultant will contact you shortly.</div>
+            <button type="submit" className="btn btn-primary btn-block">Download Malpani Soulstrings Brochure</button>
+            <div id="form-success-msg" style={{ display: 'none', color: '#28a745', marginTop: '1rem' }}>✓ Thank you! Our luxury consultant will contact you shortly to Book Luxury Flat in Baner.</div>
           </form>
         </div>
       </div>
