@@ -39,7 +39,7 @@ export const metadata = {
     images: ['https://malpani-cms.firsteconomy.com/uploads/M_soul_strings_Desktop_Banner_Without_Text_0d38ce28d4.jpg'],
   },
   alternates: {
-    canonical: '/',
+    // Next.js metadataBase auto-resolves canonical URLs per route when undefined
   },
   robots: {
     index: true,

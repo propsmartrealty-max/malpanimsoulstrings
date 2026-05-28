@@ -35,7 +35,8 @@ export default function Footer() {
             <p style={{ fontSize: '0.8rem', color: 'rgba(255,255,255,0.3)', marginBottom: '0.5rem' }}>Popular Searches:</p>
             <div style={{ display: 'flex', flexWrap: 'wrap', justifyContent: 'center', gap: '15px' }}>
               <Link href="/" style={{ fontSize: '0.75rem', color: 'rgba(255,255,255,0.4)', textDecoration: 'none' }}>Malpani m soulstrings baner pashan link road</Link>
-              <Link href="/blog/malpani-m-soultraings-pune" style={{ fontSize: '0.75rem', color: 'rgba(255,255,255,0.4)', textDecoration: 'none' }}>Malpani M soultraings</Link>
+              <Link href="/blog/malpani-group-luxury-projects-pune" style={{ fontSize: '0.75rem', color: 'rgba(255,255,255,0.4)', textDecoration: 'none' }}>Malpani Group Luxury Projects</Link>
+              <Link href="/blog/best-luxury-apartments-in-baner-pune" style={{ fontSize: '0.75rem', color: 'rgba(255,255,255,0.4)', textDecoration: 'none' }}>Best Luxury Apartments Baner</Link>
               <Link href="/blog/malpani-m-soulstrings-baner-pashan-link-road" style={{ fontSize: '0.75rem', color: 'rgba(255,255,255,0.4)', textDecoration: 'none' }}>M SoulStrings Pune</Link>
               <Link href="/4bhk-luxury" style={{ fontSize: '0.75rem', color: 'rgba(255,255,255,0.4)', textDecoration: 'none' }}>4 BHK Luxury Estates Pune</Link>
             </div>

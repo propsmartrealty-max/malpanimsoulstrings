@@ -2,7 +2,7 @@ import fs from 'fs';
 import path from 'path';
 
 export default function BlogIndex() {
-  const contentDir = path.join(process.cwd(), 'content', 'blog');
+  const contentDir = path.join(process.cwd(), 'src', 'content', 'blog');
   let files = [];
   try {
     files = fs.readdirSync(contentDir).filter(f => f.endsWith('.md'));
