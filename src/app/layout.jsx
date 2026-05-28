@@ -58,6 +58,20 @@ export const metadata = {
     title: 'M SoulStrings',
     statusBarStyle: 'black-translucent',
   },
+  applicationName: 'Malpani M SoulStrings',
+  referrer: 'origin-when-cross-origin',
+  authors: [{ name: 'Malpani Group' }],
+  creator: 'Malpani Group',
+  publisher: 'Malpani Group',
+  category: 'Real Estate',
+  verification: {
+    google: 'insert-google-verification-code-here',
+    yandex: 'insert-yandex-verification-code-here',
+    yahoo: 'insert-yahoo-verification-code-here',
+    other: {
+      'msvalidate.01': 'insert-bing-verification-code-here',
+    },
+  },
   formatDetection: {
     telephone: false,
   },

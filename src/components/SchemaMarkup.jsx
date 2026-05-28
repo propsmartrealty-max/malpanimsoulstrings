@@ -3,6 +3,40 @@ export default function SchemaMarkup() {
     "@context": "https://schema.org",
     "@graph": [
       {
+        "@type": "WebSite",
+        "@id": "https://www.malpanimsoulstrings.com/#website",
+        "url": "https://www.malpanimsoulstrings.com/",
+        "name": "Malpani M SoulStrings",
+        "description": "Ultra-premium 3 & 4 BHK Luxury Estates in Baner, Pune.",
+        "publisher": {
+          "@id": "https://www.malpanimsoulstrings.com/#organization"
+        },
+        "potentialAction": [
+          {
+            "@type": "SearchAction",
+            "target": {
+              "@type": "EntryPoint",
+              "urlTemplate": "https://www.malpanimsoulstrings.com/?s={search_term_string}"
+            },
+            "query-input": "required name=search_term_string"
+          }
+        ]
+      },
+      {
+        "@type": "Organization",
+        "@id": "https://www.malpanimsoulstrings.com/#organization",
+        "name": "Malpani Estates",
+        "url": "https://www.malpanimsoulstrings.com/",
+        "logo": {
+          "@type": "ImageObject",
+          "url": "https://www.malpanimsoulstrings.com/favicon.ico"
+        },
+        "sameAs": [
+          "https://www.facebook.com/malpanigroup/",
+          "https://www.instagram.com/malpanigroup/"
+        ]
+      },
+      {
         "@type": "BreadcrumbList",
         "itemListElement": [
           { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://www.malpanimsoulstrings.com/" },
