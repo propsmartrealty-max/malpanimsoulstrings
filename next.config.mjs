@@ -13,6 +13,11 @@ const nextConfig = {
         protocol: 'https',
         hostname: 'www.malpaniestates.com',
         pathname: '/**',
+      },
+      {
+        protocol: 'https',
+        hostname: 'upload.wikimedia.org',
+        pathname: '/**',
       }
     ],
     formats: ['image/avif', 'image/webp'],

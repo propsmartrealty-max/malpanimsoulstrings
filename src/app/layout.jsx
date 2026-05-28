@@ -6,6 +6,7 @@ import ThemeProvider from '@/components/ThemeProvider'
 import PWARegister from '@/components/PWARegister'
 import EnquireModal from '@/components/EnquireModal'
 import Script from 'next/script'
+import Image from 'next/image'
 
 export const metadata = {
   metadataBase: new URL('https://www.malpanimsoulstrings.com'),
@@ -103,7 +104,7 @@ export default function RootLayout({ children }) {
            target="_blank" 
            rel="noopener noreferrer"
            style={{ zIndex: 9999, display: 'flex', alignItems: 'center', justifyContent: 'center', textDecoration: 'none' }}>
-           <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp" style={{ width: '35px', height: '35px' }} />
+           <Image src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp" width={35} height={35} style={{ width: '35px', height: '35px' }} />
         </a>
 
         <EnquireModal />
