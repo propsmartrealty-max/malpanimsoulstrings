@@ -1056,12 +1056,12 @@ body.light-theme .overlay-menu {
   display: flex;
   flex-direction: column;
   text-align: center;
-  gap: 2rem;
+  gap: clamp(1rem, 2vh, 1.5rem);
 }
 
 .overlay-link {
   font-family: var(--font-heading);
-  font-size: 4rem;
+  font-size: clamp(1.5rem, 4vw, 2.8rem);
   color: var(--color-text);
   text-decoration: none;
   transition: var(--transition-smooth);
