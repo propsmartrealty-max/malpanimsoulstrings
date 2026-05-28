@@ -12,23 +12,36 @@ export default function ClientScripts() {
       setTimeout(() => preloader.remove(), 800);
     }
 
-    // Custom Cursor Logic
-    const cursor = document.getElementById('custom-cursor');
-    const onMouseMove = (e) => {
-      if(cursor) {
-        cursor.style.left = e.clientX + 'px';
-        cursor.style.top = e.clientY + 'px';
+    // Hamburger Menu Logic
+    const hamburgerBtn = document.getElementById('hamburger-toggle');
+    const closeOverlayBtn = document.getElementById('close-overlay');
+    const overlayMenu = document.getElementById('overlay-menu');
+    const overlayLinks = document.querySelectorAll('.overlay-link');
+
+    const toggleMenu = () => {
+      if (overlayMenu) {
+        overlayMenu.classList.toggle('active');
+        if (overlayMenu.classList.contains('active')) {
+          overlayMenu.style.transform = 'translateY(0)';
+          overlayMenu.style.opacity = '1';
+          overlayMenu.style.visibility = 'visible';
+        } else {
+          overlayMenu.style.transform = 'translateY(-100%)';
+          overlayMenu.style.opacity = '0';
+          setTimeout(() => {
+            if (!overlayMenu.classList.contains('active')) {
+               overlayMenu.style.visibility = 'hidden';
+            }
+          }, 400);
+        }
       }
     };
-    document.addEventListener('mousemove', onMouseMove);
-    
-    const interactables = document.querySelectorAll('a, button, .gallery-img, summary');
-    const onMouseEnter = () => cursor?.classList.add('hovered');
-    const onMouseLeave = () => cursor?.classList.remove('hovered');
-    interactables.forEach(el => {
-      el.addEventListener('mouseenter', onMouseEnter);
-      el.addEventListener('mouseleave', onMouseLeave);
-    });
+
+    if (hamburgerBtn) hamburgerBtn.addEventListener('click', toggleMenu);
+    if (closeOverlayBtn) closeOverlayBtn.addEventListener('click', toggleMenu);
+    overlayLinks.forEach(link => link.addEventListener('click', () => {
+      if (overlayMenu && overlayMenu.classList.contains('active')) toggleMenu();
+    }));
 
     // Theme Toggle Logic
     const themeToggle = document.getElementById('theme-toggle');
@@ -194,17 +207,14 @@ export default function ClientScripts() {
 
     // Cleanup
     return () => {
-      document.removeEventListener('mousemove', onMouseMove);
       document.removeEventListener('click', handleModalToggle);
       window.removeEventListener('scroll', onScroll);
-      interactables.forEach(el => {
-        el.removeEventListener('mouseenter', onMouseEnter);
-        el.removeEventListener('mouseleave', onMouseLeave);
-      });
       themeToggle?.removeEventListener('click', onThemeToggle);
       observer.disconnect();
       smartForm?.removeEventListener('submit', onSmartSubmit);
       brochureForm?.removeEventListener('submit', onBrochureSubmit);
+      if (hamburgerBtn) hamburgerBtn.removeEventListener('click', toggleMenu);
+      if (closeOverlayBtn) closeOverlayBtn.removeEventListener('click', toggleMenu);
     };
   }, []);
 
