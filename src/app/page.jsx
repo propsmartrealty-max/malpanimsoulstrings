@@ -2,8 +2,20 @@ import SchemaMarkup from '@/components/SchemaMarkup';
 import Image from 'next/image';
 import VRModal from '@/components/VRModal';
 import InteractiveMasterplan from '@/components/InteractiveMasterplan';
+import EmiCalculator from '@/components/EmiCalculator';
+import Testimonials from '@/components/Testimonials';
+import fs from 'fs';
+import path from 'path';
 
 export default function Home() {
+  const contentDir = path.join(process.cwd(), 'src', 'content', 'blog');
+  let blogFiles = [];
+  try {
+    blogFiles = fs.readdirSync(contentDir).filter(f => f.endsWith('.md')).slice(0, 3);
+  } catch (e) {
+    // Directory might not exist
+  }
+
   return (
     <main>
       <SchemaMarkup />
@@ -343,21 +355,37 @@ export default function Home() {
           <p className="section-desc">Discover why Malpani M SoulStrings is leading the Baner Pashan Link Road real estate market.</p>
         </div>
         <div className="blog-grid fade-in-up" >
-          <article className="blog-card" >
-            <h3 >Why Malpani Baner Pashan Link Road-Pashan Link Road is Pune's Most Sought-After Real Estate Destination</h3>
-            <p >The intersection of Malpani Baner Pashan Link Road and the serene Pashan hills has created an unmatched enclave. With premium locations like the Pan Card Club Road stretch commanding high valuations, investing here guarantees immense ROI for discerning buyers and NRIs alike.</p>
-            <a href="#" >Read More</a>
-          </article>
-          <article className="blog-card" >
-            <h3 >The 2024 Shift Toward 4BHK Luxury Homes in West Pune</h3>
-            <p >As the Baner Pashan Link Road real estate market evolves, property appreciation rates have surged to ₹10,500–₹15,000 per sq. ft. Post-pandemic trends show a massive shift towards spacious 4 BHK Estates, demanding ultra-premium specifications and world-class amenities like those found at M SoulStrings.</p>
-            <a href="#" >Read More</a>
-          </article>
-          <article className="blog-card" >
-            <h3 >Comparing Malpani Baner Pashan Link Road and the Aundh Real Estate Market</h3>
-            <p >While Aundh has been the traditional hub of luxury, the modern developments on Malpani Baner Pashan Link Road Pashan Link road are rapidly surpassing it. With better connectivity to Hinjewadi and newer infrastructure, Baner has cemented itself as the new "suburban luxury" capital of Pune.</p>
-            <a href="#" >Read More</a>
-          </article>
+          {blogFiles.map(file => {
+            const slug = file.replace('.md', '');
+            const title = slug.replace(/-/g, ' ').toUpperCase();
+            return (
+              <article key={slug} className="blog-card" style={{ display: 'flex', flexDirection: 'column', justifyContent: 'space-between' }}>
+                <h3 >{title}</h3>
+                <p >Explore the latest metrics, infrastructure updates, and luxury real estate trends in West Pune.</p>
+                <a href={`/blog/${slug}`} >Read More</a>
+              </article>
+            );
+          })}
+        </div>
+      </div>
+    </section>
+
+    {/* Social Proof Trust Engine */}
+    <Testimonials />
+
+    {/* Financial Upgrade Section */}
+    <section id="financials" className="py-5" style={{ background: 'var(--color-background)', borderTop: '1px solid rgba(212,175,55,0.1)' }}>
+      <div className="container">
+        <div className="row align-items-center">
+          <div className="col-lg-5 mb-5 mb-lg-0 fade-in-up">
+            <h2 className="display-5 fw-bold mb-4 gradient-text">Investment Estimator</h2>
+            <p style={{ color: 'var(--color-text-muted)', fontSize: '1.1rem', marginBottom: '2rem' }}>
+              Transition your capital into Pune's highest-appreciating asset class. Plan your investment parameters instantly and secure your legacy.
+            </p>
+          </div>
+          <div className="col-lg-7 fade-in-up">
+            <EmiCalculator />
+          </div>
         </div>
       </div>
     </section>
