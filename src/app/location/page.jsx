@@ -42,6 +42,18 @@ export default function LocationPage() {
 
             <h2>The Final Upgrade in West Pune</h2>
             <p>If you currently reside in Aundh and are looking for <strong>homes near Aundh Pune</strong>, or if you are seeking <strong>apartments near Sus Road</strong>, <strong>luxury homes near Bavdhan</strong>, or <strong>luxury flats near Wakad</strong>, this project is the ultimate destination. Experience <strong>premium living in Baner</strong>, secure the best <strong>Pashan premium apartments</strong>, and enjoy seamless access as one of the top <strong>luxury apartments near Pune Metro</strong> and <strong>premium residences near Chandni Chowk</strong>.</p>
+            
+            <div className="map-container fade-in-up" style={{ marginTop: '3rem', borderRadius: '16px', overflow: 'hidden', boxShadow: '0 10px 30px rgba(0,0,0,0.1)' }}>
+              <iframe 
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15129.803923485458!2d73.77457781519777!3d18.553715383561957!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bc2bec70409d57b%3A0xc6e4eb5fb6354ee9!2sBaner%20-%20Pashan%20Link%20Rd%2C%20Pune%2C%20Maharashtra!5e0!3m2!1sen!2sin!4v1716982400000!5m2!1sen!2sin" 
+                width="100%" 
+                height="450" 
+                style={{ border: 0, display: 'block' }} 
+                allowFullScreen="" 
+                loading="lazy" 
+                referrerPolicy="no-referrer-when-downgrade">
+              </iframe>
+            </div>
           </article>
 
           <aside className="sidebar">
