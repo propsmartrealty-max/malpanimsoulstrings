@@ -1,30 +1,38 @@
-export default function HubPage() {
+import Navbar from '../../components/Navbar';
+import Footer from '../../components/Footer';
+import SchemaMarkup from '../../components/SchemaMarkup';
+import EmiCalculator from '../../components/EmiCalculator';
+import Link from 'next/link';
+
+export const metadata = {
+  title: 'Pashan Serenity & Smart Luxury | Malpani M SoulStrings',
+  description: 'Where the natural beauty of Pashan meets the pinnacle of modern smart-home technology. Panoramic views and sustainable luxury.',
+};
+
+export default function PashanPage() {
   return (
     <main>
+      <Navbar />
+      <SchemaMarkup />
       
-
-    {/* Overlay Fullscreen Menu */}
-    <div id="overlay-menu" className="overlay-menu">
-      <button id="close-overlay" aria-label="Close Mobile Menu" >&times;</button>
-      <div className="overlay-content">
-        <a href="#masterpiece" className="overlay-link">Legacy</a>
-        <a href="#about" className="overlay-link">Vision</a>
-        <a href="#floor-plans" className="overlay-link">Layouts</a>
-        <a href="#gallery" className="overlay-link">Gallery</a>
-        <a href="#amenities" className="overlay-link">Amenities</a>
-        <a href="#location" className="overlay-link">Location</a>
-        
-        <a href="malpani-m-soulstrings-baner-pashan-link-road-real-estate.html" className="overlay-link">Baner Pashan Link Road real estate Guide</a>
-        <a href="malpani-m-soulstrings-baner-pashan-link-road-4bhk-luxury.html" className="overlay-link">4 BHK luxury Residences</a>
-        <a href="#faq" className="overlay-link">FAQ</a>
+      <div className="pillar-header" style={{ paddingTop: '120px', paddingBottom: '4rem', background: 'var(--color-surface)' }}>
+        <div className="container">
+          <div className="scarcity-badge fade-in-up" style={{ display: 'inline-block', marginBottom: '1rem' }}>
+            <span className="material-symbols-outlined" style={{ fontSize: '1rem', verticalAlign: 'middle', marginRight: '0.2rem' }}>forest</span>
+            Nature & Innovation
+          </div>
+          <h1 className="gradient-text" style={{ fontSize: '3rem', marginBottom: '1rem' }}>Where Pashan's Serenity Meets Tomorrow's Technology</h1>
+          <p style={{ fontSize: '1.2rem', color: 'var(--color-text-muted)', maxWidth: '800px' }}>
+            We have captured the natural essence of Pashan and fused it with the absolute pinnacle of modern smart-home technology on the Baner Pashan Link Road.
+          </p>
+        </div>
       </div>
-    </div>
-        <section className="section" >
-          <div className="container" >
-            <h1 className="section-title" >Where Pashan's Serenity Meets Tomorrow's Technology</h1>
-            <div >
-              
-            <p>The allure of Pashan has always been its natural beauty—the rolling hills, the cooler climate, and the serene environment. At Malpani M SoulStrings, situated perfectly on the Baner Pashan Link Road, we have captured that natural essence and fused it with the pinnacle of modern smart-home technology.</p>
+
+      <div className="pillar-content" style={{ padding: '4rem 0' }}>
+        <div className="container" style={{ display: 'grid', gridTemplateColumns: '1fr 300px', gap: '3rem' }}>
+          
+          <article className="main-content">
+            <p>The allure of Pashan has always been its natural beauty—the rolling hills, the cooler climate, and the serene environment. At <strong><Link href="/">Malpani M SoulStrings</Link></strong>, situated perfectly on the Baner Pashan Link Road, we have captured that natural essence and fused it with the pinnacle of modern smart-home technology.</p>
 
             <h2>Panoramic Views and Sustainable Living</h2>
             <p>Wake up to sweeping, unobstructed views of the lush Baner-Pashan hills. Our architectural masterpiece is designed to maximize natural light and cross-ventilation, ensuring that nature is an integral part of your living room. We are committed to sustainable luxury, featuring energy-efficient systems and extensive green landscaping.</p>
@@ -34,17 +42,36 @@ export default function HubPage() {
 
             <h2>The Best of Both Worlds</h2>
             <p>You no longer have to choose between a peaceful natural retreat and proximity to the vibrant city life. Located on the Baner Pashan Link Road, you are minutes away from the high-energy Balewadi High Street while residing in a tranquil, resort-like ecosystem.</p>
-            
+          </article>
+
+          <aside className="sidebar">
+            <div className="loc-card" style={{ padding: '1.5rem', borderRadius: '12px', position: 'sticky', top: '100px' }}>
+              <h3 style={{ fontSize: '1.2rem', marginBottom: '1rem', color: 'var(--color-primary)' }}>Experience Serenity</h3>
+              <p style={{ color: 'var(--color-text-muted)', fontSize: '0.9rem', marginBottom: '1.5rem' }}>Schedule a private site visit to witness the panoramic views firsthand.</p>
+              <a href="#" data-bs-toggle="modal" data-bs-target="#enquireModal" className="btn btn-primary" style={{ width: '100%' }}>Enquire Now</a>
             </div>
-            
-            <div >
-                <h3 >Ready to secure your masterpiece?</h3>
-                <p >Schedule a private consultation at Malpani M SoulStrings.</p>
-                <a href="#" data-bs-toggle="modal" data-bs-target="#enquireModal" className="btn btn-primary" >Enquire Now</a>
+          </aside>
+          
+        </div>
+      </div>
+
+      <section className="py-5" style={{ background: 'var(--color-background)', borderTop: '1px solid rgba(212,175,55,0.1)' }}>
+        <div className="container">
+          <div className="row align-items-center">
+            <div className="col-lg-5 mb-5 mb-lg-0">
+              <h2 className="display-5 fw-bold mb-4" style={{ color: 'var(--color-text)' }}>Financial Planning Tool</h2>
+              <p style={{ color: 'var(--color-text-muted)', fontSize: '1.1rem', marginBottom: '2rem' }}>
+                Secure your family's future in Pune's fastest-growing corridor. Utilize our calculator to model your investment strategy.
+              </p>
+            </div>
+            <div className="col-lg-7">
+              <EmiCalculator />
             </div>
           </div>
-        </section>
-        
+        </div>
+      </section>
+
+      <Footer />
     </main>
   );
 }

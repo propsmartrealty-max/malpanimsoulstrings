@@ -1,30 +1,38 @@
-export default function HubPage() {
+import Navbar from '../../components/Navbar';
+import Footer from '../../components/Footer';
+import SchemaMarkup from '../../components/SchemaMarkup';
+import EmiCalculator from '../../components/EmiCalculator';
+import Link from 'next/link';
+
+export const metadata = {
+  title: 'The Ultimate Retreat for the Shivajinagar Elite | Malpani',
+  description: 'Escape the density of central Pune. Discover low-density, ultra-luxury living at Malpani M SoulStrings on the Baner Pashan Link Road.',
+};
+
+export default function ShivajinagarPage() {
   return (
     <main>
+      <Navbar />
+      <SchemaMarkup />
       
-
-    {/* Overlay Fullscreen Menu */}
-    <div id="overlay-menu" className="overlay-menu">
-      <button id="close-overlay" aria-label="Close Mobile Menu" >&times;</button>
-      <div className="overlay-content">
-        <a href="#masterpiece" className="overlay-link">Legacy</a>
-        <a href="#about" className="overlay-link">Vision</a>
-        <a href="#floor-plans" className="overlay-link">Layouts</a>
-        <a href="#gallery" className="overlay-link">Gallery</a>
-        <a href="#amenities" className="overlay-link">Amenities</a>
-        <a href="#location" className="overlay-link">Location</a>
-        
-        <a href="malpani-m-soulstrings-baner-pashan-link-road-real-estate.html" className="overlay-link">Baner Pashan Link Road real estate Guide</a>
-        <a href="malpani-m-soulstrings-baner-pashan-link-road-4bhk-luxury.html" className="overlay-link">4 BHK luxury Residences</a>
-        <a href="#faq" className="overlay-link">FAQ</a>
+      <div className="pillar-header" style={{ paddingTop: '120px', paddingBottom: '4rem', background: 'var(--color-surface)' }}>
+        <div className="container">
+          <div className="scarcity-badge fade-in-up" style={{ display: 'inline-block', marginBottom: '1rem' }}>
+            <span className="material-symbols-outlined" style={{ fontSize: '1rem', verticalAlign: 'middle', marginRight: '0.2rem' }}>spa</span>
+            Urban Retreat
+          </div>
+          <h1 className="gradient-text" style={{ fontSize: '3rem', marginBottom: '1rem' }}>The Ultimate Urban Retreat for the Shivajinagar Elite</h1>
+          <p style={{ fontSize: '1.2rem', color: 'var(--color-text-muted)', maxWidth: '800px' }}>
+            For the residents of Shivajinagar, prestige is paramount. Discover a sanctuary that perfectly balances absolute exclusivity with seamless city access.
+          </p>
+        </div>
       </div>
-    </div>
-        <section className="section" >
-          <div className="container" >
-            <h1 className="section-title" >The Ultimate Urban Retreat for the Shivajinagar Elite</h1>
-            <div >
-              
-            <p>For the residents of Shivajinagar, prestige is paramount. However, the increasing density, traffic, and lack of expansive modern infrastructure in central Pune often compromise the tranquility that true luxury should provide. Malpani M SoulStrings on the Baner Pashan Link Road offers the perfect solution: an ultra-luxury urban retreat.</p>
+
+      <div className="pillar-content" style={{ padding: '4rem 0' }}>
+        <div className="container" style={{ display: 'grid', gridTemplateColumns: '1fr 300px', gap: '3rem' }}>
+          
+          <article className="main-content">
+            <p>For the residents of Shivajinagar, prestige is paramount. However, the increasing density, traffic, and lack of expansive modern infrastructure in central Pune often compromise the tranquility that true luxury should provide. <strong><Link href="/">Malpani M SoulStrings</Link></strong> on the Baner Pashan Link Road offers the perfect solution: an ultra-luxury urban retreat.</p>
 
             <h2>Expansive Estates, Unmatched Privacy</h2>
             <p>Our 4 BHK Residences are crafted for absolute exclusivity. With low-density planning, private elevator access options, and meticulously sound-proofed environments, you can retreat from the chaos of the city into your own private sanctuary. This is luxury defined by peace.</p>
@@ -34,17 +42,36 @@ export default function HubPage() {
 
             <h2>Seamless City Access</h2>
             <p>With direct connectivity to the Mumbai-Pune Expressway and smooth arterial routes back into central Pune, you maintain absolute control over your schedule. Enjoy the sweeping green views of the Baner hills every morning, knowing your business district is just a refined drive away.</p>
-            
+          </article>
+
+          <aside className="sidebar">
+            <div className="loc-card" style={{ padding: '1.5rem', borderRadius: '12px', position: 'sticky', top: '100px' }}>
+              <h3 style={{ fontSize: '1.2rem', marginBottom: '1rem', color: 'var(--color-primary)' }}>Secure Your Sanctuary</h3>
+              <p style={{ color: 'var(--color-text-muted)', fontSize: '0.9rem', marginBottom: '1.5rem' }}>Schedule a private consultation at Malpani M SoulStrings.</p>
+              <a href="#" data-bs-toggle="modal" data-bs-target="#enquireModal" className="btn btn-primary" style={{ width: '100%' }}>Enquire Now</a>
             </div>
-            
-            <div >
-                <h3 >Ready to secure your masterpiece?</h3>
-                <p >Schedule a private consultation at Malpani M SoulStrings.</p>
-                <a href="#" data-bs-toggle="modal" data-bs-target="#enquireModal" className="btn btn-primary" >Enquire Now</a>
+          </aside>
+          
+        </div>
+      </div>
+
+      <section className="py-5" style={{ background: 'var(--color-background)', borderTop: '1px solid rgba(212,175,55,0.1)' }}>
+        <div className="container">
+          <div className="row align-items-center">
+            <div className="col-lg-5 mb-5 mb-lg-0">
+              <h2 className="display-5 fw-bold mb-4" style={{ color: 'var(--color-text)' }}>Investment Estimator</h2>
+              <p style={{ color: 'var(--color-text-muted)', fontSize: '1.1rem', marginBottom: '2rem' }}>
+                Transition your capital into Pune's highest-appreciating asset class. Plan your investment parameters effortlessly.
+              </p>
+            </div>
+            <div className="col-lg-7">
+              <EmiCalculator />
             </div>
           </div>
-        </section>
-        
+        </div>
+      </section>
+
+      <Footer />
     </main>
   );
 }
