@@ -36,19 +36,12 @@ export default function Navbar() {
               <b className="brand-subtitle">M SoulStrings</b>
             </span>
           </Link>
-          <div className="nav-links d-none d-md-flex ms-auto me-4" style={{ gap: '2.5rem' }}>
-            <Link href="/" className="nav-link">Home</Link>
-            <Link href="/4bhk-luxury" className="nav-link">4 BHK</Link>
-            <Link href="/amenities" className="nav-link">Amenities</Link>
-            <Link href="/location" className="nav-link">Location</Link>
-          </div>
-
-          <div className="nav-actions">
+          <div className="nav-actions ms-auto">
             <button onClick={toggleTheme} className="theme-btn" aria-label="Toggle Dark Mode">
               <span className="material-symbols-outlined">{isDarkTheme ? 'light_mode' : 'dark_mode'}</span>
             </button>
             <a href="#" data-bs-toggle="modal" data-bs-target="#enquireModal" className="btn btn-primary header-enquire">Enquire Now</a>
-            <button onClick={toggleMenu} className="hamburger-btn d-md-none" aria-label="Open Mobile Menu">
+            <button onClick={toggleMenu} className="hamburger-btn" aria-label="Open Mobile Menu">
               <span className="material-symbols-outlined hamburger-icon">menu</span>
             </button>
           </div>
