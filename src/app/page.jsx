@@ -4,6 +4,7 @@ import VRModal from '@/components/VRModal';
 import InteractiveMasterplan from '@/components/InteractiveMasterplan';
 import EmiCalculator from '@/components/EmiCalculator';
 import Testimonials from '@/components/Testimonials';
+import FloorPlanGallery from '@/components/FloorPlanGallery';
 import fs from 'fs';
 import path from 'path';
 
@@ -99,26 +100,9 @@ export default function Home() {
           <p className="section-desc">Explore the grand vision of M SoulStrings and our expansive 3BHK and 4BHK residences.</p>
         </div>
         
-        {/* Master Plan */}
-        <div className="master-plan-container fade-in-up" style={{ marginBottom: '4rem' }}>
-          <div className="plan-card loc-card" style={{ padding: '2rem', textAlign: 'center', borderRadius: '12px' }}>
-            <h3 style={{ marginBottom: '1.5rem', color: 'var(--color-primary)' }}>The Grand Master Plan</h3>
-            <Image src="https://malpani-cms.firsteconomy.com/uploads/m_soulstrings_Masterplan_da0ad90428.png" alt="Malpani M SoulStrings Baner Pashan Link Road 3BHK" width={1200} height={800} className="gallery-img" style={{ width: "100%", height: "auto", borderRadius: '8px' }} />
-            <p style={{ marginTop: '1.5rem', color: 'var(--color-text-muted)' }}>Over 35+ amenities spread across acres of ultra-luxury landscape.</p>
-          </div>
-        </div>
-
-        <div className="floor-plans-grid fade-in-up" style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '2rem' }}>
-          <div className="plan-card loc-card" style={{ padding: '2rem', textAlign: 'center', borderRadius: '12px' }}>
-            <h3 style={{ marginBottom: '1.5rem', color: 'var(--color-primary)' }}>Tower B Typical Layout</h3>
-            <Image src="https://malpani-cms.firsteconomy.com/uploads/Tower_B_Typical_Floor_Plan_d8871dabad.png" alt="Malpani M SoulStrings Baner Pashan Link Road 4BHK" width={1200} height={800} className="gallery-img" style={{ width: "100%", height: "auto", borderRadius: '8px' }} />
-            <p style={{ marginTop: '1.5rem', color: 'var(--color-text-muted)' }}>Expansive 3BHK and 4BHK configurations maximizing ventilation and sunlight.</p>
-          </div>
-          <div className="plan-card loc-card" style={{ padding: '2rem', textAlign: 'center', borderRadius: '12px' }}>
-            <h3 style={{ marginBottom: '1.5rem', color: 'var(--color-primary)' }}>Tower C Typical Layout</h3>
-            <Image src="https://malpani-cms.firsteconomy.com/uploads/Tower_C_Typical_Floor_Plan_a1e5399ac9.png" alt="Malpani M SoulStrings Baner Pashan Link Road 4BHK" width={1200} height={800} className="gallery-img" style={{ width: "100%", height: "auto", borderRadius: '8px' }} />
-            <p style={{ marginTop: '1.5rem', color: 'var(--color-text-muted)' }}>Premium core units featuring ultra-luxury bespoke specifications.</p>
-          </div>
+        {/* Interactive Floor Plan Gallery */}
+        <div style={{ marginTop: '3rem', marginBottom: '3rem' }}>
+          <FloorPlanGallery />
         </div>
         
         <div className="vr-hub-container fade-in-up" style={{ marginTop: '4rem', textAlign: 'center' }}>
@@ -140,23 +124,23 @@ export default function Home() {
           <p className="section-desc">Every 3 BHK and 4 BHK residence at Malpani M SoulStrings is crafted with the highest standards of luxury.</p>
         </div>
         <div className="specs-grid fade-in-up" style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(250px, 1fr))', gap: '2rem' }}>
-          <div className="spec-card loc-card" style={{ padding: '2.5rem', borderRadius: '12px', textAlign: 'center' }}>
-            <span className="material-symbols-outlined" style={{ fontSize: '3rem', color: 'var(--color-primary)', marginBottom: '1rem' }}>floor</span>
+          <div className="spec-card loc-card spec-interactive" style={{ padding: '2.5rem', borderRadius: '12px', textAlign: 'center' }}>
+            <span className="material-symbols-outlined spec-icon" style={{ fontSize: '3rem', color: 'var(--color-primary)', marginBottom: '1rem', transition: 'all 0.3s ease' }}>floor</span>
             <h3 style={{ fontSize: '1.5rem', marginBottom: '1rem' }}>Premium Flooring</h3>
             <p style={{ color: 'var(--color-text-muted)', lineHeight: '1.6' }}>Imported Italian marble in the living and dining areas, accompanied by premium engineered wooden flooring in the master bedroom.</p>
           </div>
-          <div className="spec-card loc-card" style={{ padding: '2.5rem', borderRadius: '12px', textAlign: 'center' }}>
-            <span className="material-symbols-outlined" style={{ fontSize: '3rem', color: 'var(--color-primary)', marginBottom: '1rem' }}>smart_toy</span>
+          <div className="spec-card loc-card spec-interactive" style={{ padding: '2.5rem', borderRadius: '12px', textAlign: 'center' }}>
+            <span className="material-symbols-outlined spec-icon" style={{ fontSize: '3rem', color: 'var(--color-primary)', marginBottom: '1rem', transition: 'all 0.3s ease' }}>smart_toy</span>
             <h3 style={{ fontSize: '1.5rem', marginBottom: '1rem' }}>Smart Home Automation</h3>
             <p style={{ color: 'var(--color-text-muted)', lineHeight: '1.6' }}>State-of-the-art integrated smart home systems controlling lighting, climate, and advanced multi-tier biometric security.</p>
           </div>
-          <div className="spec-card loc-card" style={{ padding: '2.5rem', borderRadius: '12px', textAlign: 'center' }}>
-            <span className="material-symbols-outlined" style={{ fontSize: '3rem', color: 'var(--color-primary)', marginBottom: '1rem' }}>kitchen</span>
+          <div className="spec-card loc-card spec-interactive" style={{ padding: '2.5rem', borderRadius: '12px', textAlign: 'center' }}>
+            <span className="material-symbols-outlined spec-icon" style={{ fontSize: '3rem', color: 'var(--color-primary)', marginBottom: '1rem', transition: 'all 0.3s ease' }}>kitchen</span>
             <h3 style={{ fontSize: '1.5rem', marginBottom: '1rem' }}>Bespoke Kitchens</h3>
             <p style={{ color: 'var(--color-text-muted)', lineHeight: '1.6' }}>Fully modular premium kitchens equipped with top-tier international branded fittings, hob, and chimney systems.</p>
           </div>
-          <div className="spec-card loc-card" style={{ padding: '2.5rem', borderRadius: '12px', textAlign: 'center' }}>
-            <span className="material-symbols-outlined" style={{ fontSize: '3rem', color: 'var(--color-primary)', marginBottom: '1rem' }}>bathtub</span>
+          <div className="spec-card loc-card spec-interactive" style={{ padding: '2.5rem', borderRadius: '12px', textAlign: 'center' }}>
+            <span className="material-symbols-outlined spec-icon" style={{ fontSize: '3rem', color: 'var(--color-primary)', marginBottom: '1rem', transition: 'all 0.3s ease' }}>bathtub</span>
             <h3 style={{ fontSize: '1.5rem', marginBottom: '1rem' }}>Designer Bathrooms</h3>
             <p style={{ color: 'var(--color-text-muted)', lineHeight: '1.6' }}>European standard CP and sanitary fittings (Grohe/Kohler or equivalent), glass shower partitions, and exquisite wall tiling.</p>
           </div>
