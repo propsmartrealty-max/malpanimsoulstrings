@@ -21,6 +21,8 @@ export default function sitemap() {
     '/pune-real-estate-market',
     '/pune-west-real-estate-market',
     '/baner-real-estate-market',
+    '/pune-infrastructure-metro-impact',
+    '/it-professionals-luxury-homes-pune',
     '/blog'
   ].map((route) => ({
     url: `${baseUrl}${route}`,

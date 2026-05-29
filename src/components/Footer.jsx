@@ -27,18 +27,22 @@ export default function Footer() {
                     <li><Link href="/pune-real-estate-market" style={{ color: 'rgba(255,255,255,0.5)', textDecoration: 'none' }}>Pune Real Estate Market</Link></li>
                     <li><Link href="/pune-west-real-estate-market" style={{ color: 'rgba(255,255,255,0.5)', textDecoration: 'none' }}>Pune West Real Estate Market</Link></li>
                     <li><Link href="/baner-real-estate-market" style={{ color: 'rgba(255,255,255,0.5)', textDecoration: 'none' }}>Baner Real Estate Market</Link></li>
+                    <li><Link href="/pune-infrastructure-metro-impact" style={{ color: 'rgba(255,255,255,0.5)', textDecoration: 'none' }}>Pune Infrastructure Impact</Link></li>
+                    <li><Link href="/it-professionals-luxury-homes-pune" style={{ color: 'rgba(255,255,255,0.5)', textDecoration: 'none' }}>IT Professionals Luxury Homes</Link></li>
                 </ul>
             </div>
         </div>
         <div className="row mt-4 pt-4" style={{ borderTop: '1px solid rgba(212,175,55,0.1)' }}>
           <div className="col-12 text-center">
-            <p style={{ fontSize: '0.8rem', color: 'rgba(255,255,255,0.3)', marginBottom: '0.5rem' }}>Popular Searches:</p>
+            <p style={{ fontSize: '0.8rem', color: 'rgba(255,255,255,0.3)', margin: '1rem 0 0.5rem 0' }}>Popular Searches:</p>
             <div style={{ display: 'flex', flexWrap: 'wrap', justifyContent: 'center', gap: '15px' }}>
               <Link href="/" style={{ fontSize: '0.75rem', color: 'rgba(255,255,255,0.4)', textDecoration: 'none' }}>Malpani m soulstrings baner pashan link road</Link>
               <Link href="/blog/malpani-group-luxury-projects-pune" style={{ fontSize: '0.75rem', color: 'rgba(255,255,255,0.4)', textDecoration: 'none' }}>Malpani Group Luxury Projects</Link>
               <Link href="/blog/best-luxury-apartments-in-baner-pune" style={{ fontSize: '0.75rem', color: 'rgba(255,255,255,0.4)', textDecoration: 'none' }}>Best Luxury Apartments Baner</Link>
-              <Link href="/blog/malpani-m-soulstrings-baner-pashan-link-road" style={{ fontSize: '0.75rem', color: 'rgba(255,255,255,0.4)', textDecoration: 'none' }}>M SoulStrings Pune</Link>
+              <Link href="/blog/baner-property-rates-2026" style={{ fontSize: '0.75rem', color: 'rgba(255,255,255,0.4)', textDecoration: 'none' }}>Baner Property Rates 2026</Link>
               <Link href="/4bhk-luxury" style={{ fontSize: '0.75rem', color: 'rgba(255,255,255,0.4)', textDecoration: 'none' }}>4 BHK Luxury Estates Pune</Link>
+              <Link href="/pune-infrastructure-metro-impact" style={{ fontSize: '0.75rem', color: 'rgba(255,255,255,0.4)', textDecoration: 'none' }}>Pune Metro Line 3 Real Estate</Link>
+              <Link href="/it-professionals-luxury-homes-pune" style={{ fontSize: '0.75rem', color: 'rgba(255,255,255,0.4)', textDecoration: 'none' }}>Smart AI Homes West Pune</Link>
             </div>
           </div>
         </div>
