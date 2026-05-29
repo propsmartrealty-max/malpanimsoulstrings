@@ -3,27 +3,22 @@
 import Image from 'next/image';
 import Link from 'next/link';
 import { useState, useEffect } from 'react';
+import { useTheme } from 'next-themes';
 
 export default function Navbar() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
-  const [isDarkTheme, setIsDarkTheme] = useState(true);
+  const { theme, setTheme } = useTheme();
+  const [mounted, setMounted] = useState(false);
+
+  useEffect(() => {
+    setMounted(true);
+  }, []);
 
   const toggleMenu = () => setIsMenuOpen(!isMenuOpen);
 
   const toggleTheme = () => {
-    const newTheme = !isDarkTheme;
-    setIsDarkTheme(newTheme);
-    if (!newTheme) {
-      document.body.classList.add('light-theme');
-    } else {
-      document.body.classList.remove('light-theme');
-    }
+    setTheme(theme === 'light' ? 'dark' : 'light');
   };
-
-  useEffect(() => {
-    // eslint-disable-next-line
-    setIsDarkTheme(!document.body.classList.contains('light-theme'));
-  }, []);
 
   return (
     <>
@@ -37,9 +32,11 @@ export default function Navbar() {
             </span>
           </Link>
           <div className="nav-actions ms-auto">
-            <button onClick={toggleTheme} className="theme-btn" aria-label="Toggle Dark Mode">
-              <span className="material-symbols-outlined">{isDarkTheme ? 'light_mode' : 'dark_mode'}</span>
-            </button>
+            {mounted && (
+              <button onClick={toggleTheme} className="theme-btn" aria-label="Toggle Dark Mode">
+                <span className="material-symbols-outlined">{theme === 'light' ? 'dark_mode' : 'light_mode'}</span>
+              </button>
+            )}
             <a href="#" data-bs-toggle="modal" data-bs-target="#enquireModal" className="btn btn-primary header-enquire">Enquire Now</a>
             <button onClick={toggleMenu} className="hamburger-btn" aria-label="Open Mobile Menu">
               <span className="material-symbols-outlined hamburger-icon">menu</span>
