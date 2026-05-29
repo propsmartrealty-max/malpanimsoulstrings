@@ -23,6 +23,9 @@ export default function sitemap() {
     '/baner-real-estate-market',
     '/pune-infrastructure-metro-impact',
     '/it-professionals-luxury-homes-pune',
+    '/vastu-compliant-luxury-homes-pune',
+    '/compare/pristine-lords-baner',
+    '/compare/kohinoor-livience-baner',
     '/blog'
   ].map((route) => ({
     url: `${baseUrl}${route}`,

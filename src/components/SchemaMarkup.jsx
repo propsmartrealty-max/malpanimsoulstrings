@@ -82,11 +82,32 @@ export default function SchemaMarkup() {
         "telephone": "+91 7744009295",
         "address": {
           "@type": "PostalAddress",
-          "streetAddress": "Baner Pashan Link Road",
+          "streetAddress": "Pan Card Club Road, Baner - Pashan Link Rd",
           "addressLocality": "Pune",
           "addressRegion": "MH",
-          "postalCode": "411021",
+          "postalCode": "411045",
           "addressCountry": "IN"
+        }
+      },
+      {
+        "@type": "LocalBusiness",
+        "@id": "https://www.malpanimsoulstrings.com/#localbusiness",
+        "name": "Malpani M SoulStrings",
+        "url": "https://www.malpanimsoulstrings.com/",
+        "image": "https://malpani-cms.firsteconomy.com/uploads/About_Project_27b8c57d51.png",
+        "telephone": "+91 7744009295",
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "Pan Card Club Road, Baner - Pashan Link Rd",
+          "addressLocality": "Pune",
+          "addressRegion": "MH",
+          "postalCode": "411045",
+          "addressCountry": "IN"
+        },
+        "geo": {
+          "@type": "GeoCoordinates",
+          "latitude": "18.5539",
+          "longitude": "73.7915"
         }
       },
       {
@@ -97,10 +118,10 @@ export default function SchemaMarkup() {
         "telephone": "+91 7744009295",
         "address": {
           "@type": "PostalAddress",
-          "streetAddress": "Baner Pashan Link Road",
+          "streetAddress": "Pan Card Club Road, Baner - Pashan Link Rd",
           "addressLocality": "Pune",
           "addressRegion": "MH",
-          "postalCode": "411021",
+          "postalCode": "411045",
           "addressCountry": "IN"
         },
         "amenityFeature": [
