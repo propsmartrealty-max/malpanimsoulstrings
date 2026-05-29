@@ -8,6 +8,8 @@ import EnquireModal from '@/components/EnquireModal'
 import FloatingContact from '@/components/FloatingContact'
 import Script from 'next/script'
 import Image from 'next/image'
+import { GoogleAnalytics, GoogleTagManager } from '@next/third-parties/google'
+import FloatingWhatsApp from '@/components/FloatingWhatsApp'
 
 export const metadata = {
   metadataBase: new URL('https://www.malpanimsoulstrings.com'),
@@ -133,6 +135,7 @@ const websiteSchema = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
+      <GoogleTagManager gtmId="GTM-XXXXXXX" />
       <head>
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
@@ -176,9 +179,11 @@ export default function RootLayout({ children }) {
       <body>
         <Navbar />
         <ThemeProvider>{children}</ThemeProvider>
+        <FloatingWhatsApp />
         <Footer />
         <ClientScripts />
         <Script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" strategy="afterInteractive" />
+        <GoogleAnalytics gaId="G-XXXXXXXXXX" />
         
         {/* Global WhatsApp Floating Widget */}
         <FloatingContact />
