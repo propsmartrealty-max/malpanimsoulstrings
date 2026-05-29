@@ -1,6 +1,7 @@
 export const metadata = {
-  title: '4 BHK Luxury Estates in Baner | Premium Residences Pune',
+  title: '4 BHK Premium Flats for Sale in Baner-Pashan Link Road | Malpani',
   description: 'Explore the most expansive 4 BHK luxury Estates in the Baner Pashan Link Road real estate market. Vastu-compliant, smart home automation, and 35+ amenities.',
+  keywords: ['4 BHK premium flats for sale in Baner-Pashan Link Road', 'spacious 4 BHK apartments near Baner-Pashan Link Road', 'luxury penthouses in Baner Pashan Link Road']
 };
 
 export default function HubPage() {
@@ -23,9 +24,9 @@ export default function HubPage() {
     </div>
     <section className="section" >
       <div className="container">
-        <h1 className="section-title">Expansive 4 BHK luxury Residences in Pune</h1>
+        <h1 className="section-title">4 BHK Premium Flats for Sale in Baner-Pashan Link Road</h1>
         <p className="section-text" >
-          Redefining grandeur in the Pune Real Estate Market. Our 4 BHK luxury Estates in Baner are meticulously designed for those who demand space, privacy, and uncompromising elegance.
+          Redefining grandeur in the Pune Real Estate Market. Our ultra-luxurious 4 BHK premium flats in Baner-Pashan Link Road are meticulously designed for elite buyers who demand space, privacy, and uncompromising elegance in West Pune.
         </p>
         
         <div >

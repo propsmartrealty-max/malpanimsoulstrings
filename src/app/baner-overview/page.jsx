@@ -1,3 +1,9 @@
+export const metadata = {
+  title: 'Baner Real Estate Guide 2026 | Top Investment in Baner Pune',
+  description: 'Comprehensive guide to the Baner Pashan Link Road real estate market. Discover why investing in luxury properties in Baner Pune offers the highest ROI.',
+  keywords: ['Baner Real Estate Guide', 'Investment in Baner Pune', 'Baner Pashan Link Road real estate', 'Buy luxury property in Baner Pune']
+};
+
 export default function HubPage() {
   return (
     <main>
@@ -18,9 +24,9 @@ export default function HubPage() {
     </div>
     <section className="section" >
       <div className="container">
-        <h1 className="section-title">The Baner Pashan Link Road real estate Market Dominance</h1>
+        <h1 className="section-title">The Baner Real Estate Guide: Market Dominance on Baner-Pashan Link Road</h1>
         <p className="section-text" >
-          Baner has evolved into the absolute epicenter of luxury real estate in West Pune. Driven by proximity to the Hinjewadi IT Park and the vibrant Balewadi High Street, it commands the highest appreciation rates in the city.
+          Baner has evolved into the absolute epicenter of luxury real estate in West Pune. Driven by proximity to the Hinjewadi IT Park and the vibrant Balewadi High Street, securing an <strong>Investment in Baner Pune</strong> commands the highest appreciation rates in the city.
         </p>
         
         <div >

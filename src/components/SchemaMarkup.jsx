@@ -7,7 +7,7 @@ export default function SchemaMarkup() {
         "@id": "https://www.malpanimsoulstrings.com/#website",
         "url": "https://www.malpanimsoulstrings.com/",
         "name": "Malpani M SoulStrings",
-        "description": "Ultra-premium 3 & 4 BHK Luxury Estates in Baner, Pune.",
+        "description": "Ultra-premium 3 BHK and 4 BHK Luxury Estates for sale in Baner Pashan Link Road, Pune. Ready to move luxury residential projects.",
         "publisher": {
           "@id": "https://www.malpanimsoulstrings.com/#organization"
         },
@@ -60,7 +60,7 @@ export default function SchemaMarkup() {
             "name": "What configurations are available at Malpani M SoulStrings?",
             "acceptedAnswer": {
               "@type": "Answer",
-              "text": "We offer ultra-luxury 3 BHK and 4 BHK spacious estates designed with low-density architecture, massive decks, and Vastu compliance."
+              "text": "We offer ultra-luxury 3 BHK and 4 BHK spacious apartments and premium flats designed with low-density architecture, massive decks, and Vastu compliance, targeting elite buyers in Pune West."
             }
           },
           {
@@ -92,7 +92,7 @@ export default function SchemaMarkup() {
       {
         "@type": "ApartmentComplex",
         "name": "Malpani M SoulStrings",
-        "description": "Ultra-premium 3 & 4 BHK Luxury Estates in Baner, Pune.",
+        "description": "Premium residential project offering spacious 3 BHK and 4 BHK luxury apartments with world-class amenities at Baner-Pashan Link Road, Pune West.",
         "url": "https://www.malpanimsoulstrings.com/",
         "telephone": "+91 7744009295",
         "address": {
@@ -115,6 +115,24 @@ export default function SchemaMarkup() {
             "value": "True"
           }
         ]
+      },
+      {
+        "@type": "Product",
+        "name": "4 BHK Premium Flat in Baner-Pashan Link Road",
+        "description": "Ultra-luxurious 4 BHK premium flats for sale with Vastu-compliant layouts, smart home automation, and massive private decks.",
+        "image": "https://malpani-cms.firsteconomy.com/uploads/04_1_dfeed3efb5.png",
+        "brand": {
+          "@type": "Brand",
+          "name": "Malpani Estates"
+        },
+        "offers": {
+          "@type": "Offer",
+          "url": "https://www.malpanimsoulstrings.com/4bhk-luxury",
+          "priceCurrency": "INR",
+          "price": "30000000",
+          "availability": "https://schema.org/InStock",
+          "itemCondition": "https://schema.org/NewCondition"
+        }
       }
     ]
   };

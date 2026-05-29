@@ -16,7 +16,7 @@ export default function Home() {
         <h1 className="hero-title split-text" style={{ display: 'flex', flexDirection: 'column', gap: '0.5rem' }}>
           <div className="line"><span className="word">Malpani</span> <span className="word">M</span> <span className="word">SoulStrings</span></div>
           <div className="line" style={{ fontSize: 'clamp(1rem, 2vw, 1.5rem)', fontWeight: '400', letterSpacing: '3px', textTransform: 'uppercase', color: 'rgba(255,255,255,0.8)' }}>
-            <span className="word">Luxury 3 & 4 BHK Estates in Baner, Pune</span>
+            <span className="word">Ultra-Premium 3 & 4 BHK Luxury Apartments in Baner Pashan Link Road</span>
           </div>
         </h1>
         <p className="hero-subtitle fade-in-up" >The Preferred Choice for Elite Buyers from Aundh, Shivajinagar, Balewadi, and Wakad.</p>
@@ -29,9 +29,9 @@ export default function Home() {
       <div className="parallax-text" data-speed="0.2">MASTERPIECE</div>
       <div className="container" >
         <div className="fade-in-up" >
-          <h2 className="section-title gradient-text" >The Crown Jewel of the<br />Entire Pune Real Estate Market</h2>
+          <h2 className="section-title gradient-text" >The Crown Jewel of the<br />Pune Luxury Real Estate Market</h2>
           <p className="section-desc" >
-            Malpani M SoulStrings is not just a residence; it is a visionary masterpiece. This iconic project stands as the most aspiring residential development in Baner and its vicinity. It is the preferred destination where discerning buyers from <strong>Aundh, Shivajinagar, Balewadi, Pashan, and Wakad</strong> converge to secure the absolute pinnacle of luxury. When you seek the highest echelon of the West Pune real estate market, M SoulStrings is the undeniable answer.
+            Malpani M SoulStrings is not just a residence; it is a visionary masterpiece. This iconic project stands as the most aspiring residential development for <strong>premium 3 BHK and 4 BHK flats for sale in Baner-Pashan Link Road</strong>. It is the preferred destination where discerning buyers from <strong>Aundh, Shivajinagar, Balewadi, Pashan, and Wakad</strong> converge to secure the absolute pinnacle of luxury. When you seek the highest echelon of the West Pune real estate market, M SoulStrings is the undeniable answer.
           </p>
         </div>
       </div>
@@ -153,14 +153,14 @@ export default function Home() {
         
         <div className="masonry-grid fade-in-up">
           {/* Official Elevation & Interior Renders */}
-          <Image src="https://malpani-cms.firsteconomy.com/uploads/01_1_97625c7cd6.png" alt="Malpani M SoulStrings Baner Pashan Link Road properties" width={1200} height={800} className="gallery-img" style={{ width: "100%", height: "auto" }} />
-          <Image src="https://malpani-cms.firsteconomy.com/uploads/02_1_fccd839fae.png" alt="Malpani M SoulStrings Baner Pashan Link Road luxury" width={1200} height={800} className="gallery-img" style={{ width: "100%", height: "auto" }} />
-          <Image src="https://malpani-cms.firsteconomy.com/uploads/03_5afad0394f.png" alt="Malpani M SoulStrings Baner Pashan Link Road luxury" width={1200} height={800} className="gallery-img" style={{ width: "100%", height: "auto" }} />
-          <Image src="https://malpani-cms.firsteconomy.com/uploads/04_1_dfeed3efb5.png" alt="Malpani M SoulStrings Baner Pashan Link Road 4BHK" width={1200} height={800} className="gallery-img" style={{ width: "100%", height: "auto" }} />
-          <Image src="https://malpani-cms.firsteconomy.com/uploads/05_1_767fc1bb82.png" alt="Malpani M SoulStrings Baner Pashan Link Road real estate" width={1200} height={800} className="gallery-img" style={{ width: "100%", height: "auto" }} />
-          <Image src="https://malpani-cms.firsteconomy.com/uploads/Entrance_Lobby_9d4d367801.png" alt="Malpani M SoulStrings Baner Pashan Link Road real estate" width={1200} height={800} className="gallery-img" style={{ width: "100%", height: "auto" }} />
-          <Image src="https://malpani-cms.firsteconomy.com/uploads/About_Project_27b8c57d51.png" alt="Malpani M SoulStrings Baner Pashan Link Road luxury" width={1200} height={800} className="gallery-img" style={{ width: "100%", height: "auto" }} />
-          <Image src="https://malpani-cms.firsteconomy.com/uploads/M_soul_strings_Desktop_Banner_Without_Text_0d38ce28d4.jpg" alt="Malpani M SoulStrings Baner Pashan Link Road real estate" width={1200} height={800} className="gallery-img" style={{ width: "100%", height: "auto" }} />
+          <Image src="https://malpani-cms.firsteconomy.com/uploads/01_1_97625c7cd6.png" alt="3 BHK luxury apartments in Baner-Pashan Link Road exterior" width={1200} height={800} className="gallery-img" style={{ width: "100%", height: "auto" }} />
+          <Image src="https://malpani-cms.firsteconomy.com/uploads/02_1_fccd839fae.png" alt="4 BHK premium flats for sale in Baner-Pashan Link Road interior" width={1200} height={800} className="gallery-img" style={{ width: "100%", height: "auto" }} />
+          <Image src="https://malpani-cms.firsteconomy.com/uploads/03_5afad0394f.png" alt="Ready to move 3 BHK in Baner Pashan Link Road amenities" width={1200} height={800} className="gallery-img" style={{ width: "100%", height: "auto" }} />
+          <Image src="https://malpani-cms.firsteconomy.com/uploads/04_1_dfeed3efb5.png" alt="New luxury residential projects in Baner-Pashan Link Road" width={1200} height={800} className="gallery-img" style={{ width: "100%", height: "auto" }} />
+          <Image src="https://malpani-cms.firsteconomy.com/uploads/05_1_767fc1bb82.png" alt="Gated community luxury flats in Pashan Pune pool" width={1200} height={800} className="gallery-img" style={{ width: "100%", height: "auto" }} />
+          <Image src="https://malpani-cms.firsteconomy.com/uploads/Entrance_Lobby_9d4d367801.png" alt="Malpani M SoulStrings Grand Entrance Lobby Baner Pune" width={1200} height={800} className="gallery-img" style={{ width: "100%", height: "auto" }} />
+          <Image src="https://malpani-cms.firsteconomy.com/uploads/About_Project_27b8c57d51.png" alt="Malpani M SoulStrings Project Elevation West Pune Real Estate" width={1200} height={800} className="gallery-img" style={{ width: "100%", height: "auto" }} />
+          <Image src="https://malpani-cms.firsteconomy.com/uploads/M_soul_strings_Desktop_Banner_Without_Text_0d38ce28d4.jpg" alt="Luxury apartments in Pune Baner Pashan Link Road" width={1200} height={800} className="gallery-img" style={{ width: "100%", height: "auto" }} />
         </div>
       </div>
     </section>

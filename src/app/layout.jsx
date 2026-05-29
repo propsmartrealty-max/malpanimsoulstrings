@@ -11,11 +11,22 @@ import Image from 'next/image'
 export const metadata = {
   metadataBase: new URL('https://www.malpanimsoulstrings.com'),
   title: {
-    default: 'Malpani M SoulStrings | #1 Luxury 3 & 4 BHK Estates in Baner, Pune',
+    default: 'Malpani M SoulStrings | Ultra-Premium 3 & 4 BHK Luxury Estates in Baner, Pune',
     template: '%s | Malpani M SoulStrings'
   },
-  description: 'Discover Malpani M SoulStrings, the pinnacle of Pune Real Estate. Ultra-premium 3BHK and 4BHK luxury Estates in Baner-Pashan Link Road. A prime investment for NRIs.',
-  keywords: ['Malpani M SoulStrings', 'Malpani m soulstrings baner pashan link road', 'Malpani M soultraings', 'Malpani estates baner', '3 BHK Baner Pashan Link Road', '4 BHK Baner Pashan Link Road', 'Pune Luxury Real Estate', 'Malpani Baner'],
+  description: 'Discover Malpani M SoulStrings, the pinnacle of Pune Real Estate. Ultra-premium 3 BHK and 4 BHK luxury estates for sale in Baner-Pashan Link Road. A prime investment for NRIs and luxury home buyers.',
+  keywords: [
+    'Malpani M SoulStrings', 
+    'Malpani m soulstrings baner pashan link road', 
+    '3 BHK luxury apartments in Baner-Pashan Link Road', 
+    '4 BHK premium flats for sale in Baner-Pashan Link Road',
+    'Ready to move 3 BHK in Baner Pashan Link Road',
+    'New luxury residential projects in Baner-Pashan Link Road',
+    'Gated community luxury flats in Pashan Pune',
+    'Luxury apartments in Pune',
+    'Top builders in Pune West',
+    'Pune Luxury Real Estate'
+  ],
   openGraph: {
     title: 'Malpani M SoulStrings - 3 & 4 BHK Luxury Residences in Baner',
     description: 'Premium residential project offering spacious 3 BHK and 4 BHK Estates with over 35+ state-of-the-art amenities at Baner-Pashan Link Road, Pune.',
@@ -26,7 +37,7 @@ export const metadata = {
         url: 'https://malpani-cms.firsteconomy.com/uploads/M_soul_strings_Desktop_Banner_Without_Text_0d38ce28d4.jpg',
         width: 1200,
         height: 630,
-        alt: 'Malpani M SoulStrings 4 BHK Baner',
+        alt: 'Malpani M SoulStrings 3 BHK and 4 BHK Luxury Apartments in Baner Pashan Link Road',
       }
     ],
     locale: 'en_IN',
@@ -39,7 +50,7 @@ export const metadata = {
     images: ['https://malpani-cms.firsteconomy.com/uploads/M_soul_strings_Desktop_Banner_Without_Text_0d38ce28d4.jpg'],
   },
   alternates: {
-    // Next.js metadataBase auto-resolves canonical URLs per route when undefined
+    canonical: 'https://www.malpanimsoulstrings.com'
   },
   robots: {
     index: true,
@@ -77,7 +88,6 @@ export const metadata = {
   },
 }
 
-
 export const viewport = {
   themeColor: '#0a0a0c',
   width: 'device-width',
@@ -85,6 +95,42 @@ export const viewport = {
   maximumScale: 1,
   userScalable: false,
 }
+
+const orgSchema = {
+  "@context": "https://schema.org",
+  "@type": "RealEstateAgent",
+  "name": "Malpani M SoulStrings",
+  "image": "https://www.malpanimsoulstrings.com/icon.png",
+  "description": "Ultra-premium 3 BHK and 4 BHK luxury Estates in Baner-Pashan Link Road, Pune.",
+  "@id": "https://www.malpanimsoulstrings.com",
+  "url": "https://www.malpanimsoulstrings.com",
+  "telephone": "+917744009295",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "Pan Card Club Road, Baner",
+    "addressLocality": "Pune",
+    "postalCode": "411045",
+    "addressCountry": "IN"
+  },
+  "geo": {
+    "@type": "GeoCoordinates",
+    "latitude": 18.5590,
+    "longitude": 73.7868
+  },
+  "priceRange": "$$$$"
+};
+
+const websiteSchema = {
+  "@context": "https://schema.org",
+  "@type": "WebSite",
+  "name": "Malpani M SoulStrings",
+  "url": "https://www.malpanimsoulstrings.com",
+  "potentialAction": {
+    "@type": "SearchAction",
+    "target": "https://www.malpanimsoulstrings.com/search?q={search_term_string}",
+    "query-input": "required name=search_term_string"
+  }
+};
 
 export default function RootLayout({ children }) {
   return (
@@ -98,6 +144,25 @@ export default function RootLayout({ children }) {
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" />
         <link rel="stylesheet" href="/style.css" />
       
+        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(orgSchema) }} />
+        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(websiteSchema) }} />
+
+        {/* GTM Server-Side Tracking */}
+        <script
+          dangerouslySetInnerHTML={{
+            __html: `
+              (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+              new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+              j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+              'https://sst.malpanimsoulstrings.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+              })(window,document,'script','dataLayer','GTM-XXXXXXX');
+            `,
+          }}
+        />
+
+        {/* Google Business Profile / Maps API Prep */}
+        <script src={`https://maps.googleapis.com/maps/api/js?key=YOUR_GOOGLE_MAPS_API_KEY&libraries=places`} async defer></script>
+
         <script
           dangerouslySetInnerHTML={{
             __html: `
