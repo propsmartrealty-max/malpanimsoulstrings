@@ -53,11 +53,32 @@ export default async function BlogPost({ params }) {
     htmlContent = '<h1>Article Not Found</h1>';
   }
 
+  const schema = {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "headline": slug.replace(/-/g, ' ').toUpperCase(),
+    "url": `https://www.malpanimsoulstrings.com/blog/${slug}`,
+    "datePublished": new Date().toISOString(),
+    "author": {
+      "@type": "Organization",
+      "name": "Malpani Group"
+    },
+    "publisher": {
+      "@type": "Organization",
+      "name": "Malpani Group",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://www.malpanimsoulstrings.com/icon.png"
+      }
+    }
+  };
+
   return (
     <main className="container py-5 my-5">
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }} />
       <div className="row justify-content-center">
         <div 
-          className="col-lg-8 blog-content" 
+          className="col-lg-8 blog-content fade-in-up" 
           dangerouslySetInnerHTML={{ __html: htmlContent }} 
         />
       </div>

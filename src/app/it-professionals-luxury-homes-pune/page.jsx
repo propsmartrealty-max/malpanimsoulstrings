@@ -1,5 +1,5 @@
-import Navbar from '../../components/Navbar';
-import Footer from '../../components/Footer';
+
+
 import SchemaMarkup from '../../components/SchemaMarkup';
 import Image from 'next/image';
 import Link from 'next/link';
@@ -30,7 +30,7 @@ export const metadata = {
 export default function ITHomesPage() {
   return (
     <main>
-      <Navbar />
+
       <SchemaMarkup />
       
       <div className="pillar-header" style={{ paddingTop: '120px', paddingBottom: '4rem', background: 'var(--color-surface)' }}>
@@ -100,7 +100,7 @@ export default function ITHomesPage() {
           
         </div>
       </div>
-      <Footer />
+
     </main>
   );
 }
