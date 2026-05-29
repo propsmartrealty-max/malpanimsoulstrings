@@ -4,6 +4,7 @@ import SchemaMarkup from '../../components/SchemaMarkup';
 import Link from 'next/link';
 
 export const metadata = {
+  alternates: { canonical: '/baner-overview' },
   title: 'Baner Real Estate Guide 2026 | Top Investment in Baner Pune',
   description: 'Comprehensive guide to the Baner Pashan Link Road real estate market. Discover why investing in luxury properties in Baner Pune offers the highest ROI.',
   keywords: ['Baner Real Estate Guide', 'Investment in Baner Pune', 'Baner Pashan Link Road real estate', 'Buy luxury property in Baner Pune']

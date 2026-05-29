@@ -5,6 +5,7 @@ import EmiCalculator from '../../components/EmiCalculator';
 import Link from 'next/link';
 
 export const metadata = {
+  alternates: { canonical: '/pune-west-real-estate-market' },
   title: 'Pune West Real Estate Market | Luxury Property Guide 2026',
   description: 'The comprehensive guide to the Pune West Real Estate Market. Explore IT corridor growth, property rates in Baner, Aundh, and Wakad, and luxury investments.',
   keywords: ['Pune West Real Estate Market', 'West Pune properties', 'IT corridor real estate Pune', 'luxury flats West Pune', 'invest in West Pune']

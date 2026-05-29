@@ -4,6 +4,7 @@ import SchemaMarkup from '../../components/SchemaMarkup';
 import Link from 'next/link';
 
 export const metadata = {
+  alternates: { canonical: '/infrastructure' },
   title: 'Infrastructure & Market Metrics 2026 | Malpani M SoulStrings',
   description: 'An authoritative investor\'s guide to the structural shifts, capital appreciation metrics, and the rise of ultra-luxury estates in Western Pune.',
 };

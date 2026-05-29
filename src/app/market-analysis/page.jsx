@@ -5,6 +5,7 @@ import EmiCalculator from '../../components/EmiCalculator';
 import Link from 'next/link';
 
 export const metadata = {
+  alternates: { canonical: '/market-analysis' },
   title: 'Pune Real Estate Market Analysis 2026 | Investment Guide',
   description: 'An authoritative investor\'s guide to the structural shifts, capital appreciation metrics, and the rise of ultra-luxury estates in Western Pune.',
   keywords: 'Pune Real Estate Market, Pune luxury property market, investment apartments near Hinjewadi, Pune luxury market investment, Baner property investment',

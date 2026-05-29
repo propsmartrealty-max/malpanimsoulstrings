@@ -4,6 +4,7 @@ import SchemaMarkup from '../../components/SchemaMarkup';
 import Link from 'next/link';
 
 export const metadata = {
+  alternates: { canonical: '/amenities' },
   title: '35+ Luxury Amenities at Malpani M SoulStrings | Baner Pashan Link Road',
   description: 'Explore the world-class resort amenities at Malpani m soulstrings baner pashan link road. Featuring infinity pools, sports courts, and smart home automation.',
 };

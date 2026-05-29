@@ -5,6 +5,7 @@ import Image from 'next/image';
 import Link from 'next/link';
 
 export const metadata = {
+  alternates: { canonical: '/it-professionals-luxury-homes-pune' },
   title: 'Luxury Homes for IT Professionals in Pune | Smart Homes West Pune',
   description: 'Explore why top IT executives in Pune are choosing Malpani M SoulStrings. Discover zero-commute luxury flats near Hinjewadi and Baner with integrated Smart AI homes.',
   keywords: 'Luxury homes for IT professionals Pune, Smart AI homes West Pune, zero commute luxury flats Hinjewadi Baner, premium real estate tech executives Pune, Baner Pashan Link Road IT homes',

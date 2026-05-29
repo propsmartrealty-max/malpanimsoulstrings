@@ -5,6 +5,7 @@ import EmiCalculator from '../../components/EmiCalculator';
 import Link from 'next/link';
 
 export const metadata = {
+  alternates: { canonical: '/pashan' },
   title: 'Pashan Serenity & Smart Luxury | Malpani M SoulStrings',
   description: 'Where the natural beauty of Pashan meets the pinnacle of modern smart-home technology. Panoramic views and sustainable luxury.',
 };

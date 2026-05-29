@@ -5,6 +5,7 @@ import EmiCalculator from '../../components/EmiCalculator';
 import Link from 'next/link';
 
 export const metadata = {
+  alternates: { canonical: '/pune-real-estate-market' },
   title: 'Pune Real Estate Market Trends & Investment Guide 2026',
   description: 'The ultimate guide to the Pune Real Estate Market. Explore property appreciation rates, top luxury investment zones, and why Malpani M SoulStrings is the premier choice.',
   keywords: ['Pune Real Estate Market', 'Pune real estate trends', 'invest in Pune real estate', 'luxury property Pune', 'buy flat in Pune']

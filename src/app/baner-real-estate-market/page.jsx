@@ -5,6 +5,7 @@ import EmiCalculator from '../../components/EmiCalculator';
 import Link from 'next/link';
 
 export const metadata = {
+  alternates: { canonical: '/baner-real-estate-market' },
   title: 'Baner Real Estate Market 2026 | Property Trends & Investment',
   description: 'In-depth analysis of the Baner Real Estate Market. Find out why luxury properties and 4 BHK flats in Baner are the top investment choice in West Pune.',
   keywords: ['Baner Real Estate Market', 'Baner property rates', 'invest in Baner', 'luxury apartments Baner', 'Baner Pashan Link Road']

@@ -4,6 +4,7 @@ import SchemaMarkup from '../../components/SchemaMarkup';
 import Link from 'next/link';
 
 export const metadata = {
+  alternates: { canonical: '/4bhk-luxury' },
   title: '4 BHK Premium Flats for Sale in Baner-Pashan Link Road | Malpani',
   description: 'Explore the most expansive 4 BHK luxury Estates in the Baner Pashan Link Road real estate market. Vastu-compliant, smart home automation, and 35+ amenities.',
   keywords: ['4 BHK premium flats for sale in Baner-Pashan Link Road', 'spacious 4 BHK apartments near Baner-Pashan Link Road', 'luxury penthouses in Baner Pashan Link Road']

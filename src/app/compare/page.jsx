@@ -1,4 +1,5 @@
 export const metadata = {
+  alternates: { canonical: '/compare' },
   title: 'Pristine Lords Baner vs Kohinoor Liviance Alternative | Malpani M SoulStrings',
   description: 'Comparing Pristine Lords Baner, Kohinoor Liviance Aleenta, and Malpani M SoulStrings. Discover the best luxury 4 BHK flats in Baner Pashan Link Road.',
   keywords: ['Pristine Lords Baner alternative', 'Kohinoor Liviance Baner comparison', 'Better luxury flats than Kohinoor Livience Aleenta', 'Top premium alternatives to Pristine The Lords Pune', 'Malpani M SoulStrings vs Pristine Lords', 'Kohinoor Liviance vs Malpani']

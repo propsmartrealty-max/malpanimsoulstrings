@@ -5,6 +5,7 @@ import Image from 'next/image';
 import Link from 'next/link';
 
 export const metadata = {
+  alternates: { canonical: '/vastu-compliant-luxury-homes-pune' },
   title: 'Vastu Compliant 3 BHK & 4 BHK Luxury Homes in Pune | Baner',
   description: 'Looking for 100% Vastu-compliant luxury apartments in Pune? Explore Malpani M SoulStrings in Baner, offering East-West facing homes with ultimate positive energy flow.',
   keywords: 'Vastu compliant 4 BHK flats in Pune, East facing luxury apartments Baner, Vastu homes West Pune, Malpani SoulStrings Vastu, luxury real estate positive energy',

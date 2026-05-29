@@ -50,9 +50,6 @@ export const metadata = {
     description: 'Ultra-premium 3 & 4 BHK Luxury Homes at Baner Pashan Link Road.',
     images: ['https://malpani-cms.firsteconomy.com/uploads/M_soul_strings_Desktop_Banner_Without_Text_0d38ce28d4.jpg'],
   },
-  alternates: {
-    canonical: 'https://www.malpanimsoulstrings.com'
-  },
   robots: {
     index: true,
     follow: true,

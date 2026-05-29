@@ -5,6 +5,7 @@ import EmiCalculator from '../../components/EmiCalculator';
 import Link from 'next/link';
 
 export const metadata = {
+  alternates: { canonical: '/nri-investment' },
   title: 'NRI Real Estate Investment in Pune 2026 | Baner Pashan Link Road',
   description: 'Why NRIs are investing heavily in Pune West luxury real estate. Discover the ROI, IT corridor synergy, and ultra-luxury benefits of Malpani M SoulStrings.',
   keywords: 'NRI real estate investment Pune, Baner real estate ROI, NRI luxury property India, Pune West IT corridor homes, Malpani M SoulStrings NRI',

@@ -7,6 +7,12 @@ import Testimonials from '@/components/Testimonials';
 import fs from 'fs';
 import path from 'path';
 
+export const metadata = {
+  alternates: {
+    canonical: '/'
+  }
+};
+
 export default function Home() {
   const contentDir = path.join(process.cwd(), 'src', 'content', 'blog');
   let blogFiles = [];
@@ -21,7 +27,7 @@ export default function Home() {
       <SchemaMarkup />
       <section id="hero" className="hero">
       <div className="hero-bg">
-        <video src="https://malpani-cms.firsteconomy.com/uploads/video_51_98e1310033.mp4" preload="auto" poster="https://malpani-cms.firsteconomy.com/uploads/M_soul_strings_Desktop_Banner_Without_Text_0d38ce28d4.jpg" autoPlay loop muted playsInline className="video-bg"></video>
+        <video src="https://malpani-cms.firsteconomy.com/uploads/video_51_98e1310033.mp4" preload="metadata" poster="https://malpani-cms.firsteconomy.com/uploads/M_soul_strings_Desktop_Banner_Without_Text_0d38ce28d4.jpg" autoPlay loop muted playsInline className="video-bg"></video>
         <div className="hero-overlay"></div>
       </div>
       <div className="hero-content">

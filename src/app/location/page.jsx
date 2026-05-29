@@ -4,6 +4,7 @@ import SchemaMarkup from '../../components/SchemaMarkup';
 import Link from 'next/link';
 
 export const metadata = {
+  alternates: { canonical: '/location' },
   title: 'Location Advantages of Malpani M SoulStrings | Baner Pashan Link Road',
   description: 'Discover why the Malpani m soulstrings baner pashan link road location is the most coveted real estate destination in West Pune, bridging Hinjewadi and Aundh.',
 };

@@ -5,6 +5,7 @@ import EmiCalculator from '../../components/EmiCalculator';
 import Link from 'next/link';
 
 export const metadata = {
+  alternates: { canonical: '/shivajinagar' },
   title: 'The Ultimate Retreat for the Shivajinagar Elite | Malpani',
   description: 'Escape the density of central Pune. Discover low-density, ultra-luxury living at Malpani M SoulStrings on the Baner Pashan Link Road.',
 };

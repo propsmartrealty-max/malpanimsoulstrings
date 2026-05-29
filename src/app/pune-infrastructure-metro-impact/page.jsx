@@ -5,6 +5,7 @@ import Image from 'next/image';
 import Link from 'next/link';
 
 export const metadata = {
+  alternates: { canonical: '/pune-infrastructure-metro-impact' },
   title: 'Pune Infrastructure & Real Estate Impact 2026 | Metro Line 3 & Ring Road',
   description: 'Discover how the Pune Metro Line 3 and Ring Road are driving massive capital appreciation in the Pune Real Estate Market. Explore luxury property investments on Baner-Pashan Link Road.',
   keywords: 'Pune Metro Line 3 real estate, Pune Ring Road property investment, infrastructure impact on Pune real estate, Baner real estate appreciation, West Pune infrastructure 2026',
