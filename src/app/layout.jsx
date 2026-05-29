@@ -10,6 +10,7 @@ import Script from 'next/script'
 import Image from 'next/image'
 import { GoogleAnalytics, GoogleTagManager } from '@next/third-parties/google'
 import FloatingWhatsApp from '@/components/FloatingWhatsApp'
+import ExitIntentModal from '@/components/ExitIntentModal'
 
 export const metadata = {
   metadataBase: new URL('https://www.malpanimsoulstrings.com'),
@@ -180,6 +181,7 @@ export default function RootLayout({ children }) {
         <Navbar />
         <ThemeProvider>{children}</ThemeProvider>
         <FloatingWhatsApp />
+        <ExitIntentModal />
         <Footer />
         <ClientScripts />
         <Script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" strategy="afterInteractive" />
