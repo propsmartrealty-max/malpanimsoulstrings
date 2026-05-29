@@ -68,37 +68,8 @@ export default function Home() {
       </div>
     </section>
 
-    {/* Specifications Section (NEW) */}
-    <section id="specs" className="section specs" >
-      <div className="container">
-        <div className="section-header fade-in-up">
-          <h2 className="section-title">Ultra-Luxury Specifications</h2>
-          <p className="section-desc">Every 3BHK and 4BHK residence at Malpani M SoulStrings is crafted with the highest standards of luxury.</p>
-        </div>
-        <div className="specs-grid fade-in-up" >
-          <div className="spec-card" >
-            <h3 >Premium Flooring</h3>
-            <p >Imported Italian marble in the living and dining areas, accompanied by premium engineered wooden flooring in the master bedroom.</p>
-          </div>
-          <div className="spec-card" >
-            <h3 >Smart Home Automation</h3>
-            <p >State-of-the-art integrated smart home systems controlling lighting, climate, and advanced multi-tier biometric security.</p>
-          </div>
-          <div className="spec-card" >
-            <h3 >Bespoke Kitchens</h3>
-            <p >Fully modular premium kitchens equipped with top-tier international branded fittings, hob, and chimney systems.</p>
-          </div>
-          <div className="spec-card" >
-            <h3 >Designer Bathrooms</h3>
-            <p >European standard CP and sanitary fittings (Grohe/Kohler or equivalent), glass shower partitions, and exquisite wall tiling.</p>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    {/* Comprehensive Amenities Section */}
     {/* Master Plan & Floor Plans */}
-    <section id="floor-plans" className="section floor-plans" >
+    <section id="floor-plans" className="section floor-plans" style={{ background: 'var(--color-surface)' }}>
       <div className="parallax-text" data-speed="0.15">LAYOUTS</div>
       <div className="container" >
         <div className="section-header fade-in-up">
@@ -111,34 +82,170 @@ export default function Home() {
         </div>
         
         {/* Master Plan */}
-        <div className="master-plan-container fade-in-up" >
-          <div className="plan-card" >
-            <h3 >The Grand Master Plan</h3>
-            <Image src="https://malpani-cms.firsteconomy.com/uploads/m_soulstrings_Masterplan_da0ad90428.png" alt="Malpani M SoulStrings Baner Pashan Link Road 3BHK" width={1200} height={800} className="gallery-img" style={{ width: "100%", height: "auto" }} />
-            <p >Over 35+ amenities spread across acres of ultra-luxury landscape.</p>
+        <div className="master-plan-container fade-in-up" style={{ marginBottom: '4rem' }}>
+          <div className="plan-card loc-card" style={{ padding: '2rem', textAlign: 'center', borderRadius: '12px' }}>
+            <h3 style={{ marginBottom: '1.5rem', color: 'var(--color-primary)' }}>The Grand Master Plan</h3>
+            <Image src="https://malpani-cms.firsteconomy.com/uploads/m_soulstrings_Masterplan_da0ad90428.png" alt="Malpani M SoulStrings Baner Pashan Link Road 3BHK" width={1200} height={800} className="gallery-img" style={{ width: "100%", height: "auto", borderRadius: '8px' }} />
+            <p style={{ marginTop: '1.5rem', color: 'var(--color-text-muted)' }}>Over 35+ amenities spread across acres of ultra-luxury landscape.</p>
           </div>
         </div>
 
-        <div className="floor-plans-grid fade-in-up" >
-          <div className="plan-card" >
-            <h3 >Tower B Typical Layout</h3>
-            <Image src="https://malpani-cms.firsteconomy.com/uploads/Tower_B_Typical_Floor_Plan_d8871dabad.png" alt="Malpani M SoulStrings Baner Pashan Link Road 4BHK" width={1200} height={800} className="gallery-img" style={{ width: "100%", height: "auto" }} />
-            <p >Expansive 3BHK and 4BHK configurations maximizing ventilation and sunlight.</p>
+        <div className="floor-plans-grid fade-in-up" style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '2rem' }}>
+          <div className="plan-card loc-card" style={{ padding: '2rem', textAlign: 'center', borderRadius: '12px' }}>
+            <h3 style={{ marginBottom: '1.5rem', color: 'var(--color-primary)' }}>Tower B Typical Layout</h3>
+            <Image src="https://malpani-cms.firsteconomy.com/uploads/Tower_B_Typical_Floor_Plan_d8871dabad.png" alt="Malpani M SoulStrings Baner Pashan Link Road 4BHK" width={1200} height={800} className="gallery-img" style={{ width: "100%", height: "auto", borderRadius: '8px' }} />
+            <p style={{ marginTop: '1.5rem', color: 'var(--color-text-muted)' }}>Expansive 3BHK and 4BHK configurations maximizing ventilation and sunlight.</p>
           </div>
-          <div className="plan-card" >
-            <h3 >Tower C Typical Layout</h3>
-            <Image src="https://malpani-cms.firsteconomy.com/uploads/Tower_C_Typical_Floor_Plan_a1e5399ac9.png" alt="Malpani M SoulStrings Baner Pashan Link Road 4BHK" width={1200} height={800} className="gallery-img" style={{ width: "100%", height: "auto" }} />
-            <p >Premium core units featuring ultra-luxury bespoke specifications.</p>
+          <div className="plan-card loc-card" style={{ padding: '2rem', textAlign: 'center', borderRadius: '12px' }}>
+            <h3 style={{ marginBottom: '1.5rem', color: 'var(--color-primary)' }}>Tower C Typical Layout</h3>
+            <Image src="https://malpani-cms.firsteconomy.com/uploads/Tower_C_Typical_Floor_Plan_a1e5399ac9.png" alt="Malpani M SoulStrings Baner Pashan Link Road 4BHK" width={1200} height={800} className="gallery-img" style={{ width: "100%", height: "auto", borderRadius: '8px' }} />
+            <p style={{ marginTop: '1.5rem', color: 'var(--color-text-muted)' }}>Premium core units featuring ultra-luxury bespoke specifications.</p>
           </div>
         </div>
         
-        <div className="vr-hub-container fade-in-up" >
-          <div className="loc-card" >
-            <span className="material-symbols-outlined" >view_in_ar</span>
-            <h3 >Immersive 3D Walkthrough</h3>
-            <p >Step inside M SoulStrings from anywhere in the world. Experience the sheer scale and luxury of our Show Flats in stunning Virtual Reality.</p>
+        <div className="vr-hub-container fade-in-up" style={{ marginTop: '4rem', textAlign: 'center' }}>
+          <div className="loc-card" style={{ padding: '3rem', borderRadius: '12px', display: 'inline-block', maxWidth: '800px' }}>
+            <span className="material-symbols-outlined" style={{ fontSize: '3rem', color: 'var(--color-primary)', marginBottom: '1rem' }}>view_in_ar</span>
+            <h3 style={{ marginBottom: '1rem' }}>Immersive 3D Walkthrough</h3>
+            <p style={{ color: 'var(--color-text-muted)', marginBottom: '2rem' }}>Step inside M SoulStrings from anywhere in the world. Experience the sheer scale and luxury of our Show Flats in stunning Virtual Reality.</p>
             <button data-bs-toggle="modal" data-bs-target="#vrModal" className="btn btn-primary" style={{ fontSize: "1.2rem", padding: "1rem 3rem" }}>Launch VR Tour (Native)</button>
           </div>
+        </div>
+      </div>
+    </section>
+
+    {/* Specifications Section (Refined) */}
+    <section id="specs" className="section specs" >
+      <div className="container">
+        <div className="section-header fade-in-up">
+          <h2 className="section-title gradient-text">Ultra-Luxury Specifications</h2>
+          <p className="section-desc">Every 3 BHK and 4 BHK residence at Malpani M SoulStrings is crafted with the highest standards of luxury.</p>
+        </div>
+        <div className="specs-grid fade-in-up" style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(250px, 1fr))', gap: '2rem' }}>
+          <div className="spec-card loc-card" style={{ padding: '2.5rem', borderRadius: '12px', textAlign: 'center' }}>
+            <span className="material-symbols-outlined" style={{ fontSize: '3rem', color: 'var(--color-primary)', marginBottom: '1rem' }}>floor</span>
+            <h3 style={{ fontSize: '1.5rem', marginBottom: '1rem' }}>Premium Flooring</h3>
+            <p style={{ color: 'var(--color-text-muted)', lineHeight: '1.6' }}>Imported Italian marble in the living and dining areas, accompanied by premium engineered wooden flooring in the master bedroom.</p>
+          </div>
+          <div className="spec-card loc-card" style={{ padding: '2.5rem', borderRadius: '12px', textAlign: 'center' }}>
+            <span className="material-symbols-outlined" style={{ fontSize: '3rem', color: 'var(--color-primary)', marginBottom: '1rem' }}>smart_toy</span>
+            <h3 style={{ fontSize: '1.5rem', marginBottom: '1rem' }}>Smart Home Automation</h3>
+            <p style={{ color: 'var(--color-text-muted)', lineHeight: '1.6' }}>State-of-the-art integrated smart home systems controlling lighting, climate, and advanced multi-tier biometric security.</p>
+          </div>
+          <div className="spec-card loc-card" style={{ padding: '2.5rem', borderRadius: '12px', textAlign: 'center' }}>
+            <span className="material-symbols-outlined" style={{ fontSize: '3rem', color: 'var(--color-primary)', marginBottom: '1rem' }}>kitchen</span>
+            <h3 style={{ fontSize: '1.5rem', marginBottom: '1rem' }}>Bespoke Kitchens</h3>
+            <p style={{ color: 'var(--color-text-muted)', lineHeight: '1.6' }}>Fully modular premium kitchens equipped with top-tier international branded fittings, hob, and chimney systems.</p>
+          </div>
+          <div className="spec-card loc-card" style={{ padding: '2.5rem', borderRadius: '12px', textAlign: 'center' }}>
+            <span className="material-symbols-outlined" style={{ fontSize: '3rem', color: 'var(--color-primary)', marginBottom: '1rem' }}>bathtub</span>
+            <h3 style={{ fontSize: '1.5rem', marginBottom: '1rem' }}>Designer Bathrooms</h3>
+            <p style={{ color: 'var(--color-text-muted)', lineHeight: '1.6' }}>European standard CP and sanitary fittings (Grohe/Kohler or equivalent), glass shower partitions, and exquisite wall tiling.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    {/* Comprehensive Amenities Section (Refined) */}
+    <section id="amenities" className="section amenities" style={{ background: 'var(--color-surface)' }}>
+      <div className="container">
+        <div className="section-header fade-in-up">
+          <h2 className="section-title gradient-text">35+ World-Class Amenities</h2>
+          <p className="section-desc">A masterfully curated ecosystem designed for absolute luxury, wellness, and entertainment.</p>
+        </div>
+        
+        <div className="amenities-categories fade-in-up" style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(350px, 1fr))', gap: '3rem' }}>
+          
+          {/* Wellness & Aqua */}
+          <div className="amenity-category loc-card" style={{ padding: '2.5rem', borderRadius: '12px' }}>
+            <h3 style={{ marginBottom: '1.5rem', color: 'var(--color-primary)', display: 'flex', alignItems: 'center', gap: '0.5rem' }}>
+              <span className="material-symbols-outlined">water_drop</span> Wellness & Aqua
+            </h3>
+            <ul className="premium-amenity-grid" style={{ listStyle: 'none', padding: 0, display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '1rem' }}>
+              <li style={{ display: 'flex', alignItems: 'center', gap: '0.5rem', color: 'var(--color-text-muted)' }}><span className="material-symbols-outlined" style={{ color: 'var(--color-primary)', fontSize: '1.2rem' }}>check_circle</span> Swimming Pool</li>
+              <li style={{ display: 'flex', alignItems: 'center', gap: '0.5rem', color: 'var(--color-text-muted)' }}><span className="material-symbols-outlined" style={{ color: 'var(--color-primary)', fontSize: '1.2rem' }}>check_circle</span> Spa & Salon</li>
+              <li style={{ display: 'flex', alignItems: 'center', gap: '0.5rem', color: 'var(--color-text-muted)' }}><span className="material-symbols-outlined" style={{ color: 'var(--color-primary)', fontSize: '1.2rem' }}>check_circle</span> Pool Side Cabanas</li>
+              <li style={{ display: 'flex', alignItems: 'center', gap: '0.5rem', color: 'var(--color-text-muted)' }}><span className="material-symbols-outlined" style={{ color: 'var(--color-primary)', fontSize: '1.2rem' }}>check_circle</span> Kids Pool</li>
+              <li style={{ display: 'flex', alignItems: 'center', gap: '0.5rem', color: 'var(--color-text-muted)' }}><span className="material-symbols-outlined" style={{ color: 'var(--color-primary)', fontSize: '1.2rem' }}>check_circle</span> Outdoor Shower</li>
+              <li style={{ display: 'flex', alignItems: 'center', gap: '0.5rem', color: 'var(--color-text-muted)' }}><span className="material-symbols-outlined" style={{ color: 'var(--color-primary)', fontSize: '1.2rem' }}>check_circle</span> Reflexology Path</li>
+            </ul>
+          </div>
+
+          {/* Sports & Fitness */}
+          <div className="amenity-category loc-card" style={{ padding: '2.5rem', borderRadius: '12px' }}>
+            <h3 style={{ marginBottom: '1.5rem', color: 'var(--color-primary)', display: 'flex', alignItems: 'center', gap: '0.5rem' }}>
+              <span className="material-symbols-outlined">fitness_center</span> Sports & Fitness
+            </h3>
+            <ul className="premium-amenity-grid" style={{ listStyle: 'none', padding: 0, display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '1rem' }}>
+              <li style={{ display: 'flex', alignItems: 'center', gap: '0.5rem', color: 'var(--color-text-muted)' }}><span className="material-symbols-outlined" style={{ color: 'var(--color-primary)', fontSize: '1.2rem' }}>check_circle</span> Multifitness Area</li>
+              <li style={{ display: 'flex', alignItems: 'center', gap: '0.5rem', color: 'var(--color-text-muted)' }}><span className="material-symbols-outlined" style={{ color: 'var(--color-primary)', fontSize: '1.2rem' }}>check_circle</span> Basketball Court</li>
+              <li style={{ display: 'flex', alignItems: 'center', gap: '0.5rem', color: 'var(--color-text-muted)' }}><span className="material-symbols-outlined" style={{ color: 'var(--color-primary)', fontSize: '1.2rem' }}>check_circle</span> Net-cricket</li>
+              <li style={{ display: 'flex', alignItems: 'center', gap: '0.5rem', color: 'var(--color-text-muted)' }}><span className="material-symbols-outlined" style={{ color: 'var(--color-primary)', fontSize: '1.2rem' }}>check_circle</span> Badminton Court</li>
+              <li style={{ display: 'flex', alignItems: 'center', gap: '0.5rem', color: 'var(--color-text-muted)' }}><span className="material-symbols-outlined" style={{ color: 'var(--color-primary)', fontSize: '1.2rem' }}>check_circle</span> Pickle Ball Court</li>
+              <li style={{ display: 'flex', alignItems: 'center', gap: '0.5rem', color: 'var(--color-text-muted)' }}><span className="material-symbols-outlined" style={{ color: 'var(--color-primary)', fontSize: '1.2rem' }}>check_circle</span> Jogging Trail</li>
+            </ul>
+          </div>
+
+          {/* Club & Entertainment */}
+          <div className="amenity-category loc-card" style={{ padding: '2.5rem', borderRadius: '12px' }}>
+            <h3 style={{ marginBottom: '1.5rem', color: 'var(--color-primary)', display: 'flex', alignItems: 'center', gap: '0.5rem' }}>
+              <span className="material-symbols-outlined">nightlife</span> Club & Social
+            </h3>
+            <ul className="premium-amenity-grid" style={{ listStyle: 'none', padding: 0, display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '1rem' }}>
+              <li style={{ display: 'flex', alignItems: 'center', gap: '0.5rem', color: 'var(--color-text-muted)' }}><span className="material-symbols-outlined" style={{ color: 'var(--color-primary)', fontSize: '1.2rem' }}>check_circle</span> Grand Clubhouse</li>
+              <li style={{ display: 'flex', alignItems: 'center', gap: '0.5rem', color: 'var(--color-text-muted)' }}><span className="material-symbols-outlined" style={{ color: 'var(--color-primary)', fontSize: '1.2rem' }}>check_circle</span> Amphitheatre</li>
+              <li style={{ display: 'flex', alignItems: 'center', gap: '0.5rem', color: 'var(--color-text-muted)' }}><span className="material-symbols-outlined" style={{ color: 'var(--color-primary)', fontSize: '1.2rem' }}>check_circle</span> Coffee Lounge</li>
+              <li style={{ display: 'flex', alignItems: 'center', gap: '0.5rem', color: 'var(--color-text-muted)' }}><span className="material-symbols-outlined" style={{ color: 'var(--color-primary)', fontSize: '1.2rem' }}>check_circle</span> Dance Room</li>
+              <li style={{ display: 'flex', alignItems: 'center', gap: '0.5rem', color: 'var(--color-text-muted)' }}><span className="material-symbols-outlined" style={{ color: 'var(--color-primary)', fontSize: '1.2rem' }}>check_circle</span> Social Island</li>
+              <li style={{ display: 'flex', alignItems: 'center', gap: '0.5rem', color: 'var(--color-text-muted)' }}><span className="material-symbols-outlined" style={{ color: 'var(--color-primary)', fontSize: '1.2rem' }}>check_circle</span> Chit-chat Corner</li>
+            </ul>
+          </div>
+
+          {/* Indoor Games */}
+          <div className="amenity-category loc-card" style={{ padding: '2.5rem', borderRadius: '12px' }}>
+            <h3 style={{ marginBottom: '1.5rem', color: 'var(--color-primary)', display: 'flex', alignItems: 'center', gap: '0.5rem' }}>
+              <span className="material-symbols-outlined">sports_esports</span> Indoor Games
+            </h3>
+            <ul className="premium-amenity-grid" style={{ listStyle: 'none', padding: 0, display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '1rem' }}>
+              <li style={{ display: 'flex', alignItems: 'center', gap: '0.5rem', color: 'var(--color-text-muted)' }}><span className="material-symbols-outlined" style={{ color: 'var(--color-primary)', fontSize: '1.2rem' }}>check_circle</span> Pool Table</li>
+              <li style={{ display: 'flex', alignItems: 'center', gap: '0.5rem', color: 'var(--color-text-muted)' }}><span className="material-symbols-outlined" style={{ color: 'var(--color-primary)', fontSize: '1.2rem' }}>check_circle</span> Table Tennis</li>
+              <li style={{ display: 'flex', alignItems: 'center', gap: '0.5rem', color: 'var(--color-text-muted)' }}><span className="material-symbols-outlined" style={{ color: 'var(--color-primary)', fontSize: '1.2rem' }}>check_circle</span> Carrom & Chess</li>
+              <li style={{ display: 'flex', alignItems: 'center', gap: '0.5rem', color: 'var(--color-text-muted)' }}><span className="material-symbols-outlined" style={{ color: 'var(--color-primary)', fontSize: '1.2rem' }}>check_circle</span> Dart Area</li>
+              <li style={{ display: 'flex', alignItems: 'center', gap: '0.5rem', color: 'var(--color-text-muted)' }}><span className="material-symbols-outlined" style={{ color: 'var(--color-primary)', fontSize: '1.2rem' }}>check_circle</span> Coding Room</li>
+              <li style={{ display: 'flex', alignItems: 'center', gap: '0.5rem', color: 'var(--color-text-muted)' }}><span className="material-symbols-outlined" style={{ color: 'var(--color-primary)', fontSize: '1.2rem' }}>check_circle</span> Art & Craft</li>
+            </ul>
+          </div>
+
+          {/* Nature & Landscapes */}
+          <div className="amenity-category loc-card" style={{ padding: '2.5rem', borderRadius: '12px' }}>
+            <h3 style={{ marginBottom: '1.5rem', color: 'var(--color-primary)', display: 'flex', alignItems: 'center', gap: '0.5rem' }}>
+              <span className="material-symbols-outlined">park</span> Nature & Landscapes
+            </h3>
+            <ul className="premium-amenity-grid" style={{ listStyle: 'none', padding: 0, display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '1rem' }}>
+              <li style={{ display: 'flex', alignItems: 'center', gap: '0.5rem', color: 'var(--color-text-muted)' }}><span className="material-symbols-outlined" style={{ color: 'var(--color-primary)', fontSize: '1.2rem' }}>check_circle</span> Forest Trail</li>
+              <li style={{ display: 'flex', alignItems: 'center', gap: '0.5rem', color: 'var(--color-text-muted)' }}><span className="material-symbols-outlined" style={{ color: 'var(--color-primary)', fontSize: '1.2rem' }}>check_circle</span> Flower Garden</li>
+              <li style={{ display: 'flex', alignItems: 'center', gap: '0.5rem', color: 'var(--color-text-muted)' }}><span className="material-symbols-outlined" style={{ color: 'var(--color-primary)', fontSize: '1.2rem' }}>check_circle</span> Aromatic Garden</li>
+              <li style={{ display: 'flex', alignItems: 'center', gap: '0.5rem', color: 'var(--color-text-muted)' }}><span className="material-symbols-outlined" style={{ color: 'var(--color-primary)', fontSize: '1.2rem' }}>check_circle</span> Multipurpose Lawn</li>
+              <li style={{ display: 'flex', alignItems: 'center', gap: '0.5rem', color: 'var(--color-text-muted)' }}><span className="material-symbols-outlined" style={{ color: 'var(--color-primary)', fontSize: '1.2rem' }}>check_circle</span> Natures Corner</li>
+              <li style={{ display: 'flex', alignItems: 'center', gap: '0.5rem', color: 'var(--color-text-muted)' }}><span className="material-symbols-outlined" style={{ color: 'var(--color-primary)', fontSize: '1.2rem' }}>check_circle</span> Pets Park</li>
+            </ul>
+          </div>
+
+          {/* Kids & Convenience */}
+          <div className="amenity-category loc-card" style={{ padding: '2.5rem', borderRadius: '12px' }}>
+            <h3 style={{ marginBottom: '1.5rem', color: 'var(--color-primary)', display: 'flex', alignItems: 'center', gap: '0.5rem' }}>
+              <span className="material-symbols-outlined">family_restroom</span> Kids & Lifestyle
+            </h3>
+            <ul className="premium-amenity-grid" style={{ listStyle: 'none', padding: 0, display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '1rem' }}>
+              <li style={{ display: 'flex', alignItems: 'center', gap: '0.5rem', color: 'var(--color-text-muted)' }}><span className="material-symbols-outlined" style={{ color: 'var(--color-primary)', fontSize: '1.2rem' }}>check_circle</span> Kids Play Area</li>
+              <li style={{ display: 'flex', alignItems: 'center', gap: '0.5rem', color: 'var(--color-text-muted)' }}><span className="material-symbols-outlined" style={{ color: 'var(--color-primary)', fontSize: '1.2rem' }}>check_circle</span> Toddler Sandpit</li>
+              <li style={{ display: 'flex', alignItems: 'center', gap: '0.5rem', color: 'var(--color-text-muted)' }}><span className="material-symbols-outlined" style={{ color: 'var(--color-primary)', fontSize: '1.2rem' }}>check_circle</span> Temple</li>
+              <li style={{ display: 'flex', alignItems: 'center', gap: '0.5rem', color: 'var(--color-text-muted)' }}><span className="material-symbols-outlined" style={{ color: 'var(--color-primary)', fontSize: '1.2rem' }}>check_circle</span> Senior Citizen Area</li>
+              <li style={{ display: 'flex', alignItems: 'center', gap: '0.5rem', color: 'var(--color-text-muted)' }}><span className="material-symbols-outlined" style={{ color: 'var(--color-primary)', fontSize: '1.2rem' }}>check_circle</span> Bus Pick Up</li>
+              <li style={{ display: 'flex', alignItems: 'center', gap: '0.5rem', color: 'var(--color-text-muted)' }}><span className="material-symbols-outlined" style={{ color: 'var(--color-primary)', fontSize: '1.2rem' }}>check_circle</span> Grand Lobby</li>
+            </ul>
+          </div>
+
         </div>
       </div>
     </section>
@@ -161,111 +268,6 @@ export default function Home() {
           <Image src="https://malpani-cms.firsteconomy.com/uploads/Entrance_Lobby_9d4d367801.png" alt="Malpani M SoulStrings Grand Entrance Lobby Baner Pune" width={1200} height={800} className="gallery-img" style={{ width: "100%", height: "auto" }} />
           <Image src="https://malpani-cms.firsteconomy.com/uploads/About_Project_27b8c57d51.png" alt="Malpani M SoulStrings Project Elevation West Pune Real Estate" width={1200} height={800} className="gallery-img" style={{ width: "100%", height: "auto" }} />
           <Image src="https://malpani-cms.firsteconomy.com/uploads/M_soul_strings_Desktop_Banner_Without_Text_0d38ce28d4.jpg" alt="Luxury apartments in Pune Baner Pashan Link Road" width={1200} height={800} className="gallery-img" style={{ width: "100%", height: "auto" }} />
-        </div>
-      </div>
-    </section>
-
-
-<section id="amenities" className="section amenities">
-      <div className="container">
-        <div className="section-header fade-in-up">
-          <h2 className="section-title gradient-text">35+ World-Class Amenities</h2>
-          <p className="section-desc">A masterfully curated ecosystem designed for absolute luxury, wellness, and entertainment.</p>
-        </div>
-        
-        <div className="amenities-categories fade-in-up" >
-          
-          {/* Wellness & Aqua */}
-          <div className="amenity-category loc-card" >
-            <h3 >
-              <span className="material-symbols-outlined">water_drop</span> Wellness & Aqua
-            </h3>
-            <ul className="dense-amenity-list">
-              <li><span className="material-symbols-outlined">pool</span> Swimming Pool</li>
-              <li><span className="material-symbols-outlined">hot_tub</span> Spa & Salon</li>
-              <li><span className="material-symbols-outlined">deck</span> Pool Side Cabanas</li>
-              <li><span className="material-symbols-outlined">child_care</span> Kids Pool</li>
-              <li><span className="material-symbols-outlined">shower</span> Outdoor Shower</li>
-              <li><span className="material-symbols-outlined">nature_people</span> Reflexology Pathway</li>
-            </ul>
-          </div>
-
-          {/* Sports & Fitness */}
-          <div className="amenity-category loc-card" >
-            <h3 >
-              <span className="material-symbols-outlined">fitness_center</span> Sports & Fitness
-            </h3>
-            <ul className="dense-amenity-list">
-              <li><span className="material-symbols-outlined">exercise</span> Multifitness Area</li>
-              <li><span className="material-symbols-outlined">sports_basketball</span> Basketball Court</li>
-              <li><span className="material-symbols-outlined">sports_cricket</span> Net-cricket</li>
-              <li><span className="material-symbols-outlined">sports_tennis</span> Badminton Court</li>
-              <li><span className="material-symbols-outlined">sports_baseball</span> Pickle Ball Court</li>
-              <li><span className="material-symbols-outlined">directions_run</span> Jogging Trail</li>
-              <li><span className="material-symbols-outlined">sports_gymnastics</span> Arm-up Area</li>
-            </ul>
-          </div>
-
-          {/* Club & Entertainment */}
-          <div className="amenity-category loc-card" >
-            <h3 >
-              <span className="material-symbols-outlined">nightlife</span> Club & Social
-            </h3>
-            <ul className="dense-amenity-list">
-              <li><span className="material-symbols-outlined">castle</span> Grand Clubhouse</li>
-              <li><span className="material-symbols-outlined">stadium</span> Amphitheatre</li>
-              <li><span className="material-symbols-outlined">coffee</span> Coffee Lounge</li>
-              <li><span className="material-symbols-outlined">celebration</span> Dance Room</li>
-              <li><span className="material-symbols-outlined">groups</span> Social Island</li>
-              <li><span className="material-symbols-outlined">forum</span> Chit-chat Corner</li>
-            </ul>
-          </div>
-
-          {/* Indoor Games */}
-          <div className="amenity-category loc-card" >
-            <h3 >
-              <span className="material-symbols-outlined">sports_esports</span> Indoor Games
-            </h3>
-            <ul className="dense-amenity-list">
-              <li><span className="material-symbols-outlined">sports_score</span> Pool Table</li>
-              <li><span className="material-symbols-outlined">table_restaurant</span> Table Tennis</li>
-              <li><span className="material-symbols-outlined">casino</span> Carrom & Chess Play</li>
-              <li><span className="material-symbols-outlined">sports_martial_arts</span> Dart Area</li>
-              <li><span className="material-symbols-outlined">terminal</span> Coding Room</li>
-              <li><span className="material-symbols-outlined">palette</span> Art & Craft</li>
-            </ul>
-          </div>
-
-          {/* Nature & Landscapes */}
-          <div className="amenity-category loc-card" >
-            <h3 >
-              <span className="material-symbols-outlined">park</span> Nature & Landscapes
-            </h3>
-            <ul className="dense-amenity-list">
-              <li><span className="material-symbols-outlined">forest</span> Forest Trail</li>
-              <li><span className="material-symbols-outlined">local_florist</span> All Season Flower Garden</li>
-              <li><span className="material-symbols-outlined">spa</span> Aromatic Garden</li>
-              <li><span className="material-symbols-outlined">yard</span> Grand Multipurpose Lawn</li>
-              <li><span className="material-symbols-outlined">eco</span> Orchard & Natures Corner</li>
-              <li><span className="material-symbols-outlined">pets</span> Pets Park</li>
-            </ul>
-          </div>
-
-          {/* Kids & Convenience */}
-          <div className="amenity-category loc-card" >
-            <h3 >
-              <span className="material-symbols-outlined">family_restroom</span> Kids & Lifestyle
-            </h3>
-            <ul className="dense-amenity-list">
-              <li><span className="material-symbols-outlined">toys</span> Kids Play Area & Club</li>
-              <li><span className="material-symbols-outlined">baby_changing_station</span> Toddler Play Area & Sandpit</li>
-              <li><span className="material-symbols-outlined">synagogue</span> Temple</li>
-              <li><span className="material-symbols-outlined">elderly</span> Senior Citizen Corner</li>
-              <li><span className="material-symbols-outlined">directions_bus</span> Bus Pick Up-Drop Off</li>
-              <li><span className="material-symbols-outlined">door_front</span> Grand Entrance Lobby</li>
-            </ul>
-          </div>
-
         </div>
       </div>
     </section>
@@ -407,9 +409,8 @@ export default function Home() {
           <h2 className="section-title gradient-text">Schedule Site Visit Malpani Soulstrings</h2>
           <p>Get exclusive <strong>Malpani Soulstrings pricing</strong> and browse the finest <strong>luxury flats for sale Baner</strong>.</p>
           <div className="contact-details" >
-            <p ><span className="material-symbols-outlined" >location_on</span> Malpani Baner Pashan Link Road Pashan Link Road, Pune</p>
-            <p ><span className="material-symbols-outlined" >call</span> +91 98765 43210</p>
-            <p><span className="material-symbols-outlined" >mail</span> sales@malpanimsoul.com</p>
+            <p ><span className="material-symbols-outlined" >location_on</span> Pan Card Club Road, Baner - Pashan Link Rd, Pune, Maharashtra 411045</p>
+            <p ><span className="material-symbols-outlined" >call</span> +91 7744009295</p>
           </div>
         </div>
         <div className="contact-form-container">

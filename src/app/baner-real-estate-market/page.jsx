@@ -24,7 +24,9 @@ export default function BanerRealEstateMarket() {
             <p>Within the <strong>Baner Real Estate Market</strong>, the Baner-Pashan Link Road stands out as the ultimate "Billionaire's Row." It offers a rare combination of serene, green surroundings backed by the Pashan hills, while being just minutes away from Balewadi High Street's vibrant nightlife and commercial hubs.</p>
 
             <h2>Malpani M SoulStrings: Defining Baner's Skyline</h2>
-            <p>As the flagship development in the <strong>Baner Real Estate Market</strong>, Malpani M SoulStrings sets an untouchable standard. Offering meticulously designed Vastu-compliant residences with over 35+ lifestyle amenities, it is the premier choice for those looking to secure a legacy asset in Pune's most lucrative suburb.</p>
+            <p>As the flagship development in the <strong>Baner Real Estate Market</strong>, and the wider <strong>Pune Real Estate Market</strong>, Malpani M SoulStrings sets an untouchable standard. Offering meticulously designed Vastu-compliant residences with over 35+ lifestyle amenities, it is the premier choice for those looking to secure a legacy asset in Pune's most lucrative suburb.</p>
+            
+            <p><strong>Contact our luxury advisors today at +91 7744009295 or visit our site at Pan Card Club Road, Baner - Pashan Link Rd, Pune, Maharashtra 411045 to secure your investment.</strong></p>
             
             </div>
             

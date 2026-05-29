@@ -24,7 +24,9 @@ export default function PuneRealEstateMarket() {
             <p>While East Pune continues to grow, West Pune—specifically the Baner-Pashan-Hinjewadi corridor—is the undisputed crown jewel of the <strong>Pune Real Estate Market</strong>. This corridor offers a zero-commute lifestyle for IT professionals and seamless connectivity to Mumbai, making it the most lucrative zone for long-term real estate investment.</p>
 
             <h2>Conclusion: Securing Your Legacy</h2>
-            <p>For investors and homebuyers seeking the pinnacle of the <strong>Pune Real Estate Market</strong>, the data is clear: large-ticket luxury homes in highly connected West Pune corridors offer the highest ROI. Discover how Malpani M SoulStrings is redefining this standard.</p>
+            <p>For investors and homebuyers seeking the pinnacle of the <strong>Pune Real Estate Market</strong>, the data is clear: large-ticket luxury homes in highly connected West Pune corridors offer the highest ROI. Discover how Malpani M SoulStrings is redefining this standard for the <strong>Baner Real Estate Market</strong>.</p>
+            
+            <p><strong>Contact our luxury advisors today at +91 7744009295 or visit our site at Pan Card Club Road, Baner - Pashan Link Rd, Pune, Maharashtra 411045 to explore unparalleled luxury in Pune.</strong></p>
             
             </div>
             

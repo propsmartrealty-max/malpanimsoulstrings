@@ -28,7 +28,9 @@ export default function PuneWestRealEstateMarket() {
             </ul>
 
             <h2>Why Malpani M SoulStrings Dominates West Pune</h2>
-            <p>Situated strategically on the Baner-Pashan Link Road, Malpani M SoulStrings represents the pinnacle of the <strong>Pune West Real Estate Market</strong>. By offering ultra-low density living, Vastu-compliant architecture, and over 35+ world-class amenities, it perfectly addresses the demands of West Pune's elite homebuyers.</p>
+            <p>Situated strategically on the Baner-Pashan Link Road, Malpani M SoulStrings represents the pinnacle of the <strong>Pune West Real Estate Market</strong> and the broader <strong>Pune Real Estate Market</strong>. By offering ultra-low density living, Vastu-compliant architecture, and over 35+ world-class amenities, it perfectly addresses the demands of West Pune's elite homebuyers.</p>
+            
+            <p><strong>Contact our luxury advisors today at +91 7744009295 or visit our site at Pan Card Club Road, Baner - Pashan Link Rd, Pune, Maharashtra 411045 to explore unparalleled luxury in Pune West.</strong></p>
             
             </div>
             
