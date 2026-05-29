@@ -23,10 +23,10 @@ export default function Footer() {
                 <h5 className="text-white mb-3">Insights</h5>
                 <ul className="list-unstyled" style={{ lineHeight: '2' }}>
                     <li><Link href="/blog" style={{ color: 'rgba(255,255,255,0.5)', textDecoration: 'none' }}>Real Estate Blog</Link></li>
-                    <li><Link href="/market-analysis" style={{ color: 'rgba(255,255,255,0.5)', textDecoration: 'none' }}>Pune Market Analysis</Link></li>
-                    <li><Link href="/nri-investment" style={{ color: 'rgba(255,255,255,0.5)', textDecoration: 'none' }}>NRI Investment Guide</Link></li>
-                    <li><Link href="/compare" style={{ color: 'rgba(255,255,255,0.5)', textDecoration: 'none' }}>Baner vs Aundh</Link></li>
-                    <li><Link href="/shivajinagar" style={{ color: 'rgba(255,255,255,0.5)', textDecoration: 'none' }}>Shivajinagar Elite</Link></li>
+                    <li><Link href="/market-analysis" style={{ color: 'rgba(255,255,255,0.5)', textDecoration: 'none' }}>Market Analysis</Link></li>
+                    <li><Link href="/pune-real-estate-market" style={{ color: 'rgba(255,255,255,0.5)', textDecoration: 'none' }}>Pune Real Estate Market</Link></li>
+                    <li><Link href="/pune-west-real-estate-market" style={{ color: 'rgba(255,255,255,0.5)', textDecoration: 'none' }}>Pune West Real Estate Market</Link></li>
+                    <li><Link href="/baner-real-estate-market" style={{ color: 'rgba(255,255,255,0.5)', textDecoration: 'none' }}>Baner Real Estate Market</Link></li>
                 </ul>
             </div>
         </div>

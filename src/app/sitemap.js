@@ -18,6 +18,9 @@ export default function sitemap() {
     '/aundh',
     '/pashan',
     '/compare',
+    '/pune-real-estate-market',
+    '/pune-west-real-estate-market',
+    '/baner-real-estate-market',
     '/blog'
   ].map((route) => ({
     url: `${baseUrl}${route}`,
