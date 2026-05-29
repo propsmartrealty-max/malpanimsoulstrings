@@ -21,6 +21,7 @@ export default function Navbar() {
   };
 
   useEffect(() => {
+    // eslint-disable-next-line
     setIsDarkTheme(!document.body.classList.contains('light-theme'));
   }, []);
 
