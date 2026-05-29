@@ -82,7 +82,7 @@ export default function SchemaMarkup() {
         "telephone": "+91 7744009295",
         "address": {
           "@type": "PostalAddress",
-          "streetAddress": "Pan Card Club Road, Baner - Pashan Link Rd",
+          "streetAddress": "Baner Pashan Link Road",
           "addressLocality": "Pune",
           "addressRegion": "MH",
           "postalCode": "411045",
@@ -98,7 +98,7 @@ export default function SchemaMarkup() {
         "telephone": "+91 7744009295",
         "address": {
           "@type": "PostalAddress",
-          "streetAddress": "Pan Card Club Road, Baner - Pashan Link Rd",
+          "streetAddress": "Baner Pashan Link Road",
           "addressLocality": "Pune",
           "addressRegion": "MH",
           "postalCode": "411045",
@@ -118,7 +118,7 @@ export default function SchemaMarkup() {
         "telephone": "+91 7744009295",
         "address": {
           "@type": "PostalAddress",
-          "streetAddress": "Pan Card Club Road, Baner - Pashan Link Rd",
+          "streetAddress": "Baner Pashan Link Road",
           "addressLocality": "Pune",
           "addressRegion": "MH",
           "postalCode": "411045",

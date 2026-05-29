@@ -427,7 +427,7 @@ export default function Home() {
           <h2 className="section-title gradient-text">Schedule Site Visit Malpani Soulstrings</h2>
           <p>Get exclusive <strong>Malpani Soulstrings pricing</strong> and browse the finest <strong>luxury flats for sale Baner</strong>.</p>
           <div className="contact-details" >
-            <p ><span className="material-symbols-outlined" >location_on</span> Pan Card Club Road, Baner - Pashan Link Rd, Pune, Maharashtra 411045</p>
+            <p ><span className="material-symbols-outlined" >location_on</span> Baner Pashan Link Road, Pune, Maharashtra 411045</p>
             <p ><span className="material-symbols-outlined" >call</span> +91 7744009295</p>
           </div>
         </div>

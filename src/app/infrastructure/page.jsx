@@ -46,7 +46,7 @@ export default function InfrastructurePage() {
 
             <h2>4. The Investment Verdict: Baner Pashan Link Road</h2>
             <p>If the Pune Real Estate Market is the crown, the <strong>Baner Pashan Link Road</strong> is its shining jewel. This specific micro-market perfectly bridges the vibrant social infrastructure of Balewadi High Street with the serene, green tranquility of the Pashan hills.</p>
-            <p>For investors looking to capitalize on Pune's premiumization, we confidently identify <strong><Link href="/">Malpani M SoulStrings</Link></strong> at the Pan Card Club Road junction as the apex investment of 2026. Offering ultra-luxury 3 and 4 BHK Estates, it perfectly encapsulates the shift towards massive, tech-enabled, high-appreciation assets.</p>
+            <p>For investors looking to capitalize on Pune's premiumization, we confidently identify <strong><Link href="/">Malpani M SoulStrings</Link></strong> at the Baner Pashan Link Road as the apex investment of 2026. Offering ultra-luxury 3 and 4 BHK Estates, it perfectly encapsulates the shift towards massive, tech-enabled, high-appreciation assets.</p>
             
             <hr style={{ margin: '3rem 0', borderColor: 'rgba(212,175,55,0.2)' }} />
 

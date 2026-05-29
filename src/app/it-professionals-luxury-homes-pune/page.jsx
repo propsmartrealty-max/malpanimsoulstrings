@@ -71,7 +71,7 @@ export default function ITHomesPage() {
             
             <div className="contact-box" style={{ background: 'var(--color-surface)', padding: '2rem', borderRadius: '12px', marginTop: '3rem', borderLeft: '4px solid var(--color-primary)' }}>
               <h3 style={{ marginTop: 0 }}>Upgrade to the Ultimate Tech Estate</h3>
-              <p style={{ marginBottom: 0 }}><strong>Contact our VIP advisors today at +91 7744009295 or visit our site at Pan Card Club Road, Baner - Pashan Link Rd, Pune, Maharashtra 411045 to experience smart luxury.</strong></p>
+              <p style={{ marginBottom: 0 }}><strong>Contact our VIP advisors today at +91 7744009295 or visit our site at Baner Pashan Link Road, Pune, Maharashtra 411045 to experience smart luxury.</strong></p>
             </div>
             
           </article>

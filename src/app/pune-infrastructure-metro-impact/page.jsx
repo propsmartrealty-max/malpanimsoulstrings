@@ -76,7 +76,7 @@ export default function PuneInfrastructurePage() {
             
             <div className="contact-box" style={{ background: 'var(--color-surface)', padding: '2rem', borderRadius: '12px', marginTop: '3rem', borderLeft: '4px solid var(--color-primary)' }}>
               <h3 style={{ marginTop: 0 }}>Secure Your Legacy Asset Today</h3>
-              <p style={{ marginBottom: 0 }}><strong>Contact our luxury advisors today at +91 7744009295 or visit our site at Pan Card Club Road, Baner - Pashan Link Rd, Pune, Maharashtra 411045 to explore unparalleled luxury.</strong></p>
+              <p style={{ marginBottom: 0 }}><strong>Contact our luxury advisors today at +91 7744009295 or visit our site at Baner Pashan Link Road, Pune, Maharashtra 411045 to explore unparalleled luxury.</strong></p>
             </div>
             
           </article>

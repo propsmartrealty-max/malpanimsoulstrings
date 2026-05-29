@@ -36,8 +36,8 @@ export default function BanerOverviewPage() {
             <div className="row g-4 mb-5">
               <div className="col-md-4">
                 <div className="card h-100 p-4 border-0" style={{ background: 'var(--color-surface)', borderRadius: '12px', border: '1px solid rgba(212,175,55,0.1)' }}>
-                  <h3 style={{ color: 'var(--color-primary)', fontSize: '1.2rem', marginBottom: '1rem' }}>Pan Card Club Road</h3>
-                  <p style={{ color: 'var(--color-text-muted)', margin: 0, fontSize: '0.95rem' }}>Often referred to as the "Billionaire's Row" of West Pune, Pan Card Club Road is home to ultra-premium developments like Malpani M SoulStrings. Here, luxury isn't just an option; it's the standard.</p>
+                  <h3 style={{ color: 'var(--color-primary)', fontSize: '1.2rem', marginBottom: '1rem' }}>Baner Pashan Link Road</h3>
+                  <p style={{ color: 'var(--color-text-muted)', margin: 0, fontSize: '0.95rem' }}>Often referred to as the "Billionaire's Row" of West Pune, Baner Pashan Link Road is home to ultra-premium developments like Malpani M SoulStrings. Here, luxury isn't just an option; it's the standard.</p>
                 </div>
               </div>
               <div className="col-md-4">

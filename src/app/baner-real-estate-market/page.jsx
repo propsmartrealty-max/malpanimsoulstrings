@@ -37,7 +37,7 @@ export default function BanerRealEstateMarket() {
             <p>The <strong>Baner Real Estate Market</strong> has transformed from a quiet suburb into the most sought-after luxury residential destination in Pune. Its strategic location, bridging the gap between the traditional prestige of <Link href="/aundh">Aundh</Link> and the commercial powerhouse of Hinjewadi, makes it the ultimate investment hotspot for NRIs and high-net-worth individuals.</p>
 
             <h2>Unmatched Capital Appreciation in Baner</h2>
-            <p>Data consistently shows that the <strong>Baner Real Estate Market</strong> delivers some of the highest capital appreciation rates in the city. The continuous development of civic infrastructure, including the upcoming Metro Line 3 and expansive road widening projects, ensures that property values on the Baner-Pashan Link Road and Pan Card Club Road remain on a steep upward trajectory.</p>
+            <p>Data consistently shows that the <strong>Baner Real Estate Market</strong> delivers some of the highest capital appreciation rates in the city. The continuous development of civic infrastructure, including the upcoming Metro Line 3 and expansive road widening projects, ensures that property values on the Baner-Pashan Link Road and Baner Pashan Link Road remain on a steep upward trajectory.</p>
 
             <h2>The Shift to Ultra-Luxury</h2>
             <p>The defining characteristic of the current <strong>Baner Real Estate Market</strong> is the massive shift toward ultra-luxury living. Buyers are no longer settling for standard apartments. There is a soaring demand for expansive 3 BHK and 4 BHK estates that offer panoramic hill views, resort-style amenities, and exclusive, low-density community living.</p>

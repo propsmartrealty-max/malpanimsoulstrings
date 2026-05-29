@@ -55,7 +55,7 @@ export default function Navbar() {
           <Link href="/" className="overlay-link" onClick={toggleMenu}>Home / Legacy</Link>
           <Link href="/4bhk-luxury" className="overlay-link" onClick={toggleMenu}>4 BHK Luxury Residences</Link>
           <Link href="/amenities" className="overlay-link" onClick={toggleMenu}>Amenities & Lifestyle</Link>
-          <Link href="/location" className="overlay-link" onClick={toggleMenu}>Location (Pan Card Club Rd)</Link>
+          <Link href="/location" className="overlay-link" onClick={toggleMenu}>Location (Baner Pashan Link Road)</Link>
           <Link href="/infrastructure" className="overlay-link" onClick={toggleMenu}>Infrastructure Updates</Link>
           <Link href="/baner-overview" className="overlay-link" onClick={toggleMenu}>Baner Real Estate Guide</Link>
           <Link href="/blog" className="overlay-link" onClick={toggleMenu}>Insights & Articles</Link>

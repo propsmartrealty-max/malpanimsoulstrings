@@ -108,7 +108,7 @@ const orgSchema = {
   "telephone": "+917744009295",
   "address": {
     "@type": "PostalAddress",
-    "streetAddress": "Pan Card Club Road, Baner",
+    "streetAddress": "Baner Pashan Link Road",
     "addressLocality": "Pune",
     "postalCode": "411045",
     "addressCountry": "IN"
