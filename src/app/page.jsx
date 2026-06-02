@@ -15,6 +15,45 @@ export const metadata = {
 };
 
 export default function Home() {
+  const faqSchema = {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "What is the price of Malpani M Soulstrings?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "The Malpani M Soulstrings price is highly competitive for the ultra-luxury segment in Pune West. Because pricing varies based on floor bands, configurations (3 BHK vs 4 BHK), and custom specifications, we recommend submitting an inquiry to get the exact and updated pricing sheet."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "How can I download the Malpani M Soulstrings floor plan and brochure?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "To view the detailed layouts, simply fill out the smart contact form at the bottom of this page. You will immediately receive access to the official Malpani M Soulstrings brochure pdf and the complete Malpani M Soulstrings floor plan gallery."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "What is the Malpani M Soulstrings RERA number?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "The project is strictly MahaRERA compliant. The official Malpani M Soulstrings RERA number is P52100076782 (Wing B) and P52100055678 (Wing C)."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "How can I check the Malpani M Soulstrings construction update?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Construction is proceeding at an accelerated pace. To get the latest, real-time Malpani M Soulstrings construction update and timeline for possession, please contact our VIP sales team via the WhatsApp widget."
+        }
+      }
+    ]
+  };
+
   const contentDir = path.join(process.cwd(), 'src', 'content', 'blog');
   let blogFiles = [];
   try {
@@ -26,6 +65,7 @@ export default function Home() {
   return (
     <main>
       <SchemaMarkup />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
       <section id="hero" className="hero">
       <div className="hero-bg">
         <video src="https://malpani-cms.firsteconomy.com/uploads/video_51_98e1310033.mp4" preload="metadata" poster="https://malpani-cms.firsteconomy.com/uploads/M_soul_strings_Desktop_Banner_Without_Text_0d38ce28d4.jpg" autoPlay loop muted playsInline className="video-bg"></video>

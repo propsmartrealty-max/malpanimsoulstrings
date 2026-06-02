@@ -1,6 +1,14 @@
 import fs from 'fs';
 import path from 'path';
 
+export const metadata = {
+  title: 'Real Estate Insights & Blogs | Malpani M SoulStrings',
+  description: 'Read the latest real estate market analysis, infrastructure updates, and luxury apartment buying guides for Baner Pashan Link Road, Pune.',
+  alternates: {
+    canonical: '/blog'
+  }
+};
+
 export default function BlogIndex() {
   const contentDir = path.join(process.cwd(), 'src', 'content', 'blog');
   let files = [];
