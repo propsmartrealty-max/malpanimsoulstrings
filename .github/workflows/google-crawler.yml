@@ -11,10 +11,18 @@ on:
   # Allow manual trigger from the GitHub Actions UI
   workflow_dispatch:
 
+# HARDENING: Prevent concurrent runs from exhausting Google API Rate Limits
+concurrency:
+  group: ${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
+
 jobs:
   index-urls:
     name: Execute Daily Indexing
     runs-on: ubuntu-latest
+    
+    # HARDENING: Lock secrets to a specific deployment environment
+    environment: production
     
     # HARDENING: Principle of Least Privilege (block all write access to the repo)
     permissions:
