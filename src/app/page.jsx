@@ -409,6 +409,22 @@ export default function Home() {
             <p >Absolutely. The direct connection from the Baner Pashan Link Road to the Hinjewadi IT Park and Wakad business centers makes M SoulStrings the ultimate luxury residence for tech executives seeking a zero-commute lifestyle without compromising on grandeur and exclusivity.</p>
           </details>
           <details className="faq-item" >
+            <summary >What is the price of Malpani M Soulstrings?</summary>
+            <p >The <strong>Malpani M Soulstrings price</strong> is highly competitive for the ultra-luxury segment in Pune West. Because pricing varies based on floor bands, configurations (3 BHK vs 4 BHK), and custom specifications, we recommend submitting an inquiry to get the exact and updated pricing sheet.</p>
+          </details>
+          <details className="faq-item" >
+            <summary >How can I download the Malpani M Soulstrings floor plan and brochure?</summary>
+            <p >To view the detailed layouts, simply fill out the smart contact form at the bottom of this page. You will immediately receive access to the official <strong>Malpani M Soulstrings brochure pdf</strong> and the complete <strong>Malpani M Soulstrings floor plan</strong> gallery.</p>
+          </details>
+          <details className="faq-item" >
+            <summary >What is the Malpani M Soulstrings RERA number?</summary>
+            <p >The project is strictly MahaRERA compliant. The official <strong>Malpani M Soulstrings RERA number</strong> is P52100076782 (Wing B) and P52100055678 (Wing C).</p>
+          </details>
+          <details className="faq-item" >
+            <summary >How can I check the Malpani M Soulstrings construction update?</summary>
+            <p >Construction is proceeding at an accelerated pace. To get the latest, real-time <strong>Malpani M Soulstrings construction update</strong> and timeline for possession, please contact our VIP sales team via the WhatsApp widget.</p>
+          </details>
+          <details className="faq-item" >
             <summary >Who is the developer behind Malpani M SoulStrings?</summary>
             <p >This masterpiece is developed by Malpani Estates, a legacy brand renowned across the Entire Pune Real Estate Market for delivering iconic, ultra-premium projects with uncompromising quality and architectural brilliance.</p>
           </details>
