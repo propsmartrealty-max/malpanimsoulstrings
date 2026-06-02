@@ -44,6 +44,9 @@ export async function generateMetadata({ params }) {
   return {
     title: `${title} | Malpani M SoulStrings Blog`,
     description,
+    alternates: {
+      canonical: `/blog/${slug}`
+    },
     openGraph: {
       title,
       description,
