@@ -36,7 +36,16 @@ export const metadata = {
     '3 BHK luxury apartments in Baner-Pashan Link Road', 
     '4 BHK premium flats for sale in Baner-Pashan Link Road',
     'Ready to move 3 BHK in Baner Pashan Link Road',
-    'Pune Luxury Real Estate'
+    'Pune Luxury Real Estate',
+    'Pune Real Estate Luxury Apartments',
+    'Luxury apartments for sale in Baner Pune',
+    'Top luxury real estate projects in Pune',
+    '4 BHK luxury flats in Baner Pune',
+    'Best luxury apartments in Baner Pashan link road',
+    'Pune West real estate luxury properties',
+    'Premium real estate Baner Pune',
+    'Baner Real Estate luxury projects',
+    'High end apartments in Baner Pune'
   ],
   openGraph: {
     title: 'Malpani M SoulStrings - 3 & 4 BHK Luxury Residences in Baner',

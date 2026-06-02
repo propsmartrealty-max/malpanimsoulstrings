@@ -323,15 +323,15 @@ export default function Home() {
     <section id="west-pune" className="section west-pune" >
       <div className="container">
         <div className="section-header fade-in-up">
-          <h2 className="section-title gradient-text">Dominating West Pune Real Estate</h2>
-          <p className="section-desc">The ultimate destination for large and luxury Estates in the Baner Pashan Link Road real estate landscape.</p>
+          <h2 className="section-title gradient-text">Top Luxury Real Estate Projects in Pune</h2>
+          <p className="section-desc">The ultimate destination for <strong>Pune Real Estate Luxury Apartments</strong> and <strong>Premium real estate Baner Pune</strong>.</p>
         </div>
         <div className="west-pune-content fade-in-up" >
           <p >
-            When it comes to the <strong>West Pune Real estate</strong> market, nothing compares to the sheer grandeur of Malpani M SoulStrings. We are setting an untouchable standard for <strong>3BHK and 4BHK large and luxury Estates</strong>. Located at the prestigious junction of Baner and Pashan, this development represents the absolute pinnacle of the <strong>Baner Pashan Link Road real estate</strong> sector.
+            When it comes to the <strong>Baner Real Estate luxury projects</strong> market, nothing compares to the sheer grandeur of Malpani M SoulStrings. We are setting an untouchable standard for <strong>3BHK and 4BHK luxury flats in Baner Pune</strong>. Located at the prestigious junction of Baner and Pashan, this development represents the absolute pinnacle of <strong>high end apartments in Baner Pune</strong>.
           </p>
           <p >
-            Investors and homeowners seeking the finest properties in Pune recognize that M SoulStrings isn't just a residence; it is a legacy. With over 1.5 million square feet of uncompromising quality, it stands as the undisputed crown jewel of West Pune.
+            If you are searching for the <strong>best luxury apartments in Baner Pashan link road</strong> or evaluating <strong>Pune West real estate luxury properties</strong>, M SoulStrings isn't just a residence; it is a legacy. With over 1.5 million square feet of uncompromising quality, it stands as the undisputed crown jewel for those seeking <strong>luxury apartments for sale in Baner Pune</strong>.
           </p>
         </div>
       </div>
