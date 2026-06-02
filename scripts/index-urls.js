@@ -25,14 +25,12 @@ if (process.env.GOOGLE_CLIENT_EMAIL && process.env.GOOGLE_PRIVATE_KEY) {
   console.log('Using Google Credentials from local service-account.json.');
 }
 
-// 2. Setup JWT Auth Client
-const jwtClient = new google.auth.JWT(
-  clientEmail,
-  null,
-  privateKey,
-  ['https://www.googleapis.com/auth/indexing'],
-  null
-);
+// 2. Setup JWT Auth Client using Object Initialization to avoid positional bugs
+const jwtClient = new google.auth.JWT({
+  email: clientEmail,
+  key: privateKey,
+  scopes: ['https://www.googleapis.com/auth/indexing']
+});
 
 // 3. Initialize the Indexing API
 const indexing = google.indexing({
