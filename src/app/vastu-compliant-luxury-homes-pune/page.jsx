@@ -28,8 +28,36 @@ export const metadata = {
 };
 
 export default function VastuHomesPage() {
+  const articleSchema = {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "headline": "The Ultimate Guide to Vastu-Compliant Luxury Homes in Pune",
+    "description": "Explore 100% Vastu-compliant 3 BHK and 4 BHK luxury apartments at Malpani M SoulStrings in Baner.",
+    "author": { "@type": "Organization", "name": "Malpani Estates Architectural Design" },
+    "publisher": { "@type": "Organization", "name": "Malpani Estates" },
+    "datePublished": "2024-05-01T08:00:00+08:00",
+    "dateModified": new Date().toISOString()
+  };
+
+  const faqSchema = {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "Where is the best Vastu compliant 4 BHK in Pune?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Malpani M SoulStrings on the Baner-Pashan Link Road offers 100% Vastu-compliant 4 BHK estates featuring the golden East-West axis, South-East kitchens, and open Brahmasthans."
+        }
+      }
+    ]
+  };
+
   return (
     <main>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(articleSchema) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
 
       <SchemaMarkup />
       
@@ -68,6 +96,36 @@ export default function VastuHomesPage() {
                 <li><strong>Water Elements:</strong> All major plumbing cores and washrooms are strictly kept away from the highly sensitive North-East (Ishan) corner.</li>
             </ul>
 
+            <h3 className="mt-5 mb-4" style={{ color: 'var(--color-primary)' }}>Vastu Architectural Matrix (M SoulStrings Layouts)</h3>
+            <div className="table-responsive mb-5" style={{ borderRadius: '8px', overflow: 'hidden', border: '1px solid rgba(212,175,55,0.2)' }}>
+              <table className="table table-dark table-hover mb-0" style={{ backgroundColor: 'var(--color-surface)' }}>
+                <thead style={{ backgroundColor: 'rgba(212,175,55,0.1)' }}>
+                  <tr>
+                    <th style={{ color: 'var(--color-primary)', borderBottom: '1px solid rgba(212,175,55,0.3)', padding: '1rem' }}>Cardinal Direction</th>
+                    <th style={{ color: 'var(--color-primary)', borderBottom: '1px solid rgba(212,175,55,0.3)', padding: '1rem' }}>Vastu Purpose</th>
+                    <th style={{ color: 'var(--color-primary)', borderBottom: '1px solid rgba(212,175,55,0.3)', padding: '1rem' }}>M SoulStrings Integration</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td style={{ padding: '1rem', borderBottom: '1px solid rgba(255,255,255,0.05)' }}><strong>East / West Axis</strong></td>
+                    <td style={{ padding: '1rem', borderBottom: '1px solid rgba(255,255,255,0.05)' }}>Pranic Energy Flow</td>
+                    <td style={{ padding: '1rem', borderBottom: '1px solid rgba(255,255,255,0.05)', color: '#25D366' }}>Primary entrance & balconies aligned</td>
+                  </tr>
+                  <tr>
+                    <td style={{ padding: '1rem', borderBottom: '1px solid rgba(255,255,255,0.05)' }}><strong>South-West (Nairutya)</strong></td>
+                    <td style={{ padding: '1rem', borderBottom: '1px solid rgba(255,255,255,0.05)' }}>Stability & Leadership</td>
+                    <td style={{ padding: '1rem', borderBottom: '1px solid rgba(255,255,255,0.05)', color: '#25D366' }}>Master Bedroom placement</td>
+                  </tr>
+                  <tr>
+                    <td style={{ padding: '1rem', borderBottom: '1px solid rgba(255,255,255,0.05)' }}><strong>South-East (Agneya)</strong></td>
+                    <td style={{ padding: '1rem', borderBottom: '1px solid rgba(255,255,255,0.05)' }}>Health & Fire Element</td>
+                    <td style={{ padding: '1rem', borderBottom: '1px solid rgba(255,255,255,0.05)', color: '#25D366' }}>Modular Kitchen placement</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+
             <h2>The Financial ROI of Vastu Compliance</h2>
             <p>Beyond spiritual well-being, strict Vastu compliance has massive financial implications in the <strong>Baner Real Estate Market</strong>. Resale values for 100% Vastu-compliant luxury homes are consistently 15-20% higher than non-compliant properties, and they sell significantly faster on the secondary market.</p>
             
@@ -79,25 +137,34 @@ export default function VastuHomesPage() {
           </article>
 
           <aside className="sidebar">
-            <div className="loc-card" style={{ padding: '1.5rem', borderRadius: '12px', position: 'sticky', top: '100px' }}>
-              <h3 style={{ fontSize: '1.2rem', marginBottom: '1rem', color: 'var(--color-primary)' }}>Related Insights</h3>
-              <ul style={{ listStyle: 'none', padding: 0, margin: 0 }}>
-                <li style={{ marginBottom: '1rem' }}><Link href="/pune-real-estate-market" style={{ color: 'var(--color-text)', textDecoration: 'none' }}>Pune Real Estate Market</Link></li>
-                <li style={{ marginBottom: '1rem' }}><Link href="/pune-west-real-estate-market" style={{ color: 'var(--color-text)', textDecoration: 'none' }}>West Pune Real Estate</Link></li>
-                <li style={{ marginBottom: '1rem' }}><Link href="/baner-real-estate-market" style={{ color: 'var(--color-text)', textDecoration: 'none' }}>Baner Real Estate Market</Link></li>
-                <li style={{ marginBottom: '1rem' }}><Link href="/compare/pristine-lords-baner" style={{ color: 'var(--color-text)', textDecoration: 'none' }}>Compare: Pristine Lords</Link></li>
-                <li style={{ marginBottom: '1rem' }}><Link href="/compare/kohinoor-livience-baner" style={{ color: 'var(--color-text)', textDecoration: 'none' }}>Compare: Kohinoor Livience</Link></li>
-              </ul>
-              
-              <div style={{ marginTop: '2rem' }}>
-                <h3 style={{ fontSize: '1.2rem', marginBottom: '1rem', color: 'var(--color-primary)' }}>Vastu Features</h3>
-                <ul className="dense-amenity-list" style={{ paddingLeft: '1.2rem' }}>
-                    <li>East-West Axis</li>
-                    <li>South-East Kitchen</li>
-                    <li>South-West Master</li>
-                    <li>Open Brahmasthan</li>
-                </ul>
+            <div className="loc-card" style={{ padding: '1.5rem', borderRadius: '12px', position: 'sticky', top: '100px', marginBottom: '2rem' }}>
+              <h3 style={{ fontSize: '1.2rem', marginBottom: '1rem', color: 'var(--color-primary)' }}>Market Intelligence Hub</h3>
+              <p style={{ color: 'var(--color-text-muted)', fontSize: '0.9rem', marginBottom: '1.5rem' }}>Access our complete library of Pune real estate analytics.</p>
+              <div className="list-group list-group-flush bg-transparent">
+                <Link href="/pune-real-estate-market" className="list-group-item list-group-item-action bg-transparent border-secondary text-white" style={{ padding: '0.75rem 0' }}>
+                  <small style={{ color: 'var(--color-accent)' }}>Report →</small> Pune Market Analysis
+                </Link>
+                <Link href="/baner-real-estate-market" className="list-group-item list-group-item-action bg-transparent border-secondary text-white" style={{ padding: '0.75rem 0' }}>
+                  <small style={{ color: 'var(--color-accent)' }}>Report →</small> Baner Real Estate Market
+                </Link>
+                <Link href="/pune-west-real-estate-market" className="list-group-item list-group-item-action bg-transparent border-secondary text-white" style={{ padding: '0.75rem 0' }}>
+                  <small style={{ color: 'var(--color-accent)' }}>Report →</small> Pune West Trajectory
+                </Link>
+                <Link href="/nri-investment" className="list-group-item list-group-item-action bg-transparent border-secondary text-white" style={{ padding: '0.75rem 0' }}>
+                  <small style={{ color: 'var(--color-accent)' }}>Guide →</small> NRI Investment
+                </Link>
               </div>
+            </div>
+
+            <div className="loc-card" style={{ padding: '1.5rem', borderRadius: '12px', position: 'sticky', top: '450px' }}>
+              <h3 style={{ fontSize: '1.2rem', marginBottom: '1rem', color: 'var(--color-primary)' }}>Vastu Features</h3>
+              <ul className="dense-amenity-list" style={{ paddingLeft: '1.2rem', marginBottom: '1.5rem' }}>
+                  <li>East-West Axis</li>
+                  <li>South-East Kitchen</li>
+                  <li>South-West Master</li>
+                  <li>Open Brahmasthan</li>
+              </ul>
+              <a href="#" data-bs-toggle="modal" data-bs-target="#enquireModal" className="btn btn-primary" style={{ width: '100%' }}>View Floor Plans</a>
             </div>
           </aside>
           

@@ -28,8 +28,36 @@ export const metadata = {
 };
 
 export default function ITHomesPage() {
+  const articleSchema = {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "headline": "The IT Executive’s Guide to Luxury Living in West Pune",
+    "description": "Why top IT executives in Pune choose Malpani M SoulStrings for zero-commute, smart-integrated luxury flats near Hinjewadi and Baner.",
+    "author": { "@type": "Organization", "name": "Malpani Estates Market Research" },
+    "publisher": { "@type": "Organization", "name": "Malpani Estates" },
+    "datePublished": "2024-05-01T08:00:00+08:00",
+    "dateModified": new Date().toISOString()
+  };
+
+  const faqSchema = {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "Where is the best place for IT professionals to live in Pune?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "The Baner-Pashan Link Road is the top choice for IT executives. It offers a zero-commute lifestyle with equidistant access to the Hinjewadi IT Park and Balewadi High Street, combined with unpolluted micro-climates."
+        }
+      }
+    ]
+  };
+
   return (
     <main>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(articleSchema) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
 
       <SchemaMarkup />
       
@@ -58,6 +86,36 @@ export default function ITHomesPage() {
                 <li><strong>Unpolluted Micro-Climate:</strong> Nestled against the Pashan hills, the corridor offers a highly regulated, low-AQI environment—a vital escape from the severe congestion of core IT parks.</li>
             </ul>
 
+            <h3 className="mt-5 mb-4" style={{ color: 'var(--color-primary)' }}>Peak-Hour Commute Matrix (From Baner-Pashan Link Road)</h3>
+            <div className="table-responsive mb-5" style={{ borderRadius: '8px', overflow: 'hidden', border: '1px solid rgba(212,175,55,0.2)' }}>
+              <table className="table table-dark table-hover mb-0" style={{ backgroundColor: 'var(--color-surface)' }}>
+                <thead style={{ backgroundColor: 'rgba(212,175,55,0.1)' }}>
+                  <tr>
+                    <th style={{ color: 'var(--color-primary)', borderBottom: '1px solid rgba(212,175,55,0.3)', padding: '1rem' }}>IT Hub / Commercial Center</th>
+                    <th style={{ color: 'var(--color-primary)', borderBottom: '1px solid rgba(212,175,55,0.3)', padding: '1rem' }}>Avg. Peak-Hour Commute</th>
+                    <th style={{ color: 'var(--color-primary)', borderBottom: '1px solid rgba(212,175,55,0.3)', padding: '1rem' }}>Traffic Friction</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td style={{ padding: '1rem', borderBottom: '1px solid rgba(255,255,255,0.05)' }}><strong>Hinjewadi IT Park (Phase 1 & 2)</strong></td>
+                    <td style={{ padding: '1rem', borderBottom: '1px solid rgba(255,255,255,0.05)', color: '#25D366' }}>15 - 22 Minutes</td>
+                    <td style={{ padding: '1rem', borderBottom: '1px solid rgba(255,255,255,0.05)' }}>Very Low (Via Bypass)</td>
+                  </tr>
+                  <tr>
+                    <td style={{ padding: '1rem', borderBottom: '1px solid rgba(255,255,255,0.05)' }}><strong>Balewadi High Street</strong></td>
+                    <td style={{ padding: '1rem', borderBottom: '1px solid rgba(255,255,255,0.05)', color: '#25D366' }}>5 - 8 Minutes</td>
+                    <td style={{ padding: '1rem', borderBottom: '1px solid rgba(255,255,255,0.05)' }}>Minimal</td>
+                  </tr>
+                  <tr>
+                    <td style={{ padding: '1rem', borderBottom: '1px solid rgba(255,255,255,0.05)' }}><strong>Pune University / SB Road</strong></td>
+                    <td style={{ padding: '1rem', borderBottom: '1px solid rgba(255,255,255,0.05)', color: '#25D366' }}>12 - 18 Minutes</td>
+                    <td style={{ padding: '1rem', borderBottom: '1px solid rgba(255,255,255,0.05)' }}>Low to Moderate</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+
             <h2>Smart Home Integration: The Non-Negotiable Standard</h2>
             <p>For an IT professional, a home must be as intelligent as it is beautiful. <strong><Link href="/">Malpani M SoulStrings</Link></strong> integrates state-of-the-art smart home automation that appeals directly to tech-savvy buyers:</p>
             <ul>
@@ -77,24 +135,34 @@ export default function ITHomesPage() {
           </article>
 
           <aside className="sidebar">
-            <div className="loc-card" style={{ padding: '1.5rem', borderRadius: '12px', position: 'sticky', top: '100px' }}>
-              <h3 style={{ fontSize: '1.2rem', marginBottom: '1rem', color: 'var(--color-primary)' }}>Market Insights</h3>
-              <ul style={{ listStyle: 'none', padding: 0, margin: 0 }}>
-                <li style={{ marginBottom: '1rem' }}><Link href="/pune-real-estate-market" style={{ color: 'var(--color-text)', textDecoration: 'none' }}>Pune Real Estate Market</Link></li>
-                <li style={{ marginBottom: '1rem' }}><Link href="/pune-west-real-estate-market" style={{ color: 'var(--color-text)', textDecoration: 'none' }}>West Pune Real Estate</Link></li>
-                <li style={{ marginBottom: '1rem' }}><Link href="/baner-real-estate-market" style={{ color: 'var(--color-text)', textDecoration: 'none' }}>Baner Real Estate Market</Link></li>
-                <li style={{ marginBottom: '1rem' }}><Link href="/pune-infrastructure-metro-impact" style={{ color: 'var(--color-text)', textDecoration: 'none' }}>Pune Metro Impact</Link></li>
-              </ul>
-              
-              <div style={{ marginTop: '2rem' }}>
-                <h3 style={{ fontSize: '1.2rem', marginBottom: '1rem', color: 'var(--color-primary)' }}>Smart Features</h3>
-                <ul className="dense-amenity-list" style={{ paddingLeft: '1.2rem' }}>
-                    <li>Biometric Security</li>
-                    <li>EV Charging Bays</li>
-                    <li>Automated Lighting</li>
-                    <li>Co-working Hub</li>
-                </ul>
+            <div className="loc-card" style={{ padding: '1.5rem', borderRadius: '12px', position: 'sticky', top: '100px', marginBottom: '2rem' }}>
+              <h3 style={{ fontSize: '1.2rem', marginBottom: '1rem', color: 'var(--color-primary)' }}>Market Intelligence Hub</h3>
+              <p style={{ color: 'var(--color-text-muted)', fontSize: '0.9rem', marginBottom: '1.5rem' }}>Access our complete library of Pune real estate analytics.</p>
+              <div className="list-group list-group-flush bg-transparent">
+                <Link href="/pune-real-estate-market" className="list-group-item list-group-item-action bg-transparent border-secondary text-white" style={{ padding: '0.75rem 0' }}>
+                  <small style={{ color: 'var(--color-accent)' }}>Report →</small> Pune Market Analysis
+                </Link>
+                <Link href="/baner-real-estate-market" className="list-group-item list-group-item-action bg-transparent border-secondary text-white" style={{ padding: '0.75rem 0' }}>
+                  <small style={{ color: 'var(--color-accent)' }}>Report →</small> Baner Real Estate Market
+                </Link>
+                <Link href="/pune-west-real-estate-market" className="list-group-item list-group-item-action bg-transparent border-secondary text-white" style={{ padding: '0.75rem 0' }}>
+                  <small style={{ color: 'var(--color-accent)' }}>Report →</small> Pune West Trajectory
+                </Link>
+                <Link href="/nri-investment" className="list-group-item list-group-item-action bg-transparent border-secondary text-white" style={{ padding: '0.75rem 0' }}>
+                  <small style={{ color: 'var(--color-accent)' }}>Guide →</small> NRI Investment
+                </Link>
               </div>
+            </div>
+
+            <div className="loc-card" style={{ padding: '1.5rem', borderRadius: '12px', position: 'sticky', top: '450px' }}>
+              <h3 style={{ fontSize: '1.2rem', marginBottom: '1rem', color: 'var(--color-primary)' }}>Smart Features</h3>
+              <ul className="dense-amenity-list" style={{ paddingLeft: '1.2rem', marginBottom: '1.5rem' }}>
+                  <li>Biometric Security</li>
+                  <li>EV Charging Bays</li>
+                  <li>Automated Lighting</li>
+                  <li>Co-working Hub</li>
+              </ul>
+              <a href="#" data-bs-toggle="modal" data-bs-target="#enquireModal" className="btn btn-primary" style={{ width: '100%' }}>Schedule a Viewing</a>
             </div>
           </aside>
           

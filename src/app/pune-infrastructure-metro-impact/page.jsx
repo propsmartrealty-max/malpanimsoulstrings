@@ -28,8 +28,36 @@ export const metadata = {
 };
 
 export default function PuneInfrastructurePage() {
+  const articleSchema = {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "headline": "The Impact of Pune Infrastructure on Real Estate in 2026",
+    "description": "Analysis of Pune Metro Line 3 and Ring Road impact on West Pune real estate appreciation.",
+    "author": { "@type": "Organization", "name": "Malpani Estates Market Research" },
+    "publisher": { "@type": "Organization", "name": "Malpani Estates" },
+    "datePublished": "2024-05-01T08:00:00+08:00",
+    "dateModified": new Date().toISOString()
+  };
+
+  const faqSchema = {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "Will Metro Line 3 increase property rates in Baner?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Yes, properties within a 2km radius of the upcoming Balewadi and Baner metro stations on Line 3 are experiencing an 8-12% capital appreciation premium over non-metro corridors."
+        }
+      }
+    ]
+  };
+
   return (
     <main>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(articleSchema) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
 
       <SchemaMarkup />
       
@@ -57,6 +85,36 @@ export default function PuneInfrastructurePage() {
                 <li><strong>The Baner Advantage:</strong> The Baner-Pashan corridor sits perfectly adjacent to this metro line, offering zero-noise luxury living while maintaining instant access to the transit nodes.</li>
             </ul>
 
+            <h3 className="mt-5 mb-4" style={{ color: 'var(--color-primary)' }}>Metro Line 3 ROI Impact Matrix (West Pune)</h3>
+            <div className="table-responsive mb-5" style={{ borderRadius: '8px', overflow: 'hidden', border: '1px solid rgba(212,175,55,0.2)' }}>
+              <table className="table table-dark table-hover mb-0" style={{ backgroundColor: 'var(--color-surface)' }}>
+                <thead style={{ backgroundColor: 'rgba(212,175,55,0.1)' }}>
+                  <tr>
+                    <th style={{ color: 'var(--color-primary)', borderBottom: '1px solid rgba(212,175,55,0.3)', padding: '1rem' }}>Metro Station Proximity</th>
+                    <th style={{ color: 'var(--color-primary)', borderBottom: '1px solid rgba(212,175,55,0.3)', padding: '1rem' }}>Target Micro-Market</th>
+                    <th style={{ color: 'var(--color-primary)', borderBottom: '1px solid rgba(212,175,55,0.3)', padding: '1rem' }}>Expected ROI Premium</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td style={{ padding: '1rem', borderBottom: '1px solid rgba(255,255,255,0.05)' }}><strong>Baner / Balewadi Station (&lt; 2km)</strong></td>
+                    <td style={{ padding: '1rem', borderBottom: '1px solid rgba(255,255,255,0.05)' }}>Baner-Pashan Link Road</td>
+                    <td style={{ padding: '1rem', borderBottom: '1px solid rgba(255,255,255,0.05)', color: '#25D366' }}>8% - 12% Extra Yield</td>
+                  </tr>
+                  <tr>
+                    <td style={{ padding: '1rem', borderBottom: '1px solid rgba(255,255,255,0.05)' }}><strong>Hinjewadi Station</strong></td>
+                    <td style={{ padding: '1rem', borderBottom: '1px solid rgba(255,255,255,0.05)' }}>Hinjewadi Phases 1/2/3</td>
+                    <td style={{ padding: '1rem', borderBottom: '1px solid rgba(255,255,255,0.05)', color: '#25D366' }}>6% - 9% Extra Yield</td>
+                  </tr>
+                  <tr>
+                    <td style={{ padding: '1rem', borderBottom: '1px solid rgba(255,255,255,0.05)' }}><strong>Shivajinagar Interchange</strong></td>
+                    <td style={{ padding: '1rem', borderBottom: '1px solid rgba(255,255,255,0.05)' }}>Central Pune</td>
+                    <td style={{ padding: '1rem', borderBottom: '1px solid rgba(255,255,255,0.05)', color: '#25D366' }}>10% - 15% Extra Yield</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+
             <h3>2. The Pune Ring Road Project</h3>
             <p>The ambitious 170 km Pune Ring Road is designed to divert heavy inter-city traffic away from the city center. For the <strong>Pune Real Estate Market</strong>, this means a significant reduction in pollution and noise levels for inner suburbs like Baner and Pashan.</p>
             <p>By connecting major national highways, the Ring Road ensures that logistics and heavy transport bypass residential zones entirely, elevating the luxury quotient and air quality for high-end residential projects.</p>
@@ -82,24 +140,34 @@ export default function PuneInfrastructurePage() {
           </article>
 
           <aside className="sidebar">
-            <div className="loc-card" style={{ padding: '1.5rem', borderRadius: '12px', position: 'sticky', top: '100px' }}>
-              <h3 style={{ fontSize: '1.2rem', marginBottom: '1rem', color: 'var(--color-primary)' }}>Market Insights</h3>
-              <ul style={{ listStyle: 'none', padding: 0, margin: 0 }}>
-                <li style={{ marginBottom: '1rem' }}><Link href="/pune-real-estate-market" style={{ color: 'var(--color-text)', textDecoration: 'none' }}>Pune Real Estate Market</Link></li>
-                <li style={{ marginBottom: '1rem' }}><Link href="/pune-west-real-estate-market" style={{ color: 'var(--color-text)', textDecoration: 'none' }}>West Pune Real Estate</Link></li>
-                <li style={{ marginBottom: '1rem' }}><Link href="/baner-real-estate-market" style={{ color: 'var(--color-text)', textDecoration: 'none' }}>Baner Real Estate Market</Link></li>
-                <li style={{ marginBottom: '1rem' }}><Link href="/it-professionals-luxury-homes-pune" style={{ color: 'var(--color-text)', textDecoration: 'none' }}>IT Professionals Luxury Living</Link></li>
-              </ul>
-              
-              <div style={{ marginTop: '2rem' }}>
-                <h3 style={{ fontSize: '1.2rem', marginBottom: '1rem', color: 'var(--color-primary)' }}>Project Highlights</h3>
-                <ul className="dense-amenity-list" style={{ paddingLeft: '1.2rem' }}>
-                    <li>35+ World-Class Amenities</li>
-                    <li>Vastu-Compliant Architecture</li>
-                    <li>Unobstructed Hill Views</li>
-                    <li>Zero-Traffic Commute</li>
-                </ul>
+            <div className="loc-card" style={{ padding: '1.5rem', borderRadius: '12px', position: 'sticky', top: '100px', marginBottom: '2rem' }}>
+              <h3 style={{ fontSize: '1.2rem', marginBottom: '1rem', color: 'var(--color-primary)' }}>Market Intelligence Hub</h3>
+              <p style={{ color: 'var(--color-text-muted)', fontSize: '0.9rem', marginBottom: '1.5rem' }}>Access our complete library of Pune real estate analytics.</p>
+              <div className="list-group list-group-flush bg-transparent">
+                <Link href="/pune-real-estate-market" className="list-group-item list-group-item-action bg-transparent border-secondary text-white" style={{ padding: '0.75rem 0' }}>
+                  <small style={{ color: 'var(--color-accent)' }}>Report →</small> Pune Market Analysis
+                </Link>
+                <Link href="/baner-real-estate-market" className="list-group-item list-group-item-action bg-transparent border-secondary text-white" style={{ padding: '0.75rem 0' }}>
+                  <small style={{ color: 'var(--color-accent)' }}>Report →</small> Baner Real Estate Market
+                </Link>
+                <Link href="/pune-west-real-estate-market" className="list-group-item list-group-item-action bg-transparent border-secondary text-white" style={{ padding: '0.75rem 0' }}>
+                  <small style={{ color: 'var(--color-accent)' }}>Report →</small> Pune West Trajectory
+                </Link>
+                <Link href="/nri-investment" className="list-group-item list-group-item-action bg-transparent border-secondary text-white" style={{ padding: '0.75rem 0' }}>
+                  <small style={{ color: 'var(--color-accent)' }}>Guide →</small> NRI Investment
+                </Link>
               </div>
+            </div>
+
+            <div className="loc-card" style={{ padding: '1.5rem', borderRadius: '12px', position: 'sticky', top: '450px' }}>
+              <h3 style={{ fontSize: '1.2rem', marginBottom: '1rem', color: 'var(--color-primary)' }}>Project Highlights</h3>
+              <ul className="dense-amenity-list" style={{ paddingLeft: '1.2rem', marginBottom: '1.5rem' }}>
+                  <li>35+ World-Class Amenities</li>
+                  <li>Vastu-Compliant Architecture</li>
+                  <li>Unobstructed Hill Views</li>
+                  <li>Zero-Traffic Commute</li>
+              </ul>
+              <a href="#" data-bs-toggle="modal" data-bs-target="#enquireModal" className="btn btn-primary" style={{ width: '100%' }}>Schedule a Viewing</a>
             </div>
           </aside>
           
