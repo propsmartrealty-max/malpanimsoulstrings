@@ -11,6 +11,10 @@ import Image from 'next/image'
 import { GoogleAnalytics, GoogleTagManager } from '@next/third-parties/google'
 import FloatingWhatsApp from '@/components/FloatingWhatsApp'
 import ExitIntentModal from '@/components/ExitIntentModal'
+import { Inter, Playfair_Display } from 'next/font/google'
+
+const inter = Inter({ subsets: ['latin'], display: 'swap', variable: '--font-inter' })
+const playfair = Playfair_Display({ subsets: ['latin'], display: 'swap', variable: '--font-playfair' })
 
 export const metadata = {
   metadataBase: new URL('https://www.malpanimsoulstrings.com'),
@@ -156,7 +160,7 @@ const websiteSchema = {
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="en">
+    <html lang="en" className={`${inter.variable} ${playfair.variable}`}>
       {/* 
         DISABLED TO PREVENT CORE WEB VITALS JS PENALTIES 
         Uncomment when real API keys are provided by the user.
@@ -168,9 +172,7 @@ export default function RootLayout({ children }) {
         
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
-        {/* eslint-disable @next/next/no-page-custom-font */}
-        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet" />
-        <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&display=swap" rel="stylesheet" />
+        {/* Fonts are now optimized via next/font/google for zero layout shift */}
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" />
         <link rel="stylesheet" href="/style.css" />
       
@@ -222,7 +224,11 @@ export default function RootLayout({ children }) {
         <Footer />
         <ClientScripts />
         <Script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" strategy="afterInteractive" />
-        <GoogleAnalytics gaId="G-XXXXXXXXXX" />
+        
+        {/* 
+          DISABLED TO PREVENT CORE WEB VITALS JS PENALTIES 
+          <GoogleAnalytics gaId="G-XXXXXXXXXX" />
+        */}
         
         {/* Global WhatsApp Floating Widget */}
         <FloatingContact />

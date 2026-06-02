@@ -73,10 +73,18 @@ export default async function BlogPost({ params }) {
   let htmlContent = '';
   let articleTitle = slug.replace(/-/g, ' ').toUpperCase();
   let articleDescription = 'Read our latest insights.';
+  let relatedBlogs = [];
   
   try {
     const rawMarkdown = fs.readFileSync(filePath, 'utf-8');
     htmlContent = marked(rawMarkdown);
+    
+    // Fetch 3 random other blogs for internal siloing
+    const allFiles = fs.readdirSync(contentDir).filter(f => f.endsWith('.md') && f !== `${slug}.md`);
+    relatedBlogs = allFiles.sort(() => 0.5 - Math.random()).slice(0, 3).map(f => {
+      const fSlug = f.replace('.md', '');
+      return { slug: fSlug, title: fSlug.replace(/-/g, ' ').toUpperCase() };
+    });
     
     const titleMatch = rawMarkdown.match(/^#\s+(.*)/m);
     if (titleMatch) articleTitle = titleMatch[1];
@@ -146,6 +154,23 @@ export default async function BlogPost({ params }) {
           dangerouslySetInnerHTML={{ __html: htmlContent }} 
         />
       </div>
+
+      {/* Internal SEO Link Siloing */}
+      {relatedBlogs.length > 0 && (
+        <div className="row justify-content-center mt-5">
+          <div className="col-lg-8">
+            <h3 style={{ color: '#d4af37', marginBottom: '1.5rem', borderBottom: '1px solid rgba(212,175,55,0.2)', paddingBottom: '0.5rem' }}>Related Insights</h3>
+            <div className="list-group list-group-flush bg-transparent">
+              {relatedBlogs.map(b => (
+                <a key={b.slug} href={`/blog/${b.slug}`} className="list-group-item list-group-item-action bg-transparent border-secondary text-white" style={{ padding: '1rem 0' }}>
+                  <h5 className="mb-1" style={{ fontSize: '1.1rem' }}>{b.title}</h5>
+                  <small style={{ color: 'var(--color-accent)' }}>Read Article →</small>
+                </a>
+              ))}
+            </div>
+          </div>
+        </div>
+      )}
     </main>
   );
 }
