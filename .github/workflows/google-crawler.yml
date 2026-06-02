@@ -13,7 +13,15 @@ on:
 
 jobs:
   index-urls:
+    name: Execute Daily Indexing
     runs-on: ubuntu-latest
+    
+    # HARDENING: Principle of Least Privilege (block all write access to the repo)
+    permissions:
+      contents: read
+      
+    # HARDENING: Prevent infinite hang attacks or runaway billing
+    timeout-minutes: 5
 
     steps:
       - name: Checkout repository
