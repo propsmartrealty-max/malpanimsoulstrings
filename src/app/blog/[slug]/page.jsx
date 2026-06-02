@@ -24,7 +24,21 @@ export async function generateMetadata({ params }) {
   let description = 'Read the latest real estate insights from Malpani M SoulStrings.';
 
   if (fs.existsSync(filePath)) {
-    // Basic SEO fallback if needed, but slug works best for exact match
+    const content = fs.readFileSync(filePath, 'utf-8');
+    
+    // Extract actual H1 title from markdown
+    const titleMatch = content.match(/^#\s+(.*)/m);
+    if (titleMatch) title = titleMatch[1];
+    
+    // Extract first real paragraph for the meta description
+    const lines = content.split('\n');
+    for (let line of lines) {
+      line = line.trim();
+      if (line && !line.startsWith('#') && !line.startsWith('>') && !line.startsWith('-')) {
+        description = line.substring(0, 155) + (line.length > 155 ? '...' : '');
+        break;
+      }
+    }
   }
 
   return {
@@ -46,9 +60,24 @@ export default async function BlogPost({ params }) {
   const filePath = path.join(contentDir, `${slug}.md`);
   
   let htmlContent = '';
+  let articleTitle = slug.replace(/-/g, ' ').toUpperCase();
+  let articleDescription = 'Read our latest insights.';
+  
   try {
     const rawMarkdown = fs.readFileSync(filePath, 'utf-8');
     htmlContent = marked(rawMarkdown);
+    
+    const titleMatch = rawMarkdown.match(/^#\s+(.*)/m);
+    if (titleMatch) articleTitle = titleMatch[1];
+    
+    const lines = rawMarkdown.split('\n');
+    for (let line of lines) {
+      line = line.trim();
+      if (line && !line.startsWith('#') && !line.startsWith('>') && !line.startsWith('-')) {
+        articleDescription = line.substring(0, 155);
+        break;
+      }
+    }
   } catch (e) {
     htmlContent = '<h1>Article Not Found</h1>';
   }
@@ -56,7 +85,8 @@ export default async function BlogPost({ params }) {
   const schema = {
     "@context": "https://schema.org",
     "@type": "Article",
-    "headline": slug.replace(/-/g, ' ').toUpperCase(),
+    "headline": articleTitle,
+    "description": articleDescription,
     "url": `https://www.malpanimsoulstrings.com/blog/${slug}`,
     "datePublished": new Date().toISOString(),
     "author": {
