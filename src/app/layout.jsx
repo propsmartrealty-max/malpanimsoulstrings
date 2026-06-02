@@ -139,7 +139,13 @@ const orgSchema = {
     "latitude": 18.5590,
     "longitude": 73.7868
   },
-  "priceRange": "$$$$"
+  "priceRange": "$$$$",
+  "sameAs": [
+    "https://www.facebook.com/malpaniestates",
+    "https://www.instagram.com/malpaniestates",
+    "https://www.youtube.com/@malpaniestates",
+    "https://www.linkedin.com/company/malpani-estates"
+  ]
 };
 
 const websiteSchema = {
@@ -195,11 +201,11 @@ export default function RootLayout({ children }) {
           />
         */}
 
-        {/* Google Business Profile / Maps API Prep */}
-        {/* 
-          DISABLED TO PREVENT CORE WEB VITALS JS PENALTIES 
-          <script src={`https://maps.googleapis.com/maps/api/js?key=YOUR_GOOGLE_MAPS_API_KEY&libraries=places`} async defer></script>
-        */}
+        {/* Google Business Profile / Maps API Prep (Lazy Loaded to protect CWV) */}
+        <Script 
+          src={`https://maps.googleapis.com/maps/api/js?key=YOUR_GOOGLE_MAPS_API_KEY&libraries=places`} 
+          strategy="lazyOnload" 
+        />
 
         {/* 
           DISABLED TO PREVENT CORE WEB VITALS JS PENALTIES 
@@ -225,10 +231,8 @@ export default function RootLayout({ children }) {
         <ClientScripts />
         <Script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" strategy="afterInteractive" />
         
-        {/* 
-          DISABLED TO PREVENT CORE WEB VITALS JS PENALTIES 
-          <GoogleAnalytics gaId="G-XXXXXXXXXX" />
-        */}
+        {/* Native Google Analytics 4 integration (Deferred to prevent rendering blocks) */}
+        <GoogleAnalytics gaId="G-XXXXXXYOURID" />
         
         {/* Global WhatsApp Floating Widget */}
         <FloatingContact />
