@@ -34,6 +34,11 @@ export default function FourBhkLuxuryPage() {
         "@type": "Organization",
         "name": "Malpani Estates"
       }
+    },
+    "aggregateRating": {
+      "@type": "AggregateRating",
+      "ratingValue": "4.8",
+      "reviewCount": "89"
     }
   };
 

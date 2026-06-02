@@ -17,6 +17,7 @@ export default function Footer() {
                     <li><Link href="/amenities" style={{ color: 'rgba(255,255,255,0.5)', textDecoration: 'none' }}>World Class Amenities</Link></li>
                     <li><Link href="/vastu-compliant-luxury-homes-pune" style={{ color: 'rgba(255,255,255,0.5)', textDecoration: 'none' }}>Vastu Compliant Homes</Link></li>
                     <li><Link href="/location" style={{ color: 'rgba(255,255,255,0.5)', textDecoration: 'none' }}>Baner Pashan Link Road Location</Link></li>
+                    <li><Link href="/sitemap" style={{ color: 'rgba(255,255,255,0.5)', textDecoration: 'none' }}>HTML Sitemap</Link></li>
                 </ul>
             </div>
             <div className="col-lg-3 mb-4 mb-lg-0">

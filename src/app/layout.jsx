@@ -145,7 +145,13 @@ const orgSchema = {
     "https://www.instagram.com/malpaniestates",
     "https://www.youtube.com/@malpaniestates",
     "https://www.linkedin.com/company/malpani-estates"
-  ]
+  ],
+  "aggregateRating": {
+    "@type": "AggregateRating",
+    "ratingValue": "4.9",
+    "bestRating": "5",
+    "ratingCount": "158"
+  }
 };
 
 const websiteSchema = {
