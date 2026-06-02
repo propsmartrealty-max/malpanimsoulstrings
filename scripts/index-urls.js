@@ -2,23 +2,34 @@ const fs = require('fs');
 const path = require('path');
 const { google } = require('googleapis');
 
-// 1. Load the Service Account key
-// Ensure this file is present in the root directory (but NEVER committed to git!)
-const keyFile = path.join(__dirname, '../service-account.json');
+// 1. Load Credentials (Prioritize Environment Variables, Fallback to Local JSON)
+let clientEmail, privateKey;
 
-if (!fs.existsSync(keyFile)) {
-  console.error('\n[ERROR] service-account.json not found!');
-  console.error('Please generate a Service Account Key from Google Cloud Console and place it in the root directory.\n');
-  process.exit(1);
+// Check if we are running in CI/CD (GitHub Actions) or Vercel with Environment Variables injected
+if (process.env.GOOGLE_CLIENT_EMAIL && process.env.GOOGLE_PRIVATE_KEY) {
+  clientEmail = process.env.GOOGLE_CLIENT_EMAIL;
+  // Handle escaped newlines in the private key from CI/CD environments
+  privateKey = process.env.GOOGLE_PRIVATE_KEY.replace(/\\n/g, '\n');
+  console.log('Using Google Credentials from Environment Variables (Secrets).');
+} else {
+  // Fallback for local development
+  const keyFile = path.join(__dirname, '../service-account.json');
+  if (!fs.existsSync(keyFile)) {
+    console.error('\n[ERROR] Missing Google Cloud Credentials!');
+    console.error('You must either set GOOGLE_CLIENT_EMAIL and GOOGLE_PRIVATE_KEY as environment variables, or provide a local service-account.json file.\n');
+    process.exit(1);
+  }
+  const key = require(keyFile);
+  clientEmail = key.client_email;
+  privateKey = key.private_key;
+  console.log('Using Google Credentials from local service-account.json.');
 }
-
-const key = require(keyFile);
 
 // 2. Setup JWT Auth Client
 const jwtClient = new google.auth.JWT(
-  key.client_email,
+  clientEmail,
   null,
-  key.private_key,
+  privateKey,
   ['https://www.googleapis.com/auth/indexing'],
   null
 );
@@ -40,7 +51,7 @@ const searchIndex = require(searchIndexPath);
 const urlsToPublish = searchIndex.map(item => item.url);
 
 async function publishUrls() {
-  console.log(`Authenticating with Google as ${key.client_email}...`);
+  console.log(`Authenticating with Google as ${clientEmail}...`);
   
   await jwtClient.authorize();
   console.log('Successfully Authenticated!\n');
