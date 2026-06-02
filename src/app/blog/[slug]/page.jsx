@@ -104,9 +104,34 @@ export default async function BlogPost({ params }) {
     }
   };
 
+  const breadcrumbSchema = {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      {
+        "@type": "ListItem",
+        "position": 1,
+        "name": "Home",
+        "item": "https://www.malpanimsoulstrings.com/"
+      },
+      {
+        "@type": "ListItem",
+        "position": 2,
+        "name": "Insights & Articles",
+        "item": "https://www.malpanimsoulstrings.com/blog"
+      },
+      {
+        "@type": "ListItem",
+        "position": 3,
+        "name": articleTitle,
+        "item": `https://www.malpanimsoulstrings.com/blog/${slug}`
+      }
+    ]
+  };
+
   return (
     <main className="container py-5 my-5">
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify([schema, breadcrumbSchema]) }} />
       <div className="row justify-content-center">
         <div 
           className="col-lg-8 blog-content fade-in-up" 

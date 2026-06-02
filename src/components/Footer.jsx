@@ -4,7 +4,7 @@ export default function Footer() {
   return (
     <footer className="footer" style={{ background: '#0a0a0c', padding: '4rem 0 2rem 0', borderTop: '1px solid rgba(212,175,55,0.2)' }}>
       <div className="container">
-        <div className="row mb-5">
+        <nav className="row mb-5" aria-label="Footer Navigation">
             <div className="col-lg-3 mb-4 mb-lg-0">
                 <h4 style={{ color: '#d4af37', fontWeight: 'bold', letterSpacing: '2px', marginBottom: '1.5rem' }}>MALPANI <span style={{ color:'#fff' }}>ESTATES</span></h4>
                 <p style={{ color: 'rgba(255,255,255,0.5)', lineHeight: '1.8' }}>Redefining absolute luxury and architectural perfection on the Baner Pashan Link Road.</p>
@@ -39,7 +39,7 @@ export default function Footer() {
                     <li><Link href="/nri-investment" style={{ color: 'rgba(255,255,255,0.5)', textDecoration: 'none' }}>NRI Investment</Link></li>
                 </ul>
             </div>
-        </div>
+        </nav>
         <div className="row mt-4 pt-4" style={{ borderTop: '1px solid rgba(212,175,55,0.1)' }}>
           <div className="col-12 text-center">
             <p style={{ fontSize: '0.8rem', color: 'rgba(255,255,255,0.3)', margin: '1rem 0 0.5rem 0' }}>Popular Searches:</p>

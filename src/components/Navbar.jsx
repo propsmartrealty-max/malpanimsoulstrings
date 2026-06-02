@@ -22,7 +22,7 @@ export default function Navbar() {
 
   return (
     <>
-      <nav className="navbar">
+      <nav className="navbar" aria-label="Main Navigation">
         <div className="nav-container">
           <Link href="/" className="brand">
             <Image src="https://www.malpaniestates.com/assets/images/apple-touch-icon.png" alt="Malpani M SoulStrings" width={40} height={40} className="brand-logo" />
@@ -51,7 +51,7 @@ export default function Navbar() {
         style={isMenuOpen ? { transform: 'translateY(0)', opacity: 1, visibility: 'visible' } : { transform: 'translateY(-100%)', opacity: 0, visibility: 'hidden' }}
       >
         <button onClick={toggleMenu} aria-label="Close Mobile Menu" style={{ position: 'absolute', top: '2rem', right: '2rem', background: 'none', border: 'none', color: 'var(--color-primary)', cursor: 'pointer', fontSize: '3rem', transition: 'var(--transition-smooth)' }}>&times;</button>
-        <div className="overlay-content">
+        <nav className="overlay-content" aria-label="Mobile Navigation">
           <Link href="/" className="overlay-link" onClick={toggleMenu}>Home / Legacy</Link>
           <Link href="/4bhk-luxury" className="overlay-link" onClick={toggleMenu}>4 BHK Luxury Residences</Link>
           <Link href="/amenities" className="overlay-link" onClick={toggleMenu}>Amenities & Lifestyle</Link>
