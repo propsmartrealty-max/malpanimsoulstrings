@@ -52,6 +52,14 @@ export async function generateMetadata({ params }) {
       description,
       type: 'article',
       url: `https://www.malpanimsoulstrings.com/blog/${slug}`,
+      images: [
+        {
+          url: 'https://malpani-cms.firsteconomy.com/uploads/M_soul_strings_Desktop_Banner_Without_Text_0d38ce28d4.jpg',
+          width: 1200,
+          height: 630,
+          alt: title,
+        }
+      ]
     }
   }
 }

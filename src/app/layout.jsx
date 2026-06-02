@@ -157,7 +157,11 @@ const websiteSchema = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <GoogleTagManager gtmId="GTM-XXXXXXX" />
+      {/* 
+        DISABLED TO PREVENT CORE WEB VITALS JS PENALTIES 
+        Uncomment when real API keys are provided by the user.
+        <GoogleTagManager gtmId="GTM-XXXXXXX" />
+      */}
       <head>
         {/* LCP Optimization for Top Google Core Web Vitals Ranking */}
         <link rel="preload" as="image" href="https://malpani-cms.firsteconomy.com/uploads/M_soul_strings_Desktop_Banner_Without_Text_0d38ce28d4.jpg" fetchPriority="high" />
@@ -181,25 +185,41 @@ export default function RootLayout({ children }) {
               new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
               j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
               'https://sst.malpanimsoulstrings.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-              })(window,document,'script','dataLayer','GTM-XXXXXXX');
-            `,
-          }}
-        />
+        {/* 
+          DISABLED TO PREVENT CORE WEB VITALS JS PENALTIES 
+          <script
+            dangerouslySetInnerHTML={{
+              __html: `
+                (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+                new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+                j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+                'https://sst.malpanimsoulstrings.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+                })(window,document,'script','dataLayer','GTM-XXXXXXX');
+              `,
+            }}
+          />
+        */}
 
         {/* Google Business Profile / Maps API Prep */}
-        <script src={`https://maps.googleapis.com/maps/api/js?key=YOUR_GOOGLE_MAPS_API_KEY&libraries=places`} async defer></script>
+        {/* 
+          DISABLED TO PREVENT CORE WEB VITALS JS PENALTIES 
+          <script src={`https://maps.googleapis.com/maps/api/js?key=YOUR_GOOGLE_MAPS_API_KEY&libraries=places`} async defer></script>
+        */}
 
-        <script
-          dangerouslySetInnerHTML={{
-            __html: `
-              (function(c,l,a,r,i,t,y){
-                  c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
-                  t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
-                  y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
-              })(window, document, "clarity", "script", "your_clarity_project_id");
-            `,
-          }}
-        />
+        {/* 
+          DISABLED TO PREVENT CORE WEB VITALS JS PENALTIES 
+          <script
+            dangerouslySetInnerHTML={{
+              __html: `
+                (function(c,l,a,r,i,t,y){
+                    c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
+                    t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
+                    y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
+                })(window, document, "clarity", "script", "your_clarity_project_id");
+              `,
+            }}
+          />
+        */}
       </head>
       <body>
         <Navbar />
