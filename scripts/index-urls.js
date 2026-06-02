@@ -38,7 +38,21 @@ if (!fs.existsSync(searchIndexPath)) {
 }
 
 const searchIndex = require(searchIndexPath);
-const urlsToPublish = searchIndex.map(item => item.url);
+
+// HARDENING 1: Domain Whitelisting (prevent submitting poisoned/external URLs to your Google Account)
+const ALLOWED_DOMAIN = 'https://www.malpanimsoulstrings.com';
+
+// HARDENING 2: Deduplication (prevent sending the exact same URL twice and wasting quota)
+let rawUrls = [...new Set(searchIndex.map(item => item.url))];
+
+// Filter only valid URLs
+let urlsToPublish = rawUrls.filter(url => url.startsWith(ALLOWED_DOMAIN));
+
+// HARDENING 3: Hard Cap limit of 200 (Google's standard daily limit) to prevent runaway bot loops
+if (urlsToPublish.length > 200) {
+  console.warn(`[WARNING] Attempted to submit ${urlsToPublish.length} URLs. Truncating to 200 to strictly respect Google API limits.`);
+  urlsToPublish = urlsToPublish.slice(0, 200);
+}
 
 async function publishUrls() {
   console.log(`Authenticating with Google as ${clientEmail}...`);
@@ -66,6 +80,14 @@ async function publishUrls() {
       console.error(`[FAILED] URL: ${url}`);
       console.error(`         Reason: ${error.message}`);
       failCount++;
+      
+      // HARDENING 4: Quota Protection Kill-Switch
+      // If Google explicitly tells us the Quota is exceeded (429 Too Many Requests), stop immediately.
+      // Continuing to hammer the API when out of quota will result in a permanent ban.
+      if (error.message && error.message.toLowerCase().includes('quota exceeded')) {
+        console.error('\n[CRITICAL HARD STOP] Google API Quota Exceeded. Engaging Kill-Switch to prevent account suspension.');
+        break; 
+      }
     }
     
     // Tiny delay to respect API rate limits (Google allows 100 requests per minute usually, but safe is better)
