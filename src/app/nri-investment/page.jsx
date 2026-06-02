@@ -20,8 +20,50 @@ export const metadata = {
 };
 
 export default function NRIInvestmentPage() {
+  const articleSchema = {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "headline": "Why NRIs Choose Baner for Luxury Real Estate Investment in Pune",
+    "description": "The definitive analysis of why Baner-Pashan Link Road is delivering unprecedented ROI for global Indian investors.",
+    "author": {
+      "@type": "Organization",
+      "name": "Malpani Estates Investment Advisory"
+    },
+    "publisher": {
+      "@type": "Organization",
+      "name": "Malpani Estates"
+    },
+    "datePublished": "2024-05-01T08:00:00+08:00",
+    "dateModified": new Date().toISOString()
+  };
+
+  const faqSchema = {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "Why are NRIs investing in Pune real estate?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "NRIs are investing in Pune due to the booming IT sector, high rental yields in West Pune (Baner, Hinjewadi), and favorable foreign exchange rates offering massive capital appreciation."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Is Baner a good investment for NRIs?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Yes, Baner is the top investment choice for NRIs in Pune. It offers ultra-luxury gated communities, seamless IT corridor connectivity, and historical capital appreciation of 8-12% annually."
+        }
+      }
+    ]
+  };
+
   return (
     <main>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(articleSchema) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
 
       <SchemaMarkup />
       
@@ -59,21 +101,62 @@ export default function NRIInvestmentPage() {
             <h2>Conclusion</h2>
             <p>The synthesis of high ROI, strategic location, and ultra-luxury living makes Baner the ultimate destination for NRI investment in Pune. As the landscape continues to evolve, securing a 4 BHK luxury flat in Baner isn't just buying property; it's securing a legacy.</p>
             
+            <h3 className="mt-5 mb-4" style={{ color: 'var(--color-primary)' }}>NRI Investment ROI Matrix (Pune West)</h3>
+            <div className="table-responsive mb-5" style={{ borderRadius: '8px', overflow: 'hidden', border: '1px solid rgba(212,175,55,0.2)' }}>
+              <table className="table table-dark table-hover mb-0" style={{ backgroundColor: 'var(--color-surface)' }}>
+                <thead style={{ backgroundColor: 'rgba(212,175,55,0.1)' }}>
+                  <tr>
+                    <th style={{ color: 'var(--color-primary)', borderBottom: '1px solid rgba(212,175,55,0.3)', padding: '1rem' }}>Investment Metric</th>
+                    <th style={{ color: 'var(--color-primary)', borderBottom: '1px solid rgba(212,175,55,0.3)', padding: '1rem' }}>Pune Average</th>
+                    <th style={{ color: 'var(--color-primary)', borderBottom: '1px solid rgba(212,175,55,0.3)', padding: '1rem' }}>Baner-Pashan Link Road</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td style={{ padding: '1rem', borderBottom: '1px solid rgba(255,255,255,0.05)' }}><strong>Annual Capital Appreciation</strong></td>
+                    <td style={{ padding: '1rem', borderBottom: '1px solid rgba(255,255,255,0.05)' }}>5% - 7%</td>
+                    <td style={{ padding: '1rem', borderBottom: '1px solid rgba(255,255,255,0.05)', color: '#25D366' }}>8% - 12%+</td>
+                  </tr>
+                  <tr>
+                    <td style={{ padding: '1rem', borderBottom: '1px solid rgba(255,255,255,0.05)' }}><strong>Rental Yield (Luxury Segment)</strong></td>
+                    <td style={{ padding: '1rem', borderBottom: '1px solid rgba(255,255,255,0.05)' }}>2.5% - 3.5%</td>
+                    <td style={{ padding: '1rem', borderBottom: '1px solid rgba(255,255,255,0.05)', color: '#25D366' }}>3.5% - 5.0%</td>
+                  </tr>
+                  <tr>
+                    <td style={{ padding: '1rem', borderBottom: '1px solid rgba(255,255,255,0.05)' }}><strong>Target Demographic</strong></td>
+                    <td style={{ padding: '1rem', borderBottom: '1px solid rgba(255,255,255,0.05)' }}>Mixed</td>
+                    <td style={{ padding: '1rem', borderBottom: '1px solid rgba(255,255,255,0.05)', color: '#25D366' }}>IT Expat Execs / CEOs</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            
           </article>
 
           <aside className="sidebar">
-            <div className="loc-card" style={{ padding: '1.5rem', borderRadius: '12px', position: 'sticky', top: '100px' }}>
-              <h3 style={{ fontSize: '1.2rem', marginBottom: '1rem', color: 'var(--color-primary)' }}>Market Insights</h3>
-              <ul style={{ listStyle: 'none', padding: 0, margin: 0 }}>
-                <li style={{ marginBottom: '1rem' }}><Link href="/market-analysis" style={{ color: 'var(--color-text)', textDecoration: 'none' }}>Pune Market Analysis</Link></li>
-                <li style={{ marginBottom: '1rem' }}><Link href="/pune-real-estate-market" style={{ color: 'var(--color-text)', textDecoration: 'none' }}>Pune Real Estate Market</Link></li>
-                <li style={{ marginBottom: '1rem' }}><Link href="/pune-west-real-estate-market" style={{ color: 'var(--color-text)', textDecoration: 'none' }}>West Pune Real Estate</Link></li>
-                <li style={{ marginBottom: '1rem' }}><Link href="/baner-real-estate-market" style={{ color: 'var(--color-text)', textDecoration: 'none' }}>Baner Real Estate Market</Link></li>
-              </ul>
-              
-              <div style={{ marginTop: '2rem' }}>
-                <a href="#" data-bs-toggle="modal" data-bs-target="#enquireModal" className="btn btn-primary" style={{ width: '100%' }}>Enquire Now</a>
+            <div className="loc-card" style={{ padding: '1.5rem', borderRadius: '12px', position: 'sticky', top: '100px', marginBottom: '2rem' }}>
+              <h3 style={{ fontSize: '1.2rem', marginBottom: '1rem', color: 'var(--color-primary)' }}>Market Intelligence Hub</h3>
+              <p style={{ color: 'var(--color-text-muted)', fontSize: '0.9rem', marginBottom: '1.5rem' }}>Access our complete library of Pune real estate analytics.</p>
+              <div className="list-group list-group-flush bg-transparent">
+                <Link href="/pune-real-estate-market" className="list-group-item list-group-item-action bg-transparent border-secondary text-white" style={{ padding: '0.75rem 0' }}>
+                  <small style={{ color: 'var(--color-accent)' }}>Report →</small> Pune Market Analysis
+                </Link>
+                <Link href="/baner-real-estate-market" className="list-group-item list-group-item-action bg-transparent border-secondary text-white" style={{ padding: '0.75rem 0' }}>
+                  <small style={{ color: 'var(--color-accent)' }}>Report →</small> Baner Real Estate Market
+                </Link>
+                <Link href="/pune-west-real-estate-market" className="list-group-item list-group-item-action bg-transparent border-secondary text-white" style={{ padding: '0.75rem 0' }}>
+                  <small style={{ color: 'var(--color-accent)' }}>Report →</small> Pune West Trajectory
+                </Link>
+                <Link href="/pune-infrastructure-metro-impact" className="list-group-item list-group-item-action bg-transparent border-secondary text-white" style={{ padding: '0.75rem 0' }}>
+                  <small style={{ color: 'var(--color-accent)' }}>Analysis →</small> Pune Metro Impact
+                </Link>
               </div>
+            </div>
+
+            <div className="loc-card" style={{ padding: '1.5rem', borderRadius: '12px', position: 'sticky', top: '450px' }}>
+              <h3 style={{ fontSize: '1.2rem', marginBottom: '1rem', color: 'var(--color-primary)' }}>Secure Your NRI Asset</h3>
+              <p style={{ color: 'var(--color-text-muted)', fontSize: '0.9rem', marginBottom: '1.5rem' }}>Explore the finest luxury estates tailored for global citizens.</p>
+              <a href="#" data-bs-toggle="modal" data-bs-target="#enquireModal" className="btn btn-primary" style={{ width: '100%' }}>Enquire Now</a>
             </div>
           </aside>
           

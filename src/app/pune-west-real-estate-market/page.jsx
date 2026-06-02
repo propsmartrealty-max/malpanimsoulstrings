@@ -12,8 +12,50 @@ export const metadata = {
 };
 
 export default function PuneWestRealEstateMarket() {
+  const reportSchema = {
+    "@context": "https://schema.org",
+    "@type": ["Report", "Article"],
+    "headline": "Pune West Real Estate Market 2026: The Growth Engine of Luxury Living",
+    "description": "Comprehensive market intelligence report on the Pune West real estate market, analyzing Hinjewadi IT corridor impact, property rates, and luxury investments.",
+    "author": {
+      "@type": "Organization",
+      "name": "Malpani Estates Market Research"
+    },
+    "publisher": {
+      "@type": "Organization",
+      "name": "Malpani Estates"
+    },
+    "datePublished": "2024-05-01T08:00:00+08:00",
+    "dateModified": new Date().toISOString()
+  };
+
+  const faqSchema = {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "Is West Pune good for real estate investment?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Yes, West Pune (specifically Baner, Balewadi, and Wakad) is the most lucrative real estate corridor in Pune due to the Hinjewadi IT Park and seamless Mumbai connectivity."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Which are the best residential areas in West Pune?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "The Baner-Pashan Link Road, Aundh, and Balewadi High Street are the most premium residential areas in West Pune, offering luxury 3 BHK and 4 BHK estates with high capital appreciation."
+        }
+      }
+    ]
+  };
+
   return (
     <main>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(reportSchema) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
 
       <SchemaMarkup />
       
@@ -51,10 +93,59 @@ export default function PuneWestRealEstateMarket() {
 
             <h2>Why Malpani M SoulStrings Dominates West Pune</h2>
             <p>Situated strategically on the Baner-Pashan Link Road, <strong><Link href="/">Malpani M SoulStrings</Link></strong> represents the pinnacle of the <strong>Pune West Real Estate Market</strong> and the broader <strong><Link href="/pune-real-estate-market">Pune Real Estate Market</Link></strong>. By offering ultra-low density living, Vastu-compliant architecture, and over 35+ world-class amenities, it perfectly addresses the demands of West Pune's elite homebuyers.</p>
+
+            <h3 className="mt-5 mb-4" style={{ color: 'var(--color-primary)' }}>West Pune Corridor Growth Vectors</h3>
+            <div className="table-responsive mb-5" style={{ borderRadius: '8px', overflow: 'hidden', border: '1px solid rgba(212,175,55,0.2)' }}>
+              <table className="table table-dark table-hover mb-0" style={{ backgroundColor: 'var(--color-surface)' }}>
+                <thead style={{ backgroundColor: 'rgba(212,175,55,0.1)' }}>
+                  <tr>
+                    <th style={{ color: 'var(--color-primary)', borderBottom: '1px solid rgba(212,175,55,0.3)', padding: '1rem' }}>Sector</th>
+                    <th style={{ color: 'var(--color-primary)', borderBottom: '1px solid rgba(212,175,55,0.3)', padding: '1rem' }}>Primary Asset Class</th>
+                    <th style={{ color: 'var(--color-primary)', borderBottom: '1px solid rgba(212,175,55,0.3)', padding: '1rem' }}>Demand Profile</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td style={{ padding: '1rem', borderBottom: '1px solid rgba(255,255,255,0.05)' }}><strong>Baner-Pashan Link Road</strong></td>
+                    <td style={{ padding: '1rem', borderBottom: '1px solid rgba(255,255,255,0.05)', color: '#25D366' }}>Ultra-Luxury 4 BHK Estates</td>
+                    <td style={{ padding: '1rem', borderBottom: '1px solid rgba(255,255,255,0.05)' }}>IT Executives / NRIs</td>
+                  </tr>
+                  <tr>
+                    <td style={{ padding: '1rem', borderBottom: '1px solid rgba(255,255,255,0.05)' }}><strong>Hinjewadi</strong></td>
+                    <td style={{ padding: '1rem', borderBottom: '1px solid rgba(255,255,255,0.05)', color: 'var(--color-text-muted)' }}>Premium Commercial / 2 BHK</td>
+                    <td style={{ padding: '1rem', borderBottom: '1px solid rgba(255,255,255,0.05)' }}>Mid-Level IT Workforce</td>
+                  </tr>
+                  <tr>
+                    <td style={{ padding: '1rem', borderBottom: '1px solid rgba(255,255,255,0.05)' }}><strong>Balewadi</strong></td>
+                    <td style={{ padding: '1rem', borderBottom: '1px solid rgba(255,255,255,0.05)', color: '#25D366' }}>High-Street Retail / 3 BHK</td>
+                    <td style={{ padding: '1rem', borderBottom: '1px solid rgba(255,255,255,0.05)' }}>Business Owners / Executives</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
           </article>
 
           <aside className="sidebar">
-            <div className="loc-card" style={{ padding: '1.5rem', borderRadius: '12px', position: 'sticky', top: '100px' }}>
+            <div className="loc-card" style={{ padding: '1.5rem', borderRadius: '12px', position: 'sticky', top: '100px', marginBottom: '2rem' }}>
+              <h3 style={{ fontSize: '1.2rem', marginBottom: '1rem', color: 'var(--color-primary)' }}>Market Intelligence Hub</h3>
+              <p style={{ color: 'var(--color-text-muted)', fontSize: '0.9rem', marginBottom: '1.5rem' }}>Access our complete library of Pune real estate analytics.</p>
+              <div className="list-group list-group-flush bg-transparent">
+                <Link href="/pune-real-estate-market" className="list-group-item list-group-item-action bg-transparent border-secondary text-white" style={{ padding: '0.75rem 0' }}>
+                  <small style={{ color: 'var(--color-accent)' }}>Report →</small> Pune Market Analysis
+                </Link>
+                <Link href="/baner-real-estate-market" className="list-group-item list-group-item-action bg-transparent border-secondary text-white" style={{ padding: '0.75rem 0' }}>
+                  <small style={{ color: 'var(--color-accent)' }}>Report →</small> Baner Real Estate Market
+                </Link>
+                <Link href="/nri-investment" className="list-group-item list-group-item-action bg-transparent border-secondary text-white" style={{ padding: '0.75rem 0' }}>
+                  <small style={{ color: 'var(--color-accent)' }}>Guide →</small> NRI Investment
+                </Link>
+                <Link href="/pune-infrastructure-metro-impact" className="list-group-item list-group-item-action bg-transparent border-secondary text-white" style={{ padding: '0.75rem 0' }}>
+                  <small style={{ color: 'var(--color-accent)' }}>Analysis →</small> Pune Metro Impact
+                </Link>
+              </div>
+            </div>
+
+            <div className="loc-card" style={{ padding: '1.5rem', borderRadius: '12px', position: 'sticky', top: '450px' }}>
               <h3 style={{ fontSize: '1.2rem', marginBottom: '1rem', color: 'var(--color-primary)' }}>Own the Best of West Pune</h3>
               <p style={{ color: 'var(--color-text-muted)', fontSize: '0.9rem', marginBottom: '1.5rem' }}>Experience the ultimate luxury lifestyle at Malpani M SoulStrings.</p>
               <a href="#" data-bs-toggle="modal" data-bs-target="#enquireModal" className="btn btn-primary" style={{ width: '100%' }}>Schedule a Viewing</a>
