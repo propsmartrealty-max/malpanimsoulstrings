@@ -53,6 +53,9 @@ export default function Footer() {
               <Link href="/vastu-compliant-luxury-homes-pune" style={{ fontSize: '0.75rem', color: 'rgba(255,255,255,0.4)', textDecoration: 'none' }}>Vastu Compliant Homes West Pune</Link>
               <Link href="/compare/pristine-lords-baner" style={{ fontSize: '0.75rem', color: 'rgba(255,255,255,0.4)', textDecoration: 'none' }}>Pristine Lords Baner Reviews</Link>
               <Link href="/compare/kohinoor-livience-baner" style={{ fontSize: '0.75rem', color: 'rgba(255,255,255,0.4)', textDecoration: 'none' }}>Kohinoor Livience Aleenta Baner</Link>
+              <Link href="/aundh" style={{ fontSize: '0.75rem', color: 'rgba(255,255,255,0.4)', textDecoration: 'none' }}>Aundh Real Estate</Link>
+              <Link href="/pashan" style={{ fontSize: '0.75rem', color: 'rgba(255,255,255,0.4)', textDecoration: 'none' }}>Pashan Luxury Flats</Link>
+              <Link href="/shivajinagar" style={{ fontSize: '0.75rem', color: 'rgba(255,255,255,0.4)', textDecoration: 'none' }}>Shivajinagar Premium Estates</Link>
             </div>
           </div>
         </div>

@@ -15,6 +15,20 @@ export const metadata = {
 };
 
 export default function Home() {
+  const videoSchema = {
+    "@context": "https://schema.org",
+    "@type": "VideoObject",
+    "name": "Malpani M SoulStrings - Ultra Premium 3 & 4 BHK Estates",
+    "description": "Experience the epitome of luxury real estate in Baner-Pashan Link Road, Pune. Virtual tour of the M SoulStrings masterpiece by Malpani Estates.",
+    "thumbnailUrl": [
+      "https://malpani-cms.firsteconomy.com/uploads/M_soul_strings_Desktop_Banner_Without_Text_0d38ce28d4.jpg"
+    ],
+    "uploadDate": "2024-05-01T08:00:00+08:00",
+    "duration": "PT0M30S",
+    "contentUrl": "https://malpani-cms.firsteconomy.com/uploads/video_51_98e1310033.mp4",
+    "embedUrl": "https://www.malpanimsoulstrings.com"
+  };
+
   const faqSchema = {
     "@context": "https://schema.org",
     "@type": "FAQPage",
@@ -66,6 +80,7 @@ export default function Home() {
     <main>
       <SchemaMarkup />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(videoSchema) }} />
       <section id="hero" className="hero">
       <div className="hero-bg">
         <video src="https://malpani-cms.firsteconomy.com/uploads/video_51_98e1310033.mp4" preload="metadata" poster="https://malpani-cms.firsteconomy.com/uploads/M_soul_strings_Desktop_Banner_Without_Text_0d38ce28d4.jpg" autoPlay loop muted playsInline className="video-bg"></video>

@@ -11,8 +11,25 @@ export const metadata = {
 };
 
 export default function AundhPage() {
+  const localSchema = {
+    "@context": "https://schema.org",
+    "@type": ["Place", "Neighborhood"],
+    "name": "Aundh, Pune",
+    "description": "Premium residential neighborhood in West Pune, known for high-net-worth real estate and seamless connectivity to Baner Pashan Link Road.",
+    "containedInPlace": {
+      "@type": "City",
+      "name": "Pune"
+    },
+    "geo": {
+      "@type": "GeoCoordinates",
+      "latitude": 18.5626,
+      "longitude": 73.8077
+    }
+  };
+
   return (
     <main>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(localSchema) }} />
 
       <SchemaMarkup />
       

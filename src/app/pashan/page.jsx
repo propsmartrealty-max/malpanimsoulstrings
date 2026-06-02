@@ -11,8 +11,25 @@ export const metadata = {
 };
 
 export default function PashanPage() {
+  const localSchema = {
+    "@context": "https://schema.org",
+    "@type": ["Place", "Neighborhood"],
+    "name": "Pashan, Pune",
+    "description": "Serene, green residential corridor in West Pune bordering Baner and Aundh, offering premium luxury real estate developments.",
+    "containedInPlace": {
+      "@type": "City",
+      "name": "Pune"
+    },
+    "geo": {
+      "@type": "GeoCoordinates",
+      "latitude": 18.5365,
+      "longitude": 73.7929
+    }
+  };
+
   return (
     <main>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(localSchema) }} />
 
       <SchemaMarkup />
       

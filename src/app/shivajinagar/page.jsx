@@ -11,8 +11,25 @@ export const metadata = {
 };
 
 export default function ShivajinagarPage() {
+  const localSchema = {
+    "@context": "https://schema.org",
+    "@type": ["Place", "Neighborhood"],
+    "name": "Shivajinagar, Pune",
+    "description": "Historic and central administrative hub of Pune, connecting ultra-luxury buyers to the new Baner-Pashan real estate corridor.",
+    "containedInPlace": {
+      "@type": "City",
+      "name": "Pune"
+    },
+    "geo": {
+      "@type": "GeoCoordinates",
+      "latitude": 18.5314,
+      "longitude": 73.8446
+    }
+  };
+
   return (
     <main>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(localSchema) }} />
 
       <SchemaMarkup />
       
