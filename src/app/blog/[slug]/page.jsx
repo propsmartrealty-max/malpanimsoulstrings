@@ -93,16 +93,14 @@ export default async function BlogPost({ params }) {
     "url": `https://www.malpanimsoulstrings.com/blog/${slug}`,
     "datePublished": new Date().toISOString(),
     "author": {
-      "@type": "Organization",
-      "name": "Malpani Group"
+      "@id": "https://www.malpanimsoulstrings.com/#organization"
     },
     "publisher": {
-      "@type": "Organization",
-      "name": "Malpani Group",
-      "logo": {
-        "@type": "ImageObject",
-        "url": "https://www.malpanimsoulstrings.com/icon.png"
-      }
+      "@id": "https://www.malpanimsoulstrings.com/#organization"
+    },
+    "mainEntityOfPage": {
+      "@type": "WebPage",
+      "@id": `https://www.malpanimsoulstrings.com/blog/${slug}`
     }
   };
 

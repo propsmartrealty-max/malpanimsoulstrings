@@ -115,11 +115,12 @@ export const viewport = {
 
 const orgSchema = {
   "@context": "https://schema.org",
-  "@type": "RealEstateAgent",
+  "@type": ["RealEstateAgent", "Organization", "LocalBusiness"],
+  "@id": "https://www.malpanimsoulstrings.com/#organization",
   "name": "Malpani M SoulStrings",
   "image": "https://www.malpanimsoulstrings.com/icon.png",
+  "logo": "https://www.malpanimsoulstrings.com/icon.png",
   "description": "Ultra-premium 3 BHK and 4 BHK luxury Estates in Baner-Pashan Link Road, Pune.",
-  "@id": "https://www.malpanimsoulstrings.com",
   "url": "https://www.malpanimsoulstrings.com",
   "telephone": "+917744009295",
   "address": {
@@ -140,8 +141,12 @@ const orgSchema = {
 const websiteSchema = {
   "@context": "https://schema.org",
   "@type": "WebSite",
-  "name": "Malpani M SoulStrings",
+  "@id": "https://www.malpanimsoulstrings.com/#website",
   "url": "https://www.malpanimsoulstrings.com",
+  "name": "Malpani M SoulStrings",
+  "publisher": {
+    "@id": "https://www.malpanimsoulstrings.com/#organization"
+  },
   "potentialAction": {
     "@type": "SearchAction",
     "target": "https://www.malpanimsoulstrings.com/search?q={search_term_string}",

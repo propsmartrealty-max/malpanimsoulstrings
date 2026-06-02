@@ -1,0 +1,9 @@
+User-agent: *
+Allow: /
+
+# Exclude internal tracking or dynamic API routes if any exist in the future
+Disallow: /api/
+Disallow: /_next/
+
+# Explicitly declare the sitemap for instant Google Bot discovery
+Sitemap: https://www.malpanimsoulstrings.com/sitemap.xml

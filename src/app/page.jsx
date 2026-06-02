@@ -82,7 +82,7 @@ export default function Home() {
           </div>
         </div>
         <div className="about-image slide-in-right">
-          <Image src="https://malpani-cms.firsteconomy.com/uploads/About_Project_27b8c57d51.png" alt="Malpani M SoulStrings Baner Pashan Link Road real estate" width={1200} height={800} style={{ width: "100%", height: "auto" }} />
+          <Image src="https://malpani-cms.firsteconomy.com/uploads/About_Project_27b8c57d51.png" alt="Malpani M SoulStrings Baner Pashan Link Road real estate" width={1200} height={800} sizes="(max-width: 768px) 100vw, 50vw" style={{ width: "100%", height: "auto" }} />
         </div>
       </div>
     </section>
@@ -262,14 +262,14 @@ export default function Home() {
         
         <div className="masonry-grid fade-in-up">
           {/* Official Elevation & Interior Renders */}
-          <Image src="https://malpani-cms.firsteconomy.com/uploads/01_1_97625c7cd6.png" alt="3 BHK luxury apartments in Baner-Pashan Link Road exterior" width={1200} height={800} className="gallery-img" style={{ width: "100%", height: "auto" }} />
-          <Image src="https://malpani-cms.firsteconomy.com/uploads/02_1_fccd839fae.png" alt="4 BHK premium flats for sale in Baner-Pashan Link Road interior" width={1200} height={800} className="gallery-img" style={{ width: "100%", height: "auto" }} />
-          <Image src="https://malpani-cms.firsteconomy.com/uploads/03_5afad0394f.png" alt="Ready to move 3 BHK in Baner Pashan Link Road amenities" width={1200} height={800} className="gallery-img" style={{ width: "100%", height: "auto" }} />
-          <Image src="https://malpani-cms.firsteconomy.com/uploads/04_1_dfeed3efb5.png" alt="New luxury residential projects in Baner-Pashan Link Road" width={1200} height={800} className="gallery-img" style={{ width: "100%", height: "auto" }} />
-          <Image src="https://malpani-cms.firsteconomy.com/uploads/05_1_767fc1bb82.png" alt="Gated community luxury flats in Pashan Pune pool" width={1200} height={800} className="gallery-img" style={{ width: "100%", height: "auto" }} />
-          <Image src="https://malpani-cms.firsteconomy.com/uploads/Entrance_Lobby_9d4d367801.png" alt="Malpani M SoulStrings Grand Entrance Lobby Baner Pune" width={1200} height={800} className="gallery-img" style={{ width: "100%", height: "auto" }} />
-          <Image src="https://malpani-cms.firsteconomy.com/uploads/About_Project_27b8c57d51.png" alt="Malpani M SoulStrings Project Elevation West Pune Real Estate" width={1200} height={800} className="gallery-img" style={{ width: "100%", height: "auto" }} />
-          <Image src="https://malpani-cms.firsteconomy.com/uploads/M_soul_strings_Desktop_Banner_Without_Text_0d38ce28d4.jpg" alt="Luxury apartments in Pune Baner Pashan Link Road" width={1200} height={800} className="gallery-img" style={{ width: "100%", height: "auto" }} />
+          <Image src="https://malpani-cms.firsteconomy.com/uploads/01_1_97625c7cd6.png" alt="3 BHK luxury apartments in Baner-Pashan Link Road exterior" width={1200} height={800} sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="gallery-img" style={{ width: "100%", height: "auto" }} />
+          <Image src="https://malpani-cms.firsteconomy.com/uploads/02_1_fccd839fae.png" alt="4 BHK premium flats for sale in Baner-Pashan Link Road interior" width={1200} height={800} sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="gallery-img" style={{ width: "100%", height: "auto" }} />
+          <Image src="https://malpani-cms.firsteconomy.com/uploads/03_5afad0394f.png" alt="Ready to move 3 BHK in Baner Pashan Link Road amenities" width={1200} height={800} sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="gallery-img" style={{ width: "100%", height: "auto" }} />
+          <Image src="https://malpani-cms.firsteconomy.com/uploads/04_1_dfeed3efb5.png" alt="New luxury residential projects in Baner-Pashan Link Road" width={1200} height={800} sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="gallery-img" style={{ width: "100%", height: "auto" }} />
+          <Image src="https://malpani-cms.firsteconomy.com/uploads/05_1_767fc1bb82.png" alt="Gated community luxury flats in Pashan Pune pool" width={1200} height={800} sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="gallery-img" style={{ width: "100%", height: "auto" }} />
+          <Image src="https://malpani-cms.firsteconomy.com/uploads/Entrance_Lobby_9d4d367801.png" alt="Malpani M SoulStrings Grand Entrance Lobby Baner Pune" width={1200} height={800} sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="gallery-img" style={{ width: "100%", height: "auto" }} />
+          <Image src="https://malpani-cms.firsteconomy.com/uploads/About_Project_27b8c57d51.png" alt="Malpani M SoulStrings Project Elevation West Pune Real Estate" width={1200} height={800} sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="gallery-img" style={{ width: "100%", height: "auto" }} />
+          <Image src="https://malpani-cms.firsteconomy.com/uploads/M_soul_strings_Desktop_Banner_Without_Text_0d38ce28d4.jpg" alt="Luxury apartments in Pune Baner Pashan Link Road" width={1200} height={800} sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="gallery-img" style={{ width: "100%", height: "auto" }} />
         </div>
       </div>
     </section>
