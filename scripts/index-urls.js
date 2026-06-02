@@ -6,24 +6,16 @@ const { google } = require('googleapis');
 let clientEmail, privateKey;
 
 // Check if we are running in CI/CD (GitHub Actions) or Vercel with Environment Variables injected
-if (process.env.GOOGLE_CLIENT_EMAIL && process.env.GOOGLE_PRIVATE_KEY) {
-  clientEmail = process.env.GOOGLE_CLIENT_EMAIL;
-  // Handle escaped newlines in the private key from CI/CD environments
-  privateKey = process.env.GOOGLE_PRIVATE_KEY.replace(/\\n/g, '\n');
-  console.log('Using Google Credentials from Environment Variables (Secrets).');
-} else {
-  // Fallback for local development
-  const keyFile = path.join(__dirname, '../service-account.json');
-  if (!fs.existsSync(keyFile)) {
-    console.error('\n[ERROR] Missing Google Cloud Credentials!');
-    console.error('You must either set GOOGLE_CLIENT_EMAIL and GOOGLE_PRIVATE_KEY as environment variables, or provide a local service-account.json file.\n');
-    process.exit(1);
-  }
-  const key = require(keyFile);
-  clientEmail = key.client_email;
-  privateKey = key.private_key;
-  console.log('Using Google Credentials from local service-account.json.');
+if (!process.env.GOOGLE_CLIENT_EMAIL || !process.env.GOOGLE_PRIVATE_KEY) {
+  console.error('\n[FATAL ERROR] Missing Google Cloud Credentials in Environment Variables!');
+  console.error('This script is strictly configured to run via Git Secrets. You must provide GOOGLE_CLIENT_EMAIL and GOOGLE_PRIVATE_KEY in your GitHub Actions Secrets.\n');
+  process.exit(1);
 }
+
+clientEmail = process.env.GOOGLE_CLIENT_EMAIL;
+// Handle escaped newlines in the private key from CI/CD environments
+privateKey = process.env.GOOGLE_PRIVATE_KEY.replace(/\\n/g, '\n');
+console.log('Using strictly enforced Google Credentials from Git Secrets.');
 
 // 2. Setup JWT Auth Client using Object Initialization to avoid positional bugs
 const jwtClient = new google.auth.JWT({
