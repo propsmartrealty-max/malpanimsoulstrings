@@ -22,7 +22,10 @@ export default async function sitemap() {
     '/vastu-compliant-luxury-homes-pune',
     '/pune-real-estate-market',
     '/baner-real-estate-market',
-    '/pune-infrastructure-metro-impact'
+    '/pune-infrastructure-metro-impact',
+    '/aundh',
+    '/pashan',
+    '/shivajinagar'
   ].map((route) => ({
     url: `${baseUrl}${route}`,
     lastModified: new Date(),

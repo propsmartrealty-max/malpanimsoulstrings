@@ -11,8 +11,35 @@ export const metadata = {
 };
 
 export default function FourBhkLuxuryPage() {
+  const productSchema = {
+    "@context": "https://schema.org/",
+    "@type": "Product",
+    "name": "4 BHK Ultra-Luxury Estate at Malpani M SoulStrings",
+    "image": [
+      "https://malpani-cms.firsteconomy.com/uploads/02_1_fccd839fae.png"
+    ],
+    "description": "Premium 4 BHK luxury apartment in Baner-Pashan Link Road, Pune. Features smart home automation, expansive decks, and Vastu-compliant layouts.",
+    "brand": {
+      "@type": "Brand",
+      "name": "Malpani Estates"
+    },
+    "offers": {
+      "@type": "Offer",
+      "url": "https://www.malpanimsoulstrings.com/4bhk-luxury",
+      "priceCurrency": "INR",
+      "price": "35000000",
+      "itemCondition": "https://schema.org/NewCondition",
+      "availability": "https://schema.org/InStock",
+      "seller": {
+        "@type": "Organization",
+        "name": "Malpani Estates"
+      }
+    }
+  };
+
   return (
     <main>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(productSchema) }} />
 
       <SchemaMarkup />
       
