@@ -12,8 +12,50 @@ export const metadata = {
 };
 
 export default function BanerRealEstateMarket() {
+  const reportSchema = {
+    "@context": "https://schema.org",
+    "@type": ["Report", "Article"],
+    "headline": "Baner Real Estate Market 2026: The Epicenter of Pune's Luxury Growth",
+    "description": "Comprehensive market intelligence report on the Baner real estate market, analyzing capital appreciation, luxury 4 BHK demand, and Baner-Pashan Link Road trends.",
+    "author": {
+      "@type": "Organization",
+      "name": "Malpani Estates Market Research"
+    },
+    "publisher": {
+      "@type": "Organization",
+      "name": "Malpani Estates"
+    },
+    "datePublished": "2024-05-01T08:00:00+08:00",
+    "dateModified": new Date().toISOString()
+  };
+
+  const faqSchema = {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "Why is Baner good for real estate investment?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Baner offers a perfect blend of high-end social infrastructure, proximity to Hinjewadi IT Park, and seamless connectivity to Mumbai. It consistently delivers some of the highest capital appreciation rates in West Pune."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Are property rates in Baner increasing?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Yes, property rates in Baner, especially on the Baner Pashan Link Road, are increasing rapidly due to the upcoming Metro Line 3 and a surge in demand for ultra-luxury 3 BHK and 4 BHK estates."
+        }
+      }
+    ]
+  };
+
   return (
     <main>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(reportSchema) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
 
       <SchemaMarkup />
       
@@ -42,6 +84,36 @@ export default function BanerRealEstateMarket() {
             <h2>The Shift to Ultra-Luxury</h2>
             <p>The defining characteristic of the current <strong>Baner Real Estate Market</strong> is the massive shift toward ultra-luxury living. Buyers are no longer settling for standard apartments. There is a soaring demand for expansive 3 BHK and 4 BHK estates that offer panoramic hill views, resort-style amenities, and exclusive, low-density community living.</p>
 
+            <h3 className="mt-5 mb-4" style={{ color: 'var(--color-primary)' }}>Baner Real Estate Value Drivers (2024-2026)</h3>
+            <div className="table-responsive mb-5" style={{ borderRadius: '8px', overflow: 'hidden', border: '1px solid rgba(212,175,55,0.2)' }}>
+              <table className="table table-dark table-hover mb-0" style={{ backgroundColor: 'var(--color-surface)' }}>
+                <thead style={{ backgroundColor: 'rgba(212,175,55,0.1)' }}>
+                  <tr>
+                    <th style={{ color: 'var(--color-primary)', borderBottom: '1px solid rgba(212,175,55,0.3)', padding: '1rem' }}>Growth Vector</th>
+                    <th style={{ color: 'var(--color-primary)', borderBottom: '1px solid rgba(212,175,55,0.3)', padding: '1rem' }}>Impact on Property Value</th>
+                    <th style={{ color: 'var(--color-primary)', borderBottom: '1px solid rgba(212,175,55,0.3)', padding: '1rem' }}>Timeline</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td style={{ padding: '1rem', borderBottom: '1px solid rgba(255,255,255,0.05)' }}><strong>Pune Metro Line 3 (Hinjewadi to Shivajinagar)</strong></td>
+                    <td style={{ padding: '1rem', borderBottom: '1px solid rgba(255,255,255,0.05)', color: '#25D366' }}>+15% to +20% Capital Appreciation</td>
+                    <td style={{ padding: '1rem', borderBottom: '1px solid rgba(255,255,255,0.05)' }}>Active/Ongoing</td>
+                  </tr>
+                  <tr>
+                    <td style={{ padding: '1rem', borderBottom: '1px solid rgba(255,255,255,0.05)' }}><strong>Baner-Pashan Link Road Widening</strong></td>
+                    <td style={{ padding: '1rem', borderBottom: '1px solid rgba(255,255,255,0.05)', color: '#25D366' }}>Premium Tier Reclassification</td>
+                    <td style={{ padding: '1rem', borderBottom: '1px solid rgba(255,255,255,0.05)' }}>Immediate</td>
+                  </tr>
+                  <tr>
+                    <td style={{ padding: '1rem', borderBottom: '1px solid rgba(255,255,255,0.05)' }}><strong>Balewadi High Street Expansion</strong></td>
+                    <td style={{ padding: '1rem', borderBottom: '1px solid rgba(255,255,255,0.05)', color: '#25D366' }}>Rental Yield Amplification</td>
+                    <td style={{ padding: '1rem', borderBottom: '1px solid rgba(255,255,255,0.05)' }}>Ongoing</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+
             <h2>Why the Baner-Pashan Link Road is the Crown Jewel</h2>
             <p>Within the <strong>Baner Real Estate Market</strong>, the Baner-Pashan Link Road stands out as the ultimate "Billionaire's Row." It offers a rare combination of serene, green surroundings backed by the <Link href="/pashan">Pashan hills</Link>, while being just minutes away from Balewadi High Street's vibrant nightlife and commercial hubs.</p>
 
@@ -50,7 +122,26 @@ export default function BanerRealEstateMarket() {
           </article>
 
           <aside className="sidebar">
-            <div className="loc-card" style={{ padding: '1.5rem', borderRadius: '12px', position: 'sticky', top: '100px' }}>
+            <div className="loc-card" style={{ padding: '1.5rem', borderRadius: '12px', position: 'sticky', top: '100px', marginBottom: '2rem' }}>
+              <h3 style={{ fontSize: '1.2rem', marginBottom: '1rem', color: 'var(--color-primary)' }}>Market Intelligence Hub</h3>
+              <p style={{ color: 'var(--color-text-muted)', fontSize: '0.9rem', marginBottom: '1.5rem' }}>Access our complete library of Pune real estate analytics.</p>
+              <div className="list-group list-group-flush bg-transparent">
+                <Link href="/pune-real-estate-market" className="list-group-item list-group-item-action bg-transparent border-secondary text-white" style={{ padding: '0.75rem 0' }}>
+                  <small style={{ color: 'var(--color-accent)' }}>Report →</small> Pune Market Analysis
+                </Link>
+                <Link href="/pune-west-real-estate-market" className="list-group-item list-group-item-action bg-transparent border-secondary text-white" style={{ padding: '0.75rem 0' }}>
+                  <small style={{ color: 'var(--color-accent)' }}>Report →</small> Pune West Trajectory
+                </Link>
+                <Link href="/nri-investment" className="list-group-item list-group-item-action bg-transparent border-secondary text-white" style={{ padding: '0.75rem 0' }}>
+                  <small style={{ color: 'var(--color-accent)' }}>Guide →</small> NRI Investment
+                </Link>
+                <Link href="/pune-infrastructure-metro-impact" className="list-group-item list-group-item-action bg-transparent border-secondary text-white" style={{ padding: '0.75rem 0' }}>
+                  <small style={{ color: 'var(--color-accent)' }}>Analysis →</small> Pune Metro Impact
+                </Link>
+              </div>
+            </div>
+
+            <div className="loc-card" style={{ padding: '1.5rem', borderRadius: '12px', position: 'sticky', top: '450px' }}>
               <h3 style={{ fontSize: '1.2rem', marginBottom: '1rem', color: 'var(--color-primary)' }}>Secure Your Investment in Baner</h3>
               <p style={{ color: 'var(--color-text-muted)', fontSize: '0.9rem', marginBottom: '1.5rem' }}>Explore the finest luxury estates in the Baner Real Estate Market.</p>
               <a href="#" data-bs-toggle="modal" data-bs-target="#enquireModal" className="btn btn-primary" style={{ width: '100%' }}>View Masterplan</a>
