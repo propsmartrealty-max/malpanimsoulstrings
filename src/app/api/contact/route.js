@@ -58,8 +58,8 @@ export async function POST(request) {
       headers: { 
         'Content-Type': 'application/json', 
         'Accept': 'application/json',
-        'Origin': 'https://malpanimsoulstrings.com',
-        'Referer': 'https://malpanimsoulstrings.com/'
+        'Origin': 'https://www.malpanimsoulstrings.com',
+        'Referer': 'https://www.malpanimsoulstrings.com/'
       },
       body: JSON.stringify(data)
     });
