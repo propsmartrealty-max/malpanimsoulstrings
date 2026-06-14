@@ -23,11 +23,12 @@ export default function Footer() {
             <div className="col-lg-3 mb-4 mb-lg-0">
                 <h5 className="text-white mb-3">Insights</h5>
                 <ul className="list-unstyled" style={{ lineHeight: '2' }}>
-                    <li><Link href="/blog" style={{ color: 'rgba(255,255,255,0.5)', textDecoration: 'none' }}>Real Estate Blog</Link></li>
-                    <li><Link href="/market-analysis" style={{ color: 'rgba(255,255,255,0.5)', textDecoration: 'none' }}>Market Analysis</Link></li>
-                    <li><Link href="/pune-real-estate-market" style={{ color: 'rgba(255,255,255,0.5)', textDecoration: 'none' }}>Pune Real Estate Market</Link></li>
-                    <li><Link href="/baner-real-estate-market" style={{ color: 'rgba(255,255,255,0.5)', textDecoration: 'none' }}>Baner Real Estate Market</Link></li>
-                    <li><Link href="/pune-infrastructure-metro-impact" style={{ color: 'rgba(255,255,255,0.5)', textDecoration: 'none' }}>Pune Infrastructure Impact</Link></li>
+                    <li><Link href="/blog/ultimate-guide-pune-west-luxury-real-estate" style={{ color: 'rgba(255,255,255,0.5)', textDecoration: 'none' }}>Pune West Luxury Real Estate Guide</Link></li>
+                    <li><Link href="/blog/nri-investors-playbook-pune-luxury-market-2026" style={{ color: 'rgba(255,255,255,0.5)', textDecoration: 'none' }}>NRI Investor's Playbook 2026</Link></li>
+                    <li><Link href="/blog/rise-of-sky-villas-in-pune" style={{ color: 'rgba(255,255,255,0.5)', textDecoration: 'none' }}>The Rise of Sky Villas in Pune</Link></li>
+                    <li><Link href="/blog/what-defines-ultra-luxury-5-bhk-residence-pune" style={{ color: 'rgba(255,255,255,0.5)', textDecoration: 'none' }}>Defining an Ultra Luxury 5 BHK</Link></li>
+                    <li><Link href="/blog/baner-pashan-link-road-coveted-real-estate" style={{ color: 'rgba(255,255,255,0.5)', textDecoration: 'none' }}>Baner-Pashan Link Road Corridor</Link></li>
+                    <li><Link href="/blog/hinjewadi-spillover-baner-luxury-boom" style={{ color: 'rgba(255,255,255,0.5)', textDecoration: 'none' }}>The Hinjewadi Spillover Effect</Link></li>
                 </ul>
             </div>
             <div className="col-lg-3">
@@ -47,7 +48,7 @@ export default function Footer() {
             <div style={{ display: 'flex', flexWrap: 'wrap', justifyContent: 'center', gap: '15px' }}>
               <Link href="/" style={{ fontSize: '0.75rem', color: 'rgba(255,255,255,0.4)', textDecoration: 'none' }}>Malpani m soulstrings baner pashan link road</Link>
               <Link href="/blog/malpani-group-luxury-projects-pune" style={{ fontSize: '0.75rem', color: 'rgba(255,255,255,0.4)', textDecoration: 'none' }}>Malpani Group Luxury Projects</Link>
-              <Link href="/blog/best-luxury-apartments-in-baner-pune" style={{ fontSize: '0.75rem', color: 'rgba(255,255,255,0.4)', textDecoration: 'none' }}>Best Luxury Apartments Baner</Link>
+              <Link href="/blog/buying-signature-residences-in-pune" style={{ fontSize: '0.75rem', color: 'rgba(255,255,255,0.4)', textDecoration: 'none' }}>Buying Signature Residences</Link>
               <Link href="/blog/baner-property-rates-2026" style={{ fontSize: '0.75rem', color: 'rgba(255,255,255,0.4)', textDecoration: 'none' }}>Baner Property Rates 2026</Link>
               <Link href="/4bhk-luxury" style={{ fontSize: '0.75rem', color: 'rgba(255,255,255,0.4)', textDecoration: 'none' }}>4 BHK Luxury Estates Pune</Link>
               <Link href="/pune-infrastructure-metro-impact" style={{ fontSize: '0.75rem', color: 'rgba(255,255,255,0.4)', textDecoration: 'none' }}>Pune Metro Line 3 Real Estate</Link>
