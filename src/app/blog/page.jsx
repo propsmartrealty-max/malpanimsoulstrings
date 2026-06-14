@@ -1,5 +1,6 @@
 import fs from 'fs';
 import path from 'path';
+import Link from 'next/link';
 
 export const metadata = {
   title: 'Real Estate Insights & Blogs | Malpani M SoulStrings',
@@ -11,32 +12,48 @@ export const metadata = {
 
 export default function BlogIndex() {
   const contentDir = path.join(process.cwd(), 'src', 'content', 'blog');
-  let files = [];
+  let posts = [];
   try {
-    files = fs.readdirSync(contentDir).filter(f => f.endsWith('.md'));
+    const files = fs.readdirSync(contentDir).filter(f => f.endsWith('.md'));
+    posts = files.map(file => {
+      const slug = file.replace('.md', '');
+      const title = slug.replace(/-/g, ' ').toUpperCase();
+      const content = fs.readFileSync(path.join(contentDir, file), 'utf-8');
+      
+      // Extract excerpt
+      const lines = content.split('\n');
+      let excerpt = 'Explore our latest real estate insights and market analysis.';
+      const firstParagraph = lines.find(line => line.trim().length > 20 && !line.startsWith('#') && !line.startsWith('!'));
+      if (firstParagraph) {
+        excerpt = firstParagraph.substring(0, 120) + '...';
+      }
+      
+      return { slug, title, excerpt };
+    });
   } catch (e) {
     // Dir might not exist
   }
 
   return (
     <main className="container py-5 my-5">
-      <h1 style={{ color: '#d4af37', marginBottom: '2rem', fontWeight: '800' }}>Real Estate Insights</h1>
-      <p style={{ color: 'rgba(255,255,255,0.7)', fontSize: '1.2rem', marginBottom: '3rem' }}>
-        The latest updates from the Baner-Pashan real estate market.
+      <h1 style={{ color: '#d4af37', marginBottom: '1rem', fontWeight: '800' }}>Real Estate Insights</h1>
+      <p style={{ color: 'rgba(255,255,255,0.7)', fontSize: '1.2rem', marginBottom: '4rem' }}>
+        Deep-dive market analysis, luxury living guides, and infrastructure updates for the Baner-Pashan corridor.
       </p>
-      <div className="row">
-        {files.map(file => {
-          const slug = file.replace('.md', '');
-          const title = slug.replace(/-/g, ' ').toUpperCase();
-          return (
-            <div key={slug} className="col-lg-6 mb-4">
-              <div className="card bg-dark border-secondary p-4 h-100">
-                <h3 style={{ color: '#d4af37' }}>{title}</h3>
-                <a href={`/blog/${slug}`} className="btn btn-outline-light mt-auto" style={{ width: 'max-content' }}>Read Article</a>
-              </div>
+      <div className="row g-4">
+        {posts.map(post => (
+          <div key={post.slug} className="col-lg-6">
+            <div className="card bg-dark border-secondary p-4 h-100" style={{ transition: 'transform 0.3s ease', cursor: 'pointer' }} onMouseOver={e => e.currentTarget.style.transform = 'translateY(-5px)'} onMouseOut={e => e.currentTarget.style.transform = 'translateY(0)'}>
+              <h3 style={{ color: '#d4af37', marginBottom: '1rem', fontSize: '1.4rem', lineHeight: '1.4' }}>{post.title}</h3>
+              <p style={{ color: 'rgba(255,255,255,0.6)', fontSize: '0.95rem', lineHeight: '1.6', marginBottom: '2rem' }}>
+                {post.excerpt}
+              </p>
+              <Link href={`/blog/${post.slug}`} className="btn btn-outline-light mt-auto" style={{ width: 'max-content' }}>
+                Read Full Article
+              </Link>
             </div>
-          );
-        })}
+          </div>
+        ))}
       </div>
     </main>
   );

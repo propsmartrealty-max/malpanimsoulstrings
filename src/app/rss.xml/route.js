@@ -13,17 +13,29 @@ export async function GET() {
   }
 
   const items = files.map((file) => {
+    const filePath = path.join(blogDir, file);
+    const content = fs.readFileSync(filePath, 'utf-8');
+    const stats = fs.statSync(filePath);
+    
     const slug = file.replace('.md', '');
     const title = slug.replace(/-/g, ' ').toUpperCase();
     const url = `${baseUrl}/blog/${slug}`;
+    
+    // Extract first real paragraph for the excerpt
+    const lines = content.split('\n');
+    let excerpt = `Read our latest insights on ${title} at Malpani M SoulStrings.`;
+    const firstParagraph = lines.find(line => line.trim().length > 20 && !line.startsWith('#') && !line.startsWith('!'));
+    if (firstParagraph) {
+      excerpt = firstParagraph.substring(0, 155) + '...';
+    }
     
     return `
       <item>
         <title><![CDATA[${title}]]></title>
         <link>${url}</link>
         <guid>${url}</guid>
-        <pubDate>${new Date().toUTCString()}</pubDate>
-        <description><![CDATA[Read our latest insights on ${title} at Malpani M SoulStrings.]]></description>
+        <pubDate>${stats.mtime.toUTCString()}</pubDate>
+        <description><![CDATA[${excerpt}]]></description>
       </item>
     `;
   }).join('');
