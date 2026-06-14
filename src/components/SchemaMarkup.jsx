@@ -45,35 +45,6 @@ export default function SchemaMarkup() {
         ]
       },
       {
-        "@type": "FAQPage",
-        "mainEntity": [
-          {
-            "@type": "Question",
-            "name": "What is the exact location of Malpani M SoulStrings?",
-            "acceptedAnswer": {
-              "@type": "Answer",
-              "text": "Malpani M SoulStrings is strategically located on the premium Baner-Pashan Link Road in Pune West, offering seamless connectivity to Hinjewadi IT Park and Aundh."
-            }
-          },
-          {
-            "@type": "Question",
-            "name": "What configurations are available at Malpani M SoulStrings?",
-            "acceptedAnswer": {
-              "@type": "Answer",
-              "text": "We offer ultra-luxury 3 BHK and 4 BHK spacious apartments and premium flats designed with low-density architecture, massive decks, and Vastu compliance, targeting elite buyers in Pune West."
-            }
-          },
-          {
-            "@type": "Question",
-            "name": "What is the expected possession date for M SoulStrings?",
-            "acceptedAnswer": {
-              "@type": "Answer",
-              "text": "The premium luxury residences at Malpani M SoulStrings are slated for possession by December 2028 as per MahaRERA guidelines."
-            }
-          }
-        ]
-      },
-      {
         "@type": "RealEstateAgent",
         "name": "Malpani Estates",
         "image": "https://www.malpanimsoulstrings.com/favicon.ico",
