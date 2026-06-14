@@ -56,7 +56,7 @@ export default function FourBhkLuxuryPage() {
           </div>
           <h1 className="gradient-text" style={{ fontSize: '3rem', marginBottom: '1rem' }}>4 BHK Premium Flats in Baner-Pashan Link Road</h1>
           <p style={{ fontSize: '1.2rem', color: 'var(--color-text-muted)', maxWidth: '800px' }}>
-            Redefining grandeur in the Pune Real Estate Market. Our ultra-luxurious 4 BHK premium flats in Baner-Pashan Link Road are meticulously designed for elite buyers who demand space, privacy, and uncompromising elegance in West Pune.
+            Redefining grandeur in the Pune Real Estate Market. Whether you are searching for our ultra-luxurious 4 BHK premium flats, <strong>premium 5 bhk residences pune</strong>, or sprawling <strong>duplex penthouse pune</strong> layouts, these estates are meticulously designed for elite buyers who demand the scale of a <strong>sky mansion pune</strong> and uncompromising elegance in West Pune.
           </p>
         </div>
       </div>
@@ -88,7 +88,7 @@ export default function FourBhkLuxuryPage() {
 
             <h2 className="mt-5 mb-4 gradient-text" style={{ fontSize: '2rem' }}>The Zenith of Large Carpet Area Apartments Pune</h2>
             <p>
-                Discover the ultimate in spatial design. Whether you are seeking <strong>premium 3 BHK Baner Pune</strong> or an <strong>ultra luxury 4 BHK Pune</strong>, Malpani M SoulStrings delivers an unparalleled lifestyle. Experience a breathtakingly <strong>spacious 4 BHK Pashan</strong> layout or a perfectly designed <strong>spacious 3 BHK Baner</strong>, renowned as the premier <strong>large carpet area apartments Pune</strong> in the West corridor.
+                Discover the ultimate in spatial design. Whether you are seeking an <strong>ultra luxury 4 BHK Pune</strong> or exploring <strong>luxury 5 bhk pune</strong> scale estates, Malpani M SoulStrings delivers an unparalleled lifestyle. Experience the grandeur of <strong>luxury sky villas pune</strong> within our perfectly designed towers, renowned as the premier <strong>large carpet area apartments Pune</strong> in the West corridor.
             </p>
             <p>
                 These are unequivocally the most exclusive <strong>luxury 4 BHK Baner Pune</strong> and <strong>luxury 3 BHK in Pashan</strong> properties available. Designed as definitive <strong>elite residences Baner</strong>, every unit is built as a fully <strong>vastu compliant 3 BHK Pune</strong>. Enjoy panoramic vistas from your <strong>4 BHK with private deck Pune</strong> or <strong>3 BHK with deck Baner</strong>, ensuring refreshing cross-ventilation across these <strong>luxury sky apartments Pune</strong>. Our layout features highly coveted corner homes, establishing them as perfectly secluded, <strong>exclusive 4 BHK homes Pune</strong>.
