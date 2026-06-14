@@ -1,7 +1,17 @@
 User-agent: *
 Allow: /
+Disallow: /api/
+Disallow: /_next/
+Disallow: /cdn-cgi/
+Disallow: /*?*
 
-# Exclude internal tracking or dynamic API routes if any exist in the future
+User-agent: Googlebot
+Allow: /
+Disallow: /api/
+Disallow: /_next/
+
+User-agent: Bingbot
+Allow: /
 Disallow: /api/
 Disallow: /_next/
 

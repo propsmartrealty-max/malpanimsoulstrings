@@ -1,0 +1,30 @@
+name: SEO Automation & Robustness Audit
+
+on:
+  schedule:
+    - cron: '0 0 * * 1,4' # Runs automatically at midnight every Monday and Thursday
+  workflow_dispatch: # Allows manual trigger from the GitHub Actions UI
+
+jobs:
+  audit-and-index:
+    name: Build Audit and IndexNow Push
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js (v20)
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+          cache: 'npm'
+
+      - name: Install Dependencies
+        run: npm ci
+
+      - name: Technical Robustness Audit & Automated Indexing
+        # Running build verifies there are no technical Next.js/React errors.
+        # The postbuild script (ping-sitemap.js) will automatically fire upon a successful build
+        # to push the IndexNow payload to Bing, Yandex, and other search engines.
+        run: npm run build
