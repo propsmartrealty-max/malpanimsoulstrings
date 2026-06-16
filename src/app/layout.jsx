@@ -211,6 +211,9 @@ export default function RootLayout({ children }) {
         */}
       </head>
       <body>
+        <div id="preloader">
+          <img src="/icon.png" className="preloader-logo" alt="Malpani M SoulStrings" width="120" height="120" />
+        </div>
         <Navbar />
         <ThemeProvider>{children}</ThemeProvider>
         <ExitIntentModal />
