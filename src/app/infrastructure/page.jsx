@@ -13,7 +13,7 @@ export default function InfrastructurePage() {
   return (
     <main>
 
-      <SchemaMarkup />
+      <SchemaMarkup pageName="Infrastructure Updates" pageUrl="/infrastructure" />
       
       <div className="pillar-header" style={{ paddingTop: '120px', paddingBottom: '4rem', background: 'var(--color-surface)' }}>
         <div className="container">

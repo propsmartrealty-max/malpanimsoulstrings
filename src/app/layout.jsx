@@ -102,14 +102,6 @@ export const metadata = {
   creator: 'Malpani Group',
   publisher: 'Malpani Group',
   category: 'Real Estate',
-  verification: {
-    google: 'insert-google-verification-code-here',
-    yandex: 'insert-yandex-verification-code-here',
-    yahoo: 'insert-yahoo-verification-code-here',
-    other: {
-      'msvalidate.01': 'insert-bing-verification-code-here',
-    },
-  },
   formatDetection: {
     telephone: false,
   },
@@ -119,8 +111,7 @@ export const viewport = {
   themeColor: '#0a0a0c',
   width: 'device-width',
   initialScale: 1,
-  maximumScale: 1,
-  userScalable: false,
+  maximumScale: 5,
 }
 
 const orgSchema = {
@@ -214,11 +205,7 @@ export default function RootLayout({ children }) {
           />
         */}
 
-        {/* Google Business Profile / Maps API Prep (Lazy Loaded to protect CWV) */}
-        <Script 
-          src={`https://maps.googleapis.com/maps/api/js?key=YOUR_GOOGLE_MAPS_API_KEY&libraries=places`} 
-          strategy="lazyOnload" 
-        />
+        {/* Google Maps API - Add your real API key when ready */}
 
         {/* 
           DISABLED TO PREVENT CORE WEB VITALS JS PENALTIES 

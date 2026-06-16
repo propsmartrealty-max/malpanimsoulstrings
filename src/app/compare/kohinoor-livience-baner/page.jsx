@@ -5,13 +5,14 @@ import Image from 'next/image';
 import Link from 'next/link';
 
 export const metadata = {
+  alternates: { canonical: '/compare/kohinoor-livience-baner' },
   title: 'Kohinoor Livience Aleenta vs Malpani M SoulStrings | Baner Real Estate',
   description: 'Comparing Kohinoor Livience Aleenta and Malpani M SoulStrings. Discover why Malpani offers superior Vastu compliance, legacy trust, and a lower-density luxury experience.',
-  keywords: 'Kohinoor Livience Pune reviews, Livience Aleenta Baner, Kohinoor vs Malpani Group, luxury 4 BHK comparison Baner, Baner Pashan Link Road projects',
+  keywords: ['Kohinoor Livience Pune reviews', 'Livience Aleenta Baner', 'Kohinoor vs Malpani Group', 'luxury 4 BHK comparison Baner', 'Baner Pashan Link Road projects'],
   openGraph: {
     title: 'Kohinoor Livience vs Malpani M SoulStrings',
     description: 'An objective comparison between Kohinoor Livience Aleenta and Malpani M SoulStrings in West Pune.',
-    url: 'https://malpanimsoulstrings.com/compare/kohinoor-livience-baner',
+    url: 'https://www.malpanimsoulstrings.com/compare/kohinoor-livience-baner',
     siteName: 'Malpani M SoulStrings',
     locale: 'en_IN',
     type: 'article',
@@ -22,7 +23,7 @@ export default function CompareKohinoorPage() {
   return (
     <main>
 
-      <SchemaMarkup />
+      <SchemaMarkup pageName="vs Kohinoor Livience" pageUrl="/compare/kohinoor-livience-baner" />
       
       <div className="pillar-header" style={{ paddingTop: '120px', paddingBottom: '4rem', background: 'var(--color-surface)' }}>
         <div className="container">

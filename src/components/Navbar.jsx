@@ -59,7 +59,7 @@ export default function Navbar() {
           <Link href="/infrastructure" className="overlay-link" onClick={toggleMenu}>Infrastructure Updates</Link>
           <Link href="/baner-overview" className="overlay-link" onClick={toggleMenu}>Baner Real Estate Guide</Link>
           <Link href="/blog" className="overlay-link" onClick={toggleMenu}>Insights & Articles</Link>
-          <Link href="/market-analysis" className="overlay-link" onClick={toggleMenu} style={{ color: 'var(--color-accent)' }}>Pune Market Investor's Guide 2024</Link>
+          <Link href="/market-analysis" className="overlay-link" onClick={toggleMenu} style={{ color: 'var(--color-accent)' }}>Pune Market Investor's Guide 2026</Link>
         </nav>
       </div>
     </>

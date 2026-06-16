@@ -13,7 +13,7 @@ export default function LocationPage() {
   return (
     <main>
 
-      <SchemaMarkup />
+      <SchemaMarkup pageName="Strategic Location" pageUrl="/location" />
       
       <div className="pillar-header" style={{ paddingTop: '120px', paddingBottom: '4rem', background: 'var(--color-surface)' }}>
         <div className="container">

@@ -31,7 +31,7 @@ export default function AundhPage() {
     <main>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(localSchema) }} />
 
-      <SchemaMarkup />
+      <SchemaMarkup pageName="Aundh Real Estate" pageUrl="/aundh" />
       
       <div className="pillar-header" style={{ paddingTop: '120px', paddingBottom: '4rem', background: 'var(--color-surface)' }}>
         <div className="container">

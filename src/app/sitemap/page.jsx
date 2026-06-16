@@ -1,6 +1,7 @@
 import Link from 'next/link';
 
 export const metadata = {
+  alternates: { canonical: '/sitemap' },
   title: 'HTML Sitemap | Malpani M SoulStrings',
   description: 'Complete directory of Malpani M SoulStrings properties, micro-markets, and real estate market intelligence.',
   robots: {

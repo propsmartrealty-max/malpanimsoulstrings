@@ -5,13 +5,14 @@ import Image from 'next/image';
 import Link from 'next/link';
 
 export const metadata = {
+  alternates: { canonical: '/compare/pristine-lords-baner' },
   title: 'Pristine Lords Baner vs Malpani M SoulStrings | 4 BHK Comparison',
   description: 'Comparing Pristine The Lords and Malpani M SoulStrings in Baner. Discover why elite buyers prefer Malpani\'s ultra-low density, Vastu compliance, and legacy trust.',
-  keywords: 'Pristine Lords Baner reviews, Pristine Lords vs Malpani SoulStrings, 4 BHK Baner Pashan Link Road, Pristine The Lords price, luxury apartments West Pune comparison',
+  keywords: ['Pristine Lords Baner reviews', 'Pristine Lords vs Malpani SoulStrings', '4 BHK Baner Pashan Link Road', 'Pristine The Lords price', 'luxury apartments West Pune comparison'],
   openGraph: {
     title: 'Pristine Lords vs Malpani M SoulStrings',
     description: 'An objective comparison between two premium developments on the Baner Pashan Link Road.',
-    url: 'https://malpanimsoulstrings.com/compare/pristine-lords-baner',
+    url: 'https://www.malpanimsoulstrings.com/compare/pristine-lords-baner',
     siteName: 'Malpani M SoulStrings',
     locale: 'en_IN',
     type: 'article',
@@ -22,7 +23,7 @@ export default function ComparePristinePage() {
   return (
     <main>
 
-      <SchemaMarkup />
+      <SchemaMarkup pageName="vs Pristine Lords" pageUrl="/compare/pristine-lords-baner" />
       
       <div className="pillar-header" style={{ paddingTop: '120px', paddingBottom: '4rem', background: 'var(--color-surface)' }}>
         <div className="container">

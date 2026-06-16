@@ -23,7 +23,7 @@ export default function MarketAnalysisPage() {
   return (
     <main>
 
-      <SchemaMarkup />
+      <SchemaMarkup pageName="Market Analysis" pageUrl="/market-analysis" />
       
       <div className="pillar-header" style={{ paddingTop: '120px', paddingBottom: '4rem', background: 'var(--color-surface)' }}>
         <div className="container">

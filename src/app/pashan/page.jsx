@@ -31,7 +31,7 @@ export default function PashanPage() {
     <main>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(localSchema) }} />
 
-      <SchemaMarkup />
+      <SchemaMarkup pageName="Pashan Link Road" pageUrl="/pashan" />
       
       <div className="pillar-header" style={{ paddingTop: '120px', paddingBottom: '4rem', background: 'var(--color-surface)' }}>
         <div className="container">

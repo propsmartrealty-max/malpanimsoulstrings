@@ -1,53 +1,18 @@
-export default function SchemaMarkup() {
+export default function SchemaMarkup({ pageName, pageUrl }) {
   const schemaPayload = {
     "@context": "https://schema.org",
     "@graph": [
       {
-        "@type": "WebSite",
-        "@id": "https://www.malpanimsoulstrings.com/#website",
-        "url": "https://www.malpanimsoulstrings.com/",
-        "name": "Malpani M SoulStrings",
-        "description": "Ultra-premium 3 BHK and 4 BHK Luxury Estates for sale in Baner Pashan Link Road, Pune. Ready to move luxury residential projects.",
-        "publisher": {
-          "@id": "https://www.malpanimsoulstrings.com/#organization"
-        },
-        "potentialAction": [
-          {
-            "@type": "SearchAction",
-            "target": {
-              "@type": "EntryPoint",
-              "urlTemplate": "https://www.malpanimsoulstrings.com/?s={search_term_string}"
-            },
-            "query-input": "required name=search_term_string"
-          }
-        ]
-      },
-      {
-        "@type": "Organization",
-        "@id": "https://www.malpanimsoulstrings.com/#organization",
-        "name": "Malpani Estates",
-        "url": "https://www.malpanimsoulstrings.com/",
-        "logo": {
-          "@type": "ImageObject",
-          "url": "https://www.malpanimsoulstrings.com/favicon.ico"
-        },
-        "sameAs": [
-          "https://www.facebook.com/malpanigroup/",
-          "https://www.instagram.com/malpanigroup/"
-        ]
-      },
-      {
         "@type": "BreadcrumbList",
         "itemListElement": [
           { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://www.malpanimsoulstrings.com/" },
-          { "@type": "ListItem", "position": 2, "name": "4 BHK Luxury Estates", "item": "https://www.malpanimsoulstrings.com/4bhk-luxury" },
-          { "@type": "ListItem", "position": 3, "name": "Pune Market Analysis", "item": "https://www.malpanimsoulstrings.com/market-analysis" }
+          ...(pageName && pageUrl ? [{ "@type": "ListItem", "position": 2, "name": pageName, "item": `https://www.malpanimsoulstrings.com${pageUrl}` }] : [])
         ]
       },
       {
         "@type": "RealEstateAgent",
         "name": "Malpani Estates",
-        "image": "https://www.malpanimsoulstrings.com/favicon.ico",
+        "image": "https://www.malpanimsoulstrings.com/icon.png",
         "@id": "https://www.malpanimsoulstrings.com/#organization",
         "url": "https://www.malpanimsoulstrings.com/",
         "telephone": "+91 7744009295",
@@ -61,11 +26,10 @@ export default function SchemaMarkup() {
         }
       },
       {
-        "@type": "LocalBusiness",
-        "@id": "https://www.malpanimsoulstrings.com/#localbusiness",
+        "@type": "ApartmentComplex",
         "name": "Malpani M SoulStrings",
+        "description": "Ultra-premium 3 BHK, 4 BHK, 5 BHK, Duplex, and Penthouse luxury estates with 35+ world-class amenities at Baner-Pashan Link Road, Pune West.",
         "url": "https://www.malpanimsoulstrings.com/",
-        "image": "https://malpani-cms.firsteconomy.com/uploads/About_Project_27b8c57d51.png",
         "telephone": "+91 7744009295",
         "address": {
           "@type": "PostalAddress",
@@ -79,52 +43,12 @@ export default function SchemaMarkup() {
           "@type": "GeoCoordinates",
           "latitude": "18.5539",
           "longitude": "73.7915"
-        }
-      },
-      {
-        "@type": "ApartmentComplex",
-        "name": "Malpani M SoulStrings",
-        "description": "Premium residential project offering spacious 3 BHK and 4 BHK luxury apartments with world-class amenities at Baner-Pashan Link Road, Pune West.",
-        "url": "https://www.malpanimsoulstrings.com/",
-        "telephone": "+91 7744009295",
-        "address": {
-          "@type": "PostalAddress",
-          "streetAddress": "Baner Pashan Link Road",
-          "addressLocality": "Pune",
-          "addressRegion": "MH",
-          "postalCode": "411045",
-          "addressCountry": "IN"
         },
         "amenityFeature": [
-          {
-            "@type": "LocationFeatureSpecification",
-            "name": "Swimming Pool",
-            "value": "True"
-          },
-          {
-            "@type": "LocationFeatureSpecification",
-            "name": "Clubhouse",
-            "value": "True"
-          }
+          { "@type": "LocationFeatureSpecification", "name": "Swimming Pool", "value": "True" },
+          { "@type": "LocationFeatureSpecification", "name": "Clubhouse", "value": "True" },
+          { "@type": "LocationFeatureSpecification", "name": "Smart Home Automation", "value": "True" }
         ]
-      },
-      {
-        "@type": "Product",
-        "name": "4 BHK Premium Flat in Baner-Pashan Link Road",
-        "description": "Ultra-luxurious 4 BHK premium flats for sale with Vastu-compliant layouts, smart home automation, and massive private decks.",
-        "image": "https://malpani-cms.firsteconomy.com/uploads/04_1_dfeed3efb5.png",
-        "brand": {
-          "@type": "Brand",
-          "name": "Malpani Estates"
-        },
-        "offers": {
-          "@type": "Offer",
-          "url": "https://www.malpanimsoulstrings.com/4bhk-luxury",
-          "priceCurrency": "INR",
-          "price": "30000000",
-          "availability": "https://schema.org/InStock",
-          "itemCondition": "https://schema.org/NewCondition"
-        }
       }
     ]
   };

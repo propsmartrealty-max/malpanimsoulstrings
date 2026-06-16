@@ -57,7 +57,7 @@ export default function PuneRealEstateMarket() {
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(reportSchema) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
 
-      <SchemaMarkup />
+      <SchemaMarkup pageName="Pune Real Estate Market" pageUrl="/pune-real-estate-market" />
       
       <div className="pillar-header" style={{ paddingTop: '120px', paddingBottom: '4rem', background: 'var(--color-surface)' }}>
         <div className="container">

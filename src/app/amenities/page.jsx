@@ -13,7 +13,7 @@ export default function AmenitiesPage() {
   return (
     <main>
 
-      <SchemaMarkup />
+      <SchemaMarkup pageName="Amenities & Lifestyle" pageUrl="/amenities" />
       
       <div className="pillar-header" style={{ paddingTop: '120px', paddingBottom: '4rem', background: 'var(--color-surface)' }}>
         <div className="container">

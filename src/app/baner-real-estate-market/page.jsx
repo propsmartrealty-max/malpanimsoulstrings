@@ -57,7 +57,7 @@ export default function BanerRealEstateMarket() {
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(reportSchema) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
 
-      <SchemaMarkup />
+      <SchemaMarkup pageName="Baner Real Estate Market" pageUrl="/baner-real-estate-market" />
       
       <div className="pillar-header" style={{ paddingTop: '120px', paddingBottom: '4rem', background: 'var(--color-surface)' }}>
         <div className="container">

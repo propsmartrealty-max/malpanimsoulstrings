@@ -59,7 +59,7 @@ export default function VastuHomesPage() {
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(articleSchema) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
 
-      <SchemaMarkup />
+      <SchemaMarkup pageName="Vastu Compliant Homes" pageUrl="/vastu-compliant-luxury-homes-pune" />
       
       <div className="pillar-header" style={{ paddingTop: '120px', paddingBottom: '4rem', background: 'var(--color-surface)' }}>
         <div className="container">

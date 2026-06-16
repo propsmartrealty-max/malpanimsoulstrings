@@ -59,7 +59,7 @@ export default function PuneInfrastructurePage() {
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(articleSchema) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
 
-      <SchemaMarkup />
+      <SchemaMarkup pageName="Metro Infrastructure Impact" pageUrl="/pune-infrastructure-metro-impact" />
       
       <div className="pillar-header" style={{ paddingTop: '120px', paddingBottom: '4rem', background: 'var(--color-surface)' }}>
         <div className="container">

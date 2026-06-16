@@ -46,7 +46,7 @@ export default function FourBhkLuxuryPage() {
     <main>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(productSchema) }} />
 
-      <SchemaMarkup />
+      <SchemaMarkup pageName="4 BHK Premium Flats" pageUrl="/4bhk-luxury" />
       
       <div className="pillar-header" style={{ paddingTop: '120px', paddingBottom: '4rem', background: 'var(--color-surface)' }}>
         <div className="container">

@@ -59,7 +59,7 @@ export default function ITHomesPage() {
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(articleSchema) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
 
-      <SchemaMarkup />
+      <SchemaMarkup pageName="IT Professionals Guide" pageUrl="/it-professionals-luxury-homes-pune" />
       
       <div className="pillar-header" style={{ paddingTop: '120px', paddingBottom: '4rem', background: 'var(--color-surface)' }}>
         <div className="container">

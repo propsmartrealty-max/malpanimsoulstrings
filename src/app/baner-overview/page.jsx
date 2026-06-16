@@ -14,7 +14,7 @@ export default function BanerOverviewPage() {
   return (
     <main>
 
-      <SchemaMarkup />
+      <SchemaMarkup pageName="Baner Overview" pageUrl="/baner-overview" />
       
       <div className="pillar-header" style={{ paddingTop: '120px', paddingBottom: '4rem', background: 'var(--color-surface)' }}>
         <div className="container">
