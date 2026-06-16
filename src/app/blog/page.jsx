@@ -43,7 +43,7 @@ export default function BlogIndex() {
       <div className="row g-4">
         {posts.map(post => (
           <div key={post.slug} className="col-lg-6">
-            <div className="card bg-dark border-secondary p-4 h-100" style={{ transition: 'transform 0.3s ease', cursor: 'pointer' }} onMouseOver={e => e.currentTarget.style.transform = 'translateY(-5px)'} onMouseOut={e => e.currentTarget.style.transform = 'translateY(0)'}>
+            <div className="card bg-dark border-secondary p-4 h-100 spec-card" style={{ cursor: 'pointer' }}>
               <h3 style={{ color: '#d4af37', marginBottom: '1rem', fontSize: '1.4rem', lineHeight: '1.4' }}>{post.title}</h3>
               <p style={{ color: 'rgba(255,255,255,0.6)', fontSize: '0.95rem', lineHeight: '1.6', marginBottom: '2rem' }}>
                 {post.excerpt}
