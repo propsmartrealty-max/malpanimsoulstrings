@@ -117,7 +117,7 @@ export default function Home() {
       <div className="container about-grid">
         <div className="about-text slide-in-left">
           <h2 className="section-title">The Epitome of Exclusivity</h2>
-          <p className="section-desc">Malpani M SoulStrings by Malpani Estates is destined to be the new realty capital of the city, completely redefining the Baner-Pashan Link Road real estate market. For those looking to buy a luxury home in Pune or secure a ready possession luxury apartment, the project offers stupendously designed 3BHK, 4BHK, 5BHK, Duplex, and Penthouse trophy homes with state-of-the-art amenities, setting a new benchmark for the adjacent Aundh real estate market.</p>
+          <p className="section-desc">Malpani M SoulStrings by Malpani Estates is destined to be the new realty capital of the city, completely redefining the Baner-Pashan Link Road real estate market. For those looking to buy 3bhk luxury homes, 4bhk residences, 5bhk residences, or penthouse homes, this landmark project offers bigger spacious apartments designed as ultimate trophy homes with state-of-the-art amenities, setting a new benchmark for premium luxury homes in pune.</p>
           <div className="stats" >
             <div className="stat-item">
               <span className="stat-value" >1,597,548</span>

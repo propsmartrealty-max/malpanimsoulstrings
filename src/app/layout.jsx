@@ -54,7 +54,13 @@ export const metadata = {
     'Malpani M Soulstrings brochure pdf',
     '5 bhk luxury flats pune',
     'luxury duplex baner',
-    'penthouses in pune west'
+    'penthouses in pune west',
+    '3bhk luxury homes',
+    'bigger spacious apartments',
+    '4bhk residences',
+    '5bhk residences',
+    'penthouse homes',
+    'premium luxury homes in pune'
   ],
   openGraph: {
     title: 'Malpani M SoulStrings - 3, 4, 5 BHK, Duplex & Penthouse in Baner',
