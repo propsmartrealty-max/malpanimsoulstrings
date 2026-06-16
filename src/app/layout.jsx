@@ -19,10 +19,10 @@ const playfair = Playfair_Display({ subsets: ['latin'], display: 'swap', variabl
 export const metadata = {
   metadataBase: new URL('https://www.malpanimsoulstrings.com'),
   title: {
-    default: 'Malpani M SoulStrings | Ultra-Premium 3 & 4 BHK Luxury Estates in Baner, Pune',
+    default: 'Malpani M SoulStrings | Ultra-Premium 3, 4, 5 BHK, Duplex & Penthouse Estates in Baner, Pune',
     template: '%s | Malpani M SoulStrings'
   },
-  description: 'Discover Malpani M SoulStrings, the pinnacle of Pune Real Estate. Ultra-premium 3 BHK and 4 BHK luxury estates for sale in Baner-Pashan Link Road. A prime investment for NRIs and luxury home buyers.',
+  description: 'Discover Malpani M SoulStrings, the pinnacle of Pune Real Estate. Ultra-premium 3BHK, 4BHK, 5BHK, Duplex, and Penthouse luxury estates for sale in Baner-Pashan Link Road. A prime investment for NRIs and luxury home buyers.',
   keywords: [
     'pune luxury real estate',
     'luxury 3 bhk pune',
@@ -52,10 +52,13 @@ export const metadata = {
     'Malpani m soulstrings baner pashan link road',
     'Malpani M Soulstrings price',
     'Malpani M Soulstrings floor plan',
-    'Malpani M Soulstrings brochure pdf'
+    'Malpani M Soulstrings brochure pdf',
+    '5 bhk luxury flats pune',
+    'luxury duplex baner',
+    'penthouses in pune west'
   ],
   openGraph: {
-    title: 'Malpani M SoulStrings - 3 & 4 BHK Luxury Residences in Baner',
+    title: 'Malpani M SoulStrings - 3, 4, 5 BHK, Duplex & Penthouse in Baner',
     description: 'Premium residential project offering spacious 3 BHK and 4 BHK Estates with over 35+ state-of-the-art amenities at Baner-Pashan Link Road, Pune.',
     url: 'https://www.malpanimsoulstrings.com',
     siteName: 'Malpani M SoulStrings',
@@ -73,7 +76,7 @@ export const metadata = {
   twitter: {
     card: 'summary_large_image',
     title: 'Malpani M SoulStrings | #1 Luxury Estates in Baner',
-    description: 'Ultra-premium 3 & 4 BHK Luxury Homes at Baner Pashan Link Road.',
+    description: 'Ultra-premium 3, 4, 5 BHK, Duplex & Penthouse Luxury Homes at Baner Pashan Link Road.',
     images: ['https://malpani-cms.firsteconomy.com/uploads/M_soul_strings_Desktop_Banner_Without_Text_0d38ce28d4.jpg'],
   },
   robots: {
@@ -127,7 +130,7 @@ const orgSchema = {
   "name": "Malpani M SoulStrings",
   "image": "https://www.malpanimsoulstrings.com/icon.png",
   "logo": "https://www.malpanimsoulstrings.com/icon.png",
-  "description": "Ultra-premium 3 BHK and 4 BHK luxury Estates in Baner-Pashan Link Road, Pune.",
+  "description": "Ultra-premium 3 BHK, 4 BHK, 5 BHK, Duplex, and Penthouse luxury Estates in Baner-Pashan Link Road, Pune.",
   "url": "https://www.malpanimsoulstrings.com",
   "telephone": "+917744009295",
   "address": {

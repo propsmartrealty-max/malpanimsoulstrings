@@ -1,13 +1,16 @@
 name: SEO Automation & Robustness Audit
 
 on:
+  push:
+    branches:
+      - main
   schedule:
     - cron: '0 0 * * 1,4' # Runs automatically at midnight every Monday and Thursday
   workflow_dispatch: # Allows manual trigger from the GitHub Actions UI
 
 jobs:
   audit-and-index:
-    name: Build Audit and IndexNow Push
+    name: Automated Indexing Ping
     runs-on: ubuntu-latest
 
     steps:
@@ -18,13 +21,10 @@ jobs:
         uses: actions/setup-node@v4
         with:
           node-version: '20'
-          cache: 'npm'
 
-      - name: Install Dependencies
-        run: npm ci
-
-      - name: Technical Robustness Audit & Automated Indexing
-        # Running build verifies there are no technical Next.js/React errors.
-        # The postbuild script (ping-sitemap.js) will automatically fire upon a successful build
-        # to push the IndexNow payload to Bing, Yandex, and other search engines.
-        run: npm run build
+      - name: Push IndexNow Payload
+        # Runs the ping script independently of Vercel deployments to prevent timeouts.
+        # Adds a 60 second delay to ensure Vercel finishes deploying the main branch before pinging.
+        run: |
+          sleep 60
+          node scripts/ping-sitemap.js

@@ -90,7 +90,7 @@ export default function Home() {
         <h1 className="hero-title split-text" style={{ display: 'flex', flexDirection: 'column', gap: '0.5rem' }}>
           <div className="line"><span className="word">Malpani</span> <span className="word">M</span> <span className="word">SoulStrings</span></div>
           <div className="line" style={{ fontSize: 'clamp(1rem, 2vw, 1.5rem)', fontWeight: '400', letterSpacing: '3px', textTransform: 'uppercase', color: 'rgba(255,255,255,0.8)' }}>
-            <span className="word">Ultra-Premium 3 & 4 BHK Luxury Apartments in Baner Pashan Link Road</span>
+            <span className="word">Ultra-Premium 3, 4, 5 BHK, Duplex & Penthouse Estates in Baner Pashan Link Road</span>
           </div>
         </h1>
         <p className="hero-subtitle fade-in-up" >The Preferred Choice for Elite Buyers from Aundh, Shivajinagar, Balewadi, and Wakad.</p>
@@ -105,7 +105,7 @@ export default function Home() {
         <div className="fade-in-up" >
           <h2 className="section-title gradient-text" >The Crown Jewel of the<br />Pune Luxury Real Estate Market</h2>
           <p className="section-desc" >
-            Malpani M SoulStrings is not just a residence; it is a visionary masterpiece of <strong>signature residences</strong>. As one of the most <strong>iconic towers in Pune</strong>, this project stands as the definitive choice for <strong>luxury property for sale in Pune</strong>, offering <strong>premium 3 BHK and 4 BHK flats for sale in Baner-Pashan Link Road</strong>. It is the preferred destination where discerning buyers from <strong>Aundh, Shivajinagar, Balewadi, Pashan, and Wakad</strong> converge to secure the absolute pinnacle of luxury. When you seek the highest echelon of the West Pune real estate market, M SoulStrings is the undeniable answer.
+            Malpani M SoulStrings is not just a residence; it is a visionary masterpiece of <strong>signature residences</strong>. As one of the most <strong>iconic towers in Pune</strong>, this project stands as the definitive choice for <strong>luxury property for sale in Pune</strong>, offering <strong>premium 3 BHK, 4 BHK, 5 BHK flats, Duplexes, and Penthouses for sale in Baner-Pashan Link Road</strong>. It is the preferred destination where discerning buyers from <strong>Aundh, Shivajinagar, Balewadi, Pashan, and Wakad</strong> converge to secure the absolute pinnacle of luxury. When you seek the highest echelon of the West Pune real estate market, M SoulStrings is the undeniable answer.
           </p>
         </div>
       </div>
@@ -116,7 +116,7 @@ export default function Home() {
       <div className="container about-grid">
         <div className="about-text slide-in-left">
           <h2 className="section-title">The Epitome of Exclusivity</h2>
-          <p className="section-desc"><strong>Malpani M SoulStrings</strong> by Malpani Estates (often searched as <strong>Malpani M soultraings</strong>) is destined to be the new realty capital of the city, completely redefining the <strong>Baner Pashan Link Road real estate market</strong>. For those looking to <strong>buy a luxury home in Pune</strong> or secure a <strong>ready possession luxury apartment</strong>, the <strong>Malpani m soulstrings baner pashan link road</strong> project offers stupendously designed 3BHK and 4BHK <strong>trophy homes</strong> with state-of-the-art amenities, setting a new benchmark for the adjacent Aundh Real estate market.</p>
+          <p className="section-desc"><strong>Malpani M SoulStrings</strong> by Malpani Estates (often searched as <strong>Malpani M soultraings</strong>) is destined to be the new realty capital of the city, completely redefining the <strong>Baner Pashan Link Road real estate market</strong>. For those looking to <strong>buy a luxury home in Pune</strong> or secure a <strong>ready possession luxury apartment</strong>, the <strong>Malpani m soulstrings baner pashan link road</strong> project offers stupendously designed 3BHK, 4BHK, 5BHK, Duplex, and Penthouse <strong>trophy homes</strong> with state-of-the-art amenities, setting a new benchmark for the adjacent Aundh Real estate market.</p>
           <div className="stats" >
             <div className="stat-item">
               <span className="stat-value" >1,597,548</span>
@@ -124,7 +124,7 @@ export default function Home() {
             </div>
             <div className="stat-item">
               <span className="stat-value" >455</span>
-              <span className="stat-label">Exclusive 3 & 4 BHK Estates</span>
+              <span className="stat-label">Exclusive 3, 4, 5 BHK & Penthouses</span>
             </div>
             <div className="stat-item">
               <span className="stat-value" >04</span>
@@ -152,7 +152,7 @@ export default function Home() {
             Only <span id="scarcity-counter" >45</span> Premium Units Remaining
           </div>
           <h2 className="section-title gradient-text">Project Master Plan & Layouts</h2>
-          <p className="section-desc">Explore the grand vision of M SoulStrings and our expansive 3BHK and 4BHK residences.</p>
+          <p className="section-desc">Explore the grand vision of M SoulStrings and our expansive 3BHK, 4BHK, 5BHK, Duplex, and Penthouse residences.</p>
         </div>
         
         {/* Interactive Floor Plan Gallery */}
@@ -176,7 +176,7 @@ export default function Home() {
       <div className="container">
         <div className="section-header fade-in-up">
           <h2 className="section-title gradient-text">Ultra-Luxury Specifications</h2>
-          <p className="section-desc">Every 3 BHK and 4 BHK residence at Malpani M SoulStrings is crafted with the highest standards of luxury.</p>
+          <p className="section-desc">Every 3 BHK, 4 BHK, 5 BHK, Duplex, and Penthouse residence at Malpani M SoulStrings is crafted with the highest standards of luxury.</p>
         </div>
         <div className="specs-grid fade-in-up" style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(250px, 1fr))', gap: '2rem' }}>
           <div className="spec-card loc-card spec-interactive" style={{ padding: '2.5rem', borderRadius: '12px', textAlign: 'center' }}>
@@ -337,7 +337,7 @@ export default function Home() {
           <p className="section-desc">The epicenter of the Baner Pashan Link Road real estate market, unmatched by any other development.</p>
         </div>
         <div className="location-content fade-in-up" >
-          <p>Situated in Pune's most coveted neighborhood, the highly acclaimed <strong>Malpani m soulstrings baner pashan link road</strong> property offers seamless connectivity to major IT hubs like Hinjewadi, while redefining the luxury standards of the <strong>Aundh Real estate market</strong>. Recognized widely for its grandeur (and known uniquely to some fans as <strong>Malpani M soultraings</strong>), the strategic location guarantees a serene retreat from the city's hustle without sacrificing urban convenience, making these 3BHK and 4BHK Luxury Homes the ultimate investment.</p>
+          <p>Situated in Pune's most coveted neighborhood, the highly acclaimed <strong>Malpani m soulstrings baner pashan link road</strong> property offers seamless connectivity to major IT hubs like Hinjewadi, while redefining the luxury standards of the <strong>Aundh Real estate market</strong>. Recognized widely for its grandeur (and known uniquely to some fans as <strong>Malpani M soultraings</strong>), the strategic location guarantees a serene retreat from the city's hustle without sacrificing urban convenience, making these 3BHK, 4BHK, 5BHK, Duplex, and Penthouse Luxury Homes the ultimate investment.</p>
           <div className="location-grid" >
             <div className="loc-card" >
               <h3 >Work & IT Hubs</h3>
@@ -383,7 +383,7 @@ export default function Home() {
         </div>
         <div className="west-pune-content fade-in-up" >
           <p >
-            When it comes to the <strong>Baner Real Estate luxury projects</strong> market, nothing compares to the sheer grandeur of Malpani M SoulStrings. We are setting an untouchable standard for <strong>3BHK and 4BHK luxury flats in Baner Pune</strong>. Located at the prestigious junction of Baner and Pashan, this development represents the absolute pinnacle of <strong>high end apartments in Baner Pune</strong>.
+            When it comes to the <strong>Baner Real Estate luxury projects</strong> market, nothing compares to the sheer grandeur of Malpani M SoulStrings. We are setting an untouchable standard for <strong>3BHK, 4BHK, 5BHK, Duplex, and Penthouse luxury flats in Baner Pune</strong>. Located at the prestigious junction of Baner and Pashan, this development represents the absolute pinnacle of <strong>high end apartments in Baner Pune</strong>.
           </p>
           <p >
             If you are searching for the <strong>best luxury apartments in Baner Pashan link road</strong> or evaluating <strong>Pune West real estate luxury properties</strong>, M SoulStrings isn't just a residence; it is a legacy. With over 1.5 million square feet of uncompromising quality, it stands as the undisputed crown jewel for those seeking <strong>luxury apartments for sale in Baner Pune</strong>.
