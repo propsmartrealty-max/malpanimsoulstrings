@@ -50,15 +50,15 @@ export default function InfrastructurePage() {
             
             <hr style={{ margin: '3rem 0', borderColor: 'rgba(212,175,55,0.2)' }} />
 
-            <h2 className="gradient-text">Strategic Micro-Location Connectivity</h2>
+            <h2 className="mt-5 mb-4 gradient-text" style={{ fontSize: '2rem' }}>Seamless Connectivity Across West Pune</h2>
             <p>
-                Our ultra-premium location ensures seamless access across West Pune's most vital micro-markets. We offer unparalleled proximity for buyers seeking <strong>Baner Gaon flats</strong>, <strong>Veerbhadra Nagar apartments</strong>, or <strong>Pashan Sus Road flats</strong>. It serves as the ultimate upgrade from standard <strong>Balewadi Phata apartments</strong>, <strong>Pancard Club Road homes</strong>, and <strong>Mahalunge luxury homes</strong>. 
+                Our ultra-premium location ensures seamless access across West Pune's most vital micro-markets. We offer unparalleled proximity to Baner, Veerbhadra Nagar, and Pashan-Sus Road, serving as the ultimate upgrade for residents currently in Balewadi, Pancard Club Road, or Mahalunge. 
             </p>
             <p>
-                The estate is perfectly positioned for those upgrading from <strong>Sus village apartments</strong>, <strong>Bavdhan premium flats</strong>, and <strong>Aundh Baner luxury apartments</strong>. Our connectivity extends effortlessly to <strong>Sutarwadi flats Pune</strong>, <strong>Someshwarwadi apartments</strong>, and <strong>Ram Nagar Baner flats</strong>. Experience the true pinnacle of <strong>Balewadi luxury residences</strong>, featuring breathtaking <strong>Baner hill view apartments</strong> and the most coveted <strong>Baner NX luxury homes</strong> and <strong>Baner Annex apartments</strong> in the <strong>Baner commercial belt homes</strong>.
+                The estate is perfectly positioned for those upgrading from Sus, Bavdhan, or Aundh. Our connectivity extends effortlessly to Sutarwadi, Someshwarwadi, and Ram Nagar. Experience the true pinnacle of luxury living, featuring breathtaking hill views and the most coveted location in the entire commercial belt.
             </p>
             <p>
-                <strong>Hyper-Local Landmarks:</strong> Live mere minutes away from premium lifestyle and civic amenities. These are the finest <strong>apartments near Xion Mall Pune</strong>, <strong>apartments near Vibgyor School Pune</strong>, <strong>apartments near Orchid School Pune</strong>, and <strong>apartments near MITCON Pune</strong>. Enjoy absolute convenience with <strong>apartments near Croma Baner</strong>, <strong>apartments near DMart Baner</strong>, <strong>apartments near Jupiter Hospital Baner</strong>, <strong>apartments near Balewadi Stadium Pune</strong>, and <strong>apartments near Radha Chowk Baner</strong>.
+                <strong>Hyper-Local Landmarks:</strong> Live mere minutes away from premium lifestyle and civic amenities. The property is situated exceptionally close to major retail centers like Xion Mall, premier educational institutions including Vibgyor School, The Orchid School, and MITCON. Enjoy absolute convenience with immediate access to Croma, DMart, Jupiter Hospital, and the Balewadi Stadium.
             </p>
           </article>
 

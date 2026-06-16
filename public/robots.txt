@@ -1,19 +1,16 @@
 User-agent: *
 Allow: /
 Disallow: /api/
-Disallow: /_next/
 Disallow: /cdn-cgi/
 Disallow: /*?*
 
 User-agent: Googlebot
 Allow: /
 Disallow: /api/
-Disallow: /_next/
 
 User-agent: Bingbot
 Allow: /
 Disallow: /api/
-Disallow: /_next/
 
 # Explicitly declare the sitemap for instant Google Bot discovery
 Sitemap: https://www.malpanimsoulstrings.com/sitemap.xml

@@ -32,16 +32,16 @@ export default function AmenitiesPage() {
         <div className="container" style={{ display: 'grid', gridTemplateColumns: '1fr 300px', gap: '3rem' }}>
           
           <article className="main-content">
-            <p>The definition of luxury in the Pune Real Estate Market is undergoing a rapid technological evolution. At the highly acclaimed <strong>Malpani m soulstrings baner pashan link road</strong> project, it is no longer sufficient for a residence to just boast Italian marble. The modern ultra-luxury buyer demands a living space that is intuitively integrated. Welcome to the era of the Smart Home at Malpani Estates.</p>
-
-            <h2>Beyond the Basics: True Luxury at Malpani M SoulStrings</h2>
-            <p>When we talk about luxury estates at <strong>Malpani M soultraings</strong>, we are talking about deeply integrated ecosystems. In our premium 4 BHK Estates on the Baner Pashan Link Road, a central hub controls everything from ambient lighting to advanced security. It is the definition of <strong>smart amenities apartments Pune</strong>. From the moment you enter, you are experiencing the finest <strong>gated community with security Pune</strong> has to offer.</p>
-
-            <h2>35+ World-Class Amenities: The Epicenter of Baner</h2>
-            <p>Investing in <strong>Malpani m soulstrings baner pashan link road</strong> grants you exclusive access to a resort-style lifestyle. Residents enjoy unparalleled <strong>luxury apartments with swimming pool</strong> access, alongside a massive <strong>clubhouse apartments Baner</strong> facility. Fitness enthusiasts will thrive in our <strong>luxury apartments with gym</strong> and <strong>apartments with jogging track</strong>. For competitive play, we offer <strong>apartments with sports amenities Pune</strong>, featuring dedicated <strong>apartments with basketball court</strong> and <strong>apartments with net cricket</strong> zones.</p>
-
-            <h2>Wellness, Nature, and Community</h2>
-            <p>For high-net-worth individuals, holistic well-being is non-negotiable. M SoulStrings features <strong>premium apartments with wellness zone</strong> and <strong>luxury homes with reflexology path</strong> integrations. Families will love the sprawling <strong>luxury apartments with kids play area</strong> and dedicated <strong>apartments with senior citizen zone</strong> spaces. Experience vast <strong>luxury apartments with open spaces</strong> and beautifully curated <strong>luxury homes with landscaped gardens</strong>. We even cater to your furry friends with our exclusive <strong>luxury apartments with pet park</strong>. Entertain guests in the grand <strong>luxury apartments with amphitheatre</strong>, proving that this development offers the absolute best <strong>lifestyle amenities Baner Pune</strong> has ever seen.</p>
+            <p>The definition of luxury in the Pune Real Estate Market is undergoing a rapid technological evolution. At the highly acclaimed Malpani M SoulStrings project on the Baner-Pashan Link Road, it is no longer sufficient for a residence to just boast Italian marble. The modern ultra-luxury buyer demands a living space that is intuitively integrated. Welcome to the era of the Smart Home at Malpani Estates.</p>
+            
+            <h2 className="mt-5 mb-4 gradient-text" style={{ fontSize: '2rem' }}>Beyond the Basics: True Luxury at Malpani M SoulStrings</h2>
+            <p>When we talk about luxury estates at Malpani M SoulStrings, we are talking about deeply integrated ecosystems. In our premium 4 BHK Estates, a central hub controls everything from ambient lighting to advanced security. It is the very definition of a smart, secure community. From the moment you enter, you are experiencing the finest gated community Pune has to offer.</p>
+            
+            <h2 className="mt-5 mb-4 gradient-text" style={{ fontSize: '2rem' }}>35+ World-Class Amenities: The Epicenter of Baner</h2>
+            <p>Investing in this prestigious Baner-Pashan Link Road property grants you exclusive access to a resort-style lifestyle. Residents enjoy unparalleled access to an expansive swimming pool and a massive, bespoke clubhouse. Fitness enthusiasts will thrive in our state-of-the-art gymnasium and dedicated jogging tracks. For competitive play, we offer extensive sports facilities, featuring a professional-grade basketball court and dedicated net cricket zones.</p>
+            
+            <h2 className="mt-5 mb-4 gradient-text" style={{ fontSize: '2rem' }}>Wellness, Nature, and Community</h2>
+            <p>For high-net-worth individuals, holistic well-being is non-negotiable. M SoulStrings features premium wellness zones and reflexology paths. Families will love the sprawling kids' play areas and serene spaces dedicated entirely to senior citizens. Experience vast open spaces and beautifully curated landscaped gardens. We even cater to your furry friends with our exclusive pet park. Entertain guests in the grand open-air amphitheater, proving that this development offers the absolute best lifestyle amenities West Pune has ever seen.</p>
           </article>
 
           <aside className="sidebar">
