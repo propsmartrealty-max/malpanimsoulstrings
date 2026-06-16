@@ -18,7 +18,8 @@ export async function GET() {
     const stats = fs.statSync(filePath);
     
     const slug = file.replace('.md', '');
-    const title = slug.replace(/-/g, ' ').toUpperCase();
+    const titleMatch = content.match(/^#\s+(.*)/m);
+    const title = titleMatch ? titleMatch[1] : slug.replace(/-/g, ' ').toUpperCase();
     const url = `${baseUrl}/blog/${slug}`;
     
     // Extract first real paragraph for the excerpt

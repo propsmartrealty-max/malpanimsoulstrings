@@ -17,8 +17,9 @@ export default function BlogIndex() {
     const files = fs.readdirSync(contentDir).filter(f => f.endsWith('.md'));
     posts = files.map(file => {
       const slug = file.replace('.md', '');
-      const title = slug.replace(/-/g, ' ').toUpperCase();
       const content = fs.readFileSync(path.join(contentDir, file), 'utf-8');
+      const titleMatch = content.match(/^#\s+(.*)/m);
+      const title = titleMatch ? titleMatch[1] : slug.replace(/-/g, ' ').toUpperCase();
       
       // Extract excerpt
       const lines = content.split('\n');
@@ -44,7 +45,7 @@ export default function BlogIndex() {
         {posts.map(post => (
           <div key={post.slug} className="col-lg-6">
             <div className="card bg-dark border-secondary p-4 h-100 spec-card" style={{ cursor: 'pointer' }}>
-              <h3 style={{ color: '#d4af37', marginBottom: '1rem', fontSize: '1.4rem', lineHeight: '1.4' }}>{post.title}</h3>
+              <h2 style={{ color: '#d4af37', marginBottom: '1rem', fontSize: '1.4rem', lineHeight: '1.4' }}>{post.title}</h2>
               <p style={{ color: 'rgba(255,255,255,0.6)', fontSize: '0.95rem', lineHeight: '1.6', marginBottom: '2rem' }}>
                 {post.excerpt}
               </p>

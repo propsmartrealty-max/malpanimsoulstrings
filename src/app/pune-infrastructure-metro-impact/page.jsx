@@ -12,7 +12,7 @@ export const metadata = {
   openGraph: {
     title: 'Pune Infrastructure & Real Estate Impact 2026',
     description: 'Discover how the Pune Metro Line 3 and Ring Road are driving massive capital appreciation in the Pune Real Estate Market.',
-    url: 'https://malpanimsoulstrings.com/pune-infrastructure-metro-impact',
+    url: 'https://www.malpanimsoulstrings.com/pune-infrastructure-metro-impact',
     siteName: 'Malpani M SoulStrings',
     images: [
       {

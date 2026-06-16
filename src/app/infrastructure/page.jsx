@@ -6,7 +6,7 @@ import Link from 'next/link';
 export const metadata = {
   alternates: { canonical: '/infrastructure' },
   title: 'Infrastructure & Market Metrics 2026 | Malpani M SoulStrings',
-  description: 'An authoritative investor\'s guide to the structural shifts, capital appreciation metrics, and the rise of ultra-luxury estates in Western Pune.',
+  description: 'Infrastructure developments driving Pune West real estate growth — metro connectivity, road expansion, and IT corridor impact on luxury property values at Baner-Pashan Link Road.',
 };
 
 export default function InfrastructurePage() {
@@ -21,9 +21,9 @@ export default function InfrastructurePage() {
             <span className="material-symbols-outlined" style={{ fontSize: '1rem', verticalAlign: 'middle', marginRight: '0.2rem' }}>architecture</span>
             Infrastructure Report
           </div>
-          <h1 className="gradient-text" style={{ fontSize: '3rem', marginBottom: '1rem' }}>Pune Real Estate Market: 2026-2030</h1>
+          <h1 className="gradient-text" style={{ fontSize: '3rem', marginBottom: '1rem' }}>Pune Infrastructure & Growth Outlook: 2026-2030</h1>
           <p style={{ fontSize: '1.2rem', color: 'var(--color-text-muted)', maxWidth: '800px' }}>
-            An authoritative investor's guide to the structural shifts, capital appreciation metrics, and the rise of ultra-luxury estates in Western Pune.
+            How metro expansion, road infrastructure, and IT corridor growth are reshaping luxury real estate values across Western Pune.
           </p>
         </div>
       </div>

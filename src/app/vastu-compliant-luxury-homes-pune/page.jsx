@@ -12,7 +12,7 @@ export const metadata = {
   openGraph: {
     title: 'Vastu Compliant Luxury Homes in Pune',
     description: 'Explore 100% Vastu-compliant 3 BHK and 4 BHK luxury apartments at Malpani M SoulStrings in Baner.',
-    url: 'https://malpanimsoulstrings.com/vastu-compliant-luxury-homes-pune',
+    url: 'https://www.malpanimsoulstrings.com/vastu-compliant-luxury-homes-pune',
     siteName: 'Malpani M SoulStrings',
     images: [
       {

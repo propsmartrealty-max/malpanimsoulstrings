@@ -24,7 +24,14 @@ jobs:
 
       - name: Push IndexNow Payload
         # Runs the ping script independently of Vercel deployments to prevent timeouts.
-        # Adds a 60 second delay to ensure Vercel finishes deploying the main branch before pinging.
+        # Adds a 120 second delay to ensure Vercel finishes deploying the main branch before pinging.
         run: |
-          sleep 60
+          sleep 120
+          node scripts/ping-sitemap.js
+
+      - name: Retry IndexNow Payload (if first attempt failed)
+        if: failure()
+        run: |
+          echo "[RETRY] First IndexNow ping failed. Retrying after 30 seconds..."
+          sleep 30
           node scripts/ping-sitemap.js

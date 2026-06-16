@@ -36,7 +36,7 @@ export default function HTMLSitemap() {
         <div className="row g-5">
           {/* Core Properties */}
           <div className="col-md-6 col-lg-3">
-            <h3 style={{ color: 'var(--color-primary)', borderBottom: '1px solid rgba(212,175,55,0.3)', paddingBottom: '0.5rem', marginBottom: '1.5rem' }}>Estates</h3>
+            <h2 style={{ color: 'var(--color-primary)', borderBottom: '1px solid rgba(212,175,55,0.3)', paddingBottom: '0.5rem', marginBottom: '1.5rem', fontSize: '1.4rem' }}>Estates</h2>
             <ul className="list-unstyled" style={{ lineHeight: '2.5' }}>
               <li><Link href="/" style={{ color: 'var(--color-text)', textDecoration: 'none' }}>Homepage (3 BHK)</Link></li>
               <li><Link href="/4bhk-luxury" style={{ color: 'var(--color-text)', textDecoration: 'none' }}>4 BHK Ultra-Luxury</Link></li>
@@ -47,7 +47,7 @@ export default function HTMLSitemap() {
 
           {/* Market Intelligence */}
           <div className="col-md-6 col-lg-3">
-            <h3 style={{ color: 'var(--color-primary)', borderBottom: '1px solid rgba(212,175,55,0.3)', paddingBottom: '0.5rem', marginBottom: '1.5rem' }}>Market Reports</h3>
+            <h2 style={{ color: 'var(--color-primary)', borderBottom: '1px solid rgba(212,175,55,0.3)', paddingBottom: '0.5rem', marginBottom: '1.5rem', fontSize: '1.4rem' }}>Market Reports</h2>
             <ul className="list-unstyled" style={{ lineHeight: '2.5' }}>
               <li><Link href="/pune-real-estate-market" style={{ color: 'var(--color-text)', textDecoration: 'none' }}>Pune Real Estate Market</Link></li>
               <li><Link href="/baner-real-estate-market" style={{ color: 'var(--color-text)', textDecoration: 'none' }}>Baner Real Estate Market</Link></li>
@@ -61,7 +61,7 @@ export default function HTMLSitemap() {
 
           {/* Micro Markets */}
           <div className="col-md-6 col-lg-3">
-            <h3 style={{ color: 'var(--color-primary)', borderBottom: '1px solid rgba(212,175,55,0.3)', paddingBottom: '0.5rem', marginBottom: '1.5rem' }}>Micro-Markets</h3>
+            <h2 style={{ color: 'var(--color-primary)', borderBottom: '1px solid rgba(212,175,55,0.3)', paddingBottom: '0.5rem', marginBottom: '1.5rem', fontSize: '1.4rem' }}>Micro-Markets</h2>
             <ul className="list-unstyled" style={{ lineHeight: '2.5' }}>
               <li><Link href="/baner-overview" style={{ color: 'var(--color-text)', textDecoration: 'none' }}>Baner Overview</Link></li>
               <li><Link href="/aundh" style={{ color: 'var(--color-text)', textDecoration: 'none' }}>Aundh Luxury Suburb</Link></li>
@@ -72,7 +72,7 @@ export default function HTMLSitemap() {
 
           {/* Competitor Analysis */}
           <div className="col-md-6 col-lg-3">
-            <h3 style={{ color: 'var(--color-primary)', borderBottom: '1px solid rgba(212,175,55,0.3)', paddingBottom: '0.5rem', marginBottom: '1.5rem' }}>Comparisons</h3>
+            <h2 style={{ color: 'var(--color-primary)', borderBottom: '1px solid rgba(212,175,55,0.3)', paddingBottom: '0.5rem', marginBottom: '1.5rem', fontSize: '1.4rem' }}>Comparisons</h2>
             <ul className="list-unstyled" style={{ lineHeight: '2.5' }}>
               <li><Link href="/compare/pristine-lords-baner" style={{ color: 'var(--color-text)', textDecoration: 'none' }}>vs Pristine Lords</Link></li>
               <li><Link href="/compare/kohinoor-livience-baner" style={{ color: 'var(--color-text)', textDecoration: 'none' }}>vs Kohinoor Livience</Link></li>

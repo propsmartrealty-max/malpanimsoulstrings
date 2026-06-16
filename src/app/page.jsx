@@ -7,6 +7,7 @@ import Testimonials from '@/components/Testimonials';
 import FloorPlanGallery from '@/components/FloorPlanGallery';
 import fs from 'fs';
 import path from 'path';
+import Link from 'next/link';
 
 export const metadata = {
   alternates: {
@@ -26,7 +27,7 @@ export default function Home() {
     "uploadDate": "2024-05-01T08:00:00+08:00",
     "duration": "PT0M30S",
     "contentUrl": "https://malpani-cms.firsteconomy.com/uploads/video_51_98e1310033.mp4",
-    "embedUrl": "https://www.malpanimsoulstrings.com"
+    "embedUrl": "https://malpani-cms.firsteconomy.com/uploads/video_51_98e1310033.mp4"
   };
 
   const faqSchema = {
@@ -402,12 +403,19 @@ export default function Home() {
         <div className="blog-grid fade-in-up" >
           {blogFiles.map(file => {
             const slug = file.replace('.md', '');
-            const title = slug.replace(/-/g, ' ').toUpperCase();
+            let title = slug.replace(/-/g, ' ').toUpperCase();
+            try {
+              const content = fs.readFileSync(path.join(contentDir, file), 'utf-8');
+              const titleMatch = content.match(/^#\s+(.*)/m);
+              if (titleMatch) title = titleMatch[1];
+            } catch (e) {
+              // Fallback
+            }
             return (
               <article key={slug} className="blog-card" style={{ display: 'flex', flexDirection: 'column', justifyContent: 'space-between' }}>
                 <h3 >{title}</h3>
                 <p >Explore the latest metrics, infrastructure updates, and luxury real estate trends in West Pune.</p>
-                <a href={`/blog/${slug}`} >Read More</a>
+                <Link href={`/blog/${slug}`} >Read More</Link>
               </article>
             );
           })}

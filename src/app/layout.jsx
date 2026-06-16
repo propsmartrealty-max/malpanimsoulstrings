@@ -9,7 +9,6 @@ import FloatingContact from '@/components/FloatingContact'
 import Script from 'next/script'
 import Image from 'next/image'
 import { GoogleAnalytics, GoogleTagManager } from '@next/third-parties/google'
-import FloatingWhatsApp from '@/components/FloatingWhatsApp'
 import ExitIntentModal from '@/components/ExitIntentModal'
 import { Inter, Playfair_Display } from 'next/font/google'
 
@@ -19,10 +18,10 @@ const playfair = Playfair_Display({ subsets: ['latin'], display: 'swap', variabl
 export const metadata = {
   metadataBase: new URL('https://www.malpanimsoulstrings.com'),
   title: {
-    default: 'Malpani M SoulStrings | Ultra-Premium 3, 4, 5 BHK, Duplex & Penthouse Estates in Baner, Pune',
+    default: 'Malpani M SoulStrings | Luxury Estates Baner, Pune',
     template: '%s | Malpani M SoulStrings'
   },
-  description: 'Discover Malpani M SoulStrings, the pinnacle of Pune Real Estate. Ultra-premium 3BHK, 4BHK, 5BHK, Duplex, and Penthouse luxury estates for sale in Baner-Pashan Link Road. A prime investment for NRIs and luxury home buyers.',
+  description: 'Ultra-premium 3, 4, 5 BHK, Duplex & Penthouse luxury estates for sale at Baner-Pashan Link Road, Pune. 35+ amenities, Vastu-compliant layouts by Malpani Estates.',
   keywords: [
     'pune luxury real estate',
     'luxury 3 bhk pune',
@@ -142,13 +141,7 @@ const orgSchema = {
     "https://www.instagram.com/malpaniestates",
     "https://www.youtube.com/@malpaniestates",
     "https://www.linkedin.com/company/malpani-estates"
-  ],
-  "aggregateRating": {
-    "@type": "AggregateRating",
-    "ratingValue": "4.9",
-    "bestRating": "5",
-    "ratingCount": "158"
-  }
+  ]
 };
 
 const websiteSchema = {
@@ -159,11 +152,6 @@ const websiteSchema = {
   "name": "Malpani M SoulStrings",
   "publisher": {
     "@id": "https://www.malpanimsoulstrings.com/#organization"
-  },
-  "potentialAction": {
-    "@type": "SearchAction",
-    "target": "https://www.malpanimsoulstrings.com/search?q={search_term_string}",
-    "query-input": "required name=search_term_string"
   }
 };
 
@@ -185,7 +173,7 @@ export default function RootLayout({ children }) {
         {/* Fonts are now optimized via next/font/google for zero layout shift */}
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" />
         <link rel="stylesheet" href="/style.css" />
-      
+        <link rel="alternate" type="application/rss+xml" title="Malpani M SoulStrings Blog" href="/rss.xml" />
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(orgSchema) }} />
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(websiteSchema) }} />
 
@@ -225,7 +213,6 @@ export default function RootLayout({ children }) {
       <body>
         <Navbar />
         <ThemeProvider>{children}</ThemeProvider>
-        <FloatingWhatsApp />
         <ExitIntentModal />
         <Footer />
         <ClientScripts />

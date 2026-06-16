@@ -6,24 +6,8 @@ export default function SchemaMarkup({ pageName, pageUrl }) {
         "@type": "BreadcrumbList",
         "itemListElement": [
           { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://www.malpanimsoulstrings.com/" },
-          ...(pageName && pageUrl ? [{ "@type": "ListItem", "position": 2, "name": pageName, "item": `https://www.malpanimsoulstrings.com${pageUrl}` }] : [])
+          ...(pageName && pageUrl && pageUrl !== '/' ? [{ "@type": "ListItem", "position": 2, "name": pageName, "item": `https://www.malpanimsoulstrings.com${pageUrl}` }] : [])
         ]
-      },
-      {
-        "@type": "RealEstateAgent",
-        "name": "Malpani Estates",
-        "image": "https://www.malpanimsoulstrings.com/icon.png",
-        "@id": "https://www.malpanimsoulstrings.com/#organization",
-        "url": "https://www.malpanimsoulstrings.com/",
-        "telephone": "+91 7744009295",
-        "address": {
-          "@type": "PostalAddress",
-          "streetAddress": "Baner Pashan Link Road",
-          "addressLocality": "Pune",
-          "addressRegion": "MH",
-          "postalCode": "411045",
-          "addressCountry": "IN"
-        }
       },
       {
         "@type": "ApartmentComplex",

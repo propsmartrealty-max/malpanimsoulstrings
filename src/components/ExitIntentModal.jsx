@@ -3,6 +3,9 @@ import { useState, useEffect } from 'react';
 
 export default function ExitIntentModal() {
   const [showModal, setShowModal] = useState(false);
+  const [loading, setLoading] = useState(false);
+  const [success, setSuccess] = useState(false);
+  const [error, setError] = useState(false);
 
   useEffect(() => {
     // Only fire on desktop (mobile doesn't have a reliable mouseleave for exit intent)
@@ -26,6 +29,37 @@ export default function ExitIntentModal() {
   }, []);
 
   const closeModal = () => setShowModal(false);
+
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+    setLoading(true);
+    setError(false);
+
+    const formData = new FormData(e.target);
+    const data = Object.fromEntries(formData.entries());
+
+    try {
+      const res = await fetch('/api/contact', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify(data)
+      });
+
+      if (res.ok) {
+        setSuccess(true);
+        e.target.reset();
+        setTimeout(() => {
+          setShowModal(false);
+          setSuccess(false);
+        }, 4000);
+      } else {
+        setError(true);
+      }
+    } catch (err) {
+      setError(true);
+    }
+    setLoading(false);
+  };
 
   if (!showModal) return null;
 
@@ -71,6 +105,7 @@ export default function ExitIntentModal() {
             color: 'var(--color-text-muted)',
             cursor: 'pointer'
           }}
+          disabled={loading}
         >
           &times;
         </button>
@@ -81,36 +116,38 @@ export default function ExitIntentModal() {
           Get exclusive access to the <strong>Malpani M SoulStrings VIP E-Brochure</strong>, featuring high-res floor plans, exact pricing, and hidden luxury amenities.
         </p>
         
-        <form 
-          onSubmit={(e) => {
-            e.preventDefault();
-            document.getElementById('exit-success').style.display = 'block';
-            e.target.style.display = 'none';
-          }}
-          style={{ display: 'flex', flexDirection: 'column', gap: '1rem' }}
-        >
-          <input 
-            type="text" 
-            placeholder="Your Name" 
-            required 
-            style={{ padding: '1rem', borderRadius: '8px', border: '1px solid var(--color-primary)', background: 'var(--color-background)', color: 'var(--foreground)' }}
-          />
-          <input 
-            type="tel" 
-            pattern="[0-9]{10}"
-            placeholder="Phone Number (10 Digits)" 
-            required 
-            style={{ padding: '1rem', borderRadius: '8px', border: '1px solid var(--color-primary)', background: 'var(--color-background)', color: 'var(--foreground)' }}
-          />
-          <button type="submit" className="btn btn-primary" style={{ padding: '1rem', fontSize: '1.1rem', marginTop: '0.5rem' }}>
-            Download VIP Brochure
-          </button>
-        </form>
-
-        <div id="exit-success" style={{ display: 'none', color: '#28a745', marginTop: '1rem', padding: '1rem', background: 'rgba(40, 167, 69, 0.1)', borderRadius: '8px' }}>
-          <span className="material-symbols-outlined" style={{ verticalAlign: 'middle', marginRight: '0.5rem' }}>check_circle</span>
-          Success! The VIP E-Brochure is being sent to your phone via WhatsApp immediately.
-        </div>
+        {success ? (
+          <div style={{ color: '#28a745', padding: '1.5rem', background: 'rgba(40, 167, 69, 0.1)', borderRadius: '8px', textAlign: 'center' }}>
+            <span className="material-symbols-outlined" style={{ fontSize: '2rem', verticalAlign: 'middle', marginBottom: '0.5rem', display: 'block' }}>check_circle</span>
+            <strong>Success!</strong><br />
+            The VIP E-Brochure is being sent to your phone via WhatsApp immediately.
+          </div>
+        ) : (
+          <form 
+            onSubmit={handleSubmit}
+            style={{ display: 'flex', flexDirection: 'column', gap: '1rem' }}
+          >
+            <input 
+              type="text" 
+              name="name"
+              placeholder="Your Name" 
+              required 
+              style={{ padding: '1rem', borderRadius: '8px', border: '1px solid var(--color-primary)', background: 'var(--color-background)', color: 'var(--color-text)' }}
+            />
+            <input 
+              type="tel" 
+              name="phone"
+              pattern="[0-9]{10}"
+              placeholder="Phone Number (10 Digits)" 
+              required 
+              style={{ padding: '1rem', borderRadius: '8px', border: '1px solid var(--color-primary)', background: 'var(--color-background)', color: 'var(--color-text)' }}
+            />
+            {error && <div className="text-danger" style={{ fontSize: '0.9rem' }}>Error submitting. Please try again.</div>}
+            <button type="submit" className="btn btn-primary" style={{ padding: '1rem', fontSize: '1.1rem', marginTop: '0.5rem' }} disabled={loading}>
+              {loading ? 'Sending securely...' : 'Download VIP Brochure'}
+            </button>
+          </form>
+        )}
 
       </div>
     </div>

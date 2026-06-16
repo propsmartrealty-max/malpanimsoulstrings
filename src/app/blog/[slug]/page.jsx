@@ -1,6 +1,7 @@
 import fs from 'fs';
 import path from 'path';
 import { marked } from 'marked';
+import Link from 'next/link';
 
 // Tell Next.js to pre-render all blog posts at build time (SSG)
 export async function generateStaticParams() {
@@ -73,10 +74,12 @@ export default async function BlogPost({ params }) {
   let htmlContent = '';
   let articleTitle = slug.replace(/-/g, ' ').toUpperCase();
   let articleDescription = 'Read our latest insights.';
+  let stats = null;
   let relatedBlogs = [];
   
   try {
     const rawMarkdown = fs.readFileSync(filePath, 'utf-8');
+    stats = fs.statSync(filePath);
     htmlContent = marked(rawMarkdown);
     
     // Fetch 3 random other blogs for internal siloing
@@ -107,7 +110,8 @@ export default async function BlogPost({ params }) {
     "headline": articleTitle,
     "description": articleDescription,
     "url": `https://www.malpanimsoulstrings.com/blog/${slug}`,
-    "datePublished": new Date().toISOString(),
+    "datePublished": stats ? stats.birthtime.toISOString() : new Date().toISOString(),
+    "dateModified": stats ? stats.mtime.toISOString() : new Date().toISOString(),
     "author": {
       "@id": "https://www.malpanimsoulstrings.com/#organization"
     },
@@ -162,10 +166,10 @@ export default async function BlogPost({ params }) {
             <h3 style={{ color: '#d4af37', marginBottom: '1.5rem', borderBottom: '1px solid rgba(212,175,55,0.2)', paddingBottom: '0.5rem' }}>Related Insights</h3>
             <div className="list-group list-group-flush bg-transparent">
               {relatedBlogs.map(b => (
-                <a key={b.slug} href={`/blog/${b.slug}`} className="list-group-item list-group-item-action bg-transparent border-secondary text-white" style={{ padding: '1rem 0' }}>
+                <Link key={b.slug} href={`/blog/${b.slug}`} className="list-group-item list-group-item-action bg-transparent border-secondary text-white" style={{ padding: '1rem 0' }}>
                   <h5 className="mb-1" style={{ fontSize: '1.1rem' }}>{b.title}</h5>
                   <small style={{ color: 'var(--color-accent)' }}>Read Article →</small>
-                </a>
+                </Link>
               ))}
             </div>
           </div>

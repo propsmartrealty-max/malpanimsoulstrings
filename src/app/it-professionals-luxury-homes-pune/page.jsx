@@ -12,7 +12,7 @@ export const metadata = {
   openGraph: {
     title: 'Luxury Homes for IT Professionals in Pune',
     description: 'Explore why top IT executives in Pune are choosing Malpani M SoulStrings. Discover zero-commute luxury flats near Hinjewadi and Baner.',
-    url: 'https://malpanimsoulstrings.com/it-professionals-luxury-homes-pune',
+    url: 'https://www.malpanimsoulstrings.com/it-professionals-luxury-homes-pune',
     siteName: 'Malpani M SoulStrings',
     images: [
       {
