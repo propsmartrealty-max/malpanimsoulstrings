@@ -96,6 +96,14 @@ export const metadata = {
     },
   },
   manifest: '/manifest.json',
+  verification: {
+    google: process.env.NEXT_PUBLIC_GOOGLE_SITE_VERIFICATION,
+    yandex: process.env.NEXT_PUBLIC_YANDEX_SITE_VERIFICATION,
+    yahoo: process.env.NEXT_PUBLIC_YAHOO_SITE_VERIFICATION,
+    other: {
+      'msvalidate.01': process.env.NEXT_PUBLIC_BING_SITE_VERIFICATION,
+    },
+  },
   appleWebApp: {
     capable: true,
     title: 'M SoulStrings',
@@ -227,8 +235,13 @@ export default function RootLayout({ children }) {
         <ClientScripts />
         <Script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" strategy="afterInteractive" />
         
-        {/* Native Google Analytics 4 integration (Deferred to prevent rendering blocks) */}
-        <GoogleAnalytics gaId="G-XXXXXXYOURID" />
+        {/* Native Google Analytics 4 & GTM integration (Loaded via env variables) */}
+        {process.env.NEXT_PUBLIC_GA_ID && (
+          <GoogleAnalytics gaId={process.env.NEXT_PUBLIC_GA_ID} />
+        )}
+        {process.env.NEXT_PUBLIC_GTM_ID && (
+          <GoogleTagManager gtmId={process.env.NEXT_PUBLIC_GTM_ID} />
+        )}
         
         {/* Global WhatsApp Floating Widget */}
         <FloatingContact />
