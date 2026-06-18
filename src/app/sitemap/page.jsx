@@ -2,7 +2,7 @@ import Link from 'next/link';
 
 export const metadata = {
   alternates: { canonical: '/sitemap' },
-  title: 'HTML Sitemap | Malpani M SoulStrings',
+  title: 'HTML Sitemap',
   description: 'Complete directory of Malpani M SoulStrings properties, micro-markets, and real estate market intelligence.',
   robots: {
     index: true,
@@ -38,8 +38,11 @@ export default function HTMLSitemap() {
           <div className="col-md-6 col-lg-3">
             <h2 style={{ color: 'var(--color-primary)', borderBottom: '1px solid rgba(212,175,55,0.3)', paddingBottom: '0.5rem', marginBottom: '1.5rem', fontSize: '1.4rem' }}>Estates</h2>
             <ul className="list-unstyled" style={{ lineHeight: '2.5' }}>
-              <li><Link href="/" style={{ color: 'var(--color-text)', textDecoration: 'none' }}>Homepage (3 BHK)</Link></li>
+              <li><Link href="/" style={{ color: 'var(--color-text)', textDecoration: 'none' }}>M SoulStrings Overview</Link></li>
+              <li><Link href="/3bhk-luxury" style={{ color: 'var(--color-text)', textDecoration: 'none' }}>3 BHK Luxury Apartments</Link></li>
               <li><Link href="/4bhk-luxury" style={{ color: 'var(--color-text)', textDecoration: 'none' }}>4 BHK Ultra-Luxury</Link></li>
+              <li><Link href="/5bhk-duplex" style={{ color: 'var(--color-text)', textDecoration: 'none' }}>5 BHK & Duplex Homes</Link></li>
+              <li><Link href="/penthouse-luxury" style={{ color: 'var(--color-text)', textDecoration: 'none' }}>Premium Penthouses</Link></li>
               <li><Link href="/amenities" style={{ color: 'var(--color-text)', textDecoration: 'none' }}>Resort Amenities</Link></li>
               <li><Link href="/location" style={{ color: 'var(--color-text)', textDecoration: 'none' }}>Strategic Location</Link></li>
             </ul>

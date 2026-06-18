@@ -24,6 +24,17 @@ export default function InteractiveMasterplan() {
         <div 
           key={spot.id} 
           className="hotspot"
+          onClick={() => {
+            if (typeof window !== 'undefined') {
+              window.dataLayer = window.dataLayer || [];
+              window.dataLayer.push({
+                event: 'masterplan_hotspot_click',
+                hotspotId: spot.id,
+                hotspotTitle: spot.title,
+                pagePath: window.location.pathname
+              });
+            }
+          }}
           style={{
             position: 'absolute',
             top: spot.top,

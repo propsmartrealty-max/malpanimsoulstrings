@@ -11,6 +11,28 @@ export default function FloatingContact() {
   const whatsappUrl = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;
   const callUrl = `tel:+${phoneNumber}`;
 
+  const handleCallClick = () => {
+    if (typeof window !== 'undefined') {
+      window.dataLayer = window.dataLayer || [];
+      window.dataLayer.push({
+        event: 'click_to_call',
+        phoneNumber: phoneNumber,
+        pagePath: window.location.pathname
+      });
+    }
+  };
+
+  const handleWhatsappClick = () => {
+    if (typeof window !== 'undefined') {
+      window.dataLayer = window.dataLayer || [];
+      window.dataLayer.push({
+        event: 'click_to_whatsapp',
+        phoneNumber: phoneNumber,
+        pagePath: window.location.pathname
+      });
+    }
+  };
+
   return (
     <div className="floating-contact-container" style={{ position: 'fixed', bottom: '30px', right: '30px', zIndex: 9999, display: 'flex', flexDirection: 'column', alignItems: 'flex-end', gap: '15px' }}>
       
@@ -28,6 +50,7 @@ export default function FloatingContact() {
       >
         <a 
           href={callUrl} 
+          onClick={handleCallClick}
           className="contact-btn call-btn"
           aria-label="Call Us"
           style={{ 
@@ -53,6 +76,7 @@ export default function FloatingContact() {
           href={whatsappUrl} 
           target="_blank" 
           rel="noopener noreferrer" 
+          onClick={handleWhatsappClick}
           className="contact-btn whatsapp-btn"
           aria-label="WhatsApp Us"
           style={{ 

@@ -11,6 +11,9 @@ const BASE_URL = `https://${HOST}`;
 const STATIC_PATHS = [
   '/',
   '/4bhk-luxury',
+  '/3bhk-luxury',
+  '/5bhk-duplex',
+  '/penthouse-luxury',
   '/location',
   '/nri-investment',
   '/amenities',
@@ -76,28 +79,86 @@ const options = {
   },
 };
 
-const req = https.request(options, (res) => {
-  let body = '';
-  res.on('data', (chunk) => {
-    body += chunk;
+function submitPayload() {
+  console.log(`[PINGING] Sending IndexNow push notification payload...`);
+  const req = https.request(options, (res) => {
+    let body = '';
+    res.on('data', (chunk) => {
+      body += chunk;
+    });
+    res.on('end', () => {
+      if (res.statusCode === 200 || res.statusCode === 202) {
+        console.log(`[SUCCESS] IndexNow accepted the batch submission (Status: ${res.statusCode})`);
+        console.log(`[INFO] ${urlList.length} URLs submitted successfully.`);
+        process.exit(0);
+      } else {
+        console.error(`[FAILURE] IndexNow rejected the submission (Status: ${res.statusCode})`);
+        console.error(`[RESPONSE] ${body}`);
+        process.exit(1);
+      }
+    });
   });
-  res.on('end', () => {
-    if (res.statusCode === 200 || res.statusCode === 202) {
-      console.log(`[SUCCESS] IndexNow accepted the batch submission (Status: ${res.statusCode})`);
-      console.log(`[INFO] ${urlList.length} URLs submitted successfully.`);
-      process.exit(0);
-    } else {
-      console.error(`[FAILURE] IndexNow rejected the submission (Status: ${res.statusCode})`);
-      console.error(`[RESPONSE] ${body}`);
-      process.exit(1);
-    }
+
+  req.on('error', (e) => {
+    console.error(`[ERROR] Request failed: ${e.message}`);
+    process.exit(1);
   });
-});
 
-req.on('error', (e) => {
-  console.error(`[ERROR] Request failed: ${e.message}`);
-  process.exit(1);
-});
+  req.write(payload);
+  req.end();
+}
 
-req.write(payload);
-req.end();
+// Poll the live site to make sure the verification key is accessible before submitting IndexNow ping
+function verifyKeyIsLive(attempts = 1, maxAttempts = 15) {
+  return new Promise((resolve, reject) => {
+    console.log(`[VERIFICATION] Checking key location (Attempt ${attempts}/${maxAttempts}): ${KEY_LOCATION}`);
+    
+    const req = https.get(KEY_LOCATION, { timeout: 10000 }, (res) => {
+      let body = '';
+      res.on('data', chunk => body += chunk);
+      res.on('end', () => {
+        const trimmedBody = body.trim();
+        if (res.statusCode === 200 && trimmedBody === KEY) {
+          console.log(`[SUCCESS] IndexNow Verification Key verified on live host!`);
+          resolve(true);
+        } else {
+          console.log(`[PENDING] Key not ready or returned status ${res.statusCode}. Content mismatch (Expected: "${KEY}", Got: "${trimmedBody}")`);
+          if (attempts >= maxAttempts) {
+            reject(new Error(`Key verification timed out after ${maxAttempts} attempts.`));
+          } else {
+            console.log(`Waiting 20 seconds before retry...`);
+            setTimeout(() => {
+              verifyKeyIsLive(attempts + 1, maxAttempts).then(resolve).catch(reject);
+            }, 20000);
+          }
+        }
+      });
+    });
+
+    req.on('error', (err) => {
+      console.log(`[PENDING] Network error during key verification: ${err.message}`);
+      if (attempts >= maxAttempts) {
+        reject(err);
+      } else {
+        console.log(`Waiting 20 seconds before retry...`);
+        setTimeout(() => {
+          verifyKeyIsLive(attempts + 1, maxAttempts).then(resolve).catch(reject);
+        }, 20000);
+      }
+    });
+
+    req.on('timeout', () => {
+      req.destroy();
+    });
+  });
+}
+
+// Execute pipeline
+verifyKeyIsLive()
+  .then(() => {
+    submitPayload();
+  })
+  .catch((err) => {
+    console.error(`[CRITICAL] IndexNow ping aborted: ${err.message}`);
+    process.exit(1);
+  });

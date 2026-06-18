@@ -166,6 +166,14 @@ const websiteSchema = {
   "name": "Malpani M SoulStrings",
   "publisher": {
     "@id": "https://www.malpanimsoulstrings.com/#organization"
+  },
+  "potentialAction": {
+    "@type": "SearchAction",
+    "target": {
+      "@type": "EntryPoint",
+      "urlTemplate": "https://www.malpanimsoulstrings.com/blog?search={search_term_string}"
+    },
+    "query-input": "required name=search_term_string"
   }
 };
 

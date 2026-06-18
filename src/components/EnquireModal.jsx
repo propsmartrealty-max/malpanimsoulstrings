@@ -24,6 +24,18 @@ export default function EnquireModal() {
       
       if (res.ok) {
         setSuccess(true);
+        
+        // Push event to Google Tag Manager / Analytics dataLayer
+        if (typeof window !== 'undefined') {
+          window.dataLayer = window.dataLayer || [];
+          window.dataLayer.push({
+            event: 'form_submission',
+            formId: 'enquire-modal-form',
+            formName: 'Exclusive Enquiry Modal',
+            pagePath: window.location.pathname
+          });
+        }
+
         e.target.reset();
         setTimeout(() => {
           // close modal gracefully

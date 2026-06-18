@@ -9,6 +9,16 @@ export async function POST(request) {
   try {
     const ip = request.headers.get('x-forwarded-for') || 'unknown';
     
+    // Memory-leak pruning safeguard for rate limit map
+    if (rateLimitMap.size > 1000) {
+      const now = Date.now();
+      for (const [key, value] of rateLimitMap.entries()) {
+        if (now - value.startTime > RATE_LIMIT_WINDOW_MS) {
+          rateLimitMap.delete(key);
+        }
+      }
+    }
+
     // Rate Limiting Logic
     if (ip !== 'unknown') {
       const now = Date.now();
@@ -28,7 +38,12 @@ export async function POST(request) {
       }
     }
 
-    const data = await request.json();
+    let data;
+    try {
+      data = await request.json();
+    } catch (e) {
+      return NextResponse.json({ error: 'Invalid or missing JSON payload.' }, { status: 400 });
+    }
     
     // Server-side strict validation & sanitization
     if (!data.name || !data.phone) {
@@ -38,10 +53,10 @@ export async function POST(request) {
       );
     }
 
-    // Regex to block HTML tags or script injections
-    const nameRegex = /^[a-zA-Z\s]+$/;
+    // Regex to block HTML tags or script injections, supporting common name punctuation
+    const nameRegex = /^[a-zA-Z\s.'-]+$/;
     if (!nameRegex.test(data.name)) {
-      return NextResponse.json({ error: 'Invalid name format. Only letters and spaces are allowed.' }, { status: 400 });
+      return NextResponse.json({ error: 'Invalid name format. Only letters, spaces, dots, hyphens, and apostrophes are allowed.' }, { status: 400 });
     }
 
     // Regex to ensure phone is exactly 10 digits

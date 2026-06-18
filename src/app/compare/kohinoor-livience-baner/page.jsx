@@ -6,7 +6,7 @@ import Link from 'next/link';
 
 export const metadata = {
   alternates: { canonical: '/compare/kohinoor-livience-baner' },
-  title: 'Kohinoor Livience Aleenta vs Malpani M SoulStrings | Baner Real Estate',
+  title: 'Kohinoor Livience Aleenta vs M SoulStrings Comparison',
   description: 'Comparing Kohinoor Livience Aleenta and Malpani M SoulStrings. Discover why Malpani offers superior Vastu compliance, legacy trust, and a lower-density luxury experience.',
   keywords: ['Kohinoor Livience Pune reviews', 'Livience Aleenta Baner', 'Kohinoor vs Malpani Group', 'luxury 4 BHK comparison Baner', 'Baner Pashan Link Road projects'],
   openGraph: {

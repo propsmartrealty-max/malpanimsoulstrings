@@ -5,7 +5,7 @@ import Link from 'next/link';
 
 export const metadata = {
   alternates: { canonical: '/4bhk-luxury' },
-  title: '4 BHK Premium Flats for Sale in Baner-Pashan Link Road | Malpani',
+  title: '4 BHK Premium Flats for Sale in Baner-Pashan Link Road',
   description: 'Explore the most expansive 4 BHK luxury Estates in the Baner Pashan Link Road real estate market. Vastu-compliant, smart home automation, and 35+ amenities.',
   keywords: [
     '4 BHK premium flats for sale in Baner-Pashan Link Road',
@@ -16,7 +16,24 @@ export const metadata = {
     '4bhk residences',
     '5bhk residences',
     'penthouse homes',
-    'premium luxury homes in pune'
+    'premium luxury homes in pune',
+    'Luxury 4 BHK Pune',
+    'Ultra Luxury 4 BHK Pune',
+    'Premium 4 BHK Pune',
+    'Luxury 4 BHK Baner',
+    'Luxury 4 BHK Pashan',
+    'Luxury 4 BHK West Pune',
+    'Luxury 4 BHK Baner Pashan Link Road',
+    'Large 4 BHK Pune',
+    'Spacious Luxury 4 BHK Pune',
+    'Luxury 4 BHK Apartments Pune',
+    'Exclusive 4 BHK Pune',
+    'Luxury 4 BHK Residences Pune',
+    'Luxury 4 BHK Near Hinjewadi',
+    'Luxury 4 BHK For Sale Pune',
+    'Luxury 4 BHK Homes Baner',
+    'Best Luxury 4 BHK Apartments In Baner Pune',
+    'Premium 4 BHK Homes Near Baner Pune'
   ]
 };
 
@@ -98,10 +115,10 @@ export default function FourBhkLuxuryPage() {
 
             <h2 className="mt-5 mb-4 gradient-text" style={{ fontSize: '2rem' }}>The Zenith of Large-Scale Luxury Living</h2>
             <p>
-                Discover the ultimate in spatial design. Whether you are seeking a sprawling 4 BHK estate or exploring expansive 5 BHK configurations, Malpani M SoulStrings delivers an unparalleled lifestyle. Experience the grandeur of high-altitude living within our perfectly designed towers, renowned for their expansive carpet areas in the West Pune corridor.
+                Discover the ultimate in spatial design. Whether you are seeking a sprawling 4 BHK estate or exploring expansive <Link href="/blog/what-defines-ultra-luxury-5-bhk-residence-pune">5 BHK configurations at Malpani M Soulstrings</Link>, our residences deliver an unparalleled lifestyle. Experience the grandeur of low-density living in our <Link href="/blog/low-density-sky-villas-baner-pashan">exclusive sky villas on Baner Pashan Link Road</Link>.
             </p>
             <p>
-                These residences represent the pinnacle of exclusive living in Baner. Designed as definitive elite homes, every unit is built with strict adherence to Vastu principles. Enjoy panoramic vistas from your private deck, ensuring refreshing cross-ventilation across these majestic sky apartments. Our architectural layout features highly coveted corner homes, establishing them as perfectly secluded and exceptionally private.
+                These residences represent the pinnacle of exclusive living in Baner. Designed as definitive elite homes, every unit is built with <Link href="/blog/vastu-shastra-tips-for-4-bhk-homes-pune">strict adherence to Vastu principles</Link>. Enjoy panoramic vistas from your private deck, ensuring refreshing cross-ventilation across these majestic sky apartments. Our architectural layout features highly coveted corner homes, establishing them as perfectly secluded and exceptionally private.
             </p>
             <p>
                 Engineered as the ideal sanctuary for families, these premium homes sit within magnificent high-rise towers. Experience elevated podium living in these soaring structures and penthouse residences, culminating in striking architectural dominance. For buyers seeking a significant upgrade near the Baner-Pashan Link Road, this is the destination.
@@ -112,7 +129,22 @@ export default function FourBhkLuxuryPage() {
           </article>
 
           <aside className="sidebar">
-            <div className="loc-card" style={{ padding: '1.5rem', borderRadius: '12px', position: 'sticky', top: '100px' }}>
+            <div className="loc-card" style={{ padding: '1.5rem', borderRadius: '12px', marginBottom: '2rem' }}>
+              <h3 style={{ fontSize: '1.2rem', marginBottom: '1rem', color: 'var(--color-primary)' }}>Related Guides & Intelligence</h3>
+              <div className="list-group list-group-flush bg-transparent">
+                <Link href="/blog/low-density-sky-villas-baner-pashan" className="list-group-item list-group-item-action bg-transparent border-secondary text-white" style={{ padding: '0.75rem 0' }}>
+                  <small style={{ color: 'var(--color-accent)' }}>Guide →</small> Low-Density Sky Villas Matrix
+                </Link>
+                <Link href="/vastu-compliant-luxury-homes-pune" className="list-group-item list-group-item-action bg-transparent border-secondary text-white" style={{ padding: '0.75rem 0' }}>
+                  <small style={{ color: 'var(--color-accent)' }}>Architecture →</small> Vastu & Wellness Guide
+                </Link>
+                <Link href="/compare" className="list-group-item list-group-item-action bg-transparent border-secondary text-white" style={{ padding: '0.75rem 0' }}>
+                  <small style={{ color: 'var(--color-accent)' }}>Comparison →</small> Pristine Lords & Kohinoor Alternatives
+                </Link>
+              </div>
+            </div>
+
+            <div className="loc-card" style={{ padding: '1.5rem', borderRadius: '12px', position: 'sticky', top: '350px' }}>
               <h3 style={{ fontSize: '1.2rem', marginBottom: '1rem', color: 'var(--color-primary)' }}>Experience the Masterpiece</h3>
               <p style={{ color: 'var(--color-text-muted)', fontSize: '0.9rem', marginBottom: '1.5rem' }}>Schedule a private viewing at Malpani M SoulStrings to experience true luxury.</p>
               <a href="#" data-bs-toggle="modal" data-bs-target="#enquireModal" className="btn btn-primary" style={{ width: '100%' }}>Download Floor Plan</a>

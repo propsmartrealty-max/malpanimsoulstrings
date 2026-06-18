@@ -34,6 +34,26 @@ export default function EmiCalculator() {
     setEmi(Math.round(calculatedEmi));
   }, [propertyValue, downPayment, interestRate, loanTenure]);
 
+  useEffect(() => {
+    const trackingHandler = setTimeout(() => {
+      if (typeof window !== 'undefined') {
+        window.dataLayer = window.dataLayer || [];
+        window.dataLayer.push({
+          event: 'emi_calculated',
+          propertyValue,
+          downPayment,
+          loanAmount: propertyValue - downPayment,
+          interestRate,
+          loanTenure,
+          estimatedEmi: emi,
+          pagePath: window.location.pathname
+        });
+      }
+    }, 2000); // 2-second debounce to avoid spamming events on drag
+
+    return () => clearTimeout(trackingHandler);
+  }, [propertyValue, downPayment, interestRate, loanTenure, emi]);
+
   // Format currency
   const formatCurrency = (value) => {
     return new Intl.NumberFormat('en-IN', {

@@ -3,7 +3,7 @@ import path from 'path';
 import Link from 'next/link';
 
 export const metadata = {
-  title: 'Real Estate Insights & Blogs | Malpani M SoulStrings',
+  title: 'Real Estate Insights & Blogs',
   description: 'Read the latest real estate market analysis, infrastructure updates, and luxury apartment buying guides for Baner Pashan Link Road, Pune.',
   alternates: {
     canonical: '/blog'

@@ -6,7 +6,7 @@ import Link from 'next/link';
 
 export const metadata = {
   alternates: { canonical: '/compare/pristine-lords-baner' },
-  title: 'Pristine Lords Baner vs Malpani M SoulStrings | 4 BHK Comparison',
+  title: 'Pristine Lords Baner vs M SoulStrings Comparison',
   description: 'Comparing Pristine The Lords and Malpani M SoulStrings in Baner. Discover why elite buyers prefer Malpani\'s ultra-low density, Vastu compliance, and legacy trust.',
   keywords: ['Pristine Lords Baner reviews', 'Pristine Lords vs Malpani SoulStrings', '4 BHK Baner Pashan Link Road', 'Pristine The Lords price', 'luxury apartments West Pune comparison'],
   openGraph: {

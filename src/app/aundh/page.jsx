@@ -6,7 +6,7 @@ import Link from 'next/link';
 
 export const metadata = {
   alternates: { canonical: '/aundh' },
-  title: 'Upgrade Your Legacy: Aundh to Baner Pashan Link Road | Malpani',
+  title: 'Upgrade Your Legacy: Aundh to Baner Pashan Link Road',
   description: 'The ultimate real estate upgrade for Aundh residents. Discover expansive, 35+ amenity luxury estates at Malpani M SoulStrings.',
 };
 

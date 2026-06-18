@@ -1,8 +1,11 @@
 "use client";
 
 import { useEffect } from "react";
+import { usePathname } from "next/navigation";
 
 export default function ClientScripts() {
+  const pathname = usePathname();
+
   useEffect(() => {
     // Preloader Logic
     const preloader = document.getElementById('preloader');
@@ -87,6 +90,18 @@ export default function ClientScripts() {
         if (res.ok) {
           if(btn) btn.style.display = 'none';
           if(formSuccess) formSuccess.style.display = 'block';
+          
+          // Push event to Google Tag Manager / Analytics dataLayer
+          if (typeof window !== 'undefined') {
+            window.dataLayer = window.dataLayer || [];
+            window.dataLayer.push({
+              event: 'form_submission',
+              formId: 'smart-contact-form',
+              formName: 'Homepage Contact Form',
+              pagePath: window.location.pathname
+            });
+          }
+          
           smartForm.reset();
         } else {
           if(btn) btn.textContent = 'Error. Try Again.';
@@ -99,47 +114,6 @@ export default function ClientScripts() {
       smartForm.addEventListener('submit', onSmartSubmit);
     }
 
-    // Brochure Form Submission Logic
-    const brochureForm = document.getElementById('brochure-form');
-    const brochureSuccess = document.getElementById('brochure-success-msg');
-    
-    const onBrochureSubmit = async (e) => {
-      e.preventDefault();
-      const btn = brochureForm.querySelector('button[type="submit"]');
-      if(btn) btn.textContent = 'Verifying securely...';
-      
-      const formData = new FormData(brochureForm);
-      const data = Object.fromEntries(formData.entries());
-
-      try {
-        const res = await fetch('/api/contact', {
-          method: 'POST',
-          headers: { 'Content-Type': 'application/json' },
-          body: JSON.stringify(data)
-        });
-        
-        if (res.ok) {
-          if(btn) btn.style.display = 'none';
-          if(brochureSuccess) brochureSuccess.style.display = 'block';
-          
-          setTimeout(() => {
-            const modal = document.getElementById('brochure-modal');
-            if(modal) modal.style.display = 'none';
-            brochureForm.reset();
-            if(btn) {
-              btn.style.display = 'block';
-              btn.textContent = 'Unlock Brochure';
-            }
-            if(brochureSuccess) brochureSuccess.style.display = 'none';
-          }, 2000);
-        }
-      } catch (err) {
-        if(btn) btn.textContent = 'Network Error';
-      }
-    };
-    if (brochureForm && brochureSuccess) {
-      brochureForm.addEventListener('submit', onBrochureSubmit);
-    }
 
     // Global Modal Trigger Fix for Next.js
     const handleModalToggle = (e) => {
@@ -155,6 +129,14 @@ export default function ClientScripts() {
               modalInstance = new window.bootstrap.Modal(modalEl);
             }
             modalInstance.show();
+            
+            // Push event to Google Tag Manager / Analytics dataLayer
+            window.dataLayer = window.dataLayer || [];
+            window.dataLayer.push({
+              event: 'modal_open',
+              modalTarget: targetSelector,
+              pagePath: window.location.pathname
+            });
           }
         }
       }
@@ -167,9 +149,8 @@ export default function ClientScripts() {
       window.removeEventListener('scroll', onScroll);
       observer.disconnect();
       smartForm?.removeEventListener('submit', onSmartSubmit);
-      brochureForm?.removeEventListener('submit', onBrochureSubmit);
     };
-  }, []);
+  }, [pathname]);
 
   return null;
 }

@@ -47,6 +47,18 @@ export default function ExitIntentModal() {
 
       if (res.ok) {
         setSuccess(true);
+        
+        // Push event to Google Tag Manager / Analytics dataLayer
+        if (typeof window !== 'undefined') {
+          window.dataLayer = window.dataLayer || [];
+          window.dataLayer.push({
+            event: 'form_submission',
+            formId: 'exit-intent-form',
+            formName: 'Exit Intent VIP Brochure Form',
+            pagePath: window.location.pathname
+          });
+        }
+
         e.target.reset();
         setTimeout(() => {
           setShowModal(false);

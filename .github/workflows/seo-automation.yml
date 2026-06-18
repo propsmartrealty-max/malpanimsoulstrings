@@ -22,12 +22,29 @@ jobs:
         with:
           node-version: '20'
 
-      - name: Push IndexNow Payload
-        # Runs the ping script independently of Vercel deployments to prevent timeouts.
-        # Adds a 120 second delay to ensure Vercel finishes deploying the main branch before pinging.
-        run: |
-          sleep 120
-          node scripts/ping-sitemap.js
+      - name: Install Dependencies
+        run: npm ci || npm install
+
+      - name: Run SEO Compliance Audit
+        run: npm run seo-audit
+
+      - name: Defer Indexing (Allow Vercel Deployment to Finish)
+        run: sleep 120
+
+      - name: Create Google Service Account File
+        if: env.GOOGLE_SERVICE_ACCOUNT_JSON != ''
+        run: echo "${{ secrets.GOOGLE_SERVICE_ACCOUNT_JSON }}" > google-service-account.json
+        env:
+          GOOGLE_SERVICE_ACCOUNT_JSON: ${{ secrets.GOOGLE_SERVICE_ACCOUNT_JSON }}
+
+      - name: Push Google Indexing API Payload
+        if: env.GOOGLE_SERVICE_ACCOUNT_JSON != ''
+        run: node scripts/ping-google.js
+        env:
+          GOOGLE_SERVICE_ACCOUNT_JSON: ${{ secrets.GOOGLE_SERVICE_ACCOUNT_JSON }}
+
+      - name: Push IndexNow Payload (Bing / Yahoo / Yandex)
+        run: node scripts/ping-sitemap.js
 
       - name: Retry IndexNow Payload (if first attempt failed)
         if: failure()

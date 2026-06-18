@@ -5,7 +5,7 @@ export default async function sitemap() {
   const baseUrl = 'https://www.malpanimsoulstrings.com';
 
   // Strategic Priority Tiers
-  const tier1 = ['', '/4bhk-luxury', '/location', '/nri-investment']; // Core Conversion
+  const tier1 = ['', '/4bhk-luxury', '/3bhk-luxury', '/5bhk-duplex', '/penthouse-luxury', '/location', '/nri-investment']; // Core Conversion
   const tier2 = ['/amenities', '/infrastructure', '/baner-overview', '/pune-west-real-estate-market', '/vastu-compliant-luxury-homes-pune', '/blog']; // Informational Hubs
   const tier3 = ['/market-analysis', '/it-professionals-luxury-homes-pune', '/pune-real-estate-market', '/baner-real-estate-market', '/pune-infrastructure-metro-impact', '/aundh', '/pashan', '/shivajinagar']; // Secondary Informational
   const tier4 = ['/compare', '/compare/pristine-lords-baner', '/compare/kohinoor-livience-baner', '/sitemap']; // Competitor Comparisons & Utility

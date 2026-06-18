@@ -33,6 +33,42 @@ export default function SchemaMarkup({ pageName, pageUrl }) {
           { "@type": "LocationFeatureSpecification", "name": "Clubhouse", "value": "True" },
           { "@type": "LocationFeatureSpecification", "name": "Smart Home Automation", "value": "True" }
         ]
+      },
+      {
+        "@type": "RealEstateAgent",
+        "@id": "https://www.malpanimsoulstrings.com/#realestateagent",
+        "name": "Malpani M SoulStrings Sales Gallery",
+        "image": "https://malpani-cms.firsteconomy.com/uploads/M_soul_strings_Desktop_Banner_Without_Text_0d38ce28d4.jpg",
+        "telephone": "+91 7744009295",
+        "url": "https://www.malpanimsoulstrings.com/",
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "Baner Pashan Link Road, near Vighnaharta Chowk, Pashan",
+          "addressLocality": "Pune",
+          "addressRegion": "Maharashtra",
+          "postalCode": "411021",
+          "addressCountry": "IN"
+        },
+        "geo": {
+          "@type": "GeoCoordinates",
+          "latitude": "18.553715",
+          "longitude": "73.774577"
+        },
+        "openingHoursSpecification": {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": [
+            "Monday",
+            "Tuesday",
+            "Wednesday",
+            "Thursday",
+            "Friday",
+            "Saturday",
+            "Sunday"
+          ],
+          "opens": "09:00",
+          "closes": "20:00"
+        },
+        "priceRange": "$$$$"
       }
     ]
   };

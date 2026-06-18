@@ -5,7 +5,7 @@ import Link from 'next/link';
 
 export const metadata = {
   alternates: { canonical: '/infrastructure' },
-  title: 'Infrastructure & Market Metrics 2026 | Malpani M SoulStrings',
+  title: 'Infrastructure & Market Metrics 2026',
   description: 'Infrastructure developments driving Pune West real estate growth — metro connectivity, road expansion, and IT corridor impact on luxury property values at Baner-Pashan Link Road.',
 };
 

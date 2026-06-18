@@ -8,7 +8,29 @@ export const metadata = {
   alternates: { canonical: '/vastu-compliant-luxury-homes-pune' },
   title: 'Vastu Compliant 3 BHK & 4 BHK Luxury Homes in Pune | Baner',
   description: 'Looking for 100% Vastu-compliant luxury apartments in Pune? Explore Malpani M SoulStrings in Baner, offering East-West facing homes with ultimate positive energy flow.',
-  keywords: 'Vastu compliant 4 BHK flats in Pune, East facing luxury apartments Baner, Vastu homes West Pune, Malpani SoulStrings Vastu, luxury real estate positive energy',
+  keywords: [
+    'Vastu compliant 4 BHK flats in Pune',
+    'East facing luxury apartments Baner',
+    'Vastu homes West Pune',
+    'Malpani SoulStrings Vastu',
+    'luxury real estate positive energy',
+    'Pune Luxury Real Estate',
+    'Luxury Real Estate Pune',
+    'Luxury Apartments Pune',
+    'Ultra Luxury Apartments Pune',
+    'Premium Homes Pune',
+    'High End Homes Pune',
+    'Exclusive Residences Pune',
+    'Luxury Living Pune',
+    'Luxury Property Pune',
+    'Luxury Flats Pune',
+    'Premium Apartments Pune',
+    'Luxury Residences Pune',
+    'Elite Homes Pune',
+    'Signature Homes Pune',
+    'Luxury Lifestyle Pune',
+    'Luxury Residential Projects Pune'
+  ],
   openGraph: {
     title: 'Vastu Compliant Luxury Homes in Pune',
     description: 'Explore 100% Vastu-compliant 3 BHK and 4 BHK luxury apartments at Malpani M SoulStrings in Baner.',
@@ -75,13 +97,13 @@ export default function VastuHomesPage() {
           
           <article className="main-content">
             <h2>The Importance of Vastu in Ultra-Luxury Real Estate</h2>
-            <p>In the ultra-luxury segment of the <strong>Pune West Real Estate Market</strong>, buyers are not just investing in square footage; they are investing in prosperity, health, and multi-generational well-being. Vastu Shastra, the ancient Indian science of architecture, dictates the flow of cosmic energy within a home. A highly Vastu-compliant home is proven to enhance mental peace, financial stability, and physical health for its residents.</p>
+            <p>In the ultra-luxury segment of the <strong>Pune West Real Estate Market</strong>, buyers are not just investing in square footage; they are investing in prosperity, health, and multi-generational well-being. Vastu Shastra, the <Link href="/blog/vastu-shastra-tips-for-4-bhk-homes-pune">ancient Indian science of architecture utilized at Malpani M Soulstrings</Link>, dictates the flow of cosmic energy within a home. A highly Vastu-compliant home is proven to enhance mental peace, financial stability, and physical health for its residents.</p>
 
             <h2>The Challenge with Modern High-Rises</h2>
             <p>Many modern skyscrapers in Pune claim to be "Vastu-friendly," but the reality of high-density construction often forces architects to make severe compromises. Awkward structural columns, irregular plot shapes, and cramped core layouts frequently disrupt the critical cardinal alignments required for true Vastu compliance.</p>
 
             <h2>How Malpani M SoulStrings Achieves 100% Vastu Compliance</h2>
-            <p>At <strong><Link href="/">Malpani M SoulStrings</Link></strong>, located on the premium Baner-Pashan Link Road, Vastu was not an afterthought—it was the foundational principle that dictated the entire master plan. Here is how our 3 BHK and 4 BHK luxury estates achieve unparalleled energetic alignment:</p>
+            <p>At <strong><Link href="/">Malpani M SoulStrings</Link></strong>, located on the premium Baner-Pashan Link Road, Vastu was not an afterthought—it was the foundational principle that dictated the entire master plan. Here is how our <Link href="/blog/low-density-sky-villas-baner-pashan">3 BHK and 4 BHK luxury estates on Baner Pashan Link Road</Link> achieve unparalleled energetic alignment:</p>
 
             <h3>1. The Golden East-West Axis</h3>
             <p>The primary entrances and major living spaces are strictly aligned along the East-West axis. This ensures that the home receives the highly auspicious morning sunlight (ultraviolet rays) from the East, naturally cleansing the home's atmosphere, while the West alignment facilitates optimal cross-ventilation during the evening.</p>
@@ -153,10 +175,16 @@ export default function VastuHomesPage() {
                 <Link href="/nri-investment" className="list-group-item list-group-item-action bg-transparent border-secondary text-white" style={{ padding: '0.75rem 0' }}>
                   <small style={{ color: 'var(--color-accent)' }}>Guide →</small> NRI Investment
                 </Link>
+                <Link href="/blog/vastu-shastra-tips-for-4-bhk-homes-pune" className="list-group-item list-group-item-action bg-transparent border-secondary text-white" style={{ padding: '0.75rem 0' }}>
+                  <small style={{ color: 'var(--color-accent)' }}>Vastu →</small> Vastu for 4 BHK Homes
+                </Link>
+                <Link href="/blog/low-density-sky-villas-baner-pashan" className="list-group-item list-group-item-action bg-transparent border-secondary text-white" style={{ padding: '0.75rem 0' }}>
+                  <small style={{ color: 'var(--color-accent)' }}>Exclusivity →</small> Low-Density Sky Villas Matrix
+                </Link>
               </div>
             </div>
 
-            <div className="loc-card" style={{ padding: '1.5rem', borderRadius: '12px', position: 'sticky', top: '450px' }}>
+            <div className="loc-card" style={{ padding: '1.5rem', borderRadius: '12px', position: 'sticky', top: '520px' }}>
               <h3 style={{ fontSize: '1.2rem', marginBottom: '1rem', color: 'var(--color-primary)' }}>Vastu Features</h3>
               <ul className="dense-amenity-list" style={{ paddingLeft: '1.2rem', marginBottom: '1.5rem' }}>
                   <li>East-West Axis</li>

@@ -43,7 +43,7 @@ export async function generateMetadata({ params }) {
   }
 
   return {
-    title: `${title} | Malpani M SoulStrings Blog`,
+    title: `${title} | Blog`,
     description,
     alternates: {
       canonical: `/blog/${slug}`

@@ -8,7 +8,34 @@ export const metadata = {
   alternates: { canonical: '/pune-infrastructure-metro-impact' },
   title: 'Pune Infrastructure & Real Estate Impact 2026 | Metro Line 3 & Ring Road',
   description: 'Discover how the Pune Metro Line 3 and Ring Road are driving massive capital appreciation in the Pune Real Estate Market. Explore luxury property investments on Baner-Pashan Link Road.',
-  keywords: 'Pune Metro Line 3 real estate, Pune Ring Road property investment, infrastructure impact on Pune real estate, Baner real estate appreciation, West Pune infrastructure 2026',
+  keywords: [
+    'Pune Metro Line 3 real estate',
+    'Pune Ring Road property investment',
+    'infrastructure impact on Pune real estate',
+    'Baner real estate appreciation',
+    'West Pune infrastructure 2026',
+    'upcoming infrastructure projects baner',
+    'pune metro line 3 real estate impact',
+    'pune real estate market trends 2026',
+    'capital appreciation baner',
+    'pune property index',
+    'Buy Luxury Home Pune',
+    'Luxury Homes For Sale Pune',
+    'Premium Apartments For Sale Pune',
+    'Luxury Flats For Sale Pune',
+    'Invest In Luxury Property Pune',
+    'Best Luxury Projects Pune',
+    'New Luxury Launches Pune',
+    'Ready To Move Luxury Homes Pune',
+    'Luxury Property Near IT Hub Pune',
+    'Luxury Homes Near Hinjewadi',
+    'Luxury Homes Near Baner',
+    'Luxury Property West Pune',
+    'Premium Real Estate Investment Pune',
+    'Best Luxury Homes In Pune',
+    'Ultra Luxury Apartments In West Pune',
+    'Luxury Residences Near Hinjewadi IT Park'
+  ],
   openGraph: {
     title: 'Pune Infrastructure & Real Estate Impact 2026',
     description: 'Discover how the Pune Metro Line 3 and Ring Road are driving massive capital appreciation in the Pune Real Estate Market.',
@@ -78,7 +105,7 @@ export default function PuneInfrastructurePage() {
             <p>The <strong>Pune West Real Estate Market</strong> is currently undergoing a massive transformation, transitioning from an IT-dependent suburb into a self-sustaining, highly connected urban powerhouse. The primary drivers of this transformation are two mega-infrastructure projects: the Pune Metro Line 3 and the proposed Pune Ring Road.</p>
 
             <h3>1. Pune Metro Line 3: The Hinjewadi-Shivajinagar Lifeline</h3>
-            <p>The upcoming 23.3 km elevated Metro Line 3 will directly connect the Hinjewadi IT hub to the central business district of Shivajinagar. This critical transit artery will drastically cut commute times across West Pune.</p>
+            <p>The <Link href="/blog/future-of-baner-pashan-link-road-infrastructure">upcoming 23.3 km elevated Metro Line 3 and associated Baner Pashan Link Road infrastructure upgrades</Link> will directly connect the Hinjewadi IT hub to the central business district of Shivajinagar. This critical transit artery will drastically cut commute times across West Pune.</p>
             <ul>
                 <li><strong>Traffic Decongestion:</strong> Commutes that currently take 45-60 minutes will be reduced to 15-20 minutes.</li>
                 <li><strong>Real Estate Appreciation:</strong> Properties located within a 2-kilometer radius of metro stations are already witnessing an 8-12% annual capital appreciation premium compared to non-metro corridors.</li>
@@ -120,7 +147,7 @@ export default function PuneInfrastructurePage() {
             <p>By connecting major national highways, the Ring Road ensures that logistics and heavy transport bypass residential zones entirely, elevating the luxury quotient and air quality for high-end residential projects.</p>
 
             <h2>Why Malpani M SoulStrings is the Ultimate Beneficiary</h2>
-            <p>Strategic location is the cornerstone of luxury real estate investment. <strong><Link href="/">Malpani M SoulStrings</Link></strong> is perfectly positioned on the Baner-Pashan Link Road to reap the maximum benefits of this infrastructure boom without suffering from direct transit noise.</p>
+            <p>Strategic location is the cornerstone of luxury real estate investment. <Link href="/blog/hinjewadi-spillover-baner-luxury-boom">Malpani M SoulStrings is perfectly positioned on the Baner-Pashan Link Road</Link> to reap the maximum benefits of this infrastructure boom without suffering from direct transit noise.</p>
             
             <p>As the premier development in the <strong>Baner Real Estate Market</strong>, it offers:</p>
             <ul>
@@ -156,10 +183,16 @@ export default function PuneInfrastructurePage() {
                 <Link href="/nri-investment" className="list-group-item list-group-item-action bg-transparent border-secondary text-white" style={{ padding: '0.75rem 0' }}>
                   <small style={{ color: 'var(--color-accent)' }}>Guide →</small> NRI Investment
                 </Link>
+                <Link href="/blog/future-of-baner-pashan-link-road-infrastructure" className="list-group-item list-group-item-action bg-transparent border-secondary text-white" style={{ padding: '0.75rem 0' }}>
+                  <small style={{ color: 'var(--color-accent)' }}>Metro →</small> Metro Infrastructure Impact
+                </Link>
+                <Link href="/blog/hinjewadi-spillover-baner-luxury-boom" className="list-group-item list-group-item-action bg-transparent border-secondary text-white" style={{ padding: '0.75rem 0' }}>
+                  <small style={{ color: 'var(--color-accent)' }}>Spillover →</small> Hinjewadi Tech Spillover
+                </Link>
               </div>
             </div>
 
-            <div className="loc-card" style={{ padding: '1.5rem', borderRadius: '12px', position: 'sticky', top: '450px' }}>
+            <div className="loc-card" style={{ padding: '1.5rem', borderRadius: '12px', position: 'sticky', top: '520px' }}>
               <h3 style={{ fontSize: '1.2rem', marginBottom: '1rem', color: 'var(--color-primary)' }}>Project Highlights</h3>
               <ul className="dense-amenity-list" style={{ paddingLeft: '1.2rem', marginBottom: '1.5rem' }}>
                   <li>35+ World-Class Amenities</li>
