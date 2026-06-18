@@ -15,6 +15,7 @@ export default function SchemaMarkup({ pageName, pageUrl }) {
         "description": "Ultra-premium 3 BHK, 4 BHK, 5 BHK, Duplex, and Penthouse luxury estates with 35+ world-class amenities at Baner-Pashan Link Road, Pune West.",
         "url": "https://www.malpanimsoulstrings.com/",
         "telephone": "+91 7744009295",
+        "governmentIdentifier": "MahaRERA Registration: P52100076782 (Wing B), P52100055678 (Wing C)",
         "address": {
           "@type": "PostalAddress",
           "streetAddress": "Baner Pashan Link Road",
@@ -41,6 +42,7 @@ export default function SchemaMarkup({ pageName, pageUrl }) {
         "image": "https://malpani-cms.firsteconomy.com/uploads/M_soul_strings_Desktop_Banner_Without_Text_0d38ce28d4.jpg",
         "telephone": "+91 7744009295",
         "url": "https://www.malpanimsoulstrings.com/",
+        "governmentIdentifier": "MahaRERA Registration: P52100076782, P52100055678",
         "address": {
           "@type": "PostalAddress",
           "streetAddress": "Baner Pashan Link Road, near Vighnaharta Chowk, Pashan",
