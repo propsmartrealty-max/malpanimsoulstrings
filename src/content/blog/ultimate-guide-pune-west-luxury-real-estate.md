@@ -27,9 +27,9 @@ The operationalization of the Pune Metro and the development of the Baner-Pashan
 ## Configurations Defining the Market
 
 The **west pune luxury apartments** market caters exclusively to those who demand space. 
-*   **[Luxury 3 BHK West Pune](/4bhk-luxury):** The new baseline for luxury, offering vast living areas and private decks.
-*   **[Luxury 4 BHK West Pune](/4bhk-luxury):** Designed for sprawling families, featuring dual master suites and servant quarters.
-*   **[Sky Villas West Pune](/4bhk-luxury):** The absolute zenith of the market, offering panoramic views and uncompromised privacy.
+*   **[Luxury 3 BHK West Pune](/4bhk-luxury-malpani-m-soulstrings-baner-pashan-link-road):** The new baseline for luxury, offering vast living areas and private decks.
+*   **[Luxury 4 BHK West Pune](/4bhk-luxury-malpani-m-soulstrings-baner-pashan-link-road):** Designed for sprawling families, featuring dual master suites and servant quarters.
+*   **[Sky Villas West Pune](/4bhk-luxury-malpani-m-soulstrings-baner-pashan-link-road):** The absolute zenith of the market, offering panoramic views and uncompromised privacy.
 
 ## Secure Your Place in Pune's Future
 

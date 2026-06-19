@@ -5,10 +5,10 @@ export default async function sitemap() {
   const baseUrl = 'https://www.malpanimsoulstrings.com';
 
   // Strategic Priority Tiers
-  const tier1 = ['', '/4bhk-luxury', '/3bhk-luxury', '/5bhk-duplex', '/penthouse-luxury', '/location', '/nri-investment']; // Core Conversion
-  const tier2 = ['/amenities', '/infrastructure', '/baner-overview', '/pune-west-real-estate-market', '/vastu-compliant-luxury-homes-pune', '/blog']; // Informational Hubs
-  const tier3 = ['/market-analysis', '/it-professionals-luxury-homes-pune', '/pune-real-estate-market', '/baner-real-estate-market', '/pune-infrastructure-metro-impact', '/aundh', '/pashan', '/shivajinagar']; // Secondary Informational
-  const tier4 = ['/compare', '/compare/pristine-lords-baner', '/compare/kohinoor-livience-baner', '/sitemap']; // Competitor Comparisons & Utility
+  const tier1 = ['', '/4bhk-luxury-malpani-m-soulstrings-baner-pashan-link-road', '/3bhk-luxury-malpani-m-soulstrings-baner-pashan-link-road', '/5bhk-duplex-malpani-m-soulstrings-baner-pashan-link-road', '/penthouse-luxury-malpani-m-soulstrings-baner-pashan-link-road', '/location-malpani-m-soulstrings-baner-pashan-link-road', '/nri-investment-malpani-m-soulstrings-baner-pashan-link-road']; // Core Conversion
+  const tier2 = ['/amenities-malpani-m-soulstrings-baner-pashan-link-road', '/infrastructure-malpani-m-soulstrings-baner-pashan-link-road', '/baner-overview-malpani-m-soulstrings-baner-pashan-link-road', '/pune-west-real-estate-market-malpani-m-soulstrings-baner-pashan-link-road', '/vastu-compliant-luxury-homes-pune-malpani-m-soulstrings-baner-pashan-link-road', '/blog-malpani-m-soulstrings-baner-pashan-link-road']; // Informational Hubs
+  const tier3 = ['/market-analysis-malpani-m-soulstrings-baner-pashan-link-road', '/it-professionals-luxury-homes-pune-malpani-m-soulstrings-baner-pashan-link-road', '/pune-real-estate-market-malpani-m-soulstrings-baner-pashan-link-road', '/baner-real-estate-market-malpani-m-soulstrings-baner-pashan-link-road', '/pune-infrastructure-metro-impact-malpani-m-soulstrings-baner-pashan-link-road', '/aundh-malpani-m-soulstrings-baner-pashan-link-road', '/pashan-malpani-m-soulstrings-baner-pashan-link-road', '/shivajinagar-malpani-m-soulstrings-baner-pashan-link-road']; // Secondary Informational
+  const tier4 = ['/compare-malpani-m-soulstrings-baner-pashan-link-road', '/compare-malpani-m-soulstrings-baner-pashan-link-road/pristine-lords-baner-malpani-m-soulstrings-baner-pashan-link-road', '/compare-malpani-m-soulstrings-baner-pashan-link-road/kohinoor-livience-baner-malpani-m-soulstrings-baner-pashan-link-road', '/sitemap-malpani-m-soulstrings-baner-pashan-link-road']; // Competitor Comparisons & Utility
 
   const allStaticRoutes = [
     ...tier1.map(route => ({ route, priority: 1.0, freq: 'daily' })),
@@ -35,7 +35,7 @@ export default async function sitemap() {
       const stats = fs.statSync(filePath);
       
       return {
-        url: `${baseUrl}/blog/${file.replace('.md', '')}`,
+        url: `${baseUrl}/blog-malpani-m-soulstrings-baner-pashan-link-road/${file.replace('.md', '')}`,
         lastModified: stats.mtime, // True modification time for accurate Googlebot crawling
         changeFrequency: 'weekly',
         priority: 0.9,

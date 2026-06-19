@@ -26,6 +26,6 @@ If you are a tech leader looking to capitalize on this geographic sweet spot, wh
 
 The **best luxury project pune** will be one that sits exactly on the fault line of connectivity and ecology. The Baner-Pashan Link Road is exactly that fault line. It offers the rapid highway access required for Hinjewadi commutes while backing directly into the protected Pashan hills for zero-pollution living.
 
-Projects like **[Malpani M SoulStrings](/location)** are engineered specifically for this demographic. By offering expansive 3 & 4 BHK estates with smart home automation, dedicated co-working lounges, and a massive 35+ amenity clubhouse, it serves as the ultimate executive sanctuary.
+Projects like **[Malpani M SoulStrings](/location-malpani-m-soulstrings-baner-pashan-link-road)** are engineered specifically for this demographic. By offering expansive 3 & 4 BHK estates with smart home automation, dedicated co-working lounges, and a massive 35+ amenity clubhouse, it serves as the ultimate executive sanctuary.
 
-**Stop compromising between your commute and your lifestyle. [Explore Malpani M SoulStrings today](/location) and discover true luxury living in Pune West.**
+**Stop compromising between your commute and your lifestyle. [Explore Malpani M SoulStrings today](/location-malpani-m-soulstrings-baner-pashan-link-road) and discover true luxury living in Pune West.**

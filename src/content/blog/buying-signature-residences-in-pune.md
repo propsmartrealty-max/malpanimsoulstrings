@@ -32,4 +32,4 @@ A signature residence must act as a self-sustaining luxury ecosystem. Look beyon
 
 If you demand a residence that checks every box on this list, **Malpani M SoulStrings** is the undeniable answer. Located on the prestigious Baner-Pashan Link road, these 3 & 4 BHK estates are architecturally designed to be the most iconic towers in West Pune.
 
-**[Explore our configurations](/4bhk-luxury) and submit an inquiry to review our floor plans and pricing strategy today.**
+**[Explore our configurations](/4bhk-luxury-malpani-m-soulstrings-baner-pashan-link-road) and submit an inquiry to review our floor plans and pricing strategy today.**

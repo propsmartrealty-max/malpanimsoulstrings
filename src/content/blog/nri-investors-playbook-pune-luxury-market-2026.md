@@ -19,7 +19,7 @@ Pune offers a unique macroeconomic environment that is highly favorable for NRIs
 Micro-markets like Baner, Balewadi, and Pashan are experiencing land scarcity. Unlike the sprawling eastern corridors, West Pune is geographically bounded by hills and biodiversity parks. This severe supply constraint for new, large-scale projects guarantees steep capital appreciation. Properties in the Baner-Pashan Link road have historically appreciated at 10-14% annually.
 
 ### 2. High-Yield Rental Markets
-When you invest in **second home investment pune** or luxury assets, your target tenant is typically a C-suite executive. These tenants require 35+ amenities, stringent security, and smart-home features. Projects that offer these—like **[Malpani M SoulStrings](/location)**—can command exceptional rental yields that far outpace inflation.
+When you invest in **second home investment pune** or luxury assets, your target tenant is typically a C-suite executive. These tenants require 35+ amenities, stringent security, and smart-home features. Projects that offer these—like **[Malpani M SoulStrings](/location-malpani-m-soulstrings-baner-pashan-link-road)**—can command exceptional rental yields that far outpace inflation.
 
 ## The NRI Checklist for 2026
 
@@ -28,4 +28,4 @@ If you are evaluating **luxury homes for nri buyers pune**, ensure the project m
 *   **Configuration:** Opt for expansive 3 BHK or 4 BHK layouts. The pandemic permanently shifted tenant preference towards larger spaces with dedicated home offices.
 *   **Proximity to Commercial Hubs:** Ensure the property is within a 15-minute commute of major IT parks to guarantee tenant occupancy.
 
-**Are you ready to secure a high-yield asset in Pune's most lucrative market? [Contact our NRI Advisory Team](/nri-investment) today for a personalized investment portfolio review.**
+**Are you ready to secure a high-yield asset in Pune's most lucrative market? [Contact our NRI Advisory Team](/nri-investment-malpani-m-soulstrings-baner-pashan-link-road) today for a personalized investment portfolio review.**

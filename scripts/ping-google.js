@@ -10,30 +10,30 @@ const KEY_FILE = path.join(process.cwd(), 'google-service-account.json');
 // Static page URLs
 const STATIC_PATHS = [
   '/',
-  '/4bhk-luxury',
-  '/3bhk-luxury',
-  '/5bhk-duplex',
-  '/penthouse-luxury',
-  '/location',
-  '/nri-investment',
-  '/amenities',
-  '/infrastructure',
-  '/baner-overview',
-  '/pune-west-real-estate-market',
-  '/vastu-compliant-luxury-homes-pune',
-  '/blog',
-  '/market-analysis',
-  '/it-professionals-luxury-homes-pune',
-  '/pune-real-estate-market',
-  '/baner-real-estate-market',
-  '/pune-infrastructure-metro-impact',
-  '/aundh',
-  '/pashan',
-  '/shivajinagar',
-  '/compare',
-  '/compare/pristine-lords-baner',
-  '/compare/kohinoor-livience-baner',
-  '/sitemap',
+  '/4bhk-luxury-malpani-m-soulstrings-baner-pashan-link-road',
+  '/3bhk-luxury-malpani-m-soulstrings-baner-pashan-link-road',
+  '/5bhk-duplex-malpani-m-soulstrings-baner-pashan-link-road',
+  '/penthouse-luxury-malpani-m-soulstrings-baner-pashan-link-road',
+  '/location-malpani-m-soulstrings-baner-pashan-link-road',
+  '/nri-investment-malpani-m-soulstrings-baner-pashan-link-road',
+  '/amenities-malpani-m-soulstrings-baner-pashan-link-road',
+  '/infrastructure-malpani-m-soulstrings-baner-pashan-link-road',
+  '/baner-overview-malpani-m-soulstrings-baner-pashan-link-road',
+  '/pune-west-real-estate-market-malpani-m-soulstrings-baner-pashan-link-road',
+  '/vastu-compliant-luxury-homes-pune-malpani-m-soulstrings-baner-pashan-link-road',
+  '/blog-malpani-m-soulstrings-baner-pashan-link-road',
+  '/market-analysis-malpani-m-soulstrings-baner-pashan-link-road',
+  '/it-professionals-luxury-homes-pune-malpani-m-soulstrings-baner-pashan-link-road',
+  '/pune-real-estate-market-malpani-m-soulstrings-baner-pashan-link-road',
+  '/baner-real-estate-market-malpani-m-soulstrings-baner-pashan-link-road',
+  '/pune-infrastructure-metro-impact-malpani-m-soulstrings-baner-pashan-link-road',
+  '/aundh-malpani-m-soulstrings-baner-pashan-link-road',
+  '/pashan-malpani-m-soulstrings-baner-pashan-link-road',
+  '/shivajinagar-malpani-m-soulstrings-baner-pashan-link-road',
+  '/compare-malpani-m-soulstrings-baner-pashan-link-road',
+  '/compare-malpani-m-soulstrings-baner-pashan-link-road/pristine-lords-baner-malpani-m-soulstrings-baner-pashan-link-road',
+  '/compare-malpani-m-soulstrings-baner-pashan-link-road/kohinoor-livience-baner-malpani-m-soulstrings-baner-pashan-link-road',
+  '/sitemap-malpani-m-soulstrings-baner-pashan-link-road',
 ];
 
 // Discover blog URLs from src/content/blog/ directory
@@ -41,7 +41,7 @@ function getBlogUrls() {
   const blogDir = path.join(process.cwd(), 'src', 'content', 'blog');
   try {
     const files = fs.readdirSync(blogDir).filter(f => f.endsWith('.md'));
-    return files.map(f => `/blog/${f.replace('.md', '')}`);
+    return files.map(f => `/blog-malpani-m-soulstrings-baner-pashan-link-road/${f.replace('.md', '')}`);
   } catch (e) {
     console.warn('[WARN] Could not read blog directory:', e.message);
     return [];

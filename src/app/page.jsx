@@ -415,7 +415,7 @@ export default function Home() {
               <article key={slug} className="blog-card" style={{ display: 'flex', flexDirection: 'column', justifyContent: 'space-between' }}>
                 <h3 >{title}</h3>
                 <p >Explore the latest metrics, infrastructure updates, and luxury real estate trends in West Pune.</p>
-                <Link href={`/blog/${slug}`} >Read More</Link>
+                <Link href={`/blog-malpani-m-soulstrings-baner-pashan-link-road/${slug}`} >Read More</Link>
               </article>
             );
           })}

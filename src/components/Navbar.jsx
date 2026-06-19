@@ -54,16 +54,16 @@ export default function Navbar() {
         <button onClick={toggleMenu} aria-label="Close Mobile Menu" style={{ position: 'absolute', top: '2rem', right: '2rem', background: 'none', border: 'none', color: 'var(--color-primary)', cursor: 'pointer', fontSize: '3rem', transition: 'var(--transition-smooth)' }}>&times;</button>
         <nav className="overlay-content" aria-label="Mobile Navigation">
           <Link href="/" className="overlay-link" onClick={toggleMenu}>Home / Legacy</Link>
-          <Link href="/3bhk-luxury" className="overlay-link" onClick={toggleMenu}>3 BHK Luxury Apartments</Link>
-          <Link href="/4bhk-luxury" className="overlay-link" onClick={toggleMenu}>4 BHK Luxury Residences</Link>
-          <Link href="/5bhk-duplex" className="overlay-link" onClick={toggleMenu}>5 BHK & Duplex Homes</Link>
-          <Link href="/penthouse-luxury" className="overlay-link" onClick={toggleMenu}>Sky Penthouses</Link>
-          <Link href="/amenities" className="overlay-link" onClick={toggleMenu}>Amenities & Lifestyle</Link>
-          <Link href="/location" className="overlay-link" onClick={toggleMenu}>Location (Baner Pashan Link Road)</Link>
-          <Link href="/infrastructure" className="overlay-link" onClick={toggleMenu}>Infrastructure Updates</Link>
-          <Link href="/baner-overview" className="overlay-link" onClick={toggleMenu}>Baner Real Estate Guide</Link>
-          <Link href="/blog" className="overlay-link" onClick={toggleMenu}>Insights & Articles</Link>
-          <Link href="/market-analysis" className="overlay-link" onClick={toggleMenu} style={{ color: 'var(--color-accent)' }}>Pune Market Investor's Guide 2026</Link>
+          <Link href="/3bhk-luxury-malpani-m-soulstrings-baner-pashan-link-road" className="overlay-link" onClick={toggleMenu}>3 BHK Luxury Apartments</Link>
+          <Link href="/4bhk-luxury-malpani-m-soulstrings-baner-pashan-link-road" className="overlay-link" onClick={toggleMenu}>4 BHK Luxury Residences</Link>
+          <Link href="/5bhk-duplex-malpani-m-soulstrings-baner-pashan-link-road" className="overlay-link" onClick={toggleMenu}>5 BHK & Duplex Homes</Link>
+          <Link href="/penthouse-luxury-malpani-m-soulstrings-baner-pashan-link-road" className="overlay-link" onClick={toggleMenu}>Sky Penthouses</Link>
+          <Link href="/amenities-malpani-m-soulstrings-baner-pashan-link-road" className="overlay-link" onClick={toggleMenu}>Amenities & Lifestyle</Link>
+          <Link href="/location-malpani-m-soulstrings-baner-pashan-link-road" className="overlay-link" onClick={toggleMenu}>Location (Baner Pashan Link Road)</Link>
+          <Link href="/infrastructure-malpani-m-soulstrings-baner-pashan-link-road" className="overlay-link" onClick={toggleMenu}>Infrastructure Updates</Link>
+          <Link href="/baner-overview-malpani-m-soulstrings-baner-pashan-link-road" className="overlay-link" onClick={toggleMenu}>Baner Real Estate Guide</Link>
+          <Link href="/blog-malpani-m-soulstrings-baner-pashan-link-road" className="overlay-link" onClick={toggleMenu}>Insights & Articles</Link>
+          <Link href="/market-analysis-malpani-m-soulstrings-baner-pashan-link-road" className="overlay-link" onClick={toggleMenu} style={{ color: 'var(--color-accent)' }}>Pune Market Investor's Guide 2026</Link>
         </nav>
       </div>
     </>

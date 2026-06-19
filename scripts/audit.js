@@ -61,7 +61,7 @@ pages.forEach(filePath => {
           anomalies.push({
             file: relPath,
             type: 'Hardcoded Canonical Host',
-            details: `Canonical tag value "${canonicalVal}" should be root-relative (e.g. "/compare") instead of absolute domain, as Next.js layout defines metadataBase.`
+            details: `Canonical tag value "${canonicalVal}" should be root-relative (e.g. "/compare-malpani-m-soulstrings-baner-pashan-link-road") instead of absolute domain, as Next.js layout defines metadataBase.`
           });
         }
       }

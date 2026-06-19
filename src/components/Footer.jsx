@@ -13,14 +13,14 @@ export default function Footer() {
                 <h5 className="text-white mb-3">Project Hubs</h5>
                 <ul className="list-unstyled" style={{ lineHeight: '2' }}>
                     <li><Link href="/" style={{ color: 'rgba(255,255,255,0.5)', textDecoration: 'none' }}>M SoulStrings Overview</Link></li>
-                    <li><Link href="/3bhk-luxury" style={{ color: 'rgba(255,255,255,0.5)', textDecoration: 'none' }}>3 BHK Luxury</Link></li>
-                    <li><Link href="/4bhk-luxury" style={{ color: 'rgba(255,255,255,0.5)', textDecoration: 'none' }}>4 BHK Luxury</Link></li>
-                    <li><Link href="/5bhk-duplex" style={{ color: 'rgba(255,255,255,0.5)', textDecoration: 'none' }}>5 BHK & Duplexes</Link></li>
-                    <li><Link href="/penthouse-luxury" style={{ color: 'rgba(255,255,255,0.5)', textDecoration: 'none' }}>Premium Penthouses</Link></li>
-                    <li><Link href="/amenities" style={{ color: 'rgba(255,255,255,0.5)', textDecoration: 'none' }}>World Class Amenities</Link></li>
-                    <li><Link href="/vastu-compliant-luxury-homes-pune" style={{ color: 'rgba(255,255,255,0.5)', textDecoration: 'none' }}>Vastu Compliant Homes</Link></li>
-                    <li><Link href="/location" style={{ color: 'rgba(255,255,255,0.5)', textDecoration: 'none' }}>Baner Pashan Link Road Location</Link></li>
-                    <li><Link href="/sitemap" style={{ color: 'rgba(255,255,255,0.5)', textDecoration: 'none' }}>HTML Sitemap</Link></li>
+                    <li><Link href="/3bhk-luxury-malpani-m-soulstrings-baner-pashan-link-road" style={{ color: 'rgba(255,255,255,0.5)', textDecoration: 'none' }}>3 BHK Luxury</Link></li>
+                    <li><Link href="/4bhk-luxury-malpani-m-soulstrings-baner-pashan-link-road" style={{ color: 'rgba(255,255,255,0.5)', textDecoration: 'none' }}>4 BHK Luxury</Link></li>
+                    <li><Link href="/5bhk-duplex-malpani-m-soulstrings-baner-pashan-link-road" style={{ color: 'rgba(255,255,255,0.5)', textDecoration: 'none' }}>5 BHK & Duplexes</Link></li>
+                    <li><Link href="/penthouse-luxury-malpani-m-soulstrings-baner-pashan-link-road" style={{ color: 'rgba(255,255,255,0.5)', textDecoration: 'none' }}>Premium Penthouses</Link></li>
+                    <li><Link href="/amenities-malpani-m-soulstrings-baner-pashan-link-road" style={{ color: 'rgba(255,255,255,0.5)', textDecoration: 'none' }}>World Class Amenities</Link></li>
+                    <li><Link href="/vastu-compliant-luxury-homes-pune-malpani-m-soulstrings-baner-pashan-link-road" style={{ color: 'rgba(255,255,255,0.5)', textDecoration: 'none' }}>Vastu Compliant Homes</Link></li>
+                    <li><Link href="/location-malpani-m-soulstrings-baner-pashan-link-road" style={{ color: 'rgba(255,255,255,0.5)', textDecoration: 'none' }}>Baner Pashan Link Road Location</Link></li>
+                    <li><Link href="/sitemap-malpani-m-soulstrings-baner-pashan-link-road" style={{ color: 'rgba(255,255,255,0.5)', textDecoration: 'none' }}>HTML Sitemap</Link></li>
                 </ul>
             </div>
             <div className="col-lg-3 mb-4 mb-lg-0">
@@ -37,11 +37,11 @@ export default function Footer() {
             <div className="col-lg-3">
                 <h5 className="text-white mb-3">Compare</h5>
                 <ul className="list-unstyled" style={{ lineHeight: '2' }}>
-                    <li><Link href="/compare/pristine-lords-baner" style={{ color: 'rgba(255,255,255,0.5)', textDecoration: 'none' }}>vs. Pristine The Lords</Link></li>
-                    <li><Link href="/compare/kohinoor-livience-baner" style={{ color: 'rgba(255,255,255,0.5)', textDecoration: 'none' }}>vs. Kohinoor Livience</Link></li>
-                    <li><Link href="/it-professionals-luxury-homes-pune" style={{ color: 'rgba(255,255,255,0.5)', textDecoration: 'none' }}>IT Professionals Guide</Link></li>
-                    <li><Link href="/pune-west-real-estate-market" style={{ color: 'rgba(255,255,255,0.5)', textDecoration: 'none' }}>Pune West Market</Link></li>
-                    <li><Link href="/nri-investment" style={{ color: 'rgba(255,255,255,0.5)', textDecoration: 'none' }}>NRI Investment</Link></li>
+                    <li><Link href="/compare-malpani-m-soulstrings-baner-pashan-link-road/pristine-lords-baner-malpani-m-soulstrings-baner-pashan-link-road" style={{ color: 'rgba(255,255,255,0.5)', textDecoration: 'none' }}>vs. Pristine The Lords</Link></li>
+                    <li><Link href="/compare-malpani-m-soulstrings-baner-pashan-link-road/kohinoor-livience-baner-malpani-m-soulstrings-baner-pashan-link-road" style={{ color: 'rgba(255,255,255,0.5)', textDecoration: 'none' }}>vs. Kohinoor Livience</Link></li>
+                    <li><Link href="/it-professionals-luxury-homes-pune-malpani-m-soulstrings-baner-pashan-link-road" style={{ color: 'rgba(255,255,255,0.5)', textDecoration: 'none' }}>IT Professionals Guide</Link></li>
+                    <li><Link href="/pune-west-real-estate-market-malpani-m-soulstrings-baner-pashan-link-road" style={{ color: 'rgba(255,255,255,0.5)', textDecoration: 'none' }}>Pune West Market</Link></li>
+                    <li><Link href="/nri-investment-malpani-m-soulstrings-baner-pashan-link-road" style={{ color: 'rgba(255,255,255,0.5)', textDecoration: 'none' }}>NRI Investment</Link></li>
                 </ul>
             </div>
         </nav>
@@ -53,17 +53,17 @@ export default function Footer() {
               <Link href="/blog/malpani-group-luxury-projects-pune" style={{ fontSize: '0.75rem', color: 'rgba(255,255,255,0.4)', textDecoration: 'none' }}>Malpani Group Luxury Projects</Link>
               <Link href="/blog/buying-signature-residences-in-pune" style={{ fontSize: '0.75rem', color: 'rgba(255,255,255,0.4)', textDecoration: 'none' }}>Buying Signature Residences</Link>
               <Link href="/blog/baner-property-rates-2026" style={{ fontSize: '0.75rem', color: 'rgba(255,255,255,0.4)', textDecoration: 'none' }}>Baner Property Rates 2026</Link>
-              <Link href="/3bhk-luxury" style={{ fontSize: '0.75rem', color: 'rgba(255,255,255,0.4)', textDecoration: 'none' }}>3 BHK Luxury Baner</Link>
-              <Link href="/4bhk-luxury" style={{ fontSize: '0.75rem', color: 'rgba(255,255,255,0.4)', textDecoration: 'none' }}>4 BHK Luxury Estates Pune</Link>
-              <Link href="/5bhk-duplex" style={{ fontSize: '0.75rem', color: 'rgba(255,255,255,0.4)', textDecoration: 'none' }}>Luxury Duplex Homes Baner</Link>
-              <Link href="/penthouse-luxury" style={{ fontSize: '0.75rem', color: 'rgba(255,255,255,0.4)', textDecoration: 'none' }}>Sky Penthouses Baner Pashan</Link>
-              <Link href="/pune-infrastructure-metro-impact" style={{ fontSize: '0.75rem', color: 'rgba(255,255,255,0.4)', textDecoration: 'none' }}>Pune Metro Line 3 Real Estate</Link>
-              <Link href="/vastu-compliant-luxury-homes-pune" style={{ fontSize: '0.75rem', color: 'rgba(255,255,255,0.4)', textDecoration: 'none' }}>Vastu Compliant Homes West Pune</Link>
-              <Link href="/compare/pristine-lords-baner" style={{ fontSize: '0.75rem', color: 'rgba(255,255,255,0.4)', textDecoration: 'none' }}>Pristine Lords Baner Reviews</Link>
-              <Link href="/compare/kohinoor-livience-baner" style={{ fontSize: '0.75rem', color: 'rgba(255,255,255,0.4)', textDecoration: 'none' }}>Kohinoor Livience Aleenta Baner</Link>
-              <Link href="/aundh" style={{ fontSize: '0.75rem', color: 'rgba(255,255,255,0.4)', textDecoration: 'none' }}>Aundh Real Estate</Link>
-              <Link href="/pashan" style={{ fontSize: '0.75rem', color: 'rgba(255,255,255,0.4)', textDecoration: 'none' }}>Pashan Luxury Flats</Link>
-              <Link href="/shivajinagar" style={{ fontSize: '0.75rem', color: 'rgba(255,255,255,0.4)', textDecoration: 'none' }}>Shivajinagar Premium Estates</Link>
+              <Link href="/3bhk-luxury-malpani-m-soulstrings-baner-pashan-link-road" style={{ fontSize: '0.75rem', color: 'rgba(255,255,255,0.4)', textDecoration: 'none' }}>3 BHK Luxury Baner</Link>
+              <Link href="/4bhk-luxury-malpani-m-soulstrings-baner-pashan-link-road" style={{ fontSize: '0.75rem', color: 'rgba(255,255,255,0.4)', textDecoration: 'none' }}>4 BHK Luxury Estates Pune</Link>
+              <Link href="/5bhk-duplex-malpani-m-soulstrings-baner-pashan-link-road" style={{ fontSize: '0.75rem', color: 'rgba(255,255,255,0.4)', textDecoration: 'none' }}>Luxury Duplex Homes Baner</Link>
+              <Link href="/penthouse-luxury-malpani-m-soulstrings-baner-pashan-link-road" style={{ fontSize: '0.75rem', color: 'rgba(255,255,255,0.4)', textDecoration: 'none' }}>Sky Penthouses Baner Pashan</Link>
+              <Link href="/pune-infrastructure-metro-impact-malpani-m-soulstrings-baner-pashan-link-road" style={{ fontSize: '0.75rem', color: 'rgba(255,255,255,0.4)', textDecoration: 'none' }}>Pune Metro Line 3 Real Estate</Link>
+              <Link href="/vastu-compliant-luxury-homes-pune-malpani-m-soulstrings-baner-pashan-link-road" style={{ fontSize: '0.75rem', color: 'rgba(255,255,255,0.4)', textDecoration: 'none' }}>Vastu Compliant Homes West Pune</Link>
+              <Link href="/compare-malpani-m-soulstrings-baner-pashan-link-road/pristine-lords-baner-malpani-m-soulstrings-baner-pashan-link-road" style={{ fontSize: '0.75rem', color: 'rgba(255,255,255,0.4)', textDecoration: 'none' }}>Pristine Lords Baner Reviews</Link>
+              <Link href="/compare-malpani-m-soulstrings-baner-pashan-link-road/kohinoor-livience-baner-malpani-m-soulstrings-baner-pashan-link-road" style={{ fontSize: '0.75rem', color: 'rgba(255,255,255,0.4)', textDecoration: 'none' }}>Kohinoor Livience Aleenta Baner</Link>
+              <Link href="/aundh-malpani-m-soulstrings-baner-pashan-link-road" style={{ fontSize: '0.75rem', color: 'rgba(255,255,255,0.4)', textDecoration: 'none' }}>Aundh Real Estate</Link>
+              <Link href="/pashan-malpani-m-soulstrings-baner-pashan-link-road" style={{ fontSize: '0.75rem', color: 'rgba(255,255,255,0.4)', textDecoration: 'none' }}>Pashan Luxury Flats</Link>
+              <Link href="/shivajinagar-malpani-m-soulstrings-baner-pashan-link-road" style={{ fontSize: '0.75rem', color: 'rgba(255,255,255,0.4)', textDecoration: 'none' }}>Shivajinagar Premium Estates</Link>
             </div>
           </div>
         </div>

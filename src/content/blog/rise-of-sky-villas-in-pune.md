@@ -26,6 +26,6 @@ Why are C-suite executives and business tycoons flocking to these **sky mansion 
 
 The Baner-Pashan Link Road is rapidly becoming the billionaire's row for these configurations. The proximity to the Pashan hills means that a **sky villas baner** offers unpolluted, panoramic views that cannot be replicated anywhere else in the city. 
 
-Projects like **[Malpani M SoulStrings](/4bhk-luxury)** are pioneering this space, offering sweeping 4 BHK and 5 BHK layouts that deliver the exact scale and grandeur of a sky villa.
+Projects like **[Malpani M SoulStrings](/4bhk-luxury-malpani-m-soulstrings-baner-pashan-link-road)** are pioneering this space, offering sweeping 4 BHK and 5 BHK layouts that deliver the exact scale and grandeur of a sky villa.
 
-**Ready to elevate your lifestyle? [Explore our expansive configurations today](/4bhk-luxury) and secure your sanctuary in the sky.**
+**Ready to elevate your lifestyle? [Explore our expansive configurations today](/4bhk-luxury-malpani-m-soulstrings-baner-pashan-link-road) and secure your sanctuary in the sky.**
