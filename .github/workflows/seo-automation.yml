@@ -28,8 +28,26 @@ jobs:
       - name: Run SEO Compliance Audit
         run: npm run seo-audit
 
-      - name: Defer Indexing (Allow Vercel Deployment to Finish)
-        run: sleep 120
+      - name: Verify Live Deployment Version
+        run: |
+          COMMIT_SHA="${{ github.sha }}"
+          URL="https://www.malpanimsoulstrings.com/version.txt"
+          echo "Target commit SHA: $COMMIT_SHA"
+          MAX_ATTEMPTS=40
+          ATTEMPT=0
+          while [ $ATTEMPT -lt $MAX_ATTEMPTS ]; do
+            echo "Checking deployment status (Attempt $((ATTEMPT+1))/$MAX_ATTEMPTS)..."
+            LIVE_SHA=$(curl -sS -f --max-time 10 "$URL" || echo "")
+            LIVE_SHA=$(echo "$LIVE_SHA" | tr -d '[:space:]')
+            if [ "$LIVE_SHA" = "$COMMIT_SHA" ]; then
+              echo "Deployment matches target commit SHA. Proceeding with indexing."
+              exit 0
+            fi
+            echo "Current live SHA: '$LIVE_SHA'. Waiting 15 seconds..."
+            ATTEMPT=$((ATTEMPT+1))
+            sleep 15
+          done
+          echo "Warning: Timeout waiting for Vercel deployment matching $COMMIT_SHA. Proceeding with indexing anyway."
 
       - name: Create Google Service Account File
         if: env.GOOGLE_SERVICE_ACCOUNT_JSON != ''

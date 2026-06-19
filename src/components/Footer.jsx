@@ -26,12 +26,12 @@ export default function Footer() {
             <div className="col-lg-3 mb-4 mb-lg-0">
                 <h5 className="text-white mb-3">Insights</h5>
                 <ul className="list-unstyled" style={{ lineHeight: '2' }}>
-                    <li><Link href="/blog/ultimate-guide-pune-west-luxury-real-estate" style={{ color: 'rgba(255,255,255,0.5)', textDecoration: 'none' }}>Pune West Luxury Real Estate Guide</Link></li>
-                    <li><Link href="/blog/nri-investors-playbook-pune-luxury-market-2026" style={{ color: 'rgba(255,255,255,0.5)', textDecoration: 'none' }}>NRI Investor's Playbook 2026</Link></li>
-                    <li><Link href="/blog/rise-of-sky-villas-in-pune" style={{ color: 'rgba(255,255,255,0.5)', textDecoration: 'none' }}>The Rise of Sky Villas in Pune</Link></li>
-                    <li><Link href="/blog/what-defines-ultra-luxury-5-bhk-residence-pune" style={{ color: 'rgba(255,255,255,0.5)', textDecoration: 'none' }}>Defining an Ultra Luxury 5 BHK</Link></li>
-                    <li><Link href="/blog/baner-pashan-link-road-coveted-real-estate" style={{ color: 'rgba(255,255,255,0.5)', textDecoration: 'none' }}>Baner-Pashan Link Road Corridor</Link></li>
-                    <li><Link href="/blog/hinjewadi-spillover-baner-luxury-boom" style={{ color: 'rgba(255,255,255,0.5)', textDecoration: 'none' }}>The Hinjewadi Spillover Effect</Link></li>
+                    <li><Link href="/blog-malpani-m-soulstrings-baner-pashan-link-road/ultimate-guide-pune-west-luxury-real-estate" style={{ color: 'rgba(255,255,255,0.5)', textDecoration: 'none' }}>Pune West Luxury Real Estate Guide</Link></li>
+                    <li><Link href="/blog-malpani-m-soulstrings-baner-pashan-link-road/nri-investors-playbook-pune-luxury-market-2026" style={{ color: 'rgba(255,255,255,0.5)', textDecoration: 'none' }}>NRI Investor's Playbook 2026</Link></li>
+                    <li><Link href="/blog-malpani-m-soulstrings-baner-pashan-link-road/rise-of-sky-villas-in-pune" style={{ color: 'rgba(255,255,255,0.5)', textDecoration: 'none' }}>The Rise of Sky Villas in Pune</Link></li>
+                    <li><Link href="/blog-malpani-m-soulstrings-baner-pashan-link-road/what-defines-ultra-luxury-5-bhk-residence-pune" style={{ color: 'rgba(255,255,255,0.5)', textDecoration: 'none' }}>Defining an Ultra Luxury 5 BHK</Link></li>
+                    <li><Link href="/blog-malpani-m-soulstrings-baner-pashan-link-road/baner-pashan-link-road-coveted-real-estate" style={{ color: 'rgba(255,255,255,0.5)', textDecoration: 'none' }}>Baner-Pashan Link Road Corridor</Link></li>
+                    <li><Link href="/blog-malpani-m-soulstrings-baner-pashan-link-road/hinjewadi-spillover-baner-luxury-boom" style={{ color: 'rgba(255,255,255,0.5)', textDecoration: 'none' }}>The Hinjewadi Spillover Effect</Link></li>
                 </ul>
             </div>
             <div className="col-lg-3">
@@ -50,9 +50,9 @@ export default function Footer() {
             <p style={{ fontSize: '0.8rem', color: 'rgba(255,255,255,0.3)', margin: '1rem 0 0.5rem 0' }}>Popular Searches:</p>
             <div style={{ display: 'flex', flexWrap: 'wrap', justifyContent: 'center', gap: '15px' }}>
               <Link href="/" style={{ fontSize: '0.75rem', color: 'rgba(255,255,255,0.4)', textDecoration: 'none' }}>Malpani m soulstrings baner pashan link road</Link>
-              <Link href="/blog/malpani-group-luxury-projects-pune" style={{ fontSize: '0.75rem', color: 'rgba(255,255,255,0.4)', textDecoration: 'none' }}>Malpani Group Luxury Projects</Link>
-              <Link href="/blog/buying-signature-residences-in-pune" style={{ fontSize: '0.75rem', color: 'rgba(255,255,255,0.4)', textDecoration: 'none' }}>Buying Signature Residences</Link>
-              <Link href="/blog/baner-property-rates-2026" style={{ fontSize: '0.75rem', color: 'rgba(255,255,255,0.4)', textDecoration: 'none' }}>Baner Property Rates 2026</Link>
+              <Link href="/blog-malpani-m-soulstrings-baner-pashan-link-road/malpani-group-luxury-projects-pune" style={{ fontSize: '0.75rem', color: 'rgba(255,255,255,0.4)', textDecoration: 'none' }}>Malpani Group Luxury Projects</Link>
+              <Link href="/blog-malpani-m-soulstrings-baner-pashan-link-road/buying-signature-residences-in-pune" style={{ fontSize: '0.75rem', color: 'rgba(255,255,255,0.4)', textDecoration: 'none' }}>Buying Signature Residences</Link>
+              <Link href="/blog-malpani-m-soulstrings-baner-pashan-link-road/baner-property-rates-2026" style={{ fontSize: '0.75rem', color: 'rgba(255,255,255,0.4)', textDecoration: 'none' }}>Baner Property Rates 2026</Link>
               <Link href="/3bhk-luxury-malpani-m-soulstrings-baner-pashan-link-road" style={{ fontSize: '0.75rem', color: 'rgba(255,255,255,0.4)', textDecoration: 'none' }}>3 BHK Luxury Baner</Link>
               <Link href="/4bhk-luxury-malpani-m-soulstrings-baner-pashan-link-road" style={{ fontSize: '0.75rem', color: 'rgba(255,255,255,0.4)', textDecoration: 'none' }}>4 BHK Luxury Estates Pune</Link>
               <Link href="/5bhk-duplex-malpani-m-soulstrings-baner-pashan-link-road" style={{ fontSize: '0.75rem', color: 'rgba(255,255,255,0.4)', textDecoration: 'none' }}>Luxury Duplex Homes Baner</Link>

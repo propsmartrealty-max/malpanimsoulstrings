@@ -97,13 +97,13 @@ export default function VastuHomesPage() {
           
           <article className="main-content">
             <h2>The Importance of Vastu in Ultra-Luxury Real Estate</h2>
-            <p>In the ultra-luxury segment of the <strong>Pune West Real Estate Market</strong>, buyers are not just investing in square footage; they are investing in prosperity, health, and multi-generational well-being. Vastu Shastra, the <Link href="/blog/vastu-shastra-tips-for-4-bhk-homes-pune">ancient Indian science of architecture utilized at Malpani M Soulstrings</Link>, dictates the flow of cosmic energy within a home. A highly Vastu-compliant home is proven to enhance mental peace, financial stability, and physical health for its residents.</p>
+            <p>In the ultra-luxury segment of the <strong>Pune West Real Estate Market</strong>, buyers are not just investing in square footage; they are investing in prosperity, health, and multi-generational well-being. Vastu Shastra, the <Link href="/blog-malpani-m-soulstrings-baner-pashan-link-road/vastu-shastra-tips-for-4-bhk-homes-pune">ancient Indian science of architecture utilized at Malpani M Soulstrings</Link>, dictates the flow of cosmic energy within a home. A highly Vastu-compliant home is proven to enhance mental peace, financial stability, and physical health for its residents.</p>
 
             <h2>The Challenge with Modern High-Rises</h2>
             <p>Many modern skyscrapers in Pune claim to be "Vastu-friendly," but the reality of high-density construction often forces architects to make severe compromises. Awkward structural columns, irregular plot shapes, and cramped core layouts frequently disrupt the critical cardinal alignments required for true Vastu compliance.</p>
 
             <h2>How Malpani M SoulStrings Achieves 100% Vastu Compliance</h2>
-            <p>At <strong><Link href="/">Malpani M SoulStrings</Link></strong>, located on the premium Baner-Pashan Link Road, Vastu was not an afterthought—it was the foundational principle that dictated the entire master plan. Here is how our <Link href="/blog/low-density-sky-villas-baner-pashan">3 BHK and 4 BHK luxury estates on Baner Pashan Link Road</Link> achieve unparalleled energetic alignment:</p>
+            <p>At <strong><Link href="/">Malpani M SoulStrings</Link></strong>, located on the premium Baner-Pashan Link Road, Vastu was not an afterthought—it was the foundational principle that dictated the entire master plan. Here is how our <Link href="/blog-malpani-m-soulstrings-baner-pashan-link-road/low-density-sky-villas-baner-pashan">3 BHK and 4 BHK luxury estates on Baner Pashan Link Road</Link> achieve unparalleled energetic alignment:</p>
 
             <h3>1. The Golden East-West Axis</h3>
             <p>The primary entrances and major living spaces are strictly aligned along the East-West axis. This ensures that the home receives the highly auspicious morning sunlight (ultraviolet rays) from the East, naturally cleansing the home's atmosphere, while the West alignment facilitates optimal cross-ventilation during the evening.</p>
@@ -175,10 +175,10 @@ export default function VastuHomesPage() {
                 <Link href="/nri-investment-malpani-m-soulstrings-baner-pashan-link-road" className="list-group-item list-group-item-action bg-transparent border-secondary text-white" style={{ padding: '0.75rem 0' }}>
                   <small style={{ color: 'var(--color-accent)' }}>Guide →</small> NRI Investment
                 </Link>
-                <Link href="/blog/vastu-shastra-tips-for-4-bhk-homes-pune" className="list-group-item list-group-item-action bg-transparent border-secondary text-white" style={{ padding: '0.75rem 0' }}>
+                <Link href="/blog-malpani-m-soulstrings-baner-pashan-link-road/vastu-shastra-tips-for-4-bhk-homes-pune" className="list-group-item list-group-item-action bg-transparent border-secondary text-white" style={{ padding: '0.75rem 0' }}>
                   <small style={{ color: 'var(--color-accent)' }}>Vastu →</small> Vastu for 4 BHK Homes
                 </Link>
-                <Link href="/blog/low-density-sky-villas-baner-pashan" className="list-group-item list-group-item-action bg-transparent border-secondary text-white" style={{ padding: '0.75rem 0' }}>
+                <Link href="/blog-malpani-m-soulstrings-baner-pashan-link-road/low-density-sky-villas-baner-pashan" className="list-group-item list-group-item-action bg-transparent border-secondary text-white" style={{ padding: '0.75rem 0' }}>
                   <small style={{ color: 'var(--color-accent)' }}>Exclusivity →</small> Low-Density Sky Villas Matrix
                 </Link>
               </div>

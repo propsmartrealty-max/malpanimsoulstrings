@@ -60,7 +60,15 @@ export const metadata = {
     '4bhk residences',
     '5bhk residences',
     'penthouse homes',
-    'premium luxury homes in pune'
+    'premium luxury homes in pune',
+    'Pune Real Estate',
+    'Baner Real Estate',
+    'Baner Pashan Link Road real estate',
+    'Malpani M Soulstrings Baner',
+    'real estate investment Pune',
+    'luxury apartments Baner Pashan Link Road',
+    'Malpani Estates Pune',
+    'flats for sale in Baner Pashan Link Road'
   ],
   openGraph: {
     title: 'Malpani M SoulStrings - 3, 4, 5 BHK, Duplex & Penthouse in Baner',
@@ -171,7 +179,7 @@ const websiteSchema = {
     "@type": "SearchAction",
     "target": {
       "@type": "EntryPoint",
-      "urlTemplate": "https://www.malpanimsoulstrings.com/blog?search={search_term_string}"
+      "urlTemplate": "https://www.malpanimsoulstrings.com/blog-malpani-m-soulstrings-baner-pashan-link-road?search={search_term_string}"
     },
     "query-input": "required name=search_term_string"
   }

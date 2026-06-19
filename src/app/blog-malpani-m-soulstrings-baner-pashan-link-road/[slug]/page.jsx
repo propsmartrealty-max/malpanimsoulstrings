@@ -52,7 +52,7 @@ export async function generateMetadata({ params }) {
       title,
       description,
       type: 'article',
-      url: `https://www.malpanimsoulstrings.com/blog/${slug}`,
+      url: `https://www.malpanimsoulstrings.com/blog-malpani-m-soulstrings-baner-pashan-link-road/${slug}`,
       images: [
         {
           url: 'https://malpani-cms.firsteconomy.com/uploads/M_soul_strings_Desktop_Banner_Without_Text_0d38ce28d4.jpg',
@@ -121,7 +121,7 @@ export default async function BlogPost({ params }) {
     "@type": "Article",
     "headline": articleTitle,
     "description": articleDescription,
-    "url": `https://www.malpanimsoulstrings.com/blog/${slug}`,
+    "url": `https://www.malpanimsoulstrings.com/blog-malpani-m-soulstrings-baner-pashan-link-road/${slug}`,
     "datePublished": stats ? stats.birthtime.toISOString() : new Date().toISOString(),
     "dateModified": stats ? stats.mtime.toISOString() : new Date().toISOString(),
     "author": {
@@ -132,7 +132,7 @@ export default async function BlogPost({ params }) {
     },
     "mainEntityOfPage": {
       "@type": "WebPage",
-      "@id": `https://www.malpanimsoulstrings.com/blog/${slug}`
+      "@id": `https://www.malpanimsoulstrings.com/blog-malpani-m-soulstrings-baner-pashan-link-road/${slug}`
     }
   };
 
@@ -150,13 +150,13 @@ export default async function BlogPost({ params }) {
         "@type": "ListItem",
         "position": 2,
         "name": "Insights & Articles",
-        "item": "https://www.malpanimsoulstrings.com/blog"
+        "item": "https://www.malpanimsoulstrings.com/blog-malpani-m-soulstrings-baner-pashan-link-road"
       },
       {
         "@type": "ListItem",
         "position": 3,
         "name": articleTitle,
-        "item": `https://www.malpanimsoulstrings.com/blog/${slug}`
+        "item": `https://www.malpanimsoulstrings.com/blog-malpani-m-soulstrings-baner-pashan-link-road/${slug}`
       }
     ]
   };

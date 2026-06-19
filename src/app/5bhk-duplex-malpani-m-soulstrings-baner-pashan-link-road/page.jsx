@@ -146,7 +146,7 @@ export default function FiveBhkDuplexPage() {
             <div className="loc-card" style={{ padding: '1.5rem', borderRadius: '12px', marginBottom: '2rem' }}>
               <h3 style={{ fontSize: '1.2rem', marginBottom: '1rem', color: 'var(--color-primary)' }}>Related Guides & Intelligence</h3>
               <div className="list-group list-group-flush bg-transparent">
-                <Link href="/blog/low-density-sky-villas-baner-pashan" className="list-group-item list-group-item-action bg-transparent border-secondary text-white" style={{ padding: '0.75rem 0' }}>
+                <Link href="/blog-malpani-m-soulstrings-baner-pashan-link-road/low-density-sky-villas-baner-pashan" className="list-group-item list-group-item-action bg-transparent border-secondary text-white" style={{ padding: '0.75rem 0' }}>
                   <small style={{ color: 'var(--color-accent)' }}>Guide →</small> Low-Density Sky Villas Matrix
                 </Link>
                 <Link href="/vastu-compliant-luxury-homes-pune-malpani-m-soulstrings-baner-pashan-link-road" className="list-group-item list-group-item-action bg-transparent border-secondary text-white" style={{ padding: '0.75rem 0' }}>

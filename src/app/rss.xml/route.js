@@ -20,7 +20,7 @@ export async function GET() {
     const slug = file.replace('.md', '');
     const titleMatch = content.match(/^#\s+(.*)/m);
     const title = titleMatch ? titleMatch[1] : slug.replace(/-/g, ' ').toUpperCase();
-    const url = `${baseUrl}/blog/${slug}`;
+    const url = `${baseUrl}/blog-malpani-m-soulstrings-baner-pashan-link-road/${slug}`;
     
     // Extract first real paragraph for the excerpt
     const lines = content.split('\n');

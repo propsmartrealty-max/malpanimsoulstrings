@@ -101,13 +101,13 @@ export default function NRIInvestmentPage() {
             <p>Pune's luxury real estate market has seen a massive influx of capital from global Indian investors. The geographic focus has sharply shifted: gone are the days when Koregaon Park and Kalyani Nagar were the sole destinations for NRI buyers. Today, Baner — specifically the Baner Pashan Link Road corridor — has emerged as the undisputed crown jewel for NRI luxury real estate investment and second-home acquisitions.</p>
             
             <h2>1. Unprecedented Return on Investment (ROI)</h2>
-            <p>For NRIs, luxury property investment is ultimately a numbers game focused on <Link href="/blog/nri-investors-playbook-pune-luxury-market-2026">long-term wealth creation at Malpani M Soulstrings</Link>. Baner offers a unique proposition: it is fully developed in terms of social infrastructure yet still offers significant capital appreciation compared to saturated markets like Aundh. Historical data from the past five years indicates that premium 3 BHK and 4 BHK luxury estates in Baner have appreciated at a steady 8-12% annually. Projects like <strong><Link href="/">Malpani M SoulStrings</Link></strong> are perfectly positioned to capitalize on this upward trajectory.</p>
+            <p>For NRIs, luxury property investment is ultimately a numbers game focused on <Link href="/blog-malpani-m-soulstrings-baner-pashan-link-road/nri-investors-playbook-pune-luxury-market-2026">long-term wealth creation at Malpani M Soulstrings</Link>. Baner offers a unique proposition: it is fully developed in terms of social infrastructure yet still offers significant capital appreciation compared to saturated markets like Aundh. Historical data from the past five years indicates that premium 3 BHK and 4 BHK luxury estates in Baner have appreciated at a steady 8-12% annually. Projects like <strong><Link href="/">Malpani M SoulStrings</Link></strong> are perfectly positioned to capitalize on this upward trajectory.</p>
 
             <h2>2. The IT Corridor Synergy</h2>
             <p>Baner’s strategic location acts as a golden bridge. On one side, it offers seamless connectivity to the Hinjewadi IT Park—India's massive software hub. On the other, it borders the Mumbai-Pune Expressway. This makes Baner the preferred residential destination for top-tier executives, CEOs, and expat professionals working in Hinjewadi. For an NRI investor, this guarantees a high-yield, premium rental market that rarely sees vacancies.</p>
 
             <h2>3. Uncompromising Luxury and Amenities</h2>
-            <p>NRIs expect international standards of living. Global exposure means they demand smart home automation, infinity pools, vast open green spaces, and rigorous security protocols. The developers in Baner have responded. Gated communities in this locality are now sprawling ecosystems. The integration of 35+ amenities, <strong><Link href="/blog/vastu-shastra-tips-for-4-bhk-homes-pune">Vastu-compliant layouts on Baner Pashan Link Road</Link></strong>, and architectural marvels ensures that an investment here isn't just a financial asset, but a lifestyle statement.</p>
+            <p>NRIs expect international standards of living. Global exposure means they demand smart home automation, infinity pools, vast open green spaces, and rigorous security protocols. The developers in Baner have responded. Gated communities in this locality are now sprawling ecosystems. The integration of 35+ amenities, <strong><Link href="/blog-malpani-m-soulstrings-baner-pashan-link-road/vastu-shastra-tips-for-4-bhk-homes-pune">Vastu-compliant layouts on Baner Pashan Link Road</Link></strong>, and architectural marvels ensures that an investment here isn't just a financial asset, but a lifestyle statement.</p>
 
             <h2>4. Favorable Exchange Rates and Transparency</h2>
             <p>The current global economic climate, coupled with favorable foreign exchange rates against the Indian Rupee, has created a highly lucrative window for NRIs. Furthermore, the implementation of RERA (Real Estate Regulatory Authority) has brought unprecedented transparency to the Indian real estate market. NRIs can now invest in premium projects like M SoulStrings with absolute confidence, knowing their investments are protected by stringent regulatory frameworks.</p>
@@ -164,13 +164,13 @@ export default function NRIInvestmentPage() {
                 <Link href="/pune-infrastructure-metro-impact-malpani-m-soulstrings-baner-pashan-link-road" className="list-group-item list-group-item-action bg-transparent border-secondary text-white" style={{ padding: '0.75rem 0' }}>
                   <small style={{ color: 'var(--color-accent)' }}>Analysis →</small> Pune Metro Impact
                 </Link>
-                <Link href="/blog/nri-investors-playbook-pune-luxury-market-2026" className="list-group-item list-group-item-action bg-transparent border-secondary text-white" style={{ padding: '0.75rem 0' }}>
+                <Link href="/blog-malpani-m-soulstrings-baner-pashan-link-road/nri-investors-playbook-pune-luxury-market-2026" className="list-group-item list-group-item-action bg-transparent border-secondary text-white" style={{ padding: '0.75rem 0' }}>
                   <small style={{ color: 'var(--color-accent)' }}>Guide →</small> NRI Playbook 2026
                 </Link>
-                <Link href="/blog/hinjewadi-spillover-baner-luxury-boom" className="list-group-item list-group-item-action bg-transparent border-secondary text-white" style={{ padding: '0.75rem 0' }}>
+                <Link href="/blog-malpani-m-soulstrings-baner-pashan-link-road/hinjewadi-spillover-baner-luxury-boom" className="list-group-item list-group-item-action bg-transparent border-secondary text-white" style={{ padding: '0.75rem 0' }}>
                   <small style={{ color: 'var(--color-accent)' }}>Analysis →</small> Hinjewadi Spillover Boom
                 </Link>
-                <Link href="/blog/vastu-shastra-tips-for-4-bhk-homes-pune" className="list-group-item list-group-item-action bg-transparent border-secondary text-white" style={{ padding: '0.75rem 0' }}>
+                <Link href="/blog-malpani-m-soulstrings-baner-pashan-link-road/vastu-shastra-tips-for-4-bhk-homes-pune" className="list-group-item list-group-item-action bg-transparent border-secondary text-white" style={{ padding: '0.75rem 0' }}>
                   <small style={{ color: 'var(--color-accent)' }}>Vastu →</small> Vastu for 4 BHK Homes
                 </Link>
               </div>

@@ -131,10 +131,10 @@ export default function FourBhkLuxuryPage() {
 
             <h2 className="mt-5 mb-4 gradient-text" style={{ fontSize: '2rem' }}>The Zenith of Large-Scale Luxury Living</h2>
             <p>
-                Discover the ultimate in spatial design. Whether you are seeking a sprawling 4 BHK estate or exploring expansive <Link href="/blog/what-defines-ultra-luxury-5-bhk-residence-pune">5 BHK configurations at Malpani M Soulstrings</Link>, our residences deliver an unparalleled lifestyle. Experience the grandeur of low-density living in our <Link href="/blog/low-density-sky-villas-baner-pashan">exclusive sky villas on Baner Pashan Link Road</Link>.
+                Discover the ultimate in spatial design. Whether you are seeking a sprawling 4 BHK estate or exploring expansive <Link href="/blog-malpani-m-soulstrings-baner-pashan-link-road/what-defines-ultra-luxury-5-bhk-residence-pune">5 BHK configurations at Malpani M Soulstrings</Link>, our residences deliver an unparalleled lifestyle. Experience the grandeur of low-density living in our <Link href="/blog-malpani-m-soulstrings-baner-pashan-link-road/low-density-sky-villas-baner-pashan">exclusive sky villas on Baner Pashan Link Road</Link>.
             </p>
             <p>
-                These residences represent the pinnacle of exclusive living in Baner. Designed as definitive elite homes, every unit is built with <Link href="/blog/vastu-shastra-tips-for-4-bhk-homes-pune">strict adherence to Vastu principles</Link>. Enjoy panoramic vistas from your private deck, ensuring refreshing cross-ventilation across these majestic sky apartments. Our architectural layout features highly coveted corner homes, establishing them as perfectly secluded and exceptionally private.
+                These residences represent the pinnacle of exclusive living in Baner. Designed as definitive elite homes, every unit is built with <Link href="/blog-malpani-m-soulstrings-baner-pashan-link-road/vastu-shastra-tips-for-4-bhk-homes-pune">strict adherence to Vastu principles</Link>. Enjoy panoramic vistas from your private deck, ensuring refreshing cross-ventilation across these majestic sky apartments. Our architectural layout features highly coveted corner homes, establishing them as perfectly secluded and exceptionally private.
             </p>
             <p>
                 Engineered as the ideal sanctuary for families, these premium homes sit within magnificent high-rise towers. Experience elevated podium living in these soaring structures and penthouse residences, culminating in striking architectural dominance. For buyers seeking a significant upgrade near the Baner-Pashan Link Road, this is the destination.
@@ -148,7 +148,7 @@ export default function FourBhkLuxuryPage() {
             <div className="loc-card" style={{ padding: '1.5rem', borderRadius: '12px', marginBottom: '2rem' }}>
               <h3 style={{ fontSize: '1.2rem', marginBottom: '1rem', color: 'var(--color-primary)' }}>Related Guides & Intelligence</h3>
               <div className="list-group list-group-flush bg-transparent">
-                <Link href="/blog/low-density-sky-villas-baner-pashan" className="list-group-item list-group-item-action bg-transparent border-secondary text-white" style={{ padding: '0.75rem 0' }}>
+                <Link href="/blog-malpani-m-soulstrings-baner-pashan-link-road/low-density-sky-villas-baner-pashan" className="list-group-item list-group-item-action bg-transparent border-secondary text-white" style={{ padding: '0.75rem 0' }}>
                   <small style={{ color: 'var(--color-accent)' }}>Guide →</small> Low-Density Sky Villas Matrix
                 </Link>
                 <Link href="/vastu-compliant-luxury-homes-pune-malpani-m-soulstrings-baner-pashan-link-road" className="list-group-item list-group-item-action bg-transparent border-secondary text-white" style={{ padding: '0.75rem 0' }}>

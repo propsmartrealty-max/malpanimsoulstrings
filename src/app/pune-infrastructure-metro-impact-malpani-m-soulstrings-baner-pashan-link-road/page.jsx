@@ -105,7 +105,7 @@ export default function PuneInfrastructurePage() {
             <p>The <strong>Pune West Real Estate Market</strong> is currently undergoing a massive transformation, transitioning from an IT-dependent suburb into a self-sustaining, highly connected urban powerhouse. The primary drivers of this transformation are two mega-infrastructure projects: the Pune Metro Line 3 and the proposed Pune Ring Road.</p>
 
             <h3>1. Pune Metro Line 3: The Hinjewadi-Shivajinagar Lifeline</h3>
-            <p>The <Link href="/blog/future-of-baner-pashan-link-road-infrastructure">upcoming 23.3 km elevated Metro Line 3 and associated Baner Pashan Link Road infrastructure upgrades</Link> will directly connect the Hinjewadi IT hub to the central business district of Shivajinagar. This critical transit artery will drastically cut commute times across West Pune.</p>
+            <p>The <Link href="/blog-malpani-m-soulstrings-baner-pashan-link-road/future-of-baner-pashan-link-road-infrastructure">upcoming 23.3 km elevated Metro Line 3 and associated Baner Pashan Link Road infrastructure upgrades</Link> will directly connect the Hinjewadi IT hub to the central business district of Shivajinagar. This critical transit artery will drastically cut commute times across West Pune.</p>
             <ul>
                 <li><strong>Traffic Decongestion:</strong> Commutes that currently take 45-60 minutes will be reduced to 15-20 minutes.</li>
                 <li><strong>Real Estate Appreciation:</strong> Properties located within a 2-kilometer radius of metro stations are already witnessing an 8-12% annual capital appreciation premium compared to non-metro corridors.</li>
@@ -147,7 +147,7 @@ export default function PuneInfrastructurePage() {
             <p>By connecting major national highways, the Ring Road ensures that logistics and heavy transport bypass residential zones entirely, elevating the luxury quotient and air quality for high-end residential projects.</p>
 
             <h2>Why Malpani M SoulStrings is the Ultimate Beneficiary</h2>
-            <p>Strategic location is the cornerstone of luxury real estate investment. <Link href="/blog/hinjewadi-spillover-baner-luxury-boom">Malpani M SoulStrings is perfectly positioned on the Baner-Pashan Link Road</Link> to reap the maximum benefits of this infrastructure boom without suffering from direct transit noise.</p>
+            <p>Strategic location is the cornerstone of luxury real estate investment. <Link href="/blog-malpani-m-soulstrings-baner-pashan-link-road/hinjewadi-spillover-baner-luxury-boom">Malpani M SoulStrings is perfectly positioned on the Baner-Pashan Link Road</Link> to reap the maximum benefits of this infrastructure boom without suffering from direct transit noise.</p>
             
             <p>As the premier development in the <strong>Baner Real Estate Market</strong>, it offers:</p>
             <ul>
@@ -183,10 +183,10 @@ export default function PuneInfrastructurePage() {
                 <Link href="/nri-investment-malpani-m-soulstrings-baner-pashan-link-road" className="list-group-item list-group-item-action bg-transparent border-secondary text-white" style={{ padding: '0.75rem 0' }}>
                   <small style={{ color: 'var(--color-accent)' }}>Guide →</small> NRI Investment
                 </Link>
-                <Link href="/blog/future-of-baner-pashan-link-road-infrastructure" className="list-group-item list-group-item-action bg-transparent border-secondary text-white" style={{ padding: '0.75rem 0' }}>
+                <Link href="/blog-malpani-m-soulstrings-baner-pashan-link-road/future-of-baner-pashan-link-road-infrastructure" className="list-group-item list-group-item-action bg-transparent border-secondary text-white" style={{ padding: '0.75rem 0' }}>
                   <small style={{ color: 'var(--color-accent)' }}>Metro →</small> Metro Infrastructure Impact
                 </Link>
-                <Link href="/blog/hinjewadi-spillover-baner-luxury-boom" className="list-group-item list-group-item-action bg-transparent border-secondary text-white" style={{ padding: '0.75rem 0' }}>
+                <Link href="/blog-malpani-m-soulstrings-baner-pashan-link-road/hinjewadi-spillover-baner-luxury-boom" className="list-group-item list-group-item-action bg-transparent border-secondary text-white" style={{ padding: '0.75rem 0' }}>
                   <small style={{ color: 'var(--color-accent)' }}>Spillover →</small> Hinjewadi Tech Spillover
                 </Link>
               </div>
