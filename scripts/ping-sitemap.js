@@ -3,8 +3,8 @@ const fs = require('fs');
 const path = require('path');
 
 const HOST = 'www.malpanimsoulstrings.com';
-const KEY = 'b3e72a9c5d4e8f01a2c6d9e5f7b8a3c4';
-const KEY_LOCATION = `https://${HOST}/${KEY}.txt`;
+const KEY = 'malpanimsoulstrings-indexnow-key-2026';
+const KEY_LOCATION = `https://${HOST}/malpanimsoulstrings-indexnow-key-2026.txt`;
 const BASE_URL = `https://${HOST}`;
 
 // Static page URLs
