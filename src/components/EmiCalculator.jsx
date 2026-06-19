@@ -8,31 +8,22 @@ export default function EmiCalculator() {
   const [interestRate, setInterestRate] = useState(8.5);
   const [loanTenure, setLoanTenure] = useState(20);
 
-  const [emi, setEmi] = useState(0);
-
-  useEffect(() => {
-    // EMI Formula: P x R x (1+R)^N / [(1+R)^N-1]
-    const principal = propertyValue - downPayment;
-    
-    if (principal <= 0) {
-      setEmi(0);
-      return;
-    }
-
+  // Calculate EMI during render to avoid cascading state updates and satisfy ESLint purity rules
+  const principal = propertyValue - downPayment;
+  let emi = 0;
+  if (principal > 0) {
     const ratePerMonth = interestRate / 12 / 100;
     const numberOfMonths = loanTenure * 12;
 
     if (ratePerMonth === 0) {
-      setEmi(principal / numberOfMonths);
-      return;
+      emi = Math.round(principal / numberOfMonths);
+    } else {
+      const calculatedEmi = 
+        (principal * ratePerMonth * Math.pow(1 + ratePerMonth, numberOfMonths)) / 
+        (Math.pow(1 + ratePerMonth, numberOfMonths) - 1);
+      emi = Math.round(calculatedEmi);
     }
-
-    const calculatedEmi = 
-      (principal * ratePerMonth * Math.pow(1 + ratePerMonth, numberOfMonths)) / 
-      (Math.pow(1 + ratePerMonth, numberOfMonths) - 1);
-
-    setEmi(Math.round(calculatedEmi));
-  }, [propertyValue, downPayment, interestRate, loanTenure]);
+  }
 
   useEffect(() => {
     const trackingHandler = setTimeout(() => {

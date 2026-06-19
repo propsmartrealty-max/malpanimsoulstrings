@@ -82,9 +82,21 @@ export default async function BlogPost({ params }) {
     stats = fs.statSync(filePath);
     htmlContent = marked(rawMarkdown);
     
-    // Fetch 3 random other blogs for internal siloing
-    const allFiles = fs.readdirSync(contentDir).filter(f => f.endsWith('.md') && f !== `${slug}.md`);
-    relatedBlogs = allFiles.sort(() => 0.5 - Math.random()).slice(0, 3).map(f => {
+    // Fetch 3 related blogs for internal siloing in a stable/pure manner
+    const allFiles = fs.readdirSync(contentDir).filter(f => f.endsWith('.md')).sort();
+    const currentIndex = allFiles.indexOf(`${slug}.md`);
+    
+    const selectedFiles = [];
+    if (allFiles.length > 1) {
+      for (let i = 1; i <= 3; i++) {
+        const nextIndex = (currentIndex + i) % allFiles.length;
+        if (nextIndex !== currentIndex) {
+          selectedFiles.push(allFiles[nextIndex]);
+        }
+      }
+    }
+    
+    relatedBlogs = selectedFiles.map(f => {
       const fSlug = f.replace('.md', '');
       return { slug: fSlug, title: fSlug.replace(/-/g, ' ').toUpperCase() };
     });

@@ -7,6 +7,31 @@ export const metadata = {
   alternates: { canonical: '/location' },
   title: 'Location Advantages of Malpani M SoulStrings | Baner Pashan Link Road',
   description: 'Discover why the Malpani m soulstrings baner pashan link road location is the most coveted real estate destination in West Pune, bridging Hinjewadi and Aundh.',
+  keywords: [
+    'Malpani m soulstrings baner pashan link road location',
+    'Baner Pashan Link Road Pune real estate',
+    'luxury flats near Wakad',
+    'apartments near Mumbai Bangalore Highway',
+    'apartments near Sus Road',
+    'apartments near Baner Road',
+    'West Pune luxury real estate'
+  ],
+  openGraph: {
+    title: 'Location Advantages of Malpani M SoulStrings',
+    description: 'Discover why the Baner-Pashan Link Road location is the most coveted real estate destination in West Pune.',
+    url: 'https://www.malpanimsoulstrings.com/location',
+    siteName: 'Malpani M SoulStrings',
+    images: [
+      {
+        url: 'https://malpani-cms.firsteconomy.com/uploads/M_soul_strings_Desktop_Banner_Without_Text_0d38ce28d4.jpg',
+        width: 1200,
+        height: 630,
+        alt: 'Malpani M SoulStrings Baner Pashan Link Road Location Map and Connectivity',
+      }
+    ],
+    locale: 'en_IN',
+    type: 'article',
+  }
 };
 
 export default function LocationPage() {

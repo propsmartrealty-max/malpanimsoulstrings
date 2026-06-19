@@ -453,11 +453,11 @@ export default function Home() {
         <div className="faq-list fade-in-up" >
           <details className="faq-item" >
             <summary >What configurations are available in Malpani M SoulStrings?</summary>
-            <p >Malpani M SoulStrings offers ultra-premium 3BHK and 4BHK Luxury Homes. If you are looking to <strong>buy a premium flat in Pune</strong>, these expansive residences are meticulously designed to maximize space, natural light, and cross-ventilation, earning the reputation as the <strong>best luxury project in Pune</strong> West.</p>
+            <p >Malpani M SoulStrings offers ultra-premium 3BHK and 4BHK luxury homes. If you are looking to buy a premium flat in Pune, these expansive residences are meticulously designed to maximize space, natural light, and cross-ventilation, earning the reputation as the best luxury project in Pune West.</p>
           </details>
           <details className="faq-item" >
             <summary >Where exactly is Malpani M SoulStrings located?</summary>
-            <p >The project is strategically positioned on the prestigious Malpani Baner Pashan Link Road Pashan Link Road, Pune. This prime location places it at the epicenter of West Pune, offering immediate connectivity to the Aundh Real Estate market, Shivajinagar, Balewadi High Street, and the Hinjewadi IT corridor.</p>
+            <p >The project is strategically positioned on the prestigious Baner-Pashan Link Road, Pune. This prime location places it at the epicenter of West Pune, offering immediate connectivity to the Aundh real estate market, Shivajinagar, Balewadi High Street, and the Hinjewadi IT corridor.</p>
           </details>
           <details className="faq-item" >
             <summary >What amenities are provided at Malpani M SoulStrings?</summary>
@@ -465,7 +465,7 @@ export default function Home() {
           </details>
           <details className="faq-item" >
             <summary >Why is Baner considered a top real estate investment in Pune?</summary>
-            <p >Baner has rapidly evolved into the most desired residential hub for high-net-worth individuals. With its seamless connectivity to the Mumbai-Bengaluru Highway, proximity to elite educational institutions in Wakad, and world-class commercial infrastructure in Balewadi, the Baner Pashan Link Road real estate Market promises unparalleled ROI and lifestyle upgrades.</p>
+            <p >Baner has rapidly evolved into the most desired residential hub for high-net-worth individuals. With its seamless connectivity to the Mumbai-Bengaluru Highway, proximity to elite educational institutions in Wakad, and world-class commercial infrastructure in Balewadi, the Baner Pashan Link Road real estate market promises unparalleled ROI and lifestyle upgrades.</p>
           </details>
           <details className="faq-item" >
             <summary >Is Malpani M SoulStrings a good choice for IT professionals?</summary>
@@ -473,27 +473,27 @@ export default function Home() {
           </details>
           <details className="faq-item" >
             <summary >What is the price of Malpani M Soulstrings?</summary>
-            <p >The <strong>Malpani M Soulstrings price</strong> is highly competitive for the ultra-luxury segment in Pune West. Because pricing varies based on floor bands, configurations (3 BHK vs 4 BHK), and custom specifications, we recommend submitting an inquiry to get the exact and updated pricing sheet.</p>
+            <p >The Malpani M SoulStrings price is highly competitive for the ultra-luxury segment in Pune West. Because pricing varies based on floor bands, configurations (3 BHK vs 4 BHK), and custom specifications, we recommend submitting an inquiry to get the exact and updated pricing sheet.</p>
           </details>
           <details className="faq-item" >
             <summary >How can I download the Malpani M Soulstrings floor plan and brochure?</summary>
-            <p >To view the detailed layouts, simply fill out the smart contact form at the bottom of this page. You will immediately receive access to the official <strong>Malpani M Soulstrings brochure pdf</strong> and the complete <strong>Malpani M Soulstrings floor plan</strong> gallery.</p>
+            <p >To view the detailed layouts, simply fill out the smart contact form at the bottom of this page. You will immediately receive access to the official Malpani M SoulStrings brochure and the complete floor plan gallery.</p>
           </details>
           <details className="faq-item" >
             <summary >What is the Malpani M Soulstrings RERA number?</summary>
-            <p >The project is strictly MahaRERA compliant. The official <strong>Malpani M Soulstrings RERA number</strong> is P52100076782 (Wing B) and P52100055678 (Wing C).</p>
+            <p >The project is strictly MahaRERA compliant. The official Malpani M SoulStrings RERA number is P52100076782 (Wing B) and P52100055678 (Wing C).</p>
           </details>
           <details className="faq-item" >
             <summary >How can I check the Malpani M Soulstrings construction update?</summary>
-            <p >Construction is proceeding at an accelerated pace. To get the latest, real-time <strong>Malpani M SoulStrings construction update</strong>, timeline for possession, or to inquire about <strong>ready possession luxury apartments in Pune</strong>, please contact our VIP sales team via the WhatsApp widget.</p>
+            <p >Construction is proceeding at an accelerated pace. To get the latest, real-time Malpani M SoulStrings construction update, timeline for possession, or to inquire about ready possession luxury apartments in Pune, please contact our VIP sales team via the WhatsApp widget.</p>
           </details>
           <details className="faq-item" >
             <summary >Who is the developer behind Malpani M SoulStrings?</summary>
-            <p >This masterpiece is developed by Malpani Estates, a legacy brand renowned across the Entire Pune Real Estate Market for delivering iconic, ultra-premium projects with uncompromising quality and architectural brilliance.</p>
+            <p >This masterpiece is developed by Malpani Estates, a legacy brand renowned across the entire Pune real estate market for delivering iconic, ultra-premium projects with uncompromising quality and architectural brilliance.</p>
           </details>
           <details className="faq-item" >
             <summary >How can I book a 3BHK or 4BHK luxury Residence here?</summary>
-            <p >You can register your interest by using our smart contact form below or by clicking the WhatsApp widget. Our dedicated VIP sales team specializing in the West Pune Real Estate Market will guide you through a private presentation and site visit.</p>
+            <p >You can register your interest by using our smart contact form below or by clicking the WhatsApp widget. Our dedicated VIP sales team specializing in the West Pune real estate market will guide you through a private presentation and site visit.</p>
           </details>
         </div>
       </div>
@@ -504,7 +504,7 @@ export default function Home() {
       <div className="container contact-wrapper fade-in-up">
         <div className="contact-info">
           <h2 className="section-title gradient-text">Schedule Site Visit Malpani Soulstrings</h2>
-          <p>Get exclusive <strong>Malpani Soulstrings pricing</strong> and browse the finest <strong>luxury flats for sale Baner</strong>.</p>
+          <p>Get exclusive Malpani M SoulStrings pricing lists and browse the finest luxury flats for sale in Baner.</p>
           <div className="contact-details" >
             <p ><span className="material-symbols-outlined" >location_on</span> Baner Pashan Link Road, Pune, Maharashtra 411045</p>
             <p ><span className="material-symbols-outlined" >call</span> +91 7744009295</p>

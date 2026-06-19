@@ -4,10 +4,15 @@ export function proxy(request) {
   const url = request.nextUrl.clone();
   const host = request.headers.get('host') || '';
 
-  // Redirect non-www to www (e.g. malpanimsoulstrings.com -> www.malpanimsoulstrings.com)
-  // This consolidates domain authority (PageRank) to a single canonical host.
-  if (host === 'malpanimsoulstrings.com') {
-    url.host = 'www.malpanimsoulstrings.com';
+  // Redirect all non-canonical domains to the primary canonical domain in production.
+  // This includes naked domains, staging domains (*.vercel.app), and any other aliases,
+  // preventing duplicate indexing penalties and consolidating PageRank authority.
+  const isLocalhost = host.includes('localhost') || host.includes('127.0.0.1');
+  const canonicalHost = 'www.malpanimsoulstrings.com';
+
+  if (!isLocalhost && host !== canonicalHost) {
+    url.host = canonicalHost;
+    url.protocol = 'https:'; // Force HTTPS redirect
     return NextResponse.redirect(url, 301);
   }
 
