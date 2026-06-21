@@ -3,6 +3,18 @@ export default function SchemaMarkup({ pageName, pageUrl }) {
     "@context": "https://schema.org",
     "@graph": [
       {
+        "@type": "Organization",
+        "@id": "https://www.malpanimsoulstrings.com/#organization",
+        "name": "Malpani Group",
+        "url": "https://www.malpanimsoulstrings.com/",
+        "logo": "https://www.malpaniestates.com/assets/images/apple-touch-icon.png",
+        "sameAs": [
+          "https://www.facebook.com/malpanigroup/",
+          "https://www.instagram.com/malpanigroup/",
+          "https://twitter.com/malpani_group"
+        ]
+      },
+      {
         "@type": "BreadcrumbList",
         "itemListElement": [
           { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://www.malpanimsoulstrings.com/" },
