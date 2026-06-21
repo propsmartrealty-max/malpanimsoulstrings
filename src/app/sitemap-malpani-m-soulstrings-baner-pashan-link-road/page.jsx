@@ -82,6 +82,29 @@ export default function HTMLSitemap() {
             </ul>
           </div>
         </div>
+
+        <div className="row mt-5">
+          <div className="col-12">
+            <h2 style={{ color: 'var(--color-primary)', borderBottom: '1px solid rgba(212,175,55,0.3)', paddingBottom: '0.5rem', marginBottom: '1.5rem', fontSize: '1.4rem' }}>Malpani Estates Pune Portfolio</h2>
+            <div style={{ display: 'flex', flexWrap: 'wrap', gap: '20px', lineHeight: '2' }}>
+              <Link href="/blog-malpani-m-soulstrings-baner-pashan-link-road/malpani-group-luxury-projects-pune" style={{ color: 'var(--color-text)', textDecoration: 'none' }}>Malpani Group Luxury Projects Guide</Link>
+              <span style={{ color: 'rgba(255,255,255,0.2)' }}>|</span>
+              <Link href="/blog-malpani-m-soulstrings-baner-pashan-link-road/malpani-group-luxury-projects-pune" style={{ color: 'var(--color-text)', textDecoration: 'none' }}>M Aryabhatta Baner</Link>
+              <span style={{ color: 'rgba(255,255,255,0.2)' }}>|</span>
+              <Link href="/blog-malpani-m-soulstrings-baner-pashan-link-road/malpani-group-luxury-projects-pune" style={{ color: 'var(--color-text)', textDecoration: 'none' }}>M Ramanujan Baner</Link>
+              <span style={{ color: 'rgba(255,255,255,0.2)' }}>|</span>
+              <Link href="/blog-malpani-m-soulstrings-baner-pashan-link-road/malpani-group-luxury-projects-pune" style={{ color: 'var(--color-text)', textDecoration: 'none' }}>M Kautilya Viman Nagar</Link>
+              <span style={{ color: 'rgba(255,255,255,0.2)' }}>|</span>
+              <Link href="/blog-malpani-m-soulstrings-baner-pashan-link-road/malpani-group-luxury-projects-pune" style={{ color: 'var(--color-text)', textDecoration: 'none' }}>Malpani Vivanta Balewadi</Link>
+              <span style={{ color: 'rgba(255,255,255,0.2)' }}>|</span>
+              <Link href="/blog-malpani-m-soulstrings-baner-pashan-link-road/malpani-group-luxury-projects-pune" style={{ color: 'var(--color-text)', textDecoration: 'none' }}>Malpani Greens Wakad</Link>
+              <span style={{ color: 'rgba(255,255,255,0.2)' }}>|</span>
+              <Link href="/blog-malpani-m-soulstrings-baner-pashan-link-road/malpani-group-luxury-projects-pune" style={{ color: 'var(--color-text)', textDecoration: 'none' }}>Malpani The Crest Pimple Saudagar</Link>
+              <span style={{ color: 'rgba(255,255,255,0.2)' }}>|</span>
+              <Link href="/blog-malpani-m-soulstrings-baner-pashan-link-road/malpani-group-luxury-projects-pune" style={{ color: 'var(--color-text)', textDecoration: 'none' }}>Malpani Cereza Punawale</Link>
+            </div>
+          </div>
+        </div>
       </div>
     </main>
   );
