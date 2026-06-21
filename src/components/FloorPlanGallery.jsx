@@ -55,7 +55,7 @@ export default function FloorPlanGallery() {
         <div style={{ position: 'relative', width: '100%', maxWidth: '1000px', margin: '0 auto', overflow: 'hidden', borderRadius: '8px' }}>
           <Image 
             src={currentPlan.image} 
-            alt={`Malpani M SoulStrings ${currentPlan.label}`} 
+            alt={`Malpani M SoulStrings ${currentPlan.label} Baner Pashan Link Road Pune`} 
             width={1200} 
             height={800} 
             style={{ width: '100%', height: 'auto', display: 'block', transition: 'opacity 0.5s ease-in-out' }} 

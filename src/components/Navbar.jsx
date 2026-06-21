@@ -26,7 +26,7 @@ export default function Navbar() {
       <nav className="navbar" aria-label="Main Navigation">
         <div className="nav-container">
           <Link href="/" className="brand">
-            <Image src="https://www.malpaniestates.com/assets/images/apple-touch-icon.png" alt="Malpani M SoulStrings" width={40} height={40} className="brand-logo" />
+            <Image src="https://www.malpaniestates.com/assets/images/apple-touch-icon.png" alt="Malpani M SoulStrings logo Baner Pashan Link Road" width={40} height={40} className="brand-logo" />
             <span className="brand-text">
               <span className="brand-title">MALPANI</span>
               <b className="brand-subtitle">M SoulStrings</b>

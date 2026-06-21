@@ -242,7 +242,7 @@ export default function RootLayout({ children }) {
       </head>
       <body>
         <div id="preloader">
-          <Image src="/icon.png" className="preloader-logo" alt="Malpani M SoulStrings" width={120} height={120} priority />
+          <Image src="/icon.png" className="preloader-logo" alt="Malpani M SoulStrings Baner Pashan Link Road Pune" width={120} height={120} priority />
         </div>
         <Navbar />
         <ThemeProvider>{children}</ThemeProvider>

@@ -13,7 +13,7 @@ export default function InteractiveMasterplan() {
     <div className="interactive-masterplan-container" style={{ position: 'relative', width: '100%', maxWidth: '1200px', margin: '0 auto', borderRadius: '15px', overflow: 'hidden', boxShadow: '0 10px 30px rgba(0,0,0,0.5)' }}>
       <Image 
         src="https://malpani-cms.firsteconomy.com/uploads/Master_plan_70440f35a4.jpg" 
-        alt="Malpani M SoulStrings Masterplan" 
+        alt="Malpani M SoulStrings Masterplan Layout Baner Pashan Link Road" 
         width={1200} 
         height={800} 
         style={{ width: '100%', height: 'auto', display: 'block' }}
