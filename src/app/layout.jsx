@@ -199,7 +199,7 @@ export default function RootLayout({ children }) {
         
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
-        <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet" />
+        <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&display=swap" rel="stylesheet" />
         {/* Fonts are now optimized via next/font/google for zero layout shift */}
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" />
         <link rel="stylesheet" href="/style.css" />
@@ -242,7 +242,7 @@ export default function RootLayout({ children }) {
       </head>
       <body>
         <div id="preloader">
-          <img src="/icon.png" className="preloader-logo" alt="Malpani M SoulStrings" width="120" height="120" />
+          <Image src="/icon.png" className="preloader-logo" alt="Malpani M SoulStrings" width={120} height={120} priority />
         </div>
         <Navbar />
         <ThemeProvider>{children}</ThemeProvider>
