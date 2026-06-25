@@ -50,23 +50,18 @@ jobs:
           echo "Warning: Timeout waiting for Vercel deployment matching $COMMIT_SHA. Proceeding with indexing anyway."
 
       - name: Create Google Service Account File
-        if: env.GOOGLE_SERVICE_ACCOUNT_JSON != ''
-        run: echo "${{ secrets.GOOGLE_SERVICE_ACCOUNT_JSON }}" > google-service-account.json
-        env:
-          GOOGLE_SERVICE_ACCOUNT_JSON: ${{ secrets.GOOGLE_SERVICE_ACCOUNT_JSON }}
+        run: |
+          if [ -n "${{ secrets.GOOGLE_SERVICE_ACCOUNT_JSON }}" ]; then
+            echo "${{ secrets.GOOGLE_SERVICE_ACCOUNT_JSON }}" > google-service-account.json
+          else
+            echo "[INFO] GOOGLE_SERVICE_ACCOUNT_JSON secret is empty. Skipping file creation."
+          fi
 
       - name: Push Google Indexing API Payload
-        if: env.GOOGLE_SERVICE_ACCOUNT_JSON != ''
-        run: node scripts/ping-google.js
-        env:
-          GOOGLE_SERVICE_ACCOUNT_JSON: ${{ secrets.GOOGLE_SERVICE_ACCOUNT_JSON }}
-
-      - name: Push IndexNow Payload (Bing / Yahoo / Yandex)
-        run: node scripts/ping-sitemap.js
-
-      - name: Retry IndexNow Payload (if first attempt failed)
-        if: failure()
         run: |
-          echo "[RETRY] First IndexNow ping failed. Retrying after 30 seconds..."
-          sleep 30
-          node scripts/ping-sitemap.js
+          if [ -f google-service-account.json ]; then
+            node scripts/ping-google.js
+          else
+            echo "[INFO] google-service-account.json not found. Skipping Google Indexing API."
+          fi
+

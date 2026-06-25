@@ -36,22 +36,21 @@ const STATIC_PATHS = [
   '/sitemap-malpani-m-soulstrings-baner-pashan-link-road',
 ];
 
-// Discover blog URLs from src/content/blog/ directory
-function getBlogUrls() {
-  const blogDir = path.join(process.cwd(), 'src', 'content', 'blog');
-  try {
-    const files = fs.readdirSync(blogDir).filter(f => f.endsWith('.md'));
-    return files.map(f => `/blog-malpani-m-soulstrings-baner-pashan-link-road/${f.replace('.md', '')}`);
-  } catch (e) {
-    console.warn('[WARN] Could not read blog directory:', e.message);
-    return [];
-  }
-}
+// Core target paths (bypassing secondary comparisons, blog posts, and localities to save API quota)
+const CORE_PATHS = [
+  '/',
+  '/3bhk-luxury-malpani-m-soulstrings-baner-pashan-link-road',
+  '/4bhk-luxury-malpani-m-soulstrings-baner-pashan-link-road',
+  '/5bhk-duplex-malpani-m-soulstrings-baner-pashan-link-road',
+  '/penthouse-luxury-malpani-m-soulstrings-baner-pashan-link-road',
+  '/location-malpani-m-soulstrings-baner-pashan-link-road',
+  '/nri-investment-malpani-m-soulstrings-baner-pashan-link-road',
+  '/amenities-malpani-m-soulstrings-baner-pashan-link-road',
+  '/infrastructure-malpani-m-soulstrings-baner-pashan-link-road',
+  '/baner-overview-malpani-m-soulstrings-baner-pashan-link-road',
+];
 
-// Build full URL list
-const blogPaths = getBlogUrls();
-const allPaths = [...STATIC_PATHS, ...blogPaths];
-const urlList = allPaths.map(p => `${BASE_URL}${p}`);
+const urlList = CORE_PATHS.map(p => `${BASE_URL}${p}`);
 
 console.log('=============================================');
 const title = 'GOOGLE INDEXING API GATEWAY';
