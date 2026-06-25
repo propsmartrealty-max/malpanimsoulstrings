@@ -10,7 +10,8 @@
     "build": "node -e \"let sha = process.env.VERCEL_GIT_COMMIT_SHA; if (!sha) { try { sha = require('child_process').execSync('git rev-parse HEAD').toString().trim(); } catch(e) { sha = 'local'; } } require('fs').writeFileSync('public/version.txt', sha);\" && next build",
     "start": "next start",
     "lint": "eslint",
-    "seo-audit": "node scripts/audit.js"
+    "seo-audit": "node scripts/audit.js",
+    "validate-schemas": "node scripts/validate-schema-graph.js"
   },
   "dependencies": {
     "@next/third-parties": "^16.2.6",

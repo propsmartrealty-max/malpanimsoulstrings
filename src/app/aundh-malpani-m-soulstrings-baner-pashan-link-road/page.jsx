@@ -7,7 +7,7 @@ import Link from 'next/link';
 export const metadata = {
   alternates: { canonical: '/aundh-malpani-m-soulstrings-baner-pashan-link-road' },
   title: 'Upgrade Your Legacy: Aundh to Baner Pashan Link Road',
-  description: 'The ultimate real estate upgrade for Aundh residents. Discover expansive, 35+ amenity luxury estates at Malpani M SoulStrings.',
+  description: 'The ultimate real estate upgrade for Aundh residents. Discover Malpani M SoulStrings on the Baner-Pashan Link Road, offering expansive 3 & 4 BHK luxury estates.',
 };
 
 export default function AundhPage() {
@@ -27,9 +27,41 @@ export default function AundhPage() {
     }
   };
 
+  const faqSchema = {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "Why are Aundh residents upgrading to the Baner-Pashan Link Road?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Aundh has become highly saturated with older, high-density residential constructions. Luxury homebuyers in Aundh are upgrading to the Baner-Pashan Link Road corridor to access modern, low-density projects like Malpani M SoulStrings, which offer expansive 3 & 4 BHK luxury estates, 35+ state-of-the-art amenities, and serene green hill-facing environments."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "What is the distance between Aundh and Malpani M SoulStrings?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Malpani M SoulStrings is located just 10-15 minutes away from Aundh via the seamlessly connected Baner Pashan Link Road. This close proximity allows residents to retain easy access to their established social infrastructure, premium clubs, and top schools in Aundh."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Are 4 BHK luxury residences available at Malpani M SoulStrings?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Yes, Malpani M SoulStrings offers premium 3 BHK, 4 BHK, and 5 BHK sky villa-style luxury residences. These estates feature massive column-free living rooms, expansive private decks, and 100% Vastu-compliant layouts designed for the absolute elite of Pune."
+        }
+      }
+    ]
+  };
+
   return (
     <main>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(localSchema) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
 
       <SchemaMarkup pageName="Aundh Real Estate" pageUrl="/aundh-malpani-m-soulstrings-baner-pashan-link-road" />
       
@@ -50,7 +82,7 @@ export default function AundhPage() {
         <div className="container" style={{ display: 'grid', gridTemplateColumns: '1fr 300px', gap: '3rem' }}>
           
           <article className="main-content">
-            <p>Aundh has long been the gold standard of West Pune. Its tree-lined avenues and established legacy are undeniable. However, as families grow and the definition of true luxury evolves, the saturated market of Aundh struggles to offer the sprawling, amenity-rich estates that modern high-net-worth families demand. It is time for the ultimate upgrade.</p>
+            <p>Aundh has long been the gold standard of West Pune. Its tree-lined avenues and established legacy are undeniable. However, as families grow and the definition of true luxury evolves, the saturated market of Aundh struggles to offer the sprawling, amenity-rich estates that modern high-net-worth families demand. It is time for the ultimate upgrade to <strong><Link href="/">Malpani M SoulStrings on the Baner-Pashan Link Road</Link></strong>.</p>
 
             <h2>The Space You Deserve</h2>
             <p><strong><Link href="/">Malpani M SoulStrings</Link></strong> at Baner Pashan Link Road offers what is simply unavailable in Aundh today: sheer, uncompromised space. Our 4 BHK luxury residences are designed as expansive estates, featuring massive living areas, private decks, and Vastu-compliant layouts. You do not have to compromise your lifestyle due to space constraints.</p>

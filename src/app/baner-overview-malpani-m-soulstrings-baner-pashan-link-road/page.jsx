@@ -6,13 +6,45 @@ import Link from 'next/link';
 export const metadata = {
   alternates: { canonical: '/baner-overview-malpani-m-soulstrings-baner-pashan-link-road' },
   title: 'Baner Real Estate Guide 2026 | Top Investment in Baner Pune',
-  description: 'Comprehensive guide to the Baner Pashan Link Road real estate market. Discover why investing in luxury properties in Baner Pune offers the highest ROI.',
+  description: 'Comprehensive guide to the Baner-Pashan Link Road real estate market. Discover why investing in Malpani M SoulStrings on the Baner-Pashan Link Road offers the highest ROI.',
   keywords: ['Baner Real Estate Guide', 'Investment in Baner Pune', 'Baner Pashan Link Road real estate', 'Buy luxury property in Baner Pune']
 };
 
 export default function BanerOverviewPage() {
+  const faqSchema = {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "What is the real estate investment outlook for Baner in 2026?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Baner remains one of West Pune's highest-appreciating micro-markets, driven by its proximity to the Hinjewadi IT corridor, Balewadi High Street, and major connectivity upgrades like the upcoming Metro Line 3 and the Mumbai-Pune Expressway."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Which is the best luxury residential project on Baner-Pashan Link Road?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Malpani M SoulStrings is considered the premier luxury project on Baner-Pashan Link Road, offering low-density sky villa style 3 & 4 BHK residences with acoustic window engineering, premium double-height decks, and a 35+ luxury amenity suite."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Is Baner-Pashan Link Road preferred by NRIs?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Yes, the corridor is a hotbed for NRI investment due to the high capital appreciation, premium developer reputations (like Malpani Group), Vastu-compliant designs, and modern infrastructure."
+        }
+      }
+    ]
+  };
+
   return (
     <main>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
 
       <SchemaMarkup pageName="Baner Overview" pageUrl="/baner-overview-malpani-m-soulstrings-baner-pashan-link-road" />
       
@@ -37,7 +69,7 @@ export default function BanerOverviewPage() {
               <div className="col-md-4">
                 <div className="card h-100 p-4 border-0" style={{ background: 'var(--color-surface)', borderRadius: '12px', border: '1px solid rgba(212,175,55,0.1)' }}>
                   <h3 style={{ color: 'var(--color-primary)', fontSize: '1.2rem', marginBottom: '1rem' }}>Baner Pashan Link Road</h3>
-                  <p style={{ color: 'var(--color-text-muted)', margin: 0, fontSize: '0.95rem' }}>Often referred to as the "Billionaire's Row" of West Pune, Baner Pashan Link Road is home to ultra-premium developments like Malpani M SoulStrings. Here, luxury isn't just an option; it's the standard.</p>
+                  <p style={{ color: 'var(--color-text-muted)', margin: 0, fontSize: '0.95rem' }}>Often referred to as the "Billionaire's Row" of West Pune, the corridor is defined by premier projects. Discover <Link href="/">Malpani M SoulStrings on the Baner-Pashan Link Road</Link>, where luxury isn't just an option; it's the standard.</p>
                 </div>
               </div>
               <div className="col-md-4">

@@ -24,7 +24,7 @@ When you invest in **second home investment pune** or luxury assets, your target
 ## The NRI Checklist for 2026
 
 If you are evaluating **luxury homes for nri buyers pune**, ensure the project meets these strict criteria:
-*   **Developer Legacy:** Invest only with developers with a multi-decade track record of zero-delay delivery and impeccable quality.
+*   **Developer Legacy:** Invest only with developers with a multi-decade track record of zero-delay delivery and impeccable quality. Read our detailed **[Invest in Malpani Estates guide](/invest-in-malpani-estates-pune-growth-corridors)** to understand corporate liquidity and execution safety.
 *   **Configuration:** Opt for expansive 3 BHK or 4 BHK layouts. The pandemic permanently shifted tenant preference towards larger spaces with dedicated home offices.
 *   **Proximity to Commercial Hubs:** Ensure the property is within a 15-minute commute of major IT parks to guarantee tenant occupancy.
 

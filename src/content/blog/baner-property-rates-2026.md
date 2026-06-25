@@ -2,7 +2,7 @@
 
 If you are evaluating the **[Pune Real Estate Market](/pune-real-estate-market-malpani-m-soulstrings-baner-pashan-link-road)**, understanding exact pricing trends is crucial to securing a high-yield asset. As we move into 2026, the **[Baner Real Estate Market](/baner-real-estate-market-malpani-m-soulstrings-baner-pashan-link-road)** continues to demonstrate exceptional resilience and astronomical appreciation, particularly in the ultra-luxury segment. 
 
-This guide breaks down the current property rates, ROI projections, and why investing in Baner—specifically on the Baner-Pashan Link Road—outperforms surrounding micro-markets.
+This guide breaks down the current property rates, ROI projections, and why investing in Baner—specifically on the Baner-Pashan Link Road—outperforms surrounding micro-markets. You can review the complete price index and trends report in our **[Baner Pashan Link Road Property Rates & Price Trends guide](/flat-rates-price-trends-baner-pashan-link-road-pune)**.
 
 ## 2026 Property Rate Benchmarks in West Pune
 

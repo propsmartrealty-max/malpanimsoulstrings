@@ -7,7 +7,7 @@ import Link from 'next/link';
 export const metadata = {
   alternates: { canonical: '/pashan-malpani-m-soulstrings-baner-pashan-link-road' },
   title: 'Pashan Serenity & Smart Luxury',
-  description: 'Where the natural beauty of Pashan meets the pinnacle of modern smart-home technology. Panoramic views and sustainable luxury.',
+  description: 'Where the natural beauty of Pashan meets the smart luxury of Malpani M SoulStrings on the Baner-Pashan Link Road. Enjoy panoramic views and sustainable design.',
 };
 
 export default function PashanPage() {
@@ -27,9 +27,41 @@ export default function PashanPage() {
     }
   };
 
+  const faqSchema = {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "What makes Baner-Pashan Link Road a premium residential choice?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Baner-Pashan Link Road is nestled against the scenic, green Pashan hills while being minutes from major commercial hubs like Baner and Balewadi. It offers the perfect combination of pristine natural serenity, clean air, and modern infrastructure."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Is Malpani M SoulStrings a smart-home enabled project?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Yes, Malpani M SoulStrings offers advanced smart-home automation. Homeowners can seamlessly control climate settings, ambient lighting, and high-level biometric security via voice commands or smartphones."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "How does Malpani M SoulStrings integrate green living with luxury?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "The project is designed with a green-first approach, featuring 100% cardinal-aligned ventilation to optimize natural light, energy-efficient building systems, and extensive nature landscaping, alongside luxury amenities like sky pools."
+        }
+      }
+    ]
+  };
+
   return (
     <main>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(localSchema) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
 
       <SchemaMarkup pageName="Pashan Link Road" pageUrl="/pashan-malpani-m-soulstrings-baner-pashan-link-road" />
       
@@ -50,7 +82,7 @@ export default function PashanPage() {
         <div className="container" style={{ display: 'grid', gridTemplateColumns: '1fr 300px', gap: '3rem' }}>
           
           <article className="main-content">
-            <p>The allure of Pashan has always been its natural beauty—the rolling hills, the cooler climate, and the serene environment. At <strong><Link href="/">Malpani M SoulStrings</Link></strong>, situated perfectly on the Baner Pashan Link Road, we have captured that natural essence and fused it with the pinnacle of modern smart-home technology.</p>
+            <p>The allure of Pashan has always been its natural beauty—the rolling hills, the cooler climate, and the serene environment. At <strong><Link href="/">Malpani M SoulStrings on the Baner-Pashan Link Road</Link></strong>, we have captured that natural essence and fused it with the pinnacle of modern smart-home technology.</p>
 
             <h2>Panoramic Views and Sustainable Living</h2>
             <p>Wake up to sweeping, unobstructed views of the lush Baner-Pashan hills. Our architectural masterpiece is designed to maximize natural light and cross-ventilation, ensuring that nature is an integral part of your living room. We are committed to sustainable luxury, featuring energy-efficient systems and extensive green landscaping.</p>

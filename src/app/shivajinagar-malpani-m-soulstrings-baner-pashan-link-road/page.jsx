@@ -27,9 +27,41 @@ export default function ShivajinagarPage() {
     }
   };
 
+  const faqSchema = {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "Why should Shivajinagar luxury home buyers consider the Baner-Pashan Link Road?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Central areas like Shivajinagar face increasing commercial density, congestion, noise pollution, and a lack of space for modern, expansive gated communities. The Baner-Pashan Link Road offers Shivajinagar elites the opportunity to own expansive, low-density modern estates with complete privacy and premium resort-style security."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "What is the travel time from Shivajinagar to Malpani M SoulStrings?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Malpani M SoulStrings is highly accessible from Shivajinagar, taking approximately 20-25 minutes via University Road and the Baner-Pashan link route, providing a smooth commute for business owners and executives."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "What amenities are offered at Malpani M SoulStrings for elite professionals?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Malpani M SoulStrings offers a 35+ world-class amenity ecosystem, including a sky infinity pool, state-of-the-art fitness arena, dedicated co-working lounges, smart automation, and private parking designed for modern high-profile families."
+        }
+      }
+    ]
+  };
+
   return (
     <main>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(localSchema) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
 
       <SchemaMarkup pageName="Shivajinagar" pageUrl="/shivajinagar-malpani-m-soulstrings-baner-pashan-link-road" />
       
@@ -50,7 +82,7 @@ export default function ShivajinagarPage() {
         <div className="container" style={{ display: 'grid', gridTemplateColumns: '1fr 300px', gap: '3rem' }}>
           
           <article className="main-content">
-            <p>For the residents of Shivajinagar, prestige is paramount. However, the increasing density, traffic, and lack of expansive modern infrastructure in central Pune often compromise the tranquility that true luxury should provide. <strong><Link href="/">Malpani M SoulStrings</Link></strong> on the Baner Pashan Link Road offers the perfect solution: an ultra-luxury urban retreat.</p>
+            <p>For the residents of Shivajinagar, prestige is paramount. However, the increasing density, traffic, and lack of expansive modern infrastructure in central Pune often compromise the tranquility that true luxury should provide. Choosing <strong><Link href="/">Malpani M SoulStrings on the Baner-Pashan Link Road</Link></strong> offers the perfect solution: an ultra-luxury urban retreat.</p>
 
             <h2>Expansive Estates, Unmatched Privacy</h2>
             <p>Our 4 BHK Residences are crafted for absolute exclusivity. With low-density planning, private elevator access options, and meticulously sound-proofed environments, you can retreat from the chaos of the city into your own private sanctuary. This is luxury defined by peace.</p>
