@@ -22,7 +22,7 @@ function getHtmlFiles(dir, filesList = []) {
   return filesList;
 }
 
-console.log('--- STARTING JSON-LD GRAPH SCHEMA VALIDATION ---');
+console.log('--- STARTING UNIFIED SEO & SCHEMA GRAPH VALIDATION ---');
 const htmlFiles = getHtmlFiles(BUILD_DIR);
 console.log(`Found ${htmlFiles.length} statically compiled HTML files in .next server app directory.\n`);
 
@@ -35,15 +35,80 @@ const warningsList = [];
 
 htmlFiles.forEach((filePath) => {
   const relativePath = path.relative(BUILD_DIR, filePath);
+  
+  // Ignore internal page templates and generic error pages
+  if (relativePath.startsWith('_') || relativePath.includes('/page.html') || relativePath === 'icon.png.html') {
+    return;
+  }
+
   const htmlContent = fs.readFileSync(filePath, 'utf-8');
   const $ = cheerio.load(htmlContent);
+
+  // 1. Validate H1 Tags (Single H1 compliance)
+  const h1s = $('h1');
+  if (h1s.length === 0) {
+    errorsList.push({
+      file: relativePath,
+      message: 'Missing H1 heading tag. A page must have exactly one H1.'
+    });
+    totalErrors++;
+  } else if (h1s.length > 1) {
+    errorsList.push({
+      file: relativePath,
+      message: `Multiple H1 tags found (${h1s.length}). A page must have exactly one H1.`
+    });
+    totalErrors++;
+  }
+
+  // 2. Validate Canonical URL
+  const canonical = $('link[rel="canonical"]');
+  if (canonical.length === 0) {
+    errorsList.push({
+      file: relativePath,
+      message: 'Missing canonical link tag.'
+    });
+    totalErrors++;
+  } else {
+    const canonicalHref = canonical.attr('href');
+    if (!canonicalHref.startsWith('https://www.malpanimsoulstrings.com')) {
+      errorsList.push({
+        file: relativePath,
+        message: `Canonical URL must start with secure www domain: "${canonicalHref}"`
+      });
+      totalErrors++;
+    }
+  }
+
+  // 3. Validate OpenGraph URLs
+  const ogUrl = $('meta[property="og:url"]');
+  if (ogUrl.length > 0) {
+    const urlVal = ogUrl.attr('content');
+    if (urlVal.includes('malpanimsoulstrings.com') && !urlVal.includes('www.malpanimsoulstrings.com')) {
+      errorsList.push({
+        file: relativePath,
+        message: `OpenGraph og:url is missing "www." prefix: "${urlVal}"`
+      });
+      totalErrors++;
+    }
+  }
+
+  // 4. Validate Image Alt Tags
+  $('img').each((idx, imgEl) => {
+    const alt = $(imgEl).attr('alt');
+    const src = $(imgEl).attr('src');
+    if (alt === undefined || alt.trim() === '') {
+      errorsList.push({
+        file: relativePath,
+        message: `Image missing alt description (src: "${src}")`
+      });
+      totalErrors++;
+    }
+  });
+
+  // 5. Validate JSON-LD Schema Blocks
   const jsonLdScripts = $('script[type="application/ld+json"]');
 
   if (jsonLdScripts.length === 0) {
-    // Ignore internal page templates and generic error pages
-    if (relativePath.startsWith('_') || relativePath.includes('/page.html') || relativePath === 'icon.png.html') {
-      return;
-    }
     warningsList.push({
       file: relativePath,
       message: 'No JSON-LD schemas found on page.'
@@ -111,7 +176,7 @@ htmlFiles.forEach((filePath) => {
           if (val.includes('malpanimsoulstrings.com') && !val.includes('www.malpanimsoulstrings.com')) {
             errorsList.push({
               file: relativePath,
-              message: `URL missing "www." prefix: ${val}`
+              message: `URL missing "www." prefix in schema: ${val}`
             });
             totalErrors++;
           }
@@ -160,7 +225,7 @@ htmlFiles.forEach((filePath) => {
   }
 });
 
-console.log(`Schema Validation Completed.`);
+console.log(`SEO & Schema Validation Completed.`);
 console.log(`- Total JSON-LD schemas validated: ${totalSchemasChecked}`);
 console.log(`- Warnings: ${totalWarnings}`);
 console.log(`- Errors: ${totalErrors}\n`);
@@ -174,9 +239,9 @@ if (totalWarnings > 0) {
 if (totalErrors > 0) {
   console.error('--- ERROR DETAILS ---');
   errorsList.forEach(e => console.error(`[ERROR] ${e.file}: ${e.message}`));
-  console.log('\n[FAIL] JSON-LD Schema Validation Failed. Fix the errors above.');
+  console.log('\n[FAIL] Unified SEO & Schema Validation Failed. Fix the errors above.');
   process.exit(1);
 } else {
-  console.log('[PASS] All JSON-LD schemas are valid and conform to integrity rules.');
+  console.log('[PASS] All compiled pages and schemas conform to absolute SEO and graph integrity standards.');
   process.exit(0);
 }

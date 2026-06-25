@@ -197,8 +197,14 @@ export default function RootLayout({ children }) {
         {/* LCP Optimization for Top Google Core Web Vitals Ranking */}
         <link rel="preload" as="image" href="https://malpani-cms.firsteconomy.com/uploads/M_soul_strings_Desktop_Banner_Without_Text_0d38ce28d4.jpg" fetchPriority="high" />
         
-        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        {/* Next-Gen Preconnect and Preload Resource Hints */}
+        <link rel="preconnect" href="https://fonts.googleapis.com" crossOrigin="anonymous" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
+        <link rel="preconnect" href="https://cdn.jsdelivr.net" crossOrigin="anonymous" />
+        
+        <link rel="preload" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" as="style" />
+        <link rel="preload" href="/style.css" as="style" />
+        
         <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&display=swap" rel="stylesheet" />
         {/* Fonts are now optimized via next/font/google for zero layout shift */}
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" />

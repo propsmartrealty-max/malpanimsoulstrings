@@ -12,7 +12,8 @@ export default function SchemaMarkup({ pageName, pageUrl }) {
           "https://www.facebook.com/malpanigroup/",
           "https://www.instagram.com/malpanigroup/",
           "https://twitter.com/malpani_group"
-        ]
+        ],
+        "owns": { "@id": "https://www.malpanimsoulstrings.com/#apartmentcomplex" }
       },
       {
         "@type": "BreadcrumbList",
@@ -23,6 +24,7 @@ export default function SchemaMarkup({ pageName, pageUrl }) {
       },
       {
         "@type": "ApartmentComplex",
+        "@id": "https://www.malpanimsoulstrings.com/#apartmentcomplex",
         "name": "Malpani M SoulStrings",
         "description": "Ultra-premium 3 BHK, 4 BHK, 5 BHK, Duplex, and Penthouse luxury estates with 35+ world-class amenities at Baner-Pashan Link Road, Pune West.",
         "url": "https://www.malpanimsoulstrings.com/",
@@ -54,6 +56,8 @@ export default function SchemaMarkup({ pageName, pageUrl }) {
         "image": "https://malpani-cms.firsteconomy.com/uploads/M_soul_strings_Desktop_Banner_Without_Text_0d38ce28d4.jpg",
         "telephone": "+91 7744009295",
         "url": "https://www.malpanimsoulstrings.com/",
+        "parentOrganization": { "@id": "https://www.malpanimsoulstrings.com/#organization" },
+        "knowsAbout": { "@id": "https://www.malpanimsoulstrings.com/#apartmentcomplex" },
         "governmentIdentifier": "MahaRERA Registration: P52100076782, P52100055678",
         "address": {
           "@type": "PostalAddress",
