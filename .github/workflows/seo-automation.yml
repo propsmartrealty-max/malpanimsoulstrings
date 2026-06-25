@@ -65,3 +65,6 @@ jobs:
             echo "[INFO] google-service-account.json not found. Skipping Google Indexing API."
           fi
 
+      - name: Push IndexNow Payload
+        run: node scripts/ping-sitemap.js
+

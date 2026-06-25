@@ -225,6 +225,43 @@ htmlFiles.forEach((filePath) => {
   }
 });
 
+// Validate dynamic XML sitemap build output
+const SITEMAP_PATH = path.join(BUILD_DIR, 'sitemap.xml.body');
+if (fs.existsSync(SITEMAP_PATH)) {
+  console.log(`[INFO] Validating built XML sitemap body...`);
+  const sitemapXml = fs.readFileSync(SITEMAP_PATH, 'utf-8');
+  const $xml = cheerio.load(sitemapXml, { xmlMode: true });
+  const urls = $xml('loc');
+  
+  if (urls.length === 0) {
+    errorsList.push({
+      file: 'sitemap.xml.body',
+      message: 'Dynamic XML sitemap is empty or has no <loc> elements.'
+    });
+    totalErrors++;
+  } else {
+    console.log(`- Verified sitemap contains ${urls.length} URLs.`);
+    
+    // Check url consistency in sitemap
+    urls.each((idx, el) => {
+      const locText = $xml(el).text();
+      if (!locText.startsWith('https://www.malpanimsoulstrings.com')) {
+        errorsList.push({
+          file: 'sitemap.xml.body',
+          message: `Sitemap URL contains invalid domain prefix: "${locText}"`
+        });
+        totalErrors++;
+      }
+    });
+  }
+} else {
+  warningsList.push({
+    file: 'sitemap.xml.body',
+    message: 'Could not find sitemap.xml.body in built folder. Dynamic XML sitemap was not validated.'
+  });
+  totalWarnings++;
+}
+
 console.log(`SEO & Schema Validation Completed.`);
 console.log(`- Total JSON-LD schemas validated: ${totalSchemasChecked}`);
 console.log(`- Warnings: ${totalWarnings}`);
