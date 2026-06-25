@@ -34,6 +34,11 @@ const STATIC_PATHS = [
   '/compare-malpani-m-soulstrings-baner-pashan-link-road/pristine-lords-baner-malpani-m-soulstrings-baner-pashan-link-road',
   '/compare-malpani-m-soulstrings-baner-pashan-link-road/kohinoor-livience-baner-malpani-m-soulstrings-baner-pashan-link-road',
   '/sitemap-malpani-m-soulstrings-baner-pashan-link-road',
+  '/malpani-m-soulstrings-reviews-ratings-baner-pune',
+  '/flat-rates-price-trends-baner-pashan-link-road-pune',
+  '/luxury-gated-community-apartments-for-sale-pune-west',
+  '/invest-in-malpani-estates-pune-growth-corridors',
+  '/malpani-m-soulstrings-construction-status-updates-possession',
 ];
 
 // Discover blog URLs from src/content/blog/ directory

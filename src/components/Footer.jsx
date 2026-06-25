@@ -198,6 +198,11 @@ export default function Footer() {
               <Link href="/aundh-malpani-m-soulstrings-baner-pashan-link-road" style={{ fontSize: '0.75rem', color: 'rgba(255,255,255,0.4)', textDecoration: 'none' }}>Aundh Real Estate</Link>
               <Link href="/pashan-malpani-m-soulstrings-baner-pashan-link-road" style={{ fontSize: '0.75rem', color: 'rgba(255,255,255,0.4)', textDecoration: 'none' }}>Pashan Luxury Flats</Link>
               <Link href="/shivajinagar-malpani-m-soulstrings-baner-pashan-link-road" style={{ fontSize: '0.75rem', color: 'rgba(255,255,255,0.4)', textDecoration: 'none' }}>Shivajinagar Premium Estates</Link>
+              <Link href="/malpani-m-soulstrings-reviews-ratings-baner-pune" style={{ fontSize: '0.75rem', color: 'rgba(255,255,255,0.4)', textDecoration: 'none' }}>Malpani M Soulstrings Reviews</Link>
+              <Link href="/flat-rates-price-trends-baner-pashan-link-road-pune" style={{ fontSize: '0.75rem', color: 'rgba(255,255,255,0.4)', textDecoration: 'none' }}>Baner Link Road Price Trends</Link>
+              <Link href="/luxury-gated-community-apartments-for-sale-pune-west" style={{ fontSize: '0.75rem', color: 'rgba(255,255,255,0.4)', textDecoration: 'none' }}>Luxury Gated Communities Pune West</Link>
+              <Link href="/invest-in-malpani-estates-pune-growth-corridors" style={{ fontSize: '0.75rem', color: 'rgba(255,255,255,0.4)', textDecoration: 'none' }}>Invest in Malpani Estates</Link>
+              <Link href="/malpani-m-soulstrings-construction-status-updates-possession" style={{ fontSize: '0.75rem', color: 'rgba(255,255,255,0.4)', textDecoration: 'none' }}>M Soulstrings Construction Status</Link>
             </div>
           </div>
         </div>

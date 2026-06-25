@@ -37,7 +37,22 @@ export async function GET() {
     { route: '/baner-overview-malpani-m-soulstrings-baner-pashan-link-road', priority: 0.9, freq: 'weekly' },
     { route: '/pune-west-real-estate-market-malpani-m-soulstrings-baner-pashan-link-road', priority: 0.9, freq: 'weekly' },
     { route: '/vastu-compliant-luxury-homes-pune-malpani-m-soulstrings-baner-pashan-link-road', priority: 0.9, freq: 'weekly' },
-    { route: '/blog-malpani-m-soulstrings-baner-pashan-link-road', priority: 0.9, freq: 'weekly' }
+    { route: '/blog-malpani-m-soulstrings-baner-pashan-link-road', priority: 0.9, freq: 'weekly' },
+    { route: '/malpani-m-soulstrings-reviews-ratings-baner-pune', priority: 0.9, freq: 'weekly', images: [
+      { url: 'https://malpani-cms.firsteconomy.com/uploads/About_Project_27b8c57d51.png', title: 'Malpani M SoulStrings Reviews & Ratings' }
+    ]},
+    { route: '/flat-rates-price-trends-baner-pashan-link-road-pune', priority: 0.9, freq: 'weekly', images: [
+      { url: 'https://malpani-cms.firsteconomy.com/uploads/M_soul_strings_Desktop_Banner_Without_Text_0d38ce28d4.jpg', title: 'Baner Pashan Link Road Real Estate Price Trends' }
+    ]},
+    { route: '/luxury-gated-community-apartments-for-sale-pune-west', priority: 0.9, freq: 'weekly', images: [
+      { url: 'https://malpani-cms.firsteconomy.com/uploads/Entrance_Lobby_9d4d367801.png', title: 'Luxury Gated Community in Pune West' }
+    ]},
+    { route: '/invest-in-malpani-estates-pune-growth-corridors', priority: 0.9, freq: 'weekly', images: [
+      { url: 'https://malpani-cms.firsteconomy.com/uploads/About_Project_27b8c57d51.png', title: 'Invest in Malpani Estates Pune' }
+    ]},
+    { route: '/malpani-m-soulstrings-construction-status-updates-possession', priority: 0.9, freq: 'weekly', images: [
+      { url: 'https://malpani-cms.firsteconomy.com/uploads/About_Project_27b8c57d51.png', title: 'Malpani M SoulStrings Construction Status' }
+    ]}
   ];
 
   const tier3 = [
