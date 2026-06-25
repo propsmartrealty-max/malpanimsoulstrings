@@ -116,6 +116,67 @@ export default function Footer() {
               </p>
             </div>
           </div>
+
+          {/* New Row: Connectivity Matrix & Engineering Specifications */}
+          <div className="row mt-5 pt-4" style={{ borderTop: '1px solid rgba(255,255,255,0.05)' }}>
+            {/* Proximity & Connectivity Table */}
+            <div className="col-lg-6 mb-4 mb-lg-0" style={{ paddingRight: '2rem' }}>
+              <h4 style={{ color: '#fff', fontSize: '1.15rem', fontWeight: '600', marginBottom: '1rem', borderBottom: '1px solid rgba(255,255,255,0.1)', paddingBottom: '0.5rem' }}>
+                Proximity & Connectivity Matrix
+              </h4>
+              <p style={{ fontSize: '0.9rem', lineHeight: '1.8', marginBottom: '1.5rem' }}>
+                Located at the confluence of nature and commercial connectivity, Malpani M SoulStrings offers seamless access to key arterial hubs and commercial centers in Pune West:
+              </p>
+              <div className="table-responsive">
+                <table style={{ width: '100%', fontSize: '0.85rem', color: 'rgba(255,255,255,0.7)', borderCollapse: 'collapse' }}>
+                  <thead>
+                    <tr style={{ borderBottom: '2px solid rgba(212,175,55,0.3)', textAlign: 'left' }}>
+                      <th style={{ padding: '0.5rem 0', color: '#fff' }}>Destination Hub</th>
+                      <th style={{ padding: '0.5rem 0', color: '#fff' }}>Distance / Travel Time</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr style={{ borderBottom: '1px solid rgba(255,255,255,0.1)' }}>
+                      <td style={{ padding: '0.6rem 0', fontWeight: '600', color: '#d4af37' }}>Hinjewadi IT Park (Phase 1)</td>
+                      <td style={{ padding: '0.6rem 0' }}>~15 Minutes (8.2 km)</td>
+                    </tr>
+                    <tr style={{ borderBottom: '1px solid rgba(255,255,255,0.1)' }}>
+                      <td style={{ padding: '0.6rem 0', fontWeight: '600', color: '#d4af37' }}>Balewadi High Street</td>
+                      <td style={{ padding: '0.6rem 0' }}>~5 Minutes (2.4 km)</td>
+                    </tr>
+                    <tr style={{ borderBottom: '1px solid rgba(255,255,255,0.1)' }}>
+                      <td style={{ padding: '0.6rem 0', fontWeight: '600', color: '#d4af37' }}>Mumbai-Pune Expressway (NH 48)</td>
+                      <td style={{ padding: '0.6rem 0' }}>~3 Minutes (1.1 km)</td>
+                    </tr>
+                    <tr style={{ borderBottom: '1px solid rgba(255,255,255,0.1)' }}>
+                      <td style={{ padding: '0.6rem 0', fontWeight: '600', color: '#d4af37' }}>Jupiter Hospital & Manipal Clinic</td>
+                      <td style={{ padding: '0.6rem 0' }}>~8 Minutes (3.2 km)</td>
+                    </tr>
+                    <tr style={{ borderBottom: '1px solid rgba(255,255,255,0.1)' }}>
+                      <td style={{ padding: '0.6rem 0', fontWeight: '600', color: '#d4af37' }}>The Orchid School & VIBGYOR High</td>
+                      <td style={{ padding: '0.6rem 0' }}>~5 to 10 Minutes</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+
+            {/* Engineering, Security & Bank Approvals */}
+            <div className="col-lg-6" style={{ paddingLeft: '2rem', borderLeft: '1px solid rgba(212,175,55,0.1)' }}>
+              <h4 style={{ color: '#fff', fontSize: '1.15rem', fontWeight: '600', marginBottom: '1rem', borderBottom: '1px solid rgba(255,255,255,0.1)', paddingBottom: '0.5rem' }}>
+                Engineering Innovation & Gated Community Highlights
+              </h4>
+              <p style={{ fontSize: '0.9rem', lineHeight: '1.8', marginBottom: '1rem' }}>
+                M SoulStrings utilizes state-of-the-art <strong>Alu-Form (Mivan) system technology</strong> to guarantee superior structural durability and earthquake resistance. To shield the luxury interiors from external dust and noise, every apartment is fitted with high-performance <strong>Double-Glazed Units (DGU)</strong> for thermal and acoustic isolation.
+              </p>
+              <p style={{ fontSize: '0.9rem', lineHeight: '1.8', marginBottom: '1rem' }}>
+                The community features an advanced <strong>3-tier digital surveillance network</strong> including video door phones, RFID vehicle screening, and 24/7 CCTV parameters. In line with modern ecological initiatives, the project is outfitted with EV charging ports for each parking slot, organic waste converters, rain water harvesting facilities, and solar-paneled water heating.
+              </p>
+              <p style={{ fontSize: '0.9rem', lineHeight: '1.8' }}>
+                <strong>Bank Approvals & Loan Assistance:</strong> The project boasts full title clearance and is pre-approved for home loan distributions by premier financial institutions, including the State Bank of India (SBI), HDFC Bank, ICICI Bank, and Axis Bank.
+              </p>
+            </div>
+          </div>
         </div>
 
         <div className="row mt-4 pt-4" style={{ borderTop: '1px solid rgba(212,175,55,0.1)' }}>
