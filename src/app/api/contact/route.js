@@ -74,12 +74,20 @@ export async function POST(request) {
         'Content-Type': 'application/json', 
         'Accept': 'application/json',
         'Origin': 'https://www.malpanimsoulstrings.com',
-        'Referer': 'https://www.malpanimsoulstrings.com/'
+        'Referer': 'https://www.malpanimsoulstrings.com/',
+        'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36'
       },
       body: JSON.stringify(data)
     });
     
-    const result = await response.json();
+    const responseText = await response.text();
+    let result;
+    try {
+      result = JSON.parse(responseText);
+    } catch (e) {
+      console.error("FormSubmit returned non-JSON response:", responseText);
+      throw new Error(`Failed to parse FormSubmit response (Status ${response.status})`);
+    }
 
     // Treat 'Activation required' as a success so the frontend doesn't crash
     if (result.success === "true" || result.success === true || (result.message && result.message.includes('Activation'))) {
