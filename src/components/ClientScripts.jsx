@@ -81,9 +81,12 @@ export default function ClientScripts() {
       const data = Object.fromEntries(formData.entries());
 
       try {
-        const res = await fetch('/api/contact', {
+        const res = await fetch('https://formsubmit.co/ajax/propsmartrealty@gmail.com', {
           method: 'POST',
-          headers: { 'Content-Type': 'application/json' },
+          headers: { 
+            'Content-Type': 'application/json',
+            'Accept': 'application/json'
+          },
           body: JSON.stringify(data)
         });
         
