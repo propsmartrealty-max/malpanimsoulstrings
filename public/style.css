@@ -1303,3 +1303,113 @@ body.light-theme .overlay-menu {
         font-size: 24px;
     }
 }
+
+/* Responsive Modals Sizing & Spacing Hardening */
+.enquire-modal-content {
+  background: #0a0a0c !important;
+  border: 1px solid rgba(212, 175, 55, 0.3) !important;
+  border-radius: 16px !important;
+  box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.8) !important;
+  padding: 0 !important;
+}
+
+.enquire-modal-header {
+  border-bottom: 1px solid rgba(212, 175, 55, 0.1) !important;
+  padding: 2rem 2rem 1rem !important;
+}
+
+.enquire-modal-body {
+  padding: 2rem !important;
+}
+
+.enquire-modal-desc {
+  text-align: center;
+  margin-bottom: 2.5rem;
+}
+
+.enquire-modal-body .floating-label-group.modal-group {
+  margin-bottom: 1.5rem !important;
+}
+
+.enquire-modal-body .floating-label-group.modal-group.last-group {
+  margin-bottom: 2.5rem !important;
+}
+
+.enquire-modal-body button.submit-btn {
+  padding: 1.2rem !important;
+  font-weight: bold !important;
+  letter-spacing: 1px !important;
+  border-radius: 8px !important;
+}
+
+.exit-intent-content-custom {
+  background: var(--color-surface) !important;
+  padding: 3rem !important;
+  border-radius: 20px !important;
+  max-width: 500px !important;
+  width: 90% !important;
+  position: relative !important;
+  text-align: center !important;
+  box-shadow: 0 25px 50px -12px rgba(212, 175, 55, 0.25) !important;
+}
+
+@media (max-width: 576px) {
+  .enquire-modal-header {
+    padding: 1.2rem 1.2rem 0.6rem 1.2rem !important;
+  }
+  
+  .enquire-modal-header h5 {
+    font-size: 1.2rem !important;
+  }
+  
+  .enquire-modal-body {
+    padding: 1.2rem !important;
+  }
+  
+  .enquire-modal-desc {
+    margin-bottom: 1.5rem !important;
+  }
+  
+  .enquire-modal-desc h4 {
+    font-size: 1.25rem !important;
+  }
+  
+  .enquire-modal-desc p {
+    font-size: 0.85rem !important;
+    margin-bottom: 0 !important;
+  }
+  
+  .enquire-modal-body .floating-label-group.modal-group {
+    margin-bottom: 1.2rem !important;
+  }
+  
+  .enquire-modal-body .floating-label-group.modal-group.last-group {
+    margin-bottom: 1.8rem !important;
+  }
+  
+  .enquire-modal-body button.submit-btn {
+    padding: 0.9rem !important;
+    font-size: 0.95rem !important;
+  }
+
+  .exit-intent-content-custom {
+    padding: 1.5rem !important;
+  }
+  
+  .exit-intent-content-custom h2 {
+    font-size: 1.3rem !important;
+    margin-bottom: 0.5rem !important;
+  }
+  
+  .exit-intent-content-custom p {
+    font-size: 0.85rem !important;
+    margin-bottom: 1.2rem !important;
+    line-height: 1.5 !important;
+  }
+  
+  .exit-intent-content-custom button[type="submit"] {
+    padding: 0.8rem !important;
+    font-size: 0.95rem !important;
+  }
+}
+

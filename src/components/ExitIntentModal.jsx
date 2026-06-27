@@ -95,19 +95,7 @@ export default function ExitIntentModal() {
         justifyContent: 'center'
       }}
     >
-      <div 
-        className="exit-intent-content loc-card" 
-        style={{
-          background: 'var(--color-surface)',
-          padding: '3rem',
-          borderRadius: '20px',
-          maxWidth: '500px',
-          width: '90%',
-          position: 'relative',
-          textAlign: 'center',
-          boxShadow: '0 25px 50px -12px rgba(212, 175, 55, 0.25)'
-        }}
-      >
+      <div className="exit-intent-content-custom">
         <button 
           onClick={closeModal} 
           style={{
