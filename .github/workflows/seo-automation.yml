@@ -53,9 +53,11 @@ jobs:
           echo "Warning: Timeout waiting for Vercel deployment matching $COMMIT_SHA. Proceeding with indexing anyway."
 
       - name: Create Google Service Account File
+        env:
+          GOOGLE_SERVICE_ACCOUNT_JSON: ${{ secrets.GOOGLE_SERVICE_ACCOUNT_JSON }}
         run: |
-          if [ -n "${{ secrets.GOOGLE_SERVICE_ACCOUNT_JSON }}" ]; then
-            echo "${{ secrets.GOOGLE_SERVICE_ACCOUNT_JSON }}" > google-service-account.json
+          if [ -n "$GOOGLE_SERVICE_ACCOUNT_JSON" ]; then
+            echo "$GOOGLE_SERVICE_ACCOUNT_JSON" > google-service-account.json
           else
             echo "[INFO] GOOGLE_SERVICE_ACCOUNT_JSON secret is empty. Skipping file creation."
           fi
