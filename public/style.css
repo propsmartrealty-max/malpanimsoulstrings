@@ -1411,5 +1411,11 @@ body.light-theme .overlay-menu {
     padding: 0.8rem !important;
     font-size: 0.95rem !important;
   }
+
+  .floating-contact-container {
+    bottom: 75px !important;
+    right: 20px !important;
+  }
 }
+
 
