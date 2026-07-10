@@ -53,6 +53,10 @@ const nextConfig = {
             value: 'camera=(), microphone=(), geolocation=(), browsing-topics=()'
           },
           {
+            key: 'Content-Security-Policy',
+            value: "default-src 'self'; script-src 'self' 'unsafe-eval' 'unsafe-inline' https://www.googletagmanager.com; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; img-src 'self' data: blob: https://malpani-cms.firsteconomy.com https://www.malpaniestates.com https://upload.wikimedia.org; font-src 'self' data: https://fonts.gstatic.com; connect-src 'self' https://maps.googleapis.com; frame-src 'self' https://www.google.com;"
+          },
+          {
             key: 'X-XSS-Protection',
             value: '1; mode=block'
           }
