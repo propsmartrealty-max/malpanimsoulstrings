@@ -184,6 +184,11 @@ export default function Footer() {
             <div className="col-12 text-center">
               <p style={{ fontSize: '0.8rem', color: 'rgba(255,255,255,0.3)', margin: '1rem 0 0.5rem 0' }}>Popular Searches:</p>
               <div style={{ display: 'flex', flexWrap: 'wrap', justifyContent: 'center', gap: '15px' }}>
+                <Link href="/flats-near-hinjewadi-it-park-pune" style={{ fontSize: '0.75rem', color: 'rgba(255,255,255,0.4)', textDecoration: 'none' }}>Flats Near Hinjewadi</Link>
+                <Link href="/luxury-apartments-in-balewadi-pune" style={{ fontSize: '0.75rem', color: 'rgba(255,255,255,0.4)', textDecoration: 'none' }}>Balewadi Luxury Alternatives</Link>
+                <Link href="/premium-residences-near-aundh-pune" style={{ fontSize: '0.75rem', color: 'rgba(255,255,255,0.4)', textDecoration: 'none' }}>Premium Residences Near Aundh</Link>
+                <Link href="/wakad-to-baner-real-estate-upgrade" style={{ fontSize: '0.75rem', color: 'rgba(255,255,255,0.4)', textDecoration: 'none' }}>Wakad to Baner Upgrade</Link>
+                <Link href="/pashan-sus-road-luxury-projects" style={{ fontSize: '0.75rem', color: 'rgba(255,255,255,0.4)', textDecoration: 'none' }}>Pashan Sus Road Projects</Link>
                 <Link href="/" style={{ fontSize: '0.75rem', color: 'rgba(255,255,255,0.4)', textDecoration: 'none' }}>Malpani m soulstrings baner pashan link road</Link>
                 <Link href="/blog-malpani-m-soulstrings-baner-pashan-link-road/malpani-group-luxury-projects-pune" style={{ fontSize: '0.75rem', color: 'rgba(255,255,255,0.4)', textDecoration: 'none' }}>Malpani Group Luxury Projects</Link>
                 <Link href="/blog-malpani-m-soulstrings-baner-pashan-link-road/buying-signature-residences-in-pune" style={{ fontSize: '0.75rem', color: 'rgba(255,255,255,0.4)', textDecoration: 'none' }}>Buying Signature Residences</Link>
