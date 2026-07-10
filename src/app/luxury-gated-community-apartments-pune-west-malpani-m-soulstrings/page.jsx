@@ -2,14 +2,14 @@ import SchemaMarkup from '../../components/SchemaMarkup';
 import Link from 'next/link';
 
 export const metadata = {
-  alternates: { canonical: '/luxury-gated-community-apartments-for-sale-pune-west' },
+  alternates: { canonical: '/luxury-gated-community-apartments-pune-west-malpani-m-soulstrings' },
   title: 'Luxury Gated Community Apartments for Sale in Pune West',
   description: 'Explore premium gated community apartments for sale in Pune West. Discover low-density, highly secure luxury developments with 35+ premium amenities.',
   keywords: 'luxury gated community apartments for sale Pune West, gated community flats Baner, premium gated communities Pune, Malpani M Soulstrings gated estate',
   openGraph: {
     title: 'Luxury Gated Communities for Sale - Pune West',
     description: 'Explore the finest gated community apartments and luxury developments in West Pune.',
-    url: 'https://www.malpanimsoulstrings.com/luxury-gated-community-apartments-for-sale-pune-west',
+    url: 'https://www.malpanimsoulstrings.com/luxury-gated-community-apartments-pune-west-malpani-m-soulstrings',
     siteName: 'Malpani M SoulStrings',
     images: [
       {
@@ -39,7 +39,7 @@ export default function GatedCommunitiesPage() {
   return (
     <main>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(articleSchema) }} />
-      <SchemaMarkup pageName="Gated Communities" pageUrl="/luxury-gated-community-apartments-for-sale-pune-west" />
+      <SchemaMarkup pageName="Gated Communities" pageUrl="/luxury-gated-community-apartments-pune-west-malpani-m-soulstrings" />
       
       <div className="pillar-header" style={{ paddingTop: '120px', paddingBottom: '4rem', background: 'var(--color-surface)' }}>
         <div className="container">

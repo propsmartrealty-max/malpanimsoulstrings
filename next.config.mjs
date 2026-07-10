@@ -110,6 +110,15 @@ const nextConfig = {
       { source: '/compare/pristine-lords-baner', destination: '/compare-malpani-m-soulstrings-baner-pashan-link-road/pristine-lords-baner-malpani-m-soulstrings-baner-pashan-link-road', permanent: true },
       { source: '/compare/kohinoor-livience-baner', destination: '/compare-malpani-m-soulstrings-baner-pashan-link-road/kohinoor-livience-baner-malpani-m-soulstrings-baner-pashan-link-road', permanent: true },
       { source: '/sitemap', destination: '/sitemap-malpani-m-soulstrings-baner-pashan-link-road', permanent: true },
+      
+      // Keyword injection redirects for hubs
+      { source: '/flats-near-hinjewadi-it-park-pune', destination: '/flats-near-hinjewadi-it-park-pune-malpani-m-soulstrings', permanent: true },
+      { source: '/luxury-apartments-in-balewadi-pune', destination: '/luxury-apartments-in-balewadi-pune-malpani-m-soulstrings', permanent: true },
+      { source: '/premium-residences-near-aundh-pune', destination: '/premium-residences-near-aundh-pune-malpani-m-soulstrings', permanent: true },
+      { source: '/wakad-to-baner-real-estate-upgrade', destination: '/wakad-to-baner-real-estate-upgrade-malpani-m-soulstrings', permanent: true },
+      { source: '/pashan-sus-road-luxury-projects', destination: '/pashan-sus-road-luxury-projects-malpani-m-soulstrings', permanent: true },
+      { source: '/flat-rates-price-trends-baner-pashan-link-road-pune', destination: '/flat-rates-price-trends-baner-pashan-link-road-malpani-m-soulstrings', permanent: true },
+      { source: '/luxury-gated-community-apartments-for-sale-pune-west', destination: '/luxury-gated-community-apartments-pune-west-malpani-m-soulstrings', permanent: true },
     ];
   },
 };

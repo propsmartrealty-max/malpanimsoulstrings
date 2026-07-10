@@ -2,7 +2,7 @@ import SchemaMarkup from '../../components/SchemaMarkup';
 import Link from 'next/link';
 
 export const metadata = {
-  alternates: { canonical: '/premium-residences-near-aundh-pune' },
+  alternates: { canonical: '/premium-residences-near-aundh-pune-malpani-m-soulstrings' },
   title: 'Premium Residences Near Aundh Pune | Malpani M SoulStrings',
   description: 'Searching for premium residences near Aundh Pune? Upgrade your lifestyle with the ultra-luxury 4 BHK and 5 BHK estates at Malpani M SoulStrings Baner.',
   keywords: [
@@ -15,7 +15,7 @@ export const metadata = {
   openGraph: {
     title: 'Premium Residences Near Aundh Pune | Malpani M SoulStrings',
     description: 'Upgrade your lifestyle from Aundh to the ultra-luxury 4 BHK and 5 BHK estates at Malpani M SoulStrings Baner.',
-    url: 'https://www.malpanimsoulstrings.com/premium-residences-near-aundh-pune',
+    url: 'https://www.malpanimsoulstrings.com/premium-residences-near-aundh-pune-malpani-m-soulstrings',
     siteName: 'Malpani M SoulStrings',
     images: [{ url: 'https://malpani-cms.firsteconomy.com/uploads/01_1_97625c7cd6.png', width: 1200, height: 800, alt: 'Premium Residences Near Aundh Pune' }],
     locale: 'en_IN',
@@ -26,7 +26,7 @@ export const metadata = {
 export default function AundhAlternativePage() {
   return (
     <main>
-      <SchemaMarkup pageName="Aundh Premium Alternative" pageUrl="/premium-residences-near-aundh-pune" />
+      <SchemaMarkup pageName="Aundh Premium Alternative" pageUrl="/premium-residences-near-aundh-pune-malpani-m-soulstrings" />
       
       <div className="pillar-header" style={{ paddingTop: '120px', paddingBottom: '4rem', background: 'var(--color-surface)' }}>
         <div className="container">

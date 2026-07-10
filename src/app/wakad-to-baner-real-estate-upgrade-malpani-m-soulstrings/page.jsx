@@ -2,7 +2,7 @@ import SchemaMarkup from '../../components/SchemaMarkup';
 import Link from 'next/link';
 
 export const metadata = {
-  alternates: { canonical: '/wakad-to-baner-real-estate-upgrade' },
+  alternates: { canonical: '/wakad-to-baner-real-estate-upgrade-malpani-m-soulstrings' },
   title: 'Wakad to Baner Real Estate Upgrade | Malpani M SoulStrings',
   description: 'Outgrown Wakad? Upgrade your lifestyle and asset value by moving to the ultra-premium Malpani M SoulStrings in Baner.',
   keywords: [
@@ -15,7 +15,7 @@ export const metadata = {
   openGraph: {
     title: 'Wakad to Baner Real Estate Upgrade | Malpani M SoulStrings',
     description: 'Outgrown Wakad? Upgrade your lifestyle and asset value by moving to the ultra-premium Malpani M SoulStrings in Baner.',
-    url: 'https://www.malpanimsoulstrings.com/wakad-to-baner-real-estate-upgrade',
+    url: 'https://www.malpanimsoulstrings.com/wakad-to-baner-real-estate-upgrade-malpani-m-soulstrings',
     siteName: 'Malpani M SoulStrings',
     images: [{ url: 'https://malpani-cms.firsteconomy.com/uploads/02_1_fccd839fae.png', width: 1200, height: 800, alt: 'Wakad to Baner Real Estate Upgrade' }],
     locale: 'en_IN',
@@ -26,7 +26,7 @@ export const metadata = {
 export default function WakadUpgradePage() {
   return (
     <main>
-      <SchemaMarkup pageName="Wakad to Baner Upgrade" pageUrl="/wakad-to-baner-real-estate-upgrade" />
+      <SchemaMarkup pageName="Wakad to Baner Upgrade" pageUrl="/wakad-to-baner-real-estate-upgrade-malpani-m-soulstrings" />
       
       <div className="pillar-header" style={{ paddingTop: '120px', paddingBottom: '4rem', background: 'var(--color-surface)' }}>
         <div className="container">

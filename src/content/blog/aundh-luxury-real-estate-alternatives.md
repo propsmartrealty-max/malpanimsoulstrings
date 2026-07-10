@@ -13,7 +13,7 @@ For decades, **Aundh** has been synonymous with prestige, old money, and elite l
 Due to land scarcity, developers in Aundh are restricted to redeveloping small, fragmented plots. It is virtually impossible to find a newly constructed, sprawling 4 BHK or 5 BHK estate with modern, 3-tier clubhouse amenities within Aundh proper. 
 
 ## The Natural Successor
-So, where is the wealth moving? The answer is just 10 minutes away. As highlighted in our guide to [Premium Residences Near Aundh](/premium-residences-near-aundh-pune), the Baner-Pashan Link Road has seamlessly absorbed the luxury demand spilling over from Aundh.
+So, where is the wealth moving? The answer is just 10 minutes away. As highlighted in our guide to [Premium Residences Near Aundh](/premium-residences-near-aundh-pune-malpani-m-soulstrings), the Baner-Pashan Link Road has seamlessly absorbed the luxury demand spilling over from Aundh.
 
 By investing in projects like [Malpani M SoulStrings](/), you retain the exact same social circle and geographic convenience of Aundh, while upgrading to state-of-the-art construction, zero-pollution environments, and unparalleled privacy. 
 

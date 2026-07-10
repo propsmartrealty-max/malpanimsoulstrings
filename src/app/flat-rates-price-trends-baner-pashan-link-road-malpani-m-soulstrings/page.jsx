@@ -2,14 +2,14 @@ import SchemaMarkup from '../../components/SchemaMarkup';
 import Link from 'next/link';
 
 export const metadata = {
-  alternates: { canonical: '/flat-rates-price-trends-baner-pashan-link-road-pune' },
+  alternates: { canonical: '/flat-rates-price-trends-baner-pashan-link-road-malpani-m-soulstrings' },
   title: 'Flat Rates & Price Trends Baner Pashan Link Road Pune',
   description: 'Comprehensive property rates, real estate valuation indices, and capital appreciation data for the Baner-Pashan Link Road corridor in West Pune.',
   keywords: 'property rates in Baner Link Road, price trends Baner Pashan Link Road, real estate prices Pune West, Malpani M Soulstrings price sheets',
   openGraph: {
     title: 'Flat Rates & Price Trends Baner-Pashan Link Road',
     description: 'Data-driven analysis of real estate price trends and appreciation rates in Pune West.',
-    url: 'https://www.malpanimsoulstrings.com/flat-rates-price-trends-baner-pashan-link-road-pune',
+    url: 'https://www.malpanimsoulstrings.com/flat-rates-price-trends-baner-pashan-link-road-malpani-m-soulstrings',
     siteName: 'Malpani M SoulStrings',
     images: [
       {
@@ -39,7 +39,7 @@ export default function PriceTrendsPage() {
   return (
     <main>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(articleSchema) }} />
-      <SchemaMarkup pageName="Price Trends" pageUrl="/flat-rates-price-trends-baner-pashan-link-road-pune" />
+      <SchemaMarkup pageName="Price Trends" pageUrl="/flat-rates-price-trends-baner-pashan-link-road-malpani-m-soulstrings" />
       
       <div className="pillar-header" style={{ paddingTop: '120px', paddingBottom: '4rem', background: 'var(--color-surface)' }}>
         <div className="container">

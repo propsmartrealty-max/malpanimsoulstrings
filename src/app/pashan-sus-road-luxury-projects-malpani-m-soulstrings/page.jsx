@@ -2,7 +2,7 @@ import SchemaMarkup from '../../components/SchemaMarkup';
 import Link from 'next/link';
 
 export const metadata = {
-  alternates: { canonical: '/pashan-sus-road-luxury-projects' },
+  alternates: { canonical: '/pashan-sus-road-luxury-projects-malpani-m-soulstrings' },
   title: 'Pashan Sus Road Luxury Projects | Malpani M SoulStrings',
   description: 'Explore the finest Pashan Sus Road luxury projects. Malpani M SoulStrings offers the perfect blend of Sus Hills tranquility and Baner connectivity.',
   keywords: [
@@ -15,7 +15,7 @@ export const metadata = {
   openGraph: {
     title: 'Pashan Sus Road Luxury Projects | Malpani M SoulStrings',
     description: 'Explore the finest Pashan Sus Road luxury projects. Malpani M SoulStrings offers the perfect blend of Sus Hills tranquility and Baner connectivity.',
-    url: 'https://www.malpanimsoulstrings.com/pashan-sus-road-luxury-projects',
+    url: 'https://www.malpanimsoulstrings.com/pashan-sus-road-luxury-projects-malpani-m-soulstrings',
     siteName: 'Malpani M SoulStrings',
     images: [{ url: 'https://malpani-cms.firsteconomy.com/uploads/03_5afad0394f.png', width: 1200, height: 800, alt: 'Pashan Sus Road Luxury Projects' }],
     locale: 'en_IN',
@@ -26,7 +26,7 @@ export const metadata = {
 export default function PashanSusRoadPage() {
   return (
     <main>
-      <SchemaMarkup pageName="Pashan Sus Road Projects" pageUrl="/pashan-sus-road-luxury-projects" />
+      <SchemaMarkup pageName="Pashan Sus Road Projects" pageUrl="/pashan-sus-road-luxury-projects-malpani-m-soulstrings" />
       
       <div className="pillar-header" style={{ paddingTop: '120px', paddingBottom: '4rem', background: 'var(--color-surface)' }}>
         <div className="container">

@@ -2,7 +2,7 @@ import SchemaMarkup from '../../components/SchemaMarkup';
 import Link from 'next/link';
 
 export const metadata = {
-  alternates: { canonical: '/flats-near-hinjewadi-it-park-pune' },
+  alternates: { canonical: '/flats-near-hinjewadi-it-park-pune-malpani-m-soulstrings' },
   title: 'Luxury Flats Near Hinjewadi IT Park Pune | Malpani M SoulStrings',
   description: 'Looking for luxury flats near Hinjewadi IT Park? Malpani M SoulStrings on Baner Pashan Link Road offers a zero-commute upgrade for tech professionals in Pune.',
   keywords: [
@@ -16,7 +16,7 @@ export const metadata = {
   openGraph: {
     title: 'Luxury Flats Near Hinjewadi IT Park Pune',
     description: 'The ultimate luxury upgrade for tech professionals. Zero commute, absolute luxury at Malpani M SoulStrings.',
-    url: 'https://www.malpanimsoulstrings.com/flats-near-hinjewadi-it-park-pune',
+    url: 'https://www.malpanimsoulstrings.com/flats-near-hinjewadi-it-park-pune-malpani-m-soulstrings',
     siteName: 'Malpani M SoulStrings',
     images: [
       {
@@ -35,7 +35,7 @@ export default function HinjewadiFlatsPage() {
   return (
     <main>
 
-      <SchemaMarkup pageName="Flats Near Hinjewadi IT Park" pageUrl="/flats-near-hinjewadi-it-park-pune" />
+      <SchemaMarkup pageName="Flats Near Hinjewadi IT Park" pageUrl="/flats-near-hinjewadi-it-park-pune-malpani-m-soulstrings" />
       
       <div className="pillar-header" style={{ paddingTop: '120px', paddingBottom: '4rem', background: 'var(--color-surface)' }}>
         <div className="container">

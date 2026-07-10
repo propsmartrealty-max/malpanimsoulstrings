@@ -2,7 +2,7 @@ import SchemaMarkup from '../../components/SchemaMarkup';
 import Link from 'next/link';
 
 export const metadata = {
-  alternates: { canonical: '/luxury-apartments-in-balewadi-pune' },
+  alternates: { canonical: '/luxury-apartments-in-balewadi-pune-malpani-m-soulstrings' },
   title: 'Balewadi Real Estate Alternative: Malpani M SoulStrings Baner',
   description: 'Looking for luxury apartments in Balewadi Pune? Explore why Malpani M SoulStrings on the Baner Pashan Link Road offers a superior luxury lifestyle upgrade.',
   keywords: [
@@ -16,7 +16,7 @@ export const metadata = {
   openGraph: {
     title: 'Balewadi Real Estate Alternative: Malpani M SoulStrings',
     description: 'Explore why Malpani M SoulStrings on the Baner Pashan Link Road offers a superior luxury lifestyle upgrade compared to crowded Balewadi.',
-    url: 'https://www.malpanimsoulstrings.com/luxury-apartments-in-balewadi-pune',
+    url: 'https://www.malpanimsoulstrings.com/luxury-apartments-in-balewadi-pune-malpani-m-soulstrings',
     siteName: 'Malpani M SoulStrings',
     images: [
       {
@@ -34,7 +34,7 @@ export const metadata = {
 export default function BalewadiAlternativePage() {
   return (
     <main>
-      <SchemaMarkup pageName="Balewadi Luxury Alternative" pageUrl="/luxury-apartments-in-balewadi-pune" />
+      <SchemaMarkup pageName="Balewadi Luxury Alternative" pageUrl="/luxury-apartments-in-balewadi-pune-malpani-m-soulstrings" />
       
       <div className="pillar-header" style={{ paddingTop: '120px', paddingBottom: '4rem', background: 'var(--color-surface)' }}>
         <div className="container">
