@@ -503,7 +503,7 @@ export default function Home() {
     <section id="contact" className="section contact">
       <div className="container contact-wrapper fade-in-up">
         <div className="contact-info">
-          <h2 className="section-title gradient-text">Schedule Site Visit Malpani M SoulStrings</h2>
+          <h2 className="section-title gradient-text">Schedule Site Visit</h2>
           <p>Get exclusive Malpani M SoulStrings pricing lists and browse the finest luxury flats for sale in Baner.</p>
           <div className="contact-details" >
             <p ><span className="material-symbols-outlined" >location_on</span> Baner Pashan Link Road, Pune, Maharashtra 411045</p>
