@@ -1,0 +1,42 @@
+﻿2026-06-27T09:20:10.9264494Z ##[group]Run npm ci || npm install
+2026-06-27T09:20:10.9264991Z [36;1mnpm ci || npm install[0m
+2026-06-27T09:20:10.9392254Z shell: /usr/bin/bash -e ***0***
+2026-06-27T09:20:10.9392670Z ##[endgroup]
+2026-06-27T09:20:11.6873217Z npm error code EUSAGE
+2026-06-27T09:20:11.6873734Z npm error
+2026-06-27T09:20:11.6874893Z npm error `npm ci` can only install packages when your package.json and package-lock.json or npm-shrinkwrap.json are in sync. Please update your lock file with `npm install` before continuing.
+2026-06-27T09:20:11.6875799Z npm error
+2026-06-27T09:20:11.6876265Z npm error Missing: @emnapi/runtime@1.11.1 from lock file
+2026-06-27T09:20:11.6876846Z npm error Missing: @emnapi/core@1.11.1 from lock file
+2026-06-27T09:20:11.6877266Z npm error
+2026-06-27T09:20:11.6877619Z npm error Clean install a project
+2026-06-27T09:20:11.6878195Z npm error
+2026-06-27T09:20:11.6878636Z npm error Usage:
+2026-06-27T09:20:11.6879540Z npm error npm ci
+2026-06-27T09:20:11.6880966Z npm error
+2026-06-27T09:20:11.6881764Z npm error Options:
+2026-06-27T09:20:11.6884109Z npm error [--install-strategy <hoisted|nested|shallow|linked>] [--legacy-bundling]
+2026-06-27T09:20:11.6886580Z npm error [--global-style] [--omit <dev|optional|peer> [--omit <dev|optional|peer> ...]]
+2026-06-27T09:20:11.6887753Z npm error [--include <prod|dev|optional|peer> [--include <prod|dev|optional|peer> ...]]
+2026-06-27T09:20:11.6896514Z npm error [--strict-peer-deps] [--foreground-scripts] [--ignore-scripts] [--no-audit]
+2026-06-27T09:20:11.6897535Z npm error [--no-bin-links] [--no-fund] [--dry-run]
+2026-06-27T09:20:11.6899610Z npm error [-w|--workspace <workspace-name> [-w|--workspace <workspace-name> ...]]
+2026-06-27T09:20:11.6900685Z npm error [-ws|--workspaces] [--include-workspace-root] [--install-links]
+2026-06-27T09:20:11.6901303Z npm error
+2026-06-27T09:20:11.6902247Z npm error aliases: clean-install, ic, install-clean, isntall-clean
+2026-06-27T09:20:11.6902983Z npm error
+2026-06-27T09:20:11.6904211Z npm error Run "npm help ci" for more info
+2026-06-27T09:20:11.6905844Z npm error A complete log of this run can be found in: /home/runner/.npm/_logs/2026-06-27T09_20_11_008Z-debug-0.log
+2026-06-27T09:20:13.5614453Z npm warn deprecated whatwg-encoding@3.1.1: Use @exodus/bytes instead for a more spec-conformant and faster implementation
+2026-06-27T09:20:22.1104259Z 
+2026-06-27T09:20:22.1105404Z added 387 packages, and audited 388 packages in 10s
+2026-06-27T09:20:22.1106082Z 
+2026-06-27T09:20:22.1106430Z 162 packages are looking for funding
+2026-06-27T09:20:22.1107030Z   run `npm fund` for details
+2026-06-27T09:20:22.1182283Z 
+2026-06-27T09:20:22.1187763Z 2 vulnerabilities (1 moderate, 1 high)
+2026-06-27T09:20:22.1189522Z 
+2026-06-27T09:20:22.1193004Z To address all issues, run:
+2026-06-27T09:20:22.1193956Z   npm audit fix
+2026-06-27T09:20:22.1194311Z 
+2026-06-27T09:20:22.1194635Z Run `npm audit` for details.

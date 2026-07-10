@@ -7,7 +7,7 @@ export default function Footer() {
         <div className="container">
           <nav className="row mb-5" aria-label="Footer Navigation">
               <div className="col-lg-3 mb-4 mb-lg-0">
-                  <h4 style={{ color: '#d4af37', fontWeight: 'bold', letterSpacing: '2px', marginBottom: '1.5rem' }}>MALPANI <span style={{ color:'#fff' }}>ESTATES</span></h4>
+                  <h4 style={{ color: '#d4af37', fontWeight: 'bold', letterSpacing: '2px', marginBottom: '1.5rem' }}>MALPANI <span style={{ color:'#fff' }}>M SOULSTRINGS</span></h4>
                   <p style={{ color: 'rgba(255,255,255,0.5)', lineHeight: '1.8' }}>Redefining absolute luxury and architectural perfection on the Baner Pashan Link Road.</p>
               </div>
               <div className="col-lg-3 mb-4 mb-lg-0">
@@ -113,7 +113,7 @@ export default function Footer() {
                   Capital appreciation along the Link Road corridor has shown a steady <strong>8-10% CAGR</strong> over the past three years. This growth is accelerated by massive infrastructure catalysts, notably the upcoming <strong>Pune Metro Line 3</strong> (connecting Hinjewadi IT park to Shivajinagar) and the planned Ring Road expansion. This makes buying a 3 BHK or 4 BHK at Malpani M SoulStrings not only an upgrade in lifestyle but also a highly defensive, high-yield asset class.
                 </p>
                 <p style={{ fontSize: '0.9rem', lineHeight: '1.8' }}>
-                  By integrating a vehicle-free central podium, dedicated perimeter tracks, and a 3-tier clubhouse ecosystem, Malpani Estates has established a low-density benchmark that sets a new standard for luxury developments across Pune.
+                  By integrating a vehicle-free central podium, dedicated perimeter tracks, and a 3-tier clubhouse ecosystem, Malpani M SoulStrings has established a low-density benchmark that sets a new standard for luxury developments across Pune.
                 </p>
               </div>
             </div>
@@ -168,7 +168,7 @@ export default function Footer() {
                   Engineering Innovation & Gated Community Highlights
                 </h4>
                 <p style={{ fontSize: '0.9rem', lineHeight: '1.8', marginBottom: '1rem' }}>
-                  M SoulStrings utilizes state-of-the-art <strong>Alu-Form (Mivan) system technology</strong> to guarantee superior structural durability and earthquake resistance. To shield the luxury interiors from external dust and noise, every apartment is fitted with high-performance <strong>Double-Glazed Units (DGU)</strong> for thermal and acoustic isolation.
+                  Malpani M SoulStrings utilizes state-of-the-art <strong>Alu-Form (Mivan) system technology</strong> to guarantee superior structural durability and earthquake resistance. To shield the luxury interiors from external dust and noise, every apartment is fitted with high-performance <strong>Double-Glazed Units (DGU)</strong> for thermal and acoustic isolation.
                 </p>
                 <p style={{ fontSize: '0.9rem', lineHeight: '1.8', marginBottom: '1rem' }}>
                   The community features an advanced <strong>3-tier digital surveillance network</strong> including video door phones, RFID vehicle screening, and 24/7 CCTV parameters. In line with modern ecological initiatives, the project is outfitted with EV charging ports for each parking slot, organic waste converters, rain water harvesting facilities, and solar-paneled water heating.

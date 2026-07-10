@@ -1,0 +1,32 @@
+﻿2026-06-27T09:20:05.1327819Z Current runner version: '2.335.1'
+2026-06-27T09:20:05.1365447Z ##[group]Runner Image Provisioner
+2026-06-27T09:20:05.1367084Z Hosted Compute Agent
+2026-06-27T09:20:05.1368543Z Version: 20260611.554
+2026-06-27T09:20:05.1369920Z Commit: 5e0782fdc9014723d3be820dd114dd31555c2bd1
+2026-06-27T09:20:05.1371891Z Build Date: 2026-06-11T21:40:46Z
+2026-06-27T09:20:05.1373550Z Worker ID: ***cd1ea0b7-4a3e-4bcb-bfe8-faac3911c486***
+2026-06-27T09:20:05.1375247Z Azure Region: centralus
+2026-06-27T09:20:05.1376297Z ##[endgroup]
+2026-06-27T09:20:05.1377996Z ##[group]Operating System
+2026-06-27T09:20:05.1379046Z Ubuntu
+2026-06-27T09:20:05.1379988Z 24.04.4
+2026-06-27T09:20:05.1380857Z LTS
+2026-06-27T09:20:05.1381814Z ##[endgroup]
+2026-06-27T09:20:05.1382741Z ##[group]Runner Image
+2026-06-27T09:20:05.1383562Z Image: ubuntu-24.04
+2026-06-27T09:20:05.1384487Z Version: 20260622.220.1
+2026-06-27T09:20:05.1386159Z Included Software: https://github.com/actions/runner-images/blob/ubuntu24/20260622.220/images/ubuntu/Ubuntu2404-Readme.md
+2026-06-27T09:20:05.1388268Z Image Release: https://github.com/actions/runner-images/releases/tag/ubuntu24%2F20260622.220
+2026-06-27T09:20:05.1389455Z ##[endgroup]
+2026-06-27T09:20:05.1391192Z ##[group]GITHUB_TOKEN Permissions
+2026-06-27T09:20:05.1394000Z Contents: read
+2026-06-27T09:20:05.1394916Z Metadata: read
+2026-06-27T09:20:05.1395746Z Packages: read
+2026-06-27T09:20:05.1396538Z ##[endgroup]
+2026-06-27T09:20:05.1398870Z Secret source: Actions
+2026-06-27T09:20:05.1400321Z Prepare workflow directory
+2026-06-27T09:20:05.1775554Z Prepare all required actions
+2026-06-27T09:20:05.1829115Z Getting action download info
+2026-06-27T09:20:05.4121257Z Download action repository 'actions/checkout@v4' (SHA:34e114876b0b11c390a56381ad16ebd13914f8d5)
+2026-06-27T09:20:05.4770560Z Download action repository 'actions/setup-node@v4' (SHA:49933ea5288caeca8642d1e84afbd3f7d6820020)
+2026-06-27T09:20:05.6710884Z Complete job name: Automated Indexing Ping

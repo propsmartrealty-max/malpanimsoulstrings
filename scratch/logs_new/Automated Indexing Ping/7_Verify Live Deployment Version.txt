@@ -1,0 +1,26 @@
+﻿2026-06-27T09:20:29.6585806Z ##[group]Run COMMIT_SHA="2da8c46642a4d7b636fdd67257c9c6722e411d01"
+2026-06-27T09:20:29.6586419Z [36;1mCOMMIT_SHA="2da8c46642a4d7b636fdd67257c9c6722e411d01"[0m
+2026-06-27T09:20:29.6586973Z [36;1mURL="https://www.malpanimsoulstrings.com/version.txt"[0m
+2026-06-27T09:20:29.6587599Z [36;1mecho "Target commit SHA: $COMMIT_SHA"[0m
+2026-06-27T09:20:29.6587985Z [36;1mMAX_ATTEMPTS=40[0m
+2026-06-27T09:20:29.6588303Z [36;1mATTEMPT=0[0m
+2026-06-27T09:20:29.6588648Z [36;1mwhile [ $ATTEMPT -lt $MAX_ATTEMPTS ]; do[0m
+2026-06-27T09:20:29.6589188Z [36;1m  echo "Checking deployment status (Attempt $((ATTEMPT+1))/$MAX_ATTEMPTS)..."[0m
+2026-06-27T09:20:29.6589774Z [36;1m  LIVE_SHA=$(curl -sS -f --max-time 10 "$URL" || echo "")[0m
+2026-06-27T09:20:29.6590257Z [36;1m  LIVE_SHA=$(echo "$LIVE_SHA" | tr -d '[:space:]')[0m
+2026-06-27T09:20:29.6590680Z [36;1m  if [ "$LIVE_SHA" = "$COMMIT_SHA" ]; then[0m
+2026-06-27T09:20:29.6591174Z [36;1m    echo "Deployment matches target commit SHA. Proceeding with indexing."[0m
+2026-06-27T09:20:29.6591899Z [36;1m    exit 0[0m
+2026-06-27T09:20:29.6592189Z [36;1m  fi[0m
+2026-06-27T09:20:29.6592559Z [36;1m  echo "Current live SHA: '$LIVE_SHA'. Waiting 15 seconds..."[0m
+2026-06-27T09:20:29.6593006Z [36;1m  ATTEMPT=$((ATTEMPT+1))[0m
+2026-06-27T09:20:29.6593345Z [36;1m  sleep 15[0m
+2026-06-27T09:20:29.6593633Z [36;1mdone[0m
+2026-06-27T09:20:29.6594164Z [36;1mecho "Warning: Timeout waiting for Vercel deployment matching $COMMIT_SHA. Proceeding with indexing anyway."[0m
+2026-06-27T09:20:29.6628584Z shell: /usr/bin/bash -e ***0***
+2026-06-27T09:20:29.6628949Z ##[endgroup]
+2026-06-27T09:20:29.6685688Z Target commit SHA: 2da8c46642a4d7b636fdd67257c9c6722e411d01
+2026-06-27T09:20:29.6686514Z Checking deployment status (Attempt 1/40)...
+2026-06-27T09:20:31.2052078Z Current live SHA: '58107e155450b9af2e491c0c397149452b51a665'. Waiting 15 seconds...
+2026-06-27T09:20:46.2072360Z Checking deployment status (Attempt 2/40)...
+2026-06-27T09:20:46.7472605Z Deployment matches target commit SHA. Proceeding with indexing.

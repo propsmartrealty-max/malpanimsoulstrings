@@ -1,0 +1,77 @@
+﻿2026-06-27T09:20:22.1479485Z ##[group]Run npm run build
+2026-06-27T09:20:22.1479873Z [36;1mnpm run build[0m
+2026-06-27T09:20:22.1515495Z shell: /usr/bin/bash -e ***0***
+2026-06-27T09:20:22.1515847Z ##[endgroup]
+2026-06-27T09:20:22.2637900Z 
+2026-06-27T09:20:22.6771604Z > malpanimsoul@0.1.0 build
+2026-06-27T09:20:22.6774220Z > node -e "let sha = process.env.VERCEL_GIT_COMMIT_SHA; if (!sha) *** try *** sha = require('child_process').execSync('git rev-parse HEAD').toString().trim(); *** catch(e) *** sha = 'local'; *** *** require('fs').writeFileSync('public/version.txt', sha);" && next build
+2026-06-27T09:20:22.6775857Z 
+2026-06-27T09:20:22.6777270Z ⚠ No build cache found. Please configure build caching for faster rebuilds. Read more: https://nextjs.org/docs/messages/no-cache
+2026-06-27T09:20:22.6944705Z Attention: Next.js now collects completely anonymous telemetry regarding usage.
+2026-06-27T09:20:22.6946364Z This information is used to shape Next.js' roadmap and prioritize features.
+2026-06-27T09:20:22.6948272Z You can learn more, including how to opt-out if you'd not like to participate in this anonymous program, by visiting the following URL:
+2026-06-27T09:20:22.6949808Z https://nextjs.org/telemetry
+2026-06-27T09:20:22.6950449Z 
+2026-06-27T09:20:22.7308230Z ▲ Next.js 16.2.6 (Turbopack)
+2026-06-27T09:20:22.7309507Z 
+2026-06-27T09:20:22.8179789Z   Creating an optimized production build ...
+2026-06-27T09:20:26.8983751Z ✓ Compiled successfully in 3.8s
+2026-06-27T09:20:26.9032274Z   Running TypeScript ...
+2026-06-27T09:20:26.9969482Z   Finished TypeScript in 90ms ...
+2026-06-27T09:20:27.0031964Z   Collecting page data using 3 workers ...
+2026-06-27T09:20:27.5132735Z   Generating static pages using 3 workers (0/63) ...
+2026-06-27T09:20:28.0547648Z   Generating static pages using 3 workers (15/63) 
+2026-06-27T09:20:28.3159360Z   Generating static pages using 3 workers (31/63) 
+2026-06-27T09:20:28.4427325Z   Generating static pages using 3 workers (47/63) 
+2026-06-27T09:20:28.5991882Z ✓ Generating static pages using 3 workers (63/63) in 1086ms
+2026-06-27T09:20:28.6071807Z   Finalizing page optimization ...
+2026-06-27T09:20:28.6272266Z 
+2026-06-27T09:20:28.6298971Z Route (app)
+2026-06-27T09:20:28.6299947Z ┌ ○ /
+2026-06-27T09:20:28.6301158Z ├ ○ /_not-found
+2026-06-27T09:20:28.6302900Z ├ ○ /3bhk-luxury-malpani-m-soulstrings-baner-pashan-link-road
+2026-06-27T09:20:28.6316687Z ├ ○ /4bhk-luxury-malpani-m-soulstrings-baner-pashan-link-road
+2026-06-27T09:20:28.6318181Z ├ ○ /5bhk-duplex-malpani-m-soulstrings-baner-pashan-link-road
+2026-06-27T09:20:28.6319483Z ├ ○ /amenities-malpani-m-soulstrings-baner-pashan-link-road
+2026-06-27T09:20:28.6320453Z ├ ƒ /api/contact
+2026-06-27T09:20:28.6321703Z ├ ○ /aundh-malpani-m-soulstrings-baner-pashan-link-road
+2026-06-27T09:20:28.6323008Z ├ ○ /baner-overview-malpani-m-soulstrings-baner-pashan-link-road
+2026-06-27T09:20:28.6324569Z ├ ○ /baner-real-estate-market-malpani-m-soulstrings-baner-pashan-link-road
+2026-06-27T09:20:28.6325733Z ├ ○ /blog-malpani-m-soulstrings-baner-pashan-link-road
+2026-06-27T09:20:28.6326813Z ├ ● /blog-malpani-m-soulstrings-baner-pashan-link-road/[slug]
+2026-06-27T09:20:28.6328138Z │ ├ /blog-malpani-m-soulstrings-baner-pashan-link-road/balewadi-high-street-lifestyle-baner-pashan
+2026-06-27T09:20:28.6329181Z │ ├ /blog-malpani-m-soulstrings-baner-pashan-link-road/baner-pashan-link-road-coveted-real-estate
+2026-06-27T09:20:28.6330080Z │ ├ /blog-malpani-m-soulstrings-baner-pashan-link-road/baner-property-rates-2026
+2026-06-27T09:20:28.6330925Z │ └ [+24 more paths]
+2026-06-27T09:20:28.6331705Z ├ ○ /compare-malpani-m-soulstrings-baner-pashan-link-road
+2026-06-27T09:20:28.6333251Z ├ ○ /compare-malpani-m-soulstrings-baner-pashan-link-road/kohinoor-livience-baner-malpani-m-soulstrings-baner-pashan-link-road
+2026-06-27T09:20:28.6334542Z ├ ○ /compare-malpani-m-soulstrings-baner-pashan-link-road/pristine-lords-baner-malpani-m-soulstrings-baner-pashan-link-road
+2026-06-27T09:20:28.6335446Z ├ ○ /flat-rates-price-trends-baner-pashan-link-road-pune
+2026-06-27T09:20:28.6335900Z ├ ○ /icon.png
+2026-06-27T09:20:28.6336667Z ├ ○ /infrastructure-malpani-m-soulstrings-baner-pashan-link-road
+2026-06-27T09:20:28.6337301Z ├ ○ /invest-in-malpani-estates-pune-growth-corridors
+2026-06-27T09:20:28.6338050Z ├ ○ /it-professionals-luxury-homes-pune-malpani-m-soulstrings-baner-pashan-link-road
+2026-06-27T09:20:28.6338806Z ├ ○ /location-malpani-m-soulstrings-baner-pashan-link-road
+2026-06-27T09:20:28.6339601Z ├ ○ /luxury-gated-community-apartments-for-sale-pune-west
+2026-06-27T09:20:28.6340287Z ├ ○ /malpani-m-soulstrings-construction-status-updates-possession
+2026-06-27T09:20:28.6340919Z ├ ○ /malpani-m-soulstrings-reviews-ratings-baner-pune
+2026-06-27T09:20:28.6341737Z ├ ○ /market-analysis-malpani-m-soulstrings-baner-pashan-link-road
+2026-06-27T09:20:28.6342428Z ├ ○ /nri-investment-malpani-m-soulstrings-baner-pashan-link-road
+2026-06-27T09:20:28.6343054Z ├ ○ /pashan-malpani-m-soulstrings-baner-pashan-link-road
+2026-06-27T09:20:28.6343711Z ├ ○ /penthouse-luxury-malpani-m-soulstrings-baner-pashan-link-road
+2026-06-27T09:20:28.6344512Z ├ ○ /pune-infrastructure-metro-impact-malpani-m-soulstrings-baner-pashan-link-road
+2026-06-27T09:20:28.6345370Z ├ ○ /pune-real-estate-market-malpani-m-soulstrings-baner-pashan-link-road
+2026-06-27T09:20:28.6346190Z ├ ○ /pune-west-real-estate-market-malpani-m-soulstrings-baner-pashan-link-road
+2026-06-27T09:20:28.6346727Z ├ ƒ /rss.xml
+2026-06-27T09:20:28.6347232Z ├ ○ /shivajinagar-malpani-m-soulstrings-baner-pashan-link-road
+2026-06-27T09:20:28.6347882Z ├ ○ /sitemap-malpani-m-soulstrings-baner-pashan-link-road
+2026-06-27T09:20:28.6348337Z ├ ○ /sitemap.xml
+2026-06-27T09:20:28.6348971Z └ ○ /vastu-compliant-luxury-homes-pune-malpani-m-soulstrings-baner-pashan-link-road
+2026-06-27T09:20:28.6349399Z 
+2026-06-27T09:20:28.6349408Z 
+2026-06-27T09:20:28.6349583Z ƒ Proxy (Middleware)
+2026-06-27T09:20:28.6349776Z 
+2026-06-27T09:20:28.6350016Z ○  (Static)   prerendered as static content
+2026-06-27T09:20:28.6350600Z ●  (SSG)      prerendered as static HTML (uses generateStaticParams)
+2026-06-27T09:20:28.6351146Z ƒ  (Dynamic)  server-rendered on demand
+2026-06-27T09:20:28.6351701Z 

@@ -1,0 +1,36 @@
+﻿2026-06-27T09:20:46.7644859Z ##[group]Run if [ -f google-service-account.json ]; then
+2026-06-27T09:20:46.7645372Z [36;1mif [ -f google-service-account.json ]; then[0m
+2026-06-27T09:20:46.7645789Z [36;1m  node scripts/ping-google.js[0m
+2026-06-27T09:20:46.7646140Z [36;1melse[0m
+2026-06-27T09:20:46.7646615Z [36;1m  echo "[INFO] google-service-account.json not found. Skipping Google Indexing API."[0m
+2026-06-27T09:20:46.7647127Z [36;1mfi[0m
+2026-06-27T09:20:46.7676801Z shell: /usr/bin/bash -e ***0***
+2026-06-27T09:20:46.7677175Z ##[endgroup]
+2026-06-27T09:20:46.8019964Z =============================================
+2026-06-27T09:20:46.8023729Z   GOOGLE INDEXING API GATEWAY  
+2026-06-27T09:20:46.8024353Z =============================================
+2026-06-27T09:20:46.8024916Z Discovered 18 URLs for submission.
+2026-06-27T09:20:46.8026891Z [AUTH] Authenticating as service account: malpani@vivid-reality-419916.iam.gserviceaccount.com
+2026-06-27T09:20:46.9321585Z [AUTH] Token successfully retrieved. Submitting URLs...
+2026-06-27T09:20:47.2365538Z [SUCCESS] Indexed: https://www.malpanimsoulstrings.com/
+2026-06-27T09:20:47.5661602Z [SUCCESS] Indexed: https://www.malpanimsoulstrings.com/3bhk-luxury-malpani-m-soulstrings-baner-pashan-link-road
+2026-06-27T09:20:47.8307383Z [SUCCESS] Indexed: https://www.malpanimsoulstrings.com/4bhk-luxury-malpani-m-soulstrings-baner-pashan-link-road
+2026-06-27T09:20:48.1067767Z [SUCCESS] Indexed: https://www.malpanimsoulstrings.com/5bhk-duplex-malpani-m-soulstrings-baner-pashan-link-road
+2026-06-27T09:20:48.4036582Z [SUCCESS] Indexed: https://www.malpanimsoulstrings.com/penthouse-luxury-malpani-m-soulstrings-baner-pashan-link-road
+2026-06-27T09:20:48.6615018Z [SUCCESS] Indexed: https://www.malpanimsoulstrings.com/location-malpani-m-soulstrings-baner-pashan-link-road
+2026-06-27T09:20:48.9068963Z [SUCCESS] Indexed: https://www.malpanimsoulstrings.com/nri-investment-malpani-m-soulstrings-baner-pashan-link-road
+2026-06-27T09:20:49.1843133Z [SUCCESS] Indexed: https://www.malpanimsoulstrings.com/amenities-malpani-m-soulstrings-baner-pashan-link-road
+2026-06-27T09:20:49.4432076Z [SUCCESS] Indexed: https://www.malpanimsoulstrings.com/infrastructure-malpani-m-soulstrings-baner-pashan-link-road
+2026-06-27T09:20:49.7162017Z [SUCCESS] Indexed: https://www.malpanimsoulstrings.com/baner-overview-malpani-m-soulstrings-baner-pashan-link-road
+2026-06-27T09:20:50.0024755Z [SUCCESS] Indexed: https://www.malpanimsoulstrings.com/aundh-malpani-m-soulstrings-baner-pashan-link-road
+2026-06-27T09:20:50.2613433Z [SUCCESS] Indexed: https://www.malpanimsoulstrings.com/pashan-malpani-m-soulstrings-baner-pashan-link-road
+2026-06-27T09:20:50.5198222Z [SUCCESS] Indexed: https://www.malpanimsoulstrings.com/shivajinagar-malpani-m-soulstrings-baner-pashan-link-road
+2026-06-27T09:20:50.7640243Z [SUCCESS] Indexed: https://www.malpanimsoulstrings.com/malpani-m-soulstrings-reviews-ratings-baner-pune
+2026-06-27T09:20:51.0501834Z [SUCCESS] Indexed: https://www.malpanimsoulstrings.com/flat-rates-price-trends-baner-pashan-link-road-pune
+2026-06-27T09:20:51.3115295Z [SUCCESS] Indexed: https://www.malpanimsoulstrings.com/luxury-gated-community-apartments-for-sale-pune-west
+2026-06-27T09:20:51.5996158Z [SUCCESS] Indexed: https://www.malpanimsoulstrings.com/invest-in-malpani-estates-pune-growth-corridors
+2026-06-27T09:20:51.8586241Z [SUCCESS] Indexed: https://www.malpanimsoulstrings.com/malpani-m-soulstrings-construction-status-updates-possession
+2026-06-27T09:20:52.0092897Z 
+2026-06-27T09:20:52.0094083Z =============================================
+2026-06-27T09:20:52.0095117Z INDEXING RUN COMPLETE: 18/18 URLs accepted.
+2026-06-27T09:20:52.0096106Z =============================================

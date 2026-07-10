@@ -88,9 +88,9 @@ export default function Home() {
         <div className="hero-overlay"></div>
       </div>
       <div className="hero-content">
-        <h1 className="hero-title split-text" style={{ display: 'flex', flexDirection: 'column', gap: '0.5rem' }}>
-          <div className="line"><span className="word">Malpani</span> <span className="word">M</span> <span className="word">SoulStrings</span></div>
-          <div className="line" style={{ fontSize: 'clamp(1rem, 2vw, 1.5rem)', fontWeight: '400', letterSpacing: '3px', textTransform: 'uppercase', color: 'rgba(255,255,255,0.8)' }}>
+        <h1 className="hero-title split-text" aria-label="Malpani M SoulStrings" style={{ display: 'flex', flexDirection: 'column', gap: '0.5rem' }}>
+          <div className="line" aria-hidden="true"><span className="word">Malpani</span> <span className="word">M</span> <span className="word">SoulStrings</span></div>
+          <div className="line" aria-hidden="true" style={{ fontSize: 'clamp(1rem, 2vw, 1.5rem)', fontWeight: '400', letterSpacing: '3px', textTransform: 'uppercase', color: 'rgba(255,255,255,0.8)' }}>
             <span className="word">Ultra-Premium 3, 4, 5 BHK, Duplex & Penthouse Estates in Baner Pashan Link Road</span>
           </div>
         </h1>
@@ -503,7 +503,7 @@ export default function Home() {
     <section id="contact" className="section contact">
       <div className="container contact-wrapper fade-in-up">
         <div className="contact-info">
-          <h2 className="section-title gradient-text">Schedule Site Visit Malpani Soulstrings</h2>
+          <h2 className="section-title gradient-text">Schedule Site Visit Malpani M SoulStrings</h2>
           <p>Get exclusive Malpani M SoulStrings pricing lists and browse the finest luxury flats for sale in Baner.</p>
           <div className="contact-details" >
             <p ><span className="material-symbols-outlined" >location_on</span> Baner Pashan Link Road, Pune, Maharashtra 411045</p>
@@ -524,7 +524,7 @@ export default function Home() {
               <input type="tel" id="phone" name="phone" pattern="[0-9]{10}" required className="floating-input" placeholder=" " />
               <label htmlFor="phone" className="floating-label">Phone Number (10 digits)</label>
             </div>
-            <button type="submit" className="btn btn-primary btn-block">Download Malpani Soulstrings Brochure</button>
+            <button type="submit" className="btn btn-primary btn-block">Download Malpani M SoulStrings Brochure</button>
             <div id="form-success-msg" style={{ display: 'none', color: '#28a745', marginTop: '1rem' }}>✓ Thank you! Our luxury consultant will contact you shortly to Book Luxury Flat in Baner.</div>
           </form>
         </div>

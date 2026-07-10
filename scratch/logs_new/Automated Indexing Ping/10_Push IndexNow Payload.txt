@@ -1,0 +1,16 @@
+﻿2026-06-27T09:20:52.0174668Z ##[group]Run node scripts/ping-sitemap.js
+2026-06-27T09:20:52.0175102Z [36;1mnode scripts/ping-sitemap.js[0m
+2026-06-27T09:20:52.0209112Z shell: /usr/bin/bash -e ***0***
+2026-06-27T09:20:52.0209471Z ##[endgroup]
+2026-06-27T09:20:52.0559006Z ========================================
+2026-06-27T09:20:52.0562525Z   INDEXNOW BATCH POST - PING INITIATED  
+2026-06-27T09:20:52.0563167Z ========================================
+2026-06-27T09:20:52.0563719Z Total URLs to submit: 57
+2026-06-27T09:20:52.0564188Z   Static pages: 30
+2026-06-27T09:20:52.0564620Z   Blog posts:   27
+2026-06-27T09:20:52.0564870Z 
+2026-06-27T09:20:52.0566641Z [VERIFICATION] Checking key location (Attempt 1/15): https://www.malpanimsoulstrings.com/b3e72a9c5d4e8f01a2c6d9e5f7b8a3c5.txt
+2026-06-27T09:20:52.9983566Z [SUCCESS] IndexNow Verification Key verified on live host!
+2026-06-27T09:20:52.9994452Z [PINGING] Sending IndexNow push notification payload...
+2026-06-27T09:20:53.3490445Z [SUCCESS] IndexNow accepted the batch submission (Status: 200)
+2026-06-27T09:20:53.3491652Z [INFO] 57 URLs submitted successfully.

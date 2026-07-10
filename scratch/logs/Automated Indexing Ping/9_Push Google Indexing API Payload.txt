@@ -1,0 +1,9 @@
+﻿2026-06-27T08:56:24.9083295Z ##[group]Run if [ -f google-service-account.json ]; then
+2026-06-27T08:56:24.9084130Z [36;1mif [ -f google-service-account.json ]; then[0m
+2026-06-27T08:56:24.9084760Z [36;1m  node scripts/ping-google.js[0m
+2026-06-27T08:56:24.9085467Z [36;1melse[0m
+2026-06-27T08:56:24.9086202Z [36;1m  echo "[INFO] google-service-account.json not found. Skipping Google Indexing API."[0m
+2026-06-27T08:56:24.9087299Z [36;1mfi[0m
+2026-06-27T08:56:24.9114016Z shell: /usr/bin/bash -e ***0***
+2026-06-27T08:56:24.9114579Z ##[endgroup]
+2026-06-27T08:56:24.9643946Z [INFO] google-service-account.json not found. Skipping Google Indexing API.

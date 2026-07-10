@@ -1,0 +1,19 @@
+﻿2026-06-27T08:56:06.9992768Z ##[group]Run npm run seo-audit
+2026-06-27T08:56:06.9993139Z [36;1mnpm run seo-audit[0m
+2026-06-27T08:56:07.0013069Z shell: /usr/bin/bash -e ***0***
+2026-06-27T08:56:07.0013419Z ##[endgroup]
+2026-06-27T08:56:07.0986710Z 
+2026-06-27T08:56:07.0987410Z > malpanimsoul@0.1.0 seo-audit
+2026-06-27T08:56:07.0988135Z > node scripts/validate-schema-graph.js
+2026-06-27T08:56:07.0988579Z 
+2026-06-27T08:56:07.2365597Z --- STARTING UNIFIED SEO & SCHEMA GRAPH VALIDATION ---
+2026-06-27T08:56:07.2529215Z Found 59 statically compiled HTML files in .next server app directory.
+2026-06-27T08:56:07.2530215Z 
+2026-06-27T08:56:07.7992139Z [INFO] Validating built XML sitemap body...
+2026-06-27T08:56:07.8092052Z - Verified sitemap contains 57 URLs.
+2026-06-27T08:56:07.8097095Z SEO & Schema Validation Completed.
+2026-06-27T08:56:07.8097764Z - Total JSON-LD schemas validated: 202
+2026-06-27T08:56:07.8098209Z - Warnings: 0
+2026-06-27T08:56:07.8098818Z - Errors: 0
+2026-06-27T08:56:07.8099035Z 
+2026-06-27T08:56:07.8099434Z [PASS] All compiled pages and schemas conform to absolute SEO and graph integrity standards.
