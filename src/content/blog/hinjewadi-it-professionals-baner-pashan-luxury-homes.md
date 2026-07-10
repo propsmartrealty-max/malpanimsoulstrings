@@ -26,4 +26,4 @@ For IT professionals who view their home purchase as both a lifestyle upgrade an
 Properties in this corridor also tend to perform well in the rental market, as the same proximity and lifestyle factors that attract buyers also attract high-quality tenants—particularly expatriates and senior corporate executives on assignment in Pune.
 
 ## Conclusion
-The migration of IT professionals from compact apartments near their workplaces to spacious, premium homes on the Baner-Pashan Link Road reflects a broader trend in how high-income urban professionals approach homeownership. For those who want the convenience of Hinjewadi without the congestion, this corridor represents the most balanced residential choice in West Pune.
+The migration of IT professionals from compact apartments near their workplaces to spacious, premium homes on the Baner-Pashan Link Road reflects a broader trend in how high-income urban professionals approach homeownership. For those who want the convenience of Hinjewadi without the congestion, this corridor—home to developments like **Malpani M SoulStrings**—represents the most balanced residential choice in West Pune.

@@ -27,7 +27,7 @@ In the Indian luxury market, Vastu Shastra is not just a spiritual preference; i
 The Pune real estate market has seen many flash-in-the-pan developers. When investing upward of ₹3 Crores, the builder's legacy is paramount. 
 - Investigate their track record of timely delivery.
 - Review their past luxury projects for maintenance quality 5-10 years post-handover.
-- Ensure they have a pristine financial record with RERA. (The Malpani Group, for instance, boasts decades of unblemished trust and delivery).
+- Ensure they have a pristine financial record with RERA. (The Malpani Group, for instance, boasts decades of unblemished trust and delivery, with **Malpani M SoulStrings** being a prime example of their commitment to excellence).
 
 ## 5. Future-Proofing via Smart Home Integration
 A luxury apartment bought today must remain relevant a decade from now. Ensure the property includes robust, pre-wired smart home infrastructure. This includes IoT-enabled lighting, biometric security access, automated climate control, and EV charging provisions in the parking bays.

@@ -39,7 +39,7 @@ export default function BlogIndex() {
     <main className="container py-5 my-5">
       <h1 style={{ color: '#d4af37', marginBottom: '1rem', fontWeight: '800' }}>Real Estate Insights</h1>
       <p style={{ color: 'rgba(255,255,255,0.7)', fontSize: '1.2rem', marginBottom: '4rem' }}>
-        Deep-dive market analysis, luxury living guides, and infrastructure updates for the Baner-Pashan corridor.
+        Deep-dive market analysis, luxury living guides, and infrastructure updates for Malpani M SoulStrings and the Baner-Pashan corridor.
       </p>
       <div className="row g-4">
         {posts.map(post => (

@@ -16,7 +16,7 @@ Pune offers a unique macroeconomic environment that is highly favorable for NRIs
 **Wealth creation through real estate pune** is achieved through a dual-engine strategy: Capital Appreciation and Rental Yields. 
 
 ### 1. Capital Appreciation in West Pune
-Micro-markets like Baner, Balewadi, and Pashan are experiencing land scarcity. Unlike the sprawling eastern corridors, West Pune is geographically bounded by hills and biodiversity parks. This severe supply constraint for new, large-scale projects guarantees steep capital appreciation. Properties in the Baner-Pashan Link road have historically appreciated at 10-14% annually.
+Micro-markets like Baner, Balewadi, and Pashan are experiencing land scarcity. Unlike the sprawling eastern corridors, West Pune is geographically bounded by hills and biodiversity parks. This severe supply constraint for new, large-scale projects guarantees steep capital appreciation. Properties in the Baner-Pashan Link Road—including **Malpani M SoulStrings**—have historically appreciated at 10-14% annually.
 
 ### 2. High-Yield Rental Markets
 When you invest in **second home investment pune** or luxury assets, your target tenant is typically a C-suite executive. These tenants require 35+ amenities, stringent security, and smart-home features. Projects that offer these—like **[Malpani M SoulStrings](/location-malpani-m-soulstrings-baner-pashan-link-road)**—can command exceptional rental yields that far outpace inflation.

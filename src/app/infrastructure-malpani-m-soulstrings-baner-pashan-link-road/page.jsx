@@ -55,7 +55,7 @@ export default function InfrastructurePage() {
                 Our ultra-premium location ensures seamless access across West Pune's most vital micro-markets. We offer unparalleled proximity to Baner, Veerbhadra Nagar, and Pashan-Sus Road, serving as the ultimate upgrade for residents currently in Balewadi, Pancard Club Road, or Mahalunge. 
             </p>
             <p>
-                The estate is perfectly positioned for those upgrading from Sus, Bavdhan, or Aundh. Our connectivity extends effortlessly to Sutarwadi, Someshwarwadi, and Ram Nagar. Experience the true pinnacle of luxury living, featuring breathtaking hill views and the most coveted location in the entire commercial belt.
+                The estate is perfectly positioned for those upgrading from Sus, Bavdhan, or Aundh. The connectivity from <strong>Malpani M SoulStrings</strong> extends effortlessly to Sutarwadi, Someshwarwadi, and Ram Nagar. Experience the true pinnacle of luxury living, featuring breathtaking hill views and the most coveted location in the entire commercial belt.
             </p>
             <p>
                 <strong>Hyper-Local Landmarks:</strong> Live mere minutes away from premium lifestyle and civic amenities. The property is situated exceptionally close to major retail centers like Xion Mall, premier educational institutions including Vibgyor School, The Orchid School, and MITCON. Enjoy absolute convenience with immediate access to Croma, DMart, Jupiter Hospital, and the Balewadi Stadium.

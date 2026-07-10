@@ -11,7 +11,7 @@ For residents of the Baner-Pashan Link Road area, the nearest proposed stations 
 Transit-oriented development is a well-documented driver of residential property demand globally. In Pune's context, the metro line is expected to:
 
 - **Reduce commute dependency on roads**: The Baner-Sus-Pashan corridor currently relies heavily on the Mumbai-Bangalore Highway and internal arterial roads, which experience significant congestion during office hours. A metro connection provides a reliable alternative.
-- **Attract corporate tenants**: IT professionals and senior executives who currently reside closer to Hinjewadi may consider relocating to the quieter, more spacious Baner-Pashan corridor once metro connectivity is established.
+- **Attract corporate tenants**: IT professionals and senior executives who currently reside closer to Hinjewadi may consider relocating to the quieter, more spacious Baner-Pashan corridor—home to developments like **Malpani M SoulStrings**—once metro connectivity is established.
 - **Support rental yield stability**: Properties within a 1–2 km radius of metro stations historically command a 10–15% premium in rental yields compared to similar properties farther away.
 
 ## The Broader Infrastructure Ecosystem

@@ -36,7 +36,7 @@ Who is buying luxury real estate in Pune today? For a complete, step-by-step che
 ## Conclusion and Market Forecast
 The trajectory for the Pune Luxury Real Estate Market is aggressively bullish. We project a steady 12-15% annual capital appreciation for ultra-luxury 3 and 4 BHK estates in the Pune West corridor through 2030. 
 
-For investors and homebuyers alike, the window to enter the market at current valuations is closing rapidly. Developments on the Baner Pashan Link Road, in particular, represent the apex of this investment opportunity, offering an unrepeatable blend of location, luxury, and long-term ROI.
+For investors and homebuyers alike, the window to enter the market at current valuations is closing rapidly. Developments on the Baner Pashan Link Road—led by **Malpani M SoulStrings**—represent the apex of this investment opportunity, offering an unrepeatable blend of location, luxury, and long-term ROI.
 
 ---
 
