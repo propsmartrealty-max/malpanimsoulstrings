@@ -76,6 +76,7 @@ export default async function BlogPost({ params }) {
   let articleDescription = 'Read our latest insights.';
   let stats = null;
   let relatedBlogs = [];
+  let faqSchema = null;
   
   try {
     const rawMarkdown = fs.readFileSync(filePath, 'utf-8');
@@ -110,6 +111,33 @@ export default async function BlogPost({ params }) {
       if (line && !line.startsWith('#') && !line.startsWith('>') && !line.startsWith('-')) {
         articleDescription = line.substring(0, 155);
         break;
+      }
+    }
+    
+    // Parse FAQ Schema for Zero-Click Snippets
+    const faqMatch = rawMarkdown.match(/## Frequently Asked Questions([\s\S]*)$/i);
+    if (faqMatch) {
+      const faqText = faqMatch[1];
+      const qnaRegex = /###\s+(.+?)\n([\s\S]+?)(?=\n###|\n*$)/g;
+      const questions = [];
+      let match;
+      while ((match = qnaRegex.exec(faqText)) !== null) {
+        questions.push({
+          "@type": "Question",
+          "name": match[1].trim(),
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": match[2].trim().replace(/\*\*/g, '')
+          }
+        });
+      }
+      
+      if (questions.length > 0) {
+        faqSchema = {
+          "@context": "https://schema.org",
+          "@type": "FAQPage",
+          "mainEntity": questions
+        };
       }
     }
   } catch (e) {
@@ -161,9 +189,12 @@ export default async function BlogPost({ params }) {
     ]
   };
 
+  const allSchemas = [schema, breadcrumbSchema];
+  if (faqSchema) allSchemas.push(faqSchema);
+
   return (
     <main className="container py-5 my-5">
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify([schema, breadcrumbSchema]) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(allSchemas) }} />
       <div className="row justify-content-center">
         <div 
           className="col-lg-8 blog-content fade-in-up" 

@@ -18,3 +18,11 @@ So, where is the wealth moving? The answer is just 10 minutes away. As highlight
 By investing in projects like [Malpani M SoulStrings](/), you retain the exact same social circle and geographic convenience of Aundh, while upgrading to state-of-the-art construction, zero-pollution environments, and unparalleled privacy. 
 
 This corridor represents the natural evolution of West Pune's luxury heritage.
+
+## Frequently Asked Questions
+
+### Where should Aundh residents invest in new luxury properties?
+The natural successor for Aundh residents is the **Baner-Pashan Link Road**. Investing in **Malpani M SoulStrings** provides the exact same elite social circle while upgrading to a modern **4 BHK or 5 BHK Duplex** with zero-pollution environments.
+
+### Is Malpani M SoulStrings Vastu compliant?
+Yes, the ultra-luxury estates at **Malpani M SoulStrings** on the **Baner-Pashan Link Road** feature meticulously planned **Vastu compliant** layouts, ensuring peace, prosperity, and optimal natural light in every **3 BHK and 4 BHK** home.
