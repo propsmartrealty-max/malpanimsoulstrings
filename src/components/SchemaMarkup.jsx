@@ -30,6 +30,9 @@ export default function SchemaMarkup({ pageName, pageUrl }) {
         "url": "https://www.malpanimsoulstrings.com/",
         "telephone": "+91 7744009295",
         "governmentIdentifier": "MahaRERA Registration: P52100076782 (Wing B), P52100055678 (Wing C)",
+        "image": "https://malpani-cms.firsteconomy.com/uploads/M_soul_strings_Desktop_Banner_Without_Text_0d38ce28d4.jpg",
+        "priceRange": "$$$$",
+        "hasMap": "https://maps.google.com/?q=18.5539,73.7915",
         "address": {
           "@type": "PostalAddress",
           "streetAddress": "Baner Pashan Link Road",
@@ -56,6 +59,7 @@ export default function SchemaMarkup({ pageName, pageUrl }) {
         "image": "https://malpani-cms.firsteconomy.com/uploads/M_soul_strings_Desktop_Banner_Without_Text_0d38ce28d4.jpg",
         "telephone": "+91 7744009295",
         "url": "https://www.malpanimsoulstrings.com/",
+        "hasMap": "https://maps.google.com/?q=18.553715,73.774577",
         "parentOrganization": { "@id": "https://www.malpanimsoulstrings.com/#organization" },
         "knowsAbout": { "@id": "https://www.malpanimsoulstrings.com/#apartmentcomplex" },
         "governmentIdentifier": "MahaRERA Registration: P52100076782, P52100055678",
@@ -87,6 +91,54 @@ export default function SchemaMarkup({ pageName, pageUrl }) {
           "closes": "20:00"
         },
         "priceRange": "$$$$"
+      },
+      {
+        "@type": "Product",
+        "@id": "https://www.malpanimsoulstrings.com/#product",
+        "name": "Ultra-Luxury Apartments at Malpani M SoulStrings",
+        "image": "https://malpani-cms.firsteconomy.com/uploads/M_soul_strings_Desktop_Banner_Without_Text_0d38ce28d4.jpg",
+        "description": "Ultra-premium 3 BHK, 4 BHK, 5 BHK, Duplex, and Penthouse luxury estates at Baner-Pashan Link Road.",
+        "brand": {
+          "@type": "Brand",
+          "name": "Malpani Group"
+        },
+        "offers": {
+          "@type": "AggregateOffer",
+          "offerCount": "4",
+          "priceCurrency": "INR",
+          "lowPrice": "19500000",
+          "highPrice": "55000000",
+          "offers": [
+            {
+              "@type": "Offer",
+              "name": "3 BHK Premium Flats",
+              "url": "https://www.malpanimsoulstrings.com/3bhk-luxury-malpani-m-soulstrings-baner-pashan-link-road",
+              "availability": "https://schema.org/InStock",
+              "itemCondition": "https://schema.org/NewCondition"
+            },
+            {
+              "@type": "Offer",
+              "name": "4 BHK Premium Flats",
+              "url": "https://www.malpanimsoulstrings.com/4bhk-luxury-malpani-m-soulstrings-baner-pashan-link-road",
+              "availability": "https://schema.org/InStock",
+              "itemCondition": "https://schema.org/NewCondition"
+            },
+            {
+              "@type": "Offer",
+              "name": "5 BHK & Duplex Homes",
+              "url": "https://www.malpanimsoulstrings.com/5bhk-duplex-malpani-m-soulstrings-baner-pashan-link-road",
+              "availability": "https://schema.org/InStock",
+              "itemCondition": "https://schema.org/NewCondition"
+            },
+            {
+              "@type": "Offer",
+              "name": "Luxury Penthouses",
+              "url": "https://www.malpanimsoulstrings.com/penthouse-luxury-malpani-m-soulstrings-baner-pashan-link-road",
+              "availability": "https://schema.org/InStock",
+              "itemCondition": "https://schema.org/NewCondition"
+            }
+          ]
+        }
       }
     ]
   };
