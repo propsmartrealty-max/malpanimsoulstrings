@@ -9,6 +9,20 @@ import fs from 'fs';
 import path from 'path';
 import Link from 'next/link';
 
+export const revalidate = 604800; // 1 week (in seconds)
+export const dynamicParams = true; // Fallback for 13,994 remaining routes
+
+export async function generateStaticParams() {
+  return [
+    { slug: ['4-bhk-flats-vastu-compliant-baner'] },
+    { slug: ['3-bhk-luxury-apartments-near-it-park-hinjewadi'] },
+    { slug: ['5-bhk-duplex-homes-luxury-amenities-pune-west'] },
+    { slug: ['penthouses-high-rise-balewadi'] },
+    { slug: ['luxury-villas-near-metro-station-aundh'] },
+    { slug: ['ready-possession-homes-zero-brokerage-wakad'] }
+  ];
+}
+
 export async function generateMetadata({ params }) {
   const { slug } = await params;
   const keywordStr = slug.join(' ').replace(/-/g, ' ');
