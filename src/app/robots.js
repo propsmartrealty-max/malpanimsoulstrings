@@ -8,7 +8,7 @@ export default function robots() {
     sitemap: [
       'https://www.malpanimsoulstrings.com/sitemap.xml',
       'https://www.malpanimsoulstrings.com/sitemap-programmatic.xml',
-      'https://www.malpanimsoulstrings.com/sitemap-images.xml'
+      'https://www.malpanimsoulstrings.com/sitemap-images-v2.xml'
     ],
   }
 }

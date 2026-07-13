@@ -61,7 +61,7 @@ const generateImageSitemap = () => {
 };
 
 const xmlContent = generateImageSitemap();
-const outputPath = path.join(__dirname, '..', 'public', 'sitemap-images.xml');
+const outputPath = path.join(__dirname, '..', 'public', 'sitemap-images-v2.xml');
 
 fs.writeFileSync(outputPath, xmlContent, 'utf8');
 
