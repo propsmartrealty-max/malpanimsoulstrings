@@ -45,6 +45,17 @@ export default function Footer() {
                       <li><Link href="/nri-investment-malpani-m-soulstrings-baner-pashan-link-road" style={{ color: 'rgba(255,255,255,0.5)', textDecoration: 'none' }}>NRI Investment</Link></li>
                   </ul>
               </div>
+              <div className="col-lg-3 mt-4 mt-lg-0">
+                  <h5 className="text-white mb-3">Popular Searches</h5>
+                  <ul className="list-unstyled" style={{ lineHeight: '2' }}>
+                      <li><Link href="/discover/4-bhk-flats-vastu-compliant-baner" style={{ color: 'rgba(255,255,255,0.5)', textDecoration: 'none' }}>4 BHK Flats Vastu Compliant Baner</Link></li>
+                      <li><Link href="/discover/3-bhk-luxury-apartments-near-it-park-hinjewadi" style={{ color: 'rgba(255,255,255,0.5)', textDecoration: 'none' }}>3 BHK Luxury Apartments Hinjewadi</Link></li>
+                      <li><Link href="/discover/5-bhk-duplex-homes-luxury-amenities-pune-west" style={{ color: 'rgba(255,255,255,0.5)', textDecoration: 'none' }}>5 BHK Duplex Pune West</Link></li>
+                      <li><Link href="/discover/penthouses-high-rise-balewadi" style={{ color: 'rgba(255,255,255,0.5)', textDecoration: 'none' }}>High-Rise Penthouses Balewadi</Link></li>
+                      <li><Link href="/discover/luxury-villas-near-metro-station-aundh" style={{ color: 'rgba(255,255,255,0.5)', textDecoration: 'none' }}>Luxury Villas Near Metro Aundh</Link></li>
+                      <li><Link href="/discover/ready-possession-homes-zero-brokerage-wakad" style={{ color: 'rgba(255,255,255,0.5)', textDecoration: 'none' }}>Zero Brokerage Homes Wakad</Link></li>
+                  </ul>
+              </div>
           </nav>
 
           {/* SEO Factsheet & Market Intelligence Corridor */}
