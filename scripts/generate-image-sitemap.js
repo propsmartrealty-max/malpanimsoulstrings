@@ -30,7 +30,7 @@ const images = [
   },
   {
     url: 'https://malpani-cms.firsteconomy.com/uploads/M_soul_strings_Desktop_Banner_Without_Text_0d38ce28d4.jpg',
-    title: 'Malpani M SoulStrings Masterplan & Aerial View',
+    title: 'Malpani M SoulStrings Masterplan and Aerial View',
     geo: 'Baner-Pashan Link Road, Pune, Maharashtra, India',
     caption: 'Aerial Masterplan of Malpani M SoulStrings ultra-premium gated community'
   }
