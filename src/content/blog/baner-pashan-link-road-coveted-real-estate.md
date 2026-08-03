@@ -1,6 +1,6 @@
 # Baner-Pashan Link Road: Pune’s Most Coveted Real Estate Corridor
 
-When discussing the absolute peak of the Pune Real Estate market, one highly specific micro-market dominates the conversation: the Baner-Pashan Link Road. For high-net-worth individuals, tech leaders, and NRI investors, securing **baner pashan luxury homes** is the ultimate goal.
+When discussing the absolute peak of the Pune Real Estate market, one highly specific micro-market dominates the conversation: the Baner-Pashan Link Road. For high-net-worth individuals, tech leaders, and [NRI investors](/nri-investment-malpani-m-soulstrings-baner-pashan-link-road), securing **baner pashan luxury homes** is the ultimate goal.
 
 But what makes this specific 3-kilometer stretch the most valuable real estate in West Pune?
 

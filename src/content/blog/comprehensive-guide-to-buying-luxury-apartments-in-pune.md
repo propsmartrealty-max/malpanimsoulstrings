@@ -2,7 +2,7 @@
 
 Investing in a luxury apartment in Pune is a significant financial and lifestyle decision. The city's real estate market has evolved into a highly sophisticated landscape, offering everything from boutique high-rises to sprawling resort-style estates. 
 
-Whether you are a returning NRI, an IT executive upgrading your lifestyle, or an investor seeking high-yield assets, this ultimate guide will walk you through exactly how to navigate the **Pune Luxury Real Estate Market**.
+Whether you are a returning [NRI](/nri-investment-malpani-m-soulstrings-baner-pashan-link-road), an IT executive upgrading your lifestyle, or an investor seeking high-yield assets, this ultimate guide will walk you through exactly how to navigate the **Pune Luxury Real Estate Market**.
 
 ## 1. Define Your Micro-Market
 Pune is not a monolith; it is a collection of distinct micro-markets, each with its own culture and valuation trajectory.
@@ -47,7 +47,7 @@ Buying a luxury apartment in Pune is an investment in your legacy. By focusing o
 While Koregaon Park has legacy charm, Baner offers superior modern infrastructure, wider roads, and immediate proximity to the Hinjewadi IT corridor, making it the preferred choice for modern IT leaders.
 
 **2. What is the expected ROI for luxury properties in Pune West?**
-Properties on the Baner Pashan Link Road and similar high-growth corridors are expected to see a 12-15% annualized capital appreciation due to land scarcity and massive infrastructure upgrades like the Metro Line 3.
+Properties on the [Baner Pashan Link Road](/location-malpani-m-soulstrings-baner-pashan-link-road) and similar high-growth corridors are expected to see a 12-15% annualized capital appreciation due to land scarcity and massive infrastructure upgrades like the Metro Line 3.
 
 **3. Do luxury apartments in Pune come with smart home features?**
-Premium developers (like the Malpani Group) are pre-wiring their 3 and 4 BHK estates with enterprise-grade IoT infrastructure, EV charging, and automated climate control to future-proof the investment.
+Premium developers (like the Malpani Group) are pre-wiring their 3 and [4 BHK](/4bhk-luxury-malpani-m-soulstrings-baner-pashan-link-road) estates with enterprise-grade IoT infrastructure, EV charging, and automated climate control to future-proof the investment.

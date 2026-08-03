@@ -6,7 +6,7 @@ Investing in Indian real estate is a primary wealth generation strategy for Non-
 While East Pune (Kharadi, Magarpatta) has seen significant IT growth, West Pune (Baner, Pashan, Balewadi, Hinjewadi) remains the traditional stronghold of luxury and prestige. The continuous expansion of the Hinjewadi IT corridor combined with the elite social infrastructure of Aundh makes Baner the perfect hybrid of corporate accessibility and serene residential living.
 
 ## 2. The Shift to 4 BHK Ultra-Luxury Estates
-NRIs returning to India or purchasing generational assets are no longer satisfied with standard 2 BHK or 3 BHK apartments. The demand has decisively shifted toward **large carpet area 4 BHK estates**. Buyers expect:
+NRIs returning to India or purchasing generational assets are no longer satisfied with standard 2 BHK or [3 BHK apartments](/3bhk-luxury-malpani-m-soulstrings-baner-pashan-link-road). The demand has decisively shifted toward **large carpet area 4 BHK estates**. Buyers expect:
 - Private decks with panoramic views
 - Low-density, exclusive community living
 - Advanced enterprise-grade security and smart home automation

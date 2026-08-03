@@ -22,7 +22,7 @@ The metro line does not operate in isolation. The Baner-Pashan Link Road area be
 - **Balewadi Stadium precinct**: The international cricket stadium and surrounding sports infrastructure continue to attract commercial and hospitality investments to the area.
 
 ## What This Means for Homebuyers
-For families considering a purchase on the Baner-Pashan Link Road, the convergence of metro connectivity, highway access, and the area's natural green cover creates a balanced proposition. Projects like **Malpani M SoulStrings** are positioned to benefit from this infrastructure convergence, offering spacious 3 BHK and 4 BHK configurations in a low-density setting within walking distance of the proposed metro alignment.
+For families considering a purchase on the Baner-Pashan Link Road, the convergence of metro connectivity, highway access, and the area's natural green cover creates a balanced proposition. Projects like **Malpani M SoulStrings** are positioned to benefit from this infrastructure convergence, offering spacious [3 BHK](/3bhk-luxury-malpani-m-soulstrings-baner-pashan-link-road) and 4 BHK configurations in a low-density setting within walking distance of the proposed metro alignment.
 
 The key consideration for buyers is timing: properties purchased before metro operations commence (expected in phases through 2028) are likely to see the most significant appreciation as the infrastructure premium gets fully factored into market pricing.
 

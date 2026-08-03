@@ -10,9 +10,9 @@ This definitive guide reviews the complete portfolio of Malpani Estates projects
 
 As the crown jewel of our **Malpani developers Baner** portfolio, **[Malpani M SoulStrings](/)** stands as the definitive choice for ultra-luxury buyers in the **[Baner Real Estate Market](/baner-real-estate-market-malpani-m-soulstrings-baner-pashan-link-road)**. 
 
-*   **Configurations:** Premium 3 BHK, 4 BHK, 5 BHK, Duplexes, and Sky Penthouses.
-*   **Key Highlights:** 100% Vastu-compliant layouts, double-height open decks overlooking the green Sus-Baner hills, acoustic facade engineering, and 35+ resort-style amenities.
-*   **Target Persona:** End-user upgraders and NRI investors looking for the highest standard of low-density living.
+*   **Configurations:** Premium [3 BHK](/3bhk-luxury-malpani-m-soulstrings-baner-pashan-link-road), 4 BHK, 5 BHK, Duplexes, and Sky Penthouses.
+*   **Key Highlights:** 100% Vastu-compliant layouts, double-height open decks overlooking the green Sus-Baner hills, acoustic facade engineering, and 35+ resort-style [amenities](/amenities-malpani-m-soulstrings-baner-pashan-link-road).
+*   **Target Persona:** End-user upgraders and [NRI investors](/nri-investment-malpani-m-soulstrings-baner-pashan-link-road) looking for the highest standard of low-density living.
 
 ---
 

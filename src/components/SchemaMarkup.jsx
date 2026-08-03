@@ -1,4 +1,30 @@
 export default function SchemaMarkup({ pageName, pageUrl }) {
+  const generateBreadcrumbs = () => {
+    const list = [{ "@type": "ListItem", "position": 1, "name": "Home", "item": "https://www.malpanimsoulstrings.com/" }];
+    if (!pageUrl || pageUrl === '/') return list;
+    
+    const parts = pageUrl.split('/').filter(Boolean);
+    let currentPath = '';
+    
+    parts.forEach((part, index) => {
+      currentPath += `/${part}`;
+      let name = part.replace(/-/g, ' ');
+      name = name.replace(/\b\w/g, c => c.toUpperCase());
+      
+      if (index === parts.length - 1 && pageName) {
+        name = pageName;
+      }
+      
+      list.push({
+        "@type": "ListItem",
+        "position": index + 2,
+        "name": name,
+        "item": `https://www.malpanimsoulstrings.com${currentPath}`
+      });
+    });
+    return list;
+  };
+
   const schemaPayload = {
     "@context": "https://schema.org",
     "@graph": [
@@ -17,10 +43,7 @@ export default function SchemaMarkup({ pageName, pageUrl }) {
       },
       {
         "@type": "BreadcrumbList",
-        "itemListElement": [
-          { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://www.malpanimsoulstrings.com/" },
-          ...(pageName && pageUrl && pageUrl !== '/' ? [{ "@type": "ListItem", "position": 2, "name": pageName, "item": `https://www.malpanimsoulstrings.com${pageUrl}` }] : [])
-        ]
+        "itemListElement": generateBreadcrumbs()
       },
       {
         "@type": "ApartmentComplex",

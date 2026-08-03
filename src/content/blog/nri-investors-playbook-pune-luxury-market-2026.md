@@ -25,7 +25,7 @@ When you invest in **second home investment pune** or luxury assets, your target
 
 If you are evaluating **luxury homes for nri buyers pune**, ensure the project meets these strict criteria:
 *   **Developer Legacy:** Invest only with developers with a multi-decade track record of zero-delay delivery and impeccable quality. Read our detailed **[Invest in Malpani Estates guide](/invest-in-malpani-estates-pune-growth-corridors)** to understand corporate liquidity and execution safety.
-*   **Configuration:** Opt for expansive 3 BHK or 4 BHK layouts. The pandemic permanently shifted tenant preference towards larger spaces with dedicated home offices.
+*   **Configuration:** Opt for expansive [3 BHK](/3bhk-luxury-malpani-m-soulstrings-baner-pashan-link-road) or 4 BHK layouts. The pandemic permanently shifted tenant preference towards larger spaces with dedicated home offices.
 *   **Proximity to Commercial Hubs:** Ensure the property is within a 15-minute commute of major IT parks to guarantee tenant occupancy.
 
 **Are you ready to secure a high-yield asset in Pune's most lucrative market? [Contact our NRI Advisory Team](/nri-investment-malpani-m-soulstrings-baner-pashan-link-road) today for a personalized investment portfolio review.**

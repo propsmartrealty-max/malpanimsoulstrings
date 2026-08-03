@@ -18,7 +18,7 @@ Baner acts as the perfect buffer zone between the commercial grind of Hinjewadi 
 
 1.  **The Connectivity Triumph:** The expansion of the Mumbai-Bengaluru Highway bypass and the rapid construction of the Metro has permanently solved the commute issue. Executives can secure **luxury homes near metro pune** in Baner and glide into Hinjewadi without facing inner-city gridlock.
 2.  **Balewadi High Street:** Baner is immediately adjacent to Balewadi High Street, Pune's undisputed king of nightlife, fine dining, and boutique retail. This provides the "Live, Work, Play" triad that IT leaders demand.
-3.  **Educational Infrastructure:** The Baner-Wakad belt is home to Pune's top international schools, making it the default choice for expat and NRI families.
+3.  **Educational Infrastructure:** The Baner-Wakad belt is home to Pune's top international schools, making it the default choice for expat and [NRI](/nri-investment-malpani-m-soulstrings-baner-pashan-link-road) families.
 
 ## Identifying the Best Luxury Project in Pune
 

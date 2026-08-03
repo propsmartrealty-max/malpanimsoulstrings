@@ -88,11 +88,11 @@ export default function Home() {
         <div className="hero-overlay"></div>
       </div>
       <div className="hero-content">
-        <h1 className="hero-title split-text" aria-label="Malpani M SoulStrings" style={{ display: 'flex', flexDirection: 'column', gap: '0.5rem' }}>
-          <div className="line" aria-hidden="true"><span className="word">Malpani</span> <span className="word">M</span> <span className="word">SoulStrings</span></div>
-          <div className="line" aria-hidden="true" style={{ fontSize: 'clamp(1rem, 2vw, 1.5rem)', fontWeight: '400', letterSpacing: '3px', textTransform: 'uppercase', color: 'rgba(255,255,255,0.8)' }}>
-            <span className="word">Ultra-Premium 3, 4, 5 BHK, Duplex & Penthouse Estates in Baner Pashan Link Road</span>
-          </div>
+        <h1 className="hero-title" aria-label="Malpani M SoulStrings" style={{ display: 'flex', flexDirection: 'column', gap: '0.5rem' }}>
+          <span>Malpani M SoulStrings</span>
+          <span style={{ fontSize: 'clamp(1rem, 2vw, 1.5rem)', fontWeight: '400', letterSpacing: '3px', textTransform: 'uppercase', color: 'rgba(255,255,255,0.8)' }}>
+            Ultra-Premium 3, 4, 5 BHK, Duplex & Penthouse Estates in Baner Pashan Link Road
+          </span>
         </h1>
         <p className="hero-subtitle fade-in-up" >The Preferred Choice for Elite Buyers from Aundh, Shivajinagar, Balewadi, and Wakad.</p>
         <a href="#masterpiece" className="btn btn-outline pulse-vip fade-in-up" >Enter The Legacy</a>
@@ -342,7 +342,7 @@ export default function Home() {
           <div className="location-grid" >
             <div className="loc-card" >
               <h3 >Work & IT Hubs</h3>
-              <ul >
+              <ul style={{ listStyle: 'none', padding: 0 }}>
                 <li>✓ Hinjewadi IT Park - 15 mins</li>
                 <li>✓ Wakad Business District - 10 mins</li>
                 <li>✓ Prabhat Road & SB Road - 20 mins</li>
@@ -350,7 +350,7 @@ export default function Home() {
             </div>
             <div className="loc-card" >
               <h3 >Lifestyle & Leisure</h3>
-              <ul >
+              <ul style={{ listStyle: 'none', padding: 0 }}>
                 <li>✓ Balewadi High Street - 10 mins</li>
                 <li>✓ The Pavillion Mall - 15 mins</li>
                 <li>✓ Baner Hill - 5 mins</li>
@@ -358,7 +358,7 @@ export default function Home() {
             </div>
             <div className="loc-card" >
               <h3 >Education & Healthcare</h3>
-              <ul >
+              <ul style={{ listStyle: 'none', padding: 0 }}>
                 <li>✓ Pune University - 12 mins</li>
                 <li>✓ Jupiter Hospital - 10 mins</li>
                 <li>✓ Loyola High School - 15 mins</li>

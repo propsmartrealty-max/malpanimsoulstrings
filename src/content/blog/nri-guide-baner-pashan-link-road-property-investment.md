@@ -1,6 +1,6 @@
 # NRI Guide to Buying Property on Baner-Pashan Link Road, Pune
 
-For Non-Resident Indians considering real estate investment in Pune, the Baner-Pashan Link Road corridor has emerged as one of the most attractive micro-markets in the city. This guide covers the practical considerations, regulatory framework, and market dynamics that NRI buyers should understand before making a purchase decision.
+For Non-Resident Indians considering real estate investment in Pune, the Baner-Pashan Link Road corridor has emerged as one of the most attractive micro-markets in the city. This guide covers the practical considerations, regulatory framework, and market dynamics that [NRI](/nri-investment-malpani-m-soulstrings-baner-pashan-link-road) buyers should understand before making a purchase decision.
 
 ## Why Pune Attracts NRI Real Estate Investment
 Pune's appeal for NRI investors rests on several structural advantages:

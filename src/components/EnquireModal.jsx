@@ -16,7 +16,7 @@ export default function EnquireModal() {
     const data = Object.fromEntries(formData.entries());
 
     try {
-      const res = await fetch('https://formsubmit.co/ajax/propsmartrealty@gmail.com', {
+      const res = await fetch('/api/contact', {
         method: 'POST',
         headers: { 
           'Content-Type': 'application/json',

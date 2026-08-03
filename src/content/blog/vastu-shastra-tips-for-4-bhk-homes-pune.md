@@ -3,7 +3,7 @@
 For elite Indian homebuyers, luxury is not just defined by imported marble or infinity pools; it is deeply rooted in cosmic harmony. Vastu Shastra, the ancient Indian science of architecture, plays a critical role in the **Pune Real Estate Market**, especially within the ultra-premium segment.
 
 ## The Importance of Vastu in High-Net-Worth Real Estate
-In the **Baner Real Estate Market**, buyers of 3 BHK and 4 BHK luxury estates strictly demand Vastu compliance. A home aligned with Vastu principles is believed to invite prosperity, health, and positive energy while eliminating structural blockages. 
+In the **Baner Real Estate Market**, buyers of [3 BHK](/3bhk-luxury-malpani-m-soulstrings-baner-pashan-link-road) and 4 BHK luxury estates strictly demand Vastu compliance. A home aligned with Vastu principles is believed to invite prosperity, health, and positive energy while eliminating structural blockages. 
 
 ## Key Vastu Principles for a 4 BHK Estate
 When evaluating luxury apartments in West Pune, look for the following non-negotiable Vastu criteria:

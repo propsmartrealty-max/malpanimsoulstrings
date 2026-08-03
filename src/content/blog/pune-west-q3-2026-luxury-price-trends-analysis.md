@@ -15,7 +15,7 @@ Post-2024, the definition of luxury shifted from "mega-townships" to "exclusive,
 Projects like [Malpani M SoulStrings](/) are capturing this exact demographic. By offering expansive **4 BHK and 5 BHK Duplex** homes with only a select number of residences per acre, these developments provide the privacy and exclusivity that Pune's elite demand. 
 
 ## Rental Yields for NRI Investors
-For Non-Resident Indian (NRI) investors, Pune West currently offers some of the highest rental yields in Maharashtra. Top-tier executives relocating to Pune demand premium, smart-home automated residences and are willing to pay a premium for them. Luxury gated communities on the Baner-Pashan Link Road are currently commanding rental yields upwards of 4.5% to 5.2%, significantly outperforming the national luxury average.
+For Non-Resident Indian ([NRI](/nri-investment-malpani-m-soulstrings-baner-pashan-link-road)) investors, Pune West currently offers some of the highest rental yields in Maharashtra. Top-tier executives relocating to Pune demand premium, smart-home automated residences and are willing to pay a premium for them. Luxury gated communities on the Baner-Pashan Link Road are currently commanding rental yields upwards of 4.5% to 5.2%, significantly outperforming the national luxury average.
 
 ## The Verdict for Q4 2026
 As we move into Q4 2026, inventory for under-construction, MahaRERA-approved luxury estates is shrinking rapidly. The window to secure a high-yield asset at current launch prices is closing.
@@ -27,7 +27,7 @@ For discerning buyers, upgrading to the Baner-Pashan Link Road is no longer just
 ## Frequently Asked Questions
 
 ### What are the real estate price trends in Baner for 2026?
-In Q3 2026, luxury real estate in Baner is experiencing a 14% capital appreciation. Ultra-premium developments like **Malpani M SoulStrings** on the **Baner-Pashan Link Road** are driving this growth, offering high-ROI **4 BHK and 5 BHK** estates that outperform standard properties.
+In Q3 2026, luxury real estate in Baner is experiencing a 14% capital appreciation. Ultra-premium developments like **Malpani M SoulStrings** on the **Baner-Pashan Link Road** are driving this growth, offering high-ROI **[4 BHK](/4bhk-luxury-malpani-m-soulstrings-baner-pashan-link-road) and 5 BHK** estates that outperform standard properties.
 
 ### Is it a good time for NRIs to invest in Pune real estate?
-Yes, Q3 2026 is an exceptional time for NRI investment. High-end gated communities on the **Baner-Pashan Link Road**, such as **Malpani M SoulStrings**, offer world-class **35+ luxury amenities** and yield rental returns of up to 5.2%, making it the most lucrative asset class in West Pune.
+Yes, Q3 2026 is an exceptional time for NRI investment. High-end gated communities on the **Baner-Pashan Link Road**, such as **Malpani M SoulStrings**, offer world-class **35+ luxury [amenities](/amenities-malpani-m-soulstrings-baner-pashan-link-road)** and yield rental returns of up to 5.2%, making it the most lucrative asset class in West Pune.

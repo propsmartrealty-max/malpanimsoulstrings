@@ -1,6 +1,6 @@
 # Investment Playbook: 3 BHK vs. 4 BHK Luxury Apartments in Pune West
 
-For high-net-worth investors and buyers seeking a primary residence in Pune, the choice between a premium 3 BHK and a sprawling 4 BHK luxury flat is a critical decision. In the high-performing micro-markets of Baner, Pashan, and Balewadi, understanding the ROI dynamics, rental yields, and buyer preferences is essential to making a sound financial upgrade.
+For high-net-worth investors and buyers seeking a primary residence in Pune, the choice between a premium [3 BHK](/3bhk-luxury-malpani-m-soulstrings-baner-pashan-link-road) and a sprawling 4 BHK luxury flat is a critical decision. In the high-performing micro-markets of Baner, Pashan, and Balewadi, understanding the ROI dynamics, rental yields, and buyer preferences is essential to making a sound financial upgrade.
 
 ## The 3 BHK Luxury Segment: High Liquidity & Rental Demand
 Premium 3 BHK apartments are the sweet spot for senior corporate executives and tech directors working in the Hinjewadi IT corridor.
@@ -9,7 +9,7 @@ Premium 3 BHK apartments are the sweet spot for senior corporate executives and 
 - **Ideal For:** Small families and professionals who prioritize premium gated community amenities—like the sky infinity pool and spa facilities at **Malpani M SoulStrings**—without requiring the scale of a sky mansion.
 
 ## The 4 BHK Sky Mansion: Capital Appreciation & Exclusivity
-For ultra-wealthy buyers, a spacious 4 BHK residence is the definitive asset class.
+For ultra-wealthy buyers, a spacious [4 BHK](/4bhk-luxury-malpani-m-soulstrings-baner-pashan-link-road) residence is the definitive asset class.
 - **Capital Appreciation:** Saturated legacy areas like Aundh offer limited new supply, driving elite buyers toward the Baner Pashan Link Road. The scarcity of large 4 BHK layouts in low-density developments ensures higher capital appreciation rates of 8% to 12% annually.
 - **Trophy Status:** A 4 BHK flat is a status symbol, offering column-free living rooms, expansive private decks, Vastu-compliant structures, and sound-proofed acoustic environments.
 - **Ideal For:** Multi-generational families looking for a permanent legacy home with no compromises on scale, privacy, and social status.
