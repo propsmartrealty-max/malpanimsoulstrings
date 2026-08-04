@@ -76,10 +76,41 @@ export default function ThreeBhkLuxuryPage() {
       "reviewCount": "104"
     }
   };
+  const faqSchema = {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "What is the price of a 3 BHK luxury apartment at Malpani M SoulStrings in Baner-Pashan Link Road?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "The price for a 3 BHK premium luxury estate at Malpani M SoulStrings starts from approximately ₹1.95 Cr to ₹2.30 Cr, depending on the floor band and specific configuration."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Are the 3 BHK apartments at Malpani M SoulStrings Vastu compliant?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Yes, every 3 BHK apartment at Malpani M SoulStrings is 100% Vastu-compliant, featuring East-West alignments for maximum natural light and positive energy flow."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "What amenities are included with the 3 BHK flats in Malpani M SoulStrings?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Residents enjoy over 35 world-class amenities including a temperature-controlled infinity pool, smart home automation, private forest trails, and exclusive clubhouse access."
+        }
+      }
+    ]
+  };
 
   return (
     <main>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(productSchema) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
 
       <SchemaMarkup pageName="3 BHK Premium Flats" pageUrl="/3bhk-luxury-malpani-m-soulstrings-baner-pashan-link-road" />
       

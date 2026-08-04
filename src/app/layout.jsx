@@ -21,6 +21,15 @@ export const metadata = {
     default: 'Malpani M SoulStrings | Luxury Estates Baner, Pune',
     template: '%s | Malpani M SoulStrings'
   },
+  alternates: {
+    canonical: 'https://www.malpanimsoulstrings.com',
+    languages: {
+      'en-US': 'https://www.malpanimsoulstrings.com',
+      'en-IN': 'https://www.malpanimsoulstrings.com',
+      'en-AE': 'https://www.malpanimsoulstrings.com',
+      'x-default': 'https://www.malpanimsoulstrings.com',
+    },
+  },
   description: 'Ultra-premium 3, 4, 5 BHK, Duplex & Penthouse luxury estates for sale at Baner-Pashan Link Road, Pune. 35+ amenities, Vastu-compliant layouts by Malpani Estates.',
   keywords: [
     'pune luxury real estate',
