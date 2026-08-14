@@ -59,4 +59,4 @@ For families looking for connectivity to the Mumbai-Pune Expressway, **Malpani G
 
 Evaluating the **best luxury property investment Pune** offers means partnering with a developer that has a decades-long track record of quality and timely delivery. 
 
-To explore current pricing, layouts, and site visit schedules for our flagship Baner development, visit the official **[Malpani M SoulStrings Homepage](/)** and submit your enquiry today.
+To explore current pricing, layouts, and site visit schedules for our flagship Baner development, visit the official **Malpani M SoulStrings Homepage** and submit your enquiry today.

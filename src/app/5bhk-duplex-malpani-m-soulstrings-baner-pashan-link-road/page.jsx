@@ -36,7 +36,7 @@ export const metadata = {
   openGraph: {
     title: '5 BHK Luxury Apartments & Duplex Homes in Baner Pune',
     description: 'Discover exclusive 5 BHK ultra-luxury sky villas and duplexes at Malpani M SoulStrings, Baner Pashan Link Road. Low-density privacy, private deck, and Vastu compliance.',
-    url: 'https://www.malpanimsoulstrings.com/5bhk-duplex',
+    url: 'https://www.malpanimsoulstrings.com/5bhk-duplex-malpani-m-soulstrings-baner-pashan-link-road',
     siteName: 'Malpani M SoulStrings',
     images: [
       {
@@ -83,9 +83,59 @@ export default function FiveBhkDuplexPage() {
     }
   };
 
+  const faqSchema = {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "What is the price of a 5 BHK Duplex at Malpani M SoulStrings?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "The 5 BHK Duplex Sky Villas at Malpani M SoulStrings, Baner-Pashan Link Road are priced starting from ₹5.8 Cr onwards. Contact our luxury advisors at +91 7744009295 for the latest pricing and available configurations."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "What is the carpet area of a 5 BHK Duplex at M SoulStrings?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "The 5 BHK Duplex residences and Sky Villas at Malpani M SoulStrings offer expansive carpet areas with double-height ceilings, private terraces, and separate social and private floor levels."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Are the 5 BHK Duplexes Vastu compliant?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Yes. All 5 BHK Duplex and Sky Villa configurations at Malpani M SoulStrings are strictly designed with Vastu Shastra principles, including auspicious cardinal orientations, an open Brahmasthan, and South-East aligned modular kitchens."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "What makes the 5 BHK Sky Villas unique in Pune?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Malpani M SoulStrings 5 BHK Sky Villas offer a low-density master plan with an unmatched land-to-resident ratio, double-height private decks, acoustic-damped structural glazing, and private lobby entrance configurations — a level of exclusivity unavailable in standard high-rises in Pune."
+        }
+      }
+    ]
+  };
+
+  const breadcrumbSchema = {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://www.malpanimsoulstrings.com" },
+      { "@type": "ListItem", "position": 2, "name": "5 BHK & Duplex Homes", "item": "https://www.malpanimsoulstrings.com/5bhk-duplex-malpani-m-soulstrings-baner-pashan-link-road" }
+    ]
+  };
+
   return (
     <main>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(productSchema) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }} />
 
       <SchemaMarkup pageName="5 BHK & Duplex Homes" pageUrl="/5bhk-duplex-malpani-m-soulstrings-baner-pashan-link-road" />
       

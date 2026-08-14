@@ -38,7 +38,7 @@ export const metadata = {
   openGraph: {
     title: '4 BHK Premium Flats for Sale in Baner-Pashan Link Road',
     description: 'Explore the most expansive 4 BHK luxury Estates on Baner-Pashan Link Road, Pune by Malpani Estates.',
-    url: 'https://www.malpanimsoulstrings.com/4bhk-luxury',
+    url: 'https://www.malpanimsoulstrings.com/4bhk-luxury-malpani-m-soulstrings-baner-pashan-link-road',
     siteName: 'Malpani M SoulStrings',
     images: [
       {
@@ -68,7 +68,7 @@ export default function FourBhkLuxuryPage() {
     },
     "offers": {
       "@type": "Offer",
-      "url": "https://www.malpanimsoulstrings.com/4bhk-luxury",
+      "url": "https://www.malpanimsoulstrings.com/4bhk-luxury-malpani-m-soulstrings-baner-pashan-link-road",
       "priceCurrency": "INR",
       "price": "35000000",
       "itemCondition": "https://schema.org/NewCondition",
@@ -115,10 +115,20 @@ export default function FourBhkLuxuryPage() {
     ]
   };
 
+  const breadcrumbSchema = {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://www.malpanimsoulstrings.com" },
+      { "@type": "ListItem", "position": 2, "name": "4 BHK Luxury Apartments", "item": "https://www.malpanimsoulstrings.com/4bhk-luxury-malpani-m-soulstrings-baner-pashan-link-road" }
+    ]
+  };
+
   return (
     <main>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(productSchema) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }} />
 
       <SchemaMarkup pageName="4 BHK Premium Flats" pageUrl="/4bhk-luxury-malpani-m-soulstrings-baner-pashan-link-road" />
       

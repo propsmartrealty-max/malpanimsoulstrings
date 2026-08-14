@@ -32,7 +32,7 @@ export const metadata = {
   openGraph: {
     title: 'Premium Penthouses for Sale in Baner-Pashan Link Road Pune',
     description: 'Indulge in absolute grandeur with premium penthouses at Malpani M SoulStrings. Sweeping hillside views, roof garden options, and smart-home luxury in West Pune.',
-    url: 'https://www.malpanimsoulstrings.com/penthouse-luxury',
+    url: 'https://www.malpanimsoulstrings.com/penthouse-luxury-malpani-m-soulstrings-baner-pashan-link-road',
     siteName: 'Malpani M SoulStrings',
     images: [
       {
@@ -79,9 +79,59 @@ export default function PenthouseLuxuryPage() {
     }
   };
 
+  const faqSchema = {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "What is the price of a Penthouse at Malpani M SoulStrings?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Premium Penthouses at Malpani M SoulStrings, Baner-Pashan Link Road are priced starting from ₹6.5 Cr onwards. For the latest pricing and VIP floor plan access, contact our luxury advisors at +91 7744009295."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "What are the views from the Penthouses at M SoulStrings?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Penthouses at Malpani M SoulStrings offer 270-degree unobstructed panoramic vistas of the Baner-Pashan hills and the Pune cityscape. Each unit features floor-to-ceiling structural windows and private view decks."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Do the Penthouses at M SoulStrings have private roof gardens?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Yes. Select penthouse configurations at Malpani M SoulStrings include private roof garden options, which can be designed as sky-lounge seating areas, private dining spaces, or serene botanical retreats."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Are the Penthouses Vastu compliant?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Yes. All penthouse residences at Malpani M SoulStrings follow Vastu Shastra principles with an open Brahmasthan, South-West master bedroom orientation for stability, and optimal natural light through strategic window placement."
+        }
+      }
+    ]
+  };
+
+  const breadcrumbSchema = {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://www.malpanimsoulstrings.com" },
+      { "@type": "ListItem", "position": 2, "name": "Premium Penthouses", "item": "https://www.malpanimsoulstrings.com/penthouse-luxury-malpani-m-soulstrings-baner-pashan-link-road" }
+    ]
+  };
+
   return (
     <main>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(productSchema) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }} />
 
       <SchemaMarkup pageName="Premium Penthouses" pageUrl="/penthouse-luxury-malpani-m-soulstrings-baner-pashan-link-road" />
       

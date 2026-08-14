@@ -25,4 +25,4 @@ While areas like Kalyani Nagar have historical legacy, the modern **luxury 5 bhk
 
 The Baner-Pashan Link road, in particular, offers the massive land parcels required to build these sprawling estates without compromising on the surrounding green cover. For buyers looking for the pinnacle of this segment, projects that offer massive 4 BHKs with options to combine units or upgrade to 5 BHK layouts—such as **[Malpani M SoulStrings](/4bhk-luxury-malpani-m-soulstrings-baner-pashan-link-road)**—are highly sought after.
 
-**Discover the ultimate in spatial design. [Explore our 4 & 5 BHK luxury configurations today](/4bhk-luxury-malpani-m-soulstrings-baner-pashan-link-road) and secure your generational asset.**
+**Discover the ultimate in spatial design. Explore our 4 & 5 BHK luxury configurations today and secure your generational asset.**

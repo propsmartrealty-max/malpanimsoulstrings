@@ -28,4 +28,4 @@ The Baner-Pashan Link Road is rapidly becoming the billionaire's row for these c
 
 Projects like **[Malpani M SoulStrings](/4bhk-luxury-malpani-m-soulstrings-baner-pashan-link-road)** are pioneering this space, offering sweeping 4 BHK and 5 BHK layouts that deliver the exact scale and grandeur of a sky villa. Real-time construction updates and concrete pour progress can be tracked in our **[Malpani M SoulStrings Construction Status guide](/malpani-m-soulstrings-construction-status-updates-possession)**.
 
-**Ready to elevate your lifestyle? [Explore our expansive configurations today](/4bhk-luxury-malpani-m-soulstrings-baner-pashan-link-road) and secure your sanctuary in the sky.**
+**Ready to elevate your lifestyle? Explore our expansive configurations today and secure your sanctuary in the sky.**

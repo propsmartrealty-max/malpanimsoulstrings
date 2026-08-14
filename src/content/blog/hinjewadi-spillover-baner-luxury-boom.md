@@ -28,4 +28,4 @@ The **best luxury project pune** will be one that sits exactly on the fault line
 
 Projects like **[Malpani M SoulStrings](/location-malpani-m-soulstrings-baner-pashan-link-road)** are engineered specifically for this demographic. By offering expansive 3 & 4 BHK estates with smart home automation, dedicated co-working lounges, and a massive 35+ amenity clubhouse, it serves as the ultimate executive sanctuary.
 
-**Stop compromising between your commute and your lifestyle. [Explore Malpani M SoulStrings today](/location-malpani-m-soulstrings-baner-pashan-link-road) and discover true luxury living in Pune West.**
+**Stop compromising between your commute and your lifestyle. Explore Malpani M SoulStrings today and discover true luxury living in Pune West.**
