@@ -6,9 +6,7 @@ export default function robots() {
       disallow: ['/private/', '/api/'],
     },
     sitemap: [
-      'https://www.malpanimsoulstrings.com/sitemap.xml',
-      'https://www.malpanimsoulstrings.com/sitemap-programmatic.xml',
-      'https://www.malpanimsoulstrings.com/sitemap-images-v2.xml'
+      'https://www.malpanimsoulstrings.com/sitemap.xml'
     ],
     host: 'https://www.malpanimsoulstrings.com',
   }

@@ -32,9 +32,9 @@ export const metadata = {
     'Luxury Residential Projects Pune'
   ],
   openGraph: {
-    title: 'Vastu Compliant Luxury Homes in Pune',
-    description: 'Explore 100% Vastu-compliant 3 BHK and 4 BHK luxury apartments at Malpani M SoulStrings in Baner.',
-    url: 'https://www.malpanimsoulstrings.com/vastu-compliant-luxury-homes-pune',
+    title: 'Vastu Compliant Luxury Homes in Pune | Malpani M SoulStrings',
+    description: 'Explore 100% Vastu-compliant 3 BHK and 4 BHK luxury apartments at Malpani M SoulStrings on Baner-Pashan Link Road, Pune.',
+    url: 'https://www.malpanimsoulstrings.com/vastu-compliant-luxury-homes-pune-malpani-m-soulstrings-baner-pashan-link-road',
     siteName: 'Malpani M SoulStrings',
     images: [
       {
@@ -72,7 +72,32 @@ export default function VastuHomesPage() {
           "@type": "Answer",
           "text": "Malpani M SoulStrings on the Baner-Pashan Link Road offers 100% Vastu-compliant 4 BHK estates featuring the golden East-West axis, South-East kitchens, and open Brahmasthans."
         }
+      },
+      {
+        "@type": "Question",
+        "name": "What are the key Vastu features in Malpani M SoulStrings floor plans?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Key Vastu features include East-facing main entrances, South-West master bedrooms for grounding stability, South-East kitchens (Agni Kund), and unencumbered North-East zones for positive energy circulation."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Are 3 BHK and 5 BHK duplex units at Malpani M SoulStrings also Vastu compliant?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Yes, all 3 BHK, 4 BHK, 5 BHK duplexes, and luxury penthouses at Malpani M SoulStrings are designed in strict accordance with classical Vastu Shastra principles."
+        }
       }
+    ]
+  };
+
+  const breadcrumbSchema = {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://www.malpanimsoulstrings.com" },
+      { "@type": "ListItem", "position": 2, "name": "Vastu Compliant Luxury Homes", "item": "https://www.malpanimsoulstrings.com/vastu-compliant-luxury-homes-pune-malpani-m-soulstrings-baner-pashan-link-road" }
     ]
   };
 
@@ -80,6 +105,7 @@ export default function VastuHomesPage() {
     <main>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(articleSchema) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }} />
 
       <SchemaMarkup pageName="Vastu Compliant Homes" pageUrl="/vastu-compliant-luxury-homes-pune-malpani-m-soulstrings-baner-pashan-link-road" />
       

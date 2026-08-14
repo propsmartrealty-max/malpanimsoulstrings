@@ -36,9 +36,43 @@ export default function PriceTrendsPage() {
     "dateModified": new Date().toISOString()
   };
 
+  const faqSchema = {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "What is the average property rate on Baner-Pashan Link Road in 2026?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "The average property rate on Baner-Pashan Link Road ranges from ₹11,500 to ₹14,500 per sq. ft. for ultra-luxury residential projects, showing a consistent 8-10% CAGR appreciation."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "What are the starting prices for 3 BHK and 4 BHK at Malpani M SoulStrings?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Luxury 3 BHK residences start from approximately ₹1.95 Cr, while expansive 4 BHK estates start from ₹3.50 Cr, and duplex/penthouses range upwards of ₹5.50 Cr."
+        }
+      }
+    ]
+  };
+
+  const breadcrumbSchema = {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://www.malpanimsoulstrings.com" },
+      { "@type": "ListItem", "position": 2, "name": "Price Trends & Rates", "item": "https://www.malpanimsoulstrings.com/flat-rates-price-trends-baner-pashan-link-road-malpani-m-soulstrings" }
+    ]
+  };
+
   return (
     <main>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(articleSchema) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }} />
       <SchemaMarkup pageName="Price Trends" pageUrl="/flat-rates-price-trends-baner-pashan-link-road-malpani-m-soulstrings" />
       
       <div className="pillar-header" style={{ paddingTop: '120px', paddingBottom: '4rem', background: 'var(--color-surface)' }}>
