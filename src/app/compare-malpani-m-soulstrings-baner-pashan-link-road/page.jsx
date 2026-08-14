@@ -1,4 +1,5 @@
 import Link from 'next/link';
+import SchemaMarkup from '@/components/SchemaMarkup';
 
 export const metadata = {
   alternates: { canonical: '/compare-malpani-m-soulstrings-baner-pashan-link-road' },
@@ -8,8 +9,43 @@ export const metadata = {
 };
 
 export default function HubPage() {
+  const faqSchema = {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "How does Malpani M SoulStrings compare to Pristine The Lords and Kohinoor Livience?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Malpani M SoulStrings offers lower residential density, larger usable carpet areas, 100% Vastu-compliant layouts, and 35+ private resort amenities, providing greater exclusivity than higher-density competitor towers."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Which project offers better connectivity on Baner-Pashan Link Road?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Malpani M SoulStrings enjoys direct arterial access near Vighnaharta Chowk with quick 15-minute connectivity to Hinjewadi IT Park and immediate access to Balewadi High Street."
+        }
+      }
+    ]
+  };
+
+  const breadcrumbSchema = {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://www.malpanimsoulstrings.com" },
+      { "@type": "ListItem", "position": 2, "name": "Project Comparisons", "item": "https://www.malpanimsoulstrings.com/compare-malpani-m-soulstrings-baner-pashan-link-road" }
+    ]
+  };
+
   return (
     <main>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }} />
+      <SchemaMarkup pageName="Project Comparisons" pageUrl="/compare-malpani-m-soulstrings-baner-pashan-link-road" />
       <div className="pillar-header" style={{ paddingTop: '120px', paddingBottom: '4rem', background: 'var(--color-surface)' }}>
         <div className="container">
           <div className="scarcity-badge fade-in-up" style={{ display: 'inline-block', marginBottom: '1rem' }}>

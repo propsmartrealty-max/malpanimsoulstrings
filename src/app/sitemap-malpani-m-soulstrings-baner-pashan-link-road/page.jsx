@@ -43,8 +43,13 @@ export default function HTMLSitemap() {
               <li><Link href="/4bhk-luxury-malpani-m-soulstrings-baner-pashan-link-road" style={{ color: 'var(--color-text)', textDecoration: 'none' }}>4 BHK Ultra-Luxury</Link></li>
               <li><Link href="/5bhk-duplex-malpani-m-soulstrings-baner-pashan-link-road" style={{ color: 'var(--color-text)', textDecoration: 'none' }}>5 BHK & Duplex Homes</Link></li>
               <li><Link href="/penthouse-luxury-malpani-m-soulstrings-baner-pashan-link-road" style={{ color: 'var(--color-text)', textDecoration: 'none' }}>Premium Penthouses</Link></li>
-              <li><Link href="/amenities-malpani-m-soulstrings-baner-pashan-link-road" style={{ color: 'var(--color-text)', textDecoration: 'none' }}>Resort Amenities</Link></li>
+              <li><Link href="/amenities-malpani-m-soulstrings-baner-pashan-link-road" style={{ color: 'var(--color-text)', textDecoration: 'none' }}>Resort Amenities (35+)</Link></li>
               <li><Link href="/location-malpani-m-soulstrings-baner-pashan-link-road" style={{ color: 'var(--color-text)', textDecoration: 'none' }}>Strategic Location</Link></li>
+              <li><Link href="/about-malpani-estates-pune" style={{ color: 'var(--color-text)', textDecoration: 'none' }}>About Malpani Estates</Link></li>
+              <li><Link href="/press-malpani-estates-baner-pune" style={{ color: 'var(--color-text)', textDecoration: 'none' }}>Press &amp; Media Mentions</Link></li>
+              <li><Link href="/malpani-m-soulstrings-construction-status-updates-possession" style={{ color: 'var(--color-text)', textDecoration: 'none' }}>Construction Updates</Link></li>
+              <li><Link href="/flat-rates-price-trends-baner-pashan-link-road-malpani-m-soulstrings" style={{ color: 'var(--color-text)', textDecoration: 'none' }}>Price Trends &amp; Rates</Link></li>
+              <li><Link href="/malpani-m-soulstrings-reviews-ratings-baner-pune" style={{ color: 'var(--color-text)', textDecoration: 'none' }}>Reviews &amp; Client Ratings</Link></li>
             </ul>
           </div>
 
