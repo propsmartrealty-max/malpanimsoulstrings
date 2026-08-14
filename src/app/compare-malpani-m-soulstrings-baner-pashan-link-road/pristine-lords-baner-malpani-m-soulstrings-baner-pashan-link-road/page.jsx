@@ -10,9 +10,9 @@ export const metadata = {
   description: 'Comparing Pristine The Lords and Malpani M SoulStrings in Baner. Discover why elite buyers prefer Malpani\'s ultra-low density, Vastu compliance, and legacy trust.',
   keywords: ['Pristine Lords Baner reviews', 'Pristine Lords vs Malpani SoulStrings', '4 BHK Baner Pashan Link Road', 'Pristine The Lords price', 'luxury apartments West Pune comparison'],
   openGraph: {
-    title: 'Pristine Lords vs Malpani M SoulStrings',
-    description: 'An objective comparison between two premium developments on the Baner Pashan Link Road.',
-    url: 'https://www.malpanimsoulstrings.com/compare/pristine-lords-baner',
+    title: 'Pristine Lords vs Malpani M SoulStrings Comparison',
+    description: 'An objective comparison between Pristine The Lords and Malpani M SoulStrings on the Baner Pashan Link Road.',
+    url: 'https://www.malpanimsoulstrings.com/compare-malpani-m-soulstrings-baner-pashan-link-road/pristine-lords-baner-malpani-m-soulstrings-baner-pashan-link-road',
     siteName: 'Malpani M SoulStrings',
     locale: 'en_IN',
     type: 'article',
@@ -20,9 +20,43 @@ export const metadata = {
 };
 
 export default function ComparePristinePage() {
+  const faqSchema = {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "How does Malpani M SoulStrings compare to Pristine The Lords?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Malpani M SoulStrings emphasizes low-density exclusivity, 100% Vastu compliance, expansive floor plans, and 35+ private resort amenities, whereas Pristine The Lords is a higher-density 34-story development."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Which project offers larger carpet areas on Baner-Pashan Link Road?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Malpani M SoulStrings delivers larger usable carpet areas across its 3 BHK, 4 BHK, 5 BHK duplex, and penthouse residences with expansive private decks."
+        }
+      }
+    ]
+  };
+
+  const breadcrumbSchema = {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://www.malpanimsoulstrings.com" },
+      { "@type": "ListItem", "position": 2, "name": "Project Comparisons", "item": "https://www.malpanimsoulstrings.com/compare-malpani-m-soulstrings-baner-pashan-link-road" },
+      { "@type": "ListItem", "position": 3, "name": "vs Pristine Lords", "item": "https://www.malpanimsoulstrings.com/compare-malpani-m-soulstrings-baner-pashan-link-road/pristine-lords-baner-malpani-m-soulstrings-baner-pashan-link-road" }
+    ]
+  };
+
   return (
     <main>
-
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }} />
       <SchemaMarkup pageName="vs Pristine Lords" pageUrl="/compare-malpani-m-soulstrings-baner-pashan-link-road/pristine-lords-baner-malpani-m-soulstrings-baner-pashan-link-road" />
       
       <div className="pillar-header" style={{ paddingTop: '120px', paddingBottom: '4rem', background: 'var(--color-surface)' }}>

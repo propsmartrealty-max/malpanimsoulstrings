@@ -10,9 +10,9 @@ export const metadata = {
   description: 'Comparing Kohinoor Livience Aleenta and Malpani M SoulStrings. Discover why Malpani offers superior Vastu compliance, legacy trust, and a lower-density luxury experience.',
   keywords: ['Kohinoor Livience Pune reviews', 'Livience Aleenta Baner', 'Kohinoor vs Malpani Group', 'luxury 4 BHK comparison Baner', 'Baner Pashan Link Road projects'],
   openGraph: {
-    title: 'Kohinoor Livience vs Malpani M SoulStrings',
+    title: 'Kohinoor Livience Aleenta vs Malpani M SoulStrings Comparison',
     description: 'An objective comparison between Kohinoor Livience Aleenta and Malpani M SoulStrings in West Pune.',
-    url: 'https://www.malpanimsoulstrings.com/compare/kohinoor-livience-baner',
+    url: 'https://www.malpanimsoulstrings.com/compare-malpani-m-soulstrings-baner-pashan-link-road/kohinoor-livience-baner-malpani-m-soulstrings-baner-pashan-link-road',
     siteName: 'Malpani M SoulStrings',
     locale: 'en_IN',
     type: 'article',
@@ -20,9 +20,43 @@ export const metadata = {
 };
 
 export default function CompareKohinoorPage() {
+  const faqSchema = {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "Why choose Malpani M SoulStrings over Kohinoor Livience Aleenta?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Malpani M SoulStrings delivers authentic foundational luxury: lower resident density per acre, 100% Vastu compliance, imported Italian marble, and a multi-decade developer track record for timeless building maintenance."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "How does amenity access compare between Malpani M SoulStrings and Kohinoor Livience?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "With fewer total residences per wing, residents at Malpani M SoulStrings enjoy uncrowded, private access to 35+ world-class amenities including an infinity swimming pool and signature clubhouse."
+        }
+      }
+    ]
+  };
+
+  const breadcrumbSchema = {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://www.malpanimsoulstrings.com" },
+      { "@type": "ListItem", "position": 2, "name": "Project Comparisons", "item": "https://www.malpanimsoulstrings.com/compare-malpani-m-soulstrings-baner-pashan-link-road" },
+      { "@type": "ListItem", "position": 3, "name": "vs Kohinoor Livience", "item": "https://www.malpanimsoulstrings.com/compare-malpani-m-soulstrings-baner-pashan-link-road/kohinoor-livience-baner-malpani-m-soulstrings-baner-pashan-link-road" }
+    ]
+  };
+
   return (
     <main>
-
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }} />
       <SchemaMarkup pageName="vs Kohinoor Livience" pageUrl="/compare-malpani-m-soulstrings-baner-pashan-link-road/kohinoor-livience-baner-malpani-m-soulstrings-baner-pashan-link-road" />
       
       <div className="pillar-header" style={{ paddingTop: '120px', paddingBottom: '4rem', background: 'var(--color-surface)' }}>
