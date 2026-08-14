@@ -1,5 +1,6 @@
 import fs from 'fs';
 import path from 'path';
+import { getAllProgrammaticSlugs } from '@/data/programmaticData';
 
 export async function GET() {
   const baseUrl = 'https://www.malpanimsoulstrings.com';
@@ -135,39 +136,8 @@ export async function GET() {
   </url>`;
   });
 
-  // Programmatic Discover Routes
-  const discoverSlugs = [
-    '4-bhk-flats-vastu-compliant-baner',
-    '3-bhk-luxury-apartments-near-it-park-hinjewadi',
-    '5-bhk-duplex-homes-luxury-amenities-pune-west',
-    'penthouses-high-rise-balewadi',
-    'luxury-villas-near-metro-station-aundh',
-    'ready-possession-homes-zero-brokerage-wakad',
-    '3-bhk-luxury-flats-baner-pashan-link-road',
-    '4-bhk-ultra-luxury-estates-baner-pune',
-    '5-bhk-sky-duplex-apartments-pune',
-    'luxury-penthouses-with-private-terrace-baner',
-    'vastu-compliant-3-bhk-homes-pune-west',
-    'vastu-compliant-4-bhk-apartments-baner',
-    'luxury-apartments-near-hinjewadi-it-park',
-    'luxury-gated-community-apartments-baner-pashan',
-    'apartments-with-infinity-swimming-pool-pune',
-    'smart-home-automated-apartments-baner',
-    'flats-for-sale-near-balewadi-high-street',
-    'luxury-homes-for-nri-investment-pune',
-    'flats-near-jupiter-hospital-baner-pune',
-    'luxury-apartments-near-aundh-pune',
-    'luxury-residences-near-mumbai-pune-expressway',
-    'low-density-luxury-apartments-pune',
-    'luxury-flats-under-3-crore-baner-pune',
-    'luxury-apartments-3-to-5-crore-pune-west',
-    'high-rise-apartments-with-hill-view-pune',
-    'best-luxury-residential-projects-in-pune',
-    'flats-for-sale-in-baner-pashan-link-road',
-    'premium-4-bhk-estates-near-sus-road-pune',
-    'luxury-duplex-for-joint-families-pune',
-    'exclusive-gated-community-with-clubhouse-pune'
-  ];
+  // Dynamic Programmatic Discover Routes
+  const discoverSlugs = getAllProgrammaticSlugs();
 
   const discoverItems = discoverSlugs.map(slug => `
   <url>

@@ -8,43 +8,16 @@ import FloorPlanGallery from '@/components/FloorPlanGallery';
 import fs from 'fs';
 import path from 'path';
 import Link from 'next/link';
+import { getAllProgrammaticSlugs } from '@/data/programmaticData';
 
 export const revalidate = 604800; // 1 week (in seconds)
 export const dynamicParams = true; // Fallback for 13,994 remaining routes
 
 export async function generateStaticParams() {
-  return [
-    { slug: ['4-bhk-flats-vastu-compliant-baner'] },
-    { slug: ['3-bhk-luxury-apartments-near-it-park-hinjewadi'] },
-    { slug: ['5-bhk-duplex-homes-luxury-amenities-pune-west'] },
-    { slug: ['penthouses-high-rise-balewadi'] },
-    { slug: ['luxury-villas-near-metro-station-aundh'] },
-    { slug: ['ready-possession-homes-zero-brokerage-wakad'] },
-    { slug: ['3-bhk-luxury-flats-baner-pashan-link-road'] },
-    { slug: ['4-bhk-ultra-luxury-estates-baner-pune'] },
-    { slug: ['5-bhk-sky-duplex-apartments-pune'] },
-    { slug: ['luxury-penthouses-with-private-terrace-baner'] },
-    { slug: ['vastu-compliant-3-bhk-homes-pune-west'] },
-    { slug: ['vastu-compliant-4-bhk-apartments-baner'] },
-    { slug: ['luxury-apartments-near-hinjewadi-it-park'] },
-    { slug: ['luxury-gated-community-apartments-baner-pashan'] },
-    { slug: ['apartments-with-infinity-swimming-pool-pune'] },
-    { slug: ['smart-home-automated-apartments-baner'] },
-    { slug: ['flats-for-sale-near-balewadi-high-street'] },
-    { slug: ['luxury-homes-for-nri-investment-pune'] },
-    { slug: ['flats-near-jupiter-hospital-baner-pune'] },
-    { slug: ['luxury-apartments-near-aundh-pune'] },
-    { slug: ['luxury-residences-near-mumbai-pune-expressway'] },
-    { slug: ['low-density-luxury-apartments-pune'] },
-    { slug: ['luxury-flats-under-3-crore-baner-pune'] },
-    { slug: ['luxury-apartments-3-to-5-crore-pune-west'] },
-    { slug: ['high-rise-apartments-with-hill-view-pune'] },
-    { slug: ['best-luxury-residential-projects-in-pune'] },
-    { slug: ['flats-for-sale-in-baner-pashan-link-road'] },
-    { slug: ['premium-4-bhk-estates-near-sus-road-pune'] },
-    { slug: ['luxury-duplex-for-joint-families-pune'] },
-    { slug: ['exclusive-gated-community-with-clubhouse-pune'] }
-  ];
+  const allSlugs = getAllProgrammaticSlugs();
+  return allSlugs.map(slug => ({
+    slug: slug.split('/')
+  }));
 }
 
 export async function generateMetadata({ params }) {
