@@ -36,9 +36,43 @@ export default function ConstructionStatusPage() {
     "dateModified": new Date().toISOString()
   };
 
+  const faqSchema = {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "What is the construction progress at Malpani M SoulStrings?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Construction is progressing rapidly using advanced Alu-Form Mivan formwork technology, with structural RCC slabs casting on an accelerated 7-10 day cycle per floor."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "What are the MahaRERA possession dates for Malpani M SoulStrings?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "The official MahaRERA registered possession timelines are clearly defined under MahaRERA registration numbers P52100076782 (Wing B) and P52100055678 (Wing C)."
+        }
+      }
+    ]
+  };
+
+  const breadcrumbSchema = {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://www.malpanimsoulstrings.com" },
+      { "@type": "ListItem", "position": 2, "name": "Construction Status Updates", "item": "https://www.malpanimsoulstrings.com/malpani-m-soulstrings-construction-status-updates-possession" }
+    ]
+  };
+
   return (
     <main>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(articleSchema) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }} />
       <SchemaMarkup pageName="Construction Status" pageUrl="/malpani-m-soulstrings-construction-status-updates-possession" />
       
       <div className="pillar-header" style={{ paddingTop: '120px', paddingBottom: '4rem', background: 'var(--color-surface)' }}>

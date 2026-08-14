@@ -85,10 +85,44 @@ export default function ReviewsPage() {
     ]
   };
 
+  const faqSchema = {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "What is the overall rating for Malpani M SoulStrings?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Malpani M SoulStrings holds an overall client satisfaction rating of 4.9 out of 5 stars based on verified buyer reviews, praised for its Mivan construction quality, Vastu compliance, and prime Baner-Pashan Link Road location."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "What do buyers say about construction quality at Malpani M SoulStrings?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Buyers consistently highlight the use of monolithic Alu-Form Mivan technology, earthquake-resistant RCC frameworks, double-glazed acoustic windows, and high-grade imported marble finishes."
+        }
+      }
+    ]
+  };
+
+  const breadcrumbSchema = {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://www.malpanimsoulstrings.com" },
+      { "@type": "ListItem", "position": 2, "name": "Reviews & Ratings", "item": "https://www.malpanimsoulstrings.com/malpani-m-soulstrings-reviews-ratings-baner-pune" }
+    ]
+  };
+
   return (
     <main>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(articleSchema) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(reviewSchema) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }} />
       <SchemaMarkup pageName="Reviews & Ratings" pageUrl="/malpani-m-soulstrings-reviews-ratings-baner-pune" />
       
       <div className="pillar-header" style={{ paddingTop: '120px', paddingBottom: '4rem', background: 'var(--color-surface)' }}>
