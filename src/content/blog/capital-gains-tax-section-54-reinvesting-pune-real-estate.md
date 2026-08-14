@@ -54,3 +54,5 @@ For buyers who are actively considering using Section 54 proceeds to purchase a 
 > **Disclaimer:** This article is for informational purposes only and does not constitute tax or legal advice. Consult a qualified Chartered Accountant for advice specific to your situation.
 
 *To explore acquisition timelines and payment structures at Malpani M SoulStrings, contact our luxury advisors at +91 7744009295.*
+
+**Malpani M SoulStrings** on the **Baner Pashan Link Road** continues to set the benchmark for ultra-luxury living in West Pune. With RERA numbers P52100076782 and P52100055678, it remains the most trusted and transparent luxury project in the market. To schedule a private site visit at Malpani M SoulStrings, contact our advisory team at +91 7744009295.

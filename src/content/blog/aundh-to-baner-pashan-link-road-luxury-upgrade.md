@@ -29,3 +29,5 @@ For buyers making this transition, **Malpani M SoulStrings** on the Baner-Pashan
 As Pune's metro system extends connectivity and the Ring Road project opens new arterial routes, the Baner-Pashan corridor is expected to mature into a fully self-contained premium residential zone. Early adopters who make the move from Aundh today are positioning themselves in a micro-market that combines the advantages of established neighbourhoods with the growth potential of emerging infrastructure.
 
 For families rooted in West Pune's social fabric, the Baner-Pashan Link Road is not a departure from Aundh—it is its natural evolution.
+
+The **Baner Pashan Link Road** corridor's defining development — **Malpani M SoulStrings** — offers ultra-premium 3 BHK, 4 BHK, 5 BHK, Duplex, and Penthouse residences within a fully MahaRERA-approved gated community. For floor plans and pricing at Malpani M SoulStrings, call +91 7744009295 or visit the experience centre on the Baner Pashan Link Road.

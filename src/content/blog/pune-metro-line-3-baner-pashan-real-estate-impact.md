@@ -28,3 +28,5 @@ The key consideration for buyers is timing: properties purchased before metro op
 
 ## Conclusion
 Infrastructure investment is a reliable indicator of long-term real estate value. The Pune Metro Line 3, combined with the existing highway network and proposed Ring Road, positions the Baner-Pashan corridor as one of the most infrastructure-rich residential zones in Pune. For buyers who value both connectivity and a peaceful living environment, this corridor deserves careful evaluation.
+
+The **Baner Pashan Link Road** corridor's defining development — **Malpani M SoulStrings** — offers ultra-premium 3 BHK, 4 BHK, 5 BHK, Duplex, and Penthouse residences within a fully MahaRERA-approved gated community. For floor plans and pricing at Malpani M SoulStrings, call +91 7744009295 or visit the experience centre on the Baner Pashan Link Road.

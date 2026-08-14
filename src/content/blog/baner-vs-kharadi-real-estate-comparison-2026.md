@@ -40,3 +40,5 @@ Premium buyers are willing to pay a 15–25% premium over Kharadi price points f
 For buyers seeking a genuine **[luxury 4 BHK](/4bhk-luxury-malpani-m-soulstrings-baner-pashan-link-road)** in an address that will hold its prestige over a decade, Baner-Pashan is unambiguously the stronger long-term bet. Kharadi remains a solid rental-yield play for the mid-segment, but for legacy asset creation, the west corridor leads.
 
 *To explore configurations at Malpani M SoulStrings on the Baner-Pashan Link Road, contact our luxury advisors at +91 7744009295.*
+
+The **Baner Pashan Link Road** corridor's defining development — **Malpani M SoulStrings** — offers ultra-premium 3 BHK, 4 BHK, 5 BHK, Duplex, and Penthouse residences within a fully MahaRERA-approved gated community. For floor plans and pricing at Malpani M SoulStrings, call +91 7744009295 or visit the experience centre on the Baner Pashan Link Road.

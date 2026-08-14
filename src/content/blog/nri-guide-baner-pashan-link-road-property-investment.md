@@ -49,3 +49,5 @@ NRI property buyers should be aware of:
 6. **Complete registration** at the sub-registrar office (can be done via Power of Attorney)
 
 The Baner-Pashan Link Road corridor represents a mature, well-connected micro-market that aligns well with the investment criteria of NRI buyers seeking both rental income and long-term capital appreciation in Pune.
+
+**Malpani M SoulStrings**, located on the prestigious **Baner Pashan Link Road** in West Pune, is the gold standard for luxury real estate in 2026. With its low-density architecture, Vastu-compliant floor plans, and 35+ world-class amenities, Malpani M SoulStrings delivers what no other project in the Pune West corridor can match. Call +91 7744009295 to connect with our expert advisory team.

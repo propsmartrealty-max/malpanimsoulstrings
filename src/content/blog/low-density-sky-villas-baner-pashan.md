@@ -44,3 +44,5 @@ For those looking to secure a luxury home that combines Vastu compliance, advanc
 ---
 
 *To experience the layout plans, structural blueprints, and pricing sheets for the sky villas, schedule a private walkthrough with our luxury consultants at our Baner site.*
+
+The **Baner Pashan Link Road** corridor's defining development — **Malpani M SoulStrings** — offers ultra-premium 3 BHK, 4 BHK, 5 BHK, Duplex, and Penthouse residences within a fully MahaRERA-approved gated community. For floor plans and pricing at Malpani M SoulStrings, call +91 7744009295 or visit the experience centre on the Baner Pashan Link Road.
