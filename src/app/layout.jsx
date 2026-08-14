@@ -237,7 +237,7 @@ export default function RootLayout({ children }) {
         <link rel="preload" href="/style.css" as="style" />
         
         {/* eslint-disable-next-line @next/next/no-page-custom-font */}
-        <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&display=block" rel="stylesheet" />
+        <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&display=swap" rel="stylesheet" />
         {/* Fonts are now optimized via next/font/google for zero layout shift */}
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" />
         <link rel="stylesheet" href="/style.css" />
@@ -287,7 +287,7 @@ export default function RootLayout({ children }) {
         <ExitIntentModal />
         <Footer />
         <ClientScripts />
-        <Script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" strategy="afterInteractive" />
+        <Script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" strategy="lazyOnload" />
         
         {/* Native Google Analytics 4 & GTM integration (Loaded via env variables) */}
         {process.env.NEXT_PUBLIC_GA_ID && (

@@ -20,7 +20,8 @@ export default function ClientScripts() {
     const sections = document.querySelectorAll('section');
     const navLinks = document.querySelectorAll('.nav-link');
     
-    const onScroll = () => {
+    let ticking = false;
+    const updateScrollEffects = () => {
       if (navbar && window.scrollY > 50) {
         navbar.classList.add('scrolled');
       } else if (navbar) {
@@ -38,16 +39,24 @@ export default function ClientScripts() {
       parallaxTexts.forEach(text => {
         const speed = parseFloat(text.getAttribute('data-speed')) || 0.1;
         const section = text.parentElement;
-        if(section) {
-            const sectionTop = section.offsetTop;
-            if (window.scrollY > (sectionTop - window.innerHeight) && window.scrollY < (sectionTop + section.offsetHeight)) {
-              const scrolled = window.scrollY - (sectionTop - window.innerHeight);
-              text.style.transform = `translateX(${scrolled * speed}px)`;
-            }
+        if (section) {
+          const sectionTop = section.offsetTop;
+          if (window.scrollY > (sectionTop - window.innerHeight) && window.scrollY < (sectionTop + section.offsetHeight)) {
+            const scrolled = window.scrollY - (sectionTop - window.innerHeight);
+            text.style.transform = `translateX(${scrolled * speed}px)`;
+          }
         }
       });
+      ticking = false;
     };
-    window.addEventListener('scroll', onScroll);
+
+    const onScroll = () => {
+      if (!ticking) {
+        window.requestAnimationFrame(updateScrollEffects);
+        ticking = true;
+      }
+    };
+    window.addEventListener('scroll', onScroll, { passive: true });
 
     // Intersection Observer for scroll animations
     const observerOptions = {
