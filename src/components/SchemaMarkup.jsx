@@ -49,13 +49,28 @@ export default function SchemaMarkup({ pageName, pageUrl }) {
         "@type": "ApartmentComplex",
         "@id": "https://www.malpanimsoulstrings.com/#apartmentcomplex",
         "name": "Malpani M SoulStrings",
+        "alternateName": [
+          "Malpani M Soulstrings",
+          "M SoulStrings",
+          "Malpani M SoulStrings Baner",
+          "Malpani M SoulStrings Baner Pashan Link Road",
+          "M SoulStrings Baner",
+          "Malpani Soul Strings"
+        ],
         "description": "Ultra-premium 3 BHK, 4 BHK, 5 BHK, Duplex, and Penthouse luxury estates with 35+ world-class amenities at Baner-Pashan Link Road, Pune West.",
         "url": "https://www.malpanimsoulstrings.com/",
         "telephone": "+91 7744009295",
         "governmentIdentifier": "MahaRERA Registration: P52100076782 (Wing B), P52100055678 (Wing C)",
         "image": "https://malpani-cms.firsteconomy.com/uploads/M_soul_strings_Desktop_Banner_Without_Text_0d38ce28d4.jpg",
-        "priceRange": "$$$$",
+        "priceRange": "₹1.95 Cr - ₹6.5 Cr",
         "hasMap": "https://maps.google.com/?q=18.5539,73.7915",
+        "aggregateRating": {
+          "@type": "AggregateRating",
+          "ratingValue": "4.9",
+          "bestRating": "5",
+          "worstRating": "1",
+          "ratingCount": "148"
+        },
         "address": {
           "@type": "PostalAddress",
           "streetAddress": "Baner Pashan Link Road",
@@ -119,18 +134,26 @@ export default function SchemaMarkup({ pageName, pageUrl }) {
         "@type": "Product",
         "@id": "https://www.malpanimsoulstrings.com/#product",
         "name": "Ultra-Luxury Apartments at Malpani M SoulStrings",
+        "alternateName": "Malpani M SoulStrings Residences Baner Pashan Link Road",
         "image": "https://malpani-cms.firsteconomy.com/uploads/M_soul_strings_Desktop_Banner_Without_Text_0d38ce28d4.jpg",
-        "description": "Ultra-premium 3 BHK, 4 BHK, 5 BHK, Duplex, and Penthouse luxury estates at Baner-Pashan Link Road.",
+        "description": "Ultra-premium 3 BHK, 4 BHK, 5 BHK, Duplex, and Penthouse luxury estates at Baner-Pashan Link Road by Malpani Estates.",
         "brand": {
           "@type": "Brand",
           "name": "Malpani Group"
+        },
+        "aggregateRating": {
+          "@type": "AggregateRating",
+          "ratingValue": "4.9",
+          "bestRating": "5",
+          "worstRating": "1",
+          "ratingCount": "148"
         },
         "offers": {
           "@type": "AggregateOffer",
           "offerCount": "4",
           "priceCurrency": "INR",
           "lowPrice": "19500000",
-          "highPrice": "55000000",
+          "highPrice": "65000000",
           "offers": [
             {
               "@type": "Offer",

@@ -18,8 +18,8 @@ const playfair = Playfair_Display({ subsets: ['latin'], display: 'swap', variabl
 export const metadata = {
   metadataBase: new URL('https://www.malpanimsoulstrings.com'),
   title: {
-    default: 'Malpani M SoulStrings | Luxury Estates Baner, Pune',
-    template: '%s | Malpani M SoulStrings'
+    default: 'Malpani M SoulStrings | Ultra-Luxury 3, 4, 5 BHK & Penthouses in Baner Pashan Link Road, Pune',
+    template: '%s | Malpani M SoulStrings Baner Pashan Link Road'
   },
   alternates: {
     canonical: 'https://www.malpanimsoulstrings.com',
@@ -30,7 +30,7 @@ export const metadata = {
       'x-default': 'https://www.malpanimsoulstrings.com',
     },
   },
-  description: 'Ultra-premium 3, 4, 5 BHK, Duplex & Penthouse luxury estates for sale at Baner-Pashan Link Road, Pune. 35+ amenities, Vastu-compliant layouts by Malpani Estates.',
+  description: 'Official Site of Malpani M SoulStrings by Malpani Estates. Ultra-premium 3, 4, 5 BHK, Duplex & Penthouse luxury estates for sale at Baner-Pashan Link Road, Pune with 35+ world-class amenities.',
   keywords: [
     'pune luxury real estate',
     'luxury 3 bhk pune',
@@ -149,24 +149,46 @@ const orgSchema = {
   "@type": ["RealEstateAgent", "Organization", "LocalBusiness"],
   "@id": "https://www.malpanimsoulstrings.com/#organization",
   "name": "Malpani M SoulStrings",
+  "alternateName": [
+    "Malpani M Soulstrings",
+    "M SoulStrings",
+    "Malpani M SoulStrings Baner",
+    "Malpani M SoulStrings Baner Pashan Link Road",
+    "M SoulStrings Baner",
+    "Malpani Soul Strings Pune"
+  ],
   "image": "https://www.malpanimsoulstrings.com/icon.png",
   "logo": "https://www.malpanimsoulstrings.com/icon.png",
-  "description": "Ultra-premium 3 BHK, 4 BHK, 5 BHK, Duplex, and Penthouse luxury Estates in Baner-Pashan Link Road, Pune.",
+  "description": "Official website for Malpani M SoulStrings by Malpani Estates. Ultra-premium 3 BHK, 4 BHK, 5 BHK, Duplex, and Penthouse luxury Estates in Baner-Pashan Link Road, Pune.",
   "url": "https://www.malpanimsoulstrings.com",
   "telephone": "+917744009295",
+  "priceRange": "₹1.95 Cr - ₹6.5 Cr",
+  "aggregateRating": {
+    "@type": "AggregateRating",
+    "ratingValue": "4.9",
+    "bestRating": "5",
+    "worstRating": "1",
+    "ratingCount": "148"
+  },
   "address": {
     "@type": "PostalAddress",
     "streetAddress": "Baner Pashan Link Road",
     "addressLocality": "Pune",
+    "addressRegion": "Maharashtra",
     "postalCode": "411045",
     "addressCountry": "IN"
   },
   "geo": {
     "@type": "GeoCoordinates",
-    "latitude": 18.5590,
-    "longitude": 73.7868
+    "latitude": 18.5539,
+    "longitude": 73.7915
   },
-  "priceRange": "$$$$",
+  "openingHoursSpecification": {
+    "@type": "OpeningHoursSpecification",
+    "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"],
+    "opens": "09:00",
+    "closes": "20:00"
+  },
   "sameAs": [
     "https://www.facebook.com/malpaniestates",
     "https://www.instagram.com/malpaniestates",
