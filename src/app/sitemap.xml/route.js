@@ -57,7 +57,13 @@ export async function GET() {
     { route: '/luxury-apartments-in-balewadi-pune-malpani-m-soulstrings', priority: 0.9, freq: 'weekly' },
     { route: '/premium-residences-near-aundh-pune-malpani-m-soulstrings', priority: 0.9, freq: 'weekly' },
     { route: '/wakad-to-baner-real-estate-upgrade-malpani-m-soulstrings', priority: 0.9, freq: 'weekly' },
-    { route: '/pashan-sus-road-luxury-projects-malpani-m-soulstrings', priority: 0.9, freq: 'weekly' }
+    { route: '/pashan-sus-road-luxury-projects-malpani-m-soulstrings', priority: 0.9, freq: 'weekly' },
+    { route: '/about-malpani-estates-pune', priority: 0.9, freq: 'weekly', images: [
+      { url: 'https://malpani-cms.firsteconomy.com/uploads/About_Project_27b8c57d51.png', title: 'About Malpani Estates Legacy and Heritage Pune' }
+    ]},
+    { route: '/press-malpani-estates-baner-pune', priority: 0.9, freq: 'weekly', images: [
+      { url: 'https://malpani-cms.firsteconomy.com/uploads/M_soul_strings_Desktop_Banner_Without_Text_0d38ce28d4.jpg', title: 'Malpani M SoulStrings Press and Media Mentions' }
+    ]}
   ];
 
   const tier3 = [

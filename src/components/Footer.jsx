@@ -21,6 +21,8 @@ export default function Footer() {
                       <li><Link href="/amenities-malpani-m-soulstrings-baner-pashan-link-road" style={{ color: 'rgba(255,255,255,0.5)', textDecoration: 'none' }}>World Class Amenities</Link></li>
                       <li><Link href="/vastu-compliant-luxury-homes-pune-malpani-m-soulstrings-baner-pashan-link-road" style={{ color: 'rgba(255,255,255,0.5)', textDecoration: 'none' }}>Vastu Compliant Homes</Link></li>
                       <li><Link href="/location-malpani-m-soulstrings-baner-pashan-link-road" style={{ color: 'rgba(255,255,255,0.5)', textDecoration: 'none' }}>Baner Pashan Link Road Location</Link></li>
+                      <li><Link href="/about-malpani-estates-pune" style={{ color: 'rgba(255,255,255,0.5)', textDecoration: 'none' }}>About Malpani Estates</Link></li>
+                      <li><Link href="/press-malpani-estates-baner-pune" style={{ color: 'rgba(255,255,255,0.5)', textDecoration: 'none' }}>Press &amp; Media Mentions</Link></li>
                       <li><Link href="/sitemap-malpani-m-soulstrings-baner-pashan-link-road" style={{ color: 'rgba(255,255,255,0.5)', textDecoration: 'none' }}>HTML Sitemap</Link></li>
                   </ul>
               </div>
