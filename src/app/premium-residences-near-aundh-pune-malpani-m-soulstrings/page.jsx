@@ -24,8 +24,42 @@ export const metadata = {
 };
 
 export default function AundhAlternativePage() {
+  const faqSchema = {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "How far is Malpani M SoulStrings from Aundh?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Malpani M SoulStrings is situated just 10-12 minutes from Aundh via Baner Road, offering effortless connectivity to Westend Mall, elite schools, and social infrastructure."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Why are buyers upgrading from Aundh to Baner-Pashan Link Road?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Aundh is fully saturated with aging infrastructure, whereas Malpani M SoulStrings offers new-generation architectural standards, larger 3, 4 & 5 BHK floor plans, multi-tier amenities, and scenic hill views."
+        }
+      }
+    ]
+  };
+
+  const breadcrumbSchema = {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://www.malpanimsoulstrings.com" },
+      { "@type": "ListItem", "position": 2, "name": "Aundh Premium Alternative", "item": "https://www.malpanimsoulstrings.com/premium-residences-near-aundh-pune-malpani-m-soulstrings" }
+    ]
+  };
+
   return (
     <main>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }} />
       <SchemaMarkup pageName="Aundh Premium Alternative" pageUrl="/premium-residences-near-aundh-pune-malpani-m-soulstrings" />
       
       <div className="pillar-header" style={{ paddingTop: '120px', paddingBottom: '4rem', background: 'var(--color-surface)' }}>

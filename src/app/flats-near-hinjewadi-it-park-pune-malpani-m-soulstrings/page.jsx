@@ -32,9 +32,42 @@ export const metadata = {
 };
 
 export default function HinjewadiFlatsPage() {
+  const faqSchema = {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "How far is Malpani M SoulStrings from Hinjewadi IT Park?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Malpani M SoulStrings is approximately 12-15 minutes from Hinjewadi Phase 1 & 2 via the Mumbai-Bengaluru Highway and the Baner-Pashan connectivity link."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Why do tech professionals choose Baner-Pashan Link Road over living inside Hinjewadi?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Baner-Pashan Link Road offers low-density, unpolluted residential living bordering the Sus Hills with superior social infrastructure, while keeping commute time to IT offices under 15 minutes."
+        }
+      }
+    ]
+  };
+
+  const breadcrumbSchema = {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://www.malpanimsoulstrings.com" },
+      { "@type": "ListItem", "position": 2, "name": "Flats Near Hinjewadi IT Park", "item": "https://www.malpanimsoulstrings.com/flats-near-hinjewadi-it-park-pune-malpani-m-soulstrings" }
+    ]
+  };
+
   return (
     <main>
-
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }} />
       <SchemaMarkup pageName="Flats Near Hinjewadi IT Park" pageUrl="/flats-near-hinjewadi-it-park-pune-malpani-m-soulstrings" />
       
       <div className="pillar-header" style={{ paddingTop: '120px', paddingBottom: '4rem', background: 'var(--color-surface)' }}>

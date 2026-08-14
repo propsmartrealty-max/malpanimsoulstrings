@@ -81,7 +81,20 @@ export default async function BlogPost({ params }) {
   try {
     const rawMarkdown = fs.readFileSync(filePath, 'utf-8');
     stats = fs.statSync(filePath);
-    htmlContent = marked(rawMarkdown);
+
+    // Custom SEO Image Renderer for marked
+    const renderer = new marked.Renderer();
+    renderer.image = function ({ href, title, text }) {
+      const altText = text ? `${text} - Malpani M SoulStrings Baner Pashan Link Road Pune` : `${articleTitle} - Malpani M SoulStrings Pune Luxury Real Estate`;
+      const titleAttr = title ? `title="${title}"` : `title="${altText}"`;
+      return `
+      <figure class="my-4 text-center">
+        <img src="${href}" alt="${altText}" ${titleAttr} loading="lazy" decoding="async" class="img-fluid rounded shadow-sm" style="max-height: 500px; width: auto; margin: 0 auto; display: block;" />
+        ${text ? `<figcaption class="text-muted small mt-2 fst-italic">${text}</figcaption>` : ''}
+      </figure>`;
+    };
+
+    htmlContent = marked(rawMarkdown, { renderer });
     
     // Fetch 3 related blogs for internal siloing in a stable/pure manner
     const allFiles = fs.readdirSync(contentDir).filter(f => f.endsWith('.md')).sort();

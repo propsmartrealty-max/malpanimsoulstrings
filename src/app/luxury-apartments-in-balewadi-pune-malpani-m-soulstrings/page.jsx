@@ -32,8 +32,42 @@ export const metadata = {
 };
 
 export default function BalewadiAlternativePage() {
+  const faqSchema = {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "How far is Malpani M SoulStrings from Balewadi High Street?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Malpani M SoulStrings is located just 8-10 minutes from Balewadi High Street, providing quick access to premier dining and retail while preserving a tranquil, green residential setting."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "What makes Malpani M SoulStrings a better alternative to apartments in Balewadi?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Malpani M SoulStrings offers an expansive 5.2-acre gated community bordering the pristine Sus Hills with 35+ amenities and zero commercial congestion compared to dense Balewadi streets."
+        }
+      }
+    ]
+  };
+
+  const breadcrumbSchema = {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://www.malpanimsoulstrings.com" },
+      { "@type": "ListItem", "position": 2, "name": "Balewadi Luxury Alternative", "item": "https://www.malpanimsoulstrings.com/luxury-apartments-in-balewadi-pune-malpani-m-soulstrings" }
+    ]
+  };
+
   return (
     <main>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }} />
       <SchemaMarkup pageName="Balewadi Luxury Alternative" pageUrl="/luxury-apartments-in-balewadi-pune-malpani-m-soulstrings" />
       
       <div className="pillar-header" style={{ paddingTop: '120px', paddingBottom: '4rem', background: 'var(--color-surface)' }}>

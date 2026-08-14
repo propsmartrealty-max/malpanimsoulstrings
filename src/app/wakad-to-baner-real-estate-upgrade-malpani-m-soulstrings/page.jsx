@@ -24,8 +24,42 @@ export const metadata = {
 };
 
 export default function WakadUpgradePage() {
+  const faqSchema = {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "Why should homeowners in Wakad upgrade to Malpani M SoulStrings in Baner?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Moving from high-density Wakad to Malpani M SoulStrings offers lower resident density, superior construction quality (Mivan formwork), 100% Vastu compliance, and higher long-term capital appreciation along the Baner-Pashan corridor."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "What configurations are available for buyers upgrading from Wakad?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Malpani M SoulStrings provides 3 BHK Luxury Residences, 4 BHK Estates, 5 BHK Duplexes, and Sky Penthouses with large private balconies and dedicated multi-level parking."
+        }
+      }
+    ]
+  };
+
+  const breadcrumbSchema = {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://www.malpanimsoulstrings.com" },
+      { "@type": "ListItem", "position": 2, "name": "Wakad to Baner Upgrade", "item": "https://www.malpanimsoulstrings.com/wakad-to-baner-real-estate-upgrade-malpani-m-soulstrings" }
+    ]
+  };
+
   return (
     <main>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }} />
       <SchemaMarkup pageName="Wakad to Baner Upgrade" pageUrl="/wakad-to-baner-real-estate-upgrade-malpani-m-soulstrings" />
       
       <div className="pillar-header" style={{ paddingTop: '120px', paddingBottom: '4rem', background: 'var(--color-surface)' }}>
