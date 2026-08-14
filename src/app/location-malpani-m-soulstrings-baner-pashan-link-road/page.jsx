@@ -17,9 +17,9 @@ export const metadata = {
     'West Pune luxury real estate'
   ],
   openGraph: {
-    title: 'Location Advantages of Malpani M SoulStrings',
-    description: 'Discover why the Baner-Pashan Link Road location is the most coveted real estate destination in West Pune.',
-    url: 'https://www.malpanimsoulstrings.com/location',
+    title: 'Prime Location Advantages of Malpani M SoulStrings Baner Pashan Link Road Pune',
+    description: 'Discover why Malpani M SoulStrings on Baner-Pashan Link Road is the most coveted luxury address in West Pune, bridging Hinjewadi IT corridor and Aundh.',
+    url: 'https://www.malpanimsoulstrings.com/location-malpani-m-soulstrings-baner-pashan-link-road',
     siteName: 'Malpani M SoulStrings',
     images: [
       {
@@ -35,9 +35,50 @@ export const metadata = {
 };
 
 export default function LocationPage() {
+  const faqSchema = {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "Where is Malpani M SoulStrings located in Pune?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Malpani M SoulStrings is located on the prime Baner-Pashan Link Road in West Pune (Postal Code 411045), seamlessly connecting Baner, Pashan, Aundh, and the Hinjewadi IT Park."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "How far is Malpani M SoulStrings from Hinjewadi IT Park?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Malpani M SoulStrings is just 15 minutes from Hinjewadi Phase 1 & 2 via the Mumbai-Bengaluru Highway and the Baner-Pashan connectivity corridor."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "What are the landmark institutions near Malpani M SoulStrings?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Key landmarks within 5-15 minutes include Jupiter Hospital, Balewadi High Street, The Pavillion Mall, Loyola High School, and Pune University Circle."
+        }
+      }
+    ]
+  };
+
+  const breadcrumbSchema = {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://www.malpanimsoulstrings.com" },
+      { "@type": "ListItem", "position": 2, "name": "Location Advantages", "item": "https://www.malpanimsoulstrings.com/location-malpani-m-soulstrings-baner-pashan-link-road" }
+    ]
+  };
+
   return (
     <main>
-
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }} />
       <SchemaMarkup pageName="Strategic Location" pageUrl="/location-malpani-m-soulstrings-baner-pashan-link-road" />
       
       <div className="pillar-header" style={{ paddingTop: '120px', paddingBottom: '4rem', background: 'var(--color-surface)' }}>

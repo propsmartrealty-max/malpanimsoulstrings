@@ -3,8 +3,8 @@ import path from 'path';
 import Link from 'next/link';
 
 export const metadata = {
-  title: 'Real Estate Insights & Blogs',
-  description: 'Read the latest real estate market analysis, infrastructure updates, and luxury apartment buying guides for Baner Pashan Link Road, Pune.',
+  title: 'Real Estate Insights & Luxury Living Blog | Malpani M SoulStrings Pune',
+  description: 'Read the latest real estate market analysis, infrastructure updates, and luxury apartment buying guides for Malpani M SoulStrings, Baner Pashan Link Road, Pune.',
   alternates: {
     canonical: '/blog-malpani-m-soulstrings-baner-pashan-link-road'
   }
@@ -35,9 +35,32 @@ export default function BlogIndex() {
     // Dir might not exist
   }
 
+  const itemListSchema = {
+    "@context": "https://schema.org",
+    "@type": "ItemList",
+    "name": "Malpani M SoulStrings Real Estate Insights & Guides",
+    "itemListElement": posts.map((post, index) => ({
+      "@type": "ListItem",
+      "position": index + 1,
+      "url": `https://www.malpanimsoulstrings.com/blog-malpani-m-soulstrings-baner-pashan-link-road/${post.slug}`,
+      "name": post.title
+    }))
+  };
+
+  const breadcrumbSchema = {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://www.malpanimsoulstrings.com" },
+      { "@type": "ListItem", "position": 2, "name": "Blog & Insights", "item": "https://www.malpanimsoulstrings.com/blog-malpani-m-soulstrings-baner-pashan-link-road" }
+    ]
+  };
+
   return (
     <main className="container py-5 my-5">
-      <h1 style={{ color: '#d4af37', marginBottom: '1rem', fontWeight: '800' }}>Real Estate Insights</h1>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(itemListSchema) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }} />
+      <h1 style={{ color: '#d4af37', marginBottom: '1rem', fontWeight: '800' }}>Real Estate Insights — Malpani M SoulStrings</h1>
       <p style={{ color: 'rgba(255,255,255,0.7)', fontSize: '1.2rem', marginBottom: '4rem' }}>
         Deep-dive market analysis, luxury living guides, and infrastructure updates for Malpani M SoulStrings and the Baner-Pashan corridor.
       </p>

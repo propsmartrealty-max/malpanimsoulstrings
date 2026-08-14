@@ -28,9 +28,50 @@ export const metadata = {
 };
 
 export default function AmenitiesPage() {
+  const faqSchema = {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "How many amenities are offered at Malpani M SoulStrings?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Malpani M SoulStrings offers over 35+ resort-grade lifestyle amenities, including an Infinity Swimming Pool, Grand Clubhouse, Spa & Salon, Badminton and Pickleball Courts, Yoga Pavilion, and a Pet Park."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Are the homes at Malpani M SoulStrings equipped with Smart Home Automation?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Yes, residences at Malpani M SoulStrings come equipped with advanced smart home automation for centralized lighting control, temperature settings, and biometric multi-tier security."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Is there a dedicated sports zone at Malpani M SoulStrings?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Yes, sports infrastructure includes a full-sized basketball court, dedicated net cricket pitch, badminton court, pickleball court, and a continuous jogging trail."
+        }
+      }
+    ]
+  };
+
+  const breadcrumbSchema = {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://www.malpanimsoulstrings.com" },
+      { "@type": "ListItem", "position": 2, "name": "Amenities & Lifestyle", "item": "https://www.malpanimsoulstrings.com/amenities-malpani-m-soulstrings-baner-pashan-link-road" }
+    ]
+  };
+
   return (
     <main>
-
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }} />
       <SchemaMarkup pageName="Amenities & Lifestyle" pageUrl="/amenities-malpani-m-soulstrings-baner-pashan-link-road" />
       
       <div className="pillar-header" style={{ paddingTop: '120px', paddingBottom: '4rem', background: 'var(--color-surface)' }}>

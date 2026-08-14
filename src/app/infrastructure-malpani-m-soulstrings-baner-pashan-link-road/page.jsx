@@ -5,14 +5,47 @@ import Link from 'next/link';
 
 export const metadata = {
   alternates: { canonical: '/infrastructure-malpani-m-soulstrings-baner-pashan-link-road' },
-  title: 'Infrastructure & Market Metrics 2026',
-  description: 'Infrastructure developments driving Pune West real estate growth — metro connectivity, road expansion, and IT corridor impact on luxury property values at Baner-Pashan Link Road.',
+  title: 'Infrastructure & Market Growth Metrics | Malpani M SoulStrings Baner Pashan Link Road',
+  description: 'Infrastructure developments driving Pune West real estate growth — metro connectivity, road expansion, and IT corridor impact on luxury property values at Malpani M SoulStrings, Baner-Pashan Link Road.',
 };
 
 export default function InfrastructurePage() {
+  const faqSchema = {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "How does Pune Metro Line 3 benefit Malpani M SoulStrings?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Pune Metro Line 3 connects Hinjewadi directly to Shivajinagar with dedicated stations along the Baner corridor, cutting commute times to under 15 minutes and driving high capital appreciation for Malpani M SoulStrings."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "What is the expected capital appreciation for Baner-Pashan Link Road luxury real estate?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Historical data and infrastructure forecasting project an 8-12% annual capital appreciation for Grade-A luxury developments like Malpani M SoulStrings along the Baner-Pashan corridor."
+        }
+      }
+    ]
+  };
+
+  const breadcrumbSchema = {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://www.malpanimsoulstrings.com" },
+      { "@type": "ListItem", "position": 2, "name": "Infrastructure & Market Outlook", "item": "https://www.malpanimsoulstrings.com/infrastructure-malpani-m-soulstrings-baner-pashan-link-road" }
+    ]
+  };
+
   return (
     <main>
-
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }} />
       <SchemaMarkup pageName="Infrastructure Updates" pageUrl="/infrastructure-malpani-m-soulstrings-baner-pashan-link-road" />
       
       <div className="pillar-header" style={{ paddingTop: '120px', paddingBottom: '4rem', background: 'var(--color-surface)' }}>
