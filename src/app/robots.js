@@ -1,13 +1,45 @@
 export default function robots() {
   return {
-    rules: {
-      userAgent: '*',
-      allow: '/',
-      disallow: ['/private/', '/api/'],
-    },
-    sitemap: [
-      'https://www.malpanimsoulstrings.com/sitemap.xml'
+    rules: [
+      {
+        userAgent: '*',
+        allow: '/',
+        disallow: ['/api/', '/private/'],
+      },
+      {
+        userAgent: [
+          'Googlebot',
+          'Googlebot-Image',
+          'Googlebot-News',
+          'Googlebot-Video',
+          'Bingbot',
+          'Applebot',
+          'DuckDuckBot',
+          'YandexBot',
+          'Baiduspider',
+          'Slurp',
+          'Sogou'
+        ],
+        allow: '/',
+        disallow: ['/api/', '/private/'],
+      },
+      {
+        userAgent: [
+          'GPTBot',
+          'ChatGPT-User',
+          'Google-Extended',
+          'PerplexityBot',
+          'ClaudeBot',
+          'anthropic-ai',
+          'cohere-ai',
+          'Bytespider',
+          'CCBot'
+        ],
+        allow: '/',
+        disallow: ['/api/', '/private/'],
+      }
     ],
+    sitemap: 'https://www.malpanimsoulstrings.com/sitemap.xml',
     host: 'https://www.malpanimsoulstrings.com',
-  }
+  };
 }
