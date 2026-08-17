@@ -9,6 +9,7 @@ import fs from 'fs';
 import path from 'path';
 import Link from 'next/link';
 import VastuAuditTool from '@/components/VastuAuditTool';
+import LuxuryConfigMatcher from '@/components/LuxuryConfigMatcher';
 
 export const metadata = {
   alternates: {
@@ -387,11 +388,23 @@ export default function Home() {
       </div>
     </section>
 
-    {/* Interactive Vastu Audit Experience */}
-    <section id="vastu-tool" className="section" style={{ background: 'var(--color-background)', padding: '5rem 0', borderTop: '1px solid rgba(212,175,55,0.1)' }}>
+    {/* Interactive Buyer Tools Section */}
+    <section id="interactive-tools" className="section" style={{ background: 'var(--color-background)', padding: '5rem 0', borderTop: '1px solid rgba(212,175,55,0.1)' }}>
       <div className="container">
-        <div className="row justify-content-center">
-          <div className="col-lg-10">
+        <div className="section-header fade-in-up text-center mb-5">
+          <div className="scarcity-badge fade-in-up" style={{ display: 'inline-block', marginBottom: '1rem' }}>
+            <span className="material-symbols-outlined" style={{ fontSize: '1rem', verticalAlign: 'middle', marginRight: '0.2rem' }}>psychology</span>
+            Interactive Buyer Intelligence
+          </div>
+          <h2 className="section-title gradient-text">Tailored Luxury Planning & Harmony Audit</h2>
+          <p className="section-desc">Find your ideal configuration match and audit cardinal Vastu alignments in real time.</p>
+        </div>
+
+        <div className="row g-4 justify-content-center">
+          <div className="col-lg-6">
+            <LuxuryConfigMatcher />
+          </div>
+          <div className="col-lg-6">
             <VastuAuditTool />
           </div>
         </div>

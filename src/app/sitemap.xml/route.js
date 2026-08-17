@@ -8,31 +8,33 @@ export async function GET() {
   // Strategic Priority Tiers
   const tier1 = [
     { route: '', priority: 1.0, freq: 'daily', images: [
-      { url: 'https://malpani-cms.firsteconomy.com/uploads/M_soul_strings_Desktop_Banner_Without_Text_0d38ce28d4.jpg', title: 'Malpani M SoulStrings Hero Banner' },
-      { url: 'https://malpani-cms.firsteconomy.com/uploads/About_Project_27b8c57d51.png', title: 'Malpani M SoulStrings Project Elevation' },
-      { url: 'https://malpani-cms.firsteconomy.com/uploads/Entrance_Lobby_9d4d367801.png', title: 'Malpani M SoulStrings Grand Entrance Lobby' }
+      { url: 'https://malpani-cms.firsteconomy.com/uploads/M_soul_strings_Desktop_Banner_Without_Text_0d38ce28d4.jpg', title: 'Malpani M SoulStrings Hero Banner Baner Pashan Link Road Pune' },
+      { url: 'https://malpani-cms.firsteconomy.com/uploads/About_Project_27b8c57d51.png', title: 'Malpani M SoulStrings Architectural Elevation Masterpiece' },
+      { url: 'https://malpani-cms.firsteconomy.com/uploads/Entrance_Lobby_9d4d367801.png', title: 'Malpani M SoulStrings Grand Double Height Entrance Lobby' }
     ]},
     { route: '/3bhk-luxury-malpani-m-soulstrings-baner-pashan-link-road', priority: 1.0, freq: 'daily', images: [
-      { url: 'https://malpani-cms.firsteconomy.com/uploads/01_1_97625c7cd6.png', title: 'Malpani M SoulStrings 3 BHK Luxury Apartments floor plan' }
+      { url: 'https://malpani-cms.firsteconomy.com/uploads/01_1_97625c7cd6.png', title: 'Malpani M SoulStrings 3 BHK Luxury Apartments Floor Plan Pune' }
     ]},
     { route: '/4bhk-luxury-malpani-m-soulstrings-baner-pashan-link-road', priority: 1.0, freq: 'daily', images: [
-      { url: 'https://malpani-cms.firsteconomy.com/uploads/02_1_fccd839fae.png', title: 'Malpani M SoulStrings 4 BHK Premium flats interior' }
+      { url: 'https://malpani-cms.firsteconomy.com/uploads/02_1_fccd839fae.png', title: 'Malpani M SoulStrings 4 BHK Premium Presidential Flats Interior' }
     ]},
     { route: '/5bhk-duplex-malpani-m-soulstrings-baner-pashan-link-road', priority: 1.0, freq: 'daily', images: [
-      { url: 'https://malpani-cms.firsteconomy.com/uploads/05_1_767fc1bb82.png', title: 'Malpani M SoulStrings 5 BHK Duplex homes garden pool' }
+      { url: 'https://malpani-cms.firsteconomy.com/uploads/05_1_767fc1bb82.png', title: 'Malpani M SoulStrings 5 BHK Sky Duplex Homes Garden Pool' }
     ]},
     { route: '/penthouse-luxury-malpani-m-soulstrings-baner-pashan-link-road', priority: 1.0, freq: 'daily', images: [
-      { url: 'https://malpani-cms.firsteconomy.com/uploads/About_Project_27b8c57d51.png', title: 'Malpani M SoulStrings Sky Penthouses Baner' }
+      { url: 'https://malpani-cms.firsteconomy.com/uploads/About_Project_27b8c57d51.png', title: 'Malpani M SoulStrings Sky Penthouses Baner Pashan Link Road' }
     ]},
     { route: '/location-malpani-m-soulstrings-baner-pashan-link-road', priority: 1.0, freq: 'daily', images: [
-      { url: 'https://malpani-cms.firsteconomy.com/uploads/04_1_dfeed3efb5.png', title: 'Malpani M SoulStrings location advantages connectivity map' }
+      { url: 'https://malpani-cms.firsteconomy.com/uploads/04_1_dfeed3efb5.png', title: 'Malpani M SoulStrings Location Advantages Connectivity Map' }
     ]},
-    { route: '/nri-investment-malpani-m-soulstrings-baner-pashan-link-road', priority: 1.0, freq: 'daily' }
+    { route: '/nri-investment-malpani-m-soulstrings-baner-pashan-link-road', priority: 1.0, freq: 'daily', images: [
+      { url: 'https://malpani-cms.firsteconomy.com/uploads/M_soul_strings_Desktop_Banner_Without_Text_0d38ce28d4.jpg', title: 'NRI Luxury Real Estate Investment Guide Malpani M SoulStrings' }
+    ]}
   ];
 
   const tier2 = [
     { route: '/amenities-malpani-m-soulstrings-baner-pashan-link-road', priority: 0.9, freq: 'weekly', images: [
-      { url: 'https://malpani-cms.firsteconomy.com/uploads/03_5afad0394f.png', title: 'Malpani M SoulStrings world class gated community amenities' }
+      { url: 'https://malpani-cms.firsteconomy.com/uploads/03_5afad0394f.png', title: 'Malpani M SoulStrings 35+ World Class Gated Community Amenities' }
     ]},
     { route: '/infrastructure-malpani-m-soulstrings-baner-pashan-link-road', priority: 0.9, freq: 'weekly' },
     { route: '/baner-overview-malpani-m-soulstrings-baner-pashan-link-road', priority: 0.9, freq: 'weekly' },
@@ -40,19 +42,19 @@ export async function GET() {
     { route: '/vastu-compliant-luxury-homes-pune-malpani-m-soulstrings-baner-pashan-link-road', priority: 0.9, freq: 'weekly' },
     { route: '/blog-malpani-m-soulstrings-baner-pashan-link-road', priority: 0.9, freq: 'weekly' },
     { route: '/malpani-m-soulstrings-reviews-ratings-baner-pune', priority: 0.9, freq: 'weekly', images: [
-      { url: 'https://malpani-cms.firsteconomy.com/uploads/About_Project_27b8c57d51.png', title: 'Malpani M SoulStrings Reviews & Ratings' }
+      { url: 'https://malpani-cms.firsteconomy.com/uploads/About_Project_27b8c57d51.png', title: 'Malpani M SoulStrings Google 5 Star Verified Reviews & Ratings' }
     ]},
     { route: '/flat-rates-price-trends-baner-pashan-link-road-malpani-m-soulstrings', priority: 0.9, freq: 'weekly', images: [
-      { url: 'https://malpani-cms.firsteconomy.com/uploads/M_soul_strings_Desktop_Banner_Without_Text_0d38ce28d4.jpg', title: 'Baner Pashan Link Road Real Estate Price Trends' }
+      { url: 'https://malpani-cms.firsteconomy.com/uploads/M_soul_strings_Desktop_Banner_Without_Text_0d38ce28d4.jpg', title: 'Baner Pashan Link Road Real Estate Price Trends 2026' }
     ]},
     { route: '/luxury-gated-community-apartments-pune-west-malpani-m-soulstrings', priority: 0.9, freq: 'weekly', images: [
-      { url: 'https://malpani-cms.firsteconomy.com/uploads/Entrance_Lobby_9d4d367801.png', title: 'Luxury Gated Community in Pune West' }
+      { url: 'https://malpani-cms.firsteconomy.com/uploads/Entrance_Lobby_9d4d367801.png', title: 'Luxury Gated Community Apartments in Pune West' }
     ]},
     { route: '/invest-in-malpani-estates-pune-growth-corridors', priority: 0.9, freq: 'weekly', images: [
-      { url: 'https://malpani-cms.firsteconomy.com/uploads/About_Project_27b8c57d51.png', title: 'Invest in Malpani Estates Pune' }
+      { url: 'https://malpani-cms.firsteconomy.com/uploads/About_Project_27b8c57d51.png', title: 'Invest in Malpani Estates Pune Growth Corridors' }
     ]},
     { route: '/malpani-m-soulstrings-construction-status-updates-possession', priority: 0.9, freq: 'weekly', images: [
-      { url: 'https://malpani-cms.firsteconomy.com/uploads/About_Project_27b8c57d51.png', title: 'Malpani M SoulStrings Construction Status' }
+      { url: 'https://malpani-cms.firsteconomy.com/uploads/About_Project_27b8c57d51.png', title: 'Malpani M SoulStrings Construction Status Updates and Possession' }
     ]},
     { route: '/flats-near-hinjewadi-it-park-pune-malpani-m-soulstrings', priority: 0.9, freq: 'weekly' },
     { route: '/luxury-apartments-in-balewadi-pune-malpani-m-soulstrings', priority: 0.9, freq: 'weekly' },
@@ -60,7 +62,7 @@ export async function GET() {
     { route: '/wakad-to-baner-real-estate-upgrade-malpani-m-soulstrings', priority: 0.9, freq: 'weekly' },
     { route: '/pashan-sus-road-luxury-projects-malpani-m-soulstrings', priority: 0.9, freq: 'weekly' },
     { route: '/about-malpani-estates-pune', priority: 0.9, freq: 'weekly', images: [
-      { url: 'https://malpani-cms.firsteconomy.com/uploads/About_Project_27b8c57d51.png', title: 'About Malpani Estates Legacy and Heritage Pune' }
+      { url: 'https://malpani-cms.firsteconomy.com/uploads/About_Project_27b8c57d51.png', title: 'About Malpani Estates 30 Year Developer Heritage Pune' }
     ]},
     { route: '/press-malpani-estates-baner-pune', priority: 0.9, freq: 'weekly', images: [
       { url: 'https://malpani-cms.firsteconomy.com/uploads/M_soul_strings_Desktop_Banner_Without_Text_0d38ce28d4.jpg', title: 'Malpani M SoulStrings Press and Media Mentions' }
@@ -96,6 +98,9 @@ export async function GET() {
     <image:image>
       <image:loc>${img.url}</image:loc>
       <image:title>${img.title}</image:title>
+      <image:caption>${img.title}</image:caption>
+      <image:geo_location>Baner Pashan Link Road, Pune, Maharashtra, India</image:geo_location>
+      <image:license>${baseUrl}</image:license>
     </image:image>`).join('') : '';
 
     return `
@@ -121,8 +126,8 @@ export async function GET() {
     const stats = fs.statSync(filePath);
     const slug = file.replace('.md', '');
     const url = `${baseUrl}/blog-malpani-m-soulstrings-baner-pashan-link-road/${slug}`;
+    const cleanTitle = slug.replace(/-/g, ' ').replace(/\b\w/g, c => c.toUpperCase());
     
-    // Associate the default sharing image for blog posts
     return `
   <url>
     <loc>${url}</loc>
@@ -131,7 +136,10 @@ export async function GET() {
     <priority>0.9</priority>
     <image:image>
       <image:loc>https://malpani-cms.firsteconomy.com/uploads/M_soul_strings_Desktop_Banner_Without_Text_0d38ce28d4.jpg</image:loc>
-      <image:title>Malpani M SoulStrings Real Estate Blog - ${slug.replace(/-/g, ' ')}</image:title>
+      <image:title>${cleanTitle} | Malpani M SoulStrings Pune</image:title>
+      <image:caption>${cleanTitle} - Luxury Real Estate Insights Baner Pashan Link Road Pune</image:caption>
+      <image:geo_location>Pune, Maharashtra, India</image:geo_location>
+      <image:license>${baseUrl}</image:license>
     </image:image>
   </url>`;
   });
@@ -156,7 +164,7 @@ export async function GET() {
   return new Response(xml, {
     headers: {
       'Content-Type': 'application/xml; charset=utf-8',
-      'Cache-Control': 'public, s-maxage=86400, stale-while-revalidate',
+      'Cache-Control': 'public, s-maxage=86400, stale-while-revalidate=43200',
     },
   });
 }
