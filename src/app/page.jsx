@@ -96,7 +96,19 @@ export default function Home() {
           </span>
         </h1>
         <p className="hero-subtitle fade-in-up" >The Preferred Choice for Elite Buyers from Aundh, Shivajinagar, Balewadi, and Wakad.</p>
-        <a href="#masterpiece" className="btn btn-outline pulse-vip fade-in-up" >Enter The Legacy</a>
+        
+        {/* Google 5-Star & MahaRERA Trust Bar */}
+        <div className="hero-trust-bar fade-in-up" style={{ display: 'inline-flex', alignItems: 'center', gap: '0.85rem', background: 'rgba(10,10,12,0.75)', backdropFilter: 'blur(12px)', border: '1px solid rgba(212,175,55,0.4)', borderRadius: '50px', padding: '0.5rem 1.25rem', margin: '0.5rem 0 1.5rem', flexWrap: 'wrap', justifyContent: 'center' }}>
+          <span style={{ color: '#ffb400', fontSize: '1.1rem', letterSpacing: '2px' }}>★★★★★</span>
+          <span style={{ color: '#fff', fontSize: '0.9rem', fontWeight: '600' }}>4.9/5 Google Verified Rating (148+ Reviews)</span>
+          <span style={{ color: 'rgba(255,255,255,0.3)', display: 'inline-block' }}>|</span>
+          <span style={{ color: 'var(--color-primary)', fontSize: '0.85rem', fontWeight: '600' }}>MahaRERA: P52100076782</span>
+        </div>
+
+        <div>
+          <a href="#masterpiece" className="btn btn-outline pulse-vip fade-in-up me-3" >Enter The Legacy</a>
+          <a href="#" data-bs-toggle="modal" data-bs-target="#enquireModal" className="btn btn-primary fade-in-up" >Schedule VIP Visit</a>
+        </div>
       </div>
     </section>
 
