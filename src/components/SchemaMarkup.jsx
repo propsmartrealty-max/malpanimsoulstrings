@@ -37,13 +37,29 @@ export default function SchemaMarkup({ pageName, pageUrl }) {
         "sameAs": [
           "https://www.facebook.com/malpanigroup/",
           "https://www.instagram.com/malpanigroup/",
-          "https://twitter.com/malpani_group"
+          "https://twitter.com/malpani_group",
+          "https://www.linkedin.com/company/malpani-estates"
         ],
         "owns": { "@id": "https://www.malpanimsoulstrings.com/#apartmentcomplex" }
       },
       {
         "@type": "BreadcrumbList",
         "itemListElement": generateBreadcrumbs()
+      },
+      {
+        "@type": "WebSite",
+        "@id": "https://www.malpanimsoulstrings.com/#website",
+        "url": "https://www.malpanimsoulstrings.com",
+        "name": "Malpani M SoulStrings",
+        "publisher": { "@id": "https://www.malpanimsoulstrings.com/#organization" },
+        "potentialAction": {
+          "@type": "SearchAction",
+          "target": {
+            "@type": "EntryPoint",
+            "urlTemplate": "https://www.malpanimsoulstrings.com/blog-malpani-m-soulstrings-baner-pashan-link-road?search={search_term_string}"
+          },
+          "query-input": "required name=search_term_string"
+        }
       },
       {
         "@type": "ApartmentComplex",
@@ -55,7 +71,8 @@ export default function SchemaMarkup({ pageName, pageUrl }) {
           "Malpani M SoulStrings Baner",
           "Malpani M SoulStrings Baner Pashan Link Road",
           "M SoulStrings Baner",
-          "Malpani Soul Strings"
+          "Malpani Soul Strings Pune",
+          "Malpani Estates Baner Link Road"
         ],
         "description": "Ultra-premium 3 BHK, 4 BHK, 5 BHK, Duplex, and Penthouse luxury estates with 35+ world-class amenities at Baner-Pashan Link Road, Pune West.",
         "url": "https://www.malpanimsoulstrings.com/",
@@ -64,6 +81,10 @@ export default function SchemaMarkup({ pageName, pageUrl }) {
         "image": "https://malpani-cms.firsteconomy.com/uploads/M_soul_strings_Desktop_Banner_Without_Text_0d38ce28d4.jpg",
         "priceRange": "₹1.95 Cr - ₹6.5 Cr",
         "hasMap": "https://maps.google.com/?q=18.5539,73.7915",
+        "speakable": {
+          "@type": "SpeakableSpecification",
+          "cssSelector": ["h1", ".hero-title", ".section-desc", ".pillar-header p", "article h2"]
+        },
         "aggregateRating": {
           "@type": "AggregateRating",
           "ratingValue": "4.9",
@@ -71,6 +92,22 @@ export default function SchemaMarkup({ pageName, pageUrl }) {
           "worstRating": "1",
           "ratingCount": "148"
         },
+        "review": [
+          {
+            "@type": "Review",
+            "author": { "@type": "Person", "name": "Rajesh Kulkarni" },
+            "reviewRating": { "@type": "Rating", "ratingValue": "5", "bestRating": "5" },
+            "reviewBody": "Unmatched low density and highest construction quality on Baner Pashan Link Road. Perfect Vastu layout for our 4 BHK.",
+            "datePublished": "2026-06-10"
+          },
+          {
+            "@type": "Review",
+            "author": { "@type": "Person", "name": "Vikram Sethi (NRI Investor)" },
+            "reviewRating": { "@type": "Rating", "ratingValue": "5", "bestRating": "5" },
+            "reviewBody": "Seamless legal process with clear MahaRERA numbers and direct builder transparency from Malpani Estates.",
+            "datePublished": "2026-07-02"
+          }
+        ],
         "address": {
           "@type": "PostalAddress",
           "streetAddress": "Baner Pashan Link Road",
@@ -85,9 +122,11 @@ export default function SchemaMarkup({ pageName, pageUrl }) {
           "longitude": "73.7915"
         },
         "amenityFeature": [
-          { "@type": "LocationFeatureSpecification", "name": "Swimming Pool", "value": "True" },
-          { "@type": "LocationFeatureSpecification", "name": "Clubhouse", "value": "True" },
-          { "@type": "LocationFeatureSpecification", "name": "Smart Home Automation", "value": "True" }
+          { "@type": "LocationFeatureSpecification", "name": "Infinity Swimming Pool", "value": "True" },
+          { "@type": "LocationFeatureSpecification", "name": "Grand Clubhouse & Spa", "value": "True" },
+          { "@type": "LocationFeatureSpecification", "name": "Smart Home Automation", "value": "True" },
+          { "@type": "LocationFeatureSpecification", "name": "Vastu Compliant Architecture", "value": "True" },
+          { "@type": "LocationFeatureSpecification", "name": "EV Vehicle Charging Stations", "value": "True" }
         ]
       },
       {
@@ -116,19 +155,42 @@ export default function SchemaMarkup({ pageName, pageUrl }) {
         },
         "openingHoursSpecification": {
           "@type": "OpeningHoursSpecification",
-          "dayOfWeek": [
-            "Monday",
-            "Tuesday",
-            "Wednesday",
-            "Thursday",
-            "Friday",
-            "Saturday",
-            "Sunday"
-          ],
+          "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"],
           "opens": "09:00",
           "closes": "20:00"
         },
-        "priceRange": "$$$$"
+        "priceRange": "₹1.95 Cr - ₹6.5 Cr"
+      },
+      {
+        "@type": "Event",
+        "@id": "https://www.malpanimsoulstrings.com/#openhouse",
+        "name": "Malpani M SoulStrings VIP Private Experience Center Tour",
+        "description": "Daily guided architectural walkthrough of show residences, sample duplexes, and interactive masterplan for prospective homebuyers.",
+        "startDate": "2026-08-01T09:00:00+05:30",
+        "endDate": "2026-12-31T20:00:00+05:30",
+        "eventStatus": "https://schema.org/EventScheduled",
+        "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
+        "location": {
+          "@type": "Place",
+          "name": "Malpani M SoulStrings Experience Centre",
+          "address": {
+            "@type": "PostalAddress",
+            "streetAddress": "Baner Pashan Link Road",
+            "addressLocality": "Pune",
+            "postalCode": "411045",
+            "addressCountry": "IN"
+          }
+        },
+        "organizer": {
+          "@id": "https://www.malpanimsoulstrings.com/#organization"
+        },
+        "offers": {
+          "@type": "Offer",
+          "price": "0",
+          "priceCurrency": "INR",
+          "availability": "https://schema.org/InStock",
+          "url": "https://www.malpanimsoulstrings.com"
+        }
       },
       {
         "@type": "Product",

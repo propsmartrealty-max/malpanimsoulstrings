@@ -8,6 +8,7 @@ import FloorPlanGallery from '@/components/FloorPlanGallery';
 import fs from 'fs';
 import path from 'path';
 import Link from 'next/link';
+import VastuAuditTool from '@/components/VastuAuditTool';
 
 export const metadata = {
   alternates: {
@@ -369,6 +370,17 @@ export default function Home() {
           {/* Google Maps Business Integration */}
           <div className="map-container" >
             <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15130.347895240974!2d73.7845347!3d18.547844!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bc2bee2a8439281%3A0xc3b8a1c9df2bd414!2sBaner%20-%20Pashan%20Link%20Rd%2C%20Pune%2C%20Maharashtra!5e0!3m2!1sen!2sin!4v1716487920330!5m2!1sen!2sin" width="100%" height="450"  allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="Malpani M SoulStrings Google Map Location"></iframe>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    {/* Interactive Vastu Audit Experience */}
+    <section id="vastu-tool" className="section" style={{ background: 'var(--color-background)', padding: '5rem 0', borderTop: '1px solid rgba(212,175,55,0.1)' }}>
+      <div className="container">
+        <div className="row justify-content-center">
+          <div className="col-lg-10">
+            <VastuAuditTool />
           </div>
         </div>
       </div>

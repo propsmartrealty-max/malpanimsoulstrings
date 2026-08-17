@@ -3,6 +3,7 @@
 import SchemaMarkup from '../../components/SchemaMarkup';
 import Image from 'next/image';
 import Link from 'next/link';
+import VastuAuditTool from '@/components/VastuAuditTool';
 
 export const metadata = {
   alternates: { canonical: '/vastu-compliant-luxury-homes-pune-malpani-m-soulstrings-baner-pashan-link-road' },
@@ -176,6 +177,10 @@ export default function VastuHomesPage() {
 
             <h2>The Financial ROI of Vastu Compliance</h2>
             <p>Beyond spiritual well-being, strict Vastu compliance has massive financial implications in the <strong>Baner Real Estate Market</strong>. Resale values for 100% Vastu-compliant luxury homes are consistently 15-20% higher than non-compliant properties, and they sell significantly faster on the secondary market.</p>
+            
+            <div className="my-5">
+              <VastuAuditTool />
+            </div>
             
             <div className="contact-box" style={{ background: 'var(--color-surface)', padding: '2rem', borderRadius: '12px', marginTop: '3rem', borderLeft: '4px solid var(--color-primary)' }}>
               <h3 style={{ marginTop: 0 }}>Step Into Positive Energy</h3>
