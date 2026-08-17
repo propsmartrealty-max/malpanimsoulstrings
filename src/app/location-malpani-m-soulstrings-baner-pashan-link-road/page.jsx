@@ -111,13 +111,14 @@ export default function LocationPage() {
             
             <div className="map-container fade-in-up" style={{ marginTop: '3rem', borderRadius: '16px', overflow: 'hidden', boxShadow: '0 10px 30px rgba(0,0,0,0.1)' }}>
               <iframe 
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15129.803923485458!2d73.77457781519777!3d18.553715383561957!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bc2bec70409d57b%3A0xc6e4eb5fb6354ee9!2sBaner%20-%20Pashan%20Link%20Rd%2C%20Pune%2C%20Maharashtra!5e0!3m2!1sen!2sin!4v1716982400000!5m2!1sen!2sin" 
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3782.2608460627766!2d73.78852000000001!3d18.5449193!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bc2bf7096fc9d67%3A0x286e77f435256d6!2sM-Soulstrings!5e0!3m2!1sen!2sin!4v1723900000000!5m2!1sen!2sin" 
                 width="100%" 
                 height="450" 
                 style={{ border: 0, display: 'block' }} 
                 allowFullScreen="" 
                 loading="lazy" 
-                referrerPolicy="no-referrer-when-downgrade">
+                referrerPolicy="no-referrer-when-downgrade"
+                title="Malpani M SoulStrings Official Google Maps Location">
               </iframe>
             </div>
           </article>

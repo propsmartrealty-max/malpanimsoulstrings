@@ -35,6 +35,7 @@ export default function SchemaMarkup({ pageName, pageUrl }) {
         "url": "https://www.malpanimsoulstrings.com/",
         "logo": "https://www.malpaniestates.com/assets/images/apple-touch-icon.png",
         "sameAs": [
+          "https://www.google.com/maps/place/M-Soulstrings/@18.5449193,73.7910949,17z/data=!3m1!4b1!4m6!3m5!1s0x3bc2bf7096fc9d67:0x286e77f435256d6!8m2!3d18.5449193!4d73.7910949!16s%2Fg%2F11l2r1p7gl",
           "https://www.facebook.com/malpanigroup/",
           "https://www.instagram.com/malpanigroup/",
           "https://twitter.com/malpani_group",
@@ -80,7 +81,10 @@ export default function SchemaMarkup({ pageName, pageUrl }) {
         "governmentIdentifier": "MahaRERA Registration: P52100076782 (Wing B), P52100055678 (Wing C)",
         "image": "https://malpani-cms.firsteconomy.com/uploads/M_soul_strings_Desktop_Banner_Without_Text_0d38ce28d4.jpg",
         "priceRange": "₹1.95 Cr - ₹6.5 Cr",
-        "hasMap": "https://maps.google.com/?q=18.5539,73.7915",
+        "hasMap": "https://www.google.com/maps/place/M-Soulstrings/@18.5449193,73.7910949,17z/data=!3m1!4b1!4m6!3m5!1s0x3bc2bf7096fc9d67:0x286e77f435256d6!8m2!3d18.5449193!4d73.7910949!16s%2Fg%2F11l2r1p7gl",
+        "sameAs": [
+          "https://www.google.com/maps/place/M-Soulstrings/@18.5449193,73.7910949,17z/data=!3m1!4b1!4m6!3m5!1s0x3bc2bf7096fc9d67:0x286e77f435256d6!8m2!3d18.5449193!4d73.7910949!16s%2Fg%2F11l2r1p7gl"
+        ],
         "speakable": {
           "@type": "SpeakableSpecification",
           "cssSelector": ["h1", ".hero-title", ".section-desc", ".pillar-header p", "article h2"]
@@ -118,8 +122,8 @@ export default function SchemaMarkup({ pageName, pageUrl }) {
         },
         "geo": {
           "@type": "GeoCoordinates",
-          "latitude": "18.5539",
-          "longitude": "73.7915"
+          "latitude": "18.5449193",
+          "longitude": "73.7910949"
         },
         "amenityFeature": [
           { "@type": "LocationFeatureSpecification", "name": "Infinity Swimming Pool", "value": "True" },
@@ -136,7 +140,7 @@ export default function SchemaMarkup({ pageName, pageUrl }) {
         "image": "https://malpani-cms.firsteconomy.com/uploads/M_soul_strings_Desktop_Banner_Without_Text_0d38ce28d4.jpg",
         "telephone": "+91 7744009295",
         "url": "https://www.malpanimsoulstrings.com/",
-        "hasMap": "https://maps.google.com/?q=18.553715,73.774577",
+        "hasMap": "https://www.google.com/maps/place/M-Soulstrings/@18.5449193,73.7910949,17z/data=!3m1!4b1!4m6!3m5!1s0x3bc2bf7096fc9d67:0x286e77f435256d6!8m2!3d18.5449193!4d73.7910949!16s%2Fg%2F11l2r1p7gl",
         "parentOrganization": { "@id": "https://www.malpanimsoulstrings.com/#organization" },
         "knowsAbout": { "@id": "https://www.malpanimsoulstrings.com/#apartmentcomplex" },
         "governmentIdentifier": "MahaRERA Registration: P52100076782, P52100055678",
@@ -150,8 +154,8 @@ export default function SchemaMarkup({ pageName, pageUrl }) {
         },
         "geo": {
           "@type": "GeoCoordinates",
-          "latitude": "18.553715",
-          "longitude": "73.774577"
+          "latitude": "18.5449193",
+          "longitude": "73.7910949"
         },
         "openingHoursSpecification": {
           "@type": "OpeningHoursSpecification",

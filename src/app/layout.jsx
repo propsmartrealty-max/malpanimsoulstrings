@@ -178,10 +178,11 @@ const orgSchema = {
     "postalCode": "411045",
     "addressCountry": "IN"
   },
+  "hasMap": "https://www.google.com/maps/place/M-Soulstrings/@18.5449193,73.7910949,17z/data=!3m1!4b1!4m6!3m5!1s0x3bc2bf7096fc9d67:0x286e77f435256d6!8m2!3d18.5449193!4d73.7910949!16s%2Fg%2F11l2r1p7gl",
   "geo": {
     "@type": "GeoCoordinates",
-    "latitude": 18.5539,
-    "longitude": 73.7915
+    "latitude": 18.5449193,
+    "longitude": 73.7910949
   },
   "openingHoursSpecification": {
     "@type": "OpeningHoursSpecification",
@@ -190,6 +191,7 @@ const orgSchema = {
     "closes": "20:00"
   },
   "sameAs": [
+    "https://www.google.com/maps/place/M-Soulstrings/@18.5449193,73.7910949,17z/data=!3m1!4b1!4m6!3m5!1s0x3bc2bf7096fc9d67:0x286e77f435256d6!8m2!3d18.5449193!4d73.7910949!16s%2Fg%2F11l2r1p7gl",
     "https://www.facebook.com/malpaniestates",
     "https://www.instagram.com/malpaniestates",
     "https://www.youtube.com/@malpaniestates",

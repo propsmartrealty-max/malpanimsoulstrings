@@ -415,7 +415,7 @@ export default async function ProgrammaticPage({ params }) {
           
           {/* Google Maps Business Integration */}
           <div className="map-container" >
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15130.347895240974!2d73.7845347!3d18.547844!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bc2bee2a8439281%3A0xc3b8a1c9df2bd414!2sBaner%20-%20Pashan%20Link%20Rd%2C%20Pune%2C%20Maharashtra!5e0!3m2!1sen!2sin!4v1716487920330!5m2!1sen!2sin" width="100%" height="450"  allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="Malpani M SoulStrings Google Map Location"></iframe>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3782.2608460627766!2d73.78852000000001!3d18.5449193!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bc2bf7096fc9d67%3A0x286e77f435256d6!2sM-Soulstrings!5e0!3m2!1sen!2sin!4v1723900000000!5m2!1sen!2sin" width="100%" height="450" allowFullScreen="" loading="lazy" referrerPolicy="no-referrer-when-downgrade" title="Malpani M SoulStrings Official Google Maps Location"></iframe>
           </div>
         </div>
       </div>
