@@ -71,5 +71,7 @@ jobs:
           fi
 
       - name: Push IndexNow Payload
-        run: node scripts/ping-sitemap.js
+        run: |
+          node scripts/ping-indexnow.js
+          node scripts/ping-sitemap.js
 
