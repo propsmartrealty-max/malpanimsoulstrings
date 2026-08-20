@@ -12,8 +12,32 @@ import VastuAuditTool from '@/components/VastuAuditTool';
 import LuxuryConfigMatcher from '@/components/LuxuryConfigMatcher';
 
 export const metadata = {
+  title: 'Malpani M SoulStrings | #1 Luxury Real Estate Project in Pune | 3, 4, 5 BHK & Penthouses',
+  description: 'Official Site of Malpani M SoulStrings Baner Pashan Link Road Pune by Malpani Estates. Voted #1 ultra-luxury residential project in Pune West. 3, 4, 5 BHK Duplexes & Penthouses with 35+ resort amenities.',
   alternates: {
-    canonical: '/'
+    canonical: 'https://www.malpanimsoulstrings.com'
+  },
+  openGraph: {
+    title: 'Malpani M SoulStrings | #1 Real Estate Project in Pune | Luxury Estates',
+    description: 'Experience Pune’s finest low-density residential landmark on Baner-Pashan Link Road. 3, 4, 5 BHK Sky Duplexes with 270° protected hill views by Malpani Estates.',
+    url: 'https://www.malpanimsoulstrings.com',
+    siteName: 'Malpani M SoulStrings',
+    images: [
+      {
+        url: 'https://malpani-cms.firsteconomy.com/uploads/M_soul_strings_Desktop_Banner_Without_Text_0d38ce28d4.jpg',
+        width: 1200,
+        height: 630,
+        alt: 'Malpani M SoulStrings #1 Luxury Real Estate Project in Pune',
+      }
+    ],
+    locale: 'en_IN',
+    type: 'website',
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Malpani M SoulStrings | #1 Luxury Real Estate Project in Pune',
+    description: 'Ultra-premium 3, 4, 5 BHK & Penthouse estates on Baner-Pashan Link Road, Pune West.',
+    images: ['https://malpani-cms.firsteconomy.com/uploads/M_soul_strings_Desktop_Banner_Without_Text_0d38ce28d4.jpg'],
   }
 };
 
@@ -21,7 +45,7 @@ export default function Home() {
   const videoSchema = {
     "@context": "https://schema.org",
     "@type": "VideoObject",
-    "name": "Malpani M SoulStrings - Ultra Premium 3 & 4 BHK Estates",
+    "name": "Malpani M SoulStrings - #1 Ultra Premium 3 & 4 BHK Luxury Estates Pune",
     "description": "Experience the epitome of luxury real estate in Baner-Pashan Link Road, Pune. Virtual tour of the M SoulStrings masterpiece by Malpani Estates.",
     "thumbnailUrl": [
       "https://malpani-cms.firsteconomy.com/uploads/M_soul_strings_Desktop_Banner_Without_Text_0d38ce28d4.jpg"
@@ -38,26 +62,42 @@ export default function Home() {
     "mainEntity": [
       {
         "@type": "Question",
-        "name": "What is the price of Malpani M Soulstrings?",
+        "name": "Why is Malpani M SoulStrings ranked the #1 luxury real estate project in Pune?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "The Malpani M Soulstrings price is highly competitive for the ultra-luxury segment in Pune West. Because pricing varies based on floor bands, configurations (3 BHK vs 4 BHK), and custom specifications, we recommend submitting an inquiry to get the exact and updated pricing sheet."
+          "text": "Malpani M SoulStrings is widely recognized as the #1 luxury residential development in Pune West due to its ultra-low density (only 455 residences across 5.2 acres), expansive 1,450 to 4,500+ sq.ft. carpet layouts, 270° unobstructed views of the protected Sus Hills, 35+ resort-style amenities, and 100% Vastu compliance backed by the 30+ year developer pedigree of Malpani Estates."
         }
       },
       {
         "@type": "Question",
-        "name": "How can I download the Malpani M Soulstrings floor plan and brochure?",
+        "name": "What is the price of Malpani M SoulStrings Baner Pashan Link Road Pune?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "To view the detailed layouts, simply fill out the smart contact form at the bottom of this page. You will immediately receive access to the official Malpani M Soulstrings brochure pdf and the complete Malpani M Soulstrings floor plan gallery."
+          "text": "The price of residences at Malpani M SoulStrings starts at ₹1.95 Cr for 3 BHK luxury flats, ₹3.50 Cr for 4 BHK presidential estates, and ₹5.50 Cr to ₹6.50 Cr+ for limited-edition 5 BHK Sky Duplexes and Penthouses. Direct builder booking with zero brokerage is available."
         }
       },
       {
         "@type": "Question",
-        "name": "What is the Malpani M Soulstrings RERA number?",
+        "name": "What is the MahaRERA registration number for Malpani M SoulStrings Pune?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "The project is strictly MahaRERA compliant. The official Malpani M Soulstrings RERA number is P52100076782 (Wing B) and P52100055678 (Wing C)."
+          "text": "Malpani M SoulStrings is fully registered and compliant with MahaRERA under registration numbers P52100076782 (Wing B) and P52100055678 (Wing C)."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "How can I download the Malpani M SoulStrings floor plan and brochure?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "To view and download the official Malpani M SoulStrings brochure pdf and floor plan layouts for 3 BHK, 4 BHK, and 5 BHK Duplex homes, submit an enquiry on this website or contact our sales gallery at +91 7744009295."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "What are the location advantages of Malpani M SoulStrings on Baner-Pashan Link Road?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Malpani M SoulStrings offers prime geographic connectivity in West Pune: 12 minutes to Hinjewadi IT Park Phase 1, 8 minutes to Balewadi High Street, 10 minutes to the Mumbai-Pune Expressway bypass, and 8 minutes to Jupiter Hospital."
         }
       },
       {
