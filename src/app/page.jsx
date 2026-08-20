@@ -11,6 +11,7 @@ import Link from 'next/link';
 import VastuAuditTool from '@/components/VastuAuditTool';
 import LuxuryConfigMatcher from '@/components/LuxuryConfigMatcher';
 import InteractiveSpatialCalculator from '@/components/InteractiveSpatialCalculator';
+import SunPathSimulator from '@/components/SunPathSimulator';
 
 export const metadata = {
   title: 'Malpani M SoulStrings | #1 Luxury Real Estate Project in Pune | 3, 4, 5 BHK & Penthouses',
@@ -446,12 +447,19 @@ export default function Home() {
           <p className="section-desc">Find your ideal configuration match and audit cardinal Vastu alignments in real time.</p>
         </div>
 
-        <div className="row g-4 justify-content-center">
+        <div className="row g-4 justify-content-center mb-5">
           <div className="col-lg-6">
             <LuxuryConfigMatcher />
           </div>
           <div className="col-lg-6">
             <VastuAuditTool />
+          </div>
+        </div>
+
+        {/* 270° Hill View Horizon & Sun Path Simulator */}
+        <div className="row justify-content-center">
+          <div className="col-lg-12">
+            <SunPathSimulator />
           </div>
         </div>
       </div>
