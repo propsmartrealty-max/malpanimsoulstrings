@@ -195,7 +195,7 @@ export default function Home() {
         </div>
         <div className="specs-grid fade-in-up" style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(250px, 1fr))', gap: '2rem' }}>
           <div className="spec-card loc-card spec-interactive" style={{ padding: '2.5rem', borderRadius: '12px', textAlign: 'center' }}>
-            <span className="material-symbols-outlined spec-icon" style={{ fontSize: '3rem', color: 'var(--color-primary)', marginBottom: '1rem', transition: 'all 0.3s ease' }}>floor</span>
+            <span className="material-symbols-outlined spec-icon" style={{ fontSize: '3rem', color: 'var(--color-primary)', marginBottom: '1rem', transition: 'all 0.3s ease' }}>layers</span>
             <h3 style={{ fontSize: '1.5rem', marginBottom: '1rem' }}>Premium Flooring</h3>
             <p style={{ color: 'var(--color-text-muted)', lineHeight: '1.6' }}>Imported Italian marble in the living and dining areas, accompanied by premium engineered wooden flooring in the master bedroom.</p>
           </div>
