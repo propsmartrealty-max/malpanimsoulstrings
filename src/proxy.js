@@ -8,9 +8,10 @@ export function proxy(request) {
   // This includes naked domains, staging domains (*.vercel.app), and any other aliases,
   // preventing duplicate indexing penalties and consolidating PageRank authority.
   const isLocalhost = host.includes('localhost') || host.includes('127.0.0.1');
+  const isVercelPreview = host.endsWith('.vercel.app');
   const canonicalHost = 'www.malpanimsoulstrings.com';
 
-  if (!isLocalhost && host !== canonicalHost) {
+  if (!isLocalhost && !isVercelPreview && host !== canonicalHost) {
     url.host = canonicalHost;
     url.protocol = 'https:'; // Force HTTPS redirect
     return NextResponse.redirect(url, 301);
