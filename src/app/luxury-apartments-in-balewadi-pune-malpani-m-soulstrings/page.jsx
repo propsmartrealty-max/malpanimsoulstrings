@@ -20,7 +20,7 @@ export const metadata = {
     siteName: 'Malpani M SoulStrings',
     images: [
       {
-        url: 'https://malpani-cms.firsteconomy.com/uploads/04_1_dfeed3efb5.png',
+        url: 'https://malpani-cms.firsteconomy.com/uploads/Entrance_Lobby_9d4d367801.png',
         width: 1200,
         height: 800,
         alt: 'Luxury Apartments in Balewadi Pune Alternative',

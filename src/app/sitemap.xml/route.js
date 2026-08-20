@@ -25,7 +25,7 @@ export async function GET() {
       { url: 'https://malpani-cms.firsteconomy.com/uploads/About_Project_27b8c57d51.png', title: 'Malpani M SoulStrings Sky Penthouses Baner Pashan Link Road' }
     ]},
     { route: '/location-malpani-m-soulstrings-baner-pashan-link-road', priority: 1.0, freq: 'daily', images: [
-      { url: 'https://malpani-cms.firsteconomy.com/uploads/04_1_dfeed3efb5.png', title: 'Malpani M SoulStrings Location Advantages Connectivity Map' }
+      { url: 'https://malpani-cms.firsteconomy.com/uploads/Entrance_Lobby_9d4d367801.png', title: 'Malpani M SoulStrings Grand Entrance Lobby Baner Pashan Link Road' }
     ]},
     { route: '/nri-investment-malpani-m-soulstrings-baner-pashan-link-road', priority: 1.0, freq: 'daily', images: [
       { url: 'https://malpani-cms.firsteconomy.com/uploads/M_soul_strings_Desktop_Banner_Without_Text_0d38ce28d4.jpg', title: 'NRI Luxury Real Estate Investment Guide Malpani M SoulStrings' }
