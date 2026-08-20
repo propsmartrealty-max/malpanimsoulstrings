@@ -10,6 +10,7 @@ import path from 'path';
 import Link from 'next/link';
 import VastuAuditTool from '@/components/VastuAuditTool';
 import LuxuryConfigMatcher from '@/components/LuxuryConfigMatcher';
+import InteractiveSpatialCalculator from '@/components/InteractiveSpatialCalculator';
 
 export const metadata = {
   title: 'Malpani M SoulStrings | #1 Luxury Real Estate Project in Pune | 3, 4, 5 BHK & Penthouses',
@@ -213,6 +214,11 @@ export default function Home() {
         {/* Interactive Floor Plan Gallery */}
         <div style={{ marginTop: '3rem', marginBottom: '3rem' }}>
           <FloorPlanGallery />
+        </div>
+
+        {/* Interactive Spatial Dimension Calculator */}
+        <div className="fade-in-up my-5">
+          <InteractiveSpatialCalculator />
         </div>
         
         <div className="vr-hub-container fade-in-up" style={{ marginTop: '4rem', textAlign: 'center' }}>
