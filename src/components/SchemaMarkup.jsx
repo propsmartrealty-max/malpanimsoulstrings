@@ -200,12 +200,16 @@ export default function SchemaMarkup({ pageName, pageUrl }) {
         "@type": "Product",
         "@id": "https://www.malpanimsoulstrings.com/#product",
         "name": "Ultra-Luxury Apartments at Malpani M SoulStrings",
-        "alternateName": "Malpani M SoulStrings Residences Baner Pashan Link Road",
+        "alternateName": "Malpani M SoulStrings Residences Baner Pashan Link Road Pune",
         "image": "https://malpani-cms.firsteconomy.com/uploads/M_soul_strings_Desktop_Banner_Without_Text_0d38ce28d4.jpg",
-        "description": "Ultra-premium 3 BHK, 4 BHK, 5 BHK, Duplex, and Penthouse luxury estates at Baner-Pashan Link Road by Malpani Estates.",
+        "description": "Ultra-premium 3 BHK, 4 BHK, 4.5 BHK, 5 BHK Sky Duplex, and Penthouse luxury estates at Baner-Pashan Link Road, Pune West by Malpani Estates.",
+        "sku": "MALPANI-MSOUL-2026",
+        "mpn": "P52100076782",
+        "category": "Real Estate > Residential Properties > Luxury Apartments",
         "brand": {
           "@type": "Brand",
-          "name": "Malpani Group"
+          "name": "Malpani Group",
+          "url": "https://www.malpanimsoulstrings.com"
         },
         "aggregateRating": {
           "@type": "AggregateRating",
@@ -220,34 +224,51 @@ export default function SchemaMarkup({ pageName, pageUrl }) {
           "priceCurrency": "INR",
           "lowPrice": "19500000",
           "highPrice": "65000000",
+          "price": "19500000",
+          "seller": {
+            "@type": "Organization",
+            "name": "Malpani Estates"
+          },
           "offers": [
             {
               "@type": "Offer",
-              "name": "3 BHK Premium Flats",
+              "name": "3 BHK Premium Luxury Flats",
+              "price": "19500000",
+              "priceCurrency": "INR",
               "url": "https://www.malpanimsoulstrings.com/3bhk-luxury-malpani-m-soulstrings-baner-pashan-link-road",
               "availability": "https://schema.org/InStock",
-              "itemCondition": "https://schema.org/NewCondition"
+              "itemCondition": "https://schema.org/NewCondition",
+              "seller": { "@type": "Organization", "name": "Malpani Estates" }
             },
             {
               "@type": "Offer",
-              "name": "4 BHK Premium Flats",
+              "name": "4 BHK Ultra-Luxury Presidential Flats",
+              "price": "35000000",
+              "priceCurrency": "INR",
               "url": "https://www.malpanimsoulstrings.com/4bhk-luxury-malpani-m-soulstrings-baner-pashan-link-road",
               "availability": "https://schema.org/InStock",
-              "itemCondition": "https://schema.org/NewCondition"
+              "itemCondition": "https://schema.org/NewCondition",
+              "seller": { "@type": "Organization", "name": "Malpani Estates" }
             },
             {
               "@type": "Offer",
-              "name": "5 BHK & Duplex Homes",
+              "name": "5 BHK Sky Duplex Homes",
+              "price": "55000000",
+              "priceCurrency": "INR",
               "url": "https://www.malpanimsoulstrings.com/5bhk-duplex-malpani-m-soulstrings-baner-pashan-link-road",
               "availability": "https://schema.org/InStock",
-              "itemCondition": "https://schema.org/NewCondition"
+              "itemCondition": "https://schema.org/NewCondition",
+              "seller": { "@type": "Organization", "name": "Malpani Estates" }
             },
             {
               "@type": "Offer",
-              "name": "Luxury Penthouses",
+              "name": "Luxury Sky Penthouses with Private Terrace",
+              "price": "65000000",
+              "priceCurrency": "INR",
               "url": "https://www.malpanimsoulstrings.com/penthouse-luxury-malpani-m-soulstrings-baner-pashan-link-road",
               "availability": "https://schema.org/InStock",
-              "itemCondition": "https://schema.org/NewCondition"
+              "itemCondition": "https://schema.org/NewCondition",
+              "seller": { "@type": "Organization", "name": "Malpani Estates" }
             }
           ]
         }
