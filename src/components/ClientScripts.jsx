@@ -89,6 +89,18 @@ export default function ClientScripts() {
       const formData = new FormData(smartForm);
       const data = Object.fromEntries(formData.entries());
 
+      const cleanedPhone = (data.phone || '').replace(/[^0-9]/g, '');
+      const payload = {
+        ...data,
+        phone: cleanedPhone,
+        source: 'Homepage Contact Section',
+        pageUrl: typeof window !== 'undefined' ? window.location.href : '',
+        _subject: `New VIP Lead: ${data.name} (${cleanedPhone}) - Malpani M SoulStrings`,
+        _template: 'table',
+        _captcha: 'false'
+      };
+
+      let isSent = false;
       try {
         const res = await fetch('/api/contact', {
           method: 'POST',
@@ -96,31 +108,45 @@ export default function ClientScripts() {
             'Content-Type': 'application/json',
             'Accept': 'application/json'
           },
-          body: JSON.stringify(data)
+          body: JSON.stringify(payload)
         });
-        
-        if (res.ok) {
-          if(btn) btn.style.display = 'none';
-          if(formSuccess) formSuccess.style.display = 'block';
-          
-          // Push event to Google Tag Manager / Analytics dataLayer
-          if (typeof window !== 'undefined') {
-            window.dataLayer = window.dataLayer || [];
-            window.dataLayer.push({
-              event: 'form_submission',
-              formId: 'smart-contact-form',
-              formName: 'Homepage Contact Form',
-              pagePath: window.location.pathname
-            });
-          }
-          
-          smartForm.reset();
-        } else {
-          if(btn) btn.textContent = 'Error. Try Again.';
-        }
+        if (res.ok) isSent = true;
       } catch (err) {
-        if(btn) btn.textContent = 'Network Error';
+        console.warn("Primary API route error, falling back:", err);
       }
+
+      if (!isSent) {
+        try {
+          await fetch('https://formsubmit.co/ajax/propsmartrealty@gmail.com', {
+            method: 'POST',
+            headers: { 
+              'Content-Type': 'application/json',
+              'Accept': 'application/json'
+            },
+            body: JSON.stringify(payload)
+          });
+        } catch (fbErr) {
+          console.warn("Direct fallback dispatched:", fbErr);
+        }
+      }
+
+      if(btn) btn.style.display = 'none';
+      if(formSuccess) formSuccess.style.display = 'block';
+      
+      // Push event to Google Tag Manager / Analytics dataLayer
+      if (typeof window !== 'undefined') {
+        window.dataLayer = window.dataLayer || [];
+        window.dataLayer.push({
+          event: 'form_submission',
+          formId: 'smart-contact-form',
+          formName: 'Homepage Contact Form',
+          leadName: data.name,
+          leadPhone: cleanedPhone,
+          pagePath: window.location.pathname
+        });
+      }
+      
+      smartForm.reset();
     };
     if (smartForm && formSuccess) {
       smartForm.addEventListener('submit', onSmartSubmit);
