@@ -53,10 +53,10 @@ export async function POST(request) {
       );
     }
 
-    // Sanitize name: allow letters, spaces, dots, hyphens, and apostrophes
-    const nameRegex = /^[a-zA-Z\s.'-]+$/;
-    if (!nameRegex.test(data.name.trim())) {
-      return NextResponse.json({ error: 'Invalid name format. Only letters and standard characters allowed.' }, { status: 400 });
+    // Sanitize name: ensure non-empty string and strip any raw HTML tags
+    const sanitizedName = data.name.toString().replace(/<[^>]*>?/gm, '').trim();
+    if (sanitizedName.length < 2) {
+      return NextResponse.json({ error: 'Please enter a valid full name.' }, { status: 400 });
     }
 
     // Sanitize phone: digits only, at least 10 digits
