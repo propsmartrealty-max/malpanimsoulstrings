@@ -121,6 +121,27 @@ export default function LocationPage() {
                 title="Malpani M SoulStrings Official Google Maps Location">
               </iframe>
             </div>
+
+            <div className="d-flex flex-wrap gap-3 align-items-center mt-3 pt-2">
+              <a 
+                href="https://www.google.com/maps/place/M-Soulstrings/@18.5449193,73.78852,880m/data=!3m2!1e3!4b1!4m6!3m5!1s0x3bc2bf7096fc9d67:0x286e77f435256d6!8m2!3d18.5449193!4d73.7910949!16s%2Fg%2F11l2r1p7gl" 
+                target="_blank" 
+                rel="noopener noreferrer" 
+                className="btn btn-outline-primary btn-sm px-3 py-2"
+                style={{ borderRadius: '25px', borderColor: 'var(--color-primary)', color: '#fff', fontSize: '0.85rem' }}
+              >
+                📍 Open in Google Maps
+              </a>
+              <a 
+                href="https://www.google.com/maps/dir//M-Soulstrings/@18.5449193,73.7910949,17z" 
+                target="_blank" 
+                rel="noopener noreferrer" 
+                className="btn btn-primary btn-sm px-3 py-2"
+                style={{ borderRadius: '25px', fontWeight: 'bold', fontSize: '0.85rem' }}
+              >
+                🚗 Get Driving Directions
+              </a>
+            </div>
           </article>
 
           <aside className="sidebar">

@@ -430,6 +430,28 @@ export default function Home() {
           <div className="map-container" >
             <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3782.2608460627766!2d73.78852000000001!3d18.5449193!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bc2bf7096fc9d67%3A0x286e77f435256d6!2sM-Soulstrings!5e0!3m2!1sen!2sin!4v1723900000000!5m2!1sen!2sin" width="100%" height="450" allowFullScreen="" loading="lazy" referrerPolicy="no-referrer-when-downgrade" title="Malpani M SoulStrings Official Google Maps Location"></iframe>
           </div>
+
+          {/* Official Google Business Profile Action Bar */}
+          <div className="d-flex flex-wrap gap-3 justify-content-center align-items-center mt-3 pt-2">
+            <a 
+              href="https://www.google.com/maps/place/M-Soulstrings/@18.5449193,73.78852,880m/data=!3m2!1e3!4b1!4m6!3m5!1s0x3bc2bf7096fc9d67:0x286e77f435256d6!8m2!3d18.5449193!4d73.7910949!16s%2Fg%2F11l2r1p7gl" 
+              target="_blank" 
+              rel="noopener noreferrer" 
+              className="btn btn-outline-primary btn-sm px-3 py-2"
+              style={{ borderRadius: '25px', borderColor: 'var(--color-primary)', color: '#fff', fontSize: '0.85rem' }}
+            >
+              📍 View Official Listing on Google Maps
+            </a>
+            <a 
+              href="https://www.google.com/maps/dir//M-Soulstrings/@18.5449193,73.7910949,17z" 
+              target="_blank" 
+              rel="noopener noreferrer" 
+              className="btn btn-primary btn-sm px-3 py-2"
+              style={{ borderRadius: '25px', fontWeight: 'bold', fontSize: '0.85rem' }}
+            >
+              🚗 Get Live Driving Directions
+            </a>
+          </div>
         </div>
       </div>
     </section>
