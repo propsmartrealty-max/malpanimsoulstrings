@@ -13,7 +13,14 @@ export default function Footer() {
                   </p>
                   <div className="mt-3" style={{ fontSize: '0.85rem', color: 'rgba(212,175,55,0.85)' }}>
                     <div><strong>MahaRERA Registration:</strong></div>
-                    <div>Wing B: P52100076782 | Wing C: P52100055678</div>
+                    <div>
+                      Wing B: <a href="https://maharera.maharashtra.gov.in" target="_blank" rel="noopener noreferrer" style={{ color: '#d4af37', textDecoration: 'underline' }}>P52100076782</a> | Wing C: <a href="https://maharera.maharashtra.gov.in" target="_blank" rel="noopener noreferrer" style={{ color: '#d4af37', textDecoration: 'underline' }}>P52100055678</a>
+                    </div>
+                    <div className="mt-2">
+                      <a href="https://www.google.com/maps/dir//M-Soulstrings/@18.5449193,73.7910949,17z" target="_blank" rel="noopener noreferrer" style={{ color: '#fff', fontSize: '0.82rem', textDecoration: 'none', background: 'rgba(212,175,55,0.15)', padding: '5px 12px', borderRadius: '6px', border: '1px solid rgba(212,175,55,0.3)', display: 'inline-block' }}>
+                        📍 Get Driving Directions (Google Maps)
+                      </a>
+                    </div>
                     <div className="mt-1" style={{ color: 'rgba(255,255,255,0.4)', fontSize: '0.78rem' }}>Google Knowledge Graph ID: /g/11l2r1p7gl</div>
                   </div>
               </div>
@@ -186,7 +193,9 @@ export default function Footer() {
                     <tbody>
                       <tr style={{ borderBottom: '1px solid rgba(255,255,255,0.1)' }}>
                         <td style={{ padding: '0.6rem 0', fontWeight: '600', color: '#d4af37' }}>MahaRERA Registration</td>
-                        <td style={{ padding: '0.6rem 0' }}>P52100076782 (Wing B) | P52100055678 (Wing C)</td>
+                        <td style={{ padding: '0.6rem 0' }}>
+                          <a href="https://maharera.maharashtra.gov.in" target="_blank" rel="noopener noreferrer" style={{ color: '#fff', textDecoration: 'underline' }}>P52100076782 (Wing B)</a> | <a href="https://maharera.maharashtra.gov.in" target="_blank" rel="noopener noreferrer" style={{ color: '#fff', textDecoration: 'underline' }}>P52100055678 (Wing C)</a>
+                        </td>
                       </tr>
                       <tr style={{ borderBottom: '1px solid rgba(255,255,255,0.1)' }}>
                         <td style={{ padding: '0.6rem 0', fontWeight: '600', color: '#d4af37' }}>Land Parcel &amp; Density</td>

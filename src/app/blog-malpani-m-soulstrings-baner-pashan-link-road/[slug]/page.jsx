@@ -164,9 +164,16 @@ export default async function BlogPost({ params }) {
     "description": articleDescription,
     "url": `https://www.malpanimsoulstrings.com/blog-malpani-m-soulstrings-baner-pashan-link-road/${slug}`,
     "datePublished": stats ? stats.birthtime.toISOString() : new Date().toISOString(),
-    "dateModified": stats ? stats.mtime.toISOString() : new Date().toISOString(),
     "author": {
-      "@id": "https://www.malpanimsoulstrings.com/#organization"
+      "@type": "Person",
+      "name": "Ar. Rohit Sharma",
+      "jobTitle": "Principal Real Estate & Architectural Analyst",
+      "worksFor": {
+        "@type": "Organization",
+        "name": "Malpani Estates",
+        "url": "https://www.malpanimsoulstrings.com"
+      },
+      "url": "https://www.malpanimsoulstrings.com/about-malpani-estates-pune"
     },
     "publisher": {
       "@id": "https://www.malpanimsoulstrings.com/#organization"

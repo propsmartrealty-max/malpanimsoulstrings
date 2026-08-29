@@ -227,6 +227,12 @@ export default function RootLayout({ children }) {
         <GoogleTagManager gtmId="GTM-XXXXXXX" />
       */}
       <head>
+        {/* Geographic Meta Tags for Google Local & Maps Domination */}
+        <meta name="geo.region" content="IN-MH" />
+        <meta name="geo.placename" content="Baner, Pune" />
+        <meta name="geo.position" content="18.544919;73.791095" />
+        <meta name="ICBM" content="18.544919, 73.791095" />
+
         {/* LCP Optimization for Top Google Core Web Vitals Ranking */}
         <link rel="preload" as="image" href="https://malpani-cms.firsteconomy.com/uploads/M_soul_strings_Desktop_Banner_Without_Text_0d38ce28d4.jpg" fetchPriority="high" />
         

@@ -11,6 +11,16 @@ export async function GET() {
       { url: 'https://malpani-cms.firsteconomy.com/uploads/M_soul_strings_Desktop_Banner_Without_Text_0d38ce28d4.jpg', title: 'Malpani M SoulStrings Hero Banner Baner Pashan Link Road Pune' },
       { url: 'https://malpani-cms.firsteconomy.com/uploads/About_Project_27b8c57d51.png', title: 'Malpani M SoulStrings Architectural Elevation Masterpiece' },
       { url: 'https://malpani-cms.firsteconomy.com/uploads/Entrance_Lobby_9d4d367801.png', title: 'Malpani M SoulStrings Grand Double Height Entrance Lobby' }
+    ], videos: [
+      {
+        thumbnail: 'https://malpani-cms.firsteconomy.com/uploads/M_soul_strings_Desktop_Banner_Without_Text_0d38ce28d4.jpg',
+        title: 'Malpani M SoulStrings - Ultra Premium 3 & 4 BHK Estates Pune Walkthrough',
+        description: 'Experience the epitome of luxury real estate on Baner-Pashan Link Road, Pune. 4K virtual tour of Malpani M SoulStrings by Malpani Estates.',
+        contentUrl: 'https://malpani-cms.firsteconomy.com/uploads/video_51_98e1310033.mp4',
+        playerUrl: 'https://malpani-cms.firsteconomy.com/uploads/video_51_98e1310033.mp4',
+        duration: 30,
+        publicationDate: '2024-05-01T08:00:00+08:00'
+      }
     ]},
     { route: '/3bhk-luxury-malpani-m-soulstrings-baner-pashan-link-road', priority: 1.0, freq: 'daily', images: [
       { url: 'https://malpani-cms.firsteconomy.com/uploads/01_1_97625c7cd6.png', title: 'Malpani M SoulStrings 3 BHK Luxury Apartments Floor Plan Pune' }
@@ -93,7 +103,7 @@ export async function GET() {
     ...tier2,
     ...tier3,
     ...tier4
-  ].map(({ route, priority, freq, images }) => {
+  ].map(({ route, priority, freq, images, videos }) => {
     const imagesXml = images ? images.map(img => `
     <image:image>
       <image:loc>${img.url}</image:loc>
@@ -103,12 +113,24 @@ export async function GET() {
       <image:license>${baseUrl}</image:license>
     </image:image>`).join('') : '';
 
+    const videosXml = videos ? videos.map(vid => `
+    <video:video>
+      <video:thumbnail_loc>${vid.thumbnail}</video:thumbnail_loc>
+      <video:title>${vid.title}</video:title>
+      <video:description>${vid.description}</video:description>
+      <video:content_loc>${vid.contentUrl}</video:content_loc>
+      <video:player_loc>${vid.playerUrl}</video:player_loc>
+      <video:duration>${vid.duration}</video:duration>
+      <video:publication_date>${vid.publicationDate}</video:publication_date>
+      <video:family_friendly>yes</video:family_friendly>
+    </video:video>`).join('') : '';
+
     return `
   <url>
     <loc>${baseUrl}${route}</loc>
     <lastmod>${new Date().toISOString()}</lastmod>
     <changefreq>${freq}</changefreq>
-    <priority>${priority}</priority>${imagesXml}
+    <priority>${priority}</priority>${imagesXml}${videosXml}
   </url>`;
   });
 
@@ -157,7 +179,8 @@ export async function GET() {
 
   const xml = `<?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
-        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
+        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1"
+        xmlns:video="http://www.google.com/schemas/sitemap-video/1.1">
   ${[...staticItems, ...blogItems, ...discoverItems].join('')}
 </urlset>`;
 
