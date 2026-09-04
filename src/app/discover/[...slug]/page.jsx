@@ -377,7 +377,7 @@ export default async function ProgrammaticPage({ params }) {
     </section>
 
     {/* Location Section */}
-    <section id="location" className="section location" itemscope itemtype="https://schema.org/Place">
+    <section id="location" className="section location" itemScope itemType="https://schema.org/Place">
       <div className="container">
         <div className="section-header fade-in-up">
           <h2 className="section-title">A Prestigious Address at Malpani M SoulStrings Baner Pashan Link Road</h2>

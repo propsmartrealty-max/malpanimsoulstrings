@@ -10,9 +10,13 @@ export default function ClientScripts() {
     // Preloader Logic
     const preloader = document.getElementById('preloader');
     if (preloader) {
+      preloader.classList.add('loaded');
       preloader.style.opacity = '0';
       preloader.style.visibility = 'hidden';
-      setTimeout(() => preloader.remove(), 800);
+      preloader.style.pointerEvents = 'none';
+      setTimeout(() => {
+        if (preloader) preloader.style.display = 'none';
+      }, 400);
     }
 
     // Navbar scroll effect & Parallax
@@ -90,10 +94,11 @@ export default function ClientScripts() {
       const data = Object.fromEntries(formData.entries());
 
       const cleanedPhone = (data.phone || '').replace(/[^0-9]/g, '');
+      const currentPath = typeof window !== 'undefined' ? window.location.pathname : '';
       const payload = {
         ...data,
         phone: cleanedPhone,
-        source: 'Homepage Contact Section',
+        source: currentPath === '/' ? 'Homepage Contact Form' : `Page Contact Form (${currentPath})`,
         pageUrl: typeof window !== 'undefined' ? window.location.href : '',
         _subject: `New VIP Lead: ${data.name} (${cleanedPhone}) - Malpani M SoulStrings`,
         _template: 'table',

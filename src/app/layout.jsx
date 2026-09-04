@@ -220,7 +220,7 @@ const websiteSchema = {
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="en" className={`${inter.variable} ${playfair.variable}`}>
+    <html lang="en" className={`${inter.variable} ${playfair.variable}`} suppressHydrationWarning>
       {/* 
         DISABLED TO PREVENT CORE WEB VITALS JS PENALTIES 
         Uncomment when real API keys are provided by the user.
@@ -240,10 +240,6 @@ export default function RootLayout({ children }) {
         <link rel="preconnect" href="https://fonts.googleapis.com" crossOrigin="anonymous" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
         <link rel="preconnect" href="https://cdn.jsdelivr.net" crossOrigin="anonymous" />
-        
-        <link rel="preload" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" as="style" />
-        <link rel="preload" href="/style.css" as="style" />
-        
         {/* Material Symbols Outlined Icon Font */}
         {/* eslint-disable-next-line @next/next/no-page-custom-font */}
         <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&display=block" />
@@ -290,6 +286,30 @@ export default function RootLayout({ children }) {
         <div id="preloader">
           <Image src="/icon.png" className="preloader-logo" alt="Malpani M SoulStrings Baner Pashan Link Road Pune" width={120} height={120} priority />
         </div>
+        <script
+          dangerouslySetInnerHTML={{
+            __html: `
+              (function() {
+                function dismissPreloader() {
+                  var el = document.getElementById('preloader');
+                  if (el) {
+                    el.classList.add('loaded');
+                    el.style.opacity = '0';
+                    el.style.visibility = 'hidden';
+                    el.style.pointerEvents = 'none';
+                    setTimeout(function() { if (el) el.style.display = 'none'; }, 500);
+                  }
+                }
+                if (document.readyState === 'complete') {
+                  setTimeout(dismissPreloader, 150);
+                } else {
+                  window.addEventListener('load', function() { setTimeout(dismissPreloader, 150); });
+                  setTimeout(dismissPreloader, 1000);
+                }
+              })();
+            `
+          }}
+        />
         <Navbar />
         <ThemeProvider>{children}</ThemeProvider>
         <ExitIntentModal />

@@ -70,6 +70,7 @@ export async function POST(request) {
       email: (data.email || 'Not Provided').trim(),
       phone: cleanedPhone,
       source: data.source || 'Malpani M SoulStrings Official Website',
+      pageUrl: (data.pageUrl || '').trim(),
       timestamp: new Date().toISOString(),
       _subject: `New VIP Enquiry: ${data.name.trim()} (${cleanedPhone}) - Malpani M SoulStrings`,
       _template: 'table',

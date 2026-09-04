@@ -1,0 +1,24 @@
+# Cloudflare Pages 301 Permanent Redirects
+
+/index.html / 301
+/4bhk-luxury-apartments-in-baner.html /4bhk-luxury-malpani-m-soulstrings-baner-pashan-link-road 301
+/amenities.html /amenities-malpani-m-soulstrings-baner-pashan-link-road 301
+/infrastructure.html /infrastructure-malpani-m-soulstrings-baner-pashan-link-road 301
+/location.html /location-malpani-m-soulstrings-baner-pashan-link-road 301
+/nri-investment.html /nri-investment-malpani-m-soulstrings-baner-pashan-link-road 301
+/market-analysis.html /market-analysis-malpani-m-soulstrings-baner-pashan-link-road 301
+/baner-overview.html /baner-overview-malpani-m-soulstrings-baner-pashan-link-road 301
+/shivajinagar-flats.html /shivajinagar-malpani-m-soulstrings-baner-pashan-link-road 301
+/aundh-properties.html /aundh-malpani-m-soulstrings-baner-pashan-link-road 301
+/pashan-link-road.html /pashan-malpani-m-soulstrings-baner-pashan-link-road 301
+
+# Clean URL Aliases
+/3bhk-luxury /3bhk-luxury-malpani-m-soulstrings-baner-pashan-link-road 301
+/4bhk-luxury /4bhk-luxury-malpani-m-soulstrings-baner-pashan-link-road 301
+/5bhk-duplex /5bhk-duplex-malpani-m-soulstrings-baner-pashan-link-road 301
+/penthouse-luxury /penthouse-luxury-malpani-m-soulstrings-baner-pashan-link-road 301
+/location /location-malpani-m-soulstrings-baner-pashan-link-road 301
+/nri-investment /nri-investment-malpani-m-soulstrings-baner-pashan-link-road 301
+/amenities /amenities-malpani-m-soulstrings-baner-pashan-link-road 301
+/infrastructure /infrastructure-malpani-m-soulstrings-baner-pashan-link-road 301
+/baner-overview /baner-overview-malpani-m-soulstrings-baner-pashan-link-road 301

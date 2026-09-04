@@ -38,8 +38,8 @@ self.addEventListener('fetch', (event) => {
   const url = new URL(event.request.url);
   if (!url.protocol.startsWith('http')) return;
 
-  // Exclude API requests
-  if (url.pathname.includes('/api/')) return;
+  // Exclude localhost, internal Next.js dev chunks, and API requests
+  if (url.hostname === 'localhost' || url.hostname === '127.0.0.1' || url.pathname.startsWith('/_next/') || url.pathname.includes('/api/')) return;
 
   // Stale-While-Revalidate strategy for static resources, HTML, fonts, and images
   event.respondWith(
