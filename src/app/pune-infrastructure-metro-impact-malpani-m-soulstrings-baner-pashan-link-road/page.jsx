@@ -60,8 +60,17 @@ export default function PuneInfrastructurePage() {
     "@type": "Article",
     "headline": "The Impact of Pune Infrastructure on Real Estate in 2026",
     "description": "Analysis of Pune Metro Line 3 and Ring Road impact on West Pune real estate appreciation.",
+    "image": ["https://malpani-cms.firsteconomy.com/uploads/About_Project_27b8c57d51.png"],
     "author": { "@type": "Organization", "name": "Malpani Estates Market Research" },
-    "publisher": { "@type": "Organization", "name": "Malpani Estates" },
+    "publisher": {
+      "@type": "Organization",
+      "name": "Malpani Estates",
+      "url": "https://www.malpanimsoulstrings.com",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://www.malpanimsoulstrings.com/icon.png"
+      }
+    },
     "datePublished": "2024-05-01T08:00:00+08:00",
     "dateModified": new Date().toISOString()
   };

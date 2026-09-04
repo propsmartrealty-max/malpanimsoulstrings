@@ -30,8 +30,17 @@ export default function GatedCommunitiesPage() {
     "@type": "Article",
     "headline": "The Rise of Luxury Gated Communities in Pune West",
     "description": "Why high-net-worth buyers and families choose low-density, secure gated communities on the Baner-Pashan corridor in Pune.",
+    "image": ["https://malpani-cms.firsteconomy.com/uploads/M_soul_strings_Desktop_Banner_Without_Text_0d38ce28d4.jpg"],
     "author": { "@type": "Organization", "name": "Residential Lifestyle Researcher" },
-    "publisher": { "@type": "Organization", "name": "Malpani Estates" },
+    "publisher": {
+      "@type": "Organization",
+      "name": "Malpani Estates",
+      "url": "https://www.malpanimsoulstrings.com",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://www.malpanimsoulstrings.com/icon.png"
+      }
+    },
     "datePublished": "2026-06-25T12:00:00+05:30",
     "dateModified": new Date().toISOString()
   };

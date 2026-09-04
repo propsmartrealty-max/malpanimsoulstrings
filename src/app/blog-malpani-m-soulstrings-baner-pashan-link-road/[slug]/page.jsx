@@ -180,7 +180,13 @@ export default async function BlogPost({ params }) {
       "url": "https://www.malpanimsoulstrings.com/about-malpani-estates-pune"
     },
     "publisher": {
-      "@id": "https://www.malpanimsoulstrings.com/#organization"
+      "@type": "Organization",
+      "name": "Malpani Estates",
+      "url": "https://www.malpanimsoulstrings.com",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://www.malpanimsoulstrings.com/icon.png"
+      }
     },
     "mainEntityOfPage": {
       "@type": "WebPage",

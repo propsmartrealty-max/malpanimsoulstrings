@@ -33,8 +33,17 @@ export default function ITHomesPage() {
     "@type": "Article",
     "headline": "The IT Executive’s Guide to Luxury Living in West Pune",
     "description": "Why top IT executives in Pune choose Malpani M SoulStrings for zero-commute, smart-integrated luxury flats near Hinjewadi and Baner.",
+    "image": ["https://malpani-cms.firsteconomy.com/uploads/M_soul_strings_Desktop_Banner_Without_Text_0d38ce28d4.jpg"],
     "author": { "@type": "Organization", "name": "Malpani Estates Market Research" },
-    "publisher": { "@type": "Organization", "name": "Malpani Estates" },
+    "publisher": {
+      "@type": "Organization",
+      "name": "Malpani Estates",
+      "url": "https://www.malpanimsoulstrings.com",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://www.malpanimsoulstrings.com/icon.png"
+      }
+    },
     "datePublished": "2024-05-01T08:00:00+08:00",
     "dateModified": new Date().toISOString()
   };

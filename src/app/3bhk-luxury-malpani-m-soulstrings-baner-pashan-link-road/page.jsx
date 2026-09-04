@@ -54,17 +54,38 @@ export default function ThreeBhkLuxuryPage() {
       "https://malpani-cms.firsteconomy.com/uploads/01_1_97625c7cd6.png"
     ],
     "description": "Premium 3 BHK luxury apartment on the Baner-Pashan Link Road, Pune. Features smart home automation, expansive decks, and Vastu-compliant layouts.",
+    "sku": "MALPANI-MSOUL-3BHK",
+    "mpn": "P52100076782",
     "brand": {
       "@type": "Brand",
       "name": "Malpani Estates"
     },
     "offers": {
       "@type": "Offer",
-      "url": "https://www.malpanimsoulstrings.com/3bhk-luxury",
+      "url": "https://www.malpanimsoulstrings.com/3bhk-luxury-malpani-m-soulstrings-baner-pashan-link-road",
       "priceCurrency": "INR",
-      "price": "23000000",
+      "price": "19500000",
+      "priceValidUntil": "2026-12-31",
       "itemCondition": "https://schema.org/NewCondition",
       "availability": "https://schema.org/InStock",
+      "hasMerchantReturnPolicy": {
+        "@type": "MerchantReturnPolicy",
+        "applicableCountry": "IN",
+        "returnPolicyCategory": "https://schema.org/MerchantReturnNotPermitted",
+        "merchantReturnLink": "https://www.malpanimsoulstrings.com/terms-and-conditions"
+      },
+      "shippingDetails": {
+        "@type": "OfferShippingDetails",
+        "shippingRate": {
+          "@type": "MonetaryAmount",
+          "value": "0",
+          "currency": "INR"
+        },
+        "shippingDestination": {
+          "@type": "DefinedRegion",
+          "addressCountry": "IN"
+        }
+      },
       "seller": {
         "@type": "Organization",
         "name": "Malpani Estates"
@@ -73,6 +94,8 @@ export default function ThreeBhkLuxuryPage() {
     "aggregateRating": {
       "@type": "AggregateRating",
       "ratingValue": "4.8",
+      "bestRating": "5",
+      "worstRating": "1",
       "reviewCount": "104"
     }
   };

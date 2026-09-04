@@ -60,17 +60,38 @@ export default function FiveBhkDuplexPage() {
       "https://malpani-cms.firsteconomy.com/uploads/02_1_fccd839fae.png"
     ],
     "description": "Ultra-luxury 5 BHK Duplex sky villa on the Baner-Pashan Link Road, Pune. Emphasizes low-density architecture, double-height terraces, and Vastu compliance.",
+    "sku": "MALPANI-MSOUL-5BHK",
+    "mpn": "P52100076782",
     "brand": {
       "@type": "Brand",
       "name": "Malpani Estates"
     },
     "offers": {
       "@type": "Offer",
-      "url": "https://www.malpanimsoulstrings.com/5bhk-duplex",
+      "url": "https://www.malpanimsoulstrings.com/5bhk-duplex-malpani-m-soulstrings-baner-pashan-link-road",
       "priceCurrency": "INR",
       "price": "58000000",
+      "priceValidUntil": "2026-12-31",
       "itemCondition": "https://schema.org/NewCondition",
       "availability": "https://schema.org/InStock",
+      "hasMerchantReturnPolicy": {
+        "@type": "MerchantReturnPolicy",
+        "applicableCountry": "IN",
+        "returnPolicyCategory": "https://schema.org/MerchantReturnNotPermitted",
+        "merchantReturnLink": "https://www.malpanimsoulstrings.com/terms-and-conditions"
+      },
+      "shippingDetails": {
+        "@type": "OfferShippingDetails",
+        "shippingRate": {
+          "@type": "MonetaryAmount",
+          "value": "0",
+          "currency": "INR"
+        },
+        "shippingDestination": {
+          "@type": "DefinedRegion",
+          "addressCountry": "IN"
+        }
+      },
       "seller": {
         "@type": "Organization",
         "name": "Malpani Estates"
@@ -79,6 +100,8 @@ export default function FiveBhkDuplexPage() {
     "aggregateRating": {
       "@type": "AggregateRating",
       "ratingValue": "4.9",
+      "bestRating": "5",
+      "worstRating": "1",
       "reviewCount": "62"
     }
   };
