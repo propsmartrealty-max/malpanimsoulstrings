@@ -38,6 +38,14 @@ const STATIC_PATHS = [
   '/luxury-gated-community-apartments-pune-west-malpani-m-soulstrings',
   '/invest-in-malpani-estates-pune-growth-corridors',
   '/malpani-m-soulstrings-construction-status-updates-possession',
+  '/flats-near-hinjewadi-it-park-pune-malpani-m-soulstrings',
+  '/luxury-apartments-in-balewadi-pune-malpani-m-soulstrings',
+  '/premium-residences-near-aundh-pune-malpani-m-soulstrings',
+  '/wakad-to-baner-real-estate-upgrade-malpani-m-soulstrings',
+  '/pashan-sus-road-luxury-projects-malpani-m-soulstrings',
+  '/about-malpani-estates-pune',
+  '/press-malpani-estates-baner-pune',
+  '/sitemap-malpani-m-soulstrings-baner-pashan-link-road',
   '/privacy-policy',
   '/terms-and-conditions'
 ];

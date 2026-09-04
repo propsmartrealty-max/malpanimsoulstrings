@@ -48,3 +48,9 @@
 /pashan-sus-road-luxury-projects /pashan-sus-road-luxury-projects-malpani-m-soulstrings 301
 /flat-rates-price-trends-baner-pashan-link-road-pune /flat-rates-price-trends-baner-pashan-link-road-malpani-m-soulstrings 301
 /luxury-gated-community-apartments-for-sale-pune-west /luxury-gated-community-apartments-pune-west-malpani-m-soulstrings 301
+
+# Legacy Sitemap Redirects to Canonical Sitemap
+/sitemap-programmatic.xml /sitemap.xml 301
+/sitemap-images-v2.xml /sitemap.xml 301
+/sitemap-images.xml /sitemap.xml 301
+
