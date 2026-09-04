@@ -162,8 +162,12 @@ export default async function BlogPost({ params }) {
     "@type": "Article",
     "headline": articleTitle,
     "description": articleDescription,
+    "image": [
+      "https://malpani-cms.firsteconomy.com/uploads/M_soul_strings_Desktop_Banner_Without_Text_0d38ce28d4.jpg"
+    ],
     "url": `https://www.malpanimsoulstrings.com/blog-malpani-m-soulstrings-baner-pashan-link-road/${slug}`,
     "datePublished": stats ? stats.birthtime.toISOString() : new Date().toISOString(),
+    "dateModified": stats ? stats.mtime.toISOString() : new Date().toISOString(),
     "author": {
       "@type": "Person",
       "name": "Ar. Rohit Sharma",

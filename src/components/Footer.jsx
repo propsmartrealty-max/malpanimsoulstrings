@@ -36,8 +36,9 @@ export default function Footer() {
                       <li><Link href="/vastu-compliant-luxury-homes-pune-malpani-m-soulstrings-baner-pashan-link-road" style={{ color: 'rgba(255,255,255,0.5)', textDecoration: 'none' }}>100% Vastu Compliant Homes</Link></li>
                       <li><Link href="/location-malpani-m-soulstrings-baner-pashan-link-road" style={{ color: 'rgba(255,255,255,0.5)', textDecoration: 'none' }}>Baner Pashan Link Road Location</Link></li>
                       <li><Link href="/about-malpani-estates-pune" style={{ color: 'rgba(255,255,255,0.5)', textDecoration: 'none' }}>About Malpani Estates</Link></li>
-                      <li><Link href="/press-malpani-estates-baner-pune" style={{ color: 'rgba(255,255,255,0.5)', textDecoration: 'none' }}>Press &amp; Media Mentions</Link></li>
                       <li><Link href="/sitemap-malpani-m-soulstrings-baner-pashan-link-road" style={{ color: 'rgba(255,255,255,0.5)', textDecoration: 'none' }}>HTML Sitemap</Link></li>
+                      <li><Link href="/privacy-policy" style={{ color: 'rgba(255,255,255,0.5)', textDecoration: 'none' }}>Privacy Policy</Link></li>
+                      <li><Link href="/terms-and-conditions" style={{ color: 'rgba(255,255,255,0.5)', textDecoration: 'none' }}>Terms &amp; Conditions</Link></li>
                   </ul>
               </div>
               <div className="col-lg-3 mb-4 mb-lg-0">
@@ -286,6 +287,13 @@ export default function Footer() {
                 <Link href="/blog-malpani-m-soulstrings-baner-pashan-link-road/nri-luxury-property-investment-guide-pune-west-2026" style={{ fontSize: '0.78rem', color: 'rgba(255,255,255,0.5)', textDecoration: 'none' }}>NRI Investment Guide Pune West</Link>
                 <Link href="/blog-malpani-m-soulstrings-baner-pashan-link-road/why-hinjewadi-it-cxos-choose-malpani-m-soulstrings-baner" style={{ fontSize: '0.78rem', color: 'rgba(255,255,255,0.5)', textDecoration: 'none' }}>Why IT Leaders Choose Baner Pashan</Link>
               </div>
+            </div>
+          </div>
+
+          {/* Legal Compliance & Copyright Bar */}
+          <div className="row mt-4 pt-3 text-center" style={{ borderTop: '1px solid rgba(255,255,255,0.08)', fontSize: '0.8rem', color: 'rgba(255,255,255,0.4)' }}>
+            <div className="col-12">
+              © 2026 Malpani M SoulStrings by Malpani Estates. All Rights Reserved. | MahaRERA: P52100076782 &amp; P52100055678 | <Link href="/privacy-policy" style={{ color: 'rgba(255,255,255,0.6)', textDecoration: 'underline' }}>Privacy Policy</Link> | <Link href="/terms-and-conditions" style={{ color: 'rgba(255,255,255,0.6)', textDecoration: 'underline' }}>Terms &amp; Conditions</Link>
             </div>
           </div>
         </div>

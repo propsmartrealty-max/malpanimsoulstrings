@@ -95,7 +95,9 @@ export async function GET() {
     { route: '/compare-malpani-m-soulstrings-baner-pashan-link-road', priority: 0.7, freq: 'monthly' },
     { route: '/compare-malpani-m-soulstrings-baner-pashan-link-road/pristine-lords-baner-malpani-m-soulstrings-baner-pashan-link-road', priority: 0.7, freq: 'monthly' },
     { route: '/compare-malpani-m-soulstrings-baner-pashan-link-road/kohinoor-livience-baner-malpani-m-soulstrings-baner-pashan-link-road', priority: 0.7, freq: 'monthly' },
-    { route: '/sitemap-malpani-m-soulstrings-baner-pashan-link-road', priority: 0.7, freq: 'monthly' }
+    { route: '/sitemap-malpani-m-soulstrings-baner-pashan-link-road', priority: 0.7, freq: 'monthly' },
+    { route: '/privacy-policy', priority: 0.6, freq: 'monthly' },
+    { route: '/terms-and-conditions', priority: 0.6, freq: 'monthly' }
   ];
 
   // Static items array

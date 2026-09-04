@@ -416,6 +416,25 @@ export default function SchemaMarkup({ pageName, pageUrl }) {
           "lowPrice": "19500000",
           "highPrice": "65000000",
           "price": "19500000",
+          "priceValidUntil": "2026-12-31",
+          "hasMerchantReturnPolicy": {
+            "@type": "MerchantReturnPolicy",
+            "applicableCountry": "IN",
+            "returnPolicyCategory": "https://schema.org/MerchantReturnNotPermitted",
+            "merchantReturnLink": "https://www.malpanimsoulstrings.com/terms-and-conditions"
+          },
+          "shippingDetails": {
+            "@type": "OfferShippingDetails",
+            "shippingRate": {
+              "@type": "MonetaryAmount",
+              "value": "0",
+              "currency": "INR"
+            },
+            "shippingDestination": {
+              "@type": "DefinedRegion",
+              "addressCountry": "IN"
+            }
+          },
           "seller": {
             "@type": "Organization",
             "name": "Malpani Estates"
@@ -426,9 +445,16 @@ export default function SchemaMarkup({ pageName, pageUrl }) {
               "name": "3 BHK Premium Luxury Flats",
               "price": "19500000",
               "priceCurrency": "INR",
+              "priceValidUntil": "2026-12-31",
               "url": "https://www.malpanimsoulstrings.com/3bhk-luxury-malpani-m-soulstrings-baner-pashan-link-road",
               "availability": "https://schema.org/InStock",
               "itemCondition": "https://schema.org/NewCondition",
+              "hasMerchantReturnPolicy": {
+                "@type": "MerchantReturnPolicy",
+                "applicableCountry": "IN",
+                "returnPolicyCategory": "https://schema.org/MerchantReturnNotPermitted",
+                "merchantReturnLink": "https://www.malpanimsoulstrings.com/terms-and-conditions"
+              },
               "seller": { "@type": "Organization", "name": "Malpani Estates" }
             },
             {
@@ -436,9 +462,16 @@ export default function SchemaMarkup({ pageName, pageUrl }) {
               "name": "4 BHK Ultra-Luxury Presidential Flats",
               "price": "35000000",
               "priceCurrency": "INR",
+              "priceValidUntil": "2026-12-31",
               "url": "https://www.malpanimsoulstrings.com/4bhk-luxury-malpani-m-soulstrings-baner-pashan-link-road",
               "availability": "https://schema.org/InStock",
               "itemCondition": "https://schema.org/NewCondition",
+              "hasMerchantReturnPolicy": {
+                "@type": "MerchantReturnPolicy",
+                "applicableCountry": "IN",
+                "returnPolicyCategory": "https://schema.org/MerchantReturnNotPermitted",
+                "merchantReturnLink": "https://www.malpanimsoulstrings.com/terms-and-conditions"
+              },
               "seller": { "@type": "Organization", "name": "Malpani Estates" }
             },
             {
@@ -446,9 +479,16 @@ export default function SchemaMarkup({ pageName, pageUrl }) {
               "name": "5 BHK Sky Duplex Homes",
               "price": "55000000",
               "priceCurrency": "INR",
+              "priceValidUntil": "2026-12-31",
               "url": "https://www.malpanimsoulstrings.com/5bhk-duplex-malpani-m-soulstrings-baner-pashan-link-road",
               "availability": "https://schema.org/InStock",
               "itemCondition": "https://schema.org/NewCondition",
+              "hasMerchantReturnPolicy": {
+                "@type": "MerchantReturnPolicy",
+                "applicableCountry": "IN",
+                "returnPolicyCategory": "https://schema.org/MerchantReturnNotPermitted",
+                "merchantReturnLink": "https://www.malpanimsoulstrings.com/terms-and-conditions"
+              },
               "seller": { "@type": "Organization", "name": "Malpani Estates" }
             },
             {
@@ -456,9 +496,16 @@ export default function SchemaMarkup({ pageName, pageUrl }) {
               "name": "Luxury Sky Penthouses with Private Terrace",
               "price": "65000000",
               "priceCurrency": "INR",
+              "priceValidUntil": "2026-12-31",
               "url": "https://www.malpanimsoulstrings.com/penthouse-luxury-malpani-m-soulstrings-baner-pashan-link-road",
               "availability": "https://schema.org/InStock",
               "itemCondition": "https://schema.org/NewCondition",
+              "hasMerchantReturnPolicy": {
+                "@type": "MerchantReturnPolicy",
+                "applicableCountry": "IN",
+                "returnPolicyCategory": "https://schema.org/MerchantReturnNotPermitted",
+                "merchantReturnLink": "https://www.malpanimsoulstrings.com/terms-and-conditions"
+              },
               "seller": { "@type": "Organization", "name": "Malpani Estates" }
             }
           ]

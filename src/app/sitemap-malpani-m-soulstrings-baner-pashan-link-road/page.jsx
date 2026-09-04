@@ -50,6 +50,8 @@ export default function HTMLSitemap() {
               <li><Link href="/malpani-m-soulstrings-construction-status-updates-possession" style={{ color: 'var(--color-text)', textDecoration: 'none' }}>Construction Updates</Link></li>
               <li><Link href="/flat-rates-price-trends-baner-pashan-link-road-malpani-m-soulstrings" style={{ color: 'var(--color-text)', textDecoration: 'none' }}>Price Trends &amp; Rates</Link></li>
               <li><Link href="/malpani-m-soulstrings-reviews-ratings-baner-pune" style={{ color: 'var(--color-text)', textDecoration: 'none' }}>Reviews &amp; Client Ratings</Link></li>
+              <li><Link href="/privacy-policy" style={{ color: 'var(--color-text)', textDecoration: 'none' }}>Privacy Policy</Link></li>
+              <li><Link href="/terms-and-conditions" style={{ color: 'var(--color-text)', textDecoration: 'none' }}>Terms &amp; Conditions</Link></li>
             </ul>
           </div>
 
