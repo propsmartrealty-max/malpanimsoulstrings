@@ -100,6 +100,16 @@ export async function GET() {
     { route: '/terms-and-conditions', priority: 0.6, freq: 'monthly' }
   ];
 
+function escapeXml(unsafe) {
+  if (!unsafe) return '';
+  return String(unsafe)
+    .replace(/&/g, '&amp;')
+    .replace(/</g, '&lt;')
+    .replace(/>/g, '&gt;')
+    .replace(/"/g, '&quot;')
+    .replace(/'/g, '&apos;');
+}
+
   // Static items array
   const staticItems = [
     ...tier1,
@@ -109,20 +119,16 @@ export async function GET() {
   ].map(({ route, priority, freq, images, videos }) => {
     const imagesXml = images ? images.map(img => `
     <image:image>
-      <image:loc>${img.url}</image:loc>
-      <image:title>${img.title}</image:title>
-      <image:caption>${img.title}</image:caption>
-      <image:geo_location>Baner Pashan Link Road, Pune, Maharashtra, India</image:geo_location>
-      <image:license>${baseUrl}</image:license>
+      <image:loc>${escapeXml(img.url)}</image:loc>
     </image:image>`).join('') : '';
 
     const videosXml = videos ? videos.map(vid => `
     <video:video>
-      <video:thumbnail_loc>${vid.thumbnail}</video:thumbnail_loc>
-      <video:title>${vid.title}</video:title>
-      <video:description>${vid.description}</video:description>
-      <video:content_loc>${vid.contentUrl}</video:content_loc>
-      <video:player_loc>${vid.playerUrl}</video:player_loc>
+      <video:thumbnail_loc>${escapeXml(vid.thumbnail)}</video:thumbnail_loc>
+      <video:title>${escapeXml(vid.title)}</video:title>
+      <video:description>${escapeXml(vid.description)}</video:description>
+      <video:content_loc>${escapeXml(vid.contentUrl)}</video:content_loc>
+      <video:player_loc>${escapeXml(vid.playerUrl)}</video:player_loc>
       <video:duration>${vid.duration}</video:duration>
       <video:publication_date>${vid.publicationDate}</video:publication_date>
       <video:family_friendly>yes</video:family_friendly>
@@ -151,7 +157,6 @@ export async function GET() {
     const stats = fs.statSync(filePath);
     const slug = file.replace('.md', '');
     const url = `${baseUrl}/blog-malpani-m-soulstrings-baner-pashan-link-road/${slug}`;
-    const cleanTitle = slug.replace(/-/g, ' ').replace(/\b\w/g, c => c.toUpperCase());
     
     return `
   <url>
@@ -161,10 +166,6 @@ export async function GET() {
     <priority>0.9</priority>
     <image:image>
       <image:loc>https://malpani-cms.firsteconomy.com/uploads/M_soul_strings_Desktop_Banner_Without_Text_0d38ce28d4.jpg</image:loc>
-      <image:title>${cleanTitle} | Malpani M SoulStrings Pune</image:title>
-      <image:caption>${cleanTitle} - Luxury Real Estate Insights Baner Pashan Link Road Pune</image:caption>
-      <image:geo_location>Pune, Maharashtra, India</image:geo_location>
-      <image:license>${baseUrl}</image:license>
     </image:image>
   </url>`;
   });
