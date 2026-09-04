@@ -1,8 +1,12 @@
+const isCloudflare = process.env.CF_PAGES === '1' || process.env.NEXT_EXPORT === 'true';
+
 /** @type {import('next').NextConfig} */
 const nextConfig = {
+  output: isCloudflare ? 'export' : undefined,
   poweredByHeader: false,
   compress: true,
   images: {
+    unoptimized: isCloudflare ? true : false,
     remotePatterns: [
       {
         protocol: 'https',

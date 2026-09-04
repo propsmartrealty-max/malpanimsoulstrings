@@ -1,6 +1,7 @@
 import fs from 'fs';
 import path from 'path';
 import { getAllProgrammaticSlugs } from '@/data/programmaticData';
+export const dynamic = 'force-static';
 
 export async function GET() {
   const baseUrl = 'https://www.malpanimsoulstrings.com';

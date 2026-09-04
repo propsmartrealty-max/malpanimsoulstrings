@@ -10,8 +10,7 @@ import path from 'path';
 import Link from 'next/link';
 import { getAllProgrammaticSlugs } from '@/data/programmaticData';
 
-export const revalidate = 604800; // 1 week (in seconds)
-export const dynamicParams = true; // Fallback for 13,994 remaining routes
+export const dynamicParams = false;
 
 export async function generateStaticParams() {
   const allSlugs = getAllProgrammaticSlugs();
