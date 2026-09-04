@@ -30,7 +30,14 @@ export async function generateMetadata({ params }) {
     title: `${keyword} - Malpani M SoulStrings Pune`,
     description: description,
     alternates: {
-      canonical: url
+      canonical: url,
+      languages: {
+        'en-IN': url,
+        'en-US': url,
+        'en-AE': url,
+        'en-GB': url,
+        'x-default': url,
+      },
     },
     openGraph: {
       title: `${keyword} - Malpani M SoulStrings`,

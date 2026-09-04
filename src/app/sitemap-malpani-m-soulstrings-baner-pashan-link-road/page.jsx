@@ -64,6 +64,10 @@ export default function HTMLSitemap() {
               <li><Link href="/pune-infrastructure-metro-impact-malpani-m-soulstrings-baner-pashan-link-road" style={{ color: 'var(--color-text)', textDecoration: 'none' }}>Metro Infrastructure Impact</Link></li>
               <li><Link href="/vastu-compliant-luxury-homes-pune-malpani-m-soulstrings-baner-pashan-link-road" style={{ color: 'var(--color-text)', textDecoration: 'none' }}>Vastu Compliance</Link></li>
               <li><Link href="/it-professionals-luxury-homes-pune-malpani-m-soulstrings-baner-pashan-link-road" style={{ color: 'var(--color-text)', textDecoration: 'none' }}>IT Professional Guide</Link></li>
+              <li><Link href="/blog-malpani-m-soulstrings-baner-pashan-link-road/baner-pashan-link-road-luxury-real-estate-definitive-guide-2026" style={{ color: 'var(--color-text)', textDecoration: 'none' }}>Baner Pashan 2026 Definitive Guide</Link></li>
+              <li><Link href="/blog-malpani-m-soulstrings-baner-pashan-link-road/3bhk-4bhk-5bhk-duplex-carpet-area-vastu-floor-plans-comparison-pune" style={{ color: 'var(--color-text)', textDecoration: 'none' }}>Floor Plans &amp; Vastu Spatial Guide</Link></li>
+              <li><Link href="/blog-malpani-m-soulstrings-baner-pashan-link-road/nri-luxury-property-investment-guide-pune-west-2026" style={{ color: 'var(--color-text)', textDecoration: 'none' }}>NRI Luxury Investment Guide 2026</Link></li>
+              <li><Link href="/blog-malpani-m-soulstrings-baner-pashan-link-road/why-hinjewadi-it-cxos-choose-malpani-m-soulstrings-baner" style={{ color: 'var(--color-text)', textDecoration: 'none' }}>Why IT CXOs Choose M SoulStrings</Link></li>
             </ul>
           </div>
 

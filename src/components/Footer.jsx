@@ -43,6 +43,10 @@ export default function Footer() {
               <div className="col-lg-3 mb-4 mb-lg-0">
                   <h5 className="text-white mb-3">Pune Market Guides</h5>
                   <ul className="list-unstyled" style={{ lineHeight: '2' }}>
+                      <li><Link href="/blog-malpani-m-soulstrings-baner-pashan-link-road/baner-pashan-link-road-luxury-real-estate-definitive-guide-2026" style={{ color: 'rgba(255,255,255,0.5)', textDecoration: 'none' }}>Baner Pashan 2026 Definitive Guide</Link></li>
+                      <li><Link href="/blog-malpani-m-soulstrings-baner-pashan-link-road/3bhk-4bhk-5bhk-duplex-carpet-area-vastu-floor-plans-comparison-pune" style={{ color: 'rgba(255,255,255,0.5)', textDecoration: 'none' }}>Floor Plans &amp; Vastu Spatial Guide</Link></li>
+                      <li><Link href="/blog-malpani-m-soulstrings-baner-pashan-link-road/nri-luxury-property-investment-guide-pune-west-2026" style={{ color: 'rgba(255,255,255,0.5)', textDecoration: 'none' }}>NRI Luxury Investment Guide 2026</Link></li>
+                      <li><Link href="/blog-malpani-m-soulstrings-baner-pashan-link-road/why-hinjewadi-it-cxos-choose-malpani-m-soulstrings-baner" style={{ color: 'rgba(255,255,255,0.5)', textDecoration: 'none' }}>Why IT CXOs Choose M SoulStrings</Link></li>
                       <li><Link href="/blog-malpani-m-soulstrings-baner-pashan-link-road/4-5-bhk-luxury-apartments-in-baner-mahalunge-corridor-pune" style={{ color: 'rgba(255,255,255,0.5)', textDecoration: 'none' }}>4.5 BHK in Baner &amp; Mahalunge</Link></li>
                       <li><Link href="/blog-malpani-m-soulstrings-baner-pashan-link-road/2-bhk-vs-3-bhk-luxury-upgrade-baner-pashan-link-road" style={{ color: 'rgba(255,255,255,0.5)', textDecoration: 'none' }}>2 BHK to 3 BHK Upgrade Guide</Link></li>
                       <li><Link href="/blog-malpani-m-soulstrings-baner-pashan-link-road/simplex-vs-duplex-vs-sky-villas-luxury-estates-pune" style={{ color: 'rgba(255,255,255,0.5)', textDecoration: 'none' }}>Simplex vs. Duplex vs. Sky Villas</Link></li>
@@ -277,6 +281,10 @@ export default function Footer() {
                 <Link href="/flat-rates-price-trends-baner-pashan-link-road-malpani-m-soulstrings" style={{ fontSize: '0.78rem', color: 'rgba(255,255,255,0.5)', textDecoration: 'none' }}>Baner Real Estate Price Trends 2026</Link>
                 <Link href="/malpani-m-soulstrings-construction-status-updates-possession" style={{ fontSize: '0.78rem', color: 'rgba(255,255,255,0.5)', textDecoration: 'none' }}>M Soulstrings MahaRERA Construction Status</Link>
                 <Link href="/invest-in-malpani-estates-pune-growth-corridors" style={{ fontSize: '0.78rem', color: 'rgba(255,255,255,0.5)', textDecoration: 'none' }}>Malpani Estates Pune Growth Corridors</Link>
+                <Link href="/blog-malpani-m-soulstrings-baner-pashan-link-road/baner-pashan-link-road-luxury-real-estate-definitive-guide-2026" style={{ fontSize: '0.78rem', color: 'rgba(255,255,255,0.5)', textDecoration: 'none' }}>Baner Pashan Luxury Real Estate 2026</Link>
+                <Link href="/blog-malpani-m-soulstrings-baner-pashan-link-road/3bhk-4bhk-5bhk-duplex-carpet-area-vastu-floor-plans-comparison-pune" style={{ fontSize: '0.78rem', color: 'rgba(255,255,255,0.5)', textDecoration: 'none' }}>3, 4 &amp; 5 BHK Vastu Floor Plans</Link>
+                <Link href="/blog-malpani-m-soulstrings-baner-pashan-link-road/nri-luxury-property-investment-guide-pune-west-2026" style={{ fontSize: '0.78rem', color: 'rgba(255,255,255,0.5)', textDecoration: 'none' }}>NRI Investment Guide Pune West</Link>
+                <Link href="/blog-malpani-m-soulstrings-baner-pashan-link-road/why-hinjewadi-it-cxos-choose-malpani-m-soulstrings-baner" style={{ fontSize: '0.78rem', color: 'rgba(255,255,255,0.5)', textDecoration: 'none' }}>Why IT Leaders Choose Baner Pashan</Link>
               </div>
             </div>
           </div>

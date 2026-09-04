@@ -11,6 +11,7 @@ export default function robots() {
       {
         userAgent: [
           'Googlebot',
+          'Googlebot-Mobile',
           'Googlebot-Image',
           'Googlebot-News',
           'Googlebot-Video',
