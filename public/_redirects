@@ -1,4 +1,5 @@
 # Cloudflare Pages 301 Permanent Redirects
+# Processed at Cloudflare Global Edge Network
 
 /index.html / 301
 /4bhk-luxury-apartments-in-baner.html /4bhk-luxury-malpani-m-soulstrings-baner-pashan-link-road 301
@@ -12,7 +13,7 @@
 /aundh-properties.html /aundh-malpani-m-soulstrings-baner-pashan-link-road 301
 /pashan-link-road.html /pashan-malpani-m-soulstrings-baner-pashan-link-road 301
 
-# Clean URL Aliases
+# Clean URL Aliases & Legacy Short Links
 /3bhk-luxury /3bhk-luxury-malpani-m-soulstrings-baner-pashan-link-road 301
 /4bhk-luxury /4bhk-luxury-malpani-m-soulstrings-baner-pashan-link-road 301
 /5bhk-duplex /5bhk-duplex-malpani-m-soulstrings-baner-pashan-link-road 301
@@ -22,3 +23,28 @@
 /amenities /amenities-malpani-m-soulstrings-baner-pashan-link-road 301
 /infrastructure /infrastructure-malpani-m-soulstrings-baner-pashan-link-road 301
 /baner-overview /baner-overview-malpani-m-soulstrings-baner-pashan-link-road 301
+/pune-west-real-estate-market /pune-west-real-estate-market-malpani-m-soulstrings-baner-pashan-link-road 301
+/vastu-compliant-luxury-homes-pune /vastu-compliant-luxury-homes-pune-malpani-m-soulstrings-baner-pashan-link-road 301
+/blog /blog-malpani-m-soulstrings-baner-pashan-link-road 301
+/blog/* /blog-malpani-m-soulstrings-baner-pashan-link-road/:splat 301
+/market-analysis /market-analysis-malpani-m-soulstrings-baner-pashan-link-road 301
+/it-professionals-luxury-homes-pune /it-professionals-luxury-homes-pune-malpani-m-soulstrings-baner-pashan-link-road 301
+/pune-real-estate-market /pune-real-estate-market-malpani-m-soulstrings-baner-pashan-link-road 301
+/baner-real-estate-market /baner-real-estate-market-malpani-m-soulstrings-baner-pashan-link-road 301
+/pune-infrastructure-metro-impact /pune-infrastructure-metro-impact-malpani-m-soulstrings-baner-pashan-link-road 301
+/aundh /aundh-malpani-m-soulstrings-baner-pashan-link-road 301
+/pashan /pashan-malpani-m-soulstrings-baner-pashan-link-road 301
+/shivajinagar /shivajinagar-malpani-m-soulstrings-baner-pashan-link-road 301
+/compare /compare-malpani-m-soulstrings-baner-pashan-link-road 301
+/compare/pristine-lords-baner /compare-malpani-m-soulstrings-baner-pashan-link-road/pristine-lords-baner-malpani-m-soulstrings-baner-pashan-link-road 301
+/compare/kohinoor-livience-baner /compare-malpani-m-soulstrings-baner-pashan-link-road/kohinoor-livience-baner-malpani-m-soulstrings-baner-pashan-link-road 301
+/sitemap /sitemap-malpani-m-soulstrings-baner-pashan-link-road 301
+
+# High-Intent Keyword Hub Redirects
+/flats-near-hinjewadi-it-park-pune /flats-near-hinjewadi-it-park-pune-malpani-m-soulstrings 301
+/luxury-apartments-in-balewadi-pune /luxury-apartments-in-balewadi-pune-malpani-m-soulstrings 301
+/premium-residences-near-aundh-pune /premium-residences-near-aundh-pune-malpani-m-soulstrings 301
+/wakad-to-baner-real-estate-upgrade /wakad-to-baner-real-estate-upgrade-malpani-m-soulstrings 301
+/pashan-sus-road-luxury-projects /pashan-sus-road-luxury-projects-malpani-m-soulstrings 301
+/flat-rates-price-trends-baner-pashan-link-road-pune /flat-rates-price-trends-baner-pashan-link-road-malpani-m-soulstrings 301
+/luxury-gated-community-apartments-for-sale-pune-west /luxury-gated-community-apartments-pune-west-malpani-m-soulstrings 301

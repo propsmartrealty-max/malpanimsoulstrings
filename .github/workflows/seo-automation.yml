@@ -50,7 +50,7 @@ jobs:
             ATTEMPT=$((ATTEMPT+1))
             sleep 15
           done
-          echo "Warning: Timeout waiting for Vercel deployment matching $COMMIT_SHA. Proceeding with indexing anyway."
+          echo "Warning: Timeout waiting for Cloudflare Pages deployment matching $COMMIT_SHA. Proceeding with indexing anyway."
 
       - name: Create Google Service Account File
         env:
