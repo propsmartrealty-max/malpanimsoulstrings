@@ -155,7 +155,7 @@ export default function Footer() {
                     8. How can I book a VIP walkthrough or download the price sheet for Malpani M SoulStrings?
                   </h4>
                   <p style={{ fontSize: '0.85rem', lineHeight: '1.7', marginBottom: '0', color: 'rgba(255,255,255,0.6)' }}>
-                    You can book a direct developer VIP tour with zero brokerage by calling the official sales desk at <strong>+91 7744009295</strong> or submitting an online enquiry on this website to receive the latest floor plans, cost sheets, and construction-linked payment schedules.
+                    You can book a direct developer VIP tour with zero brokerage by calling the official sales desk at <a href="tel:+917744009295" style={{ color: '#d4af37', textDecoration: 'underline', fontWeight: 'bold' }}>+91 7744009295</a> or sending a <a href="https://wa.me/917744009295?text=Hello%20Malpani%20M%20SoulStrings%20Team%2C%20I%20would%20like%20to%20book%20a%20VIP%20walkthrough." target="_blank" rel="noopener noreferrer" style={{ color: '#25D366', textDecoration: 'underline', fontWeight: 'bold' }}>WhatsApp Enquiry (+91 7744009295)</a> to receive the latest floor plans, cost sheets, and construction-linked payment schedules.
                   </p>
                 </div>
               </div>

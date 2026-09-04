@@ -597,7 +597,7 @@ export default function Home() {
           </details>
           <details className="faq-item" >
             <summary >How can I check the Malpani M Soulstrings construction update?</summary>
-            <p >Construction is proceeding at an accelerated pace. To get the latest, real-time Malpani M SoulStrings construction update, timeline for possession, or to inquire about ready possession luxury apartments in Pune, please contact our VIP sales team via the WhatsApp widget.</p>
+            <p >Construction is proceeding at an accelerated pace. To get the latest, real-time Malpani M SoulStrings construction update, timeline for possession, or to inquire about ready possession luxury apartments in Pune, please contact our VIP sales team via <a href="https://wa.me/917744009295?text=Hello%20Malpani%20M%20SoulStrings%20Team%2C%20I%20would%20like%20to%20get%20construction%20updates." target="_blank" rel="noopener noreferrer" style={{ color: '#25D366', textDecoration: 'underline', fontWeight: '600' }}>WhatsApp (+91 7744009295)</a>.</p>
           </details>
           <details className="faq-item" >
             <summary >Who is the developer behind Malpani M SoulStrings?</summary>
@@ -605,7 +605,7 @@ export default function Home() {
           </details>
           <details className="faq-item" >
             <summary >How can I book a 3BHK or 4BHK luxury Residence here?</summary>
-            <p >You can register your interest by using our smart contact form below or by clicking the WhatsApp widget. Our dedicated VIP sales team specializing in the West Pune real estate market will guide you through a private presentation and site visit.</p>
+            <p >You can register your interest by using our smart contact form below or by connecting on <a href="https://wa.me/917744009295?text=Hello%20Malpani%20M%20SoulStrings%20Team%2C%20I%20would%20like%20to%20book%20a%20private%20presentation." target="_blank" rel="noopener noreferrer" style={{ color: '#25D366', textDecoration: 'underline', fontWeight: '600' }}>WhatsApp at +91 7744009295</a>. Our dedicated VIP sales team specializing in the West Pune real estate market will guide you through a private presentation and site visit.</p>
           </details>
         </div>
       </div>

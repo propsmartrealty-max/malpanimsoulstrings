@@ -165,6 +165,17 @@ export default function ExitIntentModal() {
             <span className="material-symbols-outlined" style={{ fontSize: '2rem', verticalAlign: 'middle', marginBottom: '0.5rem', display: 'block' }}>check_circle</span>
             <strong>Success!</strong><br />
             The VIP E-Brochure is being sent to your phone via WhatsApp immediately.
+            <div style={{ marginTop: '1rem' }}>
+              <a 
+                href="https://wa.me/917744009295?text=Hello%20Malpani%20M%20SoulStrings%20Team%2C%20I%20requested%20the%20VIP%20Brochure.%20Please%20send%20it%20here." 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="btn"
+                style={{ background: '#25D366', color: '#fff', padding: '0.6rem 1.2rem', borderRadius: '6px', textDecoration: 'none', display: 'inline-flex', alignItems: 'center', gap: '6px', fontWeight: '500' }}
+              >
+                <span>Open WhatsApp (+91 7744009295)</span>
+              </a>
+            </div>
           </div>
         ) : (
           <form 
@@ -173,14 +184,14 @@ export default function ExitIntentModal() {
           >
             <input 
               type="text" 
-              name="name"
+              name="name" 
               placeholder="Your Name" 
               required 
               style={{ padding: '1rem', borderRadius: '8px', border: '1px solid var(--color-primary)', background: 'var(--color-background)', color: 'var(--color-text)' }}
             />
             <input 
               type="tel" 
-              name="phone"
+              name="phone" 
               pattern="[0-9]{10}"
               placeholder="Phone Number (10 Digits)" 
               required 
@@ -190,6 +201,16 @@ export default function ExitIntentModal() {
             <button type="submit" className="btn btn-primary" style={{ padding: '1rem', fontSize: '1.1rem', marginTop: '0.5rem' }} disabled={loading}>
               {loading ? 'Sending securely...' : 'Download VIP Brochure'}
             </button>
+            <div className="text-center mt-1">
+              <a 
+                href="https://wa.me/917744009295?text=Hello%20Malpani%20M%20SoulStrings%20Team%2C%20I%20would%20like%20to%20receive%20the%20VIP%20brochure%20via%20WhatsApp." 
+                target="_blank" 
+                rel="noopener noreferrer"
+                style={{ color: '#25D366', textDecoration: 'none', fontSize: '0.9rem', display: 'inline-flex', alignItems: 'center', gap: '5px' }}
+              >
+                <span>Or inquire on WhatsApp: +91 7744009295</span>
+              </a>
+            </div>
           </form>
         )}
 
