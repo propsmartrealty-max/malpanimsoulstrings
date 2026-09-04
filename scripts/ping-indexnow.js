@@ -37,7 +37,9 @@ const staticPaths = [
   '/compare-malpani-m-soulstrings-baner-pashan-link-road',
   '/compare-malpani-m-soulstrings-baner-pashan-link-road/pristine-lords-baner-malpani-m-soulstrings-baner-pashan-link-road',
   '/compare-malpani-m-soulstrings-baner-pashan-link-road/kohinoor-livience-baner-malpani-m-soulstrings-baner-pashan-link-road',
-  '/sitemap-malpani-m-soulstrings-baner-pashan-link-road'
+  '/sitemap-malpani-m-soulstrings-baner-pashan-link-road',
+  '/privacy-policy',
+  '/terms-and-conditions'
 ];
 
 // 2. Collect all 51 Blog Posts dynamically

@@ -50,12 +50,13 @@ const CORE_PATHS = [
   '/baner-overview-malpani-m-soulstrings-baner-pashan-link-road',
   '/aundh-malpani-m-soulstrings-baner-pashan-link-road',
   '/pashan-malpani-m-soulstrings-baner-pashan-link-road',
-  '/shivajinagar-malpani-m-soulstrings-baner-pashan-link-road',
   '/malpani-m-soulstrings-reviews-ratings-baner-pune',
-  '/flat-rates-price-trends-baner-pashan-link-road-pune',
-  '/luxury-gated-community-apartments-for-sale-pune-west',
+  '/flat-rates-price-trends-baner-pashan-link-road-malpani-m-soulstrings',
+  '/luxury-gated-community-apartments-pune-west-malpani-m-soulstrings',
   '/invest-in-malpani-estates-pune-growth-corridors',
   '/malpani-m-soulstrings-construction-status-updates-possession',
+  '/privacy-policy',
+  '/terms-and-conditions'
 ];
 
 const urlList = CORE_PATHS.map(p => `${BASE_URL}${p}`);
