@@ -1,12 +1,14 @@
-const isCloudflare = process.env.CF_PAGES === '1' || process.env.NEXT_EXPORT === 'true';
+const isVercel = Boolean(process.env.VERCEL);
+const isDev = process.env.NODE_ENV === 'development';
+const isStaticExport = Boolean(process.env.CF_PAGES) || process.env.NEXT_EXPORT === 'true' || (!isVercel && !isDev);
 
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  output: isCloudflare ? 'export' : undefined,
+  output: isStaticExport ? 'export' : undefined,
   poweredByHeader: false,
   compress: true,
   images: {
-    unoptimized: isCloudflare ? true : false,
+    unoptimized: isStaticExport ? true : false,
     remotePatterns: [
       {
         protocol: 'https',
