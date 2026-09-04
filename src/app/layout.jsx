@@ -163,13 +163,6 @@ const orgSchema = {
   "url": "https://www.malpanimsoulstrings.com",
   "telephone": "+917744009295",
   "priceRange": "₹1.95 Cr - ₹6.5 Cr",
-  "aggregateRating": {
-    "@type": "AggregateRating",
-    "ratingValue": "4.9",
-    "bestRating": "5",
-    "worstRating": "1",
-    "ratingCount": "148"
-  },
   "address": {
     "@type": "PostalAddress",
     "streetAddress": "Baner Pashan Link Road",

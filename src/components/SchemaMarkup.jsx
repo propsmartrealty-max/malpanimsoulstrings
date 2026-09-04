@@ -162,13 +162,6 @@ export default function SchemaMarkup({ pageName, pageUrl }) {
           "@type": "SpeakableSpecification",
           "cssSelector": ["h1", ".hero-title", ".section-desc", ".pillar-header p", "article h2"]
         },
-        "aggregateRating": {
-          "@type": "AggregateRating",
-          "ratingValue": "4.9",
-          "bestRating": "5",
-          "worstRating": "1",
-          "ratingCount": "148"
-        },
         "address": {
           "@type": "PostalAddress",
           "streetAddress": "Baner Pashan Link Road",
