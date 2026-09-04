@@ -1,12 +1,32 @@
 "use client";
 
 import React, { useState } from 'react';
+import { usePathname } from 'next/navigation';
 
 export default function FloatingContact() {
   const [isOpen, setIsOpen] = useState(false);
+  const pathname = usePathname() || '';
 
   const phoneNumber = "917744009295";
-  const message = "Hello, I am interested in Malpani M SoulStrings. Could you please share more details?";
+
+  let message = "Hello Malpani M SoulStrings Team, I am interested in exploring luxury 3, 4 & 5 BHK residences at Baner-Pashan Link Road. Please share the VIP brochure, floor plans & current pricing.";
+
+  if (pathname.includes('3bhk')) {
+    message = "Hello, I am interested in the 3 BHK Luxury Residences (1,450 - 1,650 sq.ft.) at Malpani M SoulStrings, Baner-Pashan Link Road. Please share the floor plans, availability and latest cost sheet.";
+  } else if (pathname.includes('4bhk')) {
+    message = "Hello, I am interested in the 4 BHK Presidential Luxury Estates (1,950 - 2,600 sq.ft.) at Malpani M SoulStrings, Baner-Pashan Link Road. Please share floor plans, pricing and payment schedule.";
+  } else if (pathname.includes('5bhk') || pathname.includes('duplex')) {
+    message = "Hello, I am interested in the exclusive 5 BHK Sky Duplexes & Sky Villas at Malpani M SoulStrings, Baner-Pashan Link Road. Please arrange a private VIP consultation.";
+  } else if (pathname.includes('penthouse')) {
+    message = "Hello, I am interested in the limited-edition Sky Penthouses with private terrace at Malpani M SoulStrings, Baner-Pashan Link Road. Please share details and arrange a private tour.";
+  } else if (pathname.includes('nri')) {
+    message = "Hello, I am an NRI investor interested in luxury residences at Malpani M SoulStrings, Pune West. Please share investment insights, rental yields, and payment plans.";
+  } else if (pathname.includes('location')) {
+    message = "Hello, I would like to schedule a private site visit to the Malpani M SoulStrings Experience Centre on Baner-Pashan Link Road, Pune. Please share available time slots.";
+  } else if (pathname.includes('discover')) {
+    const topic = pathname.replace('/discover/', '').replace(/-/g, ' ');
+    message = `Hello Malpani M SoulStrings Team, I was reading about "${topic}" on your website. Could you please share detailed project information, pricing, and floor plans?`;
+  }
 
   const whatsappUrl = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;
   const callUrl = `tel:+${phoneNumber}`;
