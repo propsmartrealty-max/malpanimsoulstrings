@@ -56,6 +56,11 @@ export default function ReviewsPage() {
     "review": [
       {
         "@type": "Review",
+        "itemReviewed": {
+          "@type": "Product",
+          "name": "Malpani M SoulStrings",
+          "image": "https://malpani-cms.firsteconomy.com/uploads/About_Project_27b8c57d51.png"
+        },
         "author": {
           "@type": "Person",
           "name": "Amit Sharma"
@@ -63,13 +68,19 @@ export default function ReviewsPage() {
         "reviewRating": {
           "@type": "Rating",
           "ratingValue": "5",
-          "bestRating": "5"
+          "bestRating": "5",
+          "worstRating": "1"
         },
         "reviewBody": "Perfect 100% Vastu compliant layout with massive carpet area and scenic hill views. Commuting to Hinjewadi Phase 1 is smooth.",
         "datePublished": "2026-05-15"
       },
       {
         "@type": "Review",
+        "itemReviewed": {
+          "@type": "Product",
+          "name": "Malpani M SoulStrings",
+          "image": "https://malpani-cms.firsteconomy.com/uploads/About_Project_27b8c57d51.png"
+        },
         "author": {
           "@type": "Person",
           "name": "Priya Deshmukh"
@@ -77,7 +88,8 @@ export default function ReviewsPage() {
         "reviewRating": {
           "@type": "Rating",
           "ratingValue": "4",
-          "bestRating": "5"
+          "bestRating": "5",
+          "worstRating": "1"
         },
         "reviewBody": "Highly impressed by the Mivan formwork construction quality. The double-glazed window systems (DGU) effectively block highway noise.",
         "datePublished": "2026-06-02"

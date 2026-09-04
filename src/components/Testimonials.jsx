@@ -43,29 +43,8 @@ const testimonials = [
 export default function Testimonials() {
   const [filter, setFilter] = useState('all');
 
-  const reviewSchema = {
-    "@context": "https://schema.org",
-    "@type": "ApartmentComplex",
-    "name": "Malpani M SoulStrings",
-    "aggregateRating": {
-      "@type": "AggregateRating",
-      "ratingValue": "4.9",
-      "bestRating": "5",
-      "ratingCount": "148",
-      "reviewCount": "148"
-    },
-    "review": testimonials.map(t => ({
-      "@type": "Review",
-      "author": { "@type": "Person", "name": t.name },
-      "datePublished": "2026-06-15",
-      "reviewRating": { "@type": "Rating", "ratingValue": t.rating, "bestRating": "5" },
-      "reviewBody": t.text
-    }))
-  };
-
   return (
     <section className="section testimonials" style={{ background: 'var(--color-surface)', borderTop: '1px solid rgba(212,175,55,0.1)', padding: '5rem 0' }}>
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(reviewSchema) }} />
       <div className="container">
         <div className="section-header fade-in-up text-center">
           <div className="scarcity-badge fade-in-up" style={{ display: 'inline-block', marginBottom: '1rem' }}>

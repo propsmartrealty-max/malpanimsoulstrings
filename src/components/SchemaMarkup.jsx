@@ -169,22 +169,6 @@ export default function SchemaMarkup({ pageName, pageUrl }) {
           "worstRating": "1",
           "ratingCount": "148"
         },
-        "review": [
-          {
-            "@type": "Review",
-            "author": { "@type": "Person", "name": "Rajesh Kulkarni" },
-            "reviewRating": { "@type": "Rating", "ratingValue": "5", "bestRating": "5" },
-            "reviewBody": "Unmatched low density and highest construction quality on Baner Pashan Link Road. Perfect Vastu layout for our 4 BHK.",
-            "datePublished": "2026-06-10"
-          },
-          {
-            "@type": "Review",
-            "author": { "@type": "Person", "name": "Vikram Sethi (NRI Investor)" },
-            "reviewRating": { "@type": "Rating", "ratingValue": "5", "bestRating": "5" },
-            "reviewBody": "Seamless legal process with clear MahaRERA numbers and direct builder transparency from Malpani Estates.",
-            "datePublished": "2026-07-02"
-          }
-        ],
         "address": {
           "@type": "PostalAddress",
           "streetAddress": "Baner Pashan Link Road",
@@ -409,6 +393,48 @@ export default function SchemaMarkup({ pageName, pageUrl }) {
           "worstRating": "1",
           "ratingCount": "148"
         },
+        "review": [
+          {
+            "@type": "Review",
+            "itemReviewed": {
+              "@type": "Product",
+              "@id": "https://www.malpanimsoulstrings.com/#product",
+              "name": "Ultra-Luxury Apartments at Malpani M SoulStrings"
+            },
+            "author": {
+              "@type": "Person",
+              "name": "Rajesh Kulkarni"
+            },
+            "reviewRating": {
+              "@type": "Rating",
+              "ratingValue": "5",
+              "bestRating": "5",
+              "worstRating": "1"
+            },
+            "reviewBody": "Unmatched low density and highest construction quality on Baner Pashan Link Road. Perfect Vastu layout for our 4 BHK.",
+            "datePublished": "2026-06-10"
+          },
+          {
+            "@type": "Review",
+            "itemReviewed": {
+              "@type": "Product",
+              "@id": "https://www.malpanimsoulstrings.com/#product",
+              "name": "Ultra-Luxury Apartments at Malpani M SoulStrings"
+            },
+            "author": {
+              "@type": "Person",
+              "name": "Vikram Sethi"
+            },
+            "reviewRating": {
+              "@type": "Rating",
+              "ratingValue": "5",
+              "bestRating": "5",
+              "worstRating": "1"
+            },
+            "reviewBody": "Seamless legal process with clear MahaRERA numbers and direct builder transparency from Malpani Estates.",
+            "datePublished": "2026-07-02"
+          }
+        ],
         "offers": {
           "@type": "AggregateOffer",
           "offerCount": "4",
