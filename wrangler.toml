@@ -7,3 +7,4 @@ pages_build_output_dir = "out"
 ENVIRONMENT = "production"
 CANONICAL_DOMAIN = "www.malpanimsoulstrings.com"
 PRIMARY_PHONE = "+917744009295"
+
